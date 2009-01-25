@@ -1,10 +1,10 @@
 === WP-Optimize ===
 Contributors: ruhanirabin
 Donate link: http://www.ruhanirabin.com/wp-optimize/#donate
-Tags: comments, spam, optimize, database, revisions, users, security
+Tags: comments, spam, optimize, database, revisions, users, security, posts
 Requires at least: 2.7
 Tested up to: 2.7
-Stable tag: 0.4
+Stable tag: 0.5
 
 This plugin allows you to clean up your wordpress database and optimize it without phpMyAdmin.
 
@@ -24,10 +24,10 @@ It allows you to remove post revisions, comments in the spam queue, un-approved 
 
 **How this could help you?**
 
-*   Everytime you save a new post or pages, wordpress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It’s a huge number of bytes thats on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
+*   Everytime you save a new post or pages, wordpress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes thats on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
 *   Similar to the scenario described above, there might be thousands of spams and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
 *   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
-*   Wordpress doesn’t allow you to rename existing username which could be a security issue because your default wordpress admin username is “admin”, if you read my [Wordpress Security guide article](http://www.ruhanirabin.com/14-tips-prevent-wordpress-get-hacked/), you will know the risks involved. WP-Optimize can rename any existing username to other name
+*   Wordpress doesn't allow you to rename existing username which could be a security issue because your default wordpress admin username is "admin", if you read my [Wordpress Security guide article](http://www.ruhanirabin.com/14-tips-prevent-wordpress-get-hacked/), you will know the risks involved. WP-Optimize can rename any existing username to other name
 
 
 == Installation ==

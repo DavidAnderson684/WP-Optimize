@@ -109,6 +109,52 @@ return $message;
 
 
 } // end of function
+
+
+function getInfo($cleanupType){
+    global $wpdb;
+    $sql = "";
+
+    switch ($cleanupType) {
+        case "revisions":
+            $sql = "SELECT COUNT(*) FROM $wpdb->posts WHERE post_type = 'revision'";
+            $revisions = $wpdb->get_var( $sql );
+
+            //var_dump(!$revisions ==);
+            if(!$revisions == 0 || !$revisions == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$revisions.__(' post revisions in your database', $textdomain);
+            }
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No post revisions found', $textdomain);
+            break;
+
+        case "spam":
+            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = 'spam';";
+            $comments = $wpdb->get_var( $sql );
+            if(!$comments == NULL || !$comments == 0){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' spam comments found', $textdomain).' | <a href="edit-comments.php?comment_status=spam">'.__(' Review Spams</a>', $textdomain);
+            } else
+              $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', $textdomain);
+            break;
+
+        case "unapproved":
+            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = '0';";
+            $comments = $wpdb->get_var( $sql );
+            if(!$comments == NULL || !$comments == 0){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' unapproved comments found', $textdomain).' | <a href="edit-comments.php?comment_status=moderated">'.__(' Review Unapproved Comments</a>', $textdomain);;
+            } else
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unapproved comments found', $textdomain);
+
+            break;
+
+        default:
+            $message .= __('nothing', $textdomain);
+            break;
+    } // end of switch
+return $message;
+
+
+} // end of function
+
 ?>
 
 
@@ -141,7 +187,8 @@ return $message;
   <tr>
     <td width="25%">&nbsp;</td>
     <td width="75%"><input name="clean-revisions" type="checkbox" value="" />
-	 <?php _e('Remove all Post revisions', $textdomain); ?></td>
+	 <?php _e('Remove all Post revisions', $textdomain); ?><br />
+   <small><?php _e(getInfo('revisions')); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -150,7 +197,8 @@ return $message;
   <tr>
     <td>&nbsp;</td>
     <td><input name="clean-comments" type="checkbox" value="" />
-	 <?php _e('Clean marked Spam comments', $textdomain); ?></td>
+	 <?php _e('Clean marked Spam comments', $textdomain); ?><br />
+   <small><?php _e(getInfo('spam')); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -159,7 +207,8 @@ return $message;
   <tr>
     <td>&nbsp;</td>
     <td><input name="unapproved-comments" type="checkbox" value="" />
-	 <?php _e('Clean Unapproved comments', $textdomain); ?></td>
+	 <?php _e('Clean Unapproved comments', $textdomain); ?><br />
+   <small><?php _e(getInfo('unapproved')); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -204,7 +253,8 @@ return $message;
   </tr>
   <tr>
     <td><p align="right"><?php _e('RSS Feed', $textdomain); ?> :&nbsp;</p></td>
-    <td><a href="http://feeds2.feedburner.com/RuhaniRabin" target="_blank"><?php _e('Stay updated with RSS feed', $textdomain); ?></a></td>
+    <td><a href="http://feeds2.feedburner.com/RuhaniRabin" target="_blank"><?php _e('Stay updated with RSS feed', $textdomain); ?></a>
+    </td>
   </tr>
   <tr>
     <td><p align="right"><?php _e('Did this helped you out', $textdomain); ?>? :&nbsp;</p></td>
