@@ -23,7 +23,6 @@ if (! defined('WP_PLUGIN_DIR'))
 if (! defined('WP_PLUGIN_URL'))
     define('WP_PLUGIN_URL', WP_CONTENT_URL . '/plugins');
 
-
 $text = '';
 $textdomain = 'wp-optimize';
 
@@ -186,7 +185,7 @@ return $message;
 
   <tr>
     <td width="25%">&nbsp;</td>
-    <td width="75%"><input name="clean-revisions" type="checkbox" value="" />
+    <td width="75%"><input name="clean-revisions" id="clean-revisions" type="checkbox" value="" />
 	 <?php _e('Remove all Post revisions', $textdomain); ?><br />
    <small><?php _e(getInfo('revisions')); ?></small></td>
   </tr>
@@ -369,8 +368,18 @@ $alternate = ' class="alternate"';
 
 <?php $total_gain = round ($total_gain,3); ?>
 <h3><?php echo __('Optimization Results:',$textdomain); ?></h3>
-<p><?php echo __('Total Space Saved:',$textdomain); ?> <?=$total_gain?> Kb</p>
+<p style="color: #0000FF;"><?php echo __('Total Space Saved:',$textdomain); ?> <?=$total_gain?> Kb</p>
+  <?php } else { ?>
+<?php $total_gain = round ($total_gain,3); ?>
+  <?php if(!$total_gain==0){ ?>
+
+<h3><?php echo __('Optimization:',$textdomain); ?></h3>
+<p style="color: #FF0000;"><?php echo __('Total space can be saved:',$textdomain); ?> <?=$total_gain?> Kb</p>
   <?php } ?>
+<?php
+}
+?>
+
 <?php
 }
 ?>

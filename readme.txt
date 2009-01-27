@@ -1,12 +1,12 @@
 === WP-Optimize ===
 Contributors: ruhanirabin
-Donate link: http://www.ruhanirabin.com/wp-optimize/#donate
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133
 Tags: comments, spam, optimize, database, revisions, users, security, posts
 Requires at least: 2.7
 Tested up to: 2.7
-Stable tag: 0.5
+Stable tag: 0.6
 
-This plugin allows you to clean up your wordpress database and optimize it without phpMyAdmin.
+This plugin allows you to clean up your wordpress database and optimize it without phpMyAdmin. Also renames any username.
 
 == Description ==
 
@@ -20,7 +20,7 @@ It allows you to remove post revisions, comments in the spam queue, un-approved 
 *   Remove all the un-approved comments
 *   Rename one username to another username, it's designed to rename default "Admin" user to something else
 *   Apply mysql optimize commands on your database tables without phpMyAdmin.
-*   Display Database table statistics.
+*   Display Database table statistics. Shows how much space can be optimzied and how much space has been cleared.
 
 **How this could help you?**
 
