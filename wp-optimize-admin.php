@@ -170,7 +170,7 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><img src="<?php _e(WP_PLUGIN_URL) ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin"</td>
+    <td colspan="2"><img src="<?php _e(WP_PLUGIN_URL) ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin" /></td>
   </tr>
   <tr>
     <td><a href="#report"><?php _e('Tables Report', $textdomain); ?></a></td>
