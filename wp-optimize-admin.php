@@ -61,8 +61,28 @@ function cleanUpSystem($cleanupType){
         case "revisions":
             $clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision'";
             $revisions = $wpdb->query( $clean );
+			
+			$allposts = get_posts('numberposts=-1&orderby=ID&order=ASC&post_type=any&post_status=');
+			$allpost_ids = array();
+			foreach ($allposts as $onepost)
+				$allpost_ids[$onepost->ID] = true;
+				$cleaned_ids = array();
+				$total_cleaned_metas = 0;
+				$postmeta = $wpdb->get_results("SELECT * FROM $wpdb->postmeta", OBJECT);
+					foreach ($postmeta as $meta)
+						if (!isset($allpost_ids[$meta->post_id]) && !isset($cleaned_ids[$meta->post_id])) {
+							$cleaned_metas = $wpdb->query("DELETE FROM $wpdb->postmeta WHERE post_id = '".$meta->post_id."'");
+							$total_cleaned_metas += $cleaned_metas;
+							$cleaned_ids[$meta->post_id] = true;
+						}
+						
             $message .= $revisions.__(' post revisions deleted<br>', $textdomain);
             break;
+
+        //case "postmeta":
+
+		//	$message .= $total_cleaned_metas.__(' postmeta items from revisions and nonexistant posts deleted', $textdomain);
+        //    break;
 
         case "spam":
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam';";
@@ -182,11 +202,14 @@ return $message;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+  <tr>
+    <td><h3><?php _e('Database Optimization Options',$textdomain); ?></h3></td>
+  </tr>
 
   <tr>
     <td width="25%">&nbsp;</td>
     <td width="75%"><input name="clean-revisions" id="clean-revisions" type="checkbox" value="" />
-	 <?php _e('Remove all Post revisions', $textdomain); ?><br />
+	 <?php _e('Remove all Post revisions (Also cleanup Post meta data)', $textdomain); ?><br />
    <small><?php _e(getInfo('revisions')); ?></small></td>
   </tr>
   <tr>
@@ -222,6 +245,11 @@ return $message;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+  
+  <tr>
+    <td><h3><?php _e('Security Tools',$textdomain); ?></h3></td>
+  </tr>
+
   <tr>
     <td><p align="right"><?php _e('Old username:', $textdomain); ?>&nbsp;</p></td>
     <td><input type="text" name="old_admin" id="old_admin" class="old_admin" size="40" value=""></td>
@@ -276,12 +304,12 @@ else optimizeTables(false);
 Function optimizeTables($Optimize=false){
 ?>
 
-<h3><?php echo __('Database Tables Report',$textdomain); ?></h3>
-<h3><?php echo __('Database Name:',$textdomain); ?> '<?php _e(DB_NAME);?>'</h3>
+<h3><?php _e('Database Tables Report',$textdomain); ?></h3>
+<h3><?php _e('Database Name:',$textdomain); ?> '<?php _e(DB_NAME);?>'</h3>
 <?php if($Optimize){
     ?>
 
-<p><?php echo __('Optimized all the tables found in the database.',$textdomain)?></p>
+<p><?php _e('Optimized all the tables found in the database.',$textdomain)?></p>
 <?php } ?>
 
 <a name="report">&nbsp;</a>
@@ -289,18 +317,18 @@ Function optimizeTables($Optimize=false){
 <table class="widefat fixed" cellspacing="0">
 <thead>
 	<tr>
-	<th scope="col"><?php echo __('Table',$textdomain); ?></th>
-	<th scope="col"><?php echo __('Size',$textdomain)?></th>
-	<th scope="col"><?php echo __('Status',$textdomain); ?></th>
-	<th scope="col"><?php echo __('Space Save',$textdomain); ?></th>
+	<th scope="col"><?php _e('Table',$textdomain); ?></th>
+	<th scope="col"><?php _e('Size',$textdomain)?></th>
+	<th scope="col"><?php _e('Status',$textdomain); ?></th>
+	<th scope="col"><?php _e('Space Save',$textdomain); ?></th>
 	</tr>
 </thead>
 <tfoot>
 	<tr>
-	<th scope="col"><?php echo __('Table',$textdomain); ?></th>
-	<th scope="col"><?php echo __('Size',$textdomain)?></th>
-	<th scope="col"><?php echo __('Status',$textdomain); ?></th>
-	<th scope="col"><?php echo __('Space Save',$textdomain); ?></th>
+	<th scope="col"><?php _e('Table',$textdomain); ?></th>
+	<th scope="col"><?php _e('Size',$textdomain)?></th>
+	<th scope="col"><?php _e('Status',$textdomain); ?></th>
+	<th scope="col"><?php _e('Space Save',$textdomain); ?></th>
 	</tr>
 </tfoot>
 <tbody id="the-list">
@@ -366,15 +394,16 @@ $alternate = ' class="alternate"';
 <?php if (isset($_POST["optimize-db"])) {
     ?>
 
-<?php $total_gain = round ($total_gain,3); ?>
-<h3><?php echo __('Optimization Results:',$textdomain); ?></h3>
-<p style="color: #0000FF;"><?php echo __('Total Space Saved:',$textdomain); ?> <?=$total_gain?> Kb</p>
+<?php $total_gain = round ($total_gain,3);?>
+
+<h3><?php _e('Optimization Results:',$textdomain); ?></h3>
+<p style="color: #0000FF;"><?php _e('Total Space Saved:',$textdomain); ?> <?php echo $total_gain?> Kb</p>
   <?php } else { ?>
 <?php $total_gain = round ($total_gain,3); ?>
   <?php if(!$total_gain==0){ ?>
 
-<h3><?php echo __('Optimization:',$textdomain); ?></h3>
-<p style="color: #FF0000;"><?php echo __('Total space can be saved:',$textdomain); ?> <?=$total_gain?> Kb</p>
+<h3><?php _e('Optimization Possibility:',$textdomain); ?></h3>
+<p style="color: #FF0000;"><?php _e('Total space can be saved:',$textdomain); ?> <?php echo $total_gain?> Kb</p>
   <?php } ?>
 <?php
 }
