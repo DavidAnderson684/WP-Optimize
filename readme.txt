@@ -27,7 +27,7 @@ Requires MySQL 5.1.x and PHP 5.3.x
 *   Apply mysql optimize commands on your database tables without phpMyAdmin.
 *   Display Database table statistics. Shows how much space can be optimzied and how much space has been cleared.
 
-**Change Log: NOV - 14 - 2009 **
+** Change Log: NOV - 14 - 2009 **
 
 *	Added cleanup of POST META Table along with the revisions
 *	Fixed some minor PHP tags
