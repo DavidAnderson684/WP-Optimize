@@ -15,8 +15,6 @@ It allows you to remove post revisions, cleanup post meta data, comments in the 
 
 Additionally you can rename any username to another username too.
 
-Requires MySQL 5.1.x and PHP 5.3.x
-
 
 **Features:**
 
@@ -27,10 +25,6 @@ Requires MySQL 5.1.x and PHP 5.3.x
 *   Apply mysql optimize commands on your database tables without phpMyAdmin.
 *   Display Database table statistics. Shows how much space can be optimzied and how much space has been cleared.
 
-** Change Log: NOV - 14 - 2009 **
-
-*	Added cleanup of POST META Table along with the revisions
-*	Fixed some minor PHP tags
 
 **How this could help you?**
 
@@ -61,3 +55,13 @@ Because you've changed your username, wordpress can't get authentication data fr
 
 1. Main screen
 2. Database tables report
+
+== Changelog ==
+
+= 0.7 =
+* Added cleanup of POST META Table along with the revisions
+* Fixed some minor PHP tags which causes the total numbers to disappear
+* Now requires MySQL 5.1.x and PHP 5.1.x
+
+= 0.6.5.1 =
+* Fix Interface
