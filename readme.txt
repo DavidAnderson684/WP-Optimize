@@ -18,7 +18,7 @@ Additionally you can rename any username to another username too.
 
 **Features:**
 
-*   Remove the wordpress post revisions including post meta data garbage
+*   Remove the wordpress post revisions
 *   Remove all the comments in the spam queue
 *   Remove all the un-approved comments
 *   Rename one username to another username, it's designed to rename default "Admin" user to something else
