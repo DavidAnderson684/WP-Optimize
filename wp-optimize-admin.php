@@ -62,7 +62,7 @@ function cleanUpSystem($cleanupType){
             $clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision'";
             $revisions = $wpdb->query( $clean );
 			
-			$allposts = get_posts('numberposts=-1&orderby=ID&order=ASC&post_type=any&post_status=');
+/* 			$allposts = get_posts('numberposts=-1&orderby=ID&order=ASC&post_type=any&post_status=');
 			$allpost_ids = array();
 			foreach ($allposts as $onepost)
 				$allpost_ids[$onepost->ID] = true;
@@ -74,7 +74,7 @@ function cleanUpSystem($cleanupType){
 							$cleaned_metas = $wpdb->query("DELETE FROM $wpdb->postmeta WHERE post_id = '".$meta->post_id."'");
 							$total_cleaned_metas += $cleaned_metas;
 							$cleaned_ids[$meta->post_id] = true;
-						}
+						} */
 						
             $message .= $revisions.__(' post revisions deleted<br>', $textdomain);
             break;
@@ -209,7 +209,7 @@ return $message;
   <tr>
     <td width="25%">&nbsp;</td>
     <td width="75%"><input name="clean-revisions" id="clean-revisions" type="checkbox" value="" />
-	 <?php _e('Remove all Post revisions (Also cleanup Post meta data)', $textdomain); ?><br />
+	 <?php _e('Remove all Post revisions', $textdomain); ?><br />
    <small><?php _e(getInfo('revisions')); ?></small></td>
   </tr>
   <tr>
