@@ -63,7 +63,7 @@ Because you've changed your username, wordpress can't get authentication data fr
 
 == Changelog ==
 
-= 0.8.0
+= 0.8.0 =
 * Added Multilanguage capability
 * Added translation WP-OPTIMIZE.POT file 
 * Farsi Translation included now (Thanks to Ali irani)
