@@ -1,0 +1,223 @@
+# Translation of the WordPress plugin WP-Optimize 0.7.1 by Ruhani Rabin.
+# Copyright (C) 2010 Ruhani Rabin
+# This file is distributed under the same license as the WP-Optimize package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Optimize 0.7.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
+"POT-Creation-Date: 2010-01-08 17:21+0000\n"
+"PO-Revision-Date: 2010-01-08 22:32+0330\n"
+"Last-Translator: علی <irani.2007@gmail.com>\n"
+"Language-Team: Ali Irani <info@p30design.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+
+#: wp-optimize-admin.php:47
+msgid " Database Optimized!<br>"
+msgstr " پایگاه داده بهینه شد!"
+
+#: wp-optimize-admin.php:79
+msgid " post revisions deleted<br>"
+msgstr " رونوشت‌ حذف شد<br>"
+
+#: wp-optimize-admin.php:90
+msgid " spam comments deleted<br>"
+msgstr " دیدگاه‌ جفنگ حذف شد<br>"
+
+#: wp-optimize-admin.php:96
+msgid " unapproved comments deleted<br>"
+msgstr " دیدگاه‌ تائید نشده حذف شد<br>"
+
+#: wp-optimize-admin.php:112
+msgid "Admin username updated<br>"
+msgstr "نام کاربری مدیر به‌روز شد<br>"
+
+#: wp-optimize-admin.php:119
+msgid "ADMIN USERNAME NOT UPDATED<br>"
+msgstr "نام کاربری مدیر به‌روز نشد!<br>"
+
+#: wp-optimize-admin.php:124
+msgid "NO Actions Taken<br>"
+msgstr ""
+
+#: wp-optimize-admin.php:144
+msgid " post revisions in your database"
+msgstr " رونوشت در پایگاه داده شما وجود دارد"
+
+#: wp-optimize-admin.php:146
+msgid "No post revisions found"
+msgstr "رونوشتی وجود ندارد"
+
+#: wp-optimize-admin.php:153
+msgid " spam comments found"
+msgstr " دیدگاه جفنگ دارید"
+
+#: wp-optimize-admin.php:153
+msgid " Review Spams</a>"
+msgstr " نمایش جفنگ‌ها</a>"
+
+#: wp-optimize-admin.php:155
+msgid "No spam comments found"
+msgstr "دیدگاه جفنگی وجود ندارد"
+
+#: wp-optimize-admin.php:162
+msgid " unapproved comments found"
+msgstr " دیدگاه تائید نشده دارید"
+
+#: wp-optimize-admin.php:162
+msgid " Review Unapproved Comments</a>"
+msgstr " مشاهده دیدگاه‌های تائید نشده</a>"
+
+#: wp-optimize-admin.php:164
+msgid "No unapproved comments found"
+msgstr "دیدگاه تائید نشده‌ای وجود ندارد"
+
+#: wp-optimize-admin.php:169
+msgid "nothing"
+msgstr "هیچ"
+
+#: wp-optimize-admin.php:196
+msgid "Tables Report"
+msgstr "جدول گزارشات"
+
+#: wp-optimize-admin.php:206
+msgid "Database Optimization Options"
+msgstr "گزینه‌های بهینه‌سازی پایگاه داده"
+
+#: wp-optimize-admin.php:212
+msgid "Remove all Post revisions"
+msgstr "حذف تمام رونوشت‌ها"
+
+#: wp-optimize-admin.php:222
+msgid "Clean marked Spam comments"
+msgstr "پاک کردن دیدگاه‌های جفنگ"
+
+#: wp-optimize-admin.php:232
+msgid "Clean Unapproved comments"
+msgstr "پاک کردن دیدگاه‌های تائید نشده"
+
+#: wp-optimize-admin.php:242
+msgid "Optimize database tables"
+msgstr "بهینه سازی جداول پایگاه داده"
+
+#: wp-optimize-admin.php:250
+msgid "Security Tools"
+msgstr "ابزار امنیتی"
+
+#: wp-optimize-admin.php:254
+msgid "Old username:"
+msgstr "نام کاربری قدیم:"
+
+#: wp-optimize-admin.php:262
+msgid "New username:"
+msgstr "نام کاربری جدید:"
+
+#: wp-optimize-admin.php:271
+msgid "Process"
+msgstr "پردازش"
+
+#: wp-optimize-admin.php:278
+msgid "Plugin Homepage"
+msgstr "صفحه افزونه"
+
+#: wp-optimize-admin.php:282
+msgid "RSS Feed"
+msgstr "خوراک RSS"
+
+#: wp-optimize-admin.php:283
+msgid "Stay updated with RSS feed"
+msgstr "با خوراک RSS به‌روز بمانید"
+
+#: wp-optimize-admin.php:287
+msgid "Did this helped you out"
+msgstr "این کارت رو راه انداخت یا نه"
+
+#: wp-optimize-admin.php:288
+msgid "Do you like to donate an amount?"
+msgstr "شما دوست دارید با هدایای نقدی خود به ما کمک کنید؟"
+
+#: wp-optimize-admin.php:307
+msgid "Database Tables Report"
+msgstr "جدول گزارشات پایگاه داده"
+
+#: wp-optimize-admin.php:308
+msgid "Database Name:"
+msgstr "نام پایگاه داده:"
+
+#: wp-optimize-admin.php:312
+msgid "Optimized all the tables found in the database."
+msgstr "تمام جداول موجود در پایگاه داده بهینه سازی شد."
+
+#: wp-optimize-admin.php:320
+#: wp-optimize-admin.php:328
+msgid "Table"
+msgstr "جدول"
+
+#: wp-optimize-admin.php:321
+#: wp-optimize-admin.php:329
+msgid "Size"
+msgstr "اندازه"
+
+#: wp-optimize-admin.php:322
+#: wp-optimize-admin.php:330
+msgid "Status"
+msgstr "وضعیت"
+
+#: wp-optimize-admin.php:323
+#: wp-optimize-admin.php:331
+msgid "Space Save"
+msgstr "فضای کم شده"
+
+#: wp-optimize-admin.php:365
+msgid "Already Optimized"
+msgstr "بهینه"
+
+#: wp-optimize-admin.php:374
+msgid "Optimized"
+msgstr "بهینه شد"
+
+#: wp-optimize-admin.php:382
+msgid "Need to Optimize"
+msgstr "نیاز به بهینه سازی"
+
+#: wp-optimize-admin.php:399
+msgid "Optimization Results:"
+msgstr "نتایج بهینه سازی:"
+
+#: wp-optimize-admin.php:400
+msgid "Total Space Saved:"
+msgstr "کل حجم کم شده:"
+
+#: wp-optimize-admin.php:405
+msgid "Optimization Possibility:"
+msgstr "امکان بهینه سازی:"
+
+#: wp-optimize-admin.php:406
+msgid "Total space can be saved:"
+msgstr "تمام فضایی که قادر به کاهش آن هستیم:"
+
+#. Plugin Name of an extension
+msgid "WP-Optimize"
+msgstr ""
+
+#. Plugin URI of an extension
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr ""
+
+#. Description of an extension
+msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. allows you to rename your admin name also. Additionally it allows you to run optimize command on your wordpress core tables (use with caution)."
+msgstr ""
+
+#. Author of an extension
+msgid "Ruhani Rabin"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://www.ruhanirabin.com"
+msgstr ""
+

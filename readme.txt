@@ -3,8 +3,8 @@ Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133
 Tags: comments, spam, optimize, database, revisions, users, security, posts
 Requires at least: 2.7
-Tested up to: 2.8.6
-Stable tag: 0.7.1
+Tested up to: 2.9.1
+Stable tag: 0.8.0
 
 This plugin allows you to clean up your wordpress database and optimize it without phpMyAdmin. Also renames any username. 
 
@@ -14,6 +14,11 @@ WP-Optimize is a wordpress 2.7++ database cleanup and optimization tool. It does
 It allows you to remove post revisions, comments in the spam queue, un-approved comments within few clicks. 
 
 Additionally you can rename any username to another username too.
+
+Now Multi-Lingual. 
+
+**Translators are welcome to send their Translated Files to be included.**
+Contact me at http://wwww.ruhanirabin.com/contact/
 
 
 **Features:**
@@ -57,6 +62,11 @@ Because you've changed your username, wordpress can't get authentication data fr
 2. Database tables report
 
 == Changelog ==
+
+= 0.8.0
+* Added Multilanguage capability
+* Added translation WP-OPTIMIZE.POT file 
+* Farsi Translation included now (Thanks to Ali irani)
 
 = 0.7.1 =
 * POST META Table cleanup code removed cause it is making problems with many hosts

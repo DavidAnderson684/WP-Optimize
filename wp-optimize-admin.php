@@ -24,7 +24,7 @@ if (! defined('WP_PLUGIN_URL'))
     define('WP_PLUGIN_URL', WP_CONTENT_URL . '/plugins');
 
 $text = '';
-$textdomain = 'wp-optimize';
+//$textdomain = 'wp-optimize';
 
 if (isset($_POST["clean-revisions"])) {
     $text .= cleanUpSystem('revisions');
@@ -44,7 +44,7 @@ if (isset($_POST["unapproved-comments"])) {
 
 if (isset($_POST["optimize-db"])) {
     //$text .= cleanUpSystem('optimize-db');
-    $text .= DB_NAME.__(" Database Optimized!<br>", $textdomain);
+    $text .= DB_NAME.__(" Database Optimized!<br>", 'wp-optimize');
     }
 
 
@@ -76,7 +76,7 @@ function cleanUpSystem($cleanupType){
 							$cleaned_ids[$meta->post_id] = true;
 						} */
 						
-            $message .= $revisions.__(' post revisions deleted<br>', $textdomain);
+            $message .= $revisions.__(' post revisions deleted<br>', 'wp-optimize');
             break;
 
         //case "postmeta":
@@ -87,13 +87,13 @@ function cleanUpSystem($cleanupType){
         case "spam":
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam';";
             $comments = $wpdb->query( $clean );
-            $message .= $comments.__(' spam comments deleted<br>', $textdomain);
+            $message .= $comments.__(' spam comments deleted<br>', 'wp-optimize');
             break;
 
         case "unapproved":
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = '0';";
             $comments = $wpdb->query( $clean );
-            $message .= $comments.__(' unapproved comments deleted<br>', $textdomain);
+            $message .= $comments.__(' unapproved comments deleted<br>', 'wp-optimize');
             break;
 
 
@@ -109,19 +109,19 @@ function cleanUpSystem($cleanupType){
                 $clean = "UPDATE $wpdb->users SET user_login = '$newAdmin' WHERE user_login ='$oldAdmin'";
                 $setlogin = $wpdb->query( $clean );
                     if ($setlogin !== 0){
-                        $message .= __('Admin username updated<br>', $textdomain);
+                        $message .= __('Admin username updated<br>', 'wp-optimize');
                     }
                     else{
                         $message .= "";
                     }
             }
             else{
-                $message .= __('ADMIN USERNAME NOT UPDATED<br>', $textdomain);
+                $message .= __('ADMIN USERNAME NOT UPDATED<br>', 'wp-optimize');
             }
             break;
 
         default:
-            $message .= __('NO Actions Taken<br>', $textdomain);
+            $message .= __('NO Actions Taken<br>', 'wp-optimize');
             break;
     } // end of switch
 return $message;
@@ -141,32 +141,32 @@ function getInfo($cleanupType){
 
             //var_dump(!$revisions ==);
             if(!$revisions == 0 || !$revisions == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$revisions.__(' post revisions in your database', $textdomain);
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$revisions.__(' post revisions in your database', 'wp-optimize');
             }
-            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No post revisions found', $textdomain);
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No post revisions found', 'wp-optimize');
             break;
 
         case "spam":
             $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = 'spam';";
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' spam comments found', $textdomain).' | <a href="edit-comments.php?comment_status=spam">'.__(' Review Spams</a>', $textdomain);
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.__(' Review Spams</a>', 'wp-optimize');
             } else
-              $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', $textdomain);
+              $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
             break;
 
         case "unapproved":
             $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = '0';";
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' unapproved comments found', $textdomain).' | <a href="edit-comments.php?comment_status=moderated">'.__(' Review Unapproved Comments</a>', $textdomain);;
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' unapproved comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=moderated">'.__(' Review Unapproved Comments</a>', 'wp-optimize');;
             } else
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unapproved comments found', $textdomain);
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unapproved comments found', 'wp-optimize');
 
             break;
 
         default:
-            $message .= __('nothing', $textdomain);
+            $message .= __('nothing', 'wp-optimize');
             break;
     } // end of switch
 return $message;
@@ -190,10 +190,10 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><img src="<?php _e(WP_PLUGIN_URL) ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin" /></td>
+    <td colspan="2"><img src="<?php _e(WP_PLUGIN_URL, 'wp-optimize') ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin" /></td>
   </tr>
   <tr>
-    <td><a href="#report"><?php _e('Tables Report', $textdomain); ?></a></td>
+    <td><a href="#report"><?php _e('Tables Report', 'wp-optimize'); ?></a></td>
     <td>&nbsp;</td>
   </tr>
 
@@ -203,14 +203,14 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><h3><?php _e('Database Optimization Options',$textdomain); ?></h3></td>
+    <td><h3><?php _e('Database Optimization Options','wp-optimize'); ?></h3></td>
   </tr>
 
   <tr>
     <td width="25%">&nbsp;</td>
     <td width="75%"><input name="clean-revisions" id="clean-revisions" type="checkbox" value="" />
-	 <?php _e('Remove all Post revisions', $textdomain); ?><br />
-   <small><?php _e(getInfo('revisions')); ?></small></td>
+	 <?php _e('Remove all Post revisions', 'wp-optimize'); ?><br />
+   <small><?php _e(getInfo('revisions'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -219,8 +219,8 @@ return $message;
   <tr>
     <td>&nbsp;</td>
     <td><input name="clean-comments" type="checkbox" value="" />
-	 <?php _e('Clean marked Spam comments', $textdomain); ?><br />
-   <small><?php _e(getInfo('spam')); ?></small></td>
+	 <?php _e('Clean marked Spam comments', 'wp-optimize'); ?><br />
+   <small><?php _e(getInfo('spam'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -229,8 +229,8 @@ return $message;
   <tr>
     <td>&nbsp;</td>
     <td><input name="unapproved-comments" type="checkbox" value="" />
-	 <?php _e('Clean Unapproved comments', $textdomain); ?><br />
-   <small><?php _e(getInfo('unapproved')); ?></small></td>
+	 <?php _e('Clean Unapproved comments', 'wp-optimize'); ?><br />
+   <small><?php _e(getInfo('unapproved'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -239,7 +239,7 @@ return $message;
   <tr>
     <td>&nbsp;</td>
     <td><input name="optimize-db" type="checkbox" value="" />
-	 <?php _e('Optimize database tables', $textdomain); ?></td>
+	 <?php _e('Optimize database tables', 'wp-optimize'); ?></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -247,11 +247,11 @@ return $message;
   </tr>
   
   <tr>
-    <td><h3><?php _e('Security Tools',$textdomain); ?></h3></td>
+    <td><h3><?php _e('Security Tools', 'wp-optimize'); ?></h3></td>
   </tr>
 
   <tr>
-    <td><p align="right"><?php _e('Old username:', $textdomain); ?>&nbsp;</p></td>
+    <td><p align="right"><?php _e('Old username:', 'wp-optimize'); ?>&nbsp;</p></td>
     <td><input type="text" name="old_admin" id="old_admin" class="old_admin" size="40" value=""></td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><p align="right"><?php _e('New username:', $textdomain); ?>&nbsp;</p></td>
+    <td><p align="right"><?php _e('New username:', 'wp-optimize'); ?>&nbsp;</p></td>
     <td><input type="text" name="new_admin" id="new_admin" class="new_admin" size="40" value=""></td>
   </tr>
   <tr>
@@ -268,24 +268,24 @@ return $message;
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><input class="button-primary" type="submit" name="wp-optimize" value="<?php _e('Process', $textdomain); ?>" /></td>
+    <td><input class="button-primary" type="submit" name="wp-optimize" value="<?php _e('Process', 'wp-optimize'); ?>" /></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><p align="right"><?php _e('Plugin Homepage', $textdomain); ?> :&nbsp;</p></td>
+    <td><p align="right"><?php _e('Plugin Homepage', 'wp-optimize'); ?> :&nbsp;</p></td>
     <td><a href="http://www.ruhanirabin.com/wp-optimize/" target="_blank">WP-Optimize</a></td>
   </tr>
   <tr>
-    <td><p align="right"><?php _e('RSS Feed', $textdomain); ?> :&nbsp;</p></td>
-    <td><a href="http://feeds2.feedburner.com/RuhaniRabin" target="_blank"><?php _e('Stay updated with RSS feed', $textdomain); ?></a>
+    <td><p align="right"><?php _e('RSS Feed', 'wp-optimize'); ?> :&nbsp;</p></td>
+    <td><a href="http://feeds2.feedburner.com/RuhaniRabin" target="_blank"><?php _e('Stay updated with RSS feed', 'wp-optimize'); ?></a>
     </td>
   </tr>
   <tr>
-    <td><p align="right"><?php _e('Did this helped you out', $textdomain); ?>? :&nbsp;</p></td>
-    <td><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133" target="_blank"><?php _e('Do you like to donate an amount?', $textdomain); ?></a></td>
+    <td><p align="right"><?php _e('Did this helped you out', 'wp-optimize'); ?>? :&nbsp;</p></td>
+    <td><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133" target="_blank"><?php _e('Do you like to donate an amount?', 'wp-optimize'); ?></a></td>
   </tr>
 
   </form>
@@ -304,12 +304,12 @@ else optimizeTables(false);
 Function optimizeTables($Optimize=false){
 ?>
 
-<h3><?php _e('Database Tables Report',$textdomain); ?></h3>
-<h3><?php _e('Database Name:',$textdomain); ?> '<?php _e(DB_NAME);?>'</h3>
+<h3><?php _e('Database Tables Report', 'wp-optimize'); ?></h3>
+<h3><?php _e('Database Name:', 'wp-optimize'); ?> '<?php _e(DB_NAME, 'wp-optimize');?>'</h3>
 <?php if($Optimize){
     ?>
 
-<p><?php _e('Optimized all the tables found in the database.',$textdomain)?></p>
+<p><?php _e('Optimized all the tables found in the database.', 'wp-optimize')?></p>
 <?php } ?>
 
 <a name="report">&nbsp;</a>
@@ -317,18 +317,18 @@ Function optimizeTables($Optimize=false){
 <table class="widefat fixed" cellspacing="0">
 <thead>
 	<tr>
-	<th scope="col"><?php _e('Table',$textdomain); ?></th>
-	<th scope="col"><?php _e('Size',$textdomain)?></th>
-	<th scope="col"><?php _e('Status',$textdomain); ?></th>
-	<th scope="col"><?php _e('Space Save',$textdomain); ?></th>
+	<th scope="col"><?php _e('Table', 'wp-optimize'); ?></th>
+	<th scope="col"><?php _e('Size', 'wp-optimize')?></th>
+	<th scope="col"><?php _e('Status', 'wp-optimize'); ?></th>
+	<th scope="col"><?php _e('Space Save', 'wp-optimize'); ?></th>
 	</tr>
 </thead>
 <tfoot>
 	<tr>
-	<th scope="col"><?php _e('Table',$textdomain); ?></th>
-	<th scope="col"><?php _e('Size',$textdomain)?></th>
-	<th scope="col"><?php _e('Status',$textdomain); ?></th>
-	<th scope="col"><?php _e('Space Save',$textdomain); ?></th>
+	<th scope="col"><?php _e('Table', 'wp-optimize'); ?></th>
+	<th scope="col"><?php _e('Size', 'wp-optimize')?></th>
+	<th scope="col"><?php _e('Status', 'wp-optimize'); ?></th>
+	<th scope="col"><?php _e('Space Save', 'wp-optimize'); ?></th>
 	</tr>
 </tfoot>
 <tbody id="the-list">
@@ -362,7 +362,7 @@ $alternate = ' class="alternate"';
 				echo "<tr". $alternate .">
 					<td class='column-name'>". $row[0] ."</td>
 					<td class='column-name'>". $total ." Kb"."</td>
-					<td class='column-name'>" .  __('Already Optimized',$textdomain) . "</td>
+					<td class='column-name'>" .  __('Already Optimized', 'wp-optimize') . "</td>
 					<td class='column-name'>0 Kb</td>
 					</tr>\n";
 			} else
@@ -371,7 +371,7 @@ $alternate = ' class="alternate"';
         echo "<tr". $alternate .">
 					<td class='column-name'>". $row[0] ."</td>
 					<td class='column-name'>". $total ." Kb"."</td>
-          <td class='column-name' style=\"color: #0000FF;\">" .  __('Optimized',$textdomain) . "</td>
+          <td class='column-name' style=\"color: #0000FF;\">" .  __('Optimized', 'wp-optimize') . "</td>
 					<td class='column-name'>". $gain ." Kb</td>
 					</tr>\n";
         }
@@ -379,7 +379,7 @@ $alternate = ' class="alternate"';
         echo "<tr". $alternate .">
 					<td class='column-name'>". $row[0] ."</td>
 					<td class='column-name'>". $total ." Kb"."</td>
-          <td class='column-name' style=\"color: #FF0000;\">" .  __('Need to Optimize',$textdomain) . "</td>
+          <td class='column-name' style=\"color: #FF0000;\">" .  __('Need to Optimize', 'wp-optimize') . "</td>
 					<td class='column-name'>". $gain ." Kb</td>
 					</tr>\n";
         }
@@ -396,14 +396,14 @@ $alternate = ' class="alternate"';
 
 <?php $total_gain = round ($total_gain,3);?>
 
-<h3><?php _e('Optimization Results:',$textdomain); ?></h3>
-<p style="color: #0000FF;"><?php _e('Total Space Saved:',$textdomain); ?> <?php echo $total_gain?> Kb</p>
+<h3><?php _e('Optimization Results:', 'wp-optimize'); ?></h3>
+<p style="color: #0000FF;"><?php _e('Total Space Saved:', 'wp-optimize'); ?> <?php echo $total_gain?> Kb</p>
   <?php } else { ?>
 <?php $total_gain = round ($total_gain,3); ?>
   <?php if(!$total_gain==0){ ?>
 
-<h3><?php _e('Optimization Possibility:',$textdomain); ?></h3>
-<p style="color: #FF0000;"><?php _e('Total space can be saved:',$textdomain); ?> <?php echo $total_gain?> Kb</p>
+<h3><?php _e('Optimization Possibility:', 'wp-optimize'); ?></h3>
+<p style="color: #FF0000;"><?php _e('Total space can be saved:', 'wp-optimize'); ?> <?php echo $total_gain?> Kb</p>
   <?php } ?>
 <?php
 }
