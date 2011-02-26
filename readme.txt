@@ -3,8 +3,8 @@ Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133
 Tags: comments, spam, optimize, database, revisions, users, security, posts
 Requires at least: 2.7
-Tested up to: 2.9.1
-Stable tag: 0.8.0
+Tested up to: 3.1
+Stable tag: 0.9.1
 
 This plugin allows you to clean up your wordpress database and optimize it without phpMyAdmin. Also renames any username. 
 
@@ -13,17 +13,25 @@ This plugin allows you to clean up your wordpress database and optimize it witho
 WP-Optimize is a wordpress 2.7++ database cleanup and optimization tool. It doesn't require PhpMyAdmin to optimize your database tables. 
 It allows you to remove post revisions, comments in the spam queue, un-approved comments within few clicks. 
 
-Additionally you can rename any username to another username too.
+Additionally you can rename any username to another username too. 
+For example: If you want to rename default 'admin' username to 'someothername'; just put 'admin' (without quotes) to the Old username field and the new username to the New username field, then click "PROCESS")
 
 Now Multi-Lingual. 
+
+
+**Requirements:**
+*   WordPress 2.7++
+*   PHP 5.1.xx
+*   MySql 5.1.xx
+*   PHP 4.xx and MySql 4.xx not supported
 
 **Translators are welcome to send their Translated Files to be included.**
 Contact me at http://wwww.ruhanirabin.com/contact/
 
-
 **Features:**
 
 *   Remove the wordpress post revisions
+*   Remove the wordpress auto draft posts [NEW]
 *   Remove all the comments in the spam queue
 *   Remove all the un-approved comments
 *   Rename one username to another username, it's designed to rename default "Admin" user to something else
@@ -44,9 +52,16 @@ Contact me at http://wwww.ruhanirabin.com/contact/
 *   Unzip the archive into your hard drive. 
 *   Upload the folder to your wp-content/plugins folder on your web host.
 *   Login to your dashboard and activate the plugin via activate option.
-*   The menu item is under Dashboard>WP-Optimize.
+*   The main level menu item is WP-Optimize. Scroll down to see it.
 
 == Frequently Asked Questions ==
+
+= I am having error - Warning: mysql_num_rows(): supplied argument is not a valid MySQL result resource ...  =
+Upgrade/Update your WordPress to at least 2.7
+Upgrade/Update your WP-Optimize plugin
+Upgrade your PHP to at least 5.1.xx
+Upgrade your MySql to at least MySql 5.1.xx
+Remember: PHP 4.xx and MySql 4.xx not supported
 
 = Is there any bug in this plugin =
 
@@ -62,6 +77,13 @@ Because you've changed your username, wordpress can't get authentication data fr
 2. Database tables report
 
 == Changelog ==
+
+= 0.9.1 =
+* Fixed problem with database names containing "-"
+* NEW Main Level Menu Item added for WP-Optimize, You might need to scroll down to see it
+* Compatibilty with wordpress 3.1
+* Added few translations
+* Added auto draft post removal feature
 
 = 0.8.0 =
 * Added Multilanguage capability

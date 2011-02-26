@@ -29,6 +29,10 @@ $text = '';
 if (isset($_POST["clean-revisions"])) {
     $text .= cleanUpSystem('revisions');
     }
+	
+if (isset($_POST["clean-autodraft"])) {
+    $text .= cleanUpSystem('autodraft');
+    }	
 
 if (isset($_POST["old_admin"]) && isset($_POST["new_admin"])) {
     $text .= cleanUpSystem('changeadmin');
@@ -79,6 +83,13 @@ function cleanUpSystem($cleanupType){
             $message .= $revisions.__(' post revisions deleted<br>', 'wp-optimize');
             break;
 
+        case "autodraft":
+            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'auto-draft'";
+            $autodraft = $wpdb->query( $clean );
+            $message .= $autodraft.__(' auto drafts deleted<br>', 'wp-optimize');
+            break;
+
+			
         //case "postmeta":
 
 		//	$message .= $total_cleaned_metas.__(' postmeta items from revisions and nonexistant posts deleted', $textdomain);
@@ -146,6 +157,17 @@ function getInfo($cleanupType){
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No post revisions found', 'wp-optimize');
             break;
 
+        case "autodraft":
+            $sql = "SELECT COUNT(*) FROM $wpdb->posts WHERE post_status = 'auto-draft'";
+            $autodraft = $wpdb->get_var( $sql );
+
+            if(!$autodraft == 0 || !$autodraft == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$autodraft.__(' auto draft post(s) in your database', 'wp-optimize');
+            }
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No auto draft posts found', 'wp-optimize');
+            break;
+			
+			
         case "spam":
             $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = 'spam';";
             $comments = $wpdb->get_var( $sql );
@@ -193,6 +215,10 @@ return $message;
     <td colspan="2"><img src="<?php _e(WP_PLUGIN_URL, 'wp-optimize') ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin" /></td>
   </tr>
   <tr>
+    <td><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
     <td><a href="#report"><?php _e('Tables Report', 'wp-optimize'); ?></a></td>
     <td>&nbsp;</td>
   </tr>
@@ -216,6 +242,17 @@ return $message;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input name="clean-autodraft" id="clean-autodraft" type="checkbox" value="" />
+	 <?php _e('Remove all auto draft posts', 'wp-optimize'); ?><br />
+   <small><?php _e(getInfo('autodraft'), 'wp-optimize'); ?></small></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
   <tr>
     <td>&nbsp;</td>
     <td><input name="clean-comments" type="checkbox" value="" />
@@ -268,7 +305,7 @@ return $message;
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><input class="button-primary" type="submit" name="wp-optimize" value="<?php _e('Process', 'wp-optimize'); ?>" /></td>
+    <td><input class="button-primary" type="submit" name="wp-optimize" value="<?php _e('PROCESS', 'wp-optimize'); ?>" /></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -338,7 +375,8 @@ $alternate = ' class="alternate"';
 	$tot_data = 0;
 	$tot_idx = 0;
 	$tot_all = 0;
-	$local_query = 'SHOW TABLE STATUS FROM '. DB_NAME;
+	//$local_query = 'SHOW TABLE STATUS FROM '. DB_NAME;
+	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
 	$result = mysql_query($local_query);
 	if (mysql_num_rows($result)){
 		while ($row = mysql_fetch_array($result))
