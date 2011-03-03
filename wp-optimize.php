@@ -3,11 +3,11 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. allows you to rename your admin name also. Additionally it allows you to run optimize command on your wordpress core tables (use with caution).
-Version: 0.9.1
+Version: 0.9.2
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
-    Copyright 2008-2011  Ruhani Rabin  (email : get@ruhanirabin.com)
+    Copyright 2011  Ruhani Rabin  (email : get@ruhanirabin.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -47,12 +47,14 @@ function optimize_menu(){
 
 function optimize_admin_actions()
 {
-	if (function_exists('add_meta_box')) { 
-    	add_menu_page("WP-Optimize", "WP-Optimize", 2, "WP-Optimize", "optimize_menu");
-    } else {
-    add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", 2, "WP-Optimize", "optimize_menu");
-    }
-    //add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", 10, "WP-Optimize", "optimize_menu");
+	global $current_user;
+	if ( current_user_can('manage_options') ) {
+		if (function_exists('add_meta_box')) { 
+			add_menu_page("WP-Optimize", "WP-Optimize", 2, "WP-Optimize", "optimize_menu");
+		} else {
+		add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", 2, "WP-Optimize", "optimize_menu");
+		} // end if addmetabox
+	}	
 }
 
 add_action('admin_menu', 'optimize_admin_actions');
