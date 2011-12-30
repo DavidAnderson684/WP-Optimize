@@ -10,7 +10,7 @@ Requires at least: 2.9
 
 Tested up to: 3.5
 
-Stable tag: 0.9.3
+Stable tag: 0.9.4
 
 
 
@@ -140,6 +140,11 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+
+= 0.9.4 =
+
+* Non Initialized variables fixes as of http://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
 
 
 = 0.9.3 =

@@ -63,7 +63,7 @@ if (isset($_POST["optimize-db"])) {
 
 function cleanUpSystem($cleanupType){
     global $wpdb;
-    $clean = "";
+    $clean = ""; $message = "";
 
     switch ($cleanupType) {
         case "revisions":
@@ -125,7 +125,7 @@ return $message;
 
 function getInfo($cleanupType){
     global $wpdb;
-    $sql = "";
+    $sql = ""; $message = "";
 
     switch ($cleanupType) {
         case "revisions":
@@ -358,7 +358,7 @@ Function optimizeTables($Optimize=false){
 <?php
 $alternate = ' class="alternate"';
 	$db_clean = DB_NAME;
-	$tot_data = 0;
+	$tot_data = 0; $total_gain = 0; $total_db_space = 0; $total_db_space_a = 0;
 	$tot_idx = 0;
 	$tot_all = 0;
 	//$local_query = 'SHOW TABLE STATUS FROM '. DB_NAME;
