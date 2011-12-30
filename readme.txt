@@ -26,10 +26,6 @@ WP-Optimize is a WordPress 2.9++ database cleanup and optimization tool. It does
 
 It allows you to remove post revisions, comments in the spam queue, un-approved comments within few clicks. 
 
-
-For example: If you want to rename default 'admin' username to 'someothername'; just put 'admin' (without quotes) to the Old username field and the new username to the New username field, then click "PROCESS")
-
-
 Now Multi-Lingual. 
 
 
