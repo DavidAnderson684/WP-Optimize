@@ -3,6 +3,10 @@
 # ---------------------------------- #
 # prevent file from being accessed directly
 # ---------------------------------- #
+# Removed Security tools             #
+# Added total db size                #
+# ---------------------------------- #
+# ---------------------------------- #
 if ('wp-optimize-admin.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not access this file directly. Thanks!');
 
@@ -65,21 +69,6 @@ function cleanUpSystem($cleanupType){
         case "revisions":
             $clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision'";
             $revisions = $wpdb->query( $clean );
-			
-/* 			$allposts = get_posts('numberposts=-1&orderby=ID&order=ASC&post_type=any&post_status=');
-			$allpost_ids = array();
-			foreach ($allposts as $onepost)
-				$allpost_ids[$onepost->ID] = true;
-				$cleaned_ids = array();
-				$total_cleaned_metas = 0;
-				$postmeta = $wpdb->get_results("SELECT * FROM $wpdb->postmeta", OBJECT);
-					foreach ($postmeta as $meta)
-						if (!isset($allpost_ids[$meta->post_id]) && !isset($cleaned_ids[$meta->post_id])) {
-							$cleaned_metas = $wpdb->query("DELETE FROM $wpdb->postmeta WHERE post_id = '".$meta->post_id."'");
-							$total_cleaned_metas += $cleaned_metas;
-							$cleaned_ids[$meta->post_id] = true;
-						} */
-						
             $message .= $revisions.__(' post revisions deleted<br>', 'wp-optimize');
             break;
 
@@ -88,12 +77,6 @@ function cleanUpSystem($cleanupType){
             $autodraft = $wpdb->query( $clean );
             $message .= $autodraft.__(' auto drafts deleted<br>', 'wp-optimize');
             break;
-
-			
-        //case "postmeta":
-
-		//	$message .= $total_cleaned_metas.__(' postmeta items from revisions and nonexistant posts deleted', $textdomain);
-        //    break;
 
         case "spam":
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam';";
@@ -107,27 +90,26 @@ function cleanUpSystem($cleanupType){
             $message .= $comments.__(' unapproved comments deleted<br>', 'wp-optimize');
             break;
 
-
-//        case "optimize-db":
-//            optimizeTables(true);
-//            $message .= "Database ".DB_NAME." Optimized!<br>";
-//            break;
+        //case "optimize-db":
+           //optimizeTables(true);
+           //$message .= "Database ".DB_NAME." Optimized!<br>";
+           //break;
 
         case "changeadmin":
             if (isset($_POST["old_admin"]) && isset($_POST["new_admin"])) {
                 $oldAdmin = $_POST["old_admin"];
                 $newAdmin = $_POST["new_admin"];
-                $clean = "UPDATE $wpdb->users SET user_login = '$newAdmin' WHERE user_login ='$oldAdmin'";
-                $setlogin = $wpdb->query( $clean );
-                    if ($setlogin !== 0){
-                        $message .= __('Admin username updated<br>', 'wp-optimize');
-                    }
-                    else{
-                        $message .= "";
-                    }
+                //$clean = "UPDATE $wpdb->users SET user_login = '$newAdmin' WHERE user_login ='$oldAdmin'";
+                //$setlogin = $wpdb->query( $clean );
+                //    if ($setlogin !== 0){
+                //        $message .= __('Admin username updated<br>', 'wp-optimize');
+                //    }
+                //    else{
+                //        $message .= "";
+                //    }
             }
             else{
-                $message .= __('ADMIN USERNAME NOT UPDATED<br>', 'wp-optimize');
+                //$message .= __('ADMIN USERNAME NOT UPDATED<br>', 'wp-optimize');
             }
             break;
 
@@ -219,7 +201,12 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><a href="#report"><?php _e('Tables Report', 'wp-optimize'); ?></a></td>
+    <td><a href="#report"><?php _e('Tables Report > ', 'wp-optimize'); ?></a></td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><a href="#total"><?php _e('Database Size > ', 'wp-optimize'); ?></a></td>
     <td>&nbsp;</td>
   </tr>
 
@@ -278,7 +265,7 @@ return $message;
     <td><input name="optimize-db" type="checkbox" value="" />
 	 <?php _e('Optimize database tables', 'wp-optimize'); ?></td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
@@ -298,7 +285,7 @@ return $message;
   <tr>
     <td><p align="right"><?php _e('New username:', 'wp-optimize'); ?>&nbsp;</p></td>
     <td><input type="text" name="new_admin" id="new_admin" class="new_admin" size="40" value=""></td>
-  </tr>
+  </tr> -->
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -340,7 +327,7 @@ else optimizeTables(false);
 <?php
 Function optimizeTables($Optimize=false){
 ?>
-
+<a name="report">&nbsp;</a>
 <h3><?php _e('Database Tables Report', 'wp-optimize'); ?></h3>
 <h3><?php _e('Database Name:', 'wp-optimize'); ?> '<?php _e(DB_NAME, 'wp-optimize');?>'</h3>
 <?php if($Optimize){
@@ -349,7 +336,6 @@ Function optimizeTables($Optimize=false){
 <p><?php _e('Optimized all the tables found in the database.', 'wp-optimize')?></p>
 <?php } ?>
 
-<a name="report">&nbsp;</a>
 
 <table class="widefat fixed" cellspacing="0">
 <thead>
@@ -386,6 +372,13 @@ $alternate = ' class="alternate"';
 			$total = $tot_data + $tot_idx;
 			$total = $total / 1024 ;
 			$total = round ($total,3);
+
+			$total_db_space = $tot_data + $tot_idx;
+			$total_db_space = $total_db_space / 1024 ;
+			$total_db_space_a += $total_db_space;
+			$total_db_space = round ($total_db_space,3);
+
+			
 			$gain= $row['Data_free'];
 			$gain = $gain / 1024 ;
 			$total_gain += $gain;
@@ -428,6 +421,9 @@ $alternate = ' class="alternate"';
 ?>
 </tbody>
 </table>
+<a name="total">&nbsp;</a>
+<h3><?php _e('Total Size of Database:', 'wp-optimize'); ?></h3>
+<h2><?php _e('', 'wp-optimize'); ?> <?php echo round ($total_db_space_a,3);?> Kb</h2>
 
 <?php if (isset($_POST["optimize-db"])) {
     ?>

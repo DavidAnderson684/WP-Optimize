@@ -3,11 +3,11 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. allows you to rename your admin name also. Additionally it allows you to run optimize command on your wordpress core tables (use with caution).
-Version: 0.9.2
+Version: 0.9.3
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
-    Copyright 2011  Ruhani Rabin  (email : get@ruhanirabin.com)
+    Copyright 2012  Ruhani Rabin  (email : get@ruhanirabin.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
