@@ -2,15 +2,15 @@
 
 Contributors: ruhanirabin
 
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2732133
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYFUKEK7NXAZ8
 
-Tags: comments, spam, optimize, database, revisions, users, posts
+Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin
 
-Requires at least: 2.9
+Requires at least: 3.5
 
-Tested up to: 3.5
+Tested up to: 4
 
-Stable tag: 0.9.4
+Stable tag: 0.9.8
 
 
 
@@ -22,18 +22,25 @@ This simple but effective plugin allows you to clean up your WordPress database 
 
 
 
-WP-Optimize is a WordPress 2.9++ database cleanup and optimization tool. It doesn't require PhpMyAdmin to optimize your database tables. 
+WP-Optimize is a WordPress 3.xx database cleanup and optimization tool. It doesn't require PhpMyAdmin to optimize your database tables. 
 
-It allows you to remove post revisions, comments in the spam queue, un-approved comments within few clicks. 
+It allows you to remove post revisions, comments in the spam queue, un-approved comments, items in trash within few clicks. 
+
+** Weekly scheduler introduced (EXPERIMENTAL) **
 
 Now Multi-Lingual. 
+
+
+**Are you interested to be a contributed developer of this plugin, use the contact form link below to contact me.**
+
+You will be credited inside the plugin screen.
 
 
 **Requirements:**
 
 
 
-*   WordPress 2.9++
+*   WordPress 3++
 
 *   PHP 5.1.xx
 
@@ -45,7 +52,7 @@ Now Multi-Lingual.
 
 **Translators are welcome to send their Translated Files to be included.**
 
-Contact me at http://wwww.ruhanirabin.com/contact/
+See options inside plugin or contact me via http://www.ruhanirabin.com/contact/
 
 
 
@@ -53,9 +60,15 @@ Contact me at http://wwww.ruhanirabin.com/contact/
 
 
 
+*   Remove all trackbacks and pingbacks (can significantly reduce db size)  [NEW]
+
+*   Clear Trash Comments and Posts [NEW]
+
+*   Enable/Disable weekly schedules of optimization  [NEW] Note: This is an EXPERIMENTAL feature. It may or may not work on all servers.
+
 *   Remove the WordPress post revisions
 
-*   Remove the WordPress auto draft posts [NEW]
+*   Remove the WordPress auto draft posts
 
 *   Remove all the comments in the spam queue
 
@@ -66,7 +79,6 @@ Contact me at http://wwww.ruhanirabin.com/contact/
 *   Display Database table statistics. Shows how much space can be optimzied and how much space has been cleared.
 
 *   Visible only to the administrators.
-
 
 
 
@@ -106,7 +118,7 @@ Contact me at http://wwww.ruhanirabin.com/contact/
 
 
 
-*   Upgrade/Update your WordPress to at least 3
+*   Upgrade/Update your WordPress to at least 3.5
 
 *   Upgrade/Update your WP-Optimize plugin
 
@@ -140,6 +152,15 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+
+= 0.9.8 =
+
+* Remove all trackbacks and pingbacks (can significantly reduce db size)
+
+* Remove all Trash Comments and Posts
+
+* Enable/Disable weekly schedules of optimization. This is an EXPERIMENTAL feature. It may or may not work on all servers.
 
 
 = 0.9.4 =
