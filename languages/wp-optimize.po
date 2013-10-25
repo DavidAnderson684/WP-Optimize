@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize\n"
+"Project-Id-Version: WP-Optimize 0.9.8-beta\n"
 "POT-Creation-Date: 2013-10-25 17:41+0800\n"
 "PO-Revision-Date: 2013-10-25 17:44+0800\n"
 "Last-Translator: \n"

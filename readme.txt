@@ -10,7 +10,7 @@ Requires at least: 3.5
 
 Tested up to: 4
 
-Stable tag: 0.9.8
+Stable tag: 0.9.8-beta
 
 
 
@@ -152,6 +152,10 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 0.9.8-beta =
+
+* added beta tag
 
 
 = 0.9.8 =
