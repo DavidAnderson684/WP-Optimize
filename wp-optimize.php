@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 0.9.8-beta
+Version: 1.0.1
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
@@ -103,11 +103,11 @@ function wpo_cron_weekly() {
 			//$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = '0';";
             //$comments = $wpdb->query( $clean );
 
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_type = 'pingback';";
-            $comments = $wpdb->query( $clean );
+            //$clean = "DELETE FROM $wpdb->comments WHERE comment_type = 'pingback';";
+            //$comments = $wpdb->query( $clean );
 
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_type = 'trackback';";
-            $comments = $wpdb->query( $clean );
+            //$clean = "DELETE FROM $wpdb->comments WHERE comment_type = 'trackback';";
+            //$comments = $wpdb->query( $clean );
 			
 		$db_tables = $wpdb->get_results('SHOW TABLES',ARRAY_A);
 		foreach ($db_tables as $table){

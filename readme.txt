@@ -10,7 +10,7 @@ Requires at least: 3.5
 
 Tested up to: 4
 
-Stable tag: 0.9.8-beta
+Stable tag: 1.0.1
 
 
 
@@ -152,6 +152,11 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
+
 
 = 0.9.8-beta =
 

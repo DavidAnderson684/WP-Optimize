@@ -289,7 +289,7 @@ return $message;
    <small><?php 
             _e('This will enable weekly scheduled of all the optimization listed including - ', 'wp-optimize'); 
             echo '<br/>';
-			_e('Optimize db, Remove AutoDrafts/Revisions, Removal of TrackBacks and Pingbacks.', 'wp-optimize'); 
+			_e('Optimize db, Remove AutoDrafts/Revisions, Posts and Comments in Trash.', 'wp-optimize'); 
             echo '<br/>';
 			_e('NOTE: Unapproved comments will not be removed automatically; just in case there are legitimate comments', 'wp-optimize');
  			?>
