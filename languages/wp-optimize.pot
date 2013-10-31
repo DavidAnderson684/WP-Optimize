@@ -1,0 +1,321 @@
+# Copyright (C) 2013 WP-Optimize
+# This file is distributed under the same license as the WP-Optimize package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Optimize 1.0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
+"POT-Creation-Date: 2013-10-30 07:07:34+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wp-optimize-admin.php:93
+msgid " Database Optimized!"
+msgstr ""
+
+#: wp-optimize-admin.php:111
+msgid " post revisions deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:117
+msgid " auto drafts deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:121 wp-optimize-admin.php:132
+msgid " items removed from Trash"
+msgstr ""
+
+#: wp-optimize-admin.php:128
+msgid " spam comments deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:139
+msgid " unapproved comments deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:145
+msgid " pingbacks deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:151
+msgid " trackbacks deleted"
+msgstr ""
+
+#: wp-optimize-admin.php:158
+msgid " Enabled weekly processing"
+msgstr ""
+
+#: wp-optimize-admin.php:164
+msgid " Disabled weekly processing"
+msgstr ""
+
+#: wp-optimize-admin.php:173
+msgid "NO Actions Taken"
+msgstr ""
+
+#: wp-optimize-admin.php:193
+msgid " post revisions in your database"
+msgstr ""
+
+#: wp-optimize-admin.php:195
+msgid "No post revisions found"
+msgstr ""
+
+#: wp-optimize-admin.php:203
+msgid " auto draft post(s) in your database"
+msgstr ""
+
+#: wp-optimize-admin.php:205
+msgid "No auto draft posts found"
+msgstr ""
+
+#: wp-optimize-admin.php:213
+msgid " spam comments found"
+msgstr ""
+
+#: wp-optimize-admin.php:213
+msgid " Review Spams"
+msgstr ""
+
+#: wp-optimize-admin.php:215
+msgid "No spam comments found"
+msgstr ""
+
+#: wp-optimize-admin.php:222
+msgid " unapproved comments found"
+msgstr ""
+
+#: wp-optimize-admin.php:222
+msgid " Review Unapproved Comments"
+msgstr ""
+
+#: wp-optimize-admin.php:224
+msgid "No unapproved comments found"
+msgstr ""
+
+#: wp-optimize-admin.php:232
+msgid " Pingbacks found"
+msgstr ""
+
+#: wp-optimize-admin.php:234
+msgid "No pingbacks found"
+msgstr ""
+
+#: wp-optimize-admin.php:242
+msgid " Trackbacks found"
+msgstr ""
+
+#: wp-optimize-admin.php:244
+msgid "No trackbacks found"
+msgstr ""
+
+#: wp-optimize-admin.php:250
+msgid "nothing"
+msgstr ""
+
+#: wp-optimize-admin.php:277
+msgid "Enable Weekly Cleanup (EXPERIMENTAL!)"
+msgstr ""
+
+#: wp-optimize-admin.php:284
+msgid " | Next Schedule - "
+msgstr ""
+
+#: wp-optimize-admin.php:290
+msgid ""
+"This will enable weekly scheduled of all the optimization listed including - "
+msgstr ""
+
+#: wp-optimize-admin.php:292
+msgid "Optimize db, Remove AutoDrafts/Revisions, Posts and Comments in Trash."
+msgstr ""
+
+#: wp-optimize-admin.php:294
+msgid ""
+"NOTE: Unapproved comments will not be removed automatically; just in case "
+"there are legitimate comments"
+msgstr ""
+
+#: wp-optimize-admin.php:305
+msgid "Credits"
+msgstr ""
+
+#: wp-optimize-admin.php:307
+msgid "Database Optimization Options"
+msgstr ""
+
+#: wp-optimize-admin.php:308
+msgid "See Tables Report > "
+msgstr ""
+
+#: wp-optimize-admin.php:308
+msgid "Database Size > "
+msgstr ""
+
+#: wp-optimize-admin.php:316
+msgid "Contibuting Developers"
+msgstr ""
+
+#: wp-optimize-admin.php:317
+msgid "Help me make this plugin better"
+msgstr ""
+
+#: wp-optimize-admin.php:317
+msgid "I am looking for contributing developers."
+msgstr ""
+
+#: wp-optimize-admin.php:318
+msgid "Your name and website will be credited here in the plugin"
+msgstr ""
+
+#: wp-optimize-admin.php:320
+msgid "Translators"
+msgstr ""
+
+#: wp-optimize-admin.php:321
+msgid "http://www.ruhanirabin.com/"
+msgstr ""
+
+#: wp-optimize-admin.php:321
+msgid ""
+"Default Language by Ruhani Rabin (Change this text and the link inside "
+"translation file)"
+msgstr ""
+
+#: wp-optimize-admin.php:323
+msgid "Download .PO File to translate"
+msgstr ""
+
+#: wp-optimize-admin.php:325
+msgid "Plugin Resources"
+msgstr ""
+
+#: wp-optimize-admin.php:326
+msgid "Plugin Homepage"
+msgstr ""
+
+#: wp-optimize-admin.php:326
+msgid "Support Forum"
+msgstr ""
+
+#: wp-optimize-admin.php:327
+msgid "Buy me a Coffee ?"
+msgstr ""
+
+#: wp-optimize-admin.php:331
+msgid "Remove all Post revisions"
+msgstr ""
+
+#: wp-optimize-admin.php:340
+msgid "Remove all auto draft posts (This will also clear out posts in Trash)"
+msgstr ""
+
+#: wp-optimize-admin.php:350
+msgid "Clean Spam comments (This will also clear out comments in Trash)"
+msgstr ""
+
+#: wp-optimize-admin.php:359
+msgid "Clean Unapproved comments"
+msgstr ""
+
+#: wp-optimize-admin.php:368
+msgid "Clean Pingbacks"
+msgstr ""
+
+#: wp-optimize-admin.php:377
+msgid "Clean Trackbacks"
+msgstr ""
+
+#: wp-optimize-admin.php:386
+msgid "Optimize database tables"
+msgstr ""
+
+#: wp-optimize-admin.php:393
+msgid "PROCESS"
+msgstr ""
+
+#: wp-optimize-admin.php:415
+msgid "Database Tables Report"
+msgstr ""
+
+#: wp-optimize-admin.php:416
+msgid "Database Name:"
+msgstr ""
+
+#: wp-optimize-admin.php:420
+msgid "Optimized all the tables found in the database."
+msgstr ""
+
+#: wp-optimize-admin.php:427 wp-optimize-admin.php:435
+msgid "Table"
+msgstr ""
+
+#: wp-optimize-admin.php:428 wp-optimize-admin.php:436
+msgid "Size"
+msgstr ""
+
+#: wp-optimize-admin.php:429 wp-optimize-admin.php:437
+msgid "Status"
+msgstr ""
+
+#: wp-optimize-admin.php:430 wp-optimize-admin.php:438
+msgid "Space Save"
+msgstr ""
+
+#: wp-optimize-admin.php:480
+msgid "Already Optimized"
+msgstr ""
+
+#: wp-optimize-admin.php:489
+msgid "Optimized"
+msgstr ""
+
+#: wp-optimize-admin.php:497
+msgid "Need to Optimize"
+msgstr ""
+
+#: wp-optimize-admin.php:509
+msgid "Total Size of Database:"
+msgstr ""
+
+#: wp-optimize-admin.php:517
+msgid "Optimization Results:"
+msgstr ""
+
+#: wp-optimize-admin.php:518
+msgid "Total Space Saved:"
+msgstr ""
+
+#: wp-optimize-admin.php:523
+msgid "Optimization Possibility:"
+msgstr ""
+
+#: wp-optimize-admin.php:524
+msgid "Total space can be saved:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Optimize"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin helps you to keep your database clean by removing post revisions "
+"and spams in a blaze. Additionally it allows you to run optimize command on "
+"your WordPress core tables (use with caution)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Ruhani Rabin"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.ruhanirabin.com"
+msgstr ""

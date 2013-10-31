@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Optimize 1.0.2 正體中文檔\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
+"POT-Creation-Date: 2013-10-30 07:07:34+00:00\n"
+"PO-Revision-Date: 2013-10-30 15:29+0800\n"
+"Last-Translator: 張香腸 <s9011514@gmail.com>\n"
+"Language-Team: 香腸炒魷魚 <service@sofree.cc>\n"
+"Language: 正體中文\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
+"X-Poedit-SearchPath-1: D:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
+
+#: wp-optimize-admin.php:93
+msgid " Database Optimized!"
+msgstr " 資料庫已優化！"
+
+#: wp-optimize-admin.php:111
+msgid " post revisions deleted"
+msgstr " 篇多版本文章已被刪除"
+
+#: wp-optimize-admin.php:117
+msgid " auto drafts deleted"
+msgstr " 篇自動草稿已被刪除"
+
+#: wp-optimize-admin.php:121 wp-optimize-admin.php:132
+msgid " items removed from Trash"
+msgstr " 項目被移到回收桶"
+
+#: wp-optimize-admin.php:128
+msgid " spam comments deleted"
+msgstr " 篇垃圾留言被刪除"
+
+#: wp-optimize-admin.php:139
+msgid " unapproved comments deleted"
+msgstr " 則未審核留言被刪除"
+
+#: wp-optimize-admin.php:145
+msgid " pingbacks deleted"
+msgstr " 則通知(Pingbacks)被刪除"
+
+#: wp-optimize-admin.php:151
+msgid " trackbacks deleted"
+msgstr "引用(Trackbacks)已被刪除"
+
+#: wp-optimize-admin.php:158
+msgid " Enabled weekly processing"
+msgstr " 啟用每週自動執行"
+
+#: wp-optimize-admin.php:164
+msgid " Disabled weekly processing"
+msgstr " 關閉每週自動執行"
+
+#: wp-optimize-admin.php:173
+msgid "NO Actions Taken"
+msgstr "沒有執行動作"
+
+#: wp-optimize-admin.php:193
+msgid " post revisions in your database"
+msgstr " 篇多版本文章在你的資料庫"
+
+#: wp-optimize-admin.php:195
+msgid "No post revisions found"
+msgstr "目前沒有多版本文章"
+
+#: wp-optimize-admin.php:203
+msgid " auto draft post(s) in your database"
+msgstr " 則自動草稿在你的資料庫中"
+
+#: wp-optimize-admin.php:205
+msgid "No auto draft posts found"
+msgstr "無自動草稿文章"
+
+#: wp-optimize-admin.php:213
+msgid " spam comments found"
+msgstr " 則垃圾留言被找到"
+
+#: wp-optimize-admin.php:213
+msgid " Review Spams"
+msgstr " 審核垃圾"
+
+#: wp-optimize-admin.php:215
+msgid "No spam comments found"
+msgstr "無垃圾留言"
+
+#: wp-optimize-admin.php:222
+msgid " unapproved comments found"
+msgstr " 篇未審核留言被找到"
+
+#: wp-optimize-admin.php:222
+msgid " Review Unapproved Comments"
+msgstr " 審核未核准的留言"
+
+#: wp-optimize-admin.php:224
+msgid "No unapproved comments found"
+msgstr "找不到未審核留言"
+
+#: wp-optimize-admin.php:232
+msgid " Pingbacks found"
+msgstr " 找到通知(Pingbacks)"
+
+#: wp-optimize-admin.php:234
+msgid "No pingbacks found"
+msgstr "找不到通知(Pingbacks)"
+
+#: wp-optimize-admin.php:242
+msgid " Trackbacks found"
+msgstr "引用(Trackbacks)已被找到"
+
+#: wp-optimize-admin.php:244
+msgid "No trackbacks found"
+msgstr "找不到任何引用(Trackbacks)"
+
+#: wp-optimize-admin.php:250
+msgid "nothing"
+msgstr "無"
+
+#: wp-optimize-admin.php:277
+msgid "Enable Weekly Cleanup (EXPERIMENTAL!)"
+msgstr "啟用每週自動清理 <span style=\"color:red\">(實驗功能!)</span>"
+
+#: wp-optimize-admin.php:284
+msgid " | Next Schedule - "
+msgstr " | 下次排程 - "
+
+#: wp-optimize-admin.php:290
+msgid ""
+"This will enable weekly scheduled of all the optimization listed including - "
+msgstr "這將啟用每週自動排程，將會優化整個資料庫，包含："
+
+#: wp-optimize-admin.php:292
+msgid "Optimize db, Remove AutoDrafts/Revisions, Posts and Comments in Trash."
+msgstr "優化資料庫、移除自動草稿、移除多版本文章、移除回收桶內的文章與留言。"
+
+#: wp-optimize-admin.php:294
+msgid ""
+"NOTE: Unapproved comments will not be removed automatically; just in case "
+"there are legitimate comments"
+msgstr "注意：未經核准的留言將會被自動移除。( 不論垃圾留言或是正常留言)"
+
+#: wp-optimize-admin.php:305
+msgid "Credits"
+msgstr "致謝"
+
+#: wp-optimize-admin.php:307
+msgid "Database Optimization Options"
+msgstr "資料表優化選項"
+
+#: wp-optimize-admin.php:308
+msgid "See Tables Report > "
+msgstr "查看資料表報表 → "
+
+#: wp-optimize-admin.php:308
+msgid "Database Size > "
+msgstr "瀏覽《資料庫大小》→"
+
+#: wp-optimize-admin.php:316
+msgid "Contibuting Developers"
+msgstr "開發貢獻者"
+
+#: wp-optimize-admin.php:317
+msgid "Help me make this plugin better"
+msgstr "幫助我們，讓這個外掛更棒"
+
+#: wp-optimize-admin.php:317
+msgid "I am looking for contributing developers."
+msgstr "我正在尋找開發貢獻者。"
+
+#: wp-optimize-admin.php:318
+msgid "Your name and website will be credited here in the plugin"
+msgstr "你的名字與網站將被列在本外掛此處的致謝名單"
+
+#: wp-optimize-admin.php:320
+msgid "Translators"
+msgstr "翻譯者"
+
+# This is the link for the Translator's website
+#: wp-optimize-admin.php:321
+msgid "http://www.ruhanirabin.com/"
+msgstr "http://sofree.cc"
+
+# Please change this to Translator's name
+#: wp-optimize-admin.php:321
+msgid ""
+"Default Language by Ruhani Rabin (Change this text and the link inside "
+"translation file)"
+msgstr "正體中文語系檔案由香腸炒魷魚(香腸)翻譯。"
+
+#: wp-optimize-admin.php:323
+msgid "Download .PO File to translate"
+msgstr "下載 .PO 檔案進行翻譯"
+
+#: wp-optimize-admin.php:325
+msgid "Plugin Resources"
+msgstr "外掛資源"
+
+#: wp-optimize-admin.php:326
+msgid "Plugin Homepage"
+msgstr "外掛官網"
+
+#: wp-optimize-admin.php:326
+msgid "Support Forum"
+msgstr "支援論壇"
+
+#: wp-optimize-admin.php:327
+msgid "Buy me a Coffee ?"
+msgstr "贊助一杯咖啡？"
+
+#: wp-optimize-admin.php:331
+msgid "Remove all Post revisions"
+msgstr "移除所有多版本文章"
+
+#: wp-optimize-admin.php:340
+msgid "Remove all auto draft posts (This will also clear out posts in Trash)"
+msgstr "移除所有自動儲存草稿(這也會一併清理回收桶內文章)"
+
+#: wp-optimize-admin.php:350
+msgid "Clean Spam comments (This will also clear out comments in Trash)"
+msgstr "清理垃圾留言(這也會一併清理回收桶內留言)"
+
+#: wp-optimize-admin.php:359
+msgid "Clean Unapproved comments"
+msgstr "清除未審核留言"
+
+#: wp-optimize-admin.php:368
+msgid "Clean Pingbacks"
+msgstr "移除通知(Pingbacks)"
+
+#: wp-optimize-admin.php:377
+msgid "Clean Trackbacks"
+msgstr "移除引用(Trackbacks)"
+
+#: wp-optimize-admin.php:386
+msgid "Optimize database tables"
+msgstr "優化資料表"
+
+#: wp-optimize-admin.php:393
+msgid "PROCESS"
+msgstr "執行"
+
+#: wp-optimize-admin.php:415
+msgid "Database Tables Report"
+msgstr "資料庫報表"
+
+#: wp-optimize-admin.php:416
+msgid "Database Name:"
+msgstr "資料庫名稱："
+
+#: wp-optimize-admin.php:420
+msgid "Optimized all the tables found in the database."
+msgstr "優化所有資料庫內的資料表。"
+
+#: wp-optimize-admin.php:427 wp-optimize-admin.php:435
+msgid "Table"
+msgstr "資料表"
+
+#: wp-optimize-admin.php:428 wp-optimize-admin.php:436
+msgid "Size"
+msgstr "大小"
+
+#: wp-optimize-admin.php:429 wp-optimize-admin.php:437
+msgid "Status"
+msgstr "狀態"
+
+#: wp-optimize-admin.php:430 wp-optimize-admin.php:438
+msgid "Space Save"
+msgstr "已節省空間"
+
+#: wp-optimize-admin.php:480
+msgid "Already Optimized"
+msgstr "已經優化"
+
+#: wp-optimize-admin.php:489
+msgid "Optimized"
+msgstr "優化"
+
+#: wp-optimize-admin.php:497
+msgid "Need to Optimize"
+msgstr "需要優化"
+
+#: wp-optimize-admin.php:509
+msgid "Total Size of Database:"
+msgstr "資料庫總大小："
+
+#: wp-optimize-admin.php:517
+msgid "Optimization Results:"
+msgstr "優化結果："
+
+#: wp-optimize-admin.php:518
+msgid "Total Space Saved:"
+msgstr "已被節省空間："
+
+#: wp-optimize-admin.php:523
+msgid "Optimization Possibility:"
+msgstr "可優化程度："
+
+#: wp-optimize-admin.php:524
+msgid "Total space can be saved:"
+msgstr "可以節省的總空間："
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Optimize"
+msgstr "WP 優化"
+
+# This is the link for the Translator's website
+#. Plugin URI of the plugin/theme
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr "http://www.ruhanirabin.com/wp-optimize/"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin helps you to keep your database clean by removing post revisions "
+"and spams in a blaze. Additionally it allows you to run optimize command on "
+"your WordPress core tables (use with caution)."
+msgstr ""
+"這個外掛可以幫助你清理資料庫，移除多版本文章、垃圾留言等。此外，他可以優化"
+"WordPress核心資料表(請小心使用)。"
+
+#. Author of the plugin/theme
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+# This is the link for the Translator's website
+#. Author URI of the plugin/theme
+msgid "http://www.ruhanirabin.com"
+msgstr "http://www.ruhanirabin.com"
+
+#~ msgid "Keep last "
+#~ msgstr "保持最新"
+
+#~ msgid " weeks of data"
+#~ msgstr " 每週資料"
+
+#~ msgid ""
+#~ "This option will retain the last X weeks of data and remove any junk data "
+#~ "before that period"
+#~ msgstr "這個設定將保留最後 X 週資料，並且會移除在此之前所有無用資料。"

@@ -13,6 +13,10 @@ if ('wp-optimize-admin.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	if ( !is_admin() ) {
       Die();
   }
+  
+if ( file_exists(__DIR__ . '/wp-optimize-common.php')) {
+    require(__DIR__ . '/wp-optimize-common.php');
+}   
 
 if (! defined('WP_CONTENT_DIR'))
     define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
@@ -32,15 +36,6 @@ if (! defined('OPTION_NAME'))
 	
 $text = '';
 
-/* function myPluginOptionsGet() {
-	if ( get_option( OPTION_NAME ) !== false ) {
-
-		// The option already exists, so we just update it.
-		get_option( OPTION_NAME );
-		return 'value="1" checked="checked"';
-	}
-} */
-
 if (isset($_POST["clean-revisions"])) {
     $text .= cleanUpSystem('revisions');
     }
@@ -48,10 +43,6 @@ if (isset($_POST["clean-revisions"])) {
 if (isset($_POST["clean-autodraft"])) {
     $text .= cleanUpSystem('autodraft');
     }	
-
-if (isset($_POST["old_admin"]) && isset($_POST["new_admin"])) {
-    $text .= cleanUpSystem('changeadmin');
-    }
 
 if (isset($_POST["clean-comments"])) {
     $text .= cleanUpSystem('spam');
@@ -70,26 +61,30 @@ if (isset($_POST["clean-trackbacks"])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // …
 	if (isset($_POST["enable-weekly"])) {
-		//$text .= cleanUpSystem('enable-weekly');
 		update_option( OPTION_NAME, 'true' );
-		//write_to_log('enabled cron');
+		
 			if (!wp_next_scheduled('wpo_cron_event2')) {
 				wp_schedule_event(time(), 'weekly', 'wpo_cron_event2');
 				add_filter('cron_schedules', 'wpo_cron_update_sched');
 			}		
 		} else { 
 		update_option( OPTION_NAME, 'false' );
-		//write_to_log('disabled cron');
 		wpo_cron_deactivate();
 		}
-
+		
+	if (isset($_POST["enable-retention"])) {
+		$retention_period = $_POST['retention-period'];
+		update_option( OPTION_NAME_RETENTION_ENABLED, 'true' );
+		update_option( OPTION_NAME_RETENTION_PERIOD, $retention_period );	
+	} else { 
+		update_option( OPTION_NAME_RETENTION_ENABLED, 'false' );
+	}
+		
+	
 }	
 	
-//else $text .= cleanUpSystem('disable-weekly');
-
 	
 if (isset($_POST["optimize-db"])) {
-    //$text .= cleanUpSystem('optimize-db');
     $text .= DB_NAME.__(' Database Optimized!', 'wp-optimize').'<br>';
     }
 
@@ -103,39 +98,66 @@ if (isset($_POST["optimize-db"])) {
 function cleanUpSystem($cleanupType){
     global $wpdb;
     $clean = ""; $message = "";
-
+    list ($retention_enabled, $retention_period) = getRetainInfo();
+	
     switch ($cleanupType) {
         case "revisions":
-            $clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision';";
-            $revisions = $wpdb->query( $clean );
+            $clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision'";
+            if ($retention_enabled == 'true') {
+                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
+            }
+            $clean .= ';';
+			
+			$revisions = $wpdb->query( $clean );
             $message .= $revisions.__(' post revisions deleted', 'wp-optimize').'<br>';
             break;
 
         case "autodraft":
-            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'auto-draft';";
+            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'auto-draft'";
+            if ($retention_enabled == 'true') {
+                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
+            }
+            $clean .= ';';
+			
             $autodraft = $wpdb->query( $clean );
             $message .= $autodraft.__(' auto drafts deleted', 'wp-optimize').'<br>';
 
-            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash';";
+            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash'";
+            if ($retention_enabled == 'true') {
+                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
+            }
+            $clean .= ';';
             $posttrash = $wpdb->query( $clean );
             $message .= $posttrash.__(' items removed from Trash', 'wp-optimize').'<br>';
 
             break;
 
         case "spam":
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam';";
+            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam'";
+            if ($retention_enabled == 'true') {
+				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
+            }
+            $clean .= ';';
+			
             $comments = $wpdb->query( $clean );
             $message .= $comments.__(' spam comments deleted', 'wp-optimize').'<br>';
 
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed';";
+            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+            if ($retention_enabled == 'true') {
+				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
+            }
+            $clean .= ';';			
             $commentstrash = $wpdb->query( $clean );
             $message .= $commentstrash.__(' items removed from Trash', 'wp-optimize').'<br>';
 
             break;
 
         case "unapproved":
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = '0';";
-            $comments = $wpdb->query( $clean );
+            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = '0'";
+            if ($retention_enabled == 'true') {
+				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
+            }
+            $clean .= ';';	            $comments = $wpdb->query( $clean );
             $message .= $comments.__(' unapproved comments deleted', 'wp-optimize').'<br>';
             break;
 			
@@ -152,7 +174,6 @@ function cleanUpSystem($cleanupType){
             break;			
 
         case "enable-weekly":
-            //myPluginOptionsSet('1');
 			update_option( OPTION_NAME, 'true' );
             $comments = '';
 			$message .= $comments.__(' Enabled weekly processing', 'wp-optimize').'<br>';
@@ -182,13 +203,18 @@ return $message;
 function getInfo($cleanupType){
     global $wpdb;
     $sql = ""; $message = "";
-
+    list ($retention_enabled, $retention_period) = getRetainInfo();
+	
     switch ($cleanupType) {
         case "revisions":
             $sql = "SELECT COUNT(*) FROM $wpdb->posts WHERE post_type = 'revision'";
+			
+            if ($retention_enabled == 'true') {
+                $sql .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
+            }
+            $sql .= ';';
             $revisions = $wpdb->get_var( $sql );
 
-            //var_dump(!$revisions ==);
             if(!$revisions == 0 || !$revisions == NULL){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$revisions.__(' post revisions in your database', 'wp-optimize');
             }
@@ -197,6 +223,11 @@ function getInfo($cleanupType){
 
         case "autodraft":
             $sql = "SELECT COUNT(*) FROM $wpdb->posts WHERE post_status = 'auto-draft'";
+
+            if ($retention_enabled == 'true') {
+                $sql .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
+            }
+            $sql .= ';';
             $autodraft = $wpdb->get_var( $sql );
 
             if(!$autodraft == 0 || !$autodraft == NULL){
@@ -207,7 +238,11 @@ function getInfo($cleanupType){
 			
 			
         case "spam":
-            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = 'spam';";
+            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = 'spam'";
+            if ($retention_enabled == 'true') {
+                $sql .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
+            }
+            $sql .= ';';			
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.__(' Review Spams', 'wp-optimize').'</a>';
@@ -216,8 +251,12 @@ function getInfo($cleanupType){
             break;
 
         case "unapproved":
-            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = '0';";
-            $comments = $wpdb->get_var( $sql );
+            $sql = "SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = '0'";
+            if ($retention_enabled == 'true') {
+                $sql .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
+            }
+            $sql .= ';';
+			$comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.__(' unapproved comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=moderated">'.__(' Review Unapproved Comments', 'wp-optimize').'</a>';;
             } else
@@ -271,8 +310,11 @@ return $message;
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="1"><img src="<?php _e(WP_PLUGIN_URL, 'wp-optimize') ?>/wp-optimize/wp-optimize.gif" border="0" alt="WP-Optimize Admin" title="WP-Optimize Admin" /></td>
-	<td colspan="1">
+    <td colspan="1" valign="top"><img src="<?php _e(WP_PLUGIN_URL, 'wp-optimize') ?>/wp-optimize/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" />
+	<br />
+	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:26px;" allowTransparency="true"></iframe>
+	</td>
+	<td colspan="1" valign="top">
     <input name="enable-weekly" id="enable-weekly" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME) == 'true' ? 'checked="checked"':''; ?> />
 	 <?php _e('Enable Weekly Cleanup (EXPERIMENTAL!)', 'wp-optimize'); ?>
 	 <?php 
@@ -294,11 +336,48 @@ return $message;
 			_e('NOTE: Unapproved comments will not be removed automatically; just in case there are legitimate comments', 'wp-optimize');
  			?>
 			</small>
+   <br />
+   <br />
+   <input name="enable-retention" id="enable-retention" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_RETENTION_ENABLED) == 'true' ? 'checked="checked"':''; ?> />
+   <?php _e('Keep last ', 'wp-optimize'); ?>
+	<select id="retention-period" name="retention-period">                      
+		<option value="<?php echo get_option(OPTION_NAME_RETENTION_PERIOD, '2'); ?>"><?php echo get_option(OPTION_NAME_RETENTION_PERIOD,'2'); ?></option>
+		<option value="2">2</option>
+		<option value="4">4</option>
+		<option value="6">6</option>
+		<option value="8">8</option>
+		<option value="10">10</option>
+	</select>
+   <?php _e(' weeks of data', 'wp-optimize'); ?>
+   <br />
+   <small><?php 
+            _e('This option will retain the last X weeks of data and remove any junk data before that period', 'wp-optimize'); 
+ 			?>
+			</small>
+   <br />
+   <br />
+   <?php  ?>
+   <?php
+	$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
+	if ($lastopt !== 'Never'){
+		echo '<i>';		
+		_e('Last automatic optimization was at ', 'wp-optimize');
+		echo '</i>';
+		echo '<b>';
+		echo $lastopt;
+		echo '</b>';
+		
+	} else {  
+		echo '<i>';		
+		_e('There was no automatic optimization', 'wp-optimize'); 
+		echo '</i>';
+	}
+   ?>
    </td>
 	</td>
   </tr>
   <tr>
-    <td><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe></td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -320,7 +399,7 @@ return $message;
 	<h3><?php _e('Translators','wp-optimize'); ?></h3><br />
 	<h4><a href="<?php _e('http://www.ruhanirabin.com/','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('Default Language by Ruhani Rabin (Change this text and the link inside translation file)','wp-optimize') ?></a></h4><br />
 	&nbsp;<br />
-	<a href="<?php echo WPO_PLUGIN_PATH.'languages/wp-optimize.po'; ?>" target="_blank" title=""><?php _e('Download .PO File to translate','wp-optimize'); ?></a><br />
+	<a href="<?php echo WPO_PLUGIN_PATH.'languages/wp-optimize.pot'; ?>" target="_blank" title=""><?php _e('Download .POT File to translate','wp-optimize'); ?></a><br />
 	<br />
 	<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3><br />
 	<a href="http://www.ruhanirabin.com/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a> | <a href="http://wordpress.org/support/plugin/wp-optimize" target="_blank"><?php _e('Support Forum', 'wp-optimize'); ?></a><br />
@@ -448,7 +527,9 @@ $alternate = ' class="alternate"';
 	//$local_query = 'SHOW TABLE STATUS FROM '. DB_NAME;
 	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
 	$result = mysql_query($local_query);
-	if (mysql_num_rows($result)){
+	//if (mysql_num_rows($result)){
+	//fix by mikel king
+	if (mysql_num_rows($result) && is_resource($result)){
 		while ($row = mysql_fetch_array($result))
 		{
 			$tot_data = $row['Data_length'];
@@ -470,6 +551,8 @@ $alternate = ' class="alternate"';
 			if (isset($_POST["optimize-db"])) {
         $local_query = 'OPTIMIZE TABLE '.$row[0];
 			  $resultat  = mysql_query($local_query);
+			  
+			  
         //echo "optimization";
             }
 

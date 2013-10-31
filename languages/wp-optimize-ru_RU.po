@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.0.2\n"
 "POT-Creation-Date: 2013-10-30 13:34+0800\n"
-"PO-Revision-Date: 2013-10-30 13:34+0800\n"
+"PO-Revision-Date: 2013-10-30 16:06+0800\n"
 "Last-Translator: Ruhani Rabin <get@ruhanirabin.com>\n"
 "Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,306 +16,314 @@ msgstr ""
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:84
 msgid " Database Optimized!"
-msgstr ""
+msgstr "База данных оптимизирована!"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:108
 msgid " post revisions deleted"
-msgstr ""
+msgstr " изменений записей удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:119
 msgid " auto drafts deleted"
-msgstr ""
+msgstr " автоматических черновиков удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:127
 #: Works\wp-optimize_work/wp-optimize-admin.php:147
 msgid " items removed from Trash"
-msgstr ""
+msgstr " удалено пунктов из корзины"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:139
 msgid " spam comments deleted"
-msgstr ""
+msgstr " спам-комментариев удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:157
 msgid " unapproved comments deleted"
-msgstr ""
+msgstr " неразрешенных комментариев удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:163
 msgid " pingbacks deleted"
-msgstr ""
+msgstr " пингбэков удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:169
 msgid " trackbacks deleted"
-msgstr ""
+msgstr " трэкбэков удалено"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:175
 msgid " Enabled weekly processing"
-msgstr ""
+msgstr " Включена еженедельная обработка"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:181
 msgid " Disabled weekly processing"
-msgstr ""
+msgstr " Отключена еженедельная обработка"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:190
 msgid "NO Actions Taken"
-msgstr ""
+msgstr "Меры НЕ приняты"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:210
 msgid " post revisions in your database"
-msgstr ""
+msgstr " изменений записей в базе данных"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:212
 msgid "No post revisions found"
-msgstr ""
+msgstr " Не найдено никаких изменений записей"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:220
 msgid " auto draft post(s) in your database"
-msgstr ""
+msgstr " автоматических черновых записей в базе данных"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:222
 msgid "No auto draft posts found"
-msgstr ""
+msgstr " Не найдено никаких автоматических черновых записей"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:230
 msgid " spam comments found"
-msgstr ""
+msgstr " найдено спам-комментариев"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:230
 msgid " Review Spams"
-msgstr ""
+msgstr " Обзор спама"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:232
 msgid "No spam comments found"
-msgstr ""
+msgstr "Не найдено никаких спам-комментариев"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:239
 msgid " unapproved comments found"
-msgstr ""
+msgstr " найдены неразрешенные комментарии"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:239
 msgid " Review Unapproved Comments"
-msgstr ""
+msgstr " Обзор неразрешенных комментариев"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:241
 msgid "No unapproved comments found"
-msgstr ""
+msgstr "Не найдено никаких неразрешенных комментариев"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:249
 msgid " Pingbacks found"
-msgstr ""
+msgstr " Найдено пингбэков"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:251
 msgid "No pingbacks found"
-msgstr ""
+msgstr "Не найдено никаких пингбэков"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:259
 msgid " Trackbacks found"
-msgstr ""
+msgstr " Найдено трэкбэков"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:261
 msgid "No trackbacks found"
-msgstr ""
+msgstr "Не найдено никаких трэкбэков"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:267
 msgid "nothing"
-msgstr ""
+msgstr "ничего"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:294
 msgid "Enable Weekly Cleanup (EXPERIMENTAL!)"
-msgstr ""
+msgstr "Включить еженедельную очистку (ЭКСПЕРИМЕНТАЛЬНАЯ ФУНКЦИЯ!)"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:301
 msgid " | Next Schedule - "
-msgstr ""
+msgstr " | Следующее расписание - "
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:307
 msgid ""
 "This will enable weekly scheduled of all the optimization listed including - "
-msgstr ""
+msgstr "Это включит еженедельную оптимизацию всего перечисленного, включая - "
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:309
 msgid "Optimize db, Remove AutoDrafts/Revisions, Posts and Comments in Trash."
 msgstr ""
+"Оптимизировать БД, удалить автоматические черновики/изменения, записи и "
+"комментарии из корзины."
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:311
 msgid ""
 "NOTE: Unapproved comments will not be removed automatically; just in case "
 "there are legitimate comments"
 msgstr ""
+"ПРИМЕЧАНИЕ: Неразрешенные комментарии не будут удалены автоматически; на "
+"всякий случай, если эти комментарии окажутся разрешенные"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:317
 msgid "Keep last "
-msgstr ""
+msgstr "Сохранить последние "
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:326
 msgid " weeks of data"
-msgstr ""
+msgstr " недели с информацией"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:329
 msgid ""
 "This option will retain the last X weeks of data and remove any junk data "
 "before that period"
 msgstr ""
+"Эта опция сохранит последние X недель с информацией и удалит ненужнуюперед "
+"этим промежутком"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:341
 msgid "Credits"
-msgstr ""
+msgstr "Признательность"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:343
 msgid "Database Optimization Options"
-msgstr ""
+msgstr "Настройки оптимизации базы данных"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:344
 msgid "See Tables Report > "
-msgstr ""
+msgstr "Смотри отчет таблиц > "
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:344
 msgid "Database Size > "
-msgstr ""
+msgstr "Размер базы данных > "
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:352
 msgid "Contibuting Developers"
-msgstr ""
+msgstr "Разработчики, внесшие вклад"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:353
 msgid "Help me make this plugin better"
-msgstr ""
+msgstr "Помогите мне улучшить этот плагин"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:353
 msgid "I am looking for contributing developers."
-msgstr ""
+msgstr "Я ищу разработчиков, которые могут мне помочь."
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:354
 msgid "Your name and website will be credited here in the plugin"
-msgstr ""
+msgstr "Ваше имя и сайт будут опубликованы в этом плагине"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:356
 msgid "Translators"
-msgstr ""
+msgstr "Переводчики"
 
 # This is the link for the Translator's website
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:357
 msgid "http://www.ruhanirabin.com/"
-msgstr ""
+msgstr "http://www.visbiz.org/"
 
 # Please change this to Translator's name
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:357
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
-msgstr ""
+msgstr "Русский язык - Виталий МакЛауд (Эликсир жизни)"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:359
 msgid "Download .PO File to translate"
-msgstr ""
+msgstr "Скачайте этот .PO файл для перевода на другой язык"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:361
 msgid "Plugin Resources"
-msgstr ""
+msgstr "Ресурсы плагина"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:362
 msgid "Plugin Homepage"
-msgstr ""
+msgstr "Сайт плагина"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:362
 msgid "Support Forum"
-msgstr ""
+msgstr "Форум поддержки"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:363
 msgid "Buy me a Coffee ?"
-msgstr ""
+msgstr "Купите мне МонаВи?"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:367
 msgid "Remove all Post revisions"
-msgstr ""
+msgstr "Удалить все изменения записей"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:376
 msgid "Remove all auto draft posts (This will also clear out posts in Trash)"
 msgstr ""
+"Удалить все автоматические черновики записей (Это также удалит все записи из "
+"корзины)"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:386
 msgid "Clean Spam comments (This will also clear out comments in Trash)"
-msgstr ""
+msgstr "Удалить спам-комментарии (Это также удалит комментарии из корзины)"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:395
 msgid "Clean Unapproved comments"
-msgstr ""
+msgstr "Удалить неразрешенные комментарии"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:404
 msgid "Clean Pingbacks"
-msgstr ""
+msgstr "Удалить пингбэки"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:413
 msgid "Clean Trackbacks"
-msgstr ""
+msgstr "Удалить трэкбэки"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:422
 msgid "Optimize database tables"
-msgstr ""
+msgstr "Оптимизировать таблицы базы данных"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:429
 msgid "PROCESS"
-msgstr ""
+msgstr "ОБРАБОТКА"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:451
 msgid "Database Tables Report"
-msgstr ""
+msgstr "Отчет таблиц базы данных"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:452
 msgid "Database Name:"
-msgstr ""
+msgstr "Имя базы данных:"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:456
 msgid "Optimized all the tables found in the database."
-msgstr ""
+msgstr "Были оптимизированы все таблицы базы данных."
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:463
 #: Works\wp-optimize_work/wp-optimize-admin.php:471
 msgid "Table"
-msgstr ""
+msgstr "Таблица"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:464
 #: Works\wp-optimize_work/wp-optimize-admin.php:472
 msgid "Size"
-msgstr ""
+msgstr "Размер"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:465
 #: Works\wp-optimize_work/wp-optimize-admin.php:473
 msgid "Status"
-msgstr ""
+msgstr "Состояние"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:466
 #: Works\wp-optimize_work/wp-optimize-admin.php:474
 msgid "Space Save"
-msgstr ""
+msgstr "Освобождено места"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:518
 msgid "Already Optimized"
-msgstr ""
+msgstr "Уже оптимизирован"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:527
 msgid "Optimized"
-msgstr ""
+msgstr "Оптимизирован"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:535
 msgid "Need to Optimize"
-msgstr ""
+msgstr "Необходимо оптимизировать"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:547
 msgid "Total Size of Database:"
-msgstr ""
+msgstr "Общий размер базы данных:"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:555
 msgid "Optimization Results:"
-msgstr ""
+msgstr "Результат оптимизации:"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:556
 msgid "Total Space Saved:"
-msgstr ""
+msgstr "Всего освобождено места:"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:561
 msgid "Optimization Possibility:"
-msgstr ""
+msgstr "Возможности оптимизации:"
 
 #: D:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:562
 msgid "Total space can be saved:"
-msgstr ""
+msgstr "Всего может быть сохранено места:"
