@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.1.1
+Version: 1.1.2
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
@@ -88,7 +88,7 @@ function wpo_admin_bar() {
 	));
 
 }
-add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' ); 
+//add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' ); 
 
 
 // Add settings link on plugin page

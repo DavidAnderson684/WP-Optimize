@@ -1,4 +1,4 @@
-=== WP-Optimize ===
+﻿=== WP-Optimize ===
 
 Contributors: ruhanirabin
 
@@ -10,7 +10,7 @@ Requires at least: 3.5
 
 Tested up to: 3.7.1
 
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 
 
 
@@ -174,6 +174,14 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.1.2 =
+
+* removed persistent admin bar menu item
+
+* Language ru_RU and zh_TW updated.
+
+
 
 = 1.1.1 =
 
