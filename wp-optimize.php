@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.1.0
+Version: 1.1.1
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
@@ -58,6 +58,16 @@ function wpoptimize_textdomain() {
    }		
 }
 
+function getRetainInfo(){
+    $retain_enabled = get_option(OPTION_NAME_RETENTION_ENABLED, 'false' );
+    
+	if ($retain_enabled){
+		$retain_period = get_option(OPTION_NAME_RETENTION_PERIOD, '2');
+	}
+	
+	return array ($retain_enabled, $retain_period);
+	
+}
 
 function optimize_menu(){
     include 'wp-optimize-admin.php';
@@ -230,4 +240,38 @@ function myPluginOptionsSetDefaults() {
 
 
 add_action('admin_menu', 'optimize_admin_actions');
+
+// this function will return total database size and a possible gain of db in KB
+// this will be returned as array
+function getCurrentDBSize(){
+	$tot_data = 0; $total_gain = 0; $total_db_space = 0; $total_db_space_a = 0;
+	$tot_idx = 0;
+	$tot_all = 0;
+	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
+	$result = mysql_query($local_query);
+	if (mysql_num_rows($result)){
+		while ($row = mysql_fetch_array($result))
+		{
+			$tot_data = $row['Data_length'];
+			$tot_idx  = $row['Index_length'];
+			$total = $tot_data + $tot_idx;
+			$total = $total / 1024 ;
+			$total = round ($total,3);
+
+			$total_db_space = $tot_data + $tot_idx;
+			$total_db_space = $total_db_space / 1024 ;
+			$total_db_space_a += $total_db_space;
+			$total_db_space = round ($total_db_space,3);
+			
+			$gain= $row['Data_free'];
+			$gain = $gain / 1024 ;
+			$total_gain += $gain;
+			$gain = round ($gain,3);
+		
+			
+		}
+	return array (round($total_db_space_a,3), round($total_gain,3));	
+	}
+} // end of function getCurrentDBSize
+
 ?>

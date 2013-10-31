@@ -14,10 +14,10 @@ if ('wp-optimize-admin.php' == basename($_SERVER['SCRIPT_FILENAME']))
       Die();
   }
   
-if ( file_exists(__DIR__ . '/wp-optimize-common.php')) {
+/* if ( file_exists(__DIR__ . '/wp-optimize-common.php')) {
     require(__DIR__ . '/wp-optimize-common.php');
 }   
-
+ */
 if (! defined('WP_CONTENT_DIR'))
     define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
 if (! defined('WP_CONTENT_URL'))

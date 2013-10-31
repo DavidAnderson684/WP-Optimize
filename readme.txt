@@ -10,7 +10,7 @@ Requires at least: 3.5
 
 Tested up to: 3.7.1
 
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 
 
 
@@ -26,7 +26,7 @@ WP-Optimize is a WordPress 3.xx database cleanup and optimization tool. It doesn
 
 It allows you to remove post revisions, comments in the spam queue, un-approved comments, items in trash within few clicks. 
 
-** Weekly scheduler introduced (EXPERIMENTAL) **
+**Weekly scheduler introduced (EXPERIMENTAL)**
 
 Now Multi-Lingual. 
 
@@ -56,10 +56,13 @@ See options inside plugin or contact me via http://www.ruhanirabin.com/contact/
 
 
 
-** WP-Optimize Translators:
+**WP-Optimize Translators:**
 
-Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
-正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 - http://sofree.cc
+
+
+*   Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
+
+*   正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 - http://sofree.cc
 
 
 
@@ -171,6 +174,11 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fix Fatal Error.
+
 
 = 1.1.0 =
 
