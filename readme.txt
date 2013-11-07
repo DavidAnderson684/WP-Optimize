@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9
 
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 
 
 
@@ -195,9 +195,9 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 == Changelog ==
 
-= 1.5.3 =
+= 1.5.4 =
 
-* More path related fixes for various warnings.
+* More path related fixes for various warnings. Maintenance
 
 
 
