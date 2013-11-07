@@ -6,11 +6,11 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin
 
-Requires at least: 3.5
+Requires at least: 3.7
 
-Tested up to: 3.7.1
+Tested up to: 3.9
 
-Stable tag: 1.1.2
+Stable tag: 1.5.1
 
 
 
@@ -26,7 +26,7 @@ WP-Optimize is a WordPress 3.xx database cleanup and optimization tool. It doesn
 
 It allows you to remove post revisions, comments in the spam queue, un-approved comments, items in trash within few clicks. 
 
-**Weekly scheduler introduced (EXPERIMENTAL)**
+**Simple scheduler introduced (Still in very EXPERIMENTAL stage)**
 
 Now Multi-Lingual. 
 
@@ -52,23 +52,43 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 **Translators are welcome to send their Translated Files to be included.**
 
-See options inside plugin or contact me via http://www.ruhanirabin.com/contact/
+See options inside plugin or contact me via http://www.ruhanirabin.com/contact/ 
 
+Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 
 **WP-Optimize Translators:**
 
 
 
-*   Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
+*   Language ru_RU: Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
 
-*   正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 - http://sofree.cc
+*   Language zh_TW: 正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 -  (work in progress)
+
+*   Language zh_CN: 简体中文语言包 由 SoumaHoshino 提供 - http://moesora.com/
+
+*   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
+
+*   Language nl_NL: Mischa ter Smitten - (work in progress)
+
 
 
 
 **Features:**
 
 
+
+*   [NEW] Option to add or remove link on wp admin bar.
+
+*   [NEW] New admin interface.
+
+*   [NEW] Removal of WordPress transient options.
+
+*   [NEW] Removal of orphaned post meta data.
+
+*   [NEW] Removal of unused tags.
+
+*   [NEW] 3 different schedule times added (weekly, bi-weekly and monthly).
 
 *   [NEW] Retain/Keep last X number of weeks data - this option keeps the last selected number of weeks data when cleaning up.
 
@@ -165,15 +185,41 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 
-1. Main screen
+1. Optimizer
 
-2. Database tables report
+2. Settings Screen
 
-3. Menu Item
+3. Table Report
 
 
 
 == Changelog ==
+
+= 1.5.1 =
+
+* Option to add or remove link on wp admin bar (even enabled - it is visible to admin only).
+
+* New admin interface.
+
+* Settings to select items for automatic optimization.
+
+* Removal of WordPress transient options.
+
+* Removal of orphaned post meta tags.
+
+* Removal of unused tags.
+
+* 3 different schedule times added (weekly, bi-weekly and monthly).
+
+* 3 language added - ru_RU, zh_CN, fr_FR (zh_TW and nl_NL coming soon).
+
+* Code optimization and translation strings updated.
+
+* Updated .PO file for translators.
+
+* Integrated development log from TRAC
+
+
 
 = 1.1.2 =
 

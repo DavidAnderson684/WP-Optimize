@@ -4,328 +4,592 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2013-10-30 07:07:34+00:00\n"
+"POT-Creation-Date: 2013-11-03 15:06+0800\n"
+"PO-Revision-Date: 2013-11-07 11:33+0800\n"
+"Last-Translator: Ruhani Rabin <get@ruhanirabin.com>\n"
+"Language-Team: \n"
+"Language: Русский\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-11-01 00:59+0800\n"
-"Last-Translator: Ruhani Rabin <get@ruhanirabin.com>\n"
-"Language-Team: Russian <http://www.visbiz.org/?page_id=324>\n"
 "X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#: wp-optimize-admin.php:93
-msgid " Database Optimized!"
-msgstr " База данных оптимизирована!"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-admin.php:49
+msgid "Database Optimized!"
+msgstr "База данных оптимизирована!"
 
-#: wp-optimize-admin.php:111
-msgid " post revisions deleted"
-msgstr " изменений записей удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-admin.php:66
+msgid "Optimizer"
+msgstr "Оптимизатор"
 
-#: wp-optimize-admin.php:117
-msgid " auto drafts deleted"
-msgstr " автоматических черновиков удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-admin.php:67
+msgid "Settings"
+msgstr "Настройки"
 
-#: wp-optimize-admin.php:121 wp-optimize-admin.php:132
-msgid " items removed from Trash"
-msgstr " удалено пунктов из корзины"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-admin.php:68
+msgid "Info"
+msgstr "Информация"
 
-#: wp-optimize-admin.php:128
-msgid " spam comments deleted"
-msgstr " спам-комментариев удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:85
+msgid "Total clean up overall"
+msgstr "Всего было почищено места"
 
-#: wp-optimize-admin.php:139
-msgid " unapproved comments deleted"
-msgstr " неразрешенных комментариев удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:88
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:118
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:131
+msgid "Kb"
+msgstr "Кб"
 
-#: wp-optimize-admin.php:145
-msgid " pingbacks deleted"
-msgstr " пингбэков удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:377
+msgid "transient options deleted"
+msgstr "временных настроек удалено"
 
-#: wp-optimize-admin.php:151
-msgid " trackbacks deleted"
-msgstr " трэкбэков удалено"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:385
+msgid "orphaned postmeta deleted"
+msgstr "несвязанных меток сообщений удалено"
 
-#: wp-optimize-admin.php:158
-msgid " Enabled weekly processing"
-msgstr " Включена еженедельная обработка"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:393
+msgid "unused tags deleted"
+msgstr "неиспользуемых тегов удалено"
 
-#: wp-optimize-admin.php:164
-msgid " Disabled weekly processing"
-msgstr " Отключена еженедельная обработка"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:404
+msgid "post revisions deleted"
+msgstr "изменений записей удалено"
 
-#: wp-optimize-admin.php:173
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:415
+msgid "auto drafts deleted"
+msgstr "автоматических черновиков удалено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:423
+#: Works\wp-optimize-new-ui/wp-optimize-common.php:443
+msgid "items removed from Trash"
+msgstr "удалено пунктов из корзины"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:435
+msgid "spam comments deleted"
+msgstr "спам-комментариев удалено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:453
+msgid "unapproved comments deleted"
+msgstr "неразрешенных комментариев удалено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:459
+msgid "pingbacks deleted"
+msgstr "пингбэков удалено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:465
+msgid "trackbacks deleted"
+msgstr "трэкбэков удалено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:472
+msgid "Enabled weekly processing"
+msgstr "Включена еженедельная обработка"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:478
+msgid "Disabled weekly processing"
+msgstr "Отключена еженедельная обработка"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:487
 msgid "NO Actions Taken"
 msgstr "Меры НЕ приняты"
 
-#: wp-optimize-admin.php:193
-msgid " post revisions in your database"
-msgstr " изменений записей в базе данных"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:514
+msgid "transient options in your database"
+msgstr "временных настроек в базе данных"
 
-#: wp-optimize-admin.php:195
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:516
+msgid "No transient options found"
+msgstr "Не найдено никаких временных настроек"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:525
+msgid "orphaned postmeta in your database"
+msgstr "несвязанных меток сообщений в базе данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:527
+msgid "No orphaned postmeta in your database"
+msgstr "Нет никаких несвязанных меток в базе данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:536
+msgid "unused tags in your database"
+msgstr "неиспользуемых тегов в базе данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:538
+msgid "No unused tags found"
+msgstr "Не найдено никаких неиспользуемых тегов"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:551
+msgid "post revisions in your database"
+msgstr "изменений записей в базе данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:553
 msgid "No post revisions found"
-msgstr " Не найдено никаких изменений записей"
+msgstr "Не найдено никаких изменений записей"
 
-#: wp-optimize-admin.php:203
-msgid " auto draft post(s) in your database"
-msgstr " автоматических черновых записей в базе данных"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:566
+msgid "auto draft post(s) in your database"
+msgstr "автоматических черновых записей в базе данных"
 
-#: wp-optimize-admin.php:205
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:568
 msgid "No auto draft posts found"
-msgstr " Не найдено никаких автоматических черновых записей"
+msgstr "Не найдено никаких автоматических черновых записей"
 
-#: wp-optimize-admin.php:213
-msgid " spam comments found"
-msgstr " найдено спам-комментариев"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:580
+msgid "spam comments found"
+msgstr "спам-комментариев найдено"
 
-#: wp-optimize-admin.php:213
-msgid " Review Spams"
-msgstr " Обзор спама"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:580
+msgid "Review Spams"
+msgstr "Перепроверить спам"
 
-#: wp-optimize-admin.php:215
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:582
 msgid "No spam comments found"
 msgstr "Не найдено никаких спам-комментариев"
 
-#: wp-optimize-admin.php:222
-msgid " unapproved comments found"
-msgstr " найдены неразрешенные комментарии"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:593
+msgid "unapproved comments found"
+msgstr "неразрешенных комментариев найдено"
 
-#: wp-optimize-admin.php:222
-msgid " Review Unapproved Comments"
-msgstr " Обзор неразрешенных комментариев"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:593
+msgid "Review Unapproved Comments"
+msgstr "Перепроверить неразрешенные комментарии"
 
-#: wp-optimize-admin.php:224
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:595
 msgid "No unapproved comments found"
 msgstr "Не найдено никаких неразрешенных комментариев"
 
-#: wp-optimize-admin.php:232
-msgid " Pingbacks found"
-msgstr " Найдено пингбэков"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:603
+msgid "Pingbacks found"
+msgstr "Найдено пингбэков"
 
-#: wp-optimize-admin.php:234
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:605
 msgid "No pingbacks found"
 msgstr "Не найдено никаких пингбэков"
 
-#: wp-optimize-admin.php:242
-msgid " Trackbacks found"
-msgstr " Найдено трэкбэков"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:613
+msgid "Trackbacks found"
+msgstr "Найдено трэкбэков"
 
-#: wp-optimize-admin.php:244
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:615
 msgid "No trackbacks found"
 msgstr "Не найдено никаких трэкбэков"
 
-#: wp-optimize-admin.php:250
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-common.php:621
 msgid "nothing"
 msgstr "ничего"
 
-#: wp-optimize-admin.php:277
-msgid "Enable Weekly Cleanup (EXPERIMENTAL!)"
-msgstr "Включить еженедельную очистку (ЭКСПЕРИМЕНТАЛЬНАЯ ФУНКЦИЯ!)"
-
-#: wp-optimize-admin.php:284
-msgid " | Next Schedule - "
-msgstr " | Следующее расписание - "
-
-#: wp-optimize-admin.php:290
-msgid ""
-"This will enable weekly scheduled of all the optimization listed including - "
-msgstr "Это включит еженедельную оптимизацию всего перечисленного, включая - "
-
-#: wp-optimize-admin.php:292
-msgid "Optimize db, Remove AutoDrafts/Revisions, Posts and Comments in Trash."
-msgstr ""
-"Оптимизировать БД, удалить автоматические черновики/изменения, записи и "
-"комментарии из корзины."
-
-#: wp-optimize-admin.php:294
-msgid ""
-"NOTE: Unapproved comments will not be removed automatically; just in case "
-"there are legitimate comments"
-msgstr ""
-"ПРИМЕЧАНИЕ: Неразрешенные комментарии не будут удалены автоматически; на тот "
-"случай, если эти комментарии окажутся нужными"
-
-#: wp-optimize-admin.php:305
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:3
 msgid "Credits"
 msgstr "Признательность"
 
-#: wp-optimize-admin.php:307
-msgid "Database Optimization Options"
-msgstr "Настройки оптимизации базы данных"
-
-#: wp-optimize-admin.php:308
-msgid "See Tables Report > "
-msgstr "Смотри отчет таблиц > "
-
-#: wp-optimize-admin.php:308
-msgid "Database Size > "
-msgstr "Размер базы данных > "
-
-#: wp-optimize-admin.php:316
-msgid "Contibuting Developers"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:32
+msgid "Contributing Developers"
 msgstr "Разработчики, внесшие вклад"
 
-#: wp-optimize-admin.php:317
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:33
 msgid "Help me make this plugin better"
 msgstr "Помогите мне улучшить этот плагин"
 
-#: wp-optimize-admin.php:317
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:33
 msgid "I am looking for contributing developers."
 msgstr "Я ищу разработчиков, которые могут мне помочь."
 
-#: wp-optimize-admin.php:318
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:34
 msgid "Your name and website will be credited here in the plugin"
 msgstr "Ваше имя и сайт будут опубликованы в этом плагине"
 
-#: wp-optimize-admin.php:320
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:37
+msgid "Plugin Resources"
+msgstr "Ресурсы плагина"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:38
+msgid "Plugin Homepage"
+msgstr "Сайт плагина"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:39
+msgid "Support Forum"
+msgstr "Форум поддержки"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:40
+msgid "Change Log"
+msgstr "Журнал изменений"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:41
+msgid "FAQ"
+msgstr "ЧаВо"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:45
 msgid "Translators"
 msgstr "Переводчики"
 
-#: wp-optimize-admin.php:321
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:46
 msgid "http://www.ruhanirabin.com/"
 msgstr "http://www.visbiz.org/"
 
-#: wp-optimize-admin.php:321
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:46
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
 msgstr "Русский язык - Виталий МакЛауд (Эликсир жизни)"
 
-#: wp-optimize-admin.php:323
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:48
 msgid "Download .POT File to translate"
 msgstr "Скачайте этот .POT файл для перевода на другой язык"
 
-#: wp-optimize-admin.php:325
-msgid "Plugin Resources"
-msgstr "Ресурсы плагина"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-credits.php:48
+msgid "Email your translations to"
+msgstr "Высылайте свой перевод на"
 
-#: wp-optimize-admin.php:326
-msgid "Plugin Homepage"
-msgstr "Сайт плагина"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:5
+msgid "Status : "
+msgstr "Состояние: "
 
-#: wp-optimize-admin.php:326
-msgid "Support Forum"
-msgstr "Форум поддержки"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:10
+msgid "Last automatic optimization was at "
+msgstr "Последняя автоматическая оптимизация была произведена "
 
-#: wp-optimize-admin.php:327
-msgid "Buy me a Coffee ?"
-msgstr "Купите мне кофе?"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:21
+msgid "There was no automatic optimization"
+msgstr "Автоматическая оптимизация не была произведена"
 
-#: wp-optimize-admin.php:331
-msgid "Remove all Post revisions"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:24
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:72
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:97
+msgid "Check settings"
+msgstr "Проверить настройки"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:36
+msgid "Scheduled cleaning enabled"
+msgstr "Запланированная очистка включена"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:50
+msgid "Next schedule"
+msgstr "Следующее расписание"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:61
+msgid "Refresh"
+msgstr "Обновить"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:69
+msgid "Scheduled cleaning DISABLED"
+msgstr "Плановая очистка ОТКЛЮЧЕНА"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:83
+msgid "Retention enabled and keeping last "
+msgstr "Задержка включена и сохраняет последние "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:86
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:85
+msgid "weeks data"
+msgstr "недель с информацией"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:94
+msgid "Retention is disabled"
+msgstr "Задержка отключена"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:111
+msgid "Current database size : "
+msgstr "Размер базы данных: "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:113
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:126
+msgid "Kb."
+msgstr "Кб."
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:115
+msgid "You have saved"
+msgstr "Было сохранено"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:123
+msgid "Current database size"
+msgstr "Размер базы данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:128
+msgid "You can save almost"
+msgstr "Можно сохранить почти"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:136
+msgid "Buy me a Coffee :)"
+msgstr "Купите мне кофе :)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:137
+msgid "See Tables > "
+msgstr "Смотреть таблицы > "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:137
+msgid "Database Size > "
+msgstr "Размер базы данных > "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:165
+msgid "Database Optimization Options"
+msgstr "Настройки оптимизации базы данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:183
+msgid "Remove post revisions which are older than "
+msgstr "Удалить изменения записей старше, чем "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:186
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:206
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:226
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:245
+msgid "weeks"
+msgstr "недель"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:188
+msgid "Remove all post revisions"
 msgstr "Удалить все изменения записей"
 
-#: wp-optimize-admin.php:340
-msgid "Remove all auto draft posts (This will also clear out posts in Trash)"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:203
+msgid "Remove auto draft posts which are older than "
+msgstr "Удалить автоматические черновики записей старше, чем "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:208
+msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr ""
-"Удалить все автоматические черновики записей (Это также удалит все записи из "
+"Удалить автоматические черновики записей (Это также удалит все записи из "
 "корзины)"
 
-#: wp-optimize-admin.php:350
-msgid "Clean Spam comments (This will also clear out comments in Trash)"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:223
+msgid "Remove spam comments which are older than "
+msgstr "Удалить спам-комментарии старше, чем "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:228
+msgid "Remove spam comments (This will also clear out comments in Trash)"
 msgstr "Удалить спам-комментарии (Это также удалит комментарии из корзины)"
 
-#: wp-optimize-admin.php:359
-msgid "Clean Unapproved comments"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:242
+msgid "Remove unapproved comments which are older than "
+msgstr "Удалить неразрешенные комментарии старше, чем "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:247
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:163
+msgid "Remove unapproved comments"
 msgstr "Удалить неразрешенные комментарии"
 
-#: wp-optimize-admin.php:368
-msgid "Clean Pingbacks"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:259
+msgid "Remove pingbacks"
 msgstr "Удалить пингбэки"
 
-#: wp-optimize-admin.php:377
-msgid "Clean Trackbacks"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:268
+msgid "Remove trackbacks"
 msgstr "Удалить трэкбэки"
 
-#: wp-optimize-admin.php:386
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:277
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:165
+msgid "Remove transient options"
+msgstr "Удалить временные настройки"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:286
+msgid "Remove orphaned postmeta"
+msgstr "Удалить несвязанные метки сообщений"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:295
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:169
+msgid "Remove unused tags"
+msgstr "Удалить неиспользуемые теги"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:306
 msgid "Optimize database tables"
 msgstr "Оптимизировать таблицы базы данных"
 
-#: wp-optimize-admin.php:393
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:315
 msgid "PROCESS"
 msgstr "ЗАПУСТИТЬ"
 
-#: wp-optimize-admin.php:415
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:337
 msgid "Database Tables Report"
 msgstr "Отчет таблиц базы данных"
 
-#: wp-optimize-admin.php:416
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:338
 msgid "Database Name:"
 msgstr "Имя базы данных:"
 
-#: wp-optimize-admin.php:420
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:342
 msgid "Optimized all the tables found in the database."
 msgstr "Были оптимизированы все таблицы базы данных."
 
-#: wp-optimize-admin.php:427 wp-optimize-admin.php:435
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:349
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:357
 msgid "Table"
 msgstr "Таблица"
 
-#: wp-optimize-admin.php:428 wp-optimize-admin.php:436
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:350
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:358
 msgid "Size"
 msgstr "Размер"
 
-#: wp-optimize-admin.php:429 wp-optimize-admin.php:437
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:351
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:359
 msgid "Status"
 msgstr "Состояние"
 
-#: wp-optimize-admin.php:430 wp-optimize-admin.php:438
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:352
+#: Works\wp-optimize-new-ui/wp-optimize-main.php:360
 msgid "Space Save"
 msgstr "Освобождение места"
 
-#: wp-optimize-admin.php:480
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:406
 msgid "Already Optimized"
 msgstr "Уже оптимизирован"
 
-#: wp-optimize-admin.php:489
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:415
 msgid "Optimized"
 msgstr "Оптимизирован"
 
-#: wp-optimize-admin.php:497
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:423
 msgid "Need to Optimize"
 msgstr "Необходимо оптимизировать"
 
-#: wp-optimize-admin.php:509
-msgid "Total Size of Database:"
-msgstr "Общий размер базы данных:"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:435
+msgid "Total Size of Database"
+msgstr "Общий размер базы данных"
 
-#: wp-optimize-admin.php:517
-msgid "Optimization Results:"
-msgstr "Результат оптимизации:"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:443
+msgid "Optimization Results"
+msgstr "Результат оптимизации"
 
-#: wp-optimize-admin.php:518
-msgid "Total Space Saved:"
-msgstr "Всего освобождено места:"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:444
+msgid "Total Space Saved"
+msgstr "Всего освобождено места"
 
-#: wp-optimize-admin.php:523
-msgid "Optimization Possibility:"
-msgstr "Возможности оптимизации:"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:449
+msgid "Optimization Possibility"
+msgstr "Возможности оптимизации"
 
-#: wp-optimize-admin.php:524
-msgid "Total space can be saved:"
-msgstr "Всего может быть сохранено места:"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-main.php:450
+msgid "Total space can be saved"
+msgstr "Всего может быть освобождено места"
 
-#. Plugin Name of the plugin/theme
-msgid "WP-Optimize"
-msgstr ""
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:59
+msgid "Settings updated"
+msgstr "Настройки обновлены"
 
-#. Plugin URI of the plugin/theme
-msgid "http://www.ruhanirabin.com/wp-optimize/"
-msgstr ""
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:66
+msgid "General Settings"
+msgstr "Общие настройки"
 
-#. Description of the plugin/theme
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:67
+msgid "Auto Clean-up Settings"
+msgstr "Автоматическая очистка настроек"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:74
+msgid "Keep last "
+msgstr "Сохранять последние "
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:89
 msgid ""
-"This plugin helps you to keep your database clean by removing post revisions "
-"and spams in a blaze. Additionally it allows you to run optimize command on "
-"your WordPress core tables (use with caution)."
+"This option will retain the last X weeks data and remove any garbage data "
+"before that period"
 msgstr ""
-"Этот плагин поможет вам держать свою базу данных в чистоте удаляя черновые "
-"записи и спам в мгновении ока. Дополнительно он позволит вам запустить "
-"оптимизацию в ядре ваших таблиц WordPress (использовать аккуратно)."
+"Эта опция сохранит информацию за последние X недель и удалит ненужную перед "
+"этим промежутком"
 
-#. Author of the plugin/theme
-msgid "Ruhani Rabin"
-msgstr ""
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:97
+msgid "Enable admin bar link "
+msgstr "Вставить ссылку на панель администратора "
 
-#. Author URI of the plugin/theme
-msgid "http://www.ruhanirabin.com"
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:99
+msgid "(Click here to refresh)"
+msgstr "(Нажмите для обновления)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:104
+msgid ""
+"This option will put WP-Optimize link on the top admin bar (default is off). "
+"Requires page refresh."
 msgstr ""
+"Эта опция поместит ссылку на WP-Optimize в верхней части панели "
+"администратора (по умолчанию отключено). Потребует обновления страницы."
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:113
+msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
+msgstr ""
+"Включить запланированную очистку и оптимизацию (ЭКСПЕРИМЕНТАЛЬНАЯ ФУНКЦИЯ!)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:115
+msgid "Select schedule type (default is Weekly)"
+msgstr "Выберите тип расписания (по умолчанию еженедельно)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:122
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:134
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:140
+msgid "Every week"
+msgstr "Каждую неделю"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:126
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:141
+msgid "Every other week (every 14 days)"
+msgstr "Каждые две недели (14 дней)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:130
+#: Works\wp-optimize-new-ui/wp-optimize-settings.php:142
+msgid "Every month (every 31 days)"
+msgstr "Каждый месяц (31 день)"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:147
+msgid "Automatic cleanup will perform the following:"
+msgstr "Автоматическая очистка выполнит следующие действия:"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:149
+msgid ""
+"Remove revisions, auto drafts, posts/comments in trash, transient options. "
+"After that it will optimize the db."
+msgstr ""
+"Удалить изменения, автоматические черновики, записи/комментарии из корзины, "
+"временные настройки. После этого будет произведена оптимизация базы данных."
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:157
+msgid "Remove auto revisions"
+msgstr "Удалить автоматические изменения"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:159
+msgid "Remove auto drafts"
+msgstr "Удалить автоматические черновики"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:161
+msgid "Remove spam comments"
+msgstr "Удалить спам-комментарии"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:167
+msgid "Remove orphaned post meta"
+msgstr "Удалить несвязанные метки сообщений"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:171
+msgid "Optimize database"
+msgstr "Оптимизировать базу данных"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:176
+msgid "SAVE SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОЙКИ"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:178
+msgid "Sponsor"
+msgstr "спонсор"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:177
+msgid "SAVE AUTO CLEAN-UP SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОЙКИ АВТОМАТИЧЕСКОЙ ОЧИСТКИ"
+
+#: D:\Documents\My Works\wp-optimize-new-ui/wp-optimize-settings.php:158
+msgid ""
+"These options will only work if the automatic clean-up schedule has been "
+"enabled"
+msgstr ""
+"Эти варианты будут работать только если автоматическая очистка график был "
+"включен"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
+msgid "Share this plugin on Facebook"
+msgstr "Отправить этот плагин на Facebook"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
+#, php-format
+msgid "Update %s"
+msgstr "свежие новости %s"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
+msgid "No items"
+msgstr "Товаров нет"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
+msgid "Development Log"
+msgstr "Развитие Войти"

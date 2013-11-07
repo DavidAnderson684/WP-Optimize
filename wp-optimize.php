@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.1.2
+Version: 1.5.1
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
 
@@ -24,57 +24,38 @@ Author URI: http://www.ruhanirabin.com
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+# ---------------------------------------- #
+# Find and replace version info in all files
+# ---------------------------------------- #
+
 # ---------------------------------- #
 # prevent file from being accessed directly
 # ---------------------------------- #
 if ('wp-optimize.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not access this file directly. Thanks!');
-	
-if (! defined('OPTION_NAME'))
-    define('OPTION_NAME', 'wp-optimize-weekly-schedule');	
-
-if (! defined('OPTION_NAME_RETENTION_ENABLED'))
-    define('OPTION_NAME_RETENTION_ENABLED', 'wp-optimize-retention-enabled');	
-
-if (! defined('OPTION_NAME_RETENTION_PERIOD'))
-    define('OPTION_NAME_RETENTION_PERIOD', 'wp-optimize-retention-period');	
-
-if (! defined('OPTION_NAME_LAST_OPT'))
-    define('OPTION_NAME_LAST_OPT', 'wp-optimize-last-optimized');	
-	
-if (! defined('WPO_PLUGIN_PATH'))
-	define('WPO_PLUGIN_PATH', plugin_dir_url( __FILE__ ));
 
 global $current_user;
-	
-register_activation_hook(__FILE__,'optimize_admin_actions');
-register_deactivation_hook(__FILE__,'optimize_admin_actions_remove');
 
+if ( file_exists(__DIR__ . '/wp-optimize-common.php')) {
+    require_once (__DIR__ . '/wp-optimize-common.php');
+	} else {
+	die ('Functions File is missing!');
+	}
 
-add_action('init', 'wpoptimize_textdomain');
-function wpoptimize_textdomain() {
+register_activation_hook(__FILE__,'wpo_admin_actions');
+register_deactivation_hook(__FILE__,'wpo_admin_actions_remove');
+
+// init text domain
+add_action('init', 'wp_optimize_textdomain');
+function wp_optimize_textdomain() {
    if (function_exists('load_plugin_textdomain')) {
 	load_plugin_textdomain('wp-optimize', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-   }		
+   }
 }
 
-function getRetainInfo(){
-    $retain_enabled = get_option(OPTION_NAME_RETENTION_ENABLED, 'false' );
-    
-	if ($retain_enabled){
-		$retain_period = get_option(OPTION_NAME_RETENTION_PERIOD, '2');
-	}
-	
-	return array ($retain_enabled, $retain_period);
-	
-}
-
-function optimize_menu(){
-    include 'wp-optimize-admin.php';
-	//include 'wp-optimize-common.php';
-	
-/* 	list ($part1, $part2) = getCurrentDBSize();
-	SendEmailToAdmin($part1, $part2); */
+function wp_optimize_menu(){
+    //include 'wp-optimize-admin.php';
+	include_once( 'wp-optimize-admin.php' );
 }
 
 function wpo_admin_bar() {
@@ -88,108 +69,97 @@ function wpo_admin_bar() {
 	));
 
 }
-//add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' ); 
+
+// add this link only if admin and option is enabled
+if (get_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' ) == 'true' ){
+	if (is_admin()) {
+		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
+	}
+}
 
 
 // Add settings link on plugin page
-function wpo_plugin_settings_link($links) { 
-  $settings_link = '<a href="admin.php?page=WP-Optimize">Settings</a>'; 
-  array_unshift($links, $settings_link); 
-  return $links; 
+function wpo_plugin_settings_link($links) {
+  $settings_link = '<a href="admin.php?page=WP-Optimize&tab=wp_optimize_settings">Settings</a>';
+  $optimize_link = '<a href="admin.php?page=WP-Optimize">Optimizer</a>';
+  array_unshift($links, $settings_link);
+  array_unshift($links, $optimize_link);
+  return $links;
 }
- 
-$plugin = plugin_basename(__FILE__); 
+
+$plugin = plugin_basename(__FILE__);
 add_filter("plugin_action_links_$plugin", 'wpo_plugin_settings_link' );
 
 
 // plugin activation actions
-function optimize_admin_actions()
+function wpo_admin_actions()
 {
 	if ( current_user_can('manage_options') ) {
 		if (function_exists('add_meta_box')) {
-			add_menu_page("WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png', 81);
+			add_menu_page("WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "wp_optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png');
 		} else {
-			add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png');
+			add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "wp_optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png');
 		} // end if addmetabox
+		wpo_PluginOptionsSetDefaults();
 		wpo_cron_activate();
-	}	
+	}
 }
 
-//executed this function weekly
-function wpo_cron_weekly() {
-	global $wpdb;
-	list ($retention_enabled, $retention_period) = getRetainInfo();
-	
-    if ( get_option(OPTION_NAME) == 'true') {
-            			
-			$clean = "DELETE FROM $wpdb->posts WHERE post_type = 'revision'";
-            if ($retention_enabled == 'true') {
-                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
-            }
-            $clean .= ';';
-			$revisions = $wpdb->query( $clean );
-		
-            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'auto-draft'";
-            if ($retention_enabled == 'true') {
-                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
-            }
-            $clean .= ';';
-            $autodraft = $wpdb->query( $clean );
-			
-            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash'";
-            if ($retention_enabled == 'true') {
-                $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
-            }
-            $clean .= ';';
-            $posttrash = $wpdb->query( $clean );
-
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'spam'";
-            if ($retention_enabled == 'true') {
-				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
-            }
-            $clean .= ';';
-            $comments = $wpdb->query( $clean );			
-			
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
-            if ($retention_enabled == 'true') {
-				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
-            }
-            $clean .= ';';			
-            $commentstrash = $wpdb->query( $clean );
-			
-			
-		$db_tables = $wpdb->get_results('SHOW TABLES',ARRAY_A);
-		foreach ($db_tables as $table){
-			$t = array_values($table);
-			$wpdb->query("OPTIMIZE TABLE ".$t[0]);
-		}
-		
-		$thisdate = date('l jS \of F Y h:i:s A');
-		update_option( OPTION_NAME_LAST_OPT, $thisdate );
-		
-	}	
-}	
-
+// TODO: Need to find out why the schedule time is not refreshing
 function wpo_cron_activate() {
-	if ( get_option( OPTION_NAME ) !== false ) {
-		if ( get_option(OPTION_NAME) == 'true') {
+	//wpo_debugLog('running wpo_cron_activate()');
+    $gmtoffset = (int) (3600 * ((double) get_option('gmt_offset')));
+   
+    if ( get_option( OPTION_NAME_SCHEDULE ) !== false ) {
+		if ( get_option(OPTION_NAME_SCHEDULE) == 'true') {
 			if (!wp_next_scheduled('wpo_cron_event2')) {
-				wp_schedule_event(time(), 'weekly', 'wpo_cron_event2');
+
+				$schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
+                
+                switch ($schedule_type) {
+                        case "wpo_weekly":
+                         //
+                         $this_time = 60*60*24*7;
+                        break;                
+
+                        case "wpo_otherweekly":
+                         //
+                         $this_time = 60*60*24*14;
+                        break;
+
+                        case "wpo_monthly":
+                         //
+                         $this_time = 60*60*24*31;
+                        break;
+                        
+                        default:
+                         $this_time = 60*60*24*7;
+                        break;                        
+                                              
+                }               
+				//$this_time = time() + $gmtoffset; 
+                add_action('wpo_cron_event2', 'wpo_cron_action');
+                wp_schedule_event(time() + $this_time, $schedule_type, 'wpo_cron_event2');
+                wpo_debugLog('running wp_schedule_event()');
+
+                
+				//add_filter('cron_schedules', 'wpo_cron_update_sched');
 			}
-		} 
-	} else myPluginOptionsSetDefaults();	
+		}
+	} else wpo_PluginOptionsSetDefaults();
 }
 
 function wpo_cron_deactivate() {
 	//wp_clear_scheduled_hook('wpo_cron_event');
-	wp_clear_scheduled_hook('wpo_cron_event2');
+	wpo_debugLog('running wpo_cron_deactivate()');
+    wp_clear_scheduled_hook('wpo_cron_event2');
 }
 
-add_action('wpo_cron_event2', 'wpo_cron_weekly');
+add_action('wpo_cron_event2', 'wpo_cron_action');
 add_filter('cron_schedules', 'wpo_cron_update_sched');
 
 // scheduler functions to update schedulers
-// possible problem found at support request 
+// possible problem found at support request
 // http://wordpress.org/support/topic/bug-found-in-scheduler-code
 /* function wpo_cron_update_sched( $schedules ) {
 	return array(
@@ -198,80 +168,19 @@ add_filter('cron_schedules', 'wpo_cron_update_sched');
 	);
 } */
 function wpo_cron_update_sched( $schedules ) {
-	$schedules['weekly'] = array('interval' => 60*60*24*7, 'display' => 'Once Weekly');
-	$schedules['otherweekly'] = array('interval' => 60*60*24*14, 'display' => 'Once Every Other Week');
+	$schedules['wpo_weekly'] = array('interval' => 60*60*24*7, 'display' => 'Once Weekly');
+	$schedules['wpo_otherweekly'] = array('interval' => 60*60*24*14, 'display' => 'Once Every Other Week');
+	$schedules['wpo_monthly'] = array('interval' => 60*60*24*31, 'display' => 'Once Every Month');
 	return $schedules;
 }
 
 
 // plugin deactivation actions
-function optimize_admin_actions_remove()
+function wpo_admin_actions_remove()
 {
 	wpo_cron_deactivate();
-	delete_option( OPTION_NAME );
-	delete_option( OPTION_NAME_RETENTION_ENABLED );
-	delete_option( OPTION_NAME_RETENTION_PERIOD );
-	delete_option( OPTION_NAME_LAST_OPT );
+	wpo_removeOptions();
 }
-
-// setup options if not exists already
-function myPluginOptionsSetDefaults() {
-		$deprecated = null;
-		$autoload = 'no';
-		
-	if ( get_option( OPTION_NAME ) !== false ) {
-		// The option already exists, so we just update it.
-
-	} else {
-		// The option hasn't been added yet. We'll add it with $autoload set to 'no'.
-		add_option( OPTION_NAME, 'false', $deprecated, $autoload );
-		add_option( OPTION_NAME_LAST_OPT, 'Never', $deprecated, $autoload );	
-		// deactivate cron
-		wpo_cron_deactivate();
-	}
-	if ( get_option( OPTION_NAME_RETENTION_ENABLED ) !== false ) {
-	//
-	}
-	else{
-	    add_option( OPTION_NAME_RETENTION_ENABLED, 'false', $deprecated, $autoload );
-		add_option( OPTION_NAME_RETENTION_PERIOD, '2', $deprecated, $autoload ); 
-	}
-} 
-
-
-add_action('admin_menu', 'optimize_admin_actions');
-
-// this function will return total database size and a possible gain of db in KB
-// this will be returned as array
-function getCurrentDBSize(){
-	$tot_data = 0; $total_gain = 0; $total_db_space = 0; $total_db_space_a = 0;
-	$tot_idx = 0;
-	$tot_all = 0;
-	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
-	$result = mysql_query($local_query);
-	if (mysql_num_rows($result)){
-		while ($row = mysql_fetch_array($result))
-		{
-			$tot_data = $row['Data_length'];
-			$tot_idx  = $row['Index_length'];
-			$total = $tot_data + $tot_idx;
-			$total = $total / 1024 ;
-			$total = round ($total,3);
-
-			$total_db_space = $tot_data + $tot_idx;
-			$total_db_space = $total_db_space / 1024 ;
-			$total_db_space_a += $total_db_space;
-			$total_db_space = round ($total_db_space,3);
-			
-			$gain= $row['Data_free'];
-			$gain = $gain / 1024 ;
-			$total_gain += $gain;
-			$gain = round ($gain,3);
-		
-			
-		}
-	return array (round($total_db_space_a,3), round($total_gain,3));	
-	}
-} // end of function getCurrentDBSize
+add_action('admin_menu', 'wpo_admin_actions');
 
 ?>
