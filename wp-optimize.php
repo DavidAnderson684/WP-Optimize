@@ -37,12 +37,14 @@ if ('wp-optimize.php' == basename($_SERVER['SCRIPT_FILENAME']))
 global $current_user;
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.5.2');
+    define('WPO_VERSION', '1.5.3');
 
-$this_plugin_path =  plugin_dir_path( __FILE__ ) ;
+if (! defined('WPO_PLUGIN_MAIN_PATH'))
+	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
 
-if ( file_exists($this_plugin_path . 'wp-optimize-common.php')) {
-    require_once ($this_plugin_path . 'wp-optimize-common.php');
+if ( file_exists(WPO_PLUGIN_MAIN_PATH . 'wp-optimize-common.php')) {
+    require_once (WPO_PLUGIN_MAIN_PATH . 'wp-optimize-common.php');
+    
     } else {
 	die ('Functions File is missing!');
 	}

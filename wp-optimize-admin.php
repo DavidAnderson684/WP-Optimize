@@ -83,17 +83,39 @@ $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'wp_optimize_optimize';
 
 
 		<?php
-			
+        if (! defined('WPO_PLUGIN_MAIN_PATH'))
+        	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
+            			
 			if( $active_tab == 'wp_optimize_optimize' ) {
-				include_once (__DIR__ . '/wp-optimize-main.php');
+				
+                if (file_exists(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-main.php')) {
+                  include_once(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-main.php');
+                }
+                else {
+                  echo 'File is missing';  
+                }
 			} 
 			
 			if( $active_tab == 'wp_optimize_settings' ) {
-				include_once (__DIR__ . '/wp-optimize-settings.php');
+				
+                if (file_exists(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-settings.php')) {
+                  include_once(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-settings.php');
+                }
+                else {
+                  echo 'File is missing';  
+                }
+                
 			}
 			
 			if( $active_tab == 'wp_optimize_credits' ) {
-				include_once (__DIR__ . '/wp-optimize-credits.php');
+
+                if (file_exists(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-credits.php')) {
+                  include_once(WPO_PLUGIN_MAIN_PATH. 'wp-optimize-credits.php');
+                }
+                else {
+                  echo 'File is missing';  
+                }
+
 			}
 
 			//submit_button();
