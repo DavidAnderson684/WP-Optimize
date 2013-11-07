@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9
 
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 
 
 
@@ -194,6 +194,12 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.5.2 =
+
+* Fatar error fix, if it disabled your wp admin, please remove the wo-optimize directory and reinstall again.
+
+
 
 = 1.5.1 =
 

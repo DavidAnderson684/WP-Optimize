@@ -5,9 +5,6 @@ if ('wp-optimize-common.php' == basename($_SERVER['SCRIPT_FILENAME']))
 
 // common functions
 
-if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.5.1');
-
 if (! defined('WPO_PLUGIN_PATH'))
 	define('WPO_PLUGIN_PATH', plugin_dir_url( __FILE__ ));
 	
