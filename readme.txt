@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9
 
-Stable tag: 1.5.4
+Stable tag: 1.5.5
 
 
 
@@ -28,8 +28,7 @@ It allows you to remove post revisions, comments in the spam queue, un-approved 
 
 **Simple scheduler introduced (Still in very EXPERIMENTAL stage)**
 
-Now Multi-Lingual. 
-
+**All the potentially dangeruous clean up options are MARKED RED.**
 
 **Are you interested to be a contributed developer of this plugin, use the contact form link below to contact me.**
 
@@ -63,13 +62,23 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   Language ru_RU: Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
 
-*   Language zh_TW: 正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 -  (work in progress)
+*   Language zh_TW: 正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 -  http://sofree.cc
 
 *   Language zh_CN: 简体中文语言包 由 SoumaHoshino 提供 - http://moesora.com/
 
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
 
 *   Language nl_NL: Mischa ter Smitten - (work in progress)
+
+*   Language de_DE: Rewolve44 - http://www.myfotohome.at/
+
+*   Language lv: Tulkotāji - http://trendfor.lv
+
+*   Language pt_BR: Leonardo Kfoury - http://www.kfoury.com.br/site/
+
+*   Language fa_IR: Morteza Amiri - http://www.GameSiders.com/
+
+*   Language es_ES: Navone Juan - http://navonejuan.com.ar/
 
 
 
@@ -148,6 +157,14 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 
 
+= Everytime I clear transient options, it comes back automatically =
+
+
+
+WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
+
+
+
 = Optimization does not have any effect on database / it is not optimizing the database =
 
 
@@ -194,6 +211,18 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.5.5 =
+
+* Safe clean up options are selected by default, defaults are not by user preference for now (Optimizer Page).
+
+* All the potentially dangeruous clean up options are MARKED RED.
+
+* Translations update for language - lv, de_DE, zh_TW, pt_BR, fa_IR, es_ES.
+
+* New features explained - http://j.mp/HBIoVT (read the blog post).
+
+
 
 = 1.5.4 =
 

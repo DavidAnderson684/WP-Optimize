@@ -154,7 +154,7 @@ function SetDefaults() {
     document.getElementById("clean-revisions").checked = true;
     document.getElementById("clean-comments").checked = true;
     document.getElementById("clean-autodraft").checked = true;
-    document.getElementById("clean-transient").checked = true;
+
     document.getElementById("optimize-db").checked = true;
     return false;
 }
@@ -255,7 +255,10 @@ function SetDefaults() {
   </tr>
   <tr>
     <td><input name="clean-transient" id="clean-transient" type="checkbox" value="" />
-	 <?php _e('Remove transient options', 'wp-optimize'); ?><br />
+	 <span style="color: red;">
+     <?php _e('Remove transient options', 'wp-optimize'); ?>
+     </span>
+     <br />
    <small><?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
@@ -264,7 +267,10 @@ function SetDefaults() {
   </tr>
   <tr>
     <td><input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" />
-	 <?php _e('Remove orphaned postmeta', 'wp-optimize'); ?><br />
+	 <span style="color: red;">
+     <?php _e('Remove orphaned postmeta', 'wp-optimize'); ?>
+     </span>
+     <br />
    <small><?php _e(wpo_getInfo('postmeta'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
@@ -273,7 +279,10 @@ function SetDefaults() {
   </tr>
   <tr>
     <td><input name="clean-tags" id="clean-tags" type="checkbox" value="" />
-	 <?php _e('Remove unused tags', 'wp-optimize'); ?><br />
+    <span style="color: red;">
+	 <?php _e('Remove unused tags', 'wp-optimize'); ?>
+     </span>
+     <br />
    <small><?php _e(wpo_getInfo('tags'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
@@ -282,7 +291,10 @@ function SetDefaults() {
   </tr>
    <tr>
     <td><input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" />
-	 <?php _e('Remove pingbacks', 'wp-optimize'); ?><br />
+	 <span style="color: red;">
+     <?php _e('Remove pingbacks', 'wp-optimize'); ?>
+     </span>
+     <br />
    <small><?php _e(wpo_getInfo('pingbacks'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
@@ -291,7 +303,10 @@ function SetDefaults() {
   </tr>
   <tr>
     <td><input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" />
-	 <?php _e('Remove trackbacks', 'wp-optimize'); ?><br />
+	 <span style="color: red;">
+     <?php _e('Remove trackbacks', 'wp-optimize'); ?>
+     </span>
+     <br />
    <small><?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
@@ -319,11 +334,11 @@ function SetDefaults() {
   </tr>
   </form>
 </table>
-<!--
+
 <script>
 SetDefaults();
 </script>
--->
+
 
 <?php
 
@@ -444,7 +459,7 @@ $alternate = ' class="alternate"';
 <?php $total_gain = round ($total_gain,3);?>
 
 <h3><?php _e('Optimization Results', 'wp-optimize'); ?>:</h3>
-<p style="color: #0000FF;"><?php _e('Total Space Saved', 'wp-optimize'); ?>:<?php echo $total_gain;  wpo_updateTotalCleaned(strval($total_gain));?> Kb</p>
+<p style="color: #0000FF;"><?php _e('Total Space Saved', 'wp-optimize'); ?>: <?php echo $total_gain;  wpo_updateTotalCleaned(strval($total_gain));?> Kb</p>
   <?php } else { ?>
 <?php $total_gain = round ($total_gain,3); ?>
   <?php if(!$total_gain==0){ ?>

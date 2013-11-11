@@ -303,14 +303,14 @@ function wpo_PluginOptionsSetDefaults() {
     		'drafts' => 'true',
     		'spams' => 'true',
     		'unapproved' => 'false',
-    		'transient' => 'true',
+    		'transient' => 'false',
     		'postmeta' => 'false',
     		'tags' => 'false',
     		'optimize' => 'true'
     	);
     
     	update_option( 'wp-optimize-auto', $new_options );
-        }    	
+        }
     	
 } 
 

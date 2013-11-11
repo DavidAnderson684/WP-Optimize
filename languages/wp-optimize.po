@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.2\n"
-"POT-Creation-Date: 2013-11-07 11:23+0800\n"
-"PO-Revision-Date: 2013-11-07 11:23+0800\n"
+"Project-Id-Version: WP-Optimize 1.5\n"
+"POT-Creation-Date: 2013-11-07 16:17+0800\n"
+"PO-Revision-Date: 2013-11-07 16:18+0800\n"
 "Last-Translator: Ruhani Rabin <get@ruhanirabin.com>\n"
 "Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
 "MIME-Version: 1.0\n"
@@ -30,150 +30,150 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:107
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
 msgid "Total clean up overall"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:110
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:109
 #: Works\wp-optimize_work/wp-optimize-main.php:116
 #: Works\wp-optimize_work/wp-optimize-main.php:132
 msgid "Kb"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:402
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:401
 msgid "transient options deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:410
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:409
 msgid "orphaned postmeta deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:418
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:417
 msgid "unused tags deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:429
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:428
 msgid "post revisions deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:440
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:439
 msgid "auto drafts deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:448
-#: Works\wp-optimize_work/wp-optimize-common.php:468
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:447
+#: Works\wp-optimize_work/wp-optimize-common.php:467
 msgid "items removed from Trash"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:460
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:459
 msgid "spam comments deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:478
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:477
 msgid "unapproved comments deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:484
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:483
 msgid "pingbacks deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:490
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:489
 msgid "trackbacks deleted"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:497
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:496
 msgid "Enabled weekly processing"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:503
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:502
 msgid "Disabled weekly processing"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:512
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:511
 msgid "NO Actions Taken"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:539
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:538
 msgid "transient options in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:541
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:540
 msgid "No transient options found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:550
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:549
 msgid "orphaned postmeta in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:552
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:551
 msgid "No orphaned postmeta in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:561
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:560
 msgid "unused tags in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:563
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:562
 msgid "No unused tags found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:576
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:575
 msgid "post revisions in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:578
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
 msgid "No post revisions found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:591
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:590
 msgid "auto draft post(s) in your database"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:593
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
 msgid "No auto draft posts found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:605
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
 msgid "spam comments found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:605
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
 msgid "Review Spams"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:607
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:606
 msgid "No spam comments found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:618
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
 msgid "unapproved comments found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:618
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
 msgid "Review Unapproved Comments"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:620
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:619
 msgid "No unapproved comments found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:628
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:627
 msgid "Pingbacks found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:630
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:629
 msgid "No pingbacks found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:638
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:637
 msgid "Trackbacks found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:640
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:639
 msgid "No trackbacks found"
 msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:646
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:645
 msgid "nothing"
 msgstr ""
 
