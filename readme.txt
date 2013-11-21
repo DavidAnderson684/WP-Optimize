@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9
 
-Stable tag: 1.5.5
+Stable tag: 1.5.6
 
 
 
@@ -28,7 +28,9 @@ It allows you to remove post revisions, comments in the spam queue, un-approved 
 
 **Simple scheduler introduced (Still in very EXPERIMENTAL stage)**
 
-**All the potentially dangeruous clean up options are MARKED RED.**
+**All the potentially dangerous clean up options are MARKED RED.**
+
+**When you use this plugin for the first time or just updated to major version, make a backup of your database. This is a must for everyone**
 
 **Are you interested to be a contributed developer of this plugin, use the contact form link below to contact me.**
 
@@ -68,8 +70,6 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
 
-*   Language nl_NL: Mischa ter Smitten - (work in progress)
-
 *   Language de_DE: Rewolve44 - http://www.myfotohome.at/
 
 *   Language lv: Tulkotāji - http://trendfor.lv
@@ -79,6 +79,12 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 *   Language fa_IR: Morteza Amiri - http://www.GameSiders.com/
 
 *   Language es_ES: Navone Juan - http://navonejuan.com.ar/
+
+*   Language tr_TR: Hakan Er tarafından Türkçe Dili - http://hakanertr.wordpress.com/
+
+*   Language id_ID: Nasrulhaq Muiz - http://al-badar.net/
+
+*   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
 
 
 
@@ -95,7 +101,7 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   [NEW] Removal of orphaned post meta data.
 
-*   [NEW] Removal of unused tags.
+*   [REMOVED] Removal of unused tags.
 
 *   [NEW] 3 different schedule times added (weekly, bi-weekly and monthly).
 
@@ -157,6 +163,14 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 
 
+= Can you help me restore my database? =
+
+
+
+No I can't. Please make a backup of your entire database before using this Plugin for the first time. Also backup your database when you upgrade to a MAJOR NEW version (for example - v0.9.8 to 1.5.5 ).
+
+
+
 = Everytime I clear transient options, it comes back automatically =
 
 
@@ -212,11 +226,21 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 == Changelog ==
 
+= 1.5.6 =
+
+* "Unused Tags cleanup" option made a problem on some WordPress sites that it deletes empty categories. Since I am unable to replicate this problem. I am making this option disabled.
+
+* Translations updates and 3 new languages added.
+
+* Minor maintenance and fixes.
+
+
+
 = 1.5.5 =
 
 * Safe clean up options are selected by default, defaults are not by user preference for now (Optimizer Page).
 
-* All the potentially dangeruous clean up options are MARKED RED.
+* All the potentially dangerous clean up options are MARKED RED.
 
 * Translations update for language - lv, de_DE, zh_TW, pt_BR, fa_IR, es_ES.
 

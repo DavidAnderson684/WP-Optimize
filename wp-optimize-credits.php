@@ -62,7 +62,8 @@ endif;
             <li>
                 <b><?php printf( __( 'Update %s', 'wp-optimize' ), $item->get_date('j F Y | g:i a') ); ?></b>
                 <p><small>
-                <?php echo esc_html( $item->get_description() ); ?>
+                <?php //echo esc_html( $item->get_description() ); ?>
+                <?php echo $item->get_description(); ?>
                 </small></p>
             </li>
         <?php endforeach; ?>

@@ -273,10 +273,11 @@ function SetDefaults() {
      <br />
    <small><?php _e(wpo_getInfo('postmeta'), 'wp-optimize'); ?></small></td>
   </tr>
-  <tr>
+<!--  <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+
   <tr>
     <td><input name="clean-tags" id="clean-tags" type="checkbox" value="" />
     <span style="color: red;">
@@ -285,6 +286,7 @@ function SetDefaults() {
      <br />
    <small><?php _e(wpo_getInfo('tags'), 'wp-optimize'); ?></small></td>
   </tr>
+-->
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>

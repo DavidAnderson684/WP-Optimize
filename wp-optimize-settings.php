@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			}				
 			wpo_cron_activate();
             add_action('wpo_cron_event2', 'wpo_cron_action');
-            wpo_debugLog('We are at setting page form submission and reached wpo_cron_activate()');
+            //wpo_debugLog('We are at setting page form submission and reached wpo_cron_activate()');
 		} else { 
 		update_option( OPTION_NAME_SCHEDULE, 'false' );
 		update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if( isset($_POST['wp-optimize-settings']) ) {
     	$new_options = $_POST['wp-optimize-auto'];
     	$bool_opts = array( 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags', 'optimize' );
+    	
         foreach($bool_opts as $key) {
     		$new_options[$key] = $new_options[$key] ? 'true' : 'false';
     	}
@@ -176,9 +177,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    <br /><br />
    <input name="wp-optimize-auto[postmeta]" id="wp-optimize-auto[postmeta]" type="checkbox" value="true" <?php echo $wpo_auto_options['postmeta'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove orphaned post meta', 'wp-optimize'); ?>
    <br /><br />
+<!--
    <input name="wp-optimize-auto[tags]" id="wp-optimize-auto[tags]" type="checkbox" value="true" <?php echo $wpo_auto_options['tags'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove unused tags', 'wp-optimize'); ?>
    </span>
    <br /><br />
+-->
    <input name="wp-optimize-auto[optimize]" id="wp-optimize-auto[optimize]" type="checkbox" value="true" <?php echo $wpo_auto_options['optimize'] == 'true' ? 'checked="checked"':''; ?> /> <b><?php _e('Optimize database', 'wp-optimize'); ?></b>
    <br /><br />  
    </td>

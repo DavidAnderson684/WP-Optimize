@@ -218,9 +218,9 @@ function wpo_cron_action() {
 
             // unused tags
             if ($this_options['tags'] == 'true'){            
-    			$clean = "DELETE t,tt FROM  $wpdb->terms t INNER JOIN $wpdb->term_taxonomy tt ON t.term_id=tt.term_id WHERE tt.taxonomy='post_tag' AND tt.count=0";
-                $clean .= ';';			
-                $tags = $wpdb->query( $clean );
+    			//$clean = "DELETE t,tt FROM  $wpdb->terms t INNER JOIN $wpdb->term_taxonomy tt ON t.term_id=tt.term_id WHERE tt.taxonomy='post_tag' AND tt.count=0";
+                //$clean .= ';';			
+                //$tags = $wpdb->query( $clean );
             }
 			
 		//db optimize part - optimize
@@ -329,7 +329,7 @@ function wpo_getCurrentDBSize(){
 	$tot_all = 0;
 	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
 	$result = mysql_query($local_query);
-	if (mysql_num_rows($result)){
+	if (mysql_num_rows($result) && is_resource($result)){
 		while ($row = mysql_fetch_array($result))
 		{
 			$tot_data = $row['Data_length'];
@@ -410,11 +410,11 @@ function wpo_cleanUpSystem($cleanupType){
             break;
 
         case "tags":
-            $clean = "DELETE t,tt FROM  $wpdb->terms t INNER JOIN $wpdb->term_taxonomy tt ON t.term_id=tt.term_id WHERE tt.taxonomy='post_tag' AND tt.count=0";
-            $clean .= ';';
-			
-			$tags = $wpdb->query( $clean );
-            $message .= $tags.' '.__('unused tags deleted', 'wp-optimize').'<br>';
+//            $clean = "DELETE t,tt FROM  $wpdb->terms t INNER JOIN $wpdb->term_taxonomy tt ON t.term_id=tt.term_id WHERE tt.taxonomy='post_tag' AND tt.count=0";
+//            $clean .= ';';
+//			
+//			$tags = $wpdb->query( $clean );
+//            $message .= $tags.' '.__('unused tags deleted', 'wp-optimize').'<br>';
             break;
 
 		case "revisions":
