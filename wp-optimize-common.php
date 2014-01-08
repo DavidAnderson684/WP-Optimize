@@ -194,7 +194,8 @@ function wpo_cron_action() {
                 $comments = $wpdb->query( $clean );			
             			
             // trashed comments
-    			$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+    			//$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+    			$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
                 if ($retention_enabled == 'true') {
     				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
                 }
@@ -458,7 +459,8 @@ function wpo_cleanUpSystem($cleanupType){
             $comments = $wpdb->query( $clean );
             $message .= $comments.' '.__('spam comments deleted', 'wp-optimize').'<br>';
 
-            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+            //$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+            $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
             if ($retention_enabled == 'true') {
 				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
             }
