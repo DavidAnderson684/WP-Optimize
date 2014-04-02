@@ -8,9 +8,9 @@ Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedu
 
 Requires at least: 3.7
 
-Tested up to: 3.8.1-alpha
+Tested up to: 3.8.1
 
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 
 
 
@@ -90,7 +90,9 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   Language nl_NL: Mischa ter Smitten - http://blog.tersmitten.nl/
 
+*   Language sk_SK: Patrik Žec (PATWIST) - http://patwist.com
 
+*   Language lt_LT: Su pagarba Bronislav - http://www.internetiniusvetainiukurimas.com/
 
 
 **Features:**
@@ -229,6 +231,12 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+= 1.6.2 =
+
+* 3 Translation update.
+
+
 
 = 1.6.1 =
 

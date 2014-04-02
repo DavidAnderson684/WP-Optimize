@@ -1,0 +1,611 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Optimize 1.5\n"
+"POT-Creation-Date: 2013-11-07 16:17+0800\n"
+"PO-Revision-Date: 2014-03-26 20:40+0100\n"
+"Last-Translator: Patrik Žec (PATWIST) <patrik.zec@gmail.com>\n"
+"Language-Team: Patrik Žec (PATWIST) <patrik.zec@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n;_e\n"
+"X-Poedit-Basepath: .\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
+"X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
+msgid "Database Optimized!"
+msgstr "Databáza optimalizovaná!"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
+msgid "Optimizer"
+msgstr "Optimalizátor"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
+msgid "Info"
+msgstr "Info"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
+msgid "Total clean up overall"
+msgstr "Celkovo vyčistené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:109
+#: Works\wp-optimize_work/wp-optimize-main.php:116
+#: Works\wp-optimize_work/wp-optimize-main.php:132
+msgid "Kb"
+msgstr "Kb"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:401
+msgid "transient options deleted"
+msgstr "prechodné možnosti zmazané"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:409
+msgid "orphaned postmeta deleted"
+msgstr "osamelé postmeta odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:417
+msgid "unused tags deleted"
+msgstr "nepoužívané tagy/štítky/značky odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:428
+msgid "post revisions deleted"
+msgstr "revízie príspevkov odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:439
+msgid "auto drafts deleted"
+msgstr "automaticky uložené verzie článku odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:447
+#: Works\wp-optimize_work/wp-optimize-common.php:467
+msgid "items removed from Trash"
+msgstr "položky odstránené z koša"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:459
+msgid "spam comments deleted"
+msgstr "spam komentáre zmazané"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:477
+msgid "unapproved comments deleted"
+msgstr "neschválené komentáre zmazané"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:483
+msgid "pingbacks deleted"
+msgstr "spätné upozornenia odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:489
+msgid "trackbacks deleted"
+msgstr "spätné odkazy odstránené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:496
+msgid "Enabled weekly processing"
+msgstr "Povolené týždenne spracovanie"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:502
+msgid "Disabled weekly processing"
+msgstr "Zakázané týždenne spracovanie"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:511
+msgid "NO Actions Taken"
+msgstr "Nie sú prijaté žiadne opatrenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:538
+msgid "transient options in your database"
+msgstr "prechodné možnosti v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:540
+msgid "No transient options found"
+msgstr "Neboli nájdené prechodné možnosti v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:549
+msgid "orphaned postmeta in your database"
+msgstr "osamelé postmeta v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:551
+msgid "No orphaned postmeta in your database"
+msgstr "Nenájdené žiadne postmeta v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:560
+msgid "unused tags in your database"
+msgstr "nepoužívané tagy/štítky/značky v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:562
+msgid "No unused tags found"
+msgstr "Nenájdené žiadne nepoužívané tagy/štítky/značky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:575
+msgid "post revisions in your database"
+msgstr "revízie príspevkov  v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
+msgid "No post revisions found"
+msgstr "Nenájdené žiadne revízie príspevkov"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:590
+msgid "auto draft post(s) in your database"
+msgstr "auto koncepty v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
+msgid "No auto draft posts found"
+msgstr "Nenájdené žiadne auto koncepty v databáze"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
+msgid "spam comments found"
+msgstr "spam komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
+msgid "Review Spams"
+msgstr "Pozrieť spam komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:606
+msgid "No spam comments found"
+msgstr "Nenájdené žiadne komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
+msgid "unapproved comments found"
+msgstr "nájdené neschválené komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
+msgid "Review Unapproved Comments"
+msgstr "Pozrieť neschválené komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:619
+msgid "No unapproved comments found"
+msgstr "Nenájdené neschválené komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:627
+msgid "Pingbacks found"
+msgstr "Nájdené spätné upozornenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:629
+msgid "No pingbacks found"
+msgstr "Nenájdené spätné upozornenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:637
+msgid "Trackbacks found"
+msgstr "Nájdené spätné odkazy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:639
+msgid "No trackbacks found"
+msgstr "Nenájdené spätné odkazy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:645
+msgid "nothing"
+msgstr "nič"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
+msgid "Credits"
+msgstr "Zásluhy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
+msgid ""
+"WP-Optimize started as a utility for my own projects. I have realized soon, "
+"that this plugin might help a lot of people out there. I am personally "
+"thanking all of the users who use this plugin as a daily basis. Also thank "
+"you all of the translators and the generous people who have donated for this "
+"project."
+msgstr ""
+"Plugin WP-Optimalizácia začínal ako nástroj pre svoje vlastné projekty. "
+"Čoskoro som si uvedomil že tento plugin môže pomôcť veľa iným ľudom. Ďakujem "
+"všetkým používateľom, ktorí používajú tento plugin denne. Taktiež ďakujem "
+"všetkým prekladateľom a štedrým ľudom, ktorí finančne podporili tento "
+"projekt."
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
+msgid "Share this plugin on Facebook"
+msgstr "Zdieľať tento plugin na Facebooku"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
+msgid "Contributing Developers"
+msgstr "Prispievajúci vývojári"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+msgid "Help me make this plugin better"
+msgstr "Pomôžte mi spraviť tento plugin lepším"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+msgid "I am looking for contributing developers."
+msgstr "Hľadám vývojárov, ktorý by mali záujem podieľať sa na kódovaní."
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
+msgid "Your name and website will be credited here in the plugin"
+msgstr "Vaše meno a webstránka bude uvedená tu v plugine"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
+msgid "Translators"
+msgstr "Prekladatelia"
+
+# This is the link for the Translator's website
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+msgid "http://www.ruhanirabin.com/"
+msgstr "http://patwist.com"
+
+# Please change this to Translator's name
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+msgid ""
+"Default Language by Ruhani Rabin (Change this text and the link inside "
+"translation file)"
+msgstr "Slovenský preklad vyhotovil Patrik Žec (PATWIST)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+msgid "Download .POT File to translate"
+msgstr "Stiahnuť .POT súbor na preklad"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+msgid "Email your translations to"
+msgstr "Pošlite váš preklad e-mailom na"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
+msgid "Development Log"
+msgstr "Vývojový záznam"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
+msgid "No items"
+msgstr "Žiadne položky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
+#, php-format
+msgid "Update %s"
+msgstr "Aktualizovať %s"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:71
+msgid "Plugin Resources"
+msgstr "Odkazy na stránky pluginu"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
+msgid "Plugin Homepage"
+msgstr "Stránka pluginu"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
+msgid "Support Forum"
+msgstr "Fórum pre podporu"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
+msgid "Change Log"
+msgstr "Zmeny vo verziách"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
+msgid "FAQ"
+msgstr "Často kladené otázky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
+msgid "Status : "
+msgstr "Status : "
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
+msgid "Last automatic optimization was at "
+msgstr "Posledná automatická optimalizácia bola v"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
+msgid "There was no automatic optimization"
+msgstr "Nebola žiadna automatická optimalizácia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
+#: Works\wp-optimize_work/wp-optimize-main.php:70
+#: Works\wp-optimize_work/wp-optimize-main.php:95
+msgid "Check settings"
+msgstr "Pozrieť nastavenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
+msgid "Scheduled cleaning enabled"
+msgstr "Plánované čistenie je povolené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
+msgid "Next schedule"
+msgstr "ďalší plán"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:59
+msgid "Refresh"
+msgstr "Obnoviť"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:67
+msgid "Scheduled cleaning DISABLED"
+msgstr "Plánované čistenie nie je povolené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:81
+msgid "Retention enabled and keeping last "
+msgstr "Uchovávanie povolené a udržuje posledné"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:84
+#: Works\wp-optimize_work/wp-optimize-settings.php:93
+msgid "weeks data"
+msgstr "týždňové dáta"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:92
+msgid "Retention is disabled"
+msgstr "Uchovávanie nie je povolené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:109
+msgid "Current database size : "
+msgstr "Aktuálna veľkosť databázy:"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
+#: Works\wp-optimize_work/wp-optimize-main.php:125
+msgid "Kb."
+msgstr "Kb."
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:113
+msgid "You have saved"
+msgstr "Ušetrili ste"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:122
+msgid "Current database size"
+msgstr "Aktuálna veľkosť databázy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:129
+msgid "You can save almost"
+msgstr "Môžete ušetriť"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:138
+msgid "Buy me a Coffee :)"
+msgstr "Kúpte mi kávu :-)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
+msgid "See Tables > "
+msgstr "Pozrieť tabuľky > "
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
+msgid "Database Size > "
+msgstr "Veľkosť databázy > "
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:164
+msgid "Database Optimization Options"
+msgstr "Možnosti optimalizácie databázy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:175
+msgid "Sponsor"
+msgstr "Sponzor"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:182
+msgid "Remove post revisions which are older than "
+msgstr "Odstrániť revízie príspevkov staršie ako"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
+#: Works\wp-optimize_work/wp-optimize-main.php:205
+#: Works\wp-optimize_work/wp-optimize-main.php:225
+#: Works\wp-optimize_work/wp-optimize-main.php:244
+msgid "weeks"
+msgstr "týždne"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:187
+msgid "Remove all post revisions"
+msgstr "Odstrániť všetky revízie príspevkov"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:202
+msgid "Remove auto draft posts which are older than "
+msgstr "Odstrániť všetky automatické koncepty príspevkov staršie ako"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:207
+msgid "Remove auto draft posts (This will also clear out posts in Trash)"
+msgstr ""
+"Odstrániť všetky automatické koncepty príspevkov (Taktiež vyčistiť príspevky "
+"z Koša)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:222
+msgid "Remove spam comments which are older than "
+msgstr "Odstrániť smap komentáre staršie ako"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:227
+msgid "Remove spam comments (This will also clear out comments in Trash)"
+msgstr "Odstrániť smap komentáre (Taktiež vyčistiť komentáre v Koši)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:241
+msgid "Remove unapproved comments which are older than "
+msgstr "Odstrániť neschválené komentáre staršie ako"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:246
+#: Works\wp-optimize_work/wp-optimize-settings.php:172
+msgid "Remove unapproved comments"
+msgstr "Odstrániť neschválené komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:258
+#: Works\wp-optimize_work/wp-optimize-settings.php:174
+msgid "Remove transient options"
+msgstr "Odstrániť prechodné možnosti"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:267
+msgid "Remove orphaned postmeta"
+msgstr "Odstrániť osamelé postmeta"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:276
+#: Works\wp-optimize_work/wp-optimize-settings.php:178
+msgid "Remove unused tags"
+msgstr "Odstrániť nepoužívané tagy/štítky/značky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:285
+msgid "Remove pingbacks"
+msgstr "Odstrániť spätné upozornenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:294
+msgid "Remove trackbacks"
+msgstr "Odstrániť spätné odkazy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:305
+msgid "Optimize database tables"
+msgstr "Optimalizovať databázové tabuľky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:314
+msgid "PROCESS"
+msgstr "VYČISTIŤ"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:340
+msgid "Database Tables Report"
+msgstr "Správa o tabuľkách databázy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:341
+msgid "Database Name:"
+msgstr "Názov databázy:"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:345
+msgid "Optimized all the tables found in the database."
+msgstr "Optimalizované všetky tabuľky v databáze."
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:352
+#: Works\wp-optimize_work/wp-optimize-main.php:360
+msgid "Table"
+msgstr "Tabuľka"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:353
+#: Works\wp-optimize_work/wp-optimize-main.php:361
+msgid "Size"
+msgstr "Veľkosť"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:354
+#: Works\wp-optimize_work/wp-optimize-main.php:362
+msgid "Status"
+msgstr "Status"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
+#: Works\wp-optimize_work/wp-optimize-main.php:363
+msgid "Space Save"
+msgstr "Úspora miesta"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:409
+msgid "Already Optimized"
+msgstr "Optimalizované"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:418
+msgid "Optimized"
+msgstr "Optimalizované"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:426
+msgid "Need to Optimize"
+msgstr "Potrebné optimalizovať"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:438
+msgid "Total Size of Database"
+msgstr "Celková veľkosť databázy"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:446
+msgid "Optimization Results"
+msgstr "Výsledky optimalizácie"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:447
+msgid "Total Space Saved"
+msgstr "Celkovo ušetrené miesto"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:452
+msgid "Optimization Possibility"
+msgstr "Možnosti optimalizácie"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:453
+msgid "Total space can be saved"
+msgstr "Celkovo môže byť ušetrené"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:63
+msgid "Settings updated"
+msgstr "Nastavenia aktualizované"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:72
+msgid "General Settings"
+msgstr "Hlavné nastavenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
+msgid "Auto Clean-up Settings"
+msgstr "Nastavenia automatického čistenia"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:82
+msgid "Keep last "
+msgstr "Zachovať posledné"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:98
+msgid ""
+"This option will retain the last X weeks data and remove any garbage data "
+"before that period"
+msgstr ""
+"Táto možnosť zachová dáta za posledných  X týždňov a odstráni všetok odpad "
+"pred touto periódou"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:106
+msgid "Enable admin bar link "
+msgstr "Povoliť odkaz v hornej lište administračného panelu"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:108
+msgid "(Click here to refresh)"
+msgstr "(Kliknite tu pre obnovenie)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:113
+msgid ""
+"This option will put WP-Optimize link on the top admin bar (default is off). "
+"Requires page refresh."
+msgstr ""
+"Táto možnosť pridá odkaz na WP-Optimalizáciu do hornej lišty administračného "
+"panelu (predvolene je vypnuté). (Vyžaduje znovunačítanie stránky)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:122
+msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
+msgstr ""
+"Povoliť plánované automatické čistenie a optimalizáciu (EXPERIMENTÁLNA "
+"FUNKCIA!)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:124
+msgid "Select schedule type (default is Weekly)"
+msgstr "Zvoľte typ plánu (predvolený je týždenný)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:131
+#: Works\wp-optimize_work/wp-optimize-settings.php:143
+#: Works\wp-optimize_work/wp-optimize-settings.php:149
+msgid "Every week"
+msgstr "Každý týždeň"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:135
+#: Works\wp-optimize_work/wp-optimize-settings.php:150
+msgid "Every other week (every 14 days)"
+msgstr "Každý druhý týždeň (každých 14 dní)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:139
+#: Works\wp-optimize_work/wp-optimize-settings.php:151
+msgid "Every month (every 31 days)"
+msgstr "Každý mesiac (každých 31 dní)"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:156
+msgid "Automatic cleanup will perform the following:"
+msgstr "Automatické čistenie vykoná nasledujúce:"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:158
+msgid ""
+"Remove revisions, auto drafts, posts/comments in trash, transient options. "
+"After that it will optimize the db."
+msgstr ""
+"Odstráni revízie, automatické koncepty, príspevky/komentáre v koši, "
+"prechodné možnosti. Potom optimalizuje databázu."
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:164
+msgid ""
+"These options will only work if the automatic clean-up schedule has been "
+"enabled"
+msgstr "Tieto možnosti budú fungovať len ak je povolené automatické čistenie"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:166
+msgid "Remove auto revisions"
+msgstr "Odstrániť automatické revízie príspevkov"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:168
+msgid "Remove auto drafts"
+msgstr "Odstrániť automatické koncepty"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:170
+msgid "Remove spam comments"
+msgstr "Odstrániť spam komentáre"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:176
+msgid "Remove orphaned post meta"
+msgstr "Odstrániť osamelé meta príspevky"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:180
+msgid "Optimize database"
+msgstr "Optimalizovať databázu"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
+msgid "SAVE SETTINGS"
+msgstr "ULOŽIŤ NASTAVENIA"
+
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:186
+msgid "SAVE AUTO CLEAN-UP SETTINGS"
+msgstr "ULOŽIŤ NASTAVENIA AUTOMATICKÉHO ČISTENIA"
