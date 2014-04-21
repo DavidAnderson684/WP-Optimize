@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.2\n"
 "POT-Creation-Date: 2013-11-07 11:26+0800\n"
-"PO-Revision-Date: 2013-11-08 00:00+0800\n"
+"PO-Revision-Date: 2014-04-19 11:17+0800\n"
 "Last-Translator: Souma Hoshino <soutear@gmail.com>\n"
 "Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
 "MIME-Version: 1.0\n"
@@ -14,702 +14,587 @@ msgstr ""
 "X-Poedit-SearchPath-0: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
 "X-Poedit-SearchPath-1: D:\\Documents\\My Works\\wp-optimize_work\n"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-admin.php:49
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
 msgid "Database Optimized!"
 msgstr "数据库已优化"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-admin.php:67
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
 msgid "Optimizer"
 msgstr "优化工具"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-admin.php:72
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
 msgid "Settings"
 msgstr "设置"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-admin.php:73
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
 msgid "Info"
 msgstr "信息"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:107
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:107
 msgid "Total clean up overall"
 msgstr "清理总览"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:110
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:110
 #: Works\wp-optimize_work/wp-optimize-main.php:116
 #: Works\wp-optimize_work/wp-optimize-main.php:132
 msgid "Kb"
 msgstr "Kb"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:402
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:402
 msgid "transient options deleted"
 msgstr "个临时选项已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:410
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:410
 msgid "orphaned postmeta deleted"
 msgstr "个无用数据已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:418
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:418
 msgid "unused tags deleted"
 msgstr "个未使用的标签已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:429
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:429
 msgid "post revisions deleted"
 msgstr "篇文章修订记录已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:440
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:440
 msgid "auto drafts deleted"
 msgstr "篇自动草稿已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:448
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:448
 #: Works\wp-optimize_work/wp-optimize-common.php:468
 msgid "items removed from Trash"
 msgstr "个项目已从回收站删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:460
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:460
 msgid "spam comments deleted"
 msgstr "条垃圾评论已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:478
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:478
 msgid "unapproved comments deleted"
 msgstr "条未审核评论已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:484
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:484
 msgid "pingbacks deleted"
 msgstr "条 Pingbacks 已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:490
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:490
 msgid "trackbacks deleted"
 msgstr "条 Trackbacks 已删除"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:497
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:497
 msgid "Enabled weekly processing"
 msgstr "每周自动优化已启用"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:503
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:503
 msgid "Disabled weekly processing"
 msgstr "每周自动优化已禁用"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:512
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:512
 msgid "NO Actions Taken"
 msgstr "未操作"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:539
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:539
 msgid "transient options in your database"
 msgstr "个临时选项"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:541
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:541
 msgid "No transient options found"
 msgstr "暂无临时选项"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:550
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:550
 msgid "orphaned postmeta in your database"
 msgstr "条无用数据"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:552
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:552
 msgid "No orphaned postmeta in your database"
 msgstr "暂无无用数据"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:561
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:561
 msgid "unused tags in your database"
 msgstr "个未使用的标签"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:563
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:563
 msgid "No unused tags found"
 msgstr "暂无未使用的标签"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:576
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:576
 msgid "post revisions in your database"
 msgstr "篇文章修订记录"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:578
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:578
 msgid "No post revisions found"
 msgstr "暂无文章修订记录"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:591
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:591
 msgid "auto draft post(s) in your database"
 msgstr "篇自动草稿"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:593
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:593
 msgid "No auto draft posts found"
 msgstr "暂无自动草稿"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:605
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:605
 msgid "spam comments found"
 msgstr "条垃圾评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:605
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:605
 msgid "Review Spams"
 msgstr "查看垃圾评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:607
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:607
 msgid "No spam comments found"
 msgstr "暂无垃圾评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:618
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:618
 msgid "unapproved comments found"
 msgstr "条未审核评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:618
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:618
 msgid "Review Unapproved Comments"
 msgstr "查看未审核评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:620
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:620
 msgid "No unapproved comments found"
 msgstr "暂无未审核评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:628
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:628
 msgid "Pingbacks found"
 msgstr "条 Pingbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:630
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:630
 msgid "No pingbacks found"
 msgstr "暂无 Pingbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:638
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:638
 msgid "Trackbacks found"
 msgstr "条 Trackbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:640
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:640
 msgid "No trackbacks found"
 msgstr "暂无 Trackbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-common.php:646
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:646
 msgid "nothing"
 msgstr "无"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:4
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
 msgid "Credits"
 msgstr "致谢"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:5
-msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
-msgstr "开始时 WP-Optimize 只是作为我自用的一个小工具而诞生. 但不久我便发现这个插件帮助了很多人. <br>我非常感谢每天使用和支持这个插件的大家, 同时也感谢帮助翻译插件和慷慨赞助的所有人."
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
+msgid ""
+"WP-Optimize started as a utility for my own projects. I have realized soon, "
+"that this plugin might help a lot of people out there. I am personally "
+"thanking all of the users who use this plugin as a daily basis. Also thank "
+"you all of the translators and the generous people who have donated for this "
+"project."
+msgstr ""
+"开始时 WP-Optimize 只是作为我自用的一个小工具而诞生. 但不久我便发现这个插件帮"
+"助了很多人. <br>我非常感谢每天使用和支持这个插件的大家, 同时也感谢帮助翻译插"
+"件和慷慨赞助的所有人."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:15
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
 msgid "Share this plugin on Facebook"
 msgstr "在 Facebook 上分享这个插件"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:25
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
 msgid "Contributing Developers"
 msgstr "协助开发插件"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:26
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "Help me make this plugin better"
 msgstr "反馈你的意见"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:26
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "I am looking for contributing developers."
 msgstr "帮助开发者完善插件."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:27
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
 msgid "Your name and website will be credited here in the plugin"
 msgstr "你的名字和网站将有机会被写到插件的这一栏"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:29
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
 msgid "Translators"
 msgstr "翻译"
 
 # This is the link for the Translator's website
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:30
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
 msgid "http://www.ruhanirabin.com/"
 msgstr "http://moesora.com/"
 
 # Please change this to Translator's name
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:30
-msgid "Default Language by Ruhani Rabin (Change this text and the link inside translation file)"
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+msgid ""
+"Default Language by Ruhani Rabin (Change this text and the link inside "
+"translation file)"
 msgstr "简体中文语言包 由 SoumaHoshino 提供"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:32
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Download .POT File to translate"
 msgstr "下载 .POT 文件进行翻译"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:32
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Email your translations to"
 msgstr "将你翻译的成果邮寄至"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:38
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
 msgid "Development Log"
 msgstr "开发日志"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:58
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
 msgid "No items"
 msgstr "没有项目"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:63
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
 #, php-format
 msgid "Update %s"
 msgstr "最后更新 %s"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:71
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:71
 msgid "Plugin Resources"
 msgstr "插件相关"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:72
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
 msgid "Plugin Homepage"
 msgstr "插件官网"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:73
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
 msgid "Support Forum"
 msgstr "支持论坛"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:74
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
 msgid "Change Log"
 msgstr "更新日志"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-credits.php:75
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
 msgid "FAQ"
 msgstr "常见问题"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:5
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
 msgid "Status : "
 msgstr "状态 :"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:10
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
 msgid "Last automatic optimization was at "
 msgstr "上一次自动优化于 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:21
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
 msgid "There was no automatic optimization"
 msgstr "没有自动优化"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:24
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
 #: Works\wp-optimize_work/wp-optimize-main.php:70
 #: Works\wp-optimize_work/wp-optimize-main.php:95
 msgid "Check settings"
 msgstr "检查设置"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:36
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
 msgid "Scheduled cleaning enabled"
 msgstr "清理计划已启用"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:48
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
 msgid "Next schedule"
 msgstr "下次优化时间"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:59
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:59
 msgid "Refresh"
 msgstr "刷新"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:67
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:67
 msgid "Scheduled cleaning DISABLED"
 msgstr "清理计划已禁用"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:81
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:81
 msgid "Retention enabled and keeping last "
 msgstr "保留数据已启用 将保留最近 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:84
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:84
 #: Works\wp-optimize_work/wp-optimize-settings.php:93
 msgid "weeks data"
 msgstr "周的数据"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:92
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:92
 msgid "Retention is disabled"
 msgstr "保留数据已禁用"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:109
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:109
 msgid "Current database size : "
 msgstr "当前数据库体积 :"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:111
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
 #: Works\wp-optimize_work/wp-optimize-main.php:125
 msgid "Kb."
 msgstr "Kb."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:113
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:113
 msgid "You have saved"
 msgstr "你已节省"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:122
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:122
 msgid "Current database size"
 msgstr "当前数据库体积"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:129
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:129
 msgid "You can save almost"
 msgstr "你大约可以节省"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:138
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:138
 msgid "Buy me a Coffee :)"
 msgstr "赞助作者"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:139
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
 msgid "See Tables > "
 msgstr "查看表单 >"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:139
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
 msgid "Database Size > "
 msgstr "数据库体积 >"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:164
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:164
 msgid "Database Optimization Options"
 msgstr "数据库优化选项"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:175
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:175
 msgid "Sponsor"
 msgstr "赞助"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:182
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:182
 msgid "Remove post revisions which are older than "
 msgstr "删除文章修订记录 (仅删除早于 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:185
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
 #: Works\wp-optimize_work/wp-optimize-main.php:205
 #: Works\wp-optimize_work/wp-optimize-main.php:225
 #: Works\wp-optimize_work/wp-optimize-main.php:244
 msgid "weeks"
 msgstr "周的)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:187
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:187
 msgid "Remove all post revisions"
 msgstr "删除所有文章修订记录"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:202
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:202
 msgid "Remove auto draft posts which are older than "
 msgstr "删除自动草稿 (仅删除早于 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:207
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:207
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr "删除自动草稿 (同时将删除回收站内的文章)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:222
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:222
 msgid "Remove spam comments which are older than "
 msgstr "删除垃圾评论 (仅删除早于 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:227
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:227
 msgid "Remove spam comments (This will also clear out comments in Trash)"
 msgstr "删除垃圾评论 (同时将删除回收站内的评论)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:241
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:241
 msgid "Remove unapproved comments which are older than "
 msgstr "删除未审核评论 (仅删除早于 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:246
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:246
 #: Works\wp-optimize_work/wp-optimize-settings.php:172
 msgid "Remove unapproved comments"
 msgstr "删除未清除未审核的评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:258
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:258
 #: Works\wp-optimize_work/wp-optimize-settings.php:174
 msgid "Remove transient options"
 msgstr "删除临时选项 (保存于数据库中的临时缓存)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:267
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:267
 msgid "Remove orphaned postmeta"
 msgstr "删除无用数据 (因版本升级而产生的无用表)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:276
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:276
 #: Works\wp-optimize_work/wp-optimize-settings.php:178
 msgid "Remove unused tags"
 msgstr "删除未使用的标签"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:285
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:285
 msgid "Remove pingbacks"
 msgstr "删除 Pingbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:294
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:294
 msgid "Remove trackbacks"
 msgstr "删除 Trackbacks"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:305
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:305
 msgid "Optimize database tables"
 msgstr "优化数据库表"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:314
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:314
 msgid "PROCESS"
 msgstr "优化"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:340
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:340
 msgid "Database Tables Report"
 msgstr "数据库表报告"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:341
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:341
 msgid "Database Name:"
 msgstr "数据库名称:"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:345
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:345
 msgid "Optimized all the tables found in the database."
 msgstr "数据库中的所有表单已优化."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:352
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:352
 #: Works\wp-optimize_work/wp-optimize-main.php:360
 msgid "Table"
 msgstr "表单"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:353
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:353
 #: Works\wp-optimize_work/wp-optimize-main.php:361
 msgid "Size"
 msgstr "体积"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:354
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:354
 #: Works\wp-optimize_work/wp-optimize-main.php:362
 msgid "Status"
 msgstr "状态"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:355
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
 #: Works\wp-optimize_work/wp-optimize-main.php:363
 msgid "Space Save"
 msgstr "节省空间"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:409
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:409
 msgid "Already Optimized"
 msgstr "已优化"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:418
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:418
 msgid "Optimized"
 msgstr "优化成功"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:426
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:426
 msgid "Need to Optimize"
 msgstr "需要优化"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:438
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:438
 msgid "Total Size of Database"
 msgstr "数据库体积"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:446
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:446
 msgid "Optimization Results"
 msgstr "优化结果"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:447
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:447
 msgid "Total Space Saved"
 msgstr "已节省空间"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:452
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:452
 msgid "Optimization Possibility"
 msgstr "可优化程度"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-main.php:453
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:453
 msgid "Total space can be saved"
 msgstr "总计可以节省空间"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:63
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:63
 msgid "Settings updated"
 msgstr "设置已更新"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:72
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:72
 msgid "General Settings"
 msgstr "常规设置"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:73
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
 msgid "Auto Clean-up Settings"
 msgstr "自动清理设置"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:82
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:82
 msgid "Keep last "
 msgstr "保留最近"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:98
-msgid "This option will retain the last X weeks data and remove any garbage data before that period"
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:98
+msgid ""
+"This option will retain the last X weeks data and remove any garbage data "
+"before that period"
 msgstr "启用此选项将保留最近 X 周的数据并删除在此时段之前的所有垃圾内容"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:106
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:106
 msgid "Enable admin bar link "
 msgstr "启用工具栏链接 "
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:108
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:108
 msgid "(Click here to refresh)"
 msgstr "(点击刷新)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:113
-msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
-msgstr "启用此选项将在工具栏(页面顶部)添加WP-Optimize链接 (默认不启用). 更新设置后需要刷新页面生效."
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:113
+msgid ""
+"This option will put WP-Optimize link on the top admin bar (default is off). "
+"Requires page refresh."
+msgstr ""
+"启用此选项将在工具栏(页面顶部)添加WP-Optimize链接 (默认不启用). 更新设置后需"
+"要刷新页面生效."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:122
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:122
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
 msgstr "启用每周自动优化 (测试版!)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:124
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:124
 msgid "Select schedule type (default is Weekly)"
 msgstr "设置计划方案 (默认为每周)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:131
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:131
 #: Works\wp-optimize_work/wp-optimize-settings.php:143
 #: Works\wp-optimize_work/wp-optimize-settings.php:149
 msgid "Every week"
 msgstr "每周"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:135
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:135
 #: Works\wp-optimize_work/wp-optimize-settings.php:150
 msgid "Every other week (every 14 days)"
 msgstr "每2周 (14天)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:139
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:139
 #: Works\wp-optimize_work/wp-optimize-settings.php:151
 msgid "Every month (every 31 days)"
 msgstr "每月 (31天)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:156
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:156
 msgid "Automatic cleanup will perform the following:"
 msgstr "自动清理将执行以下操作:"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:158
-msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
-msgstr "删除修订记录, 自动草稿, 回收站内的文章和评论, 临时选项. 之后会优化数据库表."
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:158
+msgid ""
+"Remove revisions, auto drafts, posts/comments in trash, transient options. "
+"After that it will optimize the db."
+msgstr ""
+"删除修订记录, 自动草稿, 回收站内的文章和评论, 临时选项. 之后会优化数据库表."
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:164
-msgid "These options will only work if the automatic clean-up schedule has been enabled"
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:164
+msgid ""
+"These options will only work if the automatic clean-up schedule has been "
+"enabled"
 msgstr "这些选项仅在自动清理计划启用时生效"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:166
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:166
 msgid "Remove auto revisions"
 msgstr "删除修订记录"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:168
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:168
 msgid "Remove auto drafts"
 msgstr "删除自动草稿"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:170
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:170
 msgid "Remove spam comments"
 msgstr "删除垃圾评论"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:176
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:176
 msgid "Remove orphaned post meta"
 msgstr "删除无用数据 (因版本升级而产生的无用表)"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:180
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:180
 msgid "Optimize database"
 msgstr "优化数据库"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:185
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
 msgid "SAVE SETTINGS"
 msgstr "保存设置"
 
-#: d:\Ruhani\Documents\My
-#: Works\wp-optimize_work/wp-optimize-settings.php:186
+#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:186
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "保存自动清理设置"
-

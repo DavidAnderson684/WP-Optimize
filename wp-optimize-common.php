@@ -13,6 +13,7 @@ if (! defined('WPO_PLUGIN_PATH'))
 if (! defined('WP_CONTENT_DIR'))
     define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
 
+// TODO: Need to remove the two options below because this can return wrong path
 if (! defined('WP_CONTENT_URL'))
     define('WP_CONTENT_URL', get_option('siteurl') . '/wp-content');
 
@@ -106,7 +107,8 @@ function wpo_headerImage(){
         _e('Total clean up overall','wp-optimize');
         echo ': ';
         echo '<font color="green">';
-        echo $total_cleaned.' '.__('Kb', 'wp-optimize');
+        //echo $total_cleaned.' '.__('Kb', 'wp-optimize');
+        echo wpo_format_size($total_cleaned);
         echo '</font>';
         echo '</h3>';
         echo '<br />';
@@ -176,6 +178,7 @@ function wpo_cron_action() {
 			
             
                 // trash posts
+				// TODO:  query trashed posts and cleanup metadata 
     			$clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash'";
                 if ($retention_enabled == 'true') {
                     $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
@@ -194,6 +197,7 @@ function wpo_cron_action() {
                 $comments = $wpdb->query( $clean );			
             			
             // trashed comments
+			// TODO:  query trashed comments and cleanup metadata 
     			//$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
     			$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
                 if ($retention_enabled == 'true') {
@@ -211,10 +215,12 @@ function wpo_cron_action() {
             }
 
             // postmeta
+			// TODO:  refactor this with proper query
             if ($this_options['postmeta'] == 'true'){
     			$clean = "DELETE pm FROM  $wpdb->postmeta  pm LEFT JOIN  $wpdb->posts  wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
                 $clean .= ';';			
-                $postmeta = $wpdb->query( $clean );
+                 
+				//$postmeta = $wpdb->query( $clean );
             }
 
             // unused tags
@@ -315,6 +321,21 @@ function wpo_PluginOptionsSetDefaults() {
     	
 } 
 
+
+### Function: Format Bytes Into KB/MB
+if(!function_exists('wpo_format_size')) {
+	function wpo_format_size($rawSize) {
+		if($rawSize / 1073741824 > 1)
+			return number_format_i18n($rawSize/1048576, 1) . ' '.__('Gb', 'wp-optimize');
+		else if ($rawSize / 1048576 > 1)
+			return number_format_i18n($rawSize/1048576, 1) . ' '.__('Mb', 'wp-optimize');
+		else if ($rawSize / 1024 > 1)
+			return number_format_i18n($rawSize/1024, 1) . ' '.__('Kb', 'wp-optimize');
+		else
+			return number_format_i18n($rawSize, 0) . ' '.__('bytes', 'wp-optimize');
+	}
+}
+
 /*
  * function wpo_getCurrentDBSize()
  * 
@@ -325,35 +346,28 @@ function wpo_PluginOptionsSetDefaults() {
  * @return array $total size, $gain
  */
 function wpo_getCurrentDBSize(){
-	$tot_data = 0; $total_gain = 0; $total_db_space = 0; $total_db_space_a = 0;
-	$tot_idx = 0;
-	$tot_all = 0;
-	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
-	$result = mysql_query($local_query);
-	if (mysql_num_rows($result) && is_resource($result)){
-		while ($row = mysql_fetch_array($result))
-		{
-			$tot_data = $row['Data_length'];
-			$tot_idx  = $row['Index_length'];
-			$total = $tot_data + $tot_idx;
-			$total = $total / 1024 ;
-			$total = round ($total,3);
-
-			$total_db_space = $tot_data + $tot_idx;
-			$total_db_space = $total_db_space / 1024 ;
-			$total_db_space_a += $total_db_space;
-			$total_db_space = round ($total_db_space,3);
-			
-			$gain= $row['Data_free'];
-			$gain = $gain / 1024 ;
-			$total_gain += $gain;
-			$gain = round ($gain,3);
-		
-			
-		}
-	return array (round($total_db_space_a,3), round($total_gain,3));	
+	global $wpdb;
+	$total_gain = 0;
+	$total_size = 0;
+	$no = 0;
+	$row_usage = 0;
+	$data_usage = 0;
+	$index_usage = 0;
+	$overhead_usage = 0;
+	$tablesstatus = $wpdb->get_results("SHOW TABLE STATUS");
+	foreach($tablesstatus as  $tablestatus) {
+		$row_usage += $tablestatus->Rows;
+		$data_usage += $tablestatus->Data_length;
+		$index_usage +=  $tablestatus->Index_length;
+		$overhead_usage += $tablestatus->Data_free;
+		$total_gain += $tablestatus->Data_free;
+	}	
+	
+	$total_size = $data_usage + $index_usage;
+	return array (wpo_format_size($total_size), wpo_format_size($total_gain));
+    $wpdb->flush();
 	}
-} // end of function wpo_getCurrentDBSize
+ // end of function wpo_getCurrentDBSize
 
 /*
  * function wpo_updateTotalCleaned($current)
@@ -377,7 +391,7 @@ function wpo_updateTotalCleaned($current){
     
     return $total_now; 	
 	
-} // end of function wpo_getCurrentDBSize
+} // end of function wpo_updateTotalCleaned
 
 /*
  * function wpo_cleanUpSystem($cleanupType)
@@ -401,13 +415,13 @@ function wpo_cleanUpSystem($cleanupType){
 			$transient_options = $wpdb->query( $clean );
             $message .= $transient_options.' '.__('transient options deleted', 'wp-optimize').'<br>';
             break;
-
+		// TODO:  need to use proper query
         case "postmeta":
             $clean = "DELETE pm FROM  $wpdb->postmeta  pm LEFT JOIN  $wpdb->posts  wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
             $clean .= ';';
 			
-			$postmeta = $wpdb->query( $clean );
-            $message .= $postmeta.' '.__('orphaned postmeta deleted', 'wp-optimize').'<br>';
+			//$postmeta = $wpdb->query( $clean );
+            //$message .= $postmeta.' '.__('orphaned postmeta deleted', 'wp-optimize').'<br>';
             break;
 
         case "tags":
@@ -439,7 +453,9 @@ function wpo_cleanUpSystem($cleanupType){
             $autodraft = $wpdb->query( $clean );
             $message .= $autodraft.' '.__('auto drafts deleted', 'wp-optimize').'<br>';
 
-            $clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash'";
+            
+			// TODO:  query trashed posts and cleanup metadata
+			$clean = "DELETE FROM $wpdb->posts WHERE post_status = 'trash'";
             if ($retention_enabled == 'true') {
                 $clean .= ' and post_modified < NOW() - INTERVAL ' .  $retention_period . ' WEEK';
             }
@@ -459,7 +475,7 @@ function wpo_cleanUpSystem($cleanupType){
             $comments = $wpdb->query( $clean );
             $message .= $comments.' '.__('spam comments deleted', 'wp-optimize').'<br>';
 
-            //$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
+            // TODO:  query trashed comments and cleanup metadata 
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
             if ($retention_enabled == 'true') {
 				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';

@@ -1,39 +1,48 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.2\n"
+"Project-Id-Version: WP-Optimize 1.5\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-19 11:16+0800\n"
 "PO-Revision-Date: 2014-04-19 11:16+0800\n"
-"Last-Translator: Kniebremser <kniebremser@fluchtsportler.de>\n"
+"Last-Translator: Kornel <kml1960@tlen.pl>\n"
 "Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
-"Language: de_DE\n"
+"Language: Polish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && "
+"( n % 100 < 10 || n % 100 >= 20 ) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n;_e\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: .\n"
+"X-Loco-Target-Locale: pl_PL\n"
 "X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
 "X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
 msgid "Database Optimized!"
-msgstr "Datenbank Optimiert!"
+msgstr "Baza Danych została zoptymalizowana"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
 msgid "Optimizer"
-msgstr ""
+msgstr "Optymalizacja"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Ustawienia"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
 msgid "Info"
-msgstr "Informationen"
+msgstr "Informacja"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
 msgid "Total clean up overall"
-msgstr "Von Anfang an eingespart"
+msgstr "Całkowity rozmiar wyczyszczonych elementów"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:328
 msgid "Gb"
@@ -53,136 +62,136 @@ msgstr ""
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:415
 msgid "transient options deleted"
-msgstr "transiente Optionen löschen"
+msgstr "Wykryto opcje przjściowe"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:442
 msgid "post revisions deleted"
-msgstr "Beitrag Revisionen löschen"
+msgstr "Korekty postów usunięte "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:453
 msgid "auto drafts deleted"
-msgstr "auto Entwürfe löschen"
+msgstr "Automatycznie zapisane szkice zostały usunięte"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:463
 #: Works\wp-optimize_work/wp-optimize-common.php:484
 msgid "items removed from Trash"
-msgstr "Artikel aus dem Papierkorb entfernen"
+msgstr "Elementy usunięte ze śmietnika"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:475
 msgid "spam comments deleted"
-msgstr "Spam-Kommentare löschen"
+msgstr "Komentarze oznaczone jako spam zostały usunięte"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:494
 msgid "unapproved comments deleted"
-msgstr "ungenehmigte Kommentare löschen"
+msgstr "Niezatwierdzone komentarze zostały usunięte"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:500
 msgid "pingbacks deleted"
-msgstr "Pingbacks löschen"
+msgstr "Pingbacks zostały usunięte"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:506
 msgid "trackbacks deleted"
-msgstr "Trackbacks löschen"
+msgstr "Trackbacks zostały usunięte"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:513
 msgid "Enabled weekly processing"
-msgstr "Aktiviert wöchentliche Verarbeitung"
+msgstr "Włącz proces raz w tygodniu"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:519
 msgid "Disabled weekly processing"
-msgstr "Deaktiviert wöchentliche Verarbeitung"
+msgstr "Wyłącz proces wykonywany raz w tygodniu"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:528
 msgid "NO Actions Taken"
-msgstr "KEINE Aktionen besetzt"
+msgstr "Nie podjęto żadnej akcji "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:555
 msgid "transient options in your database"
-msgstr "transiente Optionen in Ihrer Datenbank"
+msgstr "Opcje przejściowe w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:557
 msgid "No transient options found"
-msgstr "Keine transiente Optionen gefunden"
+msgstr "Brak opcji przejściowych w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:566
 msgid "orphaned postmeta in your database"
-msgstr "verwaiste Postmeta in Deiner Datenbank"
+msgstr "Pozostawione dane postmeta w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:568
 msgid "No orphaned postmeta in your database"
-msgstr "Keine verwaiste Postmeta in Deiner Datenbank"
+msgstr "Brak ozostawionych danych postmeta w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
 msgid "unused tags in your database"
-msgstr "nicht verwendete Tags in Deiner Datenbank"
+msgstr "Nieużywane tagi w Twojej Bazie Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:579
 msgid "No unused tags found"
-msgstr "Keine ungenutzten Tags gefunden"
+msgstr "Nie znaleziono nieużywanych tagów w Twojej Bazie Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
 msgid "post revisions in your database"
-msgstr "post Revisionen in Deiner Datenbank"
+msgstr "Zmiany postów w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:594
 msgid "No post revisions found"
-msgstr "Keine post Revisionen gefunden"
+msgstr "Brak zmienionych postów w Twojej Bazie danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:607
 msgid "auto draft post(s) in your database"
-msgstr "auto entwurf Beitrag(Beiträge) in Deiner Datenbank"
+msgstr "Automatycznie zapisane projekty postów w Bazie Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:609
 msgid "No auto draft posts found"
-msgstr "Keine automatische Entwurfs Beiträge gefunden"
+msgstr "Nie ma automatycznych projektów postów w Bazie Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
 msgid "spam comments found"
-msgstr "Spam-Kommentare gefunden"
+msgstr "Komentarze oznaczone jako spam zostały znalezione"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
 msgid "Review Spams"
-msgstr "Überprüfe Spams"
+msgstr "Pokaż spam"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:623
 msgid "No spam comments found"
-msgstr "Keine Spam-Kommentare gefunden"
+msgstr "Nie znaleziono komentarzy oznaczonych jako spam"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
 msgid "unapproved comments found"
-msgstr "ungenehmigte Kommentare vorhanden"
+msgstr "Znaleziono niezatwierdzone komentarze "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
 msgid "Review Unapproved Comments"
-msgstr "Überprüfe ungenehmigte Kommentare"
+msgstr "Pokaż niezatwierdzone komentarze"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:636
 msgid "No unapproved comments found"
-msgstr "Keine ungenehmigte Kommentare gefunden"
+msgstr "Nie znaleziono niezatwierdzonych komentarzy"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:644
 msgid "Pingbacks found"
-msgstr "Pingbacks gefunden"
+msgstr "Znaleziono Pingbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:646
 msgid "No pingbacks found"
-msgstr "Keine Pingbacks gefunden"
+msgstr "Nie znaleziono Pingbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:654
 msgid "Trackbacks found"
-msgstr "Trackbacks gefunden"
+msgstr "Znaleziono Trackbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:656
 msgid "No trackbacks found"
-msgstr "Keine Trackbacks gefunden"
+msgstr "Nie znaleziono Trackbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:662
 msgid "nothing"
-msgstr "nichts"
+msgstr "nic"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
 msgid "Credits"
-msgstr ""
+msgstr "Zasługi"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
 msgid ""
@@ -192,258 +201,251 @@ msgid ""
 "you all of the translators and the generous people who have donated for this "
 "project."
 msgstr ""
-"WP-Optimize ist als Dienstprogramm für meine eigenen Projekte gestartet. Ich "
-"habe bald erkannt, dass dieses Plugin eine Menge Leute helfen könnte. Ich "
-"möchte persönlich alle Benutzer danken die dieses Plugin verwenden. Auch "
-"allen Übersetzern und den großzügigen Menschen die für dieses Projekt "
-"gespendet haben ein Dankeschön."
+"WP-Optimize na początku było moim własnym projektem. Szybko zorientowałem "
+"się że ten plugin może pomóc wielu osobom. Codziennie myślę o Was wszystkich "
+"którzy używacie tego pluginu. Dziękuje wszystkim którzy dokonują tłumaczeń "
+"oraz tym którzy wysyłają dotacje wspomagające ten projekt."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
 msgid "Share this plugin on Facebook"
-msgstr "Teile dieses Plugin auf Facebook"
+msgstr "Zareklamuj ten projekt na Facebook"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
 msgid "Contributing Developers"
-msgstr "Beteiligte Entwickler"
+msgstr "Współpracujący deweloperzy "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "Help me make this plugin better"
-msgstr "Hilf mir, dieses Plugin zu verbessern"
+msgstr "Pomóż mi uczynić ten plugin jeszcze lepszym"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "I am looking for contributing developers."
-msgstr "Ich suche jemanden der mir hilft."
+msgstr "Szukam ludzi do pomocy w rozwijaniu projektu."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
 msgid "Your name and website will be credited here in the plugin"
-msgstr "Dein Name und Deine Website wird hier im Plugin veröffentlicht"
+msgstr "Twoje nazwisko i strona internetowa będzie zamieszczona w puginie"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
 msgid "Translators"
-msgstr "Übersetzer"
+msgstr "Tłumacze"
 
-# This is the link for the Translator's website
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
 msgid "http://www.ruhanirabin.com/"
-msgstr "http://www.myfotohome.at"
+msgstr "http://kml1960.pl"
 
-# Please change this to Translator's name
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
-msgstr "Standard Sprache durch Ruhani Rabin (Deutsche Sprache by Rewolve44)"
+msgstr "Tłumaczenie na język polski kml1960"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Download .POT File to translate"
-msgstr "Download .POT Datei zu übersetzen"
+msgstr "Ściągnij plik .POT aby dokonać tłumaczenia"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Email your translations to"
-msgstr "Maile Deine Übersetzungen an"
+msgstr "Wyślij tłumaczenie na ten E-mail"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
 msgid "Development Log"
-msgstr "Entwicklungs Stand"
+msgstr "Log zmian puginu"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
 msgid "No items"
-msgstr "Keine Artikel"
+msgstr "Brak przedmiotów"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
 #, php-format
 msgid "Update %s"
-msgstr "Update %s"
+msgstr "Uaktualnij %s"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
 msgid "Plugin Resources"
-msgstr "Plugin-Ressourcen"
+msgstr "Zasoby pluginu"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
 msgid "Plugin Homepage"
-msgstr "Plugin Homepage"
+msgstr "Strona domowa pluginu"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
 msgid "Support Forum"
-msgstr "Support Forum"
+msgstr "Forum pomocy"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
-#, fuzzy
 msgid "Change Log"
-msgstr "Entwicklungs Stand"
+msgstr "Log zmian"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:76
-#, fuzzy
 msgid "FAQ"
-msgstr "FAQ (englisch)"
+msgstr "FAQ"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
 msgid "Status : "
-msgstr "Status :"
+msgstr "Status : "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
 msgid "Last automatic optimization was at "
-msgstr "Letzte automatische Optimierung war"
+msgstr "Ostatnia automatyczna aktualizacja: "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
 msgid "There was no automatic optimization"
-msgstr "Es gibt keine automatische Optimierung"
+msgstr "Brak automatycznych aktualizacji"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
 #: Works\wp-optimize_work/wp-optimize-main.php:68
 #: Works\wp-optimize_work/wp-optimize-main.php:93
 msgid "Check settings"
-msgstr "Überprüfe die Einstellungen"
+msgstr "Sprawdź ustawienia"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
 msgid "Scheduled cleaning enabled"
-msgstr "Regelmäßiges Optimieren aktiviert"
+msgstr "Zaplanowane czyszczenie włączone"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
 msgid "Next schedule"
-msgstr "Nächste Termine"
+msgstr "Następne zaplanowane"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:57
 msgid "Refresh"
-msgstr "Aktualisieren"
+msgstr "Odśwież "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:65
 msgid "Scheduled cleaning DISABLED"
-msgstr "Regelmäßiges Reinigen DEAKTIVIERT"
+msgstr "Zaplanowane czyszczenie WYŁĄCZONE"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:79
 msgid "Retention enabled and keeping last "
-msgstr "Aufbewahrung aktiviert und behalte die letzten "
+msgstr "Zatrzymanie włączone, przechowywane będą: "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:82
 #: Works\wp-optimize_work/wp-optimize-settings.php:94
 msgid "weeks data"
-msgstr "Wochen-Daten"
+msgstr "Tygodniowe dane"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:90
 msgid "Retention is disabled"
-msgstr "Die Aufbewahrung ist deaktiviert"
+msgstr "Zatrzymanie jest wyłączone"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:107
 msgid "Current database size : "
-msgstr "Aktuelle Datenbank-Größe :"
+msgstr "Obecna wielkość bazy danych:"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
 msgid "You have saved"
-msgstr "Du hast gespart"
+msgstr "Zaoszczędziłeś"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:120
 msgid "Current database size"
-msgstr "Aktuelle Größe der Datenbank"
+msgstr "Obecna wielkość bazy danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:127
 msgid "You can save almost"
-msgstr "Du kannst sparen fast"
+msgstr "Możesz zaoszczędzić prawie"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:136
 msgid "Buy me a Coffee :)"
-msgstr "Kaufe mir einen Kaffee :)"
+msgstr "Kup mi kawe :)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
 msgid "See Tables > "
-msgstr "Siehe Tabellen >"
+msgstr "Zobacz tabele >"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
 msgid "Database Size > "
-msgstr "Datenbank Größe >"
+msgstr "Wielkość Bazy Danych >"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:162
 msgid "Database Optimization Options"
-msgstr "Datenbank Optimierungs Optionen"
+msgstr "Opcje optymalizacji Bazy Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:173
 msgid "Sponsor"
-msgstr ""
+msgstr "Sponsor"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:180
 msgid "Remove post revisions which are older than "
-msgstr "Entfernen Beitragsänderungen, die älter als sind als "
+msgstr "Usuń zmiany postów starsze niż "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:183
 #: Works\wp-optimize_work/wp-optimize-main.php:203
 #: Works\wp-optimize_work/wp-optimize-main.php:223
 #: Works\wp-optimize_work/wp-optimize-main.php:242
 msgid "weeks"
-msgstr "Wochen"
+msgstr "tygodnie"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
 msgid "Remove all post revisions"
-msgstr "Entferne alle Beitragsänderungen"
+msgstr "Usuń wszystkie zmiany postów"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:200
 msgid "Remove auto draft posts which are older than "
-msgstr "Entferne auto Entwurf Beiträge, die älter sind als "
+msgstr "Usuń wszystkie automatyczne projekty postów starsze niż "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:205
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr ""
-"Entferne auto Entwurf Beiträge (Dieses entfernt auch alle gelöschten "
-"Beiträge die im Parpierkorb sind)"
+"Usuń wszystkie automatyczne projekty postów ( oczyści również śmietnik)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:220
 msgid "Remove spam comments which are older than "
-msgstr "Spam-Kommentare entfernen, die älter sind als "
+msgstr "Usuń zawartość komentarzy w spamie starszą niż "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:225
 msgid "Remove spam comments (This will also clear out comments in Trash)"
-msgstr ""
-"Entferne Spam-Kommentare (Auch alle Spam-Kommentare die im Parpierkorb sind)"
+msgstr "Usuń komentarze w spamie ( oczyści również śmietnik)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:239
 msgid "Remove unapproved comments which are older than "
-msgstr "Entferne ungenehmigte Kommentare, die älter sind als "
+msgstr "Usuń niezatwierdzone komentarze starsze niż "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:244
 #: Works\wp-optimize_work/wp-optimize-settings.php:173
 msgid "Remove unapproved comments"
-msgstr "Entferne ungenehmigte Kommentare"
+msgstr "Usuń niezatwierdzone komentarze"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:257
 #: Works\wp-optimize_work/wp-optimize-settings.php:176
 msgid "Remove transient options"
-msgstr "Entferne transiente Optionen"
+msgstr "Usuń przejściowe opcje"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:269
 msgid "Remove orphaned postmeta"
-msgstr "Entferne verwaiste Postmeta"
+msgstr "Usuń pozostawione postmeta"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:282
 #: Works\wp-optimize_work/wp-optimize-settings.php:181
 msgid "Remove unused tags"
-msgstr "Entferne nicht verwendete Tags"
+msgstr "Usuń nieużywane tagi"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:295
 msgid "Remove pingbacks"
-msgstr "Entferne Pingbacks"
+msgstr "Usuń pingbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:307
 msgid "Remove trackbacks"
-msgstr "Entferne Trackbacks"
+msgstr "Usuń trackbacks"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:320
 msgid "Optimize database tables"
-msgstr "Optimiere Datenbanktabellen"
+msgstr "Optymalizuj tabele bazy danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:329
 msgid "PROCESS"
-msgstr "ERLEDIGEN"
+msgstr "PROCES"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
 msgid "Database Tables Report"
-msgstr "Datenbanktabellen Bericht"
+msgstr "Raport tabel bazy danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:356
 msgid "Database Name:"
-msgstr "Datenbank Name:"
+msgstr "Nazwa Bazy Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:360
 msgid "Optimized all the tables found in the database."
-msgstr "Optimiert alle Tabellen die in der Datenbank gefunden wurden."
+msgstr "Optymalizuj wszystkie tabele znalezione w Bazy Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:368
 msgid "No."
@@ -452,7 +454,7 @@ msgstr ""
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:369
 #, fuzzy
 msgid "Tables"
-msgstr "Tabelle"
+msgstr "Tabela"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:370
 msgid "Records"
@@ -461,7 +463,7 @@ msgstr ""
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:371
 #, fuzzy
 msgid "Data Size"
-msgstr "Datenbank Größe >"
+msgstr "Wielkość Bazy Danych >"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:372
 msgid "Index Size"
@@ -478,168 +480,173 @@ msgstr ""
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:461
 #, fuzzy, php-format
 msgid "%s Table"
-msgstr "Tabelle"
+msgid_plural "%s Tables"
+msgstr[0] "Tabela"
+msgstr[1] "Tabela"
+msgstr[2] "Tabela"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:462
 #, php-format
 msgid "%s Record"
-msgstr ""
+msgid_plural "%s Records"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:499
 msgid "Total Size of Database"
-msgstr "Gesamtgröße der Datenbank"
+msgstr "Całkowity rozmiar Bazy Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:511
 msgid "Optimization Results"
-msgstr "Optimierungs Ergebnisse"
+msgstr "Rezultaty optymalizacji"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:512
 msgid "Total Space Saved"
-msgstr "Gesamtgrösse Gespeichert"
+msgstr "Zaoszczędzone miejsce"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:517
 msgid "Optimization Possibility"
-msgstr "Optimierungs Möglichkeit"
+msgstr "Możliwości optymalizacji"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:518
 msgid "Total space can be saved"
-msgstr "Gesamtgrösse kann eingespart werden"
+msgstr "Miejsce które może być zaoszczędzone"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:64
 msgid "Settings updated"
-msgstr "Einstellungen aktualisiert"
+msgstr "Uaktualnianie ustawień"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
 msgid "General Settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "Ustawienia podstawowe"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:74
 msgid "Auto Clean-up Settings"
-msgstr "Auto Clean-Einstellungen"
+msgstr "Ustawienia Automatycznego oczyszczania"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:83
 msgid "Keep last "
-msgstr "Behalte die letzten"
+msgstr "Zachowaj ostatnie"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:99
 msgid ""
 "This option will retain the last X weeks data and remove any garbage data "
 "before that period"
 msgstr ""
-"Diese Option behält die zuletzt X Wochen Daten und entfernt keinen Datenmüll "
-"vor diesem Zeitraum"
+"Ta opcja zatrzyma dane z ostatnich X tygodni i usunie śmiecie z poprzednich "
+"tygodni"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:107
 msgid "Enable admin bar link "
-msgstr "Aktiviere den Adminleisten-Link "
+msgstr "Włącz link do belki administracyjnej"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:109
 msgid "(Click here to refresh)"
-msgstr "(Klicke hier, zum aktualisieren)"
+msgstr "(Kliknij aby odświeżyć)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:114
 msgid ""
 "This option will put WP-Optimize link on the top admin bar (default is off). "
 "Requires page refresh."
 msgstr ""
-"Diese Option wird den WP-Optimize Link in die oberen Adminleiste setzen "
-"(Standardeinstellung ist Aus). Benötigt Aktualisierung der Seite."
+"Ta opcja wstawi link WP-Optimize do górnej belki administracyjnej. Wymaga "
+"odświeżenia strony."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:123
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
-msgstr "Aktiviere geplante Reinigung und Optimierung (EXPERIMENTAL!)"
+msgstr "Włącz zaplanowane czyszczenie i optymalizacje ( Eksperymentalne!)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:125
 msgid "Select schedule type (default is Weekly)"
-msgstr "Wähle den Zeitplan (Standardwert ist Wöchentlich)"
+msgstr "Wybierz typ planu ( Normalne jest tygodniowe )"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:132
 #: Works\wp-optimize_work/wp-optimize-settings.php:144
 #: Works\wp-optimize_work/wp-optimize-settings.php:150
 msgid "Every week"
-msgstr "Jede Woche"
+msgstr "Co tydzień"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:136
 #: Works\wp-optimize_work/wp-optimize-settings.php:151
 msgid "Every other week (every 14 days)"
-msgstr "Jede zweite Woche (alle 14 Tage)"
+msgstr "Co 2 tygodnie ( co 14 dni)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:140
 #: Works\wp-optimize_work/wp-optimize-settings.php:152
 msgid "Every month (every 31 days)"
-msgstr "Jeden Monat (alle 31 Tage)"
+msgstr "Co miesiąc ( co 31 dni)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:157
 msgid "Automatic cleanup will perform the following:"
-msgstr "Automatische Bereinigung führt die folgenden Schritte aus:"
+msgstr "Automatyczne czyszczenie wykona następujące zadania:"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:159
 msgid ""
 "Remove revisions, auto drafts, posts/comments in trash, transient options. "
 "After that it will optimize the db."
 msgstr ""
-"Entferne Änderungen, auto Entwürfe, Beiträge / Kommentare in Papierkorb, "
-"transiente Optionen. Danach kommt die Optimierung der DB."
+"Usuwanie zmian, automatycznych szkiców, postów i komentarzy w śmietniku, "
+"opcji przejściowych. Potem plugin zoptymalizuje Bazę Danych."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:165
 msgid ""
 "These options will only work if the automatic clean-up schedule has been "
 "enabled"
 msgstr ""
-"Diese Einstellungen werden nur dann funktionieren, wenn der automatische "
-"clean-up Zeitplan aktiviert wurde"
+"Ta opcja będzie działała tylko wtedy gdy automatyczny plan będzie włączony"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:167
 msgid "Remove auto revisions"
-msgstr "Entferne auto Änderungen"
+msgstr "Usuń automatyczne zmiany"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:169
 msgid "Remove auto drafts"
-msgstr "Entferne auto Entwürfe"
+msgstr "Usuń automatyczne szkice"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:171
 msgid "Remove spam comments"
-msgstr "Entferne Spam-Kommentare"
+msgstr "Usuń komentarze w spamie"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:178
 msgid "Remove orphaned post meta"
-msgstr "Entferne verwaiste Beitrag meta"
+msgstr "Usuń pozostawione meta postów"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
 msgid "Optimize database"
-msgstr "Optimiere Datenbank"
+msgstr "Optymalizuj Bazę Danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:190
 msgid "SAVE SETTINGS"
-msgstr "SPEICHERE EINSTELLUNGEN"
+msgstr "ZAPISZ USTAWIENIA"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:191
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
-msgstr "SPEICHERE AUTO CLEAN-UP EINSTELLUNGEN"
-
-#~ msgid "orphaned postmeta deleted"
-#~ msgstr "verwaiste Postmeta löschen"
-
-#~ msgid "unused tags deleted"
-#~ msgstr "nicht verwendete Tags löschen"
+msgstr "ZAPISZ USTAWIENIA AUTOMATYCZNEGO CZESZCZENIA"
 
 #~ msgid "Kb."
 #~ msgstr "Kb."
 
 #~ msgid "Size"
-#~ msgstr "Größe"
+#~ msgstr "Rozmiar"
 
 #~ msgid "Status"
 #~ msgstr "Status"
 
 #~ msgid "Space Save"
-#~ msgstr "Speicherplatz gespart"
+#~ msgstr "Zaoszczędzone miejsce "
 
 #~ msgid "Already Optimized"
-#~ msgstr "Bereits Optimiert"
+#~ msgstr "Już optymalizowane"
 
 #~ msgid "Optimized"
-#~ msgstr "Optimiert"
+#~ msgstr "Optymalizowane"
 
 #~ msgid "Need to Optimize"
-#~ msgstr "Benötigt eine Optimierung"
+#~ msgstr "Potrzebna optymalizacja"
+
+#~ msgid "orphaned postmeta deleted"
+#~ msgstr "pozostawione postmeta zostały usunięte"
+
+#~ msgid "unused tags deleted"
+#~ msgstr "Nieużywane tagi zostały usunięte"

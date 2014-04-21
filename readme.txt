@@ -8,9 +8,9 @@ Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedu
 
 Requires at least: 3.7
 
-Tested up to: 3.8.1
+Tested up to: 3.9.1.alpha
 
-Stable tag: 1.6.2
+Stable tag: 1.7.2
 
 
 
@@ -94,6 +94,11 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   Language lt_LT: Su pagarba Bronislav - http://www.internetiniusvetainiukurimas.com/
 
+*   Language it_IT: Diego Belli
+
+*   Language pl_PL: Kornel
+
+
 
 **Features:**
 
@@ -105,7 +110,7 @@ Or you can **Email translations to plugins(at)ruhanirabin.com**
 
 *   [NEW] Removal of WordPress transient options.
 
-*   [NEW] Removal of orphaned post meta data.
+*   [DSIABLED for PENDING UPGRADE] Removal of orphaned post meta data.
 
 *   [REMOVED] Removal of unused tags.
 
@@ -197,11 +202,11 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 
 
 
-*   Upgrade/Update your WordPress to at least 3.5
+*   Upgrade/Update your WordPress to at least 3.8
 
 *   Upgrade/Update your WP-Optimize plugin
 
-*   Upgrade your PHP to at least 5.1.xx
+*   Upgrade your PHP to at least 5.5.xx
 
 *   Upgrade your MySql to at least MySql 5.1.xx
 
@@ -231,6 +236,20 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+
+= 1.7.2 =
+
+* All MySQL statements re-factored into native WP database calls - necessary for future versions of MySQL and WordPress.
+
+* Upgrade to match WordPress 3.9 changes.
+
+* Additional 2 languages.
+
+* Now postmeta cleanup is disabled from code - it will be updated soon with native WordPress postmeta cleaning options. 
+
+
+
 
 = 1.6.2 =
 

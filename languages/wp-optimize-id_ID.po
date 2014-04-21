@@ -1,188 +1,190 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.5\n"
-"POT-Creation-Date: 2013-11-07 16:17+0800\n"
-"PO-Revision-Date: 2013-11-21 20:40+0800\n"
+"POT-Creation-Date: 2014-04-19 11:16+0800\n"
+"PO-Revision-Date: 2014-04-19 11:16+0800\n"
 "Last-Translator: Nasrulhaq Muiz <nasroel@al-badar.net>\n"
 "Language-Team: Nasrulhaq Muiz <nasroel@al-badar.net>\n"
+"Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n;_e\n"
 "X-Poedit-Basepath: .\n"
-"Language: id_ID\n"
 "X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
 "X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
 msgid "Database Optimized!"
 msgstr "Database Teroptimasi!"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
 msgid "Optimizer"
 msgstr "Pengoptimasi"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
 msgid "Info"
 msgstr "Info"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
 msgid "Total clean up overall"
 msgstr "Total pembersihan "
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:109
-#: Works\wp-optimize_work/wp-optimize-main.php:116
-#: Works\wp-optimize_work/wp-optimize-main.php:132
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:328
+msgid "Gb"
+msgstr ""
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:330
+msgid "Mb"
+msgstr ""
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:332
 msgid "Kb"
 msgstr "Kb"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:401
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:334
+msgid "bytes"
+msgstr ""
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:415
 msgid "transient options deleted"
 msgstr "pilihan sementara dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:409
-msgid "orphaned postmeta deleted"
-msgstr "postmeta tersendiri dihapus"
-
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:417
-msgid "unused tags deleted"
-msgstr "hapus tag yang tidak digunakan"
-
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:428
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:442
 msgid "post revisions deleted"
 msgstr "revisi tulisan dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:439
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:453
 msgid "auto drafts deleted"
 msgstr "draft otomatis dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:447
-#: Works\wp-optimize_work/wp-optimize-common.php:467
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:463
+#: Works\wp-optimize_work/wp-optimize-common.php:484
 msgid "items removed from Trash"
 msgstr "item dihapus dari Keranjang Sampah"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:459
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:475
 msgid "spam comments deleted"
 msgstr "komentar sampah dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:477
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:494
 msgid "unapproved comments deleted"
 msgstr "komentar tidak sah dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:483
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:500
 msgid "pingbacks deleted"
 msgstr "pingback dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:489
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:506
 msgid "trackbacks deleted"
 msgstr "trackback dihapus"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:496
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:513
 msgid "Enabled weekly processing"
 msgstr "Aktifkan proses mingguan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:502
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:519
 msgid "Disabled weekly processing"
 msgstr "Non Aktifkan proses mingguan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:511
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:528
 msgid "NO Actions Taken"
 msgstr "Tidak Ada Aksi yang dilakukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:538
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:555
 msgid "transient options in your database"
 msgstr "pilihan sementara di database anda"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:540
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:557
 msgid "No transient options found"
 msgstr "Pilihan sementara tidak ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:549
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:566
 msgid "orphaned postmeta in your database"
 msgstr "postmeta tersendiri di database anda"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:551
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:568
 msgid "No orphaned postmeta in your database"
 msgstr "Tidak postmeta tersendiri di database anda"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:560
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
 msgid "unused tags in your database"
 msgstr "tag tidak terpakai di database anda "
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:562
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:579
 msgid "No unused tags found"
 msgstr "Tidak menemukan tag tidak terpakai"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:575
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
 msgid "post revisions in your database"
 msgstr "revisi posting di database anda "
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:594
 msgid "No post revisions found"
 msgstr "tidak ada revisi tulisan ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:590
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:607
 msgid "auto draft post(s) in your database"
 msgstr "draf tulisan otomatis di database anda"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:609
 msgid "No auto draft posts found"
 msgstr "Tidak ada draf tulisan otomatis ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
 msgid "spam comments found"
 msgstr "komentar sampah ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:604
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
 msgid "Review Spams"
 msgstr "Menampilkan Spam"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:606
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:623
 msgid "No spam comments found"
 msgstr "Tidak ada komentar ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
 msgid "unapproved comments found"
 msgstr "komentar belum sah ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:617
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
 msgid "Review Unapproved Comments"
 msgstr "Lihat komentar yang belum sah"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:619
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:636
 msgid "No unapproved comments found"
 msgstr "Tidak menemukan komentar belum sah"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:627
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:644
 msgid "Pingbacks found"
 msgstr "Menemukan Pingback"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:629
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:646
 msgid "No pingbacks found"
 msgstr "Tidak ada Pingback ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:637
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:654
 msgid "Trackbacks found"
 msgstr "Trackback ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:639
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:656
 msgid "No trackbacks found"
 msgstr "Tidak ada trackback ditemukan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-common.php:645
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:662
 msgid "nothing"
 msgstr "tidak ada"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
 msgid "Credits"
 msgstr "Kredit"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
 msgid ""
 "WP-Optimize started as a utility for my own projects. I have realized soon, "
 "that this plugin might help a lot of people out there. I am personally "
@@ -196,340 +198,343 @@ msgstr ""
 "hari, juga terimakasih kepada pengalih bahasa dan orang yang berbudi baik "
 "yang telah membantu proyek ini"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
 msgid "Share this plugin on Facebook"
 msgstr "Bagi plugin ini di Facebook"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
 msgid "Contributing Developers"
 msgstr "Kontribusi Pengembang"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "Help me make this plugin better"
 msgstr "Bantu agar plugin ini menjadi lebih baik"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
 msgid "I am looking for contributing developers."
 msgstr "Saya mencari pengembang pendukung"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
 msgid "Your name and website will be credited here in the plugin"
 msgstr "Nama dan website anda akan dihargai didalam plugin"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
 msgid "Translators"
 msgstr "Penerjemah"
 
 # This is the link for the Translator's website
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
 msgid "http://www.ruhanirabin.com/"
 msgstr "http://www.ruhanirabin.com/"
 
 # Please change this to Translator's name
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
 msgstr ""
 "Bahasa awal oleh Ruhani Rabin (Ubah teks dan tautan didalam file translasi)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Download .POT File to translate"
 msgstr "Unduh file .POT untuk translasi"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
 msgid "Email your translations to"
 msgstr "Email translasi anda ke"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
 msgid "Development Log"
 msgstr "Log Pengembangan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
 msgid "No items"
 msgstr "Tidak ada item"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
 #, php-format
 msgid "Update %s"
 msgstr "Perbarui %s"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:71
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
 msgid "Plugin Resources"
 msgstr "Sumberdaya Plugin"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
 msgid "Plugin Homepage"
 msgstr "Beranda Plugin"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
 msgid "Support Forum"
 msgstr "Forum Dukungan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
 msgid "Change Log"
 msgstr "Log Perubahan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:76
 msgid "FAQ"
 msgstr "FAQ"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
 msgid "Status : "
 msgstr "Status :"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
 msgid "Last automatic optimization was at "
 msgstr "Optimasi otomatis terakhir pada"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
 msgid "There was no automatic optimization"
 msgstr "Tidak ada optimasi otomatis"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
-#: Works\wp-optimize_work/wp-optimize-main.php:70
-#: Works\wp-optimize_work/wp-optimize-main.php:95
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
+#: Works\wp-optimize_work/wp-optimize-main.php:68
+#: Works\wp-optimize_work/wp-optimize-main.php:93
 msgid "Check settings"
 msgstr "Cek Pengaturan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
 msgid "Scheduled cleaning enabled"
 msgstr "Jadwal pembersihan diaktifkan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
 msgid "Next schedule"
 msgstr "Jadwal berikutnya"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:59
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:57
 msgid "Refresh"
 msgstr "Segarkan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:67
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:65
 msgid "Scheduled cleaning DISABLED"
 msgstr "Jadwal pembersihan MATI"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:81
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:79
 msgid "Retention enabled and keeping last "
 msgstr "Pengingat diaktifkan dan menjaga akhir"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:84
-#: Works\wp-optimize_work/wp-optimize-settings.php:93
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:82
+#: Works\wp-optimize_work/wp-optimize-settings.php:94
 msgid "weeks data"
 msgstr "data minggu"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:92
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:90
 msgid "Retention is disabled"
 msgstr "Pengingat dimatikan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:109
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:107
 msgid "Current database size : "
 msgstr "Ukuran database saat ini :"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
-#: Works\wp-optimize_work/wp-optimize-main.php:125
-msgid "Kb."
-msgstr "Kb."
-
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:113
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
 msgid "You have saved"
 msgstr "Anda telah menyimpan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:122
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:120
 msgid "Current database size"
 msgstr "Ukuran database saat ini"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:129
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:127
 msgid "You can save almost"
 msgstr "Anda dapat menyimpan hampir"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:138
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:136
 msgid "Buy me a Coffee :)"
 msgstr "Traktir aku Kopi :)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
 msgid "See Tables > "
 msgstr "Lihat Tabel >"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:139
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
 msgid "Database Size > "
 msgstr "Ukuran Database >"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:164
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:162
 msgid "Database Optimization Options"
 msgstr "Pilihan Optimasi Database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:175
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:173
 msgid "Sponsor"
 msgstr "Sponsor"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:182
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:180
 msgid "Remove post revisions which are older than "
 msgstr "Hapus revisi tulisan yang lebih lama dari"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
-#: Works\wp-optimize_work/wp-optimize-main.php:205
-#: Works\wp-optimize_work/wp-optimize-main.php:225
-#: Works\wp-optimize_work/wp-optimize-main.php:244
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:183
+#: Works\wp-optimize_work/wp-optimize-main.php:203
+#: Works\wp-optimize_work/wp-optimize-main.php:223
+#: Works\wp-optimize_work/wp-optimize-main.php:242
 msgid "weeks"
 msgstr "minggu"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:187
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
 msgid "Remove all post revisions"
 msgstr "Hapus semua revisi tulisan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:202
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:200
 msgid "Remove auto draft posts which are older than "
 msgstr "Hapus semua draf tulisan otomatis yang lebih lama"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:207
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:205
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr ""
 "Hapus draf tulisan otomatis (ini akan membersihkan tulisan di Tempat Sampah)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:222
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:220
 msgid "Remove spam comments which are older than "
 msgstr "Hapus komentar sampah yang lebih lama dari"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:227
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:225
 msgid "Remove spam comments (This will also clear out comments in Trash)"
 msgstr ""
 "Hapus komentar sampah (Akan membersihkan pula komentar di tempat sampah)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:241
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:239
 msgid "Remove unapproved comments which are older than "
 msgstr "Hapus komentar yang tidak disetujui yang lebih lama dari"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:246
-#: Works\wp-optimize_work/wp-optimize-settings.php:172
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:244
+#: Works\wp-optimize_work/wp-optimize-settings.php:173
 msgid "Remove unapproved comments"
 msgstr "Hapus komentar yang tidak disetujui"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:258
-#: Works\wp-optimize_work/wp-optimize-settings.php:174
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:257
+#: Works\wp-optimize_work/wp-optimize-settings.php:176
 msgid "Remove transient options"
 msgstr "Hapus pilihan sementara"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:267
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:269
 msgid "Remove orphaned postmeta"
 msgstr "Hapus postmeta tersendiri"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:276
-#: Works\wp-optimize_work/wp-optimize-settings.php:178
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:282
+#: Works\wp-optimize_work/wp-optimize-settings.php:181
 msgid "Remove unused tags"
 msgstr "Hapus tag tidak terpakai"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:285
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:295
 msgid "Remove pingbacks"
 msgstr "Hapus pingback"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:294
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:307
 msgid "Remove trackbacks"
 msgstr "Hapus trackback"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:305
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:320
 msgid "Optimize database tables"
 msgstr "Optimasi tabel database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:314
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:329
 msgid "PROCESS"
 msgstr "PROSES"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:340
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
 msgid "Database Tables Report"
 msgstr "Laporan tabel database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:341
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:356
 msgid "Database Name:"
 msgstr "Nama Database:"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:345
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:360
 msgid "Optimized all the tables found in the database."
 msgstr "Optimasi semua tabel yang ditemukan di database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:352
-#: Works\wp-optimize_work/wp-optimize-main.php:360
-msgid "Table"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:368
+msgid "No."
+msgstr ""
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:369
+#, fuzzy
+msgid "Tables"
 msgstr "Tabel"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:353
-#: Works\wp-optimize_work/wp-optimize-main.php:361
-msgid "Size"
-msgstr "Ukuran"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:370
+msgid "Records"
+msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:354
-#: Works\wp-optimize_work/wp-optimize-main.php:362
-msgid "Status"
-msgstr "Status"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:371
+#, fuzzy
+msgid "Data Size"
+msgstr "Ukuran Database >"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
-#: Works\wp-optimize_work/wp-optimize-main.php:363
-msgid "Space Save"
-msgstr "Ruang Simpan "
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:372
+msgid "Index Size"
+msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:409
-msgid "Already Optimized"
-msgstr "Telah dioptimasi"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:373
+msgid "Overhead"
+msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:418
-msgid "Optimized"
-msgstr "Dioptimasi"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:460
+msgid "Total:"
+msgstr ""
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:426
-msgid "Need to Optimize"
-msgstr "Membutuhkan Optimasi"
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:461
+#, fuzzy, php-format
+msgid "%s Table"
+msgstr "Tabel"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:438
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:462
+#, php-format
+msgid "%s Record"
+msgstr ""
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:499
 msgid "Total Size of Database"
 msgstr "Ukuran total Database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:446
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:511
 msgid "Optimization Results"
 msgstr "Hasil Optimasi"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:447
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:512
 msgid "Total Space Saved"
 msgstr "Total Ruang Tersimpan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:452
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:517
 msgid "Optimization Possibility"
 msgstr "Kemungkinan Optimasi"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-main.php:453
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:518
 msgid "Total space can be saved"
 msgstr "Total ruang yang dapat disimpan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:63
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:64
 msgid "Settings updated"
 msgstr "Pengaturan Diperbaharui"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:72
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
 msgid "General Settings"
 msgstr "Pengaturan Umum"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:74
 msgid "Auto Clean-up Settings"
 msgstr "Setting Merapikan Otomatis"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:82
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:83
 msgid "Keep last "
 msgstr "Jaga terakhir"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:98
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:99
 msgid ""
 "This option will retain the last X weeks data and remove any garbage data "
 "before that period"
 msgstr ""
 "Pilihan ini akan menjaga data X minggu , dan menghapus data usang sebelumnya"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:106
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:107
 msgid "Enable admin bar link "
 msgstr "Aktifkan balok tautan admin"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:108
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:109
 msgid "(Click here to refresh)"
 msgstr "( Klik untuk menyegarkan)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:113
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:114
 msgid ""
 "This option will put WP-Optimize link on the top admin bar (default is off). "
 "Requires page refresh."
@@ -537,35 +542,35 @@ msgstr ""
 "Pilihan ini menempatkan tautan WP-Optimize diatas balok admin (default "
 "mati). Segarkan halaman"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:122
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:123
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
 msgstr "Aktifkan jadwal pembersihan dan optimasi (PERCOBAAN!)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:124
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:125
 msgid "Select schedule type (default is Weekly)"
 msgstr "Pilih tipe Skedul ( default adalah mingguan)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:131
-#: Works\wp-optimize_work/wp-optimize-settings.php:143
-#: Works\wp-optimize_work/wp-optimize-settings.php:149
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:132
+#: Works\wp-optimize_work/wp-optimize-settings.php:144
+#: Works\wp-optimize_work/wp-optimize-settings.php:150
 msgid "Every week"
 msgstr "Tiap minggu"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:135
-#: Works\wp-optimize_work/wp-optimize-settings.php:150
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:136
+#: Works\wp-optimize_work/wp-optimize-settings.php:151
 msgid "Every other week (every 14 days)"
 msgstr "Setiap beberapa minggu ( tiap 14 hari )"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:139
-#: Works\wp-optimize_work/wp-optimize-settings.php:151
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:140
+#: Works\wp-optimize_work/wp-optimize-settings.php:152
 msgid "Every month (every 31 days)"
 msgstr "Tiap bulan (tiap 31 hari)"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:156
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:157
 msgid "Automatic cleanup will perform the following:"
 msgstr "Pembersihan otomatis akan berlangsung pada:"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:158
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:159
 msgid ""
 "Remove revisions, auto drafts, posts/comments in trash, transient options. "
 "After that it will optimize the db."
@@ -573,37 +578,64 @@ msgstr ""
 "Hapus revisi, draf otomatis, tulisan/komentar di tempat sampah, pilihan "
 "sementara. Setelah itu akan mengoptimasi database."
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:164
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:165
 msgid ""
 "These options will only work if the automatic clean-up schedule has been "
 "enabled"
 msgstr ""
 "Pilihan akan berfungsi jika jadwal pembersihan otomatis telah diaktifkan"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:166
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:167
 msgid "Remove auto revisions"
 msgstr "Hapus revisi otomatis"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:168
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:169
 msgid "Remove auto drafts"
 msgstr "Hapus draf otomatis"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:170
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:171
 msgid "Remove spam comments"
 msgstr "Hapus komentar sampah"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:176
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:178
 msgid "Remove orphaned post meta"
 msgstr "Hapus post meta tersendiri"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:180
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
 msgid "Optimize database"
 msgstr "Optimasi Database"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:190
 msgid "SAVE SETTINGS"
 msgstr "SIMPAN PENGATURAN"
 
-#: d:\Ruhani\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:186
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:191
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "SIMPAN PENGATURAN PEMBERSIHAN OTOMATIS"
+
+#~ msgid "orphaned postmeta deleted"
+#~ msgstr "postmeta tersendiri dihapus"
+
+#~ msgid "unused tags deleted"
+#~ msgstr "hapus tag yang tidak digunakan"
+
+#~ msgid "Kb."
+#~ msgstr "Kb."
+
+#~ msgid "Size"
+#~ msgstr "Ukuran"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Space Save"
+#~ msgstr "Ruang Simpan "
+
+#~ msgid "Already Optimized"
+#~ msgstr "Telah dioptimasi"
+
+#~ msgid "Optimized"
+#~ msgstr "Dioptimasi"
+
+#~ msgid "Need to Optimize"
+#~ msgstr "Membutuhkan Optimasi"

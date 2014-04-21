@@ -1,4 +1,4 @@
-<!-- TODO: Need to add a feed reader to read the development log -->
+<!-- a feed reader to read the development log -->
 <table width="95%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="60%" valign="top"><h2><?php _e('Credits','wp-optimize'); ?></h2>

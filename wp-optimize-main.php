@@ -1,3 +1,50 @@
+<?php
+$text = '';
+
+if (isset($_POST["clean-revisions"])) {
+    $text .= wpo_cleanUpSystem('revisions');
+    }
+	
+if (isset($_POST["clean-autodraft"])) {
+    $text .= wpo_cleanUpSystem('autodraft');
+    }	
+
+if (isset($_POST["clean-comments"])) {
+    $text .= wpo_cleanUpSystem('spam');
+    }
+
+if (isset($_POST["unapproved-comments"])) {
+    $text .= wpo_cleanUpSystem('unapproved');
+    }
+if (isset($_POST["clean-pingbacks"])) {
+    $text .= wpo_cleanUpSystem('pingbacks');
+    }
+if (isset($_POST["clean-trackbacks"])) {
+    $text .= wpo_cleanUpSystem('trackbacks');
+    }	
+
+if (isset($_POST["clean-transient"])) {
+    $text .= wpo_cleanUpSystem('transient_options');
+    }
+
+if (isset($_POST["clean-postmeta"])) {
+    $text .= wpo_cleanUpSystem('postmeta');
+    }	
+
+if (isset($_POST["clean-tags"])) {
+    $text .= wpo_cleanUpSystem('tags');
+    }	
+	
+if (isset($_POST["optimize-db"])) {
+    $text .= DB_NAME.' '.__('Database Optimized!', 'wp-optimize').'<br>';
+    }
+
+    if ($text !==''){
+     echo '<div id="message" class="updated">';
+     echo '<strong>'.$text.'</strong></div>';
+    }
+    
+    ?>
 <table width="95%" border="0" cellspacing="0" cellpadding="0">
 <form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 
@@ -48,8 +95,6 @@
 			_e('Next schedule', 'wp-optimize');
 			echo ' : ';
 			echo '<font color="green">';		
-			//echo $date->format('l jS \of F Y h:i:s A') . "\n";
-			//echo $date->format(__('l jS \of F Y')) . "\n";
 			echo $date->format('l jS \of F Y') . "\n";
 			echo '</i>';
 			echo '</font>';	
@@ -108,12 +153,12 @@
 		
 		_e('Current database size : ', 'wp-optimize');
 		echo '<font color="blue">';
-		echo $part1.'</font> '.__('Kb.', 'wp-optimize');
+		echo $part1.'</font> ';
         echo ' ';
 		_e('You have saved', 'wp-optimize');
 		echo ' : ';
 		echo '<font color="red">';
-		echo $part2.'</font> '.__('Kb', 'wp-optimize');
+		echo $part2.'</font> ';
 		
     }
 	else {
@@ -122,14 +167,14 @@
 		_e('Current database size', 'wp-optimize');
 		echo ' : ';
 		echo '<font color="blue">';
-		echo $part1.'</font> '.__('Kb.', 'wp-optimize');
-        $this_value = floatval($part2);
+		echo $part1.'</font> ';
+        $this_value = $part2;
         if ($this_value > 0){
             echo ' ';
     		_e('You can save almost', 'wp-optimize');
     		echo ' : ';
     		echo '<font color="red">';
-    		echo $part2.'</font> '.__('Kb', 'wp-optimize');
+    		echo $part2.'</font> ';
         }
 	}
 	
@@ -262,7 +307,7 @@ function SetDefaults() {
    <small><?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+<!--    <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -272,7 +317,7 @@ function SetDefaults() {
      </span>
      <br />
    <small><?php _e(wpo_getInfo('postmeta'), 'wp-optimize'); ?></small></td>
-  </tr>
+  </tr> -->
 <!--  <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -363,111 +408,161 @@ Function optimizeTables($Optimize=false){
 <?php } ?>
 
 
-<table class="widefat fixed" cellspacing="0">
-<thead>
-	<tr>
-	<th scope="col"><?php _e('Table', 'wp-optimize'); ?></th>
-	<th scope="col"><?php _e('Size', 'wp-optimize')?></th>
-	<th scope="col"><?php _e('Status', 'wp-optimize'); ?></th>
-	<th scope="col"><?php _e('Space Save', 'wp-optimize'); ?></th>
-	</tr>
-</thead>
-<tfoot>
-	<tr>
-	<th scope="col"><?php _e('Table', 'wp-optimize'); ?></th>
-	<th scope="col"><?php _e('Size', 'wp-optimize')?></th>
-	<th scope="col"><?php _e('Status', 'wp-optimize'); ?></th>
-	<th scope="col"><?php _e('Space Save', 'wp-optimize'); ?></th>
-	</tr>
-</tfoot>
+	<br style="clear" />
+	<table class="widefat">
+		<thead>
+			<tr>
+				<th><?php _e('No.', 'wp-optimize'); ?></th>
+				<th><?php _e('Tables', 'wp-optimize'); ?></th>
+				<th><?php _e('Records', 'wp-optimize'); ?></th>
+				<th><?php _e('Data Size', 'wp-optimize'); ?></th>
+				<th><?php _e('Index Size', 'wp-optimize'); ?></th>
+				<th><?php _e('Overhead', 'wp-optimize'); ?></th>
+			</tr>
+		</thead>
+		
 <tbody id="the-list">
 <?php
-$alternate = ' class="alternate"';
-	$db_clean = DB_NAME;
-	$tot_data = 0; $total_gain = 0; $total_db_space = 0; $total_db_space_a = 0;
-	$tot_idx = 0;
-	$tot_all = 0;
-	//$local_query = 'SHOW TABLE STATUS FROM '. DB_NAME;
-	$local_query = 'SHOW TABLE STATUS FROM `'. DB_NAME.'`';
-	$result = mysql_query($local_query);
-	//if (mysql_num_rows($result)){
-	//fix by mikel king
-	if (mysql_num_rows($result) && is_resource($result)){
-		while ($row = mysql_fetch_array($result))
-		{
-			$tot_data = $row['Data_length'];
-			$tot_idx  = $row['Index_length'];
-			$total = $tot_data + $tot_idx;
-			$total = $total / 1024 ;
-			$total = round ($total,3);
+	$alternate = ' class="alternate"';
+	global $wpdb;
+	// TODO: Read SQL Version and act accordingly
+    // TODO: Check for innoDB tables
+    // TODO: Check for windows servers
+    $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
+    $total_gain = 0;
+	$no = 0;
+	$row_usage = 0;
+	$data_usage = 0;
+	$index_usage = 0;
+	$overhead_usage = 0;
+	$tablesstatus = $wpdb->get_results("SHOW TABLE STATUS");
+	foreach($tablesstatus as  $tablestatus) {
+		if($no%2 == 0) {
+			$style = '';
+		} else {
+			$style = ' class="alternate"';
+		}
+		$no++;
+		echo "<tr$style>\n";
+		echo '<td>'.number_format_i18n($no).'</td>'."\n";
+		echo "<td>$tablestatus->Name</td>\n";
+		echo '<td>'.number_format_i18n($tablestatus->Rows).'</td>'."\n";
+		echo '<td>'.wpo_format_size($tablestatus->Data_length).'</td>'."\n";
+		echo '<td>'.wpo_format_size($tablestatus->Index_length).'</td>'."\n";;		
+		//echo '<td>'.wpo_format_size($tablestatus->Data_free).'</td>'."\n";
+		
+		echo '<td>';
+		
+		if (isset($_POST["optimize-db"])) {
+		
+			if($tablestatus->Data_free>0){
+				echo '<font color="blue">';
+				echo wpo_format_size($tablestatus->Data_free);
+				echo '</font>';
+				}
+			else {
+				echo '<font color="green">';
+				echo wpo_format_size($tablestatus->Data_free);
+				echo '</font>';			
+			}
+		}
+		else {
+			if($tablestatus->Data_free>0){
+				echo '<font color="red">';
+				echo wpo_format_size($tablestatus->Data_free);
+				echo '</font>';
+				}
+			else {
+				echo '<font color="green">';
+				echo wpo_format_size($tablestatus->Data_free);
+				echo '</font>';			
+			}		
+		}
+		
+		echo '</td>'."\n";
+		
+		$row_usage += $tablestatus->Rows;
+		$data_usage += $tablestatus->Data_length;
+		$index_usage +=  $tablestatus->Index_length;
+		$overhead_usage += $tablestatus->Data_free;
+		$total_gain += $tablestatus->Data_free;
+		echo '</tr>'."\n";
+	}	
 
-			$total_db_space = $tot_data + $tot_idx;
-			$total_db_space = $total_db_space / 1024 ;
-			$total_db_space_a += $total_db_space;
-			$total_db_space = round ($total_db_space,3);
+		if (isset($_POST["optimize-db"])) {
+		### Show Tables
+		$tables = $wpdb->get_col("SHOW TABLES");  	    
+		foreach($tables as $table_name) {
+		$local_query = 'OPTIMIZE TABLE '.$table_name;
+		$resultat  = $wpdb->query($local_query);
+		}
 
-			
-			$gain= $row['Data_free'];
-			$gain = $gain / 1024 ;
-			$total_gain += $gain;
-			$gain = round ($gain,3);
-			if (isset($_POST["optimize-db"])) {
-        $local_query = 'OPTIMIZE TABLE '.$row[0];
-			  $resultat  = mysql_query($local_query);
-			  
+		
 			  
         //echo "optimization";
             }
 
-      if ($gain == 0){
-				echo "<tr". $alternate .">
-					<td class='column-name'>". $row[0] ."</td>
-					<td class='column-name'>". $total ." Kb"."</td>
-					<td class='column-name'>" .  __('Already Optimized', 'wp-optimize') . "</td>
-					<td class='column-name'>0 Kb</td>
-					</tr>\n";
-			} else
-			{
-      if (isset($_POST["optimize-db"])) {
-        echo "<tr". $alternate .">
-					<td class='column-name'>". $row[0] ."</td>
-					<td class='column-name'>". $total ." Kb"."</td>
-          <td class='column-name' style=\"color: #0000FF;\">" .  __('Optimized', 'wp-optimize') . "</td>
-					<td class='column-name'>". $gain ." Kb</td>
-					</tr>\n";
-        }
-        else {
-        echo "<tr". $alternate .">
-					<td class='column-name'>". $row[0] ."</td>
-					<td class='column-name'>". $total ." Kb"."</td>
-          <td class='column-name' style=\"color: #FF0000;\">" .  __('Need to Optimize', 'wp-optimize') . "</td>
-					<td class='column-name'>". $gain ." Kb</td>
-					</tr>\n";
-        }
+
+		echo '<tr class="thead">'."\n";
+		echo '<th>'.__('Total:', 'wp-optimize').'</th>'."\n";
+		echo '<th>'.sprintf(_n('%s Table', '%s Tables', $no, 'wp-optimize'), number_format_i18n($no)).'</th>'."\n";
+		echo '<th>'.sprintf(_n('%s Record', '%s Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
+		echo '<th>'.wpo_format_size($data_usage).'</th>'."\n";
+		echo '<th>'.wpo_format_size($index_usage).'</th>'."\n";
+		echo '<th>';
+		
+		
+		if (isset($_POST["optimize-db"])) {
+			if($overhead_usage>0){
+				echo '<font color="blue">';
+				echo wpo_format_size($overhead_usage);
+				echo '</font>';
+				}
+			else {
+				echo '<font color="green">';
+				echo wpo_format_size($overhead_usage);
+				echo '</font>';		
 			}
-			$alternate = ( empty( $alternate ) ) ? ' class="alternate"' : '';
 		}
-	}
+		else {
+			if($overhead_usage>0){
+				echo '<font color="red">';
+				echo wpo_format_size($overhead_usage);
+				echo '</font>';
+				}
+			else {
+				echo '<font color="green">';
+				echo wpo_format_size($overhead_usage);
+				echo '</font>';		
+			}
+		}		
+		echo '</th>'."\n";
+		echo '</tr>';
+	
 ?>
 </tbody>
 </table>
 <a name="total">&nbsp;</a>
 <h3><?php _e('Total Size of Database', 'wp-optimize'); ?>:</h3>
-<h2><?php echo round ($total_db_space_a,3);?> Kb</h2>
+<h2><?php 
+list ($part1, $part2) = wpo_getCurrentDBSize(); 
+echo $part1;
+
+?></h2>
 
 <?php if (isset($_POST["optimize-db"])) {
     ?>
 
-<?php $total_gain = round ($total_gain,3);?>
+<?php //$total_gain = round ($total_gain,3);?>
 
 <h3><?php _e('Optimization Results', 'wp-optimize'); ?>:</h3>
-<p style="color: #0000FF;"><?php _e('Total Space Saved', 'wp-optimize'); ?>: <?php echo $total_gain;  wpo_updateTotalCleaned(strval($total_gain));?> Kb</p>
+<p style="color: #0000FF;"><?php _e('Total Space Saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));?></p>
   <?php } else { ?>
-<?php $total_gain = round ($total_gain,3); ?>
+<?php //$total_gain = round ($total_gain,3); ?>
   <?php if(!$total_gain==0){ ?>
 
 <h3><?php _e('Optimization Possibility', 'wp-optimize'); ?>:</h3>
-<p style="color: #FF0000;"><?php _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo $total_gain;?> Kb</p>
+<p style="color: #FF0000;"><?php _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);?></p>
   <?php } ?>
 <?php
 }

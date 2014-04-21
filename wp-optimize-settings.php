@@ -175,8 +175,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    <span style="color: red;">
    <input name="wp-optimize-auto[transient]" id="wp-optimize-auto[transient]" type="checkbox" value="true" <?php echo $wpo_auto_options['transient'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove transient options', 'wp-optimize'); ?>
    <br /><br />
-   <input name="wp-optimize-auto[postmeta]" id="wp-optimize-auto[postmeta]" type="checkbox" value="true" <?php echo $wpo_auto_options['postmeta'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove orphaned post meta', 'wp-optimize'); ?>
-   <br /><br />
+<!--   <input name="wp-optimize-auto[postmeta]" id="wp-optimize-auto[postmeta]" type="checkbox" value="true" <?php echo $wpo_auto_options['postmeta'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove orphaned post meta', 'wp-optimize'); ?>
+   <br /><br />-->
 <!--
    <input name="wp-optimize-auto[tags]" id="wp-optimize-auto[tags]" type="checkbox" value="true" <?php echo $wpo_auto_options['tags'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove unused tags', 'wp-optimize'); ?>
    </span>
