@@ -29,7 +29,7 @@
 	<h2><?php _e('Translators','wp-optimize'); ?></h2><br />
 	<h4><a href="<?php _e('http://www.ruhanirabin.com/','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('Default Language by Ruhani Rabin (Change this text and the link inside translation file)','wp-optimize') ?></a></h4><br />
 	&nbsp;<br />
-	<b><a href="<?php echo WPO_PLUGIN_PATH.'languages/wp-optimize.po'; ?>" target="_blank" title=""><?php _e('Download .POT File to translate','wp-optimize'); ?></a> | <?php _e('Email your translations to','wp-optimize'); ?> <a href="mailto:plugins@ruhanirabin.com">plugins@ruhanirabin.com</a></b>
+	<b><a href="<?php echo WPO_PLUGIN_PATH.'languages/wp-optimize.pot'; ?>" target="_blank" title=""><?php _e('Download .POT File to translate','wp-optimize'); ?></a> | <?php _e('Email your translations to','wp-optimize'); ?> <a href="mailto:plugins@ruhanirabin.com">plugins@ruhanirabin.com</a></b>
 	<br />
 	<br />	
 	</td>

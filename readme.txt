@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9.1.alpha
 
-Stable tag: 1.7.2
+Stable tag: 1.7.3
 
 
 
@@ -236,6 +236,21 @@ This is a very primary version of the plugin. So I would recommend you to test i
 
 
 == Changelog ==
+
+
+= 1.7.3 =
+
+* Fixed Problems with wpMail.
+
+* Fixed Problems with wpAdmin menubar.
+
+* Fixed Permission issues on some site.
+
+* wp-optimize.pot file is added to language directory, for the translators. That file is also linked at the info tab of the plugin. 
+
+* Russian and German translation updated.
+
+
 
 
 = 1.7.2 =
