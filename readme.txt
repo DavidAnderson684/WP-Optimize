@@ -10,7 +10,7 @@ Requires at least: 3.7
 
 Tested up to: 3.9.1.alpha
 
-Stable tag: 1.7.3
+Stable tag: 1.7.4
 
 
 
