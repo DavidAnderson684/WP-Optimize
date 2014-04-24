@@ -6,6 +6,8 @@ Description: This plugin helps you to keep your database clean by removing post 
 Version: 1.7.4
 Author: Ruhani Rabin
 Author URI: http://www.ruhanirabin.com
+Text Domain: wp-optimize
+Domain Path: /languages
 
     Copyright 2009-2014  Ruhani Rabin  (email : get@ruhanirabin.com)
 
@@ -37,7 +39,7 @@ if ('wp-optimize.php' == basename($_SERVER['SCRIPT_FILENAME']))
 global $current_user;
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.7.3');
+    define('WPO_VERSION', '1.7.4');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
@@ -49,9 +51,7 @@ if ( file_exists(WPO_PLUGIN_MAIN_PATH . 'wp-optimize-common.php')) {
 	die ('Functions File is missing!');
 	}
 
-// this is to check user roles but this caused problems
-//require_once(ABSPATH . 'wp-includes/pluggable.php');	
-    
+   
 register_activation_hook(__FILE__,'wpo_admin_actions');
 register_deactivation_hook(__FILE__,'wpo_admin_actions_remove');
 
@@ -64,7 +64,6 @@ function wp_optimize_textdomain() {
 }
 
 function wp_optimize_menu(){
-    //include 'wp-optimize-admin.php';
 	include_once( 'wp-optimize-admin.php' );
 }
 
@@ -83,8 +82,10 @@ function wpo_admin_bar() {
 
 // Add settings link on plugin page
 function wpo_plugin_settings_link($links) {
-  $settings_link = '<a href="admin.php?page=WP-Optimize&tab=wp_optimize_settings">Settings</a>';
-  $optimize_link = '<a href="admin.php?page=WP-Optimize">Optimizer</a>';
+  //$settings_link = '<a href="admin.php?page=WP-Optimize&tab=wp_optimize_settings">Settings</a>';
+  //$optimize_link = '<a href="admin.php?page=WP-Optimize">Optimizer</a>';
+  $settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=WP-Optimize&tab=wp_optimize_settings' ) ) . '">' . __( 'Settings', 'wp-optimize' ) . '</a>';
+  $optimize_link = '<a href="' . esc_url( admin_url( 'admin.php?page=WP-Optimize' ) ) . '">' . __( 'Optimizer', 'wp-optimize' ) . '</a>';
   array_unshift($links, $settings_link);
   array_unshift($links, $optimize_link);
   return $links;
@@ -184,14 +185,6 @@ function wpo_admin_actions_remove()
 	wpo_removeOptions();
 }
 add_action('admin_menu', 'wpo_admin_actions');
-
-// add this link only if admin and option is enabled
-//if (get_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' ) == 'true' ){
-//	//if (is_admin()) {
-//	if ( current_user_can('manage_options') ) {
-//		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
-//	}
-//}
 
 
 ?>

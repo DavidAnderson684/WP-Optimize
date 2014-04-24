@@ -198,13 +198,24 @@ function wpo_cron_action() {
             			
             // trashed comments
 			// TODO:  query trashed comments and cleanup metadata 
-    			//$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'post-trashed'";
-    			$clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
+                $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
                 if ($retention_enabled == 'true') {
     				$clean .= ' and comment_date < NOW() - INTERVAL ' . $retention_period . ' WEEK';
                 }
                 $clean .= ';';			
                 $commentstrash = $wpdb->query( $clean );
+                
+			// TODO:  now cleaning up comments meta tables 
+                $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+                $clean .= ';';			
+                $commentstrash1 = $wpdb->query( $clean );                
+
+			// TODO:  now cleaning up comments meta tables - removing akismet related settings 
+                $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+                $clean .= ';';			
+                $commentstrash2 = $wpdb->query( $clean );                
+
+
 			}
             
             // transient options
@@ -474,7 +485,7 @@ function wpo_cleanUpSystem($cleanupType){
 			
             $comments = $wpdb->query( $clean );
             $message .= $comments.' '.__('spam comments deleted', 'wp-optimize').'<br>';
-
+            
             // TODO:  query trashed comments and cleanup metadata 
             $clean = "DELETE FROM $wpdb->comments WHERE comment_approved = 'trash'";
             if ($retention_enabled == 'true') {
@@ -483,7 +494,18 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';			
             $commentstrash = $wpdb->query( $clean );
             $message .= $commentstrash.' '.__('items removed from Trash', 'wp-optimize').'<br>';
+            
+    		// TODO:  now cleaning up comments meta tables 
+            $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+            $clean .= ';';			
+            $commentstrash_meta = $wpdb->query( $clean );
+            $message .= $commentstrash_meta.' '.__('unused comment metadata items removed', 'wp-optimize').'<br>';                
 
+	   	    // TODO:  now cleaning up comments meta tables - removing akismet related settings 
+            $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+            $clean .= ';';			
+            $commentstrash_meta2 = $wpdb->query( $clean );               
+            $message .= $commentstrash_meta2.' '.__('unused akismet comment metadata items removed', 'wp-optimize').'<br>';
             break;
 
         case "unapproved":
@@ -622,6 +644,24 @@ function wpo_getInfo($cleanupType){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review Spams', 'wp-optimize').'</a>';
             } else
               $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
+              
+            // TODO: 2 more sections for info
+            $sql = "SELECT * FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+            $sql .= ';';			
+            $comments_meta = $wpdb->query( $sql );
+            if(!$comments_meta == NULL || !$comments_meta == 0){
+              $message .= '&nbsp;|&nbsp;'.$comments_meta.' '.__('Unused comment meta found', 'wp-optimize');
+            } 
+
+
+            $sql = "SELECT * FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+            $sql .= ';';			
+            $comments_meta2 = $wpdb->query( $sql );
+            if(!$comments_meta2 == NULL || !$comments_meta2 == 0){
+              $message .= '&nbsp;|&nbsp;'.$comments_meta2.' '.__('additional Akismet junk data found', 'wp-optimize');
+            } 
+
+
             break;
 
         case "unapproved":

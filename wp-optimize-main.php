@@ -54,7 +54,8 @@ if (isset($_POST["optimize-db"])) {
 	$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
 	if ($lastopt !== 'Never'){
 		echo '<i>';		
-		_e('Last automatic optimization was at ', 'wp-optimize');
+		_e('Last automatic optimization was at', 'wp-optimize');
+		echo ' ';
 		echo '</i>';
 		echo '<b>';
 		echo '<font color="green">';

@@ -3,26 +3,80 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-19 11:16+0800\n"
-"PO-Revision-Date: 2014-04-19 11:16+0800\n"
+"PO-Revision-Date: Wed Apr 23 2014 10:38:53 GMT+0200\n"
 "Last-Translator: Kornel <kml1960@tlen.pl>\n"
 "Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
 "Language: Polish\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && ( n "
+"% 100 < 10 || n % 100 >= 20 ) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && "
-"( n % 100 < 10 || n % 100 >= 20 ) ? 1 : 2;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
-"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
-"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
-"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
-"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: .\n"
 "X-Loco-Target-Locale: pl_PL\n"
 "X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
-"X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
+"X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:328
+msgid "Gb"
+msgstr "Gb"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:330
+msgid "Mb"
+msgstr "Mb"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:334
+msgid "bytes"
+msgstr "bytes"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:368
+msgid "No."
+msgstr "Nr."
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:370
+msgid "Records"
+msgstr "Archiwa"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:372
+msgid "Index Size"
+msgstr "Rozmiar indeksu"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:373
+msgid "Overhead"
+msgstr "Nadmiar "
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:460
+msgid "Total:"
+msgstr "Razem"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:462
+msgid "%s Record"
+msgid_plural "%s Records"
+msgstr[0] "Archiwum "
+msgstr[1] "Archiwa "
+msgstr[2] "Archiwów "
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:369
+msgid "Tables"
+msgstr "Tabele"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:371
+msgid "Data Size"
+msgstr "Ilość danych"
+
+#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:461
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "Tabela"
+msgstr[1] "Tabele"
+msgstr[2] "Tabele"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
 msgid "Database Optimized!"
@@ -44,21 +98,9 @@ msgstr "Informacja"
 msgid "Total clean up overall"
 msgstr "Całkowity rozmiar wyczyszczonych elementów"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:328
-msgid "Gb"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:330
-msgid "Mb"
-msgstr ""
-
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:332
 msgid "Kb"
 msgstr "Kb"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:334
-msgid "bytes"
-msgstr ""
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:415
 msgid "transient options deleted"
@@ -196,15 +238,14 @@ msgstr "Zasługi"
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
 msgid ""
 "WP-Optimize started as a utility for my own projects. I have realized soon, "
-"that this plugin might help a lot of people out there. I am personally "
-"thanking all of the users who use this plugin as a daily basis. Also thank "
-"you all of the translators and the generous people who have donated for this "
-"project."
+"that this plugin might help a lot of people out there. I am personally thanking "
+"all of the users who use this plugin as a daily basis. Also thank you all of "
+"the translators and the generous people who have donated for this project."
 msgstr ""
-"WP-Optimize na początku było moim własnym projektem. Szybko zorientowałem "
-"się że ten plugin może pomóc wielu osobom. Codziennie myślę o Was wszystkich "
-"którzy używacie tego pluginu. Dziękuje wszystkim którzy dokonują tłumaczeń "
-"oraz tym którzy wysyłają dotacje wspomagające ten projekt."
+"WP-Optimize na początku było moim własnym projektem. Szybko zorientowałem się "
+"że ten plugin może pomóc wielu osobom. Codziennie myślę o Was wszystkich którzy "
+"używacie tego pluginu. Dziękuje wszystkim którzy dokonują tłumaczeń oraz tym "
+"którzy wysyłają dotacje wspomagające ten projekt."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
 msgid "Share this plugin on Facebook"
@@ -257,7 +298,6 @@ msgid "No items"
 msgstr "Brak przedmiotów"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
-#, php-format
 msgid "Update %s"
 msgstr "Uaktualnij %s"
 
@@ -385,8 +425,7 @@ msgstr "Usuń wszystkie automatyczne projekty postów starsze niż "
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:205
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
-msgstr ""
-"Usuń wszystkie automatyczne projekty postów ( oczyści również śmietnik)"
+msgstr "Usuń wszystkie automatyczne projekty postów ( oczyści również śmietnik)"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:220
 msgid "Remove spam comments which are older than "
@@ -433,7 +472,7 @@ msgstr "Optymalizuj tabele bazy danych"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:329
 msgid "PROCESS"
-msgstr "PROCES"
+msgstr "WYKONAJ"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
 msgid "Database Tables Report"
@@ -446,52 +485,6 @@ msgstr "Nazwa Bazy Danych"
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:360
 msgid "Optimized all the tables found in the database."
 msgstr "Optymalizuj wszystkie tabele znalezione w Bazy Danych"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:368
-msgid "No."
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:369
-#, fuzzy
-msgid "Tables"
-msgstr "Tabela"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:370
-msgid "Records"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:371
-#, fuzzy
-msgid "Data Size"
-msgstr "Wielkość Bazy Danych >"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:372
-msgid "Index Size"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:373
-msgid "Overhead"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:460
-msgid "Total:"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:461
-#, fuzzy, php-format
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "Tabela"
-msgstr[1] "Tabela"
-msgstr[2] "Tabela"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:462
-#, php-format
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:499
 msgid "Total Size of Database"
@@ -586,15 +579,14 @@ msgid ""
 "Remove revisions, auto drafts, posts/comments in trash, transient options. "
 "After that it will optimize the db."
 msgstr ""
-"Usuwanie zmian, automatycznych szkiców, postów i komentarzy w śmietniku, "
-"opcji przejściowych. Potem plugin zoptymalizuje Bazę Danych."
+"Usuwanie zmian, automatycznych szkiców, postów i komentarzy w śmietniku, opcji "
+"przejściowych. Potem plugin zoptymalizuje Bazę Danych."
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:165
 msgid ""
 "These options will only work if the automatic clean-up schedule has been "
 "enabled"
-msgstr ""
-"Ta opcja będzie działała tylko wtedy gdy automatyczny plan będzie włączony"
+msgstr "Ta opcja będzie działała tylko wtedy gdy automatyczny plan będzie włączony"
 
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:167
 msgid "Remove auto revisions"
@@ -623,30 +615,3 @@ msgstr "ZAPISZ USTAWIENIA"
 #: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:191
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "ZAPISZ USTAWIENIA AUTOMATYCZNEGO CZESZCZENIA"
-
-#~ msgid "Kb."
-#~ msgstr "Kb."
-
-#~ msgid "Size"
-#~ msgstr "Rozmiar"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "Space Save"
-#~ msgstr "Zaoszczędzone miejsce "
-
-#~ msgid "Already Optimized"
-#~ msgstr "Już optymalizowane"
-
-#~ msgid "Optimized"
-#~ msgstr "Optymalizowane"
-
-#~ msgid "Need to Optimize"
-#~ msgstr "Potrzebna optymalizacja"
-
-#~ msgid "orphaned postmeta deleted"
-#~ msgstr "pozostawione postmeta zostały usunięte"
-
-#~ msgid "unused tags deleted"
-#~ msgstr "Nieużywane tagi zostały usunięte"
