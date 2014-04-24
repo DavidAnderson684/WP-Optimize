@@ -29,10 +29,10 @@ $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'wp_optimize_optimize';
         global $wpdb;
         $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
         $php_version_info = substr(PHP_OS, 0, 3);
-        __('Optimizer', 'wp-optimize'); 
+        _e('Optimizer', 'wp-optimize'); 
         if (defined('WPO_VERSION')){
             echo ' '.WPO_VERSION.' - ';
-            __('MYSQL', 'wp-optimize');
+            _e('MYSQL', 'wp-optimize');
             echo ' '.$sqlversion.' - '; 
             echo PHP_OS;
         }
