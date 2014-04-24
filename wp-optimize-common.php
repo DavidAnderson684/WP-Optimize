@@ -205,15 +205,15 @@ function wpo_cron_action() {
                 $clean .= ';';			
                 $commentstrash = $wpdb->query( $clean );
                 
-			// TODO:  now cleaning up comments meta tables 
-                $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
-                $clean .= ';';			
-                $commentstrash1 = $wpdb->query( $clean );                
+			// TODO:  still need to test now cleaning up comments meta tables 
+//                $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+//                $clean .= ';';			
+//                $commentstrash1 = $wpdb->query( $clean );                
 
-			// TODO:  now cleaning up comments meta tables - removing akismet related settings 
-                $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
-                $clean .= ';';			
-                $commentstrash2 = $wpdb->query( $clean );                
+			// TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings 
+//                $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+//                $clean .= ';';			
+//                $commentstrash2 = $wpdb->query( $clean );                
 
 
 			}
@@ -495,17 +495,17 @@ function wpo_cleanUpSystem($cleanupType){
             $commentstrash = $wpdb->query( $clean );
             $message .= $commentstrash.' '.__('items removed from Trash', 'wp-optimize').'<br>';
             
-    		// TODO:  now cleaning up comments meta tables 
-            $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
-            $clean .= ';';			
-            $commentstrash_meta = $wpdb->query( $clean );
-            $message .= $commentstrash_meta.' '.__('unused comment metadata items removed', 'wp-optimize').'<br>';                
+    		// TODO:  still need to test now cleaning up comments meta tables
+//            $clean = "DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+//            $clean .= ';';			
+//            $commentstrash_meta = $wpdb->query( $clean );
+//            $message .= $commentstrash_meta.' '.__('unused comment metadata items removed', 'wp-optimize').'<br>';                
 
-	   	    // TODO:  now cleaning up comments meta tables - removing akismet related settings 
-            $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
-            $clean .= ';';			
-            $commentstrash_meta2 = $wpdb->query( $clean );               
-            $message .= $commentstrash_meta2.' '.__('unused akismet comment metadata items removed', 'wp-optimize').'<br>';
+	   	    // TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings 
+//            $clean = "DELETE FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+//            $clean .= ';';			
+//            $commentstrash_meta2 = $wpdb->query( $clean );               
+//            $message .= $commentstrash_meta2.' '.__('unused akismet comment metadata items removed', 'wp-optimize').'<br>';
             break;
 
         case "unapproved":
@@ -645,21 +645,21 @@ function wpo_getInfo($cleanupType){
             } else
               $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
               
-            // TODO: 2 more sections for info
-            $sql = "SELECT * FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
-            $sql .= ';';			
-            $comments_meta = $wpdb->query( $sql );
-            if(!$comments_meta == NULL || !$comments_meta == 0){
-              $message .= '&nbsp;|&nbsp;'.$comments_meta.' '.__('Unused comment meta found', 'wp-optimize');
-            } 
-
-
-            $sql = "SELECT * FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
-            $sql .= ';';			
-            $comments_meta2 = $wpdb->query( $sql );
-            if(!$comments_meta2 == NULL || !$comments_meta2 == 0){
-              $message .= '&nbsp;|&nbsp;'.$comments_meta2.' '.__('additional Akismet junk data found', 'wp-optimize');
-            } 
+            // TODO: still need to test 2 more sections for info - still need to test
+//            $sql = "SELECT * FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
+//            $sql .= ';';			
+//            $comments_meta = $wpdb->query( $sql );
+//            if(!$comments_meta == NULL || !$comments_meta == 0){
+//              $message .= '&nbsp;|&nbsp;'.$comments_meta.' '.__('Unused comment meta found', 'wp-optimize');
+//            } 
+//
+//
+//            $sql = "SELECT * FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
+//            $sql .= ';';			
+//            $comments_meta2 = $wpdb->query( $sql );
+//            if(!$comments_meta2 == NULL || !$comments_meta2 == 0){
+//              $message .= '&nbsp;|&nbsp;'.$comments_meta2.' '.__('additional Akismet junk data found', 'wp-optimize');
+//            } 
 
 
             break;
