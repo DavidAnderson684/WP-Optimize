@@ -26,9 +26,15 @@ $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'wp_optimize_optimize';
 <h2 class="nav-tab-wrapper">
 		<a href="?page=WP-Optimize&tab=wp_optimize_optimize" class="nav-tab <?php echo $active_tab == 'wp_optimize_optimize' ? 'nav-tab-active' : ''; ?>">
         <?php 
-        _e('Optimizer', 'wp-optimize'); 
+        global $wpdb;
+        $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
+        $php_version_info = substr(PHP_OS, 0, 3);
+        __('Optimizer', 'wp-optimize'); 
         if (defined('WPO_VERSION')){
-            echo ' '.WPO_VERSION; 
+            echo ' '.WPO_VERSION.' - ';
+            __('MYSQL', 'wp-optimize');
+            echo ' '.$sqlversion.' - '; 
+            echo PHP_OS;
         }
         ?></a>
 		<a href="?page=WP-Optimize&tab=wp_optimize_settings" class="nav-tab <?php echo $active_tab == 'wp_optimize_settings' ? 'nav-tab-active' : ''; ?>"><?php _e('Settings', 'wp-optimize') ?></a>
