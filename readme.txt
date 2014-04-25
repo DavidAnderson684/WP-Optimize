@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta
 Requires at least: 3.7
 Tested up to: 3.9.1.alpha
-Stable tag: 1.7.4
+Stable tag: 1.7.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -147,6 +147,9 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 
 == Changelog ==
 
+= 1.7.6 =
+* Now hosted at https://github.com/ruhanirabin/WP-Optimize
+* Fix some code problems
 
 = 1.7.4 =
 * More Translation compatibility.
