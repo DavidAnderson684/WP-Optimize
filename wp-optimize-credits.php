@@ -70,7 +70,7 @@ endif;
     <?php endif; ?>
 </ul><br /><br />
 	<h2><?php _e('Plugin Resources','wp-optimize'); ?></h2><br />
-	<h3><a href="http://www.ruhanirabin.com/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a><br /><br />
+	<h3><a href="http://ruhanirabin.github.io/WP-Optimize" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a><br /><br />
     <a href="http://wordpress.org/support/plugin/wp-optimize" target="_blank"><?php _e('Support Forum', 'wp-optimize'); ?></a><br /><br />
     <a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a><br /><br />
     <a href="http://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a><br /><br />
