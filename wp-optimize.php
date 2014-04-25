@@ -82,7 +82,6 @@ function wpo_admin_bar() {
 
 // Add settings link on plugin page
 function wpo_plugin_settings_link($links) {
-  //$settings_link = '<a href="admin.php?page=WP-Optimize&tab=wp_optimize_settings">Settings</a>';
   //$optimize_link = '<a href="admin.php?page=WP-Optimize">Optimizer</a>';
   $settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=WP-Optimize&tab=wp_optimize_settings' ) ) . '">' . __( 'Settings', 'wp-optimize' ) . '</a>';
   $optimize_link = '<a href="' . esc_url( admin_url( 'admin.php?page=WP-Optimize' ) ) . '">' . __( 'Optimizer', 'wp-optimize' ) . '</a>';
@@ -103,7 +102,7 @@ function wpo_admin_actions()
 			add_menu_page("WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "wp_optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png');
 		} else {
 			add_submenu_page("index.php", "WP-Optimize", "WP-Optimize", "manage_options", "WP-Optimize", "wp_optimize_menu", plugin_dir_url( __FILE__ ).'wpo.png');
-		} // end if addmetabox
+		} // end if addmeta box
         if (get_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' ) == 'true' ){
         		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
         }        
