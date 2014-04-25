@@ -7,22 +7,9 @@ if ('wp-optimize-common.php' == basename($_SERVER['SCRIPT_FILENAME']))
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
             
-if (! defined('WPO_PLUGIN_PATH'))
-	define('WPO_PLUGIN_PATH', plugin_dir_url( __FILE__ ));
+if (! defined('WPO_PLUGIN_URL'))
+	define('WPO_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 	
-if (! defined('WP_CONTENT_DIR'))
-    define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
-
-// TODO: Need to remove the two options below because this can return wrong path
-if (! defined('WP_CONTENT_URL'))
-    define('WP_CONTENT_URL', get_option('siteurl') . '/wp-content');
-
-if (! defined('WP_ADMIN_URL'))
-    define('WP_ADMIN_URL', get_option('siteurl') . '/wp-admin');
-
-if (! defined('WP_PLUGIN_DIR'))
-    define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins');
-
 if (! defined('OPTION_NAME_SCHEDULE'))
     define('OPTION_NAME_SCHEDULE', 'wp-optimize-schedule');	
 
@@ -95,7 +82,7 @@ function wpo_debugLog($message) {
  */
 function wpo_headerImage(){
 	
-	$text = '<img src="'.WPO_PLUGIN_PATH.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px"/><br />';
+	$text = '<img src="'.WPO_PLUGIN_URL.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px"/><br />';
     //$text .= '<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:26px;" allowTransparency="true"></iframe>'
 	$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=400&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:46px;" allowTransparency="true"></iframe>';
 	echo $text;
