@@ -8,7 +8,8 @@ Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
 Domain Path: /languages
-
+GitHub Plugin URI: https://github.com/ruhanirabin/wp-optimize
+GitHub Branch: master
     Copyright 2009-2014  Ruhani Rabin  (email : get@ruhanirabin.com)
 
     This program is free software; you can redistribute it and/or modify
@@ -26,6 +27,7 @@ Domain Path: /languages
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+
 # ---------------------------------------- #
 # Find and replace version info in all files
 # ---------------------------------------- #
@@ -33,9 +35,10 @@ Domain Path: /languages
 # ---------------------------------- #
 # prevent file from being accessed directly
 # ---------------------------------- #
-if ('wp-optimize.php' == basename($_SERVER['SCRIPT_FILENAME']))
-	die ('Please do not access this file directly. Thanks!');
-
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}	
+	
 global $current_user;
 
 if (! defined('WPO_VERSION'))
