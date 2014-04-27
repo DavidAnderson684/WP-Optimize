@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.7.2\n"
+"Project-Id-Version: WP-Optimize 1.7.4\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2014-04-22 04:07:23+00:00\n"
-"PO-Revision-Date: 2014-04-22 15:37+0100\n"
+"PO-Revision-Date: 2014-04-25 12:10+0100\n"
 "Last-Translator: Kniebremser <kniebremser@fluchtsportler.de>\n"
 "Language-Team: fluchtsportler.de <kniebremser@fluchtsportler.de>\n"
 "Language: de_DE\n"
@@ -31,7 +31,7 @@ msgstr "Informationen"
 
 #: wp-optimize-common.php:107
 msgid "Total clean up overall"
-msgstr "Von Anfang an eingespart"
+msgstr "Insgesamt eingespart"
 
 #: wp-optimize-common.php:329
 msgid "Gb"
@@ -95,7 +95,7 @@ msgstr "KEINE Aktionen besetzt"
 
 #: wp-optimize-common.php:556
 msgid "transient options in your database"
-msgstr "transiente Optionen in Ihrer Datenbank"
+msgstr "transiente Optionen in Deiner Datenbank"
 
 #: wp-optimize-common.php:558
 msgid "No transient options found"
@@ -189,10 +189,10 @@ msgid ""
 "you all of the translators and the generous people who have donated for this "
 "project."
 msgstr ""
-"WP-Optimize ist als Dienstprogramm für meine eigenen Projekte gestartet. Ich "
-"habe bald erkannt, dass dieses Plugin eine Menge Leute helfen könnte. Ich "
-"möchte persönlich alle Benutzer danken die dieses Plugin verwenden. Auch "
-"allen Übersetzern und den großzügigen Menschen die für dieses Projekt "
+"WP-Optimize wurde als Dienstprogramm für meine eigenen Projekte gestartet. "
+"Ich habe bald erkannt, dass dieses Plugin vielen Menschen helfen könnte. Ich "
+"möchte persönlich allen Benutzer danken, die dieses Plugin verwenden. Auch "
+"allen Übersetzern und den großzügigen Menschen, die für dieses Projekt "
 "gespendet haben ein Dankeschön."
 
 #: wp-optimize-credits.php:15
@@ -222,18 +222,18 @@ msgstr "Übersetzer"
 # This is the link for the Translator's website
 #: wp-optimize-credits.php:30
 msgid "http://www.ruhanirabin.com/"
-msgstr "http://www.myfotohome.at"
+msgstr "http://www.fluchtsportler.de"
 
 # Please change this to Translator's name
 #: wp-optimize-credits.php:30
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
-msgstr "Standard Sprache durch Ruhani Rabin (Deutsche Sprache by Rewolve44)"
+msgstr "Standard Sprache von Ruhani Rabin (Deutsche Sprache von Kniebremser)"
 
 #: wp-optimize-credits.php:32
 msgid "Download .POT File to translate"
-msgstr "Download .POT Datei zu übersetzen"
+msgstr "Download .POT Datei zum Übersetzen"
 
 #: wp-optimize-credits.php:32
 msgid "Email your translations to"
@@ -325,7 +325,7 @@ msgstr "Aktuelle Datenbank-Größe :"
 
 #: wp-optimize-main.php:158
 msgid "You have saved"
-msgstr "Du hast gespart"
+msgstr "Du hast eingespart"
 
 #: wp-optimize-main.php:167
 msgid "Current database size"
@@ -333,7 +333,7 @@ msgstr "Aktuelle Größe der Datenbank"
 
 #: wp-optimize-main.php:174
 msgid "You can save almost"
-msgstr "Du kannst sparen fast"
+msgstr "Du kannst Einsparen"
 
 #: wp-optimize-main.php:183
 msgid "Buy me a Coffee :)"
@@ -376,7 +376,7 @@ msgstr "Entferne auto Entwurf Beiträge, die älter sind als "
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr ""
 "Entferne auto Entwurf Beiträge (Dieses entfernt auch alle gelöschten "
-"Beiträge die im Parpierkorb sind)"
+"Beiträge,  die im Parpierkorb sind)"
 
 #: wp-optimize-main.php:267
 msgid "Remove spam comments which are older than "
@@ -385,7 +385,7 @@ msgstr "Spam-Kommentare entfernen, die älter sind als "
 #: wp-optimize-main.php:272
 msgid "Remove spam comments (This will also clear out comments in Trash)"
 msgstr ""
-"Entferne Spam-Kommentare (Auch alle Spam-Kommentare die im Parpierkorb sind)"
+"Entferne Spam-Kommentare (Auch alle Spam-Kommentare, die im Parpierkorb sind)"
 
 #: wp-optimize-main.php:286
 msgid "Remove unapproved comments which are older than "
@@ -457,7 +457,7 @@ msgstr "Index Größe"
 
 #: wp-optimize-main.php:420
 msgid "Overhead"
-msgstr "Überflüssig"
+msgstr "Verwaltungsdaten"
 
 #: wp-optimize-main.php:507
 msgid "Total:"
@@ -485,7 +485,7 @@ msgstr "Optimierungs Ergebnisse"
 
 #: wp-optimize-main.php:559
 msgid "Total Space Saved"
-msgstr "Gesamtgrösse Gespeichert"
+msgstr "Gesamtgröße Eingespart"
 
 #: wp-optimize-main.php:564
 msgid "Optimization Possibility"
@@ -493,7 +493,7 @@ msgstr "Optimierungs Möglichkeit"
 
 #: wp-optimize-main.php:565
 msgid "Total space can be saved"
-msgstr "Gesamtgrösse kann eingespart werden"
+msgstr "Gesamtgröße der Einsparnis"
 
 #: wp-optimize-settings.php:64
 msgid "Settings updated"
@@ -525,7 +525,7 @@ msgstr "Aktiviere den Adminleisten-Link "
 
 #: wp-optimize-settings.php:109
 msgid "(Click here to refresh)"
-msgstr "(Klicke hier, zum aktualisieren)"
+msgstr "(Klicke hier, zum Aktualisieren)"
 
 #: wp-optimize-settings.php:114
 msgid ""
@@ -621,7 +621,7 @@ msgid ""
 msgstr ""
 "Dieses Plugin hilft Dir, Deine Datenbank sauber zu halten, durch Entfernen "
 "von Post Revisionen und Spams in einem Flammenmeer. Darüber hinaus "
-"ermöglicht es Dir , das Ausführen von Optimierungen auf Befehl von Deinen "
+"ermöglicht es Dir, das Ausführen von Optimierungen auf Befehl von Deinen "
 "WordPress Kern-Tabellen (mit Vorsicht benutzen)."
 
 #. Author of the plugin/theme

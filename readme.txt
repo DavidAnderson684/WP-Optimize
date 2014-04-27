@@ -1,10 +1,10 @@
 ﻿=== WP-Optimize ===
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
-Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta
+Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.alpha
-Stable tag: 1.7.6
+Stable tag: 1.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,19 +16,23 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform)!
 
-Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). More updated releases and collaboration can be found over there.
+Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions. 
+
+Please join GitHub and collaborate.
+
 
 **MAJOR FEATURES:**
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
 *   Removal of trshed comments
-*   Clear out the Post Trash
-*   Automatic Cleanup of all the integrated options (Also uses retention if enabled)
-*   Ability to keep X number of weeks data when cleaning up (Retention feature)
+*   Clear out the post Trash
+*   Mobile device friendly, now you can optimize your site on the go
+*   Automatic cleanup of all the integrated options (Also uses retention if enabled)
+*   Ability to keep selected number of weeks data when cleaning up (retention feature)
 *   Removal of all trackbacks and pingbacks
-*   Cleaning up Auto Draft posts
-*   Removal of Transient options
+*   Cleaning up auto draft posts
+*   Removal of transient options
 *   Option to add or remove link on wp admin bar.
 *   Enable/Disable weekly schedules of optimization
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
@@ -36,13 +40,13 @@ Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). More updated
 *   Visible only to the Administrators.
 
 
-**Simple scheduler introduced (Still in very EXPERIMENTAL stage)**
+**Experimental simple scheduler introduced**
 
 **All the potentially dangerous clean up options are MARKED RED.**
 
 **When you use this plugin for the first time or just updated to major version, make a backup of your database. This is a must for everyone**
 
-**Are you interested to be a contributed developer of this plugin, use the contact form link below to contact me.**
+**Are you interested to be a contributed developer of this plugin, join with me at GitHub.**
 
 You will be credited inside the plugin screen and the plugin listing at WordPress.
 
@@ -56,6 +60,9 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 
 **Translators are welcome to send their Translated Files to be included.**
+Existing translators should join [GitHub](https://github.com/ruhanirabin/WP-Optimize) to submit their translations too. 
+
+[Download the RAW .POT file](https://raw.githubusercontent.com/ruhanirabin/WP-Optimize/master/languages/wp-optimize.pot). This is for the translators, who wants to translate to new language. 
 
 You can **Email translations to plugins(at)ruhanirabin.com**
 
@@ -80,13 +87,15 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language lt_LT: Su pagarba Bronislav - http://www.internetiniusvetainiukurimas.com/
 *   Language it_IT: Diego Belli
 *   Language pl_PL: Kornel
+*   Language ja: stranger-jp
+
 
 **How this could help you?**
 
 *   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
 *   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
 *   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
-*   Automatically cleans database every week and respects the "Keep X number of weeks data" option. 
+*   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
 
 
 == Installation ==
@@ -121,6 +130,9 @@ There are 3 different ways to install WP-Optimize.
 
 No I can't. Please make a backup of your entire database before using this Plugin for the first time. Also backup your database when you upgrade to a MAJOR NEW version (for example - v0.9.8 to 1.5.5 ).
 
+= Is there any bug in this plugin =
+Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
+
 = Everytime I clear transient options, it comes back automatically =
 
 WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
@@ -136,21 +148,28 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 *   Upgrade your PHP to at least 5.5.xx
 *   Upgrade your MySql to at least MySql 5.1.xx
 
-= Is there any bug in this plugin =
-Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
+= Table size shows wrong / Not optimizing  =
+Please check your database for corrupted tables. That can happen, usually your web hosting company can run the repair command on the db.
 
 == Screenshots ==
 
 1. Optimizer Screen
 2. Settings Screen
 3. Table Report
+4. Mobile View Top (Actual screen from Galaxy Note 3)
+5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
 
-= 1.7.6 =
-* Now hosted at https://github.com/ruhanirabin/WP-Optimize
-* Fix some code problems
-* git-updater compatible header
+= 1.8.1 =
+* A whole lot more code optimization
+* Slick new interface
+* Responsive mobile interface, supports running from iPhone/Android/Tablets
+* Tables moved to independent tab
+* Optimize faster
+* GitHub updater support
+* All translations updates will come in soon
+* I do not monitor WP forums, support email at plugins+support(at)ruhanirabin.com
 
 = 1.7.4 =
 * More Translation compatibility.
@@ -216,6 +235,7 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 = 1.1.1 =
 * Fix Fatal Error.
 
+
 = 1.1.0 =
 * Added WP-Optimize to admin menu bar on top. Always accessible.
 * Added wp-optimize.pot file for translators (inside ./languages/ folder).
@@ -226,6 +246,7 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 
 = 1.0.1 =
 * Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
+
 
 = 0.9.8-beta =
 * added beta tag
@@ -251,6 +272,7 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 * Compatibilty with WordPress 3.1
 * Added few translations
 * Added auto draft post removal feature
+
 
 = 0.8.0 =
 * Added Multilanguage capability
