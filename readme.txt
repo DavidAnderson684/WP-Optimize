@@ -171,6 +171,9 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 
 == Changelog ==
 
+= 1.8.4 =
+* Problem with readme file changes
+
 = 1.8.3 =
 * Minor fixes
 
