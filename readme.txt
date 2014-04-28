@@ -16,7 +16,7 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform)!
 
-Now hosted at [Github](http://ruhanirabin.github.io/WP-Optimize)
+Now hosted at [Github](http://ruhanirabin.github.io/WP-Optimize) - More updated releases can be found there.
 
 **MAJOR FEATURES:**
 
@@ -215,7 +215,6 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 = 1.1.1 =
 * Fix Fatal Error.
 
-
 = 1.1.0 =
 * Added WP-Optimize to admin menu bar on top. Always accessible.
 * Added wp-optimize.pot file for translators (inside ./languages/ folder).
@@ -226,7 +225,6 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 
 = 1.0.1 =
 * Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
-
 
 = 0.9.8-beta =
 * added beta tag
@@ -252,7 +250,6 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 * Compatibilty with WordPress 3.1
 * Added few translations
 * Added auto draft post removal feature
-
 
 = 0.8.0 =
 * Added Multilanguage capability
