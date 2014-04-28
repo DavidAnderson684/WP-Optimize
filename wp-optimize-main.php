@@ -236,7 +236,7 @@ global $wpdb;
 
 		<p>
 		<b><a href="<?php echo WPO_PAYPAL ; ?>" target="_blank"><?php _e('Buy me a big Coffee!', 'wp-optimize'); ?></a></b>&nbsp; | &nbsp;
-		<b><a href="http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform" target="_blank" title="<?php _e('Give a rating :)', 'wp-optimize'); ?>">
+		<b><a href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Give a rating :)', 'wp-optimize'); ?>">
 		<?php _e('Give a rating :)', 'wp-optimize'); ?>
 		</a></b>
 		</p>
