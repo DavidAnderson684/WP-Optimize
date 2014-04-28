@@ -4,19 +4,17 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.nightly
-Stable tag: 1.8.4
+Stable tag: 1.8.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Simple but effective plugin allows you to extensively clean up your WordPress database and optimize it without doing manual queries.
-This simple but effective plugin allows you to clean up your WordPress database and optimize it without phpMyAdmin.
 
 == Description ==
 
 WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables. 
 
-
-Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform)!
+Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
 
 Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions. 
 
@@ -27,19 +25,13 @@ Please join GitHub and collaborate.
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
 *   Removal of trshed comments
-*   Clear out the post Trash
 *   Mobile device friendly, now you can optimize your site on the go
-*   Automatic cleanup of all the integrated options (Also uses retention if enabled)
-*   Ability to keep selected number of weeks data when cleaning up (retention feature)
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
 *   Removal of transient options
-*   Clear out the Post Trash
+*   Clear out the post trash
 *   Automatic Cleanup of all the integrated options (Also uses retention if enabled)
-*   Ability to keep X number of weeks data when cleaning up (Retention feature)
-*   Removal of all trackbacks and pingbacks
-*   Cleaning up Auto Draft posts
-*   Removal of Transient options
+*   Ability to keep selected number of weeks data when cleaning up
 *   Option to add or remove link on wp admin bar.
 *   Enable/Disable weekly schedules of optimization
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
@@ -53,7 +45,7 @@ Please join GitHub and collaborate.
 
 **When you use this plugin for the first time or just updated to major version, make a backup of your database. This is a must for everyone**
 
-**Are you interested to be a contributed developer of this plugin, join with me at GitHub.**
+**Are you interested to be a contributed developer of this plugin, join with me at GitHub. Or email plugins(at)ruhanirabin.com**
 
 You will be credited inside the plugin screen and the plugin listing at WordPress.
 
@@ -80,8 +72,8 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language zh_TW: 正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 -  http://sofree.cc
 *   Language zh_CN: 简体中文语言包 由 SoumaHoshino 提供 - http://moesora.com/
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language de_DE: Rewolve44 - http://www.myfotohome.at/
-*   Language lv: Tulkotāji - http://trendfor.lv
+*   Language de_DE: Kniebremser - http://www.fluchtsportler.de
+*   Language lv   : Tulkotāji - http://trendfor.lv
 *   Language pt_BR: Leonardo Kfoury - http://www.kfoury.com.br/site/
 *   Language fa_IR: Morteza Amiri - http://www.GameSiders.com/
 *   Language es_ES: Navone Juan - http://navonejuan.com.ar/
@@ -94,7 +86,7 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language lt_LT: Su pagarba Bronislav - http://www.internetiniusvetainiukurimas.com/
 *   Language it_IT: Diego Belli
 *   Language pl_PL: Kornel
-*   Language ja: stranger-jp
+*   Language ja   : stranger-jp
 
 **How this could help you?**
 
@@ -102,7 +94,6 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
 *   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
 *   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
-*   Automatically cleans database every week and respects the "Keep X number of weeks data" option. 
 
 == Installation ==
 
@@ -139,8 +130,7 @@ No I can't. Please make a backup of your entire database before using this Plugi
 = Is there any bug in this plugin =
 Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 
-=======
-= Everytime I clear transient options, it comes back automatically =
+= Every time I clear transient options, it comes back automatically =
 
 WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
 
@@ -158,18 +148,18 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 = Table size shows wrong / Not optimizing  =
 Please check your database for corrupted tables. That can happen, usually your web hosting company can run the repair command on the db.
 
-= Is there any bug in this plugin =
-Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 == Screenshots ==
 
 1. Optimizer Screen
 2. Settings Screen
 3. Table Report
-
 4. Mobile View Top (Actual screen from Galaxy Note 3)
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.5 =
+* Version bump + modified translator names
 
 = 1.8.4 =
 * Problem with readme file changes
@@ -287,7 +277,6 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 * Compatibilty with WordPress 3.1
 * Added few translations
 * Added auto draft post removal feature
-
 
 = 0.8.0 =
 * Added Multilanguage capability

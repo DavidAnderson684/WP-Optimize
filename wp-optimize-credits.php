@@ -28,7 +28,7 @@
 	<br /><br />
  	
 	<h3><?php _e('Contributing Developers','wp-optimize'); ?></h3><br />
-	<a href="http://www.ruhanirabin.com/contact/" target="_blank" alt="" title=""><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
+	<a href="plugins@ruhanirabin.com" target="_blank" alt="" title="E-mail"><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
 	<?php _e('Your name and website will be credited here in the plugin','wp-optimize'); ?>.<br />
 	&nbsp;
 			</div>
