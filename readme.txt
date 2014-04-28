@@ -16,7 +16,7 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform)!
 
-Now hosted at [Github](http://ruhanirabin.github.io/WP-Optimize) - More updated releases can be found there.
+Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). More updated releases and collaboration can be found over there.
 
 **MAJOR FEATURES:**
 
@@ -150,6 +150,7 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 = 1.7.6 =
 * Now hosted at https://github.com/ruhanirabin/WP-Optimize
 * Fix some code problems
+* git-updater compatible header
 
 = 1.7.4 =
 * More Translation compatibility.
