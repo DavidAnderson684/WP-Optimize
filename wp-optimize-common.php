@@ -82,25 +82,10 @@ function wpo_debugLog($message) {
  */
 function wpo_headerImage(){
 	
-	$text = '<img src="'.WPO_PLUGIN_URL.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px"/><br />';
-    //$text .= '<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:26px;" allowTransparency="true"></iframe>'
-	$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=400&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:46px;" allowTransparency="true"></iframe>';
+	$text = '<img src="'.WPO_PLUGIN_URL.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px" height="auto"/><br />';
+
+	$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=310&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:46px;" allowTransparency="true"></iframe>';
 	echo $text;
-	$total_cleaned = get_option(OPTION_NAME_TOTAL_CLEANED);
-    $total_cleaned_num = floatval($total_cleaned);
-    
-    if ($total_cleaned_num  > 0){
-        echo '<h3>';
-        _e('Total clean up overall','wp-optimize');
-        echo ': ';
-        echo '<font color="green">';
-        //echo $total_cleaned.' '.__('Kb', 'wp-optimize');
-        echo wpo_format_size($total_cleaned);
-        echo '</font>';
-        echo '</h3>';
-        echo '<br />';
-        
-    }    
 	
 }
 
@@ -363,7 +348,7 @@ function wpo_getCurrentDBSize(){
 	
 	$total_size = $data_usage + $index_usage;
 	return array (wpo_format_size($total_size), wpo_format_size($total_gain));
-    $wpdb->flush();
+    //$wpdb->flush();
 	}
  // end of function wpo_getCurrentDBSize
 
@@ -628,7 +613,7 @@ function wpo_getInfo($cleanupType){
             $sql .= ';';			
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review Spams', 'wp-optimize').'</a>';
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review', 'wp-optimize').'</a>';
             } else
               $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
               
@@ -659,7 +644,7 @@ function wpo_getInfo($cleanupType){
             $sql .= ';';
 			$comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('unapproved comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=moderated">'.' '.__('Review Unapproved Comments', 'wp-optimize').'</a>';;
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('unapproved comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=moderated">'.' '.__('Review', 'wp-optimize').'</a>';;
             } else
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unapproved comments found', 'wp-optimize');
 

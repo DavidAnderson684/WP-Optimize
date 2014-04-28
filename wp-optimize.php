@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.7.6
+Version: 1.8.1
 Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
@@ -42,7 +42,7 @@ if ( ! defined( 'WPINC' ) ) {
 global $current_user;
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.7.6');
+    define('WPO_VERSION', '1.8.1');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
@@ -191,5 +191,17 @@ function wpo_admin_actions_remove()
 }
 add_action('admin_menu', 'wpo_admin_actions');
 
+/* function wpo_admin_styles() {
+    wp_register_style( 'wpo_admin_stylesheet', plugins_url( '/css/wpo_admin.css', __FILE__ ) );
+    wp_enqueue_style( 'wpo_admin_stylesheet' );
+}
+add_action( 'admin_enqueue_scripts', 'wpo_admin_styles' ); */
+
+
+function wpo_admin_register_head() {
+    $style_url = plugins_url( '/css/wpo_admin.css', __FILE__ ) ;
+    echo "<link rel='stylesheet' type='text/css' href='".$style_url."' />\n";
+}
+add_action('admin_head', 'wpo_admin_register_head');
 
 ?>
