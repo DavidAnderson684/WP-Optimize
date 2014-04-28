@@ -19,14 +19,14 @@ $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'wp_optimize_optimize';
         <?php 
         global $wpdb;
         $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
-        $php_version_info = substr(PHP_OS, 0, 3);
+        //$php_version_info = substr(PHP_OS, 0, 3);
         _e('Optimizer', 'wp-optimize'); 
         if (defined('WPO_VERSION')){
             echo ' '.WPO_VERSION.' - ';
             _e('MYSQL', 'wp-optimize');
             echo ' '.$sqlversion.' - '; 
             echo PHP_OS;
-        }
+        } //end if
         ?></a>
 		<a href="?page=WP-Optimize&tab=wp_optimize_settings" class="nav-tab <?php echo $active_tab == 'wp_optimize_settings' ? 'nav-tab-active' : ''; ?>"><?php _e('Settings', 'wp-optimize') ?></a>
 		<a href="?page=WP-Optimize&tab=wp_optimize_credits" class="nav-tab <?php echo $active_tab == 'wp_optimize_credits' ? 'nav-tab-active' : ''; ?>"><?php _e('Info', 'wp-optimize') ?></a>

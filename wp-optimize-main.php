@@ -181,7 +181,7 @@ if (isset($_POST["optimize-db"])) {
 	
 	?>
 	<br /><br />
-	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYFUKEK7NXAZ8" class="button" target="_blank"><?php _e('Buy me a Coffee :)', 'wp-optimize'); ?></a> &nbsp; 
+	<a href="<?php echo WPO_PAYPAL; ?>" class="button" target="_blank"><?php _e('Buy me a Coffee :)', 'wp-optimize'); ?></a> &nbsp; 
 	<a href="#report" class="button"><?php _e('See Tables > ', 'wp-optimize'); ?></a> &nbsp; <a href="#total" class="button"><?php _e('Database Size > ', 'wp-optimize'); ?></a>
 	<br />
 	</h3>
