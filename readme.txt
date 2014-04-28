@@ -205,112 +205,64 @@ Of course there is. This is a very primary version of the plugin. So I would rec
 * Updated .PO file for translators.
 * Integrated development log from TRAC
 
-
 = 1.1.2 =
-
 * removed persistent admin bar menu item
-
 * Language ru_RU and zh_TW updated.
 
-
-
 = 1.1.1 =
-
 * Fix Fatal Error.
 
 
 = 1.1.0 =
-
 * Added WP-Optimize to admin menu bar on top. Always accessible.
-
 * Added wp-optimize.pot file for translators (inside ./languages/ folder).
-
 * Last auto optimization timestamp / display
-
 * Fix possible scheduler bug as requested at support forum
-
 * Fix some other codes regarding SQL query parameters
-
 * Ability to keep last X weeks of data, any junk data before that period will be deleted - this option affects both Auto and Manual process. Appreciate time and help from Mikel King (http://mikelking.com/) about this matter.
 
-
 = 1.0.1 =
-
 * Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
 
 
 = 0.9.8-beta =
-
 * added beta tag
 
-
 = 0.9.8 =
-
 * Remove all trackbacks and pingbacks (can significantly reduce db size)
-
 * Remove all Trash Comments and Posts
-
 * Enable/Disable weekly schedules of optimization. This is an EXPERIMENTAL feature. It may or may not work on all servers.
 
-
 = 0.9.4 =
-
 * Non Initialized variables fixes as of http://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
 
-
 = 0.9.3 =
-
 * Removed security tools.
 * Full database size displayed
 
-
 = 0.9.2 =
-
 * Now the plugin is visible to site administrators only. Authors, Contributors, Editors won't be able to see it.
 
-
-
 = 0.9.1 =
-
 * Fixed problem with database names containing "-" .
-
 * NEW Main Level Menu Item added for WP-Optimize, You might need to scroll down to see it
-
 * Compatibilty with WordPress 3.1
-
 * Added few translations
-
 * Added auto draft post removal feature
 
 
-
 = 0.8.0 =
-
 * Added Multilanguage capability
-
 * Added translation WP-OPTIMIZE.POT file 
-
 * Farsi Translation included now (Thanks to Ali irani)
 
-
-
 = 0.7.1 =
-
 * POST META Table cleanup code removed cause it is making problems with many hosts
 
-
-
 = 0.7 =
-
 * Added cleanup of POST META Table along with the revisions
-
 * Fixed some minor PHP tags which causes the total numbers to disappear
-
 * Now requires MySQL 5.1.x and PHP 5.1.x
 
-
-
 = 0.6.5.1 =
-
 * Fix Interface
-
