@@ -20,7 +20,6 @@ Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not mon
 
 Please join GitHub and collaborate.
 
-
 **MAJOR FEATURES:**
 
 *   Removal of stale post revisions
