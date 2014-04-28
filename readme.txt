@@ -1,6 +1,6 @@
 ﻿=== WP-Optimize ===
 Contributors: ruhanirabin
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYFUKEK7NXAZ8
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta
 Requires at least: 3.7
 Tested up to: 3.9.1.alpha
