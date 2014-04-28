@@ -8,6 +8,7 @@ Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
 Domain Path: /languages
+Git URI: https://github.com/ruhanirabin/wp-optimize
 GitHub Plugin URI: https://github.com/ruhanirabin/wp-optimize
 GitHub Branch: master
     Copyright 2009-2014  Ruhani Rabin  (email : get@ruhanirabin.com)
