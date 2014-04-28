@@ -4,11 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.nightly
-<<<<<<< HEAD
 Stable tag: 1.8.2
-=======
-Stable tag: 1.8.1
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,11 +14,7 @@ Simple but effective plugin allows you to extensively clean up your WordPress da
 
 WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables. 
 
-<<<<<<< HEAD
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform)!
-=======
-Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform)!
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions. 
 
@@ -168,7 +160,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
-<<<<<<< HEAD
 = 1.8.2 =
 * Minor fixes
 
@@ -182,7 +173,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 * All translations updates will come in soon
 * I do not monitor WP forums, support email at plugins+support(at)ruhanirabin.com
 
-=======
 = 1.8.1 =
 * A whole lot more code optimization
 * Slick new interface
@@ -193,7 +183,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 * All translations updates will come in soon
 * I do not monitor WP forums, support email at plugins+support(at)ruhanirabin.com
 
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 = 1.7.4 =
 * More Translation compatibility.
 * Added MYSQL and PHP versions beside the Optimizer tab.
