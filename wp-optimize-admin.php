@@ -5,15 +5,6 @@
 if ('wp-optimize-admin.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	Die ('Please do not access this file directly. Thanks!');
 
-/**
- * 	if ( !is_admin() ) {
- *       Die();
- *   }
- */
- 
-
-
-
 ?>
 
 
