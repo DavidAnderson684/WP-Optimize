@@ -16,7 +16,7 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/fields-framework?rate=5#postform)!
 
-Now hosted at [Github](https://github.com/ruhanirabin/WP-Optimize)
+Now hosted at [Github](http://ruhanirabin.github.io/WP-Optimize)
 
 **MAJOR FEATURES:**
 

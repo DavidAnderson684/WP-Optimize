@@ -218,7 +218,7 @@ function SetDefaults() {
     </h3><br />
 	</td>
 		<td rowspan="28" valign="top">
-	<small><?php _e('Sponsor','wp-optimize')?></small><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_PATH ;?>elegantthemes_sm.png" width="310" height="350" alt=""></a></td>
+	<small><?php _e('Sponsor','wp-optimize')?></small><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="350" alt=""></a></td>
 
   </tr>	
   <tr>
