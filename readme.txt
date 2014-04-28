@@ -4,15 +4,17 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.nightly
-Stable tag: 1.8.3
+Stable tag: 1.8.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Simple but effective plugin allows you to extensively clean up your WordPress database and optimize it without doing manual queries.
+This simple but effective plugin allows you to clean up your WordPress database and optimize it without phpMyAdmin.
 
 == Description ==
 
 WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables. 
+
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform)!
 
@@ -32,6 +34,12 @@ Please join GitHub and collaborate.
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
 *   Removal of transient options
+*   Clear out the Post Trash
+*   Automatic Cleanup of all the integrated options (Also uses retention if enabled)
+*   Ability to keep X number of weeks data when cleaning up (Retention feature)
+*   Removal of all trackbacks and pingbacks
+*   Cleaning up Auto Draft posts
+*   Removal of Transient options
 *   Option to add or remove link on wp admin bar.
 *   Enable/Disable weekly schedules of optimization
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
@@ -88,14 +96,13 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language pl_PL: Kornel
 *   Language ja: stranger-jp
 
-
 **How this could help you?**
 
 *   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
 *   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
 *   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
 *   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
-
+*   Automatically cleans database every week and respects the "Keep X number of weeks data" option. 
 
 == Installation ==
 
@@ -132,6 +139,7 @@ No I can't. Please make a backup of your entire database before using this Plugi
 = Is there any bug in this plugin =
 Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 
+=======
 = Everytime I clear transient options, it comes back automatically =
 
 WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
@@ -150,11 +158,14 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 = Table size shows wrong / Not optimizing  =
 Please check your database for corrupted tables. That can happen, usually your web hosting company can run the repair command on the db.
 
+= Is there any bug in this plugin =
+Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 == Screenshots ==
 
 1. Optimizer Screen
 2. Settings Screen
 3. Table Report
+
 4. Mobile View Top (Actual screen from Galaxy Note 3)
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
@@ -162,16 +173,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 = 1.8.3 =
 * Minor fixes
-
-= 1.8.1 =
-* A whole lot more code optimization
-* Slick new interface
-* Responsive mobile interface, supports running from iPhone/Android/Tablets
-* Tables moved to independent tab
-* Optimize faster
-* GitHub updater support
-* All translations updates will come in soon
-* I do not monitor WP forums, support email at plugins+support(at)ruhanirabin.com
 
 = 1.8.1 =
 * A whole lot more code optimization
@@ -246,7 +247,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 = 1.1.1 =
 * Fix Fatal Error.
-
 
 = 1.1.0 =
 * Added WP-Optimize to admin menu bar on top. Always accessible.
