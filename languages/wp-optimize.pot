@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP-Optimize package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.8.1\n"
+"Project-Id-Version: WP-Optimize 1.8.4\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2014-04-28 04:06:09+00:00\n"
+"POT-Creation-Date: 2014-04-28 14:00:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,23 +12,23 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: wp-optimize-admin.php:21 wp-optimize-admin.php:39 wp-optimize.php:93
+#: wp-optimize-admin.php:24 wp-optimize-admin.php:42 wp-optimize.php:94
 msgid "Optimizer"
 msgstr ""
 
-#: wp-optimize-admin.php:24 wp-optimize-admin.php:42
+#: wp-optimize-admin.php:27 wp-optimize-admin.php:45
 msgid "MYSQL"
 msgstr ""
 
-#: wp-optimize-admin.php:29 wp-optimize-admin.php:50 wp-optimize.php:92
+#: wp-optimize-admin.php:32 wp-optimize-admin.php:53 wp-optimize.php:93
 msgid "Settings"
 msgstr ""
 
-#: wp-optimize-admin.php:30 wp-optimize-admin.php:52
+#: wp-optimize-admin.php:33 wp-optimize-admin.php:55
 msgid "Info"
 msgstr ""
 
-#: wp-optimize-admin.php:48 wp-optimize-tables.php:26
+#: wp-optimize-admin.php:51 wp-optimize-tables.php:26
 msgid "Tables"
 msgstr ""
 
@@ -177,7 +177,12 @@ msgid "Credits"
 msgstr ""
 
 #: wp-optimize-credits.php:7
-msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
+msgid ""
+"WP-Optimize started as a utility for my own projects. I have realized soon, "
+"that this plugin might help a lot of people out there. I am personally "
+"thanking all of the users who use this plugin as a daily basis. Also thank "
+"you all of the translators and the generous people who have donated for this "
+"project."
 msgstr ""
 
 #: wp-optimize-credits.php:17
@@ -209,7 +214,9 @@ msgid "http://www.ruhanirabin.com/"
 msgstr ""
 
 #: wp-optimize-credits.php:42
-msgid "Default Language by Ruhani Rabin (Change this text and the link inside translation file)"
+msgid ""
+"Default Language by Ruhani Rabin (Change this text and the link inside "
+"translation file)"
 msgstr ""
 
 #: wp-optimize-credits.php:44
@@ -310,7 +317,9 @@ msgid "Remove trackbacks"
 msgstr ""
 
 #: wp-optimize-main.php:202
-msgid "Some options are not selected by default. Do not select them unless you really need to use them"
+msgid ""
+"Some options are not selected by default. Do not select them unless you "
+"really need to use them"
 msgstr ""
 
 #: wp-optimize-main.php:214
@@ -426,7 +435,9 @@ msgid "Keep last "
 msgstr ""
 
 #: wp-optimize-settings.php:99
-msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgid ""
+"This option will retain the last selected weeks data and remove any garbage "
+"data before that period. This will also affect Auto Clean-up process"
 msgstr ""
 
 #: wp-optimize-settings.php:108
@@ -438,7 +449,9 @@ msgid "(Click here to refresh)"
 msgstr ""
 
 #: wp-optimize-settings.php:116
-msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
+msgid ""
+"This option will put WP-Optimize link on the top admin bar (default is off). "
+"Requires page refresh."
 msgstr ""
 
 #: wp-optimize-settings.php:122
@@ -475,11 +488,15 @@ msgid "Automatic cleanup will perform the following:"
 msgstr ""
 
 #: wp-optimize-settings.php:170
-msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
+msgid ""
+"Remove revisions, auto drafts, posts/comments in trash, transient options. "
+"After that it will optimize the db."
 msgstr ""
 
 #: wp-optimize-settings.php:177
-msgid "These options will only work if the automatic clean-up schedule has been enabled"
+msgid ""
+"These options will only work if the automatic clean-up schedule has been "
+"enabled"
 msgstr ""
 
 #: wp-optimize-settings.php:182
@@ -573,6 +590,7 @@ msgstr ""
 #: wp-optimize-tables.php:175
 msgid "Total space can be saved"
 msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "WP-Optimize"
 msgstr ""
@@ -582,7 +600,10 @@ msgid "http://www.ruhanirabin.com/wp-optimize/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgid ""
+"This plugin helps you to keep your database clean by removing post revisions "
+"and spams in a blaze. Additionally it allows you to run optimize command on "
+"your WordPress core tables (use with caution)."
 msgstr ""
 
 #. Author of the plugin/theme
