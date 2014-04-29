@@ -27,7 +27,15 @@ Function optimizeTables($Optimize=false){
 				<th><?php _e('Records', 'wp-optimize'); ?></th>
 				<th><?php _e('Data Size', 'wp-optimize'); ?></th>
 				<th><?php _e('Index Size', 'wp-optimize'); ?></th>
-				<th><?php _e('Overhead', 'wp-optimize'); ?></th>
+				<?php 
+
+                if (!WPO_TABLE_TYPE == 'innodb'){
+                echo '<th>';
+                _e('Overhead', 'wp-optimize');
+                echo '</th>';       
+                } 
+                        
+                ?>
 			</tr>
 		</thead>
 		
@@ -61,35 +69,37 @@ Function optimizeTables($Optimize=false){
 		echo '<td>'.wpo_format_size($tablestatus->Index_length).'</td>'."\n";;		
 		//echo '<td>'.wpo_format_size($tablestatus->Data_free).'</td>'."\n";
 		
+        if (!WPO_TABLE_TYPE == 'innodb'){
+
 		echo '<td>';
-		
-		if (isset($_POST["optimize-db"])) {
-		
-			if($tablestatus->Data_free>0){
-				echo '<font color="blue">';
-				echo wpo_format_size($tablestatus->Data_free);
-				echo '</font>';
-				}
-			else {
-				echo '<font color="green">';
-				echo wpo_format_size($tablestatus->Data_free);
-				echo '</font>';			
-			}
-		}
-		else {
-			if($tablestatus->Data_free>0){
-				echo '<font color="red">';
-				echo wpo_format_size($tablestatus->Data_free);
-				echo '</font>';
-				}
-			else {
-				echo '<font color="green">';
-				echo wpo_format_size($tablestatus->Data_free);
-				echo '</font>';			
-			}		
-		}
+    		if (isset($_POST["optimize-db"])) {
+    		
+    			if($tablestatus->Data_free>0){
+    				echo '<font color="blue">';
+    				echo wpo_format_size($tablestatus->Data_free);
+    				echo '</font>';
+    				}
+    			else {
+    				echo '<font color="green">';
+    				echo wpo_format_size($tablestatus->Data_free);
+    				echo '</font>';			
+    			}
+    		}
+    		else {
+    			if($tablestatus->Data_free>0){
+    				echo '<font color="red">';
+    				echo wpo_format_size($tablestatus->Data_free);
+    				echo '</font>';
+    				}
+    			else {
+    				echo '<font color="green">';
+    				echo wpo_format_size($tablestatus->Data_free);
+    				echo '</font>';			
+    			}		
+    		}
 		
 		echo '</td>'."\n";
+           } // end of if WPO_TABLE_TYPE 
 		
 		$row_usage += $tablestatus->Rows;
 		$data_usage += $tablestatus->Data_length;
@@ -119,7 +129,10 @@ Function optimizeTables($Optimize=false){
 		echo '<th>'.sprintf(_n('%s Record', '%s Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
 		echo '<th>'.wpo_format_size($data_usage).'</th>'."\n";
 		echo '<th>'.wpo_format_size($index_usage).'</th>'."\n";
-		echo '<th>';
+		
+        if (!WPO_TABLE_TYPE == 'innodb'){
+
+        echo '<th>';
 		
 		
 		if (isset($_POST["optimize-db"])) {
@@ -147,6 +160,7 @@ Function optimizeTables($Optimize=false){
 			}
 		}		
 		echo '</th>'."\n";
+        }
 		echo '</tr>';
 	
 ?>

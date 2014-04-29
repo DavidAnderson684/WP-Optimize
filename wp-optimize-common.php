@@ -31,6 +31,28 @@ if (! defined('OPTION_NAME_ENABLE_ADMIN_MENU'))
 if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 	
+
+/**
+ * wpo_detectDBType()
+ * 
+ * @return void
+ */
+function wpo_detectDBType() {
+
+	global $wpdb;
+    //global $table_prefix;
+	$tablestype = $wpdb->get_results("SHOW TABLE STATUS WHERE Name = '$wpdb->options'");
+	foreach($tablestype as  $tabletype) {
+		$table_engine = $tabletype->Engine;
+	}	
+	
+if (! defined('WPO_TABLE_TYPE'))      
+        define( WPO_TABLE_TYPE,strtolower($table_engine));
+
+return WPO_TABLE_TYPE;
+       
+}
+
 /*
  * function wpo_getRetainInfo()
  * 
@@ -214,6 +236,9 @@ function wpo_cron_action() {
             }
 			
 		//db optimize part - optimize
+        // disble optimization if innoDB
+        if (!WPO_TABLE_TYPE == 'innodb'){
+
         if ($this_options['optimize'] == 'true'){            
     
             $db_tables = $wpdb->get_results('SHOW TABLES',ARRAY_A);
@@ -233,8 +258,9 @@ function wpo_cron_action() {
             wpo_debugLog('Updating options with value +'.$part2);
 
         } // endif $this_options['optimize'] 
+        } //end if if (!WPO_TABLE_TYPE == 'innodb'){
 		
-	}	
+	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
 }	
 
 /*

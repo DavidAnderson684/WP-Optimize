@@ -42,6 +42,8 @@ if ( ! defined( 'WPINC' ) ) {
 	
 global $current_user;
 
+error_reporting( error_reporting() & ~E_NOTICE );
+
 if (! defined('WPO_VERSION'))
     define('WPO_VERSION', '1.8.5');
 
@@ -114,7 +116,8 @@ function wpo_admin_actions()
         		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
         }        
         
-		wpo_PluginOptionsSetDefaults();
+		wpo_detectDBType();
+        wpo_PluginOptionsSetDefaults();
 		wpo_cron_activate();
 	}
 }

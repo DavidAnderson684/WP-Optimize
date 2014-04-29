@@ -214,11 +214,20 @@ global $wpdb;
 		<h3><?php _e('Actions', 'wp-optimize'); ?></h3>
 		<p>
 			<label>
-				<input name="optimize-db" id="optimize-db" type="checkbox" value="" />
+
 			 <?php 
+                if (!WPO_TABLE_TYPE == 'innodb'){
+             echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
 			 echo '<b>';
 			 _e('Optimize database tables', 'wp-optimize'); 
 			 echo '</b>';
+             } else {
+			 echo '<input name="optimize-db-disabled" id="optimize-db" type="checkbox" value="" disabled/>';  
+             echo '<b>';
+                _e('Database optimization not available for InnoDB table types', 'wp-optimize');
+			 echo '</b>';
+                 
+             }
 			 ?>
 			 </label>
 		</p>
@@ -350,11 +359,15 @@ global $wpdb;
 		_e('Current database size : ', 'wp-optimize');
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
-        echo ' <br />';
-		_e('You have saved', 'wp-optimize');
-		echo ' : ';
-		echo '<font color="blue">';
-		echo $part2.'</font> ';
+
+        if (!WPO_TABLE_TYPE == 'innodb'){
+
+            echo ' <br />';
+    		_e('You have saved', 'wp-optimize');
+    		echo ' : ';
+    		echo '<font color="blue">';
+    		echo $part2.'</font> ';
+            } // end if WPO_TABLE_TYPE
 		
     }
 	else {
@@ -365,33 +378,37 @@ global $wpdb;
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
         $this_value = $part2;
-        if ($this_value > 0){
-            echo ' <br />';
-    		_e('You can save almost', 'wp-optimize');
-    		echo ' : ';
-    		echo '<font color="red">';
-    		echo $part2.'</font> ';
-        }
+        if (!WPO_TABLE_TYPE == 'innodb'){
+            if ($this_value > 0){
+                echo ' <br />';
+        		_e('You can save almost', 'wp-optimize');
+        		echo ' : ';
+        		echo '<font color="red">';
+        		echo $part2.'</font> ';
+            }
+         }   
 	}
 	
 	?>
 	</h2>
 	<?php
+    if (!WPO_TABLE_TYPE == 'innodb'){
 	$total_cleaned = get_option(OPTION_NAME_TOTAL_CLEANED);
     $total_cleaned_num = floatval($total_cleaned);
     
-    if ($total_cleaned_num  > 0){
-        echo '<h2>';
-        _e('Total clean up overall','wp-optimize');
-        echo ': ';
-        echo '<font color="green">';
-        //echo $total_cleaned.' '.__('Kb', 'wp-optimize');
-        echo wpo_format_size($total_cleaned);
-        echo '</font>';
-        echo '</h2>';
-        //echo '<br />';
-	
-    }    
+        if ($total_cleaned_num  > 0){
+            echo '<h2>';
+            _e('Total clean up overall','wp-optimize');
+            echo ': ';
+            echo '<font color="green">';
+            //echo $total_cleaned.' '.__('Kb', 'wp-optimize');
+            echo wpo_format_size($total_cleaned);
+            echo '</font>';
+            echo '</h2>';
+            //echo '<br />';
+    	
+        }
+     } //end if WPO_TABLE_TYPE       
 	?>
 
 	
@@ -434,7 +451,12 @@ function SetDefaults() {
     document.getElementById("clean-comments").checked = true;
     document.getElementById("clean-autodraft").checked = true;
 
-    document.getElementById("optimize-db").checked = true;
+    <?php
+    if (!WPO_TABLE_TYPE == 'innodb'){
+    echo 'document.getElementById("optimize-db").checked = true;';    
+    }
+    ?>    
+    
     return false;
 }
 </script>
