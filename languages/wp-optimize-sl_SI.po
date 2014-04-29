@@ -1,573 +1,501 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize v1.5.5\n"
+"Project-Id-Version: WP-Optimize v1.8.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-19 11:16+0800\n"
-"PO-Revision-Date: 2014-04-19 11:17+0800\n"
+"PO-Revision-Date: 2014-04-28 11:19:33+0000\n"
 "Last-Translator: Tomi <info@refuzed.it>\n"
 "Language-Team: \n"
-"Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
 "X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: ../\n"
-"X-Textdomain-Support: yes\n"
+"X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
-# @ wp-optimize
-#: wp-optimize-admin.php:49
+#: wp-optimize-main.php:39
+#@ wp-optimize
 msgid "Database Optimized!"
 msgstr "Baza podatkov Optimizirana!"
 
-# @ wp-optimize
-#: wp-optimize-admin.php:67
+#: wp-optimize-admin.php:24
+#: wp-optimize-admin.php:42
+#: wp-optimize.php:94
+#@ wp-optimize
 msgid "Optimizer"
 msgstr "Optimizer"
 
-# @ wp-optimize
-#: wp-optimize-admin.php:72
+#: wp-optimize-admin.php:32
+#: wp-optimize-admin.php:53
+#: wp-optimize.php:93
+#@ wp-optimize
 msgid "Settings"
 msgstr "Nastavitve"
 
-# @ wp-optimize
-#: wp-optimize-admin.php:73
+#: wp-optimize-admin.php:33
+#: wp-optimize-admin.php:55
+#@ wp-optimize
 msgid "Info"
 msgstr "Info"
 
-# @ wp-optimize
-#: wp-optimize-common.php:106
+#: wp-optimize-main.php:385
+#@ wp-optimize
 msgid "Total clean up overall"
 msgstr "Vse skupaj očiščeno"
 
-#: wp-optimize-common.php:328
+#: wp-optimize-common.php:312
+#@ wp-optimize
 msgid "Gb"
-msgstr ""
+msgstr "Gb"
 
-#: wp-optimize-common.php:330
+#: wp-optimize-common.php:314
+#@ wp-optimize
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
-# @ wp-optimize
-#: wp-optimize-common.php:332
+#: wp-optimize-common.php:316
+#@ wp-optimize
 msgid "Kb"
 msgstr "Kb"
 
-#: wp-optimize-common.php:334
+#: wp-optimize-common.php:318
+#@ wp-optimize
 msgid "bytes"
-msgstr ""
+msgstr "bajtov"
 
-# @ wp-optimize
-#: wp-optimize-common.php:415
+#: wp-optimize-common.php:399
+#@ wp-optimize
 msgid "transient options deleted"
 msgstr "prehodne opcije izbrisane"
 
-# @ wp-optimize
-#: wp-optimize-common.php:442
+#: wp-optimize-common.php:426
+#@ wp-optimize
 msgid "post revisions deleted"
 msgstr "revizije objav izbrisane"
 
-# @ wp-optimize
-#: wp-optimize-common.php:453
+#: wp-optimize-common.php:437
+#@ wp-optimize
 msgid "auto drafts deleted"
 msgstr "samodejni osnutki izbrisani"
 
-# @ wp-optimize
-#: wp-optimize-common.php:463 wp-optimize-common.php:484
+#: wp-optimize-common.php:447
+#: wp-optimize-common.php:468
+#@ wp-optimize
 msgid "items removed from Trash"
 msgstr "elementi odstranjeni iz Smeti"
 
-# @ wp-optimize
-#: wp-optimize-common.php:475
+#: wp-optimize-common.php:459
+#@ wp-optimize
 msgid "spam comments deleted"
 msgstr "nezaželeni komentarji izbrisani"
 
-# @ wp-optimize
-#: wp-optimize-common.php:494
+#: wp-optimize-common.php:489
+#@ wp-optimize
 msgid "unapproved comments deleted"
 msgstr "nepotrjeni komentarji izbrisani"
 
-# @ wp-optimize
-#: wp-optimize-common.php:500
+#: wp-optimize-common.php:495
+#@ wp-optimize
 msgid "pingbacks deleted"
 msgstr "pingbacks izbrisani"
 
-# @ wp-optimize
-#: wp-optimize-common.php:506
+#: wp-optimize-common.php:501
+#@ wp-optimize
 msgid "trackbacks deleted"
 msgstr "trackback izbrisani"
 
-# @ wp-optimize
-#: wp-optimize-common.php:513
+#: wp-optimize-common.php:508
+#@ wp-optimize
 msgid "Enabled weekly processing"
 msgstr "Omogoči tedensko izvajanje"
 
-# @ wp-optimize
-#: wp-optimize-common.php:519
+#: wp-optimize-common.php:514
+#@ wp-optimize
 msgid "Disabled weekly processing"
 msgstr "Onemogoči tedensko izvajanje"
 
-# @ wp-optimize
-#: wp-optimize-common.php:528
+#: wp-optimize-common.php:523
+#@ wp-optimize
 msgid "NO Actions Taken"
 msgstr "NI bilo izvedenih opravil"
 
-# @ wp-optimize
-#: wp-optimize-common.php:555
+#: wp-optimize-common.php:550
+#@ wp-optimize
 msgid "transient options in your database"
 msgstr "prehodnih opcij v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:557
+#: wp-optimize-common.php:552
+#@ wp-optimize
 msgid "No transient options found"
 msgstr "Prehodne opcije niso bile najdene"
 
-# @ wp-optimize
-#: wp-optimize-common.php:566
+#: wp-optimize-common.php:561
+#@ wp-optimize
 msgid "orphaned postmeta in your database"
 msgstr "osiroteli postmeta v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:568
+#: wp-optimize-common.php:563
+#@ wp-optimize
 msgid "No orphaned postmeta in your database"
 msgstr "Ni osirotelih postmeta v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:577
+#: wp-optimize-common.php:572
+#@ wp-optimize
 msgid "unused tags in your database"
 msgstr "neuporabljenih oznak v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:579
+#: wp-optimize-common.php:574
+#@ wp-optimize
 msgid "No unused tags found"
 msgstr "Ni bilo najdenih neuporabljenih oznak"
 
-# @ wp-optimize
-#: wp-optimize-common.php:592
+#: wp-optimize-common.php:587
+#@ wp-optimize
 msgid "post revisions in your database"
 msgstr "revizije objav v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:594
+#: wp-optimize-common.php:589
+#@ wp-optimize
 msgid "No post revisions found"
 msgstr "Ni bilo najdenih revizij objav"
 
-# @ wp-optimize
-#: wp-optimize-common.php:607
+#: wp-optimize-common.php:602
+#@ wp-optimize
 msgid "auto draft post(s) in your database"
 msgstr "samodejni osnutek (i) v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:609
+#: wp-optimize-common.php:604
+#@ wp-optimize
 msgid "No auto draft posts found"
 msgstr "Ni bilo najdenih samodejnih osnutkov v vaši podatkovni bazi"
 
-# @ wp-optimize
-#: wp-optimize-common.php:621
+#: wp-optimize-common.php:616
+#@ wp-optimize
 msgid "spam comments found"
 msgstr "najdenih nezaželenih komentarjev"
 
-# @ wp-optimize
-#: wp-optimize-common.php:621
-msgid "Review Spams"
-msgstr "Preglej nezaželene komentarje"
-
-# @ wp-optimize
-#: wp-optimize-common.php:623
+#: wp-optimize-common.php:618
+#@ wp-optimize
 msgid "No spam comments found"
 msgstr "Ni najdenih nezaželenih komentarjev"
 
-# @ wp-optimize
-#: wp-optimize-common.php:634
+#: wp-optimize-common.php:647
+#@ wp-optimize
 msgid "unapproved comments found"
 msgstr "najdenih nepotrjenih komentarjev"
 
-# @ wp-optimize
-#: wp-optimize-common.php:634
-msgid "Review Unapproved Comments"
-msgstr "Preglej Nepotrjene Komentarje"
-
-# @ wp-optimize
-#: wp-optimize-common.php:636
+#: wp-optimize-common.php:649
+#@ wp-optimize
 msgid "No unapproved comments found"
 msgstr "Ni najdenih nepotrjenih komentarjev"
 
-# @ wp-optimize
-#: wp-optimize-common.php:644
+#: wp-optimize-common.php:657
+#@ wp-optimize
 msgid "Pingbacks found"
 msgstr "Najdenih Pingbacks"
 
-# @ wp-optimize
-#: wp-optimize-common.php:646
+#: wp-optimize-common.php:659
+#@ wp-optimize
 msgid "No pingbacks found"
 msgstr "Ni najdenih pingback"
 
-# @ wp-optimize
-#: wp-optimize-common.php:654
+#: wp-optimize-common.php:667
+#@ wp-optimize
 msgid "Trackbacks found"
 msgstr "Najdenih trackback"
 
-# @ wp-optimize
-#: wp-optimize-common.php:656
+#: wp-optimize-common.php:669
+#@ wp-optimize
 msgid "No trackbacks found"
 msgstr "Ni najdenih Trackback"
 
-# @ wp-optimize
-#: wp-optimize-common.php:662
+#: wp-optimize-common.php:675
+#@ wp-optimize
 msgid "nothing"
 msgstr "nič"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:4
+#: wp-optimize-credits.php:6
+#@ wp-optimize
 msgid "Credits"
 msgstr "Zasluge"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:5
-msgid ""
-"WP-Optimize started as a utility for my own projects. I have realized soon, "
-"that this plugin might help a lot of people out there. I am personally "
-"thanking all of the users who use this plugin as a daily basis. Also thank "
-"you all of the translators and the generous people who have donated for this "
-"project."
-msgstr ""
-"WP-Optimize je nastal kot orodje za moje projekte. Kmalu sem spoznal, da "
-"lahko ta vtičnik morda pomaga tudi drugim ljudem. Osebno se zahvaljujem vsem "
-"uporabnikom tega vtičnika, ki ga uporabljajo vsakodnevno. Prav tako hvala "
-"vsem prevajalcem in radodarnim ljudem, ki so darovali sredstva za ta projekt."
+#: wp-optimize-credits.php:7
+#@ wp-optimize
+msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
+msgstr "WP-Optimize je nastal kot orodje za moje projekte. Kmalu sem spoznal, da lahko ta vtičnik morda pomaga tudi drugim ljudem. Osebno se zahvaljujem vsem uporabnikom tega vtičnika, ki ga uporabljajo vsakodnevno. Prav tako hvala vsem prevajalcem in radodarnim ljudem, ki so darovali sredstva za ta projekt."
 
-# @ wp-optimize
-#: wp-optimize-credits.php:15
+#: wp-optimize-credits.php:17
+#@ wp-optimize
 msgid "Share this plugin on Facebook"
 msgstr "Posreduj ta vtičnik preko Facebooka"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:25
+#: wp-optimize-credits.php:30
+#@ wp-optimize
 msgid "Contributing Developers"
 msgstr "Zaslužni razvijalci"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:26
+#: wp-optimize-credits.php:31
+#@ wp-optimize
 msgid "Help me make this plugin better"
 msgstr "Pomagajte mi izboljšati ta vtičnik"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:26
+#: wp-optimize-credits.php:31
+#@ wp-optimize
 msgid "I am looking for contributing developers."
 msgstr "Iščem razvijalce ki bi sodelovali"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:27
+#: wp-optimize-credits.php:32
+#@ wp-optimize
 msgid "Your name and website will be credited here in the plugin"
 msgstr "Vaše ime in spletna stran bosta navedena v vtičniku"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:29
+#: wp-optimize-credits.php:41
+#@ wp-optimize
 msgid "Translators"
 msgstr "Prevajalci"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:30
+#: wp-optimize-credits.php:42
+#@ wp-optimize
 msgid "http://www.ruhanirabin.com/"
 msgstr "http://www.refuzed.it/"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:30
-msgid ""
-"Default Language by Ruhani Rabin (Change this text and the link inside "
-"translation file)"
+#: wp-optimize-credits.php:42
+#@ wp-optimize
+msgid "Default Language by Ruhani Rabin (Change this text and the link inside translation file)"
 msgstr "Prevedel v Slovenščino Tomi Sambrailo "
 
-# @ wp-optimize
-#: wp-optimize-credits.php:32
+#: wp-optimize-credits.php:44
+#@ wp-optimize
 msgid "Download .POT File to translate"
 msgstr "Prenesite POT datoteko za prevod"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:32
+#: wp-optimize-credits.php:44
+#@ wp-optimize
 msgid "Email your translations to"
 msgstr "Pošljite vaše prevode na"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:38
+#: wp-optimize-credits.php:64
+#@ wp-optimize
 msgid "Development Log"
 msgstr "Dnevnik razvijalcev"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:58
+#: wp-optimize-credits.php:84
+#@ wp-optimize
 msgid "No items"
 msgstr "Brez elementov"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:63
+#: wp-optimize-credits.php:89
 #, php-format
+#@ wp-optimize
 msgid "Update %s"
 msgstr "Nadgradnja  %s"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:72
+#: wp-optimize-credits.php:50
+#@ wp-optimize
 msgid "Plugin Resources"
 msgstr "Resursi vtičnika"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:73
+#: wp-optimize-credits.php:52
+#@ wp-optimize
 msgid "Plugin Homepage"
 msgstr "Domača stran vtičnika"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:74
-msgid "Support Forum"
-msgstr "Forum s podporo "
-
-# @ wp-optimize
-#: wp-optimize-credits.php:75
+#: wp-optimize-credits.php:54
+#@ wp-optimize
 msgid "Change Log"
 msgstr "Dnevnik sprememb"
 
-# @ wp-optimize
-#: wp-optimize-credits.php:76
+#: wp-optimize-credits.php:55
+#@ wp-optimize
 msgid "FAQ"
 msgstr "FAQ"
 
-# @ wp-optimize
-#: wp-optimize-main.php:5
-msgid "Status : "
-msgstr "Status:"
-
-# @ wp-optimize
-#: wp-optimize-main.php:10
-msgid "Last automatic optimization was at "
-msgstr "Zadnja samodejna optimizacija je bila"
-
-# @ wp-optimize
-#: wp-optimize-main.php:21
+#: wp-optimize-main.php:263
+#@ wp-optimize
 msgid "There was no automatic optimization"
 msgstr "Ni samodejne optimizacije"
 
-# @ wp-optimize
-#: wp-optimize-main.php:24 wp-optimize-main.php:68 wp-optimize-main.php:93
+#: wp-optimize-main.php:266
+#: wp-optimize-main.php:310
+#: wp-optimize-main.php:335
+#@ wp-optimize
 msgid "Check settings"
 msgstr "Preverite nastavitve"
 
-# @ wp-optimize
-#: wp-optimize-main.php:36
+#: wp-optimize-main.php:278
+#@ wp-optimize
 msgid "Scheduled cleaning enabled"
 msgstr "Čiščenje po urniku omogočeno"
 
-# @ wp-optimize
-#: wp-optimize-main.php:48
+#: wp-optimize-main.php:290
+#@ wp-optimize
 msgid "Next schedule"
 msgstr "Naslednji urnik"
 
-# @ wp-optimize
-#: wp-optimize-main.php:57
+#: wp-optimize-main.php:299
+#@ wp-optimize
 msgid "Refresh"
 msgstr "Osveži"
 
-# @ wp-optimize
-#: wp-optimize-main.php:65
+#: wp-optimize-main.php:307
+#@ wp-optimize
 msgid "Scheduled cleaning DISABLED"
 msgstr "Čiščenje po urniku ONEMOGOČENO"
 
-# @ wp-optimize
-#: wp-optimize-main.php:79
+#: wp-optimize-main.php:321
+#@ wp-optimize
 msgid "Retention enabled and keeping last "
 msgstr "Hramba je omogočena in ohranjanje traja"
 
-# @ wp-optimize
-#: wp-optimize-main.php:82 wp-optimize-settings.php:94
+#: wp-optimize-main.php:324
+#: wp-optimize-settings.php:94
+#@ wp-optimize
 msgid "weeks data"
 msgstr "tednov podatkov"
 
-# @ wp-optimize
-#: wp-optimize-main.php:90
+#: wp-optimize-main.php:332
+#@ wp-optimize
 msgid "Retention is disabled"
 msgstr "Hramba je onemogočena"
 
-# @ wp-optimize
-#: wp-optimize-main.php:107
+#: wp-optimize-main.php:350
+#@ wp-optimize
 msgid "Current database size : "
 msgstr "Trenutna velikost baze podatkov:"
 
-# @ wp-optimize
-#: wp-optimize-main.php:111
+#: wp-optimize-main.php:354
+#@ wp-optimize
 msgid "You have saved"
 msgstr "Vi ste osvobodili"
 
-# @ wp-optimize
-#: wp-optimize-main.php:120
+#: wp-optimize-main.php:363
+#@ wp-optimize
 msgid "Current database size"
 msgstr "Trenutna velikost baze podatkov"
 
-# @ wp-optimize
-#: wp-optimize-main.php:127
+#: wp-optimize-main.php:370
+#@ wp-optimize
 msgid "You can save almost"
 msgstr "Vi ste osvobodili skoraj"
 
-# @ wp-optimize
-#: wp-optimize-main.php:136
-msgid "Buy me a Coffee :)"
-msgstr "Kupi mi Kavico :)"
-
-# @ wp-optimize
-#: wp-optimize-main.php:137
-msgid "See Tables > "
-msgstr "Poglej tabele >"
-
-# @ wp-optimize
-#: wp-optimize-main.php:137
-msgid "Database Size > "
-msgstr "Velikost podatkovne baze >"
-
-# @ wp-optimize
-#: wp-optimize-main.php:162
-msgid "Database Optimization Options"
-msgstr "Opcije Optimizacije podatkovne baze"
-
-# @ wp-optimize
-#: wp-optimize-main.php:173
+#: wp-optimize-main.php:422
+#@ wp-optimize
 msgid "Sponsor"
 msgstr "Pokrovitelj"
 
-# @ wp-optimize
-#: wp-optimize-main.php:180
-msgid "Remove post revisions which are older than "
-msgstr "Odstranite revizije objav, ki so starejše od"
-
-# @ wp-optimize
-#: wp-optimize-main.php:183 wp-optimize-main.php:203 wp-optimize-main.php:223
-#: wp-optimize-main.php:242
+#: wp-optimize-main.php:100
+#: wp-optimize-main.php:118
+#: wp-optimize-main.php:138
+#: wp-optimize-main.php:157
+#@ wp-optimize
 msgid "weeks"
 msgstr "tednov"
 
-# @ wp-optimize
-#: wp-optimize-main.php:185
-msgid "Remove all post revisions"
-msgstr "Odstranite vse revizije objav"
-
-# @ wp-optimize
-#: wp-optimize-main.php:200
-msgid "Remove auto draft posts which are older than "
-msgstr "Odstranite samodejne osnutke ki so starejši od"
-
-# @ wp-optimize
-#: wp-optimize-main.php:205
-msgid "Remove auto draft posts (This will also clear out posts in Trash)"
-msgstr ""
-"Odstranite samodejne osnutke (To bo prav tako izbrisalo objave v Smeteh)"
-
-# @ wp-optimize
-#: wp-optimize-main.php:220
+#: wp-optimize-main.php:135
+#@ wp-optimize
 msgid "Remove spam comments which are older than "
 msgstr "Odstranite nezaželene komentarje, ki so starejši od"
 
-# @ wp-optimize
-#: wp-optimize-main.php:225
-msgid "Remove spam comments (This will also clear out comments in Trash)"
-msgstr ""
-"Odstranite nezaželene komentarje (To bo prav tako izbrisalo komentarje v "
-"Smeteh)"
-
-# @ wp-optimize
-#: wp-optimize-main.php:239
+#: wp-optimize-main.php:154
+#@ wp-optimize
 msgid "Remove unapproved comments which are older than "
 msgstr "Odstranite nepotrjene komentarje ki so starejši od"
 
-# @ wp-optimize
-#: wp-optimize-main.php:244 wp-optimize-settings.php:173
+#: wp-optimize-main.php:159
+#: wp-optimize-settings.php:194
+#@ wp-optimize
 msgid "Remove unapproved comments"
 msgstr "Odstranite nepotrjene komentarje"
 
-# @ wp-optimize
-#: wp-optimize-main.php:257 wp-optimize-settings.php:176
+#: wp-optimize-main.php:172
+#: wp-optimize-settings.php:199
+#@ wp-optimize
 msgid "Remove transient options"
 msgstr "Odstranite prehodne opcije"
 
-# @ wp-optimize
-#: wp-optimize-main.php:269
-msgid "Remove orphaned postmeta"
-msgstr "Odstranite osirotele postmeta"
-
-# @ wp-optimize
-#: wp-optimize-main.php:282 wp-optimize-settings.php:181
+#: wp-optimize-settings.php:207
+#@ wp-optimize
 msgid "Remove unused tags"
 msgstr "Odstranite neuporabljene oznake"
 
-# @ wp-optimize
-#: wp-optimize-main.php:295
+#: wp-optimize-main.php:183
+#@ wp-optimize
 msgid "Remove pingbacks"
 msgstr "Odstranite pingbacks"
 
-# @ wp-optimize
-#: wp-optimize-main.php:307
+#: wp-optimize-main.php:194
+#@ wp-optimize
 msgid "Remove trackbacks"
 msgstr "Odstranite trackbacks"
 
-# @ wp-optimize
-#: wp-optimize-main.php:320
+#: wp-optimize-main.php:220
+#@ wp-optimize
 msgid "Optimize database tables"
 msgstr "Optimizirajte tabele podatkovne baze"
 
-# @ wp-optimize
-#: wp-optimize-main.php:329
+#: wp-optimize-main.php:234
+#@ wp-optimize
 msgid "PROCESS"
 msgstr "PROCES"
 
-# @ wp-optimize
-#: wp-optimize-main.php:355
-msgid "Database Tables Report"
-msgstr "Poročilo tabel podatkovne baze"
-
-# @ wp-optimize
-#: wp-optimize-main.php:356
+#: wp-optimize-tables.php:13
+#@ wp-optimize
 msgid "Database Name:"
 msgstr "Ime Podatkovne baze:"
 
-# @ wp-optimize
-#: wp-optimize-main.php:360
+#: wp-optimize-tables.php:17
+#@ wp-optimize
 msgid "Optimized all the tables found in the database."
 msgstr "Optimizirane so vse tabele v podatkovni bazi."
 
-#: wp-optimize-main.php:368
+#: wp-optimize-tables.php:25
+#@ wp-optimize
 msgid "No."
-msgstr ""
+msgstr "Št."
 
-# @ wp-optimize
-#: wp-optimize-main.php:369
+#: wp-optimize-admin.php:51
+#: wp-optimize-tables.php:26
 #, fuzzy
+#@ wp-optimize
 msgid "Tables"
 msgstr "Tabela"
 
-#: wp-optimize-main.php:370
+#: wp-optimize-tables.php:27
+#@ wp-optimize
 msgid "Records"
-msgstr ""
+msgstr "Zapisi"
 
-# @ wp-optimize
-#: wp-optimize-main.php:371
+#: wp-optimize-tables.php:28
 #, fuzzy
+#@ wp-optimize
 msgid "Data Size"
 msgstr "Velikost podatkovne baze >"
 
-#: wp-optimize-main.php:372
+#: wp-optimize-tables.php:29
+#@ wp-optimize
 msgid "Index Size"
-msgstr ""
+msgstr "Velikost indeksa"
 
-#: wp-optimize-main.php:373
+#: wp-optimize-tables.php:30
+#@ wp-optimize
 msgid "Overhead"
-msgstr ""
+msgstr "Predhodno"
 
-#: wp-optimize-main.php:460
+#: wp-optimize-tables.php:117
+#@ wp-optimize
 msgid "Total:"
-msgstr ""
+msgstr "Skupaj:"
 
-# @ wp-optimize
-#: wp-optimize-main.php:461
-#, fuzzy, php-format
+#: wp-optimize-tables.php:118
+#, fuzzy, php-format, php-format
+#@ wp-optimize
 msgid "%s Table"
 msgid_plural "%s Tables"
 msgstr[0] "Tabela"
@@ -575,166 +503,287 @@ msgstr[1] "Tabela"
 msgstr[2] "Tabela"
 msgstr[3] "Tabela"
 
-#: wp-optimize-main.php:462
+#: wp-optimize-tables.php:119
 #, php-format
+#@ wp-optimize
 msgid "%s Record"
 msgid_plural "%s Records"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s Zapis"
+msgstr[1] "%s Zapisi"
 msgstr[2] ""
 msgstr[3] ""
 
-# @ wp-optimize
-#: wp-optimize-main.php:499
+#: wp-optimize-tables.php:156
+#@ wp-optimize
 msgid "Total Size of Database"
 msgstr "Skupna velikost Podatkovne Baze"
 
-# @ wp-optimize
-#: wp-optimize-main.php:511
+#: wp-optimize-tables.php:168
+#@ wp-optimize
 msgid "Optimization Results"
 msgstr "Rezultati Optimizacije"
 
-# @ wp-optimize
-#: wp-optimize-main.php:512
+#: wp-optimize-tables.php:169
+#@ wp-optimize
 msgid "Total Space Saved"
 msgstr "Skupaj Osvobojenega Prostora"
 
-# @ wp-optimize
-#: wp-optimize-main.php:517
+#: wp-optimize-tables.php:174
+#@ wp-optimize
 msgid "Optimization Possibility"
 msgstr "Možnost Optimizacije"
 
-# @ wp-optimize
-#: wp-optimize-main.php:518
+#: wp-optimize-tables.php:175
+#@ wp-optimize
 msgid "Total space can be saved"
 msgstr "Skupaj prostora ki se lahko pridobite"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:64
+#: wp-optimize-settings.php:65
+#@ wp-optimize
 msgid "Settings updated"
 msgstr "Nastavitve posodobljene"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:73
+#: wp-optimize-settings.php:78
+#@ wp-optimize
 msgid "General Settings"
 msgstr "Splošne Nastavitve"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:74
+#: wp-optimize-settings.php:132
+#@ wp-optimize
 msgid "Auto Clean-up Settings"
 msgstr "Nastavitve za Samodejno čiščenje"
 
-# @ wp-optimize
 #: wp-optimize-settings.php:83
+#@ wp-optimize
 msgid "Keep last "
 msgstr "Uporabi zadnje"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:99
-msgid ""
-"This option will retain the last X weeks data and remove any garbage data "
-"before that period"
-msgstr ""
-"Ta opcija bo ohranila zadnjih X tednov podatkov in odstranila vse smeti pred "
-"tem časom"
-
-# @ wp-optimize
-#: wp-optimize-settings.php:107
+#: wp-optimize-settings.php:108
+#@ wp-optimize
 msgid "Enable admin bar link "
 msgstr "Vklopi admin vrstico"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:109
+#: wp-optimize-settings.php:110
+#@ wp-optimize
 msgid "(Click here to refresh)"
 msgstr "(Klikni tukaj za osvežitev)"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:114
-msgid ""
-"This option will put WP-Optimize link on the top admin bar (default is off). "
-"Requires page refresh."
-msgstr ""
-"Ta opcija bo nastavila povezavo do WP-Optimize v zgornjo skrbnikovo vrstico "
-"(privzeto izklopljeno) Potrebujete osvežiti stran"
+#: wp-optimize-settings.php:116
+#@ wp-optimize
+msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
+msgstr "Ta opcija bo nastavila povezavo do WP-Optimize v zgornjo skrbnikovo vrstico (privzeto izklopljeno) Potrebujete osvežiti stran"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:123
+#: wp-optimize-settings.php:135
+#@ wp-optimize
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
 msgstr "Vključi čiščenje in optimizacijo po urniku (EKSPERIMANTALNO!) "
 
-# @ wp-optimize
-#: wp-optimize-settings.php:125
+#: wp-optimize-settings.php:137
+#@ wp-optimize
 msgid "Select schedule type (default is Weekly)"
 msgstr "Izberite tip urnika (privzeto je tedensko)"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:132 wp-optimize-settings.php:144
-#: wp-optimize-settings.php:150
+#: wp-optimize-settings.php:144
+#: wp-optimize-settings.php:156
+#: wp-optimize-settings.php:162
+#@ wp-optimize
 msgid "Every week"
 msgstr "Vsak teden"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:136 wp-optimize-settings.php:151
+#: wp-optimize-settings.php:148
+#: wp-optimize-settings.php:163
+#@ wp-optimize
 msgid "Every other week (every 14 days)"
 msgstr "Vsak drugi teden (vsakih 14 dni)"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:140 wp-optimize-settings.php:152
+#: wp-optimize-settings.php:152
+#: wp-optimize-settings.php:164
+#@ wp-optimize
 msgid "Every month (every 31 days)"
 msgstr "Vsak mesec (vsakih 31 dni)"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:157
+#: wp-optimize-settings.php:168
+#@ wp-optimize
 msgid "Automatic cleanup will perform the following:"
 msgstr "Samodejno brisanje bo izvedlo naslednje: "
 
-# @ wp-optimize
-#: wp-optimize-settings.php:159
-msgid ""
-"Remove revisions, auto drafts, posts/comments in trash, transient options. "
-"After that it will optimize the db."
-msgstr ""
-"Odstrani revizije, samodejne osnutke, komentarje/objave v smeteh, prehodne "
-"opcije. Po tem se bo optimizirala pb."
+#: wp-optimize-settings.php:170
+#@ wp-optimize
+msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
+msgstr "Odstrani revizije, samodejne osnutke, komentarje/objave v smeteh, prehodne opcije. Po tem se bo optimizirala pb."
 
-# @ wp-optimize
-#: wp-optimize-settings.php:165
-msgid ""
-"These options will only work if the automatic clean-up schedule has been "
-"enabled"
+#: wp-optimize-settings.php:177
+#@ wp-optimize
+msgid "These options will only work if the automatic clean-up schedule has been enabled"
 msgstr "Te opcije delujejo samo če je vklopljeno samodejno čiščenje po urniku"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:167
+#: wp-optimize-settings.php:182
+#@ wp-optimize
 msgid "Remove auto revisions"
 msgstr "Odstrani samodejne revizije"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:169
+#: wp-optimize-settings.php:186
+#@ wp-optimize
 msgid "Remove auto drafts"
 msgstr "Odstrani samodejne osnutke"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:171
+#: wp-optimize-settings.php:190
+#@ wp-optimize
 msgid "Remove spam comments"
 msgstr "Odstrani nezaželene komentarje"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:178
+#: wp-optimize-settings.php:203
+#@ wp-optimize
 msgid "Remove orphaned post meta"
 msgstr "Odstrani osirotele post meta"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:185
+#: wp-optimize-settings.php:213
+#@ wp-optimize
 msgid "Optimize database"
 msgstr "Optimiziraj podatkovno bazo"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:190
+#: wp-optimize-settings.php:122
+#@ wp-optimize
 msgid "SAVE SETTINGS"
 msgstr "SHRANI NASTAVITVE"
 
-# @ wp-optimize
-#: wp-optimize-settings.php:191
+#: wp-optimize-settings.php:217
+#@ wp-optimize
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "SHRANI NASTAVITVE SAMODEJNEGA ČIŠČENJA"
+
+#: wp-optimize-admin.php:27
+#: wp-optimize-admin.php:45
+#@ wp-optimize
+msgid "MYSQL"
+msgstr "MYSQL"
+
+#: wp-optimize-common.php:616
+#: wp-optimize-common.php:647
+#@ wp-optimize
+msgid "Review"
+msgstr "Osnutek"
+
+#: wp-optimize-credits.php:53
+#@ wp-optimize
+msgid "Support (GitHub)"
+msgstr "Podpora (GitHub)"
+
+#: wp-optimize-main.php:89
+#: wp-optimize-main.php:91
+#@ wp-optimize
+msgid "Clean-up options"
+msgstr "Opcije čiščenja"
+
+#: wp-optimize-main.php:97
+#@ wp-optimize
+msgid "Clean post revisions which are older than "
+msgstr "Izbriši revizije objav, ki so starejše kot"
+
+#: wp-optimize-main.php:102
+#@ wp-optimize
+msgid "Clean all post revisions"
+msgstr "Izbriši vse revizije objav"
+
+#: wp-optimize-main.php:115
+#@ wp-optimize
+msgid "Clean auto draft posts which are older than "
+msgstr "Počisti samodejno osnutke objav, ki so starejši kot"
+
+#: wp-optimize-main.php:120
+#@ wp-optimize
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "Izbriši vse samodejne osnutke objav v Smeteh"
+
+#: wp-optimize-main.php:140
+#@ wp-optimize
+msgid "Remove spam comments and comments in trash"
+msgstr "Odstrani vse Spam komentarje in komentarje v Smeteh"
+
+#: wp-optimize-main.php:202
+#@ wp-optimize
+msgid "Some options are not selected by default. Do not select them unless you really need to use them"
+msgstr "Nekatere opcije niso izbrane kot privzete. Ne izberite jih, razen če jih res morate uporabiti"
+
+#: wp-optimize-main.php:214
+#@ wp-optimize
+msgid "Actions"
+msgstr "Akcije"
+
+#: wp-optimize-main.php:227
+#@ wp-optimize
+msgid "Select safe options"
+msgstr "Izberite varne opcije"
+
+#: wp-optimize-main.php:228
+#@ wp-optimize
+msgid "Warning:"
+msgstr "Opozorilo:"
+
+#: wp-optimize-main.php:229
+#@ wp-optimize
+msgid "Always make a backup of your DB when you upgrade to major versions"
+msgstr "Vedno naredite varnostno kopijo vaše PB, pred nadgradnjo na višje različice"
+
+#: wp-optimize-main.php:238
+#@ wp-optimize
+msgid "Buy me a big Coffee!"
+msgstr "Kupi mi veliko Kavo!"
+
+#: wp-optimize-main.php:239
+#: wp-optimize-main.php:240
+#@ wp-optimize
+msgid "Give a rating :)"
+msgstr "Oceni me :)"
+
+#: wp-optimize-main.php:244
+#@ wp-optimize
+msgid "Status log: "
+msgstr "Dnevnik sprememb:"
+
+#: wp-optimize-main.php:251
+#@ wp-optimize
+msgid "Last automatic optimization was at"
+msgstr "Zadnja samodejna optimizacija je bila na"
+
+#: wp-optimize-settings.php:99
+#@ wp-optimize
+msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgstr "Ta opcija bo ohranila zadnje izbrane tedne in odstranila kakršnekoli smeti pred tem obdobjem. To se prav tako nanaša na proces Samodejnega čiščenja."
+
+#. translators: plugin header field 'Name'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+#. translators: plugin header field 'PluginURI'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr "http://www.ruhanirabin.com/wp-optimize/"
+
+#. translators: plugin header field 'Description'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgstr "Ta vtičnik vam omogoča čiščenje baze z odstranjevanjem revizij objav in spam-a v trenutku. Dodatno vam omogoča da zaženete ukaze za zagon optimizacije na vaših korenskih tabelah (uporabljajte previdno)."
+
+#. translators: plugin header field 'Author'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+#. translators: plugin header field 'AuthorURI'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "https://github.com/ruhanirabin/WP-Optimize"
+msgstr "https://github.com/ruhanirabin/WP-Optimize"
+
+#. translators: plugin header field 'Version'
+#: wp-optimize.php:0
+#@ wp-optimize
+msgid "1.8.4"
+msgstr "1.8.4"
+
