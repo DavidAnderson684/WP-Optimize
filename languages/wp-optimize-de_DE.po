@@ -1,16 +1,9 @@
 msgid ""
 msgstr ""
-<<<<<<< HEAD
-"Project-Id-Version: WP-Optimize 1.8.1\n"
+"Project-Id-Version: WP-Optimize 1.8.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2014-04-28 04:06:09+00:00\n"
-"PO-Revision-Date: 2014-04-28 08:27+0100\n"
-=======
-"Project-Id-Version: WP-Optimize 1.7.4\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2014-04-22 04:07:23+00:00\n"
-"PO-Revision-Date: 2014-04-25 12:10+0100\n"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
+"POT-Creation-Date: 2014-04-28 14:00:45+00:00\n"
+"PO-Revision-Date: 2014-04-28 16:31+0100\n"
 "Last-Translator: Kniebremser <kniebremser@fluchtsportler.de>\n"
 "Language-Team: fluchtsportler.de <kniebremser@fluchtsportler.de>\n"
 "Language: de_DE\n"
@@ -24,31 +17,25 @@ msgstr ""
 "X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
 "X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
 
-#: wp-optimize-admin.php:21 wp-optimize-admin.php:39 wp-optimize.php:93
+#: wp-optimize-admin.php:24 wp-optimize-admin.php:42 wp-optimize.php:94
 msgid "Optimizer"
 msgstr "Optimizer"
 
-#: wp-optimize-admin.php:24 wp-optimize-admin.php:42
+#: wp-optimize-admin.php:27 wp-optimize-admin.php:45
 msgid "MYSQL"
 msgstr "MySQL"
 
-#: wp-optimize-admin.php:29 wp-optimize-admin.php:50 wp-optimize.php:92
+#: wp-optimize-admin.php:32 wp-optimize-admin.php:53 wp-optimize.php:93
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: wp-optimize-admin.php:30 wp-optimize-admin.php:52
+#: wp-optimize-admin.php:33 wp-optimize-admin.php:55
 msgid "Info"
 msgstr "Informationen"
 
-<<<<<<< HEAD
-#: wp-optimize-admin.php:48 wp-optimize-tables.php:26
+#: wp-optimize-admin.php:51 wp-optimize-tables.php:26
 msgid "Tables"
 msgstr "Tabellen"
-=======
-#: wp-optimize-common.php:107
-msgid "Total clean up overall"
-msgstr "Insgesamt eingespart"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-common.php:312
 msgid "Gb"
@@ -235,7 +222,7 @@ msgstr "Übersetzer"
 # This is the link for the Translator's website
 #: wp-optimize-credits.php:42
 msgid "http://www.ruhanirabin.com/"
-msgstr "http://www.fluchtsportler.de"
+msgstr "http://www.ruhanirabin.com/"
 
 # Please change this to Translator's name
 #: wp-optimize-credits.php:42
@@ -272,79 +259,9 @@ msgstr "Change Log"
 msgid "FAQ"
 msgstr "FAQ"
 
-<<<<<<< HEAD
 #: wp-optimize-credits.php:64
 msgid "Development Log"
 msgstr "Entwicklungs Stand"
-=======
-#: wp-optimize-main.php:39
-msgid "Database Optimized!"
-msgstr "Datenbank Optimiert!"
-
-#: wp-optimize-main.php:52
-msgid "Status : "
-msgstr "Status :"
-
-#: wp-optimize-main.php:57
-msgid "Last automatic optimization was at "
-msgstr "Letzte automatische Optimierung war"
-
-#: wp-optimize-main.php:68
-msgid "There was no automatic optimization"
-msgstr "Es gibt keine automatische Optimierung"
-
-#: wp-optimize-main.php:71 wp-optimize-main.php:115 wp-optimize-main.php:140
-msgid "Check settings"
-msgstr "Überprüfe die Einstellungen"
-
-#: wp-optimize-main.php:83
-msgid "Scheduled cleaning enabled"
-msgstr "Regelmäßiges Optimieren aktiviert"
-
-#: wp-optimize-main.php:95
-msgid "Next schedule"
-msgstr "Nächste Termine"
-
-#: wp-optimize-main.php:104
-msgid "Refresh"
-msgstr "Aktualisieren"
-
-#: wp-optimize-main.php:112
-msgid "Scheduled cleaning DISABLED"
-msgstr "Regelmäßiges Reinigen DEAKTIVIERT"
-
-#: wp-optimize-main.php:126
-msgid "Retention enabled and keeping last "
-msgstr "Aufbewahrung aktiviert und behalte die letzten "
-
-#: wp-optimize-main.php:129 wp-optimize-settings.php:94
-msgid "weeks data"
-msgstr "Wochen-Daten"
-
-#: wp-optimize-main.php:137
-msgid "Retention is disabled"
-msgstr "Die Aufbewahrung ist deaktiviert"
-
-#: wp-optimize-main.php:154
-msgid "Current database size : "
-msgstr "Aktuelle Datenbank-Größe :"
-
-#: wp-optimize-main.php:158
-msgid "You have saved"
-msgstr "Du hast eingespart"
-
-#: wp-optimize-main.php:167
-msgid "Current database size"
-msgstr "Aktuelle Größe der Datenbank"
-
-#: wp-optimize-main.php:174
-msgid "You can save almost"
-msgstr "Du kannst Einsparen"
-
-#: wp-optimize-main.php:183
-msgid "Buy me a Coffee :)"
-msgstr "Kaufe mir einen Kaffee :)"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-credits.php:84
 msgid "No items"
@@ -379,32 +296,17 @@ msgstr "Säubere alle Post Revisionen"
 msgid "Clean auto draft posts which are older than "
 msgstr "Säubere Auto Entwurfs Beiträge, die älter sind als "
 
-<<<<<<< HEAD
 #: wp-optimize-main.php:120
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Säubere alle Auto Entwurfs Beiträge und Beiträge im Papierkorb"
-=======
-#: wp-optimize-main.php:252
-msgid "Remove auto draft posts (This will also clear out posts in Trash)"
-msgstr ""
-"Entferne auto Entwurf Beiträge (Dieses entfernt auch alle gelöschten "
-"Beiträge,  die im Parpierkorb sind)"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-main.php:135
 msgid "Remove spam comments which are older than "
 msgstr "Spam Kommentare entfernen, die älter sind als "
 
-<<<<<<< HEAD
 #: wp-optimize-main.php:140
 msgid "Remove spam comments and comments in trash"
 msgstr "Entferne Spam Kommentare und Kommentare im Papierkorb"
-=======
-#: wp-optimize-main.php:272
-msgid "Remove spam comments (This will also clear out comments in Trash)"
-msgstr ""
-"Entferne Spam-Kommentare (Auch alle Spam-Kommentare, die im Parpierkorb sind)"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-main.php:154
 msgid "Remove unapproved comments which are older than "
@@ -492,15 +394,9 @@ msgstr "Regelmäßiges Optimieren aktiviert"
 msgid "Next schedule"
 msgstr "Nächste Termine"
 
-<<<<<<< HEAD
 #: wp-optimize-main.php:299
 msgid "Refresh"
 msgstr "Aktualisieren"
-=======
-#: wp-optimize-main.php:420
-msgid "Overhead"
-msgstr "Verwaltungsdaten"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-main.php:307
 msgid "Scheduled cleaning DISABLED"
@@ -522,21 +418,14 @@ msgstr "Die Aufbewahrung ist deaktiviert"
 msgid "Current database size : "
 msgstr "Aktuelle Datenbank-Größe : "
 
-<<<<<<< HEAD
 #: wp-optimize-main.php:354
 msgid "You have saved"
 msgstr "Du hast eingespart"
-=======
-#: wp-optimize-main.php:559
-msgid "Total Space Saved"
-msgstr "Gesamtgröße Eingespart"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-main.php:363
 msgid "Current database size"
 msgstr "Aktuelle Datenbank-Größe"
 
-<<<<<<< HEAD
 #: wp-optimize-main.php:370
 msgid "You can save almost"
 msgstr "Du kannst Einsparen"
@@ -548,11 +437,6 @@ msgstr "Insgesamt eingespart"
 #: wp-optimize-main.php:422
 msgid "Sponsor"
 msgstr "Sponsor"
-=======
-#: wp-optimize-main.php:565
-msgid "Total space can be saved"
-msgstr "Gesamtgröße der Einsparnis"
->>>>>>> 48a165cfa7f8aa59a9b00c0a9d9d32b569a2e7bb
 
 #: wp-optimize-settings.php:65
 msgid "Settings updated"
@@ -601,7 +485,7 @@ msgstr "Auto Clean-Up Einstellungen"
 
 #: wp-optimize-settings.php:135
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
-msgstr "Aktiviere geplante Reinigung und Optimierung (EXPERIMENTAL!)"
+msgstr "Aktiviere geplante Reinigung und Optimierung (EXPERIMENTAL !)"
 
 #: wp-optimize-settings.php:137
 msgid "Select schedule type (default is Weekly)"

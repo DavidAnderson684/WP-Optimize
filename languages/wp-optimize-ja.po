@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.7.4\n"
+"Project-Id-Version: WP-Optimize 1.8.4\n"
 "POT-Creation-Date: 2013-11-07 16:17+0800\n"
 "PO-Revision-Date: 2014-04-27 18:25+0900\n"
 "Last-Translator: stranger-jp <wordpress.stranger.jp@gmail.com>\n"
@@ -29,17 +29,11 @@ msgstr "インフォメーション"
 msgid "Total clean up overall"
 msgstr "全体的なクリーンアップ"
 
-msgid "Kb"
-msgstr "Kb"
-
 msgid "transient options deleted"
 msgstr "の一過性のオプションを削除"
 
 msgid "orphaned postmeta deleted"
 msgstr "の孤立したpostmetaを削除"
-
-msgid "unused tags deleted"
-msgstr "の未使用のタグを削除"
 
 msgid "post revisions deleted"
 msgstr "の投稿リビジョンを削除"
@@ -104,17 +98,11 @@ msgstr "自動下書き投稿はありません"
 msgid "spam comments found"
 msgstr "スパムコメント発見"
 
-msgid "Review Spams"
-msgstr "レビュースパム"
-
 msgid "No spam comments found"
 msgstr "スパムコメントはありません"
 
 msgid "unapproved comments found"
 msgstr "未承認のコメント発見"
-
-msgid "Review Unapproved Comments"
-msgstr "未承認のコメントをレビュー"
 
 msgid "No unapproved comments found"
 msgstr "未承認コメントはありません"
@@ -138,7 +126,7 @@ msgid "Credits"
 msgstr "クレジット"
 
 msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
-msgstr "WP-Optimizeは自身のプロジェクトのためのユーティリティとしてスタートしました。<br>このプラグインはそこに多くの人々を助けるかもしれないことを理解しています。<br>私は個人的に毎日のようにこのプラグインを使用するすべてのユーザーに感謝しています。<br>また、このプロジェクトのために寄付している翻訳者および寛大な人々のすべてに感謝します。"
+msgstr "WP-Optimizeは自身のプロジェクトのためのユーティリティとしてスタートしました。<br>このプラグインは多くの人々を助けるかもしれないことを理解しています。<br>私は個人的に毎日のようにこのプラグインを使用するすべてのユーザーに感謝しています。<br>また、このプロジェクトのために寄付している翻訳者および寛大な人々のすべてに感謝します。"
 
 msgid "Share this plugin on Facebook"
 msgstr "Facebookでこのプラグインを共有"
@@ -185,20 +173,12 @@ msgstr "プラグイン・リソース"
 msgid "Plugin Homepage"
 msgstr "プラグインのホームページ"
 
-msgid "Support Forum"
-msgstr "サポートフォーラム"
-
 msgid "Change Log"
 msgstr "更新履歴"
 
 msgid "FAQ"
 msgstr "FAQ"
 
-msgid "Status : "
-msgstr "ステータス :"
-
-msgid "Last automatic optimization was at "
-msgstr "最後の自動最適化は昨日 "
 
 msgid "There was no automatic optimization"
 msgstr "最適化する項目はありません"
@@ -242,32 +222,14 @@ msgstr "現在のデータベースのサイズ"
 msgid "You can save almost"
 msgstr "ほとんど保存することができます"
 
-msgid "Buy me a Coffee :)"
-msgstr "コーヒーをおごる"
-
-msgid "See Tables > "
-msgstr "テーブルを参照 > "
-
-msgid "Database Size > "
-msgstr "データベースのサイズ > "
-
 msgid "Database Optimization Options"
 msgstr "データベースの最適化オプション"
 
 msgid "Sponsor"
 msgstr "スポンサー"
 
-msgid "Remove post revisions which are older than "
-msgstr "より古い投稿リビジョンを削除"
-
 msgid "weeks"
 msgstr "週間"
-
-msgid "Remove all post revisions"
-msgstr "すべての投稿リビジョンを削除"
-
-msgid "Remove auto draft posts which are older than "
-msgstr "より古い自動下書きの記事を削除"
 
 msgid "Remove auto draft posts (This will also clear out posts in Trash)"
 msgstr "自動下書きの記事を削除 (ゴミ箱の中の記事も削除します)"
@@ -275,8 +237,6 @@ msgstr "自動下書きの記事を削除 (ゴミ箱の中の記事も削除し�
 msgid "Remove spam comments which are older than "
 msgstr "より古いスパムコメントを削除"
 
-msgid "Remove spam comments (This will also clear out comments in Trash)"
-msgstr "スパムコメントを削除 (ゴミ箱の中のコメントも削除します)"
 
 msgid "Remove unapproved comments which are older than "
 msgstr "より古い未承認のコメントを削除"
@@ -286,9 +246,6 @@ msgstr "未承認のコメントを削除"
 
 msgid "Remove transient options"
 msgstr "一過性のオプションを削除"
-
-msgid "Remove orphaned postmeta"
-msgstr "孤立したpostmetaを削除"
 
 msgid "Remove unused tags"
 msgstr "未使用のタグを削除"
@@ -305,35 +262,11 @@ msgstr "データベーステーブルを最適化"
 msgid "PROCESS"
 msgstr "実行"
 
-msgid "Database Tables Report"
-msgstr "データベーステーブルレポート"
-
 msgid "Database Name:"
 msgstr "データベース名:"
 
 msgid "Optimized all the tables found in the database."
 msgstr "データベース内で検出したすべてのテーブルを最適化しました。"
-
-msgid "Table"
-msgstr "テーブル"
-
-msgid "Size"
-msgstr "サイズ"
-
-msgid "Status"
-msgstr "ステータス"
-
-msgid "Space Save"
-msgstr "保存スペース"
-
-msgid "Already Optimized"
-msgstr "最適化済"
-
-msgid "Optimized"
-msgstr "最適化しました"
-
-msgid "Need to Optimize"
-msgstr "最適化する必要があります"
 
 msgid "Total Size of Database"
 msgstr "データベースの合計サイズ"
@@ -357,13 +290,10 @@ msgid "General Settings"
 msgstr "一般設定"
 
 msgid "Auto Clean-up Settings"
-msgstr "自動クリーンアップの設定"
+msgstr "自動クリーンアップ設定"
 
 msgid "Keep last "
 msgstr "データを保持"
-
-msgid "This option will retain the last X weeks data and remove any garbage data before that period"
-msgstr "このオプションは最後のX週間分のデータを保持し、それ以前のゴミデータを削除します"
 
 msgid "Enable admin bar link "
 msgstr "管理バーのリンクを有効 "
@@ -396,7 +326,7 @@ msgid "Remove revisions, auto drafts, posts/comments in trash, transient options
 msgstr "リビジョン、自動下書き、ゴミ箱内の投稿/コメント、一過性のオプションを削除してDBを最適化します。"
 
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
-msgstr "自動クリーンアップのスケジュールが有効になっている場合、これらのオプションにのみ機能します。"
+msgstr "自動クリーンアップスケジュールが有効になっている場合、これらのオプションにのみ機能します。"
 
 msgid "Remove auto revisions"
 msgstr "自動リビジョンを削除"
@@ -411,10 +341,124 @@ msgid "Remove orphaned post meta"
 msgstr "孤立した投稿メタを削除"
 
 msgid "Optimize database"
-msgstr "データベースを最適化"
+msgstr "データベースの最適化"
 
 msgid "SAVE SETTINGS"
 msgstr "設定を保存"
 
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "自動設定を保存"
+
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "%s テーブル"
+
+msgid "%s Record"
+msgid_plural "%s Records"
+msgstr[0] "%s レコード"
+
+msgid "Actions"
+msgstr "アクション"
+
+msgid "Always make a backup of your DB when you upgrade to major versions"
+msgstr "メジャー バージョンにアップグレードすると必ずDBのバックアップを作成します。"
+
+msgid "bytes"
+msgstr "bytes"
+
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "すべての自動下書き記事およびゴミ箱の中の記事を削除"
+
+msgid "Clean all post revisions"
+msgstr "すべての投稿リビジョンを削除"
+
+msgid "Clean auto draft posts which are older than "
+msgstr "より古い自動下書き投稿を削除"
+
+msgid "Clean post revisions which are older than "
+msgstr "より古いき投稿リビジョンを削除"
+
+msgid "Clean-up options"
+msgstr "クリーンアップオプション"
+
+msgid "Data Size"
+msgstr "データサイズ"
+
+msgid "Gb"
+msgstr "GB"
+
+msgid "Give a rating :)"
+msgstr "評価を与える :)"
+
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr "http://www.ruhanirabin.com/wp-optimize/"
+
+msgid "https://github.com/ruhanirabin/WP-Optimize"
+msgstr "https://github.com/ruhanirabin/WP-Optimize"
+
+msgid "Index Size"
+msgstr "インデックスサイズ"
+
+msgid "MYSQL"
+msgstr "MYSQL"
+
+msgid "No."
+msgstr "No."
+
+msgid "Overhead"
+msgstr "オーバーヘッド"
+
+msgid "Records"
+msgstr "レコード"
+
+msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgstr "このプラグインは、データベースを最適化することによって投稿リビジョンやスパムを削除します。さらにコマンドを実行してWordPressのコアテーブル (注意して使用) を最適化します。"
+
+msgid "Total:"
+msgstr "合計:"
+
+msgid "Warning:"
+msgstr "警告:"
+
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+msgid "1.8.4"
+msgstr "1.8.4"
+
+msgid "Buy me a big Coffee!"
+msgstr ""
+
+msgid "Last automatic optimization was at"
+msgstr "最後の自動最適化"
+
+msgid "Mb"
+msgstr "MB"
+
+msgid "Remove spam comments and comments in trash"
+msgstr "ゴミ箱のスパムコメントやコメントを削除"
+
+msgid "Review"
+msgstr "レビュー"
+
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+msgid "Select safe options"
+msgstr "安全なオプションを選択します"
+
+msgid "Some options are not selected by default. Do not select them unless you really need to use them"
+msgstr "一部のオプションは、デフォルトで選択されていません。あなたが実際にそれらを使用する必要がない限りそれらを選択しないでください"
+
+msgid "Status log: "
+msgstr "ステータスログ:"
+
+msgid "Support (GitHub)"
+msgstr "サポート (GitHub)"
+
+msgid "Tables"
+msgstr "テーブル"
+
+msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgstr "このオプションでは、最後に選択された週のデータを保持し、その期間以前のゴミデータが削除されます。また、これは自動クリーンアッププロセスに影響を与えます。"
+
