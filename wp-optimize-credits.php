@@ -1,3 +1,11 @@
+<?php
+# --------------------------------------- #
+# prevent file from being accessed directly
+# --------------------------------------- #
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+?>
 <!-- a feed reader to read the development log -->
 <div class="wpo_section wpo_group">
 <div class="wpo_col wpo_span_1_of_3">
@@ -28,7 +36,7 @@
 	<br /><br />
  	
 	<h3><?php _e('Contributing Developers','wp-optimize'); ?></h3><br />
-	<a href="plugins@ruhanirabin.com" target="_blank" alt="" title="E-mail"><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
+	<a href="mailto:plugins@ruhanirabin.com" target="_blank" alt="" title="E-mail"><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
 	<?php _e('Your name and website will be credited here in the plugin','wp-optimize'); ?>.<br />
 	&nbsp;
 			</div>
@@ -49,7 +57,7 @@
 	
 	<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
 	<h4>
-	<p><a href="http://ruhanirabin.github.io/WP-Optimize" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
+	<p><a href="http://wordpress.org/plugins/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
     <p><a href="https://github.com/ruhanirabin/WP-Optimize/issues" target="_blank"><?php _e('Support (GitHub)', 'wp-optimize'); ?></a></p>
     <p><a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
     <p><a href="http://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a></p>

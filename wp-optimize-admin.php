@@ -2,8 +2,9 @@
 # --------------------------------------- #
 # prevent file from being accessed directly
 # --------------------------------------- #
-if ('wp-optimize-admin.php' == basename($_SERVER['SCRIPT_FILENAME']))
-	Die ('Please do not access this file directly. Thanks!');
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 ?>
 

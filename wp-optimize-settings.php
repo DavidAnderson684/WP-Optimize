@@ -1,5 +1,11 @@
 <?php
-//
+# --------------------------------------- #
+# prevent file from being accessed directly
+# --------------------------------------- #
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 $GLOBALS['wpo_auto_options'] = get_option('wp-optimize-auto');
 error_reporting( error_reporting() & ~E_NOTICE );
        

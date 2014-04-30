@@ -1,4 +1,11 @@
 <?php
+# --------------------------------------- #
+# prevent file from being accessed directly
+# --------------------------------------- #
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 $text = '';
 
 if (isset($_POST["clean-revisions"])) {
@@ -67,20 +74,21 @@ global $wpdb;
 		
 	}	
 	
-	if ($Optimize == true){	
-		$tables = $wpdb->get_col("SHOW TABLES");  	    
-		foreach($tables as $table_name) {
-		$local_query = 'OPTIMIZE TABLE '.$table_name;
-		$result_query  = $wpdb->query($local_query);	
+	if ($Optimize == true){
+	       if (WPO_TABLE_TYPE != 'innodb'){
+    		$tables = $wpdb->get_col("SHOW TABLES");  	    
+    		foreach($tables as $table_name) {
+    		$local_query = 'OPTIMIZE TABLE '.$table_name;
+    		$result_query  = $wpdb->query($local_query);	
+            wpo_updateTotalCleaned(strval($total_gain));
+            } // if innodb is false	
 		}
 	
 	}	
-	wpo_updateTotalCleaned(strval($total_gain));
+
 	
 }
 ?>
-	
-	
 	
 <div class="wpo_section wpo_group">
 <form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
@@ -216,18 +224,28 @@ global $wpdb;
 			<label>
 
 			 <?php 
-                if (!WPO_TABLE_TYPE == 'innodb'){
-             echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
-			 echo '<b>';
-			 _e('Optimize database tables', 'wp-optimize'); 
-			 echo '</b>';
-             } else {
-			 echo '<input name="optimize-db-disabled" id="optimize-db" type="checkbox" value="" disabled/>';  
-             echo '<b>';
-                _e('Database optimization not available for InnoDB table types', 'wp-optimize');
-			 echo '</b>';
-                 
-             }
+               $dbtype = wpo_detectDBType();
+               
+             switch($dbtype){
+                case "myisam":
+                 echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
+    			 echo '<b>';
+    			 _e('Optimize database tables', 'wp-optimize'); 
+                 echo '</b>';
+                   break;
+                case "innodb":
+    			 echo '<input name="optimize-db-disabled" id="optimize-db" type="checkbox" value="" disabled/>';  
+                 echo '<b>';
+                    _e('Database optimization not available for InnoDB table types', 'wp-optimize');
+    			 echo '</b>';
+                   break;
+                 default:
+                 echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
+    			 echo '<b>';
+    			 _e('Optimize database tables', 'wp-optimize'); 
+                 echo '</b>';                 
+                 }  
+               
 			 ?>
 			 </label>
 		</p>
@@ -350,17 +368,15 @@ global $wpdb;
 	?>
 	<br />
 	
-	<h2>
+	<h4>
 	<?php 
 	
 	if (isset($_POST["optimize-db"])) {
 		list ($part1, $part2) = wpo_getCurrentDBSize(); 
-		
+		if (WPO_TABLE_TYPE != 'innodb'){
 		_e('Current database size : ', 'wp-optimize');
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
-
-        if (!WPO_TABLE_TYPE == 'innodb'){
 
             echo ' <br />';
     		_e('You have saved', 'wp-optimize');
@@ -371,14 +387,14 @@ global $wpdb;
 		
     }
 	else {
+       if (WPO_TABLE_TYPE != 'innodb'){ 
 		list ($part1, $part2) = wpo_getCurrentDBSize();
-         
-		_e('Current database size', 'wp-optimize');
+ 		_e('Current database size', 'wp-optimize');
 		echo ' : ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
         $this_value = $part2;
-        if (!WPO_TABLE_TYPE == 'innodb'){
+        
             if ($this_value > 0){
                 echo ' <br />';
         		_e('You can save almost', 'wp-optimize');
@@ -390,47 +406,32 @@ global $wpdb;
 	}
 	
 	?>
-	</h2>
+	</h4>
 	<?php
-    if (!WPO_TABLE_TYPE == 'innodb'){
+    
+    if (WPO_TABLE_TYPE != 'innodb'){
 	$total_cleaned = get_option(OPTION_NAME_TOTAL_CLEANED);
     $total_cleaned_num = floatval($total_cleaned);
     
         if ($total_cleaned_num  > 0){
-            echo '<h2>';
+            echo '<h4>';
             _e('Total clean up overall','wp-optimize');
             echo ': ';
             echo '<font color="green">';
-            //echo $total_cleaned.' '.__('Kb', 'wp-optimize');
             echo wpo_format_size($total_cleaned);
             echo '</font>';
-            echo '</h2>';
-            //echo '<br />';
+            echo '</h4>';
+            
     	
         }
      } //end if WPO_TABLE_TYPE       
 	?>
 
-	
-<!--		<p>
-			<label>
-				<input type="checkbox" name="data[user_role][contributor]" value="1">
-				Contributor										</label>
-		</p>
-		<p>
-			<label>
-				<input type="checkbox" name="data[user_role][subscriber]" value="1">
-				Subscriber										</label>
-		</p> -->
 		</div>
 	</div>	
 	</div>
-
 	<div class="wpo_col wpo_span_1_of_3">
-	<!--<div class="postbox">-->
-	<!-- <h3 class="hndle"><span>Status</span></h3> -->
-	<!--	<div class="inside">-->
-		
+	
 		<p>
 			<?php wpo_headerImage(); ?>
 		</p>
@@ -438,12 +439,11 @@ global $wpdb;
 		<p>
 			<?php _e('Sponsor','wp-optimize')?></small><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
 		</p>
-		<!--</div>
-	</div>	-->
+		
 	</div>
 </div>	
 	
-<!-- TODO: Need to make this checkbox selection thing working -->
+<!-- TODO: Need to make this checkbox selection thing persistent -->
 
 <script type="text/javascript">
 function SetDefaults() {
@@ -452,7 +452,7 @@ function SetDefaults() {
     document.getElementById("clean-autodraft").checked = true;
 
     <?php
-    if (!WPO_TABLE_TYPE == 'innodb'){
+    if (WPO_TABLE_TYPE != 'innodb'){
     echo 'document.getElementById("optimize-db").checked = true;';    
     }
     ?>    
@@ -461,15 +461,6 @@ function SetDefaults() {
 }
 </script>
 
-    <?php 
-    //_e('Database Optimization Options','wp-optimize'); 
-
-//    echo ' - ';
-//    echo '<a href="#" onClick="javascript:SetDefaults();">';
-//    _e('Select recommended','wp-optimize');
-//    echo '</a>';
-//    
-?>
     
 <script>
 SetDefaults();

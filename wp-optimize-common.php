@@ -1,7 +1,11 @@
 <?php
 
-if ('wp-optimize-common.php' == basename($_SERVER['SCRIPT_FILENAME']))
-	die ('Please do not access this file directly. Thanks!');
+# --------------------------------------- #
+# prevent file from being accessed directly
+# --------------------------------------- #
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 // common functions
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
@@ -46,10 +50,12 @@ function wpo_detectDBType() {
 		$table_engine = $tabletype->Engine;
 	}	
 	
+	$wpo_table_type = strtolower(strval($table_engine));
+	
 if (! defined('WPO_TABLE_TYPE'))      
-        define( WPO_TABLE_TYPE,strtolower($table_engine));
+        define( WPO_TABLE_TYPE,$wpo_table_type);
 
-return WPO_TABLE_TYPE;
+return $wpo_table_type;
        
 }
 
@@ -237,7 +243,7 @@ function wpo_cron_action() {
 			
 		//db optimize part - optimize
         // disble optimization if innoDB
-        if (!WPO_TABLE_TYPE == 'innodb'){
+        if (WPO_TABLE_TYPE != 'innodb'){
 
         if ($this_options['optimize'] == 'true'){            
     
@@ -258,7 +264,7 @@ function wpo_cron_action() {
             wpo_debugLog('Updating options with value +'.$part2);
 
         } // endif $this_options['optimize'] 
-        } //end if if (!WPO_TABLE_TYPE == 'innodb'){
+        } //end if if (WPO_TABLE_TYPE != 'innodb'){
 		
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
 }	
@@ -331,8 +337,14 @@ function wpo_PluginOptionsSetDefaults() {
 } 
 
 
-### Function: Format Bytes Into KB/MB
-if(!function_exists('wpo_format_size')) {
+/**
+ * wpo_format_size()
+ * Function: Format Bytes Into KB/MB
+ * @param mixed $rawSize
+ * @return
+ */
+  if(!function_exists('wpo_format_size')) {
+
 	function wpo_format_size($rawSize) {
 		if($rawSize / 1073741824 > 1)
 			return number_format_i18n($rawSize/1048576, 1) . ' '.__('Gb', 'wp-optimize');
