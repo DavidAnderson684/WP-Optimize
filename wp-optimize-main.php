@@ -373,12 +373,12 @@ global $wpdb;
 	
 	if (isset($_POST["optimize-db"])) {
 		list ($part1, $part2) = wpo_getCurrentDBSize(); 
-		if (WPO_TABLE_TYPE != 'innodb'){
 		_e('Current database size : ', 'wp-optimize');
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
 
-            echo ' <br />';
+ 		if (WPO_TABLE_TYPE != 'innodb'){
+           echo ' <br />';
     		_e('You have saved', 'wp-optimize');
     		echo ' : ';
     		echo '<font color="blue">';
@@ -387,12 +387,12 @@ global $wpdb;
 		
     }
 	else {
-       if (WPO_TABLE_TYPE != 'innodb'){ 
 		list ($part1, $part2) = wpo_getCurrentDBSize();
  		_e('Current database size', 'wp-optimize');
 		echo ' : ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
+       if (WPO_TABLE_TYPE != 'innodb'){ 
         $this_value = $part2;
         
             if ($this_value > 0){
