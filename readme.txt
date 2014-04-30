@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.nightly
-Stable tag: 1.8.5
-License: GPLv2 or later
+Stable tag: 1.8.6
+License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Simple but effective plugin allows you to extensively clean up your WordPress database and optimize it without doing manual queries.
@@ -30,13 +30,13 @@ Please join GitHub and collaborate.
 *   Cleaning up auto draft posts
 *   Removal of transient options
 *   Clear out the post trash
-*   Automatic Cleanup of all the integrated options (Also uses retention if enabled)
+*   Automatic cleanup of all the integrated options (also uses retention if enabled)
 *   Ability to keep selected number of weeks data when cleaning up
 *   Option to add or remove link on wp admin bar.
 *   Enable/Disable weekly schedules of optimization
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
-*   Visible only to the Administrators.
+*   Enabled for Administrators only.
 
 
 **Experimental simple scheduler introduced**
@@ -123,23 +123,22 @@ There are 3 different ways to install WP-Optimize.
 
 == Frequently Asked Questions ==
 
-= Can you help me restore my database? =
+= Does WP-Optimize Supports InnoDB Format =
+InnoDB Table formats not supported. WP-Optimize will disable some features if it detects InnoDB table format. Optimization of the database will not work but other clean up features would work.
 
+= Can you help me restore my database? =
 No I can't. Please make a backup of your entire database before using this Plugin for the first time. Also backup your database when you upgrade to a MAJOR NEW version (for example - v0.9.8 to 1.5.5 ).
 
 = Is there any bug in this plugin =
-Of course there is. This is a very primary version of the plugin. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
+The plugin is a development on the go - that means there are unforseen situations and bugs. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 
 = Every time I clear transient options, it comes back automatically =
-
 WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
 
 = Optimization does not have any effect on database / it is not optimizing the database =
-
 Some of the shared web hosting company does not allow scripts to run OPTIMIZE command via SQL statements. If you are hosted with these web hosts, the optimize action will not be able to optimize your database. Please consult your web hosting company regarding this matter.
 
 = I am having error - Warning: mysql_num_rows(): supplied argument is not a valid MySQL result resource ...  =
-
 *   Upgrade/Update your WordPress to at least 3.8
 *   Upgrade/Update your WP-Optimize plugin
 *   Upgrade your PHP to at least 5.5.xx
@@ -157,6 +156,11 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.6 =
+* Language updates
+* Fix issues with total gain number problem 
+* InnoDB tables detected and features disabled automatically, tables view will not show Overhead. Main view will not show space saved, or total gain. 
 
 = 1.8.5 =
 * Version bump + modified translator names
