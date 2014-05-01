@@ -218,6 +218,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<p>
    <input name="wp-optimize-auto[optimize]" id="wp-optimize-auto[optimize]" type="checkbox" value="true" <?php echo $wpo_auto_options['optimize'] == 'true' ? 'checked="checked"':''; ?> /> <b><?php _e('Optimize database', 'wp-optimize'); ?></b>
 	</p>
+    
+    <?php 
+        if (WPO_TABLE_TYPE == 'innodb'){
+            echo '<p>';
+            _e('You are using InnoDB tables. They will not be optimized!', 'wp-optimize');
+            echo '</p>';
+            }
+    ?>
+    
 
 	<p>
 	<input class="button-primary" type="submit" name="wp-optimize-settings" value="<?php _e('SAVE AUTO CLEAN-UP SETTINGS', 'wp-optimize'); ?>" />	
