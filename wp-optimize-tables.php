@@ -15,8 +15,29 @@ else optimizeTables(false);
 <?php
 Function optimizeTables($Optimize=false){
 ?>
-<a name="report">&nbsp;</a>
-<h3><?php _e('Database Name:', 'wp-optimize'); ?> '<?php _e(DB_NAME, 'wp-optimize');?>'</h3>
+<h3>
+<?php 
+_e('Database Name:', 'wp-optimize'); ?> '<?php _e(DB_NAME, 'wp-optimize');
+echo "'";
+
+    if (WPO_TABLE_TYPE == 'innodb'){
+    echo ' - ';
+    _e('Table type', 'wp-optimize');
+    echo ': '; 
+    _e('InnoDB', 'wp-optimize');
+    }
+
+    if (WPO_TABLE_TYPE == 'myisam'){
+    echo ' - ';
+    _e('Table type', 'wp-optimize'); 
+    echo ': ';
+    _e('MyISAM', 'wp-optimize');
+    }
+
+
+?></h3>
+
+
 <?php if($Optimize){
     ?>
 
@@ -172,7 +193,7 @@ Function optimizeTables($Optimize=false){
 ?>
 </tbody>
 </table>
-<a name="total">&nbsp;</a>
+
 <h3><?php _e('Total Size of Database', 'wp-optimize'); ?>:</h3>
 <h2><?php 
 list ($part1, $part2) = wpo_getCurrentDBSize(); 
@@ -215,5 +236,5 @@ if (WPO_TABLE_TYPE != 'innodb'){
 ?>
 
 <?php
-}
+} //end of optimize function
 ?>
