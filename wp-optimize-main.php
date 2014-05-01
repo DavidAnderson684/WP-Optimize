@@ -81,6 +81,7 @@ global $wpdb;
     		$local_query = 'OPTIMIZE TABLE '.$table_name;
     		$result_query  = $wpdb->query($local_query);	
             wpo_updateTotalCleaned(strval($total_gain));
+            $total_gain = 0;
             } // if innodb is false	
 		}
 	

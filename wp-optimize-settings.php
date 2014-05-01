@@ -138,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<h3><?php _e('Auto Clean-up Settings', 'wp-optimize'); $wpo_auto_options = get_option('wp-optimize-auto');?></h3>
 			<p>
 			<input name="enable-schedule" id="enable-schedule" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_SCHEDULE) == 'true' ? 'checked="checked"':''; ?> />
-				<?php _e('Enable scheduled clean-up and optimization (EXPERIMENTAL!)', 'wp-optimize'); ?>
+				<?php _e('Enable scheduled clean-up and optimization (Beta feature!)', 'wp-optimize'); ?>
 				<br /><br />
 				<?php _e('Select schedule type (default is Weekly)', 'wp-optimize'); ?><br />
 				<select id="schedule_type" name="schedule_type">                      
