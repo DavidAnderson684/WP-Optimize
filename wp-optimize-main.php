@@ -112,7 +112,7 @@ global $wpdb;
 		?>
 		</label>
 		<br />
-		<small><?php _e(wpo_getInfo('revisions'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('revisions'), 'wp-optimize'); ?></small>
 		</p>
 
 		<p>
@@ -131,7 +131,7 @@ global $wpdb;
 			</label>
 		
 		<br />
-		<small><?php _e(wpo_getInfo('autodraft'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('autodraft'), 'wp-optimize'); ?></small>
 		</p>
 
 		
@@ -151,7 +151,7 @@ global $wpdb;
 		?>
 		</label>
 		<br />
-		<small><?php _e(wpo_getInfo('spam'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('spam'), 'wp-optimize'); ?></small>
 		</p>
 		
 		<p>
@@ -170,7 +170,7 @@ global $wpdb;
 		?>
 		</label>
 		<br />
-		<small><?php _e(wpo_getInfo('unapproved'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('unapproved'), 'wp-optimize'); ?></small>
 		</p>
 		
 		<p>
@@ -181,7 +181,7 @@ global $wpdb;
 			</span>				
 			</label>
 		<br />
-		<small><?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
 		</p>
 		
 		<p>
@@ -192,7 +192,7 @@ global $wpdb;
 			 </span>				
 			</label>
 		<br />
-		<small><?php _e(wpo_getInfo('pingbacks'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('pingbacks'), 'wp-optimize'); ?></small>
 		</p>
 		
 		<p>
@@ -203,7 +203,7 @@ global $wpdb;
 			 </span>				
 			</label>
 		<br />
-		<small><?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
+		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
 		</p>
 
 		<p>
@@ -229,19 +229,19 @@ global $wpdb;
              switch($dbtype){
                 case "myisam":
                  echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
-    			 echo '<b>';
+    			 echo '<b>&nbsp;';
     			 _e('Optimize database tables', 'wp-optimize'); 
                  echo '</b>';
                    break;
                 case "innodb":
     			 echo '<input name="optimize-db-disabled" id="optimize-db" type="checkbox" value="" disabled/>';  
-                 echo '<b>';
+                 echo '<b>&nbsp;';
                     _e('Database optimization not available for InnoDB table types', 'wp-optimize');
     			 echo '</b>';
                    break;
                  default:
                  echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="" />';       
-    			 echo '<b>';
+    			 echo '<b>&nbsp;';
     			 _e('Optimize database tables', 'wp-optimize'); 
                  echo '</b>';                 
                  }  
