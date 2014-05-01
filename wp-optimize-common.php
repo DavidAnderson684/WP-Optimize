@@ -260,7 +260,7 @@ function wpo_cron_action() {
     		list($part1, $part2) = wpo_getCurrentDBSize();
      
             update_option( OPTION_NAME_LAST_OPT, $thisdate );
-            wpo_updateTotalCleaned($part2);
+            wpo_updateTotalCleaned(strval($part2));
             wpo_debugLog('Updating options with value +'.$part2);
 
         } // endif $this_options['optimize'] 
