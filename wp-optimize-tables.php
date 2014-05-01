@@ -211,7 +211,9 @@ echo $part1;
 <?php 
 
 if (WPO_TABLE_TYPE != 'innodb'){
-_e('Total Space Saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));
+_e('Total Space Saved', 'wp-optimize'); 
+    echo ': ';
+    echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));
 }
 ?></p>
   <?php } else { ?>
@@ -222,9 +224,10 @@ _e('Total Space Saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_ga
 
 if (WPO_TABLE_TYPE != 'innodb'){
     _e('Optimization Possibility', 'wp-optimize'); 
+    echo ':';
     }
 
-?>:</h3>
+?></h3>
 <p style="color: #FF0000;">
 <?php if (WPO_TABLE_TYPE != 'innodb'){
     _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);
