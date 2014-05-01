@@ -38,24 +38,26 @@ Please join GitHub and collaborate.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
 *   Enabled for Administrators only.
 
+**All the potentially dangerous clean up options are marked RED.**
 
-**Experimental simple scheduler introduced**
+**When you use this plugin for the first time or just updated to major version, make a backup of your database. It is always the best practice to make a database backup before using this program first time.**
 
-**All the potentially dangerous clean up options are MARKED RED.**
+**How this could help you?**
 
-**When you use this plugin for the first time or just updated to major version, make a backup of your database. This is a must for everyone**
+*   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
+*   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
+*   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
+*   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
 
 **Are you interested to be a contributed developer of this plugin, join with me at GitHub. Or email plugins(at)ruhanirabin.com**
 
 You will be credited inside the plugin screen and the plugin listing at WordPress.
 
-
 **Requirements:**
 
-*   WordPress 3.7+
+*   WordPress 3.8+
 *   PHP 5.1.xx
 *   MySql 5.1.xx
-*   PHP 4.xx and MySql 4.xx not supported
 
 
 **Translators are welcome to send their Translated Files to be included.**
@@ -64,7 +66,6 @@ Existing translators should join [GitHub](https://github.com/ruhanirabin/WP-Opti
 [Download the RAW .POT file](https://raw.githubusercontent.com/ruhanirabin/WP-Optimize/master/languages/wp-optimize.pot). This is for the translators, who wants to translate to new language. 
 
 You can **Email translations to plugins(at)ruhanirabin.com**
-
 
 **WP-Optimize Translators:**
 
@@ -88,12 +89,6 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language pl_PL: Kornel
 *   Language ja   : stranger-jp
 
-**How this could help you?**
-
-*   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
-*   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
-*   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
-*   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
 
 == Installation ==
 
