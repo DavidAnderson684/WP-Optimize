@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.7
 Tested up to: 3.9.1.nightly
-Stable tag: 1.8.6
+Stable tag: 1.8.9
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Simple but effective plugin allows you to extensively clean up your WordPress da
 
 == Description ==
 
-WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables. 
+WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
 
@@ -61,11 +61,11 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 
 **Translators are welcome to send their Translated Files to be included.**
-Existing translators should join [GitHub](https://github.com/ruhanirabin/WP-Optimize) to submit their translations too. 
+Existing translators should join [Translation Utility](http://wp-managed.com/projects/wp-optimize) to submit their translations. 
 
-[Download the RAW .POT file](https://raw.githubusercontent.com/ruhanirabin/WP-Optimize/master/languages/wp-optimize.pot). This is for the translators, who wants to translate to new language. 
+You must have an account in order to edit translation - [Get the free account here](http://wp-managed.com/wp-login.php?action=register). 
 
-You can **Email translations to plugins(at)ruhanirabin.com**
+Once you get your account password in your email [Log in here to edit language](http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize)
 
 **WP-Optimize Translators:**
 
@@ -88,7 +88,8 @@ You can **Email translations to plugins(at)ruhanirabin.com**
 *   Language it_IT: Diego Belli
 *   Language pl_PL: Kornel
 *   Language ja   : stranger-jp
-
+*   Language cs_Cz: Vladislav Musilek - http://toret.cz/
+*   Language hu_HU: László Viktor - http://hunstart.hu/		
 
 == Installation ==
 
@@ -151,6 +152,14 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.9 =
+* ONE MILLION+ Downloads. THANK YOU!!
+* Language updates platform - see readme file for details. 
+* Mixed type tables optimization supported and in BETA 
+* InnoDB tables won't be optimized. 
+* Main screen user selection will be saved. Red items selection will not be saved
+* Scheduled time display will be shown according to WordPress blog local time
 
 = 1.8.6 =
 * Language updates

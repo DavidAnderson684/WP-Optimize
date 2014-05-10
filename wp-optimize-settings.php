@@ -220,11 +220,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</p>
     
     <?php 
-        if (WPO_TABLE_TYPE == 'innodb'){
+//        if (WPO_TABLE_TYPE == 'innodb'){
             echo '<p>';
-            _e('You are using InnoDB tables. They will not be optimized!', 'wp-optimize');
+            _e('If you have InnoDB tables. They will not be optimized!', 'wp-optimize');
             echo '</p>';
-            }
+//            }
     ?>
     
 

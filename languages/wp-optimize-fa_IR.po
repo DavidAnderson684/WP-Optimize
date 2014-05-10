@@ -1,189 +1,186 @@
+# Copyright (C) 2014 WP-Optimize
+# This file is distributed under the same license as the WP-Optimize package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-Optimize 1.2\n"
-"POT-Creation-Date: 2014-04-19 11:16+0800\n"
-"PO-Revision-Date: 2014-04-19 11:16+0800\n"
-"Last-Translator: Ruhani Rabin <get@ruhanirabin.com>\n"
-"Language-Team: Ruhani Rabin <get@ruhanirabin.com>\n"
+"Project-Id-Version: WP-Optimize 1.8.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
+"POT-Creation-Date: 2014-04-28 14:00:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n;_e\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: D:\\Documents\\My Works\\wp-optimize_work\n"
-"X-Poedit-SearchPath-1: d:\\Ruhani\\Documents\\My Works\\wp-optimize_work\n"
+"PO-Revision-Date: 2014-05-05 12:36+0330\n"
+"Last-Translator: \n"
+"Language-Team: 8theme.ir <greatlord70@gmail.com>\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: fa_ir\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:49
-msgid "Database Optimized!"
-msgstr "دیتا بیس بهینه شد!"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:67
+#: wp-optimize-admin.php:24 wp-optimize-admin.php:42 wp-optimize.php:94
 msgid "Optimizer"
-msgstr "بهینه کننده"
+msgstr "بهینه ساز"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:72
+#: wp-optimize-admin.php:27 wp-optimize-admin.php:45
+msgid "MYSQL"
+msgstr "MYSQL"
+
+#: wp-optimize-admin.php:32 wp-optimize-admin.php:53 wp-optimize.php:93
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-admin.php:73
+#: wp-optimize-admin.php:33 wp-optimize-admin.php:55
 msgid "Info"
-msgstr "جزئیات"
+msgstr "اطلاعات"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:106
-msgid "Total clean up overall"
-msgstr "پاکسازی کلی "
+#: wp-optimize-admin.php:51 wp-optimize-tables.php:26
+msgid "Tables"
+msgstr "جداول"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:328
+#: wp-optimize-common.php:312
 msgid "Gb"
-msgstr ""
+msgstr "گیگابایت"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:330
+#: wp-optimize-common.php:314
 msgid "Mb"
-msgstr ""
+msgstr "مگابایت"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:332
+#: wp-optimize-common.php:316
 msgid "Kb"
-msgstr "کیلو بایت"
+msgstr "کیلوبایت"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:334
+#: wp-optimize-common.php:318
 msgid "bytes"
-msgstr ""
+msgstr "بایت"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:415
+#: wp-optimize-common.php:399
 msgid "transient options deleted"
-msgstr "تنظیمات موقتی پاکسازی شده"
+msgstr "تنظیمات ناپایدار حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:442
+#: wp-optimize-common.php:426
 msgid "post revisions deleted"
-msgstr "رونوشت های پاکسازی شده"
+msgstr "رونوشت مطالب حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:453
+#: wp-optimize-common.php:437
 msgid "auto drafts deleted"
-msgstr "پیشنویس های خودکار پاکسازی شده"
+msgstr "پیش نویس های خودکار حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:463
-#: Works\wp-optimize_work/wp-optimize-common.php:484
+#: wp-optimize-common.php:447 wp-optimize-common.php:468
 msgid "items removed from Trash"
-msgstr "آیتمهای پاسازی شده از سطل زباله"
+msgstr "از سطل زباله حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:475
+#: wp-optimize-common.php:459
 msgid "spam comments deleted"
-msgstr "جفنگ های پاک سازی شده"
+msgstr "دیدگاه های جفنگ حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:494
+#: wp-optimize-common.php:489
 msgid "unapproved comments deleted"
-msgstr "نظرات تایید نشده , پاکسازی شده"
+msgstr "دیدگاه های تائید نشده حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:500
+#: wp-optimize-common.php:495
 msgid "pingbacks deleted"
-msgstr "پینگ بک های پاکسازی شده"
+msgstr "پینگ بک ها حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:506
+#: wp-optimize-common.php:501
 msgid "trackbacks deleted"
-msgstr "ترک بک های پاکسازی شده"
+msgstr "بازتاب ها حذف شدند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:513
+#: wp-optimize-common.php:508
 msgid "Enabled weekly processing"
-msgstr "فعال کردن فرایندهای بهنیه سازیه هفتگی"
+msgstr "فعال سازی فرآیند هفتگی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:519
+#: wp-optimize-common.php:514
 msgid "Disabled weekly processing"
-msgstr "غیرفعال کردن فرایندهای بهنیه سازیه هفتگی"
+msgstr "غیر فعال سازی فرآیند هفتگی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:528
+#: wp-optimize-common.php:523
 msgid "NO Actions Taken"
-msgstr "هیچ عملی انجام نشده است"
+msgstr "هیچ عملیاتی انجام نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:555
+#: wp-optimize-common.php:550
 msgid "transient options in your database"
-msgstr "تنظیمات موقتی موجود در دیتابیس"
+msgstr "تنظیمات ناپایدار در پایگاه داده شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:557
+#: wp-optimize-common.php:552
 msgid "No transient options found"
-msgstr "هیچ تنظیمات موقتی یافت نشد"
+msgstr "هیچ تنظیمات ناپایداری یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:566
+#: wp-optimize-common.php:561
 msgid "orphaned postmeta in your database"
-msgstr "پست متا های بی استفاده در دیتابیس شما"
+msgstr "پست متا های جدا افتاده در پایگاه داده شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:568
+#: wp-optimize-common.php:563
 msgid "No orphaned postmeta in your database"
-msgstr "چیزی یافت نشد"
+msgstr "پست متا های جدا افتاده ای یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:577
+#: wp-optimize-common.php:572
 msgid "unused tags in your database"
-msgstr "برچسب های بلااستفاده"
+msgstr "برچسب های بدون استفاده در پایگاه داده شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:579
+#: wp-optimize-common.php:574
 msgid "No unused tags found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ برچسب استفاده نشده ای یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:592
+#: wp-optimize-common.php:587
 msgid "post revisions in your database"
-msgstr "رونوشتهای مطالب روی دیتابیس"
+msgstr "رونوشت مطالب در پایگاه داده شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:594
+#: wp-optimize-common.php:589
 msgid "No post revisions found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ رونوشتی برای مطالب شما یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:607
+#: wp-optimize-common.php:602
 msgid "auto draft post(s) in your database"
-msgstr "پیشنویس(های) خودکار سیستم روی دیتا بیس"
+msgstr "پیش نویس خودکار مطالب در پایگاه داده شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:609
+#: wp-optimize-common.php:604
 msgid "No auto draft posts found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ پیش نویسی یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
+#: wp-optimize-common.php:616
 msgid "spam comments found"
-msgstr "جفنگهای یافت شده"
+msgstr "دیدگاه جفنگ پیدا شد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:621
-msgid "Review Spams"
-msgstr "بررسی جفنگها"
+#: wp-optimize-common.php:616 wp-optimize-common.php:647
+msgid "Review"
+msgstr "بررسی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:623
+#: wp-optimize-common.php:618
 msgid "No spam comments found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ دیدگاه جفنگی یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
+#: wp-optimize-common.php:647
 msgid "unapproved comments found"
-msgstr "کامنتهای تایید نشده شما"
+msgstr "دیدگاه های تایید نشده"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:634
-msgid "Review Unapproved Comments"
-msgstr "بررسی کامنتهای تایید نشده"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:636
+#: wp-optimize-common.php:649
 msgid "No unapproved comments found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ دیدگاه تائید نشده ای یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:644
+#: wp-optimize-common.php:657
 msgid "Pingbacks found"
-msgstr "پینگ بگ های یافت شده"
+msgstr "پینگ بک های یافت شده"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:646
+#: wp-optimize-common.php:659
 msgid "No pingbacks found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ پینگ بکی یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:654
+#: wp-optimize-common.php:667
 msgid "Trackbacks found"
-msgstr "ترک بک های یافت شده"
+msgstr "بازتاب های یافت شده"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:656
+#: wp-optimize-common.php:669
 msgid "No trackbacks found"
-msgstr "چیزی یافت نشد"
+msgstr "هیچ بازتابی یافت نشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-common.php:662
+#: wp-optimize-common.php:675
 msgid "nothing"
-msgstr "هیچ چیز"
+msgstr "هیچی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:4
+#: wp-optimize-credits.php:6
 msgid "Credits"
-msgstr "Credits"
+msgstr "معرفی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:5
+#: wp-optimize-credits.php:7
 msgid ""
 "WP-Optimize started as a utility for my own projects. I have realized soon, "
 "that this plugin might help a lot of people out there. I am personally "
@@ -191,450 +188,439 @@ msgid ""
 "you all of the translators and the generous people who have donated for this "
 "project."
 msgstr ""
-"من بهینه ساز وردپرس را به عنوان یک پروژه برای خودم آغاز کرده بودم ولی خیلی "
-"سریع متوجه شدم که این افزونه ممکن است به مشکلات بسیاری از کاربران وردپرس را "
-"حل کند . به شخصه از تمام کسانی که از این افزونه استفاده میکنند تشکر میکنم . "
-"همچنین از تمام کسانی که در ترجمه این افزونه کمک کرده اند و  افراد سخاوتمندی "
-"که کمک مالی کرداند نیز کمال تشکر را دارم ."
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:15
+#: wp-optimize-credits.php:17
 msgid "Share this plugin on Facebook"
-msgstr "این افزونه را روی فیس بوک به اشتراک بگزارید"
+msgstr "این افزونه را در فیس بوک به اشتراک بگذارید"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:25
+#: wp-optimize-credits.php:30
 msgid "Contributing Developers"
-msgstr "گسترش دهندگان این افزونه"
+msgstr "توسعه دهندگان همکار"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+#: wp-optimize-credits.php:31
 msgid "Help me make this plugin better"
-msgstr "به من کمک کنید تا این افزونه را بهتر کنم !"
+msgstr "به من کمک کنید تا این افزونه بهتر و حرفه ای تر کنم"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:26
+#: wp-optimize-credits.php:31
 msgid "I am looking for contributing developers."
-msgstr ""
-"من به دنبال گسترشدهندگان افزونه برای کمک در امر کار روی این افزونه هستم"
+msgstr "من دنبال توسعه دهندگانی برای همکاری هستم ."
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:27
+#: wp-optimize-credits.php:32
 msgid "Your name and website will be credited here in the plugin"
-msgstr "نام و نام وبسایت شما در این بخش ثبت خواهد شد"
+msgstr "نام و وبسایت شما در این قسمت نمایش داده خواهد شد ."
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:29
+#: wp-optimize-credits.php:41
 msgid "Translators"
-msgstr "مترجمان"
+msgstr "مترجم ها"
 
-# This is the link for the Translator's website
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+#: wp-optimize-credits.php:42
 msgid "http://www.ruhanirabin.com/"
-msgstr "http://www.GameSiders.com/"
+msgstr "http://8theme.ir/"
 
-# Please change this to Translator's name
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:30
+#: wp-optimize-credits.php:42
 msgid ""
 "Default Language by Ruhani Rabin (Change this text and the link inside "
 "translation file)"
-msgstr "ترجمه شده توسط مرتضی امیری مدیر وبسایت گیم سایدرز"
+msgstr "ترجمه شده توسط امیر عربی ، مدیر وب سایت هشت تم"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+#: wp-optimize-credits.php:44
 msgid "Download .POT File to translate"
-msgstr "دانلود فایل ترجمه به زبان خودتان"
+msgstr "دانلود فایل .pot برای ترجمه"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:32
+#: wp-optimize-credits.php:44
 msgid "Email your translations to"
-msgstr "ترجمه افزونه به زبان خودتان را به این ایمیل ارسال کنید"
+msgstr "ترجمه های خود را به ایمیل زیر بفرستید"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:38
-msgid "Development Log"
-msgstr "یاداشتهای گسترش دهنده"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:58
-msgid "No items"
-msgstr "چیزی در دست رس نیست"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:63
-#, php-format
-msgid "Update %s"
-msgstr "به روز رسانی %s"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:72
+#: wp-optimize-credits.php:50
 msgid "Plugin Resources"
 msgstr "منابع افزونه"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:73
+#: wp-optimize-credits.php:52
 msgid "Plugin Homepage"
-msgstr "وبسایت افزونه"
+msgstr "صفحه افزونه"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:74
-msgid "Support Forum"
-msgstr "فروم پشتیبانی"
+#: wp-optimize-credits.php:53
+msgid "Support (GitHub)"
+msgstr "پشتیبانی (GitHub)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:75
+#: wp-optimize-credits.php:54
 msgid "Change Log"
 msgstr "لیست تغییرات"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-credits.php:76
+#: wp-optimize-credits.php:55
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "پرسش و پاسخ"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:5
-msgid "Status : "
-msgstr "وضعیت"
+#: wp-optimize-credits.php:64
+msgid "Development Log"
+msgstr "لوگ ها توسعه"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:10
-msgid "Last automatic optimization was at "
-msgstr " آخرین بهنیه سازی اتوماتیک در"
+#: wp-optimize-credits.php:84
+msgid "No items"
+msgstr "بدون گزینه"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:21
+#: wp-optimize-credits.php:89
+msgid "Update %s"
+msgstr "به روز رسانی %s"
+
+#: wp-optimize-main.php:39
+msgid "Database Optimized!"
+msgstr "پایگاه داده ها بهینه شد !"
+
+#: wp-optimize-main.php:89 wp-optimize-main.php:91
+msgid "Clean-up options"
+msgstr "تنظیمات پاک سازی"
+
+#: wp-optimize-main.php:97
+msgid "Clean post revisions which are older than "
+msgstr "حذف رونشوت های مطالب قدیمی تر از"
+
+#: wp-optimize-main.php:100 wp-optimize-main.php:118 wp-optimize-main.php:138
+#: wp-optimize-main.php:157
+msgid "weeks"
+msgstr "هفته"
+
+#: wp-optimize-main.php:102
+msgid "Clean all post revisions"
+msgstr "حذف همه رونوشت ها"
+
+#: wp-optimize-main.php:115
+msgid "Clean auto draft posts which are older than "
+msgstr "حذف پیش نویس های خودکار مطالب قدیمی تر از"
+
+#: wp-optimize-main.php:120
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "حذف همه پیش نویس های خودکار و مطالب موجود در سطل زباله"
+
+#: wp-optimize-main.php:135
+msgid "Remove spam comments which are older than "
+msgstr "حذف دیدگاه های جفنگ قدیمی تر از"
+
+#: wp-optimize-main.php:140
+msgid "Remove spam comments and comments in trash"
+msgstr "حذف دیدگاه های جفنگ و دیدگاه های وجود در سطل زباله"
+
+#: wp-optimize-main.php:154
+msgid "Remove unapproved comments which are older than "
+msgstr "حذف دیدگاه های تائید نشده قدیمی تر از"
+
+#: wp-optimize-main.php:159 wp-optimize-settings.php:194
+msgid "Remove unapproved comments"
+msgstr "حذف دیدگاه های تائید نشده"
+
+#: wp-optimize-main.php:172 wp-optimize-settings.php:199
+msgid "Remove transient options"
+msgstr "حذف تنظیمات ناپایدار"
+
+#: wp-optimize-main.php:183
+msgid "Remove pingbacks"
+msgstr "حذف پینگ بک ها"
+
+#: wp-optimize-main.php:194
+msgid "Remove trackbacks"
+msgstr "حذف باز تاب ها"
+
+#: wp-optimize-main.php:202
+msgid ""
+"Some options are not selected by default. Do not select them unless you "
+"really need to use them"
+msgstr ""
+"بعضی از گزینه های به صورت پیشفرض انتخاب نشده اند ، تا زمانی که از کاری که "
+"انجام می دهید آگاهی کامل ندارید آن ها را فعال نکنید"
+
+#: wp-optimize-main.php:214
+msgid "Actions"
+msgstr "عملیات ها"
+
+#: wp-optimize-main.php:220
+msgid "Optimize database tables"
+msgstr "بهینه سازی جداول پایگاه داده ها"
+
+#: wp-optimize-main.php:227
+msgid "Select safe options"
+msgstr "انتخاب گزینه های امن"
+
+#: wp-optimize-main.php:228
+msgid "Warning:"
+msgstr "هشدار :"
+
+#: wp-optimize-main.php:229
+msgid "Always make a backup of your DB when you upgrade to major versions"
+msgstr "همیشه قبل از به روز رسانی از پایگاه داده خود فایل پشتیبان تهیه کنید"
+
+#: wp-optimize-main.php:234
+msgid "PROCESS"
+msgstr "فرآیند"
+
+#: wp-optimize-main.php:238
+msgid "Buy me a big Coffee!"
+msgstr "یک فنجان قهوه بزرگ برام بخر !"
+
+#: wp-optimize-main.php:239 wp-optimize-main.php:240
+msgid "Give a rating :)"
+msgstr "بهم امتیاز بده :)"
+
+#: wp-optimize-main.php:244
+msgid "Status log: "
+msgstr "لوگ وضعیت :"
+
+#: wp-optimize-main.php:251
+msgid "Last automatic optimization was at"
+msgstr "زمان آخرین بهینه سازی خودکار"
+
+#: wp-optimize-main.php:263
 msgid "There was no automatic optimization"
-msgstr "هیچ بهینه سازی اتوماتیکی انجام نشده است"
+msgstr "هیچ بهینه سازی خودکاری انجام نشده است"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:24
-#: Works\wp-optimize_work/wp-optimize-main.php:68
-#: Works\wp-optimize_work/wp-optimize-main.php:93
+#: wp-optimize-main.php:266 wp-optimize-main.php:310 wp-optimize-main.php:335
 msgid "Check settings"
-msgstr "تنظیمات را بررسی کنید"
+msgstr "بررسی تنظیمات"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:36
+#: wp-optimize-main.php:278
 msgid "Scheduled cleaning enabled"
-msgstr "پاکسازی زمان بندی شده فعال شد"
+msgstr "پاک سازی زمان بندی شده فعال است"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:48
+#: wp-optimize-main.php:290
 msgid "Next schedule"
 msgstr "زمان بندی بعدی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:57
+#: wp-optimize-main.php:299
 msgid "Refresh"
-msgstr "تازه کردن"
+msgstr "تازه سازی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:65
+#: wp-optimize-main.php:307
 msgid "Scheduled cleaning DISABLED"
-msgstr "پاکسازی زمانبندی شده غیر فعال شد"
+msgstr "پاک سازی زمان بندی شده غیر فعال است"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:79
+#: wp-optimize-main.php:321
 msgid "Retention enabled and keeping last "
-msgstr "نگهداری فعال شد و این تعداد آخرین اطلاعات نگه داری خواهد شد."
+msgstr "نگه داری فعال شده و آخرین را نگه می دارد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:82
-#: Works\wp-optimize_work/wp-optimize-settings.php:94
+#: wp-optimize-main.php:324 wp-optimize-settings.php:94
 msgid "weeks data"
 msgstr "اطلاعات هفته"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:90
+#: wp-optimize-main.php:332
 msgid "Retention is disabled"
-msgstr "نگه داری غیر فعال شد"
+msgstr "نگه داری غیر فعال است"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:107
+#: wp-optimize-main.php:350
 msgid "Current database size : "
-msgstr "حجم فعلی دیتابیس"
+msgstr "اندازه فعلی پایگاه داده ها :"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:111
+#: wp-optimize-main.php:354
 msgid "You have saved"
-msgstr "شما این میزان فضا را آزاد کرده اید"
+msgstr "فضای ذخیره شده توسط شما"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:120
+#: wp-optimize-main.php:363
 msgid "Current database size"
-msgstr "حجم فعلی دیتا بیس"
+msgstr "اندازه فعلی پایگاه داده ها"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:127
+#: wp-optimize-main.php:370
 msgid "You can save almost"
-msgstr "فضایی که شما میتوانید آزاد کنید"
+msgstr "می توانید دست کم این مقدار ذخیره کنید"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:136
-msgid "Buy me a Coffee :)"
-msgstr "برام یک قهوه بخرید :)"
+#: wp-optimize-main.php:385
+msgid "Total clean up overall"
+msgstr "کل پاک سازی ها"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
-msgid "See Tables > "
-msgstr "جدولها را ببینید>"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:137
-msgid "Database Size > "
-msgstr "حجم دیتابیس>"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:162
-msgid "Database Optimization Options"
-msgstr "تنظیمات بهنیه سازی دیتابیس"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:173
+#: wp-optimize-main.php:422
 msgid "Sponsor"
-msgstr "اسپانسر"
+msgstr "حامیان مالی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:180
-msgid "Remove post revisions which are older than "
-msgstr "رونوشتهایی که قدیمیتر از این تاریخ هستند را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:183
-#: Works\wp-optimize_work/wp-optimize-main.php:203
-#: Works\wp-optimize_work/wp-optimize-main.php:223
-#: Works\wp-optimize_work/wp-optimize-main.php:242
-msgid "weeks"
-msgstr "هفته(ها)"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:185
-msgid "Remove all post revisions"
-msgstr "همه روشنوشتها را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:200
-msgid "Remove auto draft posts which are older than "
-msgstr "پیشنویسهای اتوماتیک قدیمیتر از این تاریخ را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:205
-msgid "Remove auto draft posts (This will also clear out posts in Trash)"
-msgstr ""
-"تمام پیشنویسهای اتوماتیک را پاک کن( که شامل پست های موجود در سطال زباله هم "
-"میشود)"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:220
-msgid "Remove spam comments which are older than "
-msgstr "تمام جفنگهای قدیمتراز این تاریخ را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:225
-msgid "Remove spam comments (This will also clear out comments in Trash)"
-msgstr "تمام جفنگها را پاک کن( شامل نظرات موجود در سطل آشغال هم میشود)"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:239
-msgid "Remove unapproved comments which are older than "
-msgstr "نظرات تایید نشده قدیمیتر از این تاریخ را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:244
-#: Works\wp-optimize_work/wp-optimize-settings.php:173
-msgid "Remove unapproved comments"
-msgstr "نظرات تایید نشده را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:257
-#: Works\wp-optimize_work/wp-optimize-settings.php:176
-msgid "Remove transient options"
-msgstr "تنظیمات موقتی بی استفاده را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:269
-msgid "Remove orphaned postmeta"
-msgstr "پست متا های بلا استفاده را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:282
-#: Works\wp-optimize_work/wp-optimize-settings.php:181
-msgid "Remove unused tags"
-msgstr "برچسب های استفاده نشده را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:295
-msgid "Remove pingbacks"
-msgstr "پینگ بک ها را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:307
-msgid "Remove trackbacks"
-msgstr "ترک بک ها را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:320
-msgid "Optimize database tables"
-msgstr "جدولهای دیتابیس را پاک کن"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:329
-msgid "PROCESS"
-msgstr "پروسه ها"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:355
-msgid "Database Tables Report"
-msgstr "گزارش جدولهای دیتابیس"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:356
-msgid "Database Name:"
-msgstr "نام دیتابیس"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:360
-msgid "Optimized all the tables found in the database."
-msgstr "تمام جدولهای پیداشده در دیتابیس بهینه شد"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:368
-msgid "No."
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:369
-#, fuzzy
-msgid "Tables"
-msgstr "جدول"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:370
-msgid "Records"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:371
-#, fuzzy
-msgid "Data Size"
-msgstr "حجم دیتابیس>"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:372
-msgid "Index Size"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:373
-msgid "Overhead"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:460
-msgid "Total:"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:461
-#, fuzzy, php-format
-msgid "%s Table"
-msgstr "جدول"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:462
-#, php-format
-msgid "%s Record"
-msgstr ""
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:499
-msgid "Total Size of Database"
-msgstr "حجم کلی دیتابیس"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:511
-msgid "Optimization Results"
-msgstr "نتایج بهینه سازی"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:512
-msgid "Total Space Saved"
-msgstr "فضای کلی ذخیره شده"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:517
-msgid "Optimization Possibility"
-msgstr "احتمالات بهینه سازی"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-main.php:518
-msgid "Total space can be saved"
-msgstr "حجم کلی فضایی که میتوان آزاد سازی کرد"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:64
+#: wp-optimize-settings.php:65
 msgid "Settings updated"
-msgstr "تنظیمات به روز شد"
+msgstr "تنظیمات به روز رسانی شد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:73
+#: wp-optimize-settings.php:78
 msgid "General Settings"
-msgstr "تنظیمات کلی"
+msgstr "تنظیمات عمومی"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:74
-msgid "Auto Clean-up Settings"
-msgstr "تنظیمات پاکسازی اتوماتیک"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:83
+#: wp-optimize-settings.php:83
 msgid "Keep last "
-msgstr "اطلاعات قبلتر را نگه دار"
+msgstr "آخرین"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:99
+#: wp-optimize-settings.php:99
 msgid ""
-"This option will retain the last X weeks data and remove any garbage data "
-"before that period"
+"This option will retain the last selected weeks data and remove any garbage "
+"data before that period. This will also affect Auto Clean-up process"
 msgstr ""
-"این آپشن اطلاعات X هفته گذشته را نگه میدارد و اطلاعات قبلتر از آنرا پاکسازی "
-"میکند"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:107
+#: wp-optimize-settings.php:108
 msgid "Enable admin bar link "
-msgstr "فعال سازی لینک ادمین بار"
+msgstr "فعال سازی لینک در قسمت نوار ابزار مدیریت"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:109
+#: wp-optimize-settings.php:110
 msgid "(Click here to refresh)"
-msgstr "برای تازه کردن کلیک کنید-Refresh"
+msgstr "(برای تازه سازی کلیک کنید)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:114
+#: wp-optimize-settings.php:116
 msgid ""
 "This option will put WP-Optimize link on the top admin bar (default is off). "
 "Requires page refresh."
 msgstr ""
-"این آپشن لیک این افزونه را در ادمین بار بالای سایت برای مدیر سایت قرار میدهد"
-"( پیشفرض خاموش) برای دیدن تغییرات باید این صفحه را رفرش کنید"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:123
+#: wp-optimize-settings.php:122
+msgid "SAVE SETTINGS"
+msgstr "ذخیره تنظیمات"
+
+#: wp-optimize-settings.php:132
+msgid "Auto Clean-up Settings"
+msgstr "تنظیمات پاک سازی خودکار"
+
+#: wp-optimize-settings.php:135
 msgid "Enable scheduled clean-up and optimization (EXPERIMENTAL!)"
-msgstr "فعال کردن پاکسازی و بهینه سازی اتوماتیک ( آزمایشی)"
+msgstr ""
+"فعال کردن پاک سازی و بهینه سازی خودکار پایگاه داده (فقط برای حرفه ای ها)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:125
+#: wp-optimize-settings.php:137
 msgid "Select schedule type (default is Weekly)"
-msgstr "زمان پاکسازی اتوماتیک را انتخاب کنید( پیشفرض به صورت هفتگی)"
+msgstr "انتخاب نوع زمان بندی (هفتگی مقدار پیشفرض)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:132
-#: Works\wp-optimize_work/wp-optimize-settings.php:144
-#: Works\wp-optimize_work/wp-optimize-settings.php:150
+#: wp-optimize-settings.php:144 wp-optimize-settings.php:156
+#: wp-optimize-settings.php:162
 msgid "Every week"
 msgstr "هر هفته"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:136
-#: Works\wp-optimize_work/wp-optimize-settings.php:151
+#: wp-optimize-settings.php:148 wp-optimize-settings.php:163
 msgid "Every other week (every 14 days)"
-msgstr "هر چهارده روز"
+msgstr "هر دو هفته (هر 14 روز)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:140
-#: Works\wp-optimize_work/wp-optimize-settings.php:152
+#: wp-optimize-settings.php:152 wp-optimize-settings.php:164
 msgid "Every month (every 31 days)"
-msgstr "هر ماه"
+msgstr "هر ماه (هر سی و یک روز)"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:157
+#: wp-optimize-settings.php:168
 msgid "Automatic cleanup will perform the following:"
-msgstr "پاکسازی اتوماتیک کارهای زیر را انجام خواهد داد:"
+msgstr "پاک سازی خودکار دستورات زیر را اجرا می کند :"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:159
+#: wp-optimize-settings.php:170
 msgid ""
 "Remove revisions, auto drafts, posts/comments in trash, transient options. "
 "After that it will optimize the db."
 msgstr ""
-"پاکسازی رونوشتها-پیشنویسهای اتوماتیک-پست ها و نظرات داخل سطل زباله-تنظیمات "
-"موقتی بی استفاده. و در ادامه دیتابیس نیز بهینه خواهد شد."
+"حذف رونوشت ها ،  پیش نویس های خودکار ، مطالب/دیدگاه های زباله دان ، تنظیمات "
+"ناپایدار . پس از این کار پایگاه داده ها بهینه خواهد شد ."
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:165
+#: wp-optimize-settings.php:177
 msgid ""
 "These options will only work if the automatic clean-up schedule has been "
 "enabled"
-msgstr "این آپشن تنها درصورتی عمل میکند که پاکسازی اتوماتیک فعال شده باشد"
+msgstr ""
+"این تنظیمات تنها در صورتی اعمال می شوند که پاک سازی خودکار پاگاه داده فعال "
+"شده باشد"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:167
+#: wp-optimize-settings.php:182
 msgid "Remove auto revisions"
-msgstr "پاکسازی رونوشتهای اتوماتیک"
+msgstr "حذف رونوشت های خودکار"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:169
+#: wp-optimize-settings.php:186
 msgid "Remove auto drafts"
-msgstr "پاکسازی رونوشتهای اتوماتیک"
+msgstr "حذف پیش نویس های خودکار"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:171
+#: wp-optimize-settings.php:190
 msgid "Remove spam comments"
-msgstr "پاکسازی جفنگها"
+msgstr "حذف دیدگاه های جفنگ"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:178
+#: wp-optimize-settings.php:203
 msgid "Remove orphaned post meta"
-msgstr "پاکسازی پست متا های بیهوده"
+msgstr "حذف پست متا های جدا افتاده"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:185
+#: wp-optimize-settings.php:207
+msgid "Remove unused tags"
+msgstr "حذف برچسب های استفاده نشده"
+
+#: wp-optimize-settings.php:213
 msgid "Optimize database"
-msgstr "بهینه سازی دیتابیس"
+msgstr "بهینه سازی پایگاه داده"
 
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:190
-msgid "SAVE SETTINGS"
-msgstr "ذخیره سازی تنظیمات"
-
-#: D:\Documents\My Works\wp-optimize_work/wp-optimize-settings.php:191
+#: wp-optimize-settings.php:217
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
-msgstr "ذخیره سازی تنظیمات بهینه سازی اتوماتیک"
+msgstr "ذخیره تنظیمات پاک سازی خودکار"
 
-#~ msgid "orphaned postmeta deleted"
-#~ msgstr "پست متاهای بیهوره پاکسازی شده"
+#: wp-optimize-tables.php:13
+msgid "Database Name:"
+msgstr "نام پایگاه داده"
 
-#~ msgid "unused tags deleted"
-#~ msgstr "برچسبهای بی استفاده پاک سازی شده "
+#: wp-optimize-tables.php:17
+msgid "Optimized all the tables found in the database."
+msgstr "همه جداول یافته شده در پایگاه داده بهینه شدند ."
 
-#~ msgid "Kb."
-#~ msgstr "کیلو بایت"
+#: wp-optimize-tables.php:25
+msgid "No."
+msgstr "خیر"
 
-#~ msgid "Size"
-#~ msgstr "حجم"
+#: wp-optimize-tables.php:27
+msgid "Records"
+msgstr "یافته ها"
 
-#~ msgid "Status"
-#~ msgstr "وضعیت"
+#: wp-optimize-tables.php:28
+msgid "Data Size"
+msgstr "انداره داده ها"
 
-#~ msgid "Space Save"
-#~ msgstr "فضای آزاد شده"
+#: wp-optimize-tables.php:29
+msgid "Index Size"
+msgstr "اندازه ذخیره شده"
 
-#~ msgid "Already Optimized"
-#~ msgstr "بهینه شده است !"
+#: wp-optimize-tables.php:30
+msgid "Overhead"
+msgstr ""
 
-#~ msgid "Optimized"
-#~ msgstr "بهینه شد"
+#: wp-optimize-tables.php:117
+msgid "Total:"
+msgstr "کل :"
 
-#~ msgid "Need to Optimize"
-#~ msgstr "باید بهینه سازی شود"
+#: wp-optimize-tables.php:118
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wp-optimize-tables.php:119
+msgid "%s Record"
+msgid_plural "%s Records"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wp-optimize-tables.php:156
+msgid "Total Size of Database"
+msgstr "حجم کلی پایگاه داده"
+
+#: wp-optimize-tables.php:168
+msgid "Optimization Results"
+msgstr "نتایج بهینه سازی"
+
+#: wp-optimize-tables.php:169
+msgid "Total Space Saved"
+msgstr "کل فضای ذخیره شده"
+
+#: wp-optimize-tables.php:174
+msgid "Optimization Possibility"
+msgstr ""
+
+#: wp-optimize-tables.php:175
+msgid "Total space can be saved"
+msgstr "کل فضای قابل ذخیره سازی"
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Optimize"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin helps you to keep your database clean by removing post revisions "
+"and spams in a blaze. Additionally it allows you to run optimize command on "
+"your WordPress core tables (use with caution)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/ruhanirabin/WP-Optimize"
+msgstr "https://github.com/ruhanirabin/WP-Optimize"

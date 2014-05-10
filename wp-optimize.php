@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.8.6
+Version: 1.8.9
 Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
@@ -45,7 +45,7 @@ global $current_user;
 error_reporting( error_reporting() & ~E_NOTICE );
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.8.6');
+    define('WPO_VERSION', '1.8.9');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
@@ -116,7 +116,7 @@ function wpo_admin_actions()
         		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
         }        
         
-		wpo_detectDBType();
+		//wpo_detectDBType();
         wpo_PluginOptionsSetDefaults();
 		wpo_cron_activate();
 	}
@@ -156,7 +156,8 @@ function wpo_cron_activate() {
                 }               
 				//$this_time = time() + $gmtoffset; 
                 add_action('wpo_cron_event2', 'wpo_cron_action');
-                wp_schedule_event(time() + $this_time, $schedule_type, 'wpo_cron_event2');
+                //wp_schedule_event(current_time( "timestamp", 0 ) + $this_time + $gmtoffset, $schedule_type, 'wpo_cron_event2');
+                wp_schedule_event(current_time( "timestamp", 0 ) + $this_time , $schedule_type, 'wpo_cron_event2');
                 wpo_debugLog('running wp_schedule_event()');
 
                 

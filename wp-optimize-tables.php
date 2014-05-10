@@ -19,22 +19,6 @@ Function optimizeTables($Optimize=false){
 <?php 
 _e('Database Name:', 'wp-optimize'); ?> '<?php _e(DB_NAME, 'wp-optimize');
 echo "'";
-
-    if (WPO_TABLE_TYPE == 'innodb'){
-    echo ' - ';
-    _e('Table type', 'wp-optimize');
-    echo ': '; 
-    _e('InnoDB', 'wp-optimize');
-    }
-
-    if (WPO_TABLE_TYPE == 'myisam'){
-    echo ' - ';
-    _e('Table type', 'wp-optimize'); 
-    echo ': ';
-    _e('MyISAM', 'wp-optimize');
-    }
-
-
 ?></h3>
 
 
@@ -54,15 +38,9 @@ echo "'";
 				<th><?php _e('Records', 'wp-optimize'); ?></th>
 				<th><?php _e('Data Size', 'wp-optimize'); ?></th>
 				<th><?php _e('Index Size', 'wp-optimize'); ?></th>
-				<?php 
-
-                if (WPO_TABLE_TYPE != 'innodb'){
-                echo '<th>';
-                _e('Overhead', 'wp-optimize');
-                echo '</th>';       
-                } 
-                        
-                ?>
+				<th><?php _e('Type', 'wp-optimize'); ?></th>
+				<th><?php _e('Overhead', 'wp-optimize');?></th>
+                
 			</tr>
 		</thead>
 		
@@ -94,9 +72,10 @@ echo "'";
 		echo '<td>'.number_format_i18n($tablestatus->Rows).'</td>'."\n";
 		echo '<td>'.wpo_format_size($tablestatus->Data_length).'</td>'."\n";
 		echo '<td>'.wpo_format_size($tablestatus->Index_length).'</td>'."\n";;		
+		echo '<td>'.$tablestatus->Engine.'</td>'."\n";;		
 		//echo '<td>'.wpo_format_size($tablestatus->Data_free).'</td>'."\n";
 		
-        if (WPO_TABLE_TYPE != 'innodb'){
+        if ($tablestatus->Engine != 'innodb'){
 
 		echo '<td>';
     		if (isset($_POST["optimize-db"])) {
@@ -126,28 +105,32 @@ echo "'";
     		}
 		
 		echo '</td>'."\n";
-           } // end of if WPO_TABLE_TYPE 
+           } 
+           else {
+		echo '<td>';
+
+    				echo '<font color="blue">';
+    				echo '-';
+    				echo '</font>';
+
+		
+		echo '</td>'."\n";            
+            
+           }
 		
 		$row_usage += $tablestatus->Rows;
 		$data_usage += $tablestatus->Data_length;
 		$index_usage +=  $tablestatus->Index_length;
-		$overhead_usage += $tablestatus->Data_free;
-		$total_gain += $tablestatus->Data_free;
+	
+        if ($tablestatus->Engine != 'innodb'){
+            $overhead_usage += $tablestatus->Data_free;
+            $total_gain += $tablestatus->Data_free;
+        } else {
+            $overhead_usage += 0;
+            $total_gain += 0;    
+        }
 		echo '</tr>'."\n";
 	}	
-
-		if (isset($_POST["optimize-db"])) {
-		### Show Tables
-		$tables = $wpdb->get_col("SHOW TABLES");  	    
-		foreach($tables as $table_name) {
-		$local_query = 'OPTIMIZE TABLE '.$table_name;
-		$resultat  = $wpdb->query($local_query);
-		}
-
-		
-			  
-        //echo "optimization";
-            }
 
 
 		echo '<tr class="thead">'."\n";
@@ -156,28 +139,28 @@ echo "'";
 		echo '<th>'.sprintf(_n('%s Record', '%s Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
 		echo '<th>'.wpo_format_size($data_usage).'</th>'."\n";
 		echo '<th>'.wpo_format_size($index_usage).'</th>'."\n";
-		
-        if (WPO_TABLE_TYPE != 'innodb'){
-
-        echo '<th>';
+		echo '<th>'.'-'.'</th>'."\n";
+		echo '<th>';
 		
 		
 		if (isset($_POST["optimize-db"])) {
-			if($overhead_usage>0){
+			
+                    
+                        if($overhead_usage>0){
 				echo '<font color="blue">';
 				echo wpo_format_size($overhead_usage);
 				echo '</font>';
 				}
 			else {
 				echo '<font color="green">';
-				echo wpo_format_size($overhead_usage);
+                                echo wpo_format_size($overhead_usage);
 				echo '</font>';		
 			}
 		}
 		else {
 			if($overhead_usage>0){
 				echo '<font color="red">';
-				echo wpo_format_size($overhead_usage);
+                                echo wpo_format_size($overhead_usage);
 				echo '</font>';
 				}
 			else {
@@ -187,7 +170,6 @@ echo "'";
 			}
 		}		
 		echo '</th>'."\n";
-        }
 		echo '</tr>';
 	
 ?>
@@ -210,7 +192,7 @@ echo $part1;
 <p style="color: #0000FF;">
 <?php 
 
-if (WPO_TABLE_TYPE != 'innodb'){
+if ($total_gain > 0){
 _e('Total Space Saved', 'wp-optimize'); 
     echo ': ';
     echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));
@@ -222,14 +204,14 @@ _e('Total Space Saved', 'wp-optimize');
 
 <h3><?php 
 
-if (WPO_TABLE_TYPE != 'innodb'){
+if ($total_gain > 0){
     _e('Optimization Possibility', 'wp-optimize'); 
     echo ':';
     }
 
 ?></h3>
 <p style="color: #FF0000;">
-<?php if (WPO_TABLE_TYPE != 'innodb'){
+<?php if ($total_gain > 0){
     _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);
     }
     ?></p>

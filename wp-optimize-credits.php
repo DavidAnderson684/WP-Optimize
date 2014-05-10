@@ -29,7 +29,7 @@ if ( ! defined( 'WPINC' ) ) {
 	  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		<input type="hidden" name="cmd" value="_s-xclick">
 		<input type="hidden" name="hosted_button_id" value="LTCMF6JDX94QS">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal ï¿½ The safer, easier way to pay online.">
 		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 	  </form>
     
@@ -47,9 +47,9 @@ if ( ! defined( 'WPINC' ) ) {
 		<div class="postbox">
 			<div class="inside">
 	<h3><?php _e('Translators','wp-optimize'); ?></h3><br />
-	<h4><a href="<?php _e('http://www.ruhanirabin.com/','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('Default Language by Ruhani Rabin (Change this text and the link inside translation file)','wp-optimize') ?></a></h4>
+	<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
 	<p>	
-	<b><a href="<?php echo WPO_PLUGIN_URL.'languages/wp-optimize.pot'; ?>" target="_blank" title=""><?php _e('Download .POT File to translate','wp-optimize'); ?></a> | <?php _e('Email your translations to','wp-optimize'); ?> <a href="mailto:plugins@ruhanirabin.com">plugins@ruhanirabin.com</a></b>
+	<b><a href="<?php echo WPO_PLUGIN_URL.'translate.txt'; ?>" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
 	</p>
 	<br />
 		<br />
@@ -57,11 +57,15 @@ if ( ! defined( 'WPINC' ) ) {
 	
 	<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
 	<h4>
-	<p><a href="http://wordpress.org/plugins/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
-    <p><a href="https://github.com/ruhanirabin/WP-Optimize/issues" target="_blank"><?php _e('Support (GitHub)', 'wp-optimize'); ?></a></p>
-    <p><a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
-    <p><a href="http://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a></p>
-    </h4>
+        <p><a href="http://wp-managed.com/wp-login.php?action=register" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></p>
+        <p><a href="http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs translator account)', 'wp-optimize'); ?></a></p>
+        <p><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></p>
+        <p><a href="http://wordpress.org/plugins/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
+        <p><a href="https://github.com/ruhanirabin/WP-Optimize/issues" target="_blank"><?php _e('Support (GitHub)', 'wp-optimize'); ?></a></p>
+        <p><a href="mailto:plugins+support@ruhanirabin.com" target="_blank"><?php _e('Support E-mail', 'wp-optimize'); ?></a></p>
+        <p><a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
+        <p><a href="http://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a></p>
+        </h4>
 			</div>
 		</div>	
 </div>

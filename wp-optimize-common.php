@@ -38,7 +38,7 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
 
 /**
  * wpo_detectDBType()
- * 
+ * this function is redundant 
  * @return void
  */
 function wpo_detectDBType() {
@@ -138,6 +138,8 @@ function wpo_removeOptions(){
 	delete_option( OPTION_NAME_TOTAL_CLEANED );	
 	
     delete_option( 'wp-optimize-auto' );	
+    delete_option( 'wp-optimize-settings' );
+
 }
 
 /*
@@ -242,9 +244,6 @@ function wpo_cron_action() {
             }
 			
 		//db optimize part - optimize
-        // disble optimization if innoDB
-        if (WPO_TABLE_TYPE != 'innodb'){
-
         if ($this_options['optimize'] == 'true'){            
     
             $db_tables = $wpdb->get_results('SHOW TABLES',ARRAY_A);
@@ -255,17 +254,18 @@ function wpo_cron_action() {
     		}
     		
     		//$dateformat = __('l jS \of F Y h:i:s A');
-    		$dateformat = 'l jS \of F Y h:i:s A';
-            $thisdate = date($dateformat);
+    		//$dateformat = 'l jS \of F Y h:i:s A';
+            //$thisdate = date($dateformat);
+            //$thisdate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $time() + (get_option('gmt_offset')));
     		list($part1, $part2) = wpo_getCurrentDBSize();
      
-            update_option( OPTION_NAME_LAST_OPT, $thisdate );
+            $thistime = current_time( "timestamp", 0 );
+            $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
+            update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
             wpo_debugLog('Updating options with value +'.$part2);
 
-        } // endif $this_options['optimize'] 
-        } //end if if (WPO_TABLE_TYPE != 'innodb'){
-		
+        } // endif $this_options['optimize'] 		
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
 }	
 
@@ -333,6 +333,24 @@ function wpo_PluginOptionsSetDefaults() {
     
     	update_option( 'wp-optimize-auto', $new_options );
         }
+
+        // settings for main screen
+        if ( get_option( 'wp-optimize-settings' ) !== false ) {
+		// The option already exists, so we just update it.
+
+	} else {
+        // 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags' 
+    	$new_options_main = array(
+    		'user-revisions' => 'true',
+    		'user-drafts' => 'true',
+    		'user-spams' => 'true',
+    		'user-unapproved' => 'true',
+    		'user-transient' => 'false',
+    		'user-optimize' => 'true'
+    	);
+    
+    	update_option( 'wp-optimize-settings', $new_options_main );
+        }
     	
 } 
 
@@ -376,15 +394,22 @@ function wpo_getCurrentDBSize(){
 	$index_usage = 0;
 	$overhead_usage = 0;
 	$tablesstatus = $wpdb->get_results("SHOW TABLE STATUS");
-	foreach($tablesstatus as  $tablestatus) {
+	
+        wpo_debugLog('Checking DB size .... ');
+        foreach($tablesstatus as  $tablestatus) {
 		$row_usage += $tablestatus->Rows;
 		$data_usage += $tablestatus->Data_length;
 		$index_usage +=  $tablestatus->Index_length;
-		$overhead_usage += $tablestatus->Data_free;
-		$total_gain += $tablestatus->Data_free;
+                
+                if ($tablestatus->Engine != 'innodb'){
+                    $overhead_usage += $tablestatus->Data_free;
+                    $total_gain += $tablestatus->Data_free;
+                }
 	}	
 	
 	$total_size = $data_usage + $index_usage;
+        wpo_debugLog('Total Size .... '.$total_size);
+        wpo_debugLog('Total Gain .... '.$total_gain);
 	return array (wpo_format_size($total_size), wpo_format_size($total_gain));
     //$wpdb->flush();
 	}
@@ -400,7 +425,7 @@ function wpo_getCurrentDBSize(){
  * @return total size
  */
 function wpo_updateTotalCleaned($current){
-	$previously_saved = get_option(OPTION_NAME_TOTAL_CLEANED,'0');
+    $previously_saved = get_option(OPTION_NAME_TOTAL_CLEANED,'0');
     $previously_saved = floatval($previously_saved);
 	
     $converted_current = floatval($current);
