@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:4000</loc>
+    </url>
+    
+    
+    <url>
+        <loc>http://localhost:4000/404.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/about/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/feed.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/index.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/screenshots/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/search.json</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/sitemap.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/tags/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/theme-setup/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/updates/</loc>
+    </url>
+    
+
+    
+    <url>
+        <loc>http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/</loc>
+    </url>
+    
+</urlset>

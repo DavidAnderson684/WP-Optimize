@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">WP-Optimize</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000/" />
+<updated>2014-05-12T11:36:24+00:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>Ruhani Rabin</name>
+  <uri>http://localhost:4000/</uri>
+  <email>get@email.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[What's new in release v.1.8.9]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/"/>
+  <id>http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9</id>
+  <updated>2014-05-11 23:06:06 +0000T00:00:00-00:00</updated>
+  <published>2014-05-12T00:00:00+00:00</published>
+  
+  <author>
+    <name>Ruhani Rabin</name>
+    <uri>http://localhost:4000</uri>
+    <email>get@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;There are a lot of stuff that has been re-coded in this release. &lt;/p&gt;
+
+&lt;h3 id=&quot;most-notable-changes-are&quot;&gt;Most notable changes are:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Persistent settings for main screen: Allows user to save the checkbox selection on the main screen so next time they do not need to select the items they use frequently. Red marked items could not be saved. &lt;img src=&quot;http://localhost:4000/images/2014-05-12-1.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Credits page has been re-organized with proper information and links.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Optimize is at per table basis now, skips optimization if it is innoDB tables&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Time settings according to the blog local time, so schedules and time display will show time properly. This would only work if the blog time has been set up properly&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I have enabled mixed type tables optimization. So basically what will it do? It will enable you to run optimization if you have mixed of innoDB and MyISAM tables. But, it will skip the optimization commands on innoDB tables&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;New table type column - this gives you an overlook of what types of tables you have on your database. &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;InnoDB table types are set to 0 bytes because most of the time they report wrong overhead size. &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/&quot;&gt;What's new in release v.1.8.9&lt;/a&gt; was originally published by Ruhani Rabin at &lt;a href=&quot;http://localhost:4000&quot;&gt;WP-Optimize&lt;/a&gt; on May 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>

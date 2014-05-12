@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Latest Updates &#8211; WP-Optimize</title>
-<meta name="description" content="The Ultimate WordPress Optimization Plugin.">
-<meta name="keywords" content="wordpress, responsive, plugin, optimization, database, mysql">
+<title>What's new in release v.1.8.9 &#8211; WP-Optimize</title>
+<meta name="description" content="Ultimate WordPress Cleanup and Optimization Tool.">
+<meta name="keywords" content="updates, releasenotes">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
-<meta name="twitter:title" content="Latest Updates">
-<meta name="twitter:description" content="The Ultimate WordPress Optimization Plugin.">
+<meta name="twitter:title" content="What's new in release v.1.8.9">
+<meta name="twitter:description" content="Ultimate WordPress Cleanup and Optimization Tool.">
 <meta name="twitter:creator" content="@ruhanirabin">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Latest Updates">
-<meta property="og:description" content="The Ultimate WordPress Optimization Plugin.">
-<meta property="og:url" content="http://localhost:4000/index.html">
+<meta property="og:title" content="What's new in release v.1.8.9">
+<meta property="og:description" content="Ultimate WordPress Cleanup and Optimization Tool.">
+<meta property="og:url" content="http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/">
 <meta property="og:site_name" content="WP-Optimize">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="WP-Optimize Feed">
 
 
@@ -63,7 +63,7 @@
 
 </head>
 
-<body id="page">
+<body id="post">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -109,20 +109,60 @@
 
 
 <div id="main" role="main">
-  <article class="entry">
+  <article class="hentry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">Latest Updates</h1>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#updates" title="Pages tagged updates">updates</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#releasenotes" title="Pages tagged releasenotes">releasenotes</a></span>
+        
+          <h1 class="entry-title">What's new in release v.1.8.9</h1>
+        
       </header>
+      <footer class="entry-meta">
+        <img src="http://localhost:4000/images/bio-photo.jpg" alt="Ruhani Rabin photo" class="author-photo">
+        <span class="author vcard">By <span class="fn"><a href="http://localhost:4000/about/" title="About Ruhani Rabin">Ruhani Rabin</a></span></span>
+        <span class="entry-date date published"><time datetime="2014-05-12T00:00:00+00:00"><i class="icon-calendar-empty"></i> May 12, 2014</time></span>
+        <span class="entry-date date modified"><time datetime="2014-05-11 23:06:06 +0000"><i class="icon-pencil"></i> May 11, 2014</time></span>
+        
+        <span><a href="http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/" rel="bookmark" title="What's new in release v.1.8.9"><i class="icon-link"></i> Permalink</a></span>
+        
+      </footer>
       <div class="entry-content">
-        <ul class="post-list">
- 
-  <li><article><a href="http://localhost:4000/whats-new-in-release-v-dot-1-8-dot-9/">What's new in release v.1.8.9 <span class="entry-date"><time datetime="2014-05-12T00:00:00+00:00">May 12, 2014</time></span></a></article></li>
+        <p>There are a lot of stuff that has been re-coded in this release. </p>
 
-</ul>
+<h3 id="most-notable-changes-are">Most notable changes are:</h3>
+
+<ol>
+  <li>
+    <p>Persistent settings for main screen: Allows user to save the checkbox selection on the main screen so next time they do not need to select the items they use frequently. Red marked items could not be saved. <img src="http://localhost:4000/images/2014-05-12-1.png" alt="Image" /></p>
+  </li>
+  <li>
+    <p>Credits page has been re-organized with proper information and links.</p>
+  </li>
+  <li>
+    <p>Optimize is at per table basis now, skips optimization if it is innoDB tables</p>
+  </li>
+  <li>
+    <p>Time settings according to the blog local time, so schedules and time display will show time properly. This would only work if the blog time has been set up properly</p>
+  </li>
+  <li>
+    <p>I have enabled mixed type tables optimization. So basically what will it do? It will enable you to run optimization if you have mixed of innoDB and MyISAM tables. But, it will skip the optimization commands on innoDB tables</p>
+  </li>
+  <li>
+    <p>New table type column - this gives you an overlook of what types of tables you have on your database. </p>
+  </li>
+  <li>
+    <p>InnoDB table types are set to 0 bytes because most of the time they report wrong overhead size. </p>
+  </li>
+</ol>
+
+        
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+      
+    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
 
@@ -183,7 +223,7 @@
 </script>
 
 
-          
+	        
 
 </body>
 </html>
