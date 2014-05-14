@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize</loc>
+        <loc></loc>
     </url>
     
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/404.html</loc>
+        <loc>/404.html</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/about/</loc>
+        <loc>/about/</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/feed.xml</loc>
+        <loc>/feed.xml</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/index.html</loc>
+        <loc>/index.html</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/screenshots/</loc>
+        <loc>/screenshots/</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/search.json</loc>
+        <loc>/search.json</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/sitemap.xml</loc>
+        <loc>/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/tags/</loc>
+        <loc>/tags/</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/theme-setup/</loc>
+        <loc>/theme-setup/</loc>
     </url>
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/updates/</loc>
+        <loc>/translations/</loc>
+    </url>
+    
+    <url>
+        <loc>/updates/</loc>
     </url>
     
 
     
     <url>
-        <loc>http://ruhanirabin.github.io/WP-Optimize/whats-new-in-release-v-dot-1-8-dot-9/</loc>
+        <loc>/whats-new-in-release-v-dot-1-8-dot-9/</loc>
     </url>
     
 </urlset>
