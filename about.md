@@ -10,6 +10,8 @@ image:
   creditlink: 
 ---
 
+##[Download]({{ site.github.zip_url }})
+
 **WP-Optimize** is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables. 
 
 One million downloads can't be wrong. It is a powerful utility and it should be handle with care.
