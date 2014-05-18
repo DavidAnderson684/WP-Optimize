@@ -73,17 +73,17 @@ if ( ! defined( 'WPINC' ) ) {
 <div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-		<h3><?php _e('Development Log','wp-optimize'); ?></h3>
+		<h3><?php _e('GitHub Development Log','wp-optimize'); ?></h3>
 		<?php // Get RSS Feed(s)
 		include_once( ABSPATH . WPINC . '/feed.php' );
 
 		// Get a SimplePie feed object from the specified feed source.
-		$rss = fetch_feed( 'http://ruhanirabin.github.io/WP-Optimize/feed.xml' );
+		$rss = fetch_feed( 'https://github.com/ruhanirabin/wp-optimize/commits/master.atom' );
 
 		if ( ! is_wp_error( $rss ) ) : // Checks that the object is created correctly
 
 			// Figure out how many total items there are, but limit it to 5. 
-			$maxitems = $rss->get_item_quantity( 5 ); 
+			$maxitems = $rss->get_item_quantity( 8 ); 
 
 			// Build an array of all the items, starting with element 0 (first element).
 			$rss_items = $rss->get_items( 0, $maxitems );
@@ -98,11 +98,12 @@ if ( ! defined( 'WPINC' ) ) {
 				<?php // Loop through each feed item and display each item as a hyperlink. ?>
 				<?php foreach ( $rss_items as $item ) : ?>
 					<li>
-						<b><?php printf( __( 'Update %s', 'wp-optimize' ), $item->get_date('j F Y | g:i a') ); ?></b>
-						<p><small>
+						<p>
 						<?php //echo esc_html( $item->get_description() ); ?>
 						<a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a>
-						</small></p>
+                                                &nbsp;
+                                                <small><?php echo $item->get_date('j F Y | g:i a') ; ?></small>
+						</p>
 					</li>
 				<?php endforeach; ?>
 			<?php endif; ?>
