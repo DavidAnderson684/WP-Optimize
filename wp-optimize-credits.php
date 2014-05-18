@@ -78,7 +78,7 @@ if ( ! defined( 'WPINC' ) ) {
 		include_once( ABSPATH . WPINC . '/feed.php' );
 
 		// Get a SimplePie feed object from the specified feed source.
-		$rss = fetch_feed( 'http://plugins.trac.wordpress.org/log/wp-optimize?limit=20&mode=stop_on_copy&format=rss' );
+		$rss = fetch_feed( 'http://ruhanirabin.github.io/WP-Optimize/feed.xml' );
 
 		if ( ! is_wp_error( $rss ) ) : // Checks that the object is created correctly
 
@@ -101,7 +101,7 @@ if ( ! defined( 'WPINC' ) ) {
 						<b><?php printf( __( 'Update %s', 'wp-optimize' ), $item->get_date('j F Y | g:i a') ); ?></b>
 						<p><small>
 						<?php //echo esc_html( $item->get_description() ); ?>
-						<?php echo $item->get_description(); ?>
+						<a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a>
 						</small></p>
 					</li>
 				<?php endforeach; ?>

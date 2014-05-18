@@ -36,6 +36,30 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 	
 
+function wpo_readFeed($rss_url, $number_of_itmes){
+
+    include_once( ABSPATH . WPINC . '/feed.php' );
+    $rss = fetch_feed( $rss_url );
+
+    if ( ! is_wp_error( $rss ) ) { // Checks that the object is created correctly
+
+            // Figure out how many total items there are, but limit it to 5. 
+            $maxitems = $rss->get_item_quantity( $number_of_itmes ); 
+
+            // Build an array of all the items, starting with element 0 (first element).
+            $rss_items = $rss->get_items( 0, $maxitems );
+            if ($maxitems > 0) {
+                return $rss_items;
+            }
+    }
+    else {
+        $rss_items = NULL;
+        return $rss_items;
+    }
+    
+}
+
+
 /**
  * wpo_detectDBType()
  * this function is redundant 

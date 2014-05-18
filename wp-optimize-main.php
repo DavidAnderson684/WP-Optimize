@@ -261,7 +261,7 @@ Function optimizeTablesQuick($Optimize){
 			?>
 
 		</p>
-		
+	
 		</div>
 		</div>	
 	 </div>
@@ -322,7 +322,15 @@ Function optimizeTablesQuick($Optimize){
 		
 <h3><?php _e('Status log: ', 'wp-optimize'); ?></h3>
    
-   
+<?php 
+    $news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
+
+    foreach ( $news_items as $item ) : ?>
+    <p>
+        <b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
+    </p>
+    <?php endforeach; ?>
+                
    <?php
 	$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
 	if ($lastopt !== 'Never'){
@@ -464,13 +472,13 @@ Function optimizeTablesQuick($Optimize){
     $total_cleaned_num = floatval($total_cleaned);
     
         if ($total_cleaned_num  > 0){
-            echo '<h4>';
+            echo '<h5>';
             _e('Total clean up overall','wp-optimize');
             echo ': ';
             echo '<font color="green">';
             echo wpo_format_size($total_cleaned);
             echo '</font>';
-            echo '</h4>';
+            echo '</h5>';
             
     	
         }
