@@ -1,11 +1,13 @@
+---
+---
 [
-	
+	{% for post in site.posts %}
 		{
-		  "title"      : "What&#39;s new in release v.1.8.9",
-		  "category"   : "",
-		  "url"        : "http://ruhanirabin.github.io/WP-Optimize/whats-new-in-release-v-dot-1-8-dot-9/",
-		  "date"       : "2014-05-12 00:00:00 +0000",
-		  "shortdate"  : "May 12, 2014"
-		} 
-	
+		  "title"      : "{{ post.title | escape }}",
+		  "category"   : "{{ post.category }}",
+		  "url"        : "{{ site.url }}{{ post.url }}",
+		  "date"       : "{{ post.date }}",
+		  "shortdate"  : "{{ post.date | date: '%B %d, %Y' }}"
+		} {% if forloop.last %}{% else %},{% endif %}
+	{% endfor %}
 ]

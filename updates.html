@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Latest Updates
-description: "The Ultimate WordPress Optimization Plugin."
-tags: [wordpress, responsive, plugin, optimization, database, mysql]
+permalink: /updates/
+title: Updates
+description: "An archive of posts sorted by date."
 ---
 
 <ul class="post-list">
-{% for post in site.posts limit:10 %} 
+{% for post in site.posts %} 
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
 {% endfor %}
 </ul>
