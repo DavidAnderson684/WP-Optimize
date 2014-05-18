@@ -5,7 +5,7 @@ title: About WP-Optimize
 tags: [wordpress, plugin, optimize, sql, php, responsive]
 modified: 2014-05-12
 image:
-  feature: wp-optimize-header.png
+  feature: wp-optimize-header-short.png
   credit: 
   creditlink: 
 ---
