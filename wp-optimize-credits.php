@@ -49,7 +49,7 @@ if ( ! defined( 'WPINC' ) ) {
 	<h3><?php _e('Translators','wp-optimize'); ?></h3><br />
 	<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
 	<p>	
-	<b><a href="<?php echo WPO_PLUGIN_URL.'translate.txt'; ?>" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
+	<b><a href="http://ruhanirabin.github.io/WP-Optimize/translations/" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
 	</p>
 	<br />
 		<br />
@@ -60,7 +60,7 @@ if ( ! defined( 'WPINC' ) ) {
         <p><a href="http://wp-managed.com/wp-login.php?action=register" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></p>
         <p><a href="http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs translator account)', 'wp-optimize'); ?></a></p>
         <p><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></p>
-        <p><a href="http://wordpress.org/plugins/wp-optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
+        <p><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
         <p><a href="https://github.com/ruhanirabin/WP-Optimize/issues" target="_blank"><?php _e('Support (GitHub)', 'wp-optimize'); ?></a></p>
         <p><a href="mailto:plugins+support@ruhanirabin.com" target="_blank"><?php _e('Support E-mail', 'wp-optimize'); ?></a></p>
         <p><a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
