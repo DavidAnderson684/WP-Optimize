@@ -14,7 +14,7 @@ image:
 
 One million downloads can't be wrong. It is a powerful utility and it should be handle with care.
 
-Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
+Please show your support for this plugin by giving it **[a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform)** :)
 
 ###MAJOR FEATURES:
 
@@ -32,4 +32,4 @@ Please show your support for this plugin by giving it [a rating](http://wordpres
 *   Enable/Disable weekly schedules of optimization
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
-*   Enabled for Administrators only.
+*   **Enabled for Administrators only.**
