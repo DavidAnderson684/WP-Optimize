@@ -30,4 +30,7 @@ There are a lot of stuff that has been re-coded in this release.
 
 8. Shows last blog post from GitHub Pages for WP-Optimize at the **Status Log**
 
-9. **Independent translation portal** for Translators to live update translations before actual releases. So their translation at always in sync. **[Read instructions]({{ site.url }}/translations/)**
+9. **Independent translation portal** for Translators to live update translations before actual releases. So their translation at always in sync. **[Read instructions]({{ site.url }}/translations/)** ![Image]({{ site.url }}/images/translations-interface.png)
+
+
+
