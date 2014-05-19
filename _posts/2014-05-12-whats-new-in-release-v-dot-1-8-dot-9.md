@@ -16,7 +16,7 @@ There are a lot of stuff that has been re-coded in this release.
 
 1. Persistent settings for main screen: Allows user to save the checkbox selection on the main screen so next time they do not need to select the items they use frequently. Red marked items could not be saved. ![Image]({{ site.url }}/images/2014-05-12-1.png)
 
-2. Credits page has been re-organized with proper information and links.
+2. Credits page has been re-organized with proper information and links. Now includes GitHub master branch commits.
 
 3. Optimize is at per table basis now, skips optimization if it is innoDB tables
 
@@ -24,6 +24,8 @@ There are a lot of stuff that has been re-coded in this release.
 
 5. I have enabled mixed type tables optimization. So basically what will it do? It will enable you to run optimization if you have mixed of innoDB and MyISAM tables. But, it will skip the optimization commands on innoDB tables
 
-6. New table type column - this gives you an overlook of what types of tables you have on your database. 
+6. New table type column - this gives you an overlook of what types of tables you have on your database.  ![Image]({{ site.url }}/images/table-type-display.png)
 
-7. InnoDB table types are set to 0 bytes because most of the time they report wrong overhead size. 
+7. InnoDB table type **Overhead Size**  are set to **0 bytes** because most of the time they report wrong overhead size.
+
+8. Shows last blog post from GitHub Pages for WP-Optimize at the **Status Log**
