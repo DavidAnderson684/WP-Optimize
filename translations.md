@@ -26,6 +26,16 @@ I have implemented a self hosted translation update system using **GlotPress**. 
 7. Once you are done, you can use the **"Suggest Translation"** Button.
 8. Yes that is it, at the **[main window](http://wp-managed.com/projects/wp-optimize)** - you will be able to see the **progress like 90% done or 70% done** etc. 
 
+##Do not forget to fill up these 2 fields
+
+1. **(Translator Name)** - This field you should translate to **your name** (eg. Ruhani Rabin)
+2. **http://(Tranlator Website)** - This field should be **your website**. (eg. http://abc.com )
+
+**See Example:**
+
+ ![Image]({{ site.url }}/images/translations-user-info-fields.png)
+
+
 **If you have a new language file that is not included yet**:
 
 - Send Request to **[this email](mailto:plugins@ruhanirabin.com)**
