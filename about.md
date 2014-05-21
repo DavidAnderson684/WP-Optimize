@@ -20,7 +20,7 @@ Please show your support for this plugin by giving it **[a rating](http://wordpr
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
-*   Removal of trshed comments
+*   Removal of trashed comments
 *   Mobile device friendly, now you can optimize your site on the go
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
@@ -33,3 +33,18 @@ Please show your support for this plugin by giving it **[a rating](http://wordpr
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
 *   **Enabled for Administrators only.**
+
+##Screen shots
+
+###The Main Screen
+![Image]({{ site.url }}/images/wpo-main-screen.png)
+
+###Tables View Screen
+![Image]({{ site.url }}/images/wpo-tables-screen.png)
+
+###Settings Screen
+![Image]({{ site.url }}/images/wpo-settings-screen.png)
+
+###Info Screen
+![Image]({{ site.url }}/images/wpo-info-screen.png)
+
