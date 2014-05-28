@@ -6,14 +6,13 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-$GLOBALS['wpo_auto_options'] = wpo_get_all_options();
+$GLOBALS['wpo_auto_options'] = get_option('wp-optimize-auto');
 error_reporting( error_reporting() & ~E_NOTICE );
        
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // …
 	if (isset($_POST["enable-schedule"])) {
-		//update_option( OPTION_NAME_SCHEDULE, 'true' );
-                wpo_save_option('schedule-enabled', 'true');
+		update_option( OPTION_NAME_SCHEDULE, 'true' );
 		wpo_cron_deactivate();
 		
 			/* if (!wp_next_scheduled('wpo_cron_event2')) {
@@ -23,21 +22,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			}	 */	
 			if (isset($_POST["schedule_type"])) {
 				$schedule_type = $_POST['schedule_type'];
-				//update_option( OPTION_NAME_SCHEDULE_TYPE, $schedule_type );
-                                wpo_save_option('schedule-type', $schedule_type);
+				update_option( OPTION_NAME_SCHEDULE_TYPE, $schedule_type );
 
 			} else { 
-				//update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
-                                wpo_save_option('schedule-type', 'wpo_weekly');
+				update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
 			}				
 			wpo_cron_activate();
             add_action('wpo_cron_event2', 'wpo_cron_action');
             //wpo_debugLog('We are at setting page form submission and reached wpo_cron_activate()');
 		} else { 
-		//update_option( OPTION_NAME_SCHEDULE, 'false' );
-                wpo_save_option('schedule-enabled', 'false');
-		//update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
-                wpo_save_option('schedule-type', 'wpo_weekly');
+		update_option( OPTION_NAME_SCHEDULE, 'false' );
+		update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
 		wpo_cron_deactivate();
         
 		}
@@ -46,39 +41,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	if (isset($_POST["enable-retention"])) {
 		$retention_period = $_POST['retention-period'];
-		wpo_save_option('retention-enabled', 'true');
-                wpo_save_option('retention-period', $retention_period);
-                //update_option( OPTION_NAME_RETENTION_ENABLED, 'true' );
-		//update_option( OPTION_NAME_RETENTION_PERIOD, $retention_period );	
+		update_option( OPTION_NAME_RETENTION_ENABLED, 'true' );
+		update_option( OPTION_NAME_RETENTION_PERIOD, $retention_period );	
 
 	} else { 
-		//update_option( OPTION_NAME_RETENTION_ENABLED, 'false' );
-                wpo_save_option('retention-enabled', 'false');
+		update_option( OPTION_NAME_RETENTION_ENABLED, 'false' );
 	}
 
 	if (isset($_POST["enable-admin-bar"])) {
-		//update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'true' );
-                wpo_save_option('enable-admin-menu', 'true');
+		update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'true' );
 	} else { 
-		//update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' );
-                wpo_save_option('enable-admin-menu', 'false');
+		update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' );
 	}
 
     if( isset($_POST['wp-optimize-settings']) ) {
     	$new_options = $_POST['wp-optimize-auto'];
-    	$bool_opts = array( 'schedule-revisions', 
-                            'schedule-drafts', 
-                            'schedule-spams',
-                            'schedule-unapproved', 'schedule-transient', 'schedule-postmeta', 'schedule-tags', 
-                            'schedule-optimize' );
+    	$bool_opts = array( 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags', 'optimize' );
     	
         foreach($bool_opts as $key) {
     		$new_options[$key] = $new_options[$key] ? 'true' : 'false';
     	}
-    	update_option( 'wp-optimize-options', $new_options);
-        
+    	update_option( 'wp-optimize-auto', $new_options);
 
-        $wpo_auto_options = wpo_get_all_options();
+        $wpo_auto_options = get_option('wp-optimize-auto');
         
     }
 
@@ -89,15 +74,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-
-<?php
-
-//wpo_get_all_options();
-echo '<pre>';
-print_r(wpo_get_all_options());
-echo '</pre>';
-
-?>
 <div class="wpo_section wpo_group">
 <form action="#" method="post" enctype="multipart/form-data" name="settings_form" id="settings_form">
 
@@ -107,12 +83,12 @@ echo '</pre>';
 			<div class="inside">
 				<h3><?php _e('General Settings', 'wp-optimize'); ?></h3>
 				   <p>
-                                       <input name="enable-retention" id="enable-retention" type="checkbox" value ="true" <?php echo wpo_get_option('retention-enabled') == 'true' ? 'checked="checked"':''; ?> />
+				   <input name="enable-retention" id="enable-retention" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_RETENTION_ENABLED) == 'true' ? 'checked="checked"':''; ?> />
 				   <?php 
 				   echo '<label>';
 				   _e('Keep last ', 'wp-optimize'); ?>
 					<select id="retention-period" name="retention-period">                      
-						<option value="<?php echo wpo_get_option('retention-period', '2'); ?>"><?php echo wpo_get_option('retention-period','2'); ?></option>
+						<option value="<?php echo get_option(OPTION_NAME_RETENTION_PERIOD, '2'); ?>"><?php echo get_option(OPTION_NAME_RETENTION_PERIOD,'2'); ?></option>
 						<option value="2">2</option>
 						<option value="4">4</option>
 						<option value="6">6</option>
@@ -133,7 +109,7 @@ echo '</pre>';
 					
 			<p>
 			<label>
-                            <input name="enable-admin-bar" id="enable-admin-bar" type="checkbox" value ="true" <?php echo wpo_get_option('enable-admin-menu') == 'true' ? 'checked="checked"':''; ?> />
+				<input name="enable-admin-bar" id="enable-admin-bar" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_ENABLE_ADMIN_MENU, 'false') == 'true' ? 'checked="checked"':''; ?> />
 				<?php 
 				_e('Enable admin bar link ', 'wp-optimize'); 
 				echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
@@ -159,16 +135,16 @@ echo '</pre>';
 <div class="wpo_col wpo_span_1_of_3">
 	<div class="postbox">
 		<div class="inside">
-                    <h3><?php _e('Auto Clean-up Settings', 'wp-optimize'); $wpo_auto_options = wpo_get_all_options();?></h3>
+			<h3><?php _e('Auto Clean-up Settings', 'wp-optimize'); $wpo_auto_options = get_option('wp-optimize-auto');?></h3>
 			<p>
-                            <input name="enable-schedule" id="enable-schedule" type="checkbox" value ="true" <?php echo wpo_get_option('schedule-enabled') == 'true' ? 'checked="checked"':''; ?> />
+			<input name="enable-schedule" id="enable-schedule" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_SCHEDULE) == 'true' ? 'checked="checked"':''; ?> />
 				<?php _e('Enable scheduled clean-up and optimization (Beta feature!)', 'wp-optimize'); ?>
 				<br /><br />
 				<?php _e('Select schedule type (default is Weekly)', 'wp-optimize'); ?><br />
 				<select id="schedule_type" name="schedule_type">                      
-					<option value="<?php echo wpo_get_option('schedule-type', 'wpo_weekly'); ?>">
+					<option value="<?php echo get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly'); ?>">
 					<?php 
-					$last_schedule = wpo_get_option('schedule-type', 'wpo_weekly'); 
+					$last_schedule = get_option(OPTION_NAME_SCHEDULE_TYPE,'wpo_weekly'); 
 					switch ($last_schedule) {
 						case "wpo_weekly":
 							_e('Every week', 'wp-optimize');
@@ -209,24 +185,24 @@ echo '</pre>';
 	</p>
 	
 	<p>
-   <input name="wp-optimize-auto[schedule-revisions]" id="wp-optimize-auto[schedule-revisions]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-revisions'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove auto revisions', 'wp-optimize'); ?>
+   <input name="wp-optimize-auto[revisions]" id="wp-optimize-auto[revisions]" type="checkbox" value="true" <?php echo $wpo_auto_options['revisions'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove auto revisions', 'wp-optimize'); ?>
    </p>
    
    <p>
-   <input name="wp-optimize-auto[schedule-drafts]" id="wp-optimize-auto[schedule-drafts]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-drafts'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove auto drafts', 'wp-optimize'); ?>
+   <input name="wp-optimize-auto[drafts]" id="wp-optimize-auto[drafts]" type="checkbox" value="true" <?php echo $wpo_auto_options['drafts'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove auto drafts', 'wp-optimize'); ?>
    </p>
    
    <p>
-   <input name="wp-optimize-auto[schedule-spams]" id="wp-optimize-auto[schedule-spams]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-spams'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove spam comments', 'wp-optimize'); ?>
+   <input name="wp-optimize-auto[spams]" id="wp-optimize-auto[spams]" type="checkbox" value="true" <?php echo $wpo_auto_options['spams'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove spam comments', 'wp-optimize'); ?>
    </p>
    
    <p>
-   <input name="wp-optimize-auto[schedule-unapproved]" id="wp-optimize-auto[schedule-unapproved]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-unapproved'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove unapproved comments', 'wp-optimize'); ?>
+   <input name="wp-optimize-auto[unapproved]" id="wp-optimize-auto[unapproved]" type="checkbox" value="true" <?php echo $wpo_auto_options['unapproved'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove unapproved comments', 'wp-optimize'); ?>
    </p>
    
    <p>
    <span style="color: red;">
-   <input name="wp-optimize-auto[schedule-transient]" id="wp-optimize-auto[schedule-transient]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-transient'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove transient options', 'wp-optimize'); ?>
+   <input name="wp-optimize-auto[transient]" id="wp-optimize-auto[transient]" type="checkbox" value="true" <?php echo $wpo_auto_options['transient'] == 'true' ? 'checked="checked"':''; ?> /> <?php _e('Remove transient options', 'wp-optimize'); ?>
    </p>
 
    
@@ -240,7 +216,7 @@ echo '</pre>';
 	-->
 
 	<p>
-   <input name="wp-optimize-auto[schedule-optimize]" id="wp-optimize-auto[schedule-optimize]" type="checkbox" value="true" <?php echo $wpo_auto_options['schedule-optimize'] == 'true' ? 'checked="checked"':''; ?> /> <b><?php _e('Optimize database', 'wp-optimize'); ?></b>
+   <input name="wp-optimize-auto[optimize]" id="wp-optimize-auto[optimize]" type="checkbox" value="true" <?php echo $wpo_auto_options['optimize'] == 'true' ? 'checked="checked"':''; ?> /> <b><?php _e('Optimize database', 'wp-optimize'); ?></b>
 	</p>
     
     <?php 

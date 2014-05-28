@@ -303,165 +303,80 @@ function wpo_cron_action() {
  * @return none
  */
 function wpo_PluginOptionsSetDefaults() {
+		$deprecated = null;
+		$autoload = 'no';
+		
+	if ( get_option( OPTION_NAME_SCHEDULE ) !== false ) {
+		// The option already exists, so we just update it.
+
+	} else {
+		// The option hasn't been added yet. We'll add it with $autoload set to 'no'.
+		add_option( OPTION_NAME_SCHEDULE, 'false', $deprecated, $autoload );
+		add_option( OPTION_NAME_LAST_OPT, 'Never', $deprecated, $autoload );	
+		add_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly', $deprecated, $autoload );	
+		// deactivate cron
+		wpo_cron_deactivate();
+	}
+	if ( get_option( OPTION_NAME_RETENTION_ENABLED ) !== false ) {
+	//
+	}
+	else{
+	    add_option( OPTION_NAME_RETENTION_ENABLED, 'false', $deprecated, $autoload );
+		add_option( OPTION_NAME_RETENTION_PERIOD, '2', $deprecated, $autoload ); 
+	}
+	
+	if ( get_option( OPTION_NAME_ENABLE_ADMIN_MENU ) !== false ) {
+	//
+	}
+	else{
+	    add_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false', $deprecated, $autoload );
+	}
     
+	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
+	//
+	}
+	else{
+	    add_option( OPTION_NAME_TOTAL_CLEANED, '0', $deprecated, $autoload );
+	}
     
-    //wpo_get_all_options();
-    update_option( 'wp-optimize-options', wpo_get_all_options() );
-//  // deactivate cron
-    wpo_cron_deactivate();
+    if ( get_option( 'wp-optimize-auto' ) !== false ) {
+		// The option already exists, so we just update it.
+
+	} else {
+        // 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags' 
+    	$new_options = array(
+    		'revisions' => 'true',
+    		'drafts' => 'true',
+    		'spams' => 'true',
+    		'unapproved' => 'false',
+    		'transient' => 'false',
+    		'postmeta' => 'false',
+    		'tags' => 'false',
+    		'optimize' => 'true'
+    	);
     
+    	update_option( 'wp-optimize-auto', $new_options );
+        }
+
+        // settings for main screen
+        if ( get_option( 'wp-optimize-settings' ) !== false ) {
+		// The option already exists, so we just update it.
+
+	} else {
+        // 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags' 
+    	$new_options_main = array(
+    		'user-revisions' => 'true',
+    		'user-drafts' => 'true',
+    		'user-spams' => 'true',
+    		'user-unapproved' => 'true',
+    		'user-transient' => 'false',
+    		'user-optimize' => 'true'
+    	);
     
-//		$deprecated = null;
-//		$autoload = 'no';
-//		
-//	if ( get_option( OPTION_NAME_SCHEDULE ) !== false ) {
-//		// The option already exists, so we just update it.
-//
-//	} else {
-//		// The option hasn't been added yet. We'll add it with $autoload set to 'no'.
-//		add_option( OPTION_NAME_SCHEDULE, 'false', $deprecated, $autoload );
-//		add_option( OPTION_NAME_LAST_OPT, 'Never', $deprecated, $autoload );	
-//		add_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly', $deprecated, $autoload );	
-//		// deactivate cron
-//		wpo_cron_deactivate();
-//	}
-//	if ( get_option( OPTION_NAME_RETENTION_ENABLED ) !== false ) {
-//	//
-//	}
-//	else{
-//	    add_option( OPTION_NAME_RETENTION_ENABLED, 'false', $deprecated, $autoload );
-//		add_option( OPTION_NAME_RETENTION_PERIOD, '2', $deprecated, $autoload ); 
-//	}
-//	
-//	if ( get_option( OPTION_NAME_ENABLE_ADMIN_MENU ) !== false ) {
-//	//
-//	}
-//	else{
-//	    add_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false', $deprecated, $autoload );
-//	}
-//    
-//	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
-//	//
-//	}
-//	else{
-//	    add_option( OPTION_NAME_TOTAL_CLEANED, '0', $deprecated, $autoload );
-//	}
-//    
-//    if ( get_option( 'wp-optimize-auto' ) !== false ) {
-//		// The option already exists, so we just update it.
-//
-//	} else {
-//        // 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags' 
-//    	$new_options = array(
-//    		'revisions' => 'true',
-//    		'drafts' => 'true',
-//    		'spams' => 'true',
-//    		'unapproved' => 'false',
-//    		'transient' => 'false',
-//    		'postmeta' => 'false',
-//    		'tags' => 'false',
-//    		'optimize' => 'true'
-//    	);
-//    
-//    	update_option( 'wp-optimize-auto', $new_options );
-//        }
-//
-//        // settings for main screen
-//        if ( get_option( 'wp-optimize-settings' ) !== false ) {
-//		// The option already exists, so we just update it.
-//
-//	} else {
-//        // 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags' 
-//    	$new_options_main = array(
-//    		'user-revisions' => 'true',
-//    		'user-drafts' => 'true',
-//    		'user-spams' => 'true',
-//    		'user-unapproved' => 'true',
-//    		'user-transient' => 'false',
-//    		'user-optimize' => 'true'
-//    	);
-//    
-//    	update_option( 'wp-optimize-settings', $new_options_main );
-//        }
+    	update_option( 'wp-optimize-settings', $new_options_main );
+        }
     	
 } 
-
-
-/**
- * wpo_save_option()
- * Function: Save Options in array
- * @param $option_name, $key, $value
- * @return
- */
-function wpo_save_option( $key, $value) {
-	//first get the option
-	$options = get_option( 'wp-optimize-options' );
-
-	if ( !$options ) {
-		//no options have been saved yet, so add it
-		add_option( 'wp-optimize-options', array($key => $value) );
-	} else {
-		//update the existing option
-		$options[$key] = $value;
-		update_option( 'wp-optimize-options', $options );
-	}
-}
-
-function wpo_get_option($key, $default = false) {
-	$options = get_option( 'wp-optimize-options' );
-
-	if ( $options ) {
-		return (array_key_exists( $key, $options )) ? $options[$key] : $default;
-	}
-
-	return $default;
-}
-
-function wpo_delete_option( $key) {
-	$options = get_option( 'wp-optimize-options' );
-
-	if ( $options ) {
-		unset($options[$key]);
-		update_option( 'wp-optimize-options', $options );
-	}
-}
-
-function wpo_default_options() {
-
-  return array(  
-    'user-revisions' => 'true',
-    'user-drafts' => 'true',
-    'user-spams' => 'true',
-    'user-unapproved' => 'true',
-    'user-transient' => 'false',
-    'user-optimize' => 'true',
-    'schedule-revisions' => 'true',
-    'schedule-drafts' => 'true',
-    'schedule-spams' => 'true',
-    'schedule-unapproved' => 'false',
-    'schedule-transient' => 'false',
-    'schedule-postmeta' => 'false',
-    'schedule-tags' => 'false',
-    'schedule-optimize' => 'true',
-    'schedule-enabled' => 'false',
-    'schedule-type' => 'wpo_weekly',
-    'retention-period' => '2',
-    'retention-enabled' => 'false',
-    'enable-admin-menu' => 'false',
-    'last-optimized' => 'Never',
-    'total-cleaned' => '0'
-      
-  );
-
-}
-
-function wpo_get_all_options() {
-
-    return array_merge( get_option( 'wp-optimize-options', array() ), wpo_default_options() );
-
-}
-
-
 
 
 /**
