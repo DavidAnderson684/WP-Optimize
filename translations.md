@@ -29,7 +29,7 @@ I have implemented a self hosted translation update system using **GlotPress**. 
 ##Do not forget to fill up these 2 fields
 
 1. **(Translator Name)** - This field you should translate to **your name** (eg. Ruhani Rabin)
-2. **http://(Tranlator Website)** - This field should be **your website**. (eg. http://abc.com )
+2. **http://(Translator Website)** - This field should be **your website**. (eg. http://abc.com )
 
 **See Example:**
 
@@ -40,7 +40,7 @@ I have implemented a self hosted translation update system using **GlotPress**. 
 
 - Send Request to **[this email](mailto:plugins@ruhanirabin.com)**
 
-##You should also note
+##Other things (Important to Know)
 1. When I prepare new release I will upload the new .POT file so the system will be updated with new strings (if there is any new strings).
 2. I will wait for the translations to finalize and pack it inside the plugin. So the new version will be available with new language update. 
 3. I will not use any of your email for any other purpose other than WP-Optimize translations. 
