@@ -10,28 +10,33 @@ $text = '';
 
 if (isset($_POST["clean-revisions"])) {
     $text .= wpo_cleanUpSystem('revisions');
+    }
+
         $checkValue = $_POST["clean-revisions"];
         if ($checkValue) {
-        $user_options["user-revisions"] = TRUE;    
+            $user_options["user-revisions"] = TRUE;    
         } else {
-        $user_options["user-revisions"] = FALSE;    
+            $user_options["user-revisions"] = FALSE;    
         }
-    }
-	
+    
+    
 if (isset($_POST["clean-autodraft"])) {
     $text .= wpo_cleanUpSystem('autodraft');
+
+
+    //$user_options["user-drafts"] = $user_options["user-drafts"] ? 'true' : 'false';
+    }	
+    
     $checkValue = $_POST["clean-autodraft"];
         if ($checkValue) {
         $user_options["user-drafts"] = TRUE;    
         } else {
         $user_options["user-drafts"] = FALSE;    
         }
-
-    //$user_options["user-drafts"] = $user_options["user-drafts"] ? 'true' : 'false';
-    }	
-
+        
 if (isset($_POST["clean-comments"])) {
     $text .= wpo_cleanUpSystem('spam');
+    }
         $checkValue = $_POST["clean-comments"];
         if ($checkValue) {
         $user_options["user-spams"] = TRUE;    
@@ -39,10 +44,10 @@ if (isset($_POST["clean-comments"])) {
         $user_options["user-spams"] = FALSE;    
         }
     
-    }
 
 if (isset($_POST["unapproved-comments"])) {
     $text .= wpo_cleanUpSystem('unapproved');
+    }
         $checkValue = $_POST["unapproved-comments"];
         if ($checkValue) {
         $user_options["user-unapproved"] = TRUE;    
@@ -50,7 +55,6 @@ if (isset($_POST["unapproved-comments"])) {
         $user_options["user-unapproved"] = FALSE;    
         }
     
-    }
 if (isset($_POST["clean-pingbacks"])) {
     $text .= wpo_cleanUpSystem('pingbacks');
     }
@@ -72,13 +76,13 @@ if (isset($_POST["clean-tags"])) {
 	
 if (isset($_POST["optimize-db"])) {
     $text .= DB_NAME.' '.__('Database Optimized!', 'wp-optimize').'<br>';
+    }
         $checkValue = $_POST["optimize-db"];
         if ($checkValue) {
         $user_options["user-optimize"] = TRUE;    
         } else {
         $user_options["user-optimize"] = FALSE;    
         }    
-    }
 
 if (isset($_POST["wp-optimize"])) {
     update_option( 'wp-optimize-settings', $user_options );
@@ -119,7 +123,7 @@ Function optimizeTablesQuick($Optimize){
     //if ($tablestatus->Engine != 'innodb'){
     $tables = $wpdb->get_col("SHOW TABLES");  	    
     foreach($tables as $table_name) {
-    $local_query = 'OPTIMIZE TABLE '.$table_name;
+    $local_query = 'OPTIMIZE TABLE `'.$table_name.'`';
     wpo_debugLog('optimizing .... '.$table_name);
     $result_query  = $wpdb->query($local_query);	
     } //end for
@@ -135,6 +139,8 @@ Function optimizeTablesQuick($Optimize){
 
 ?>
 	
+
+
 <div class="wpo_section wpo_group">
 <form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
@@ -143,6 +149,7 @@ Function optimizeTablesQuick($Optimize){
 		<div class="inside">
 		<h3><?php _e('Clean-up options', 'wp-optimize'); 
                     $wpo_user_selection = get_option( 'wp-optimize-settings' );
+                    //var_dump($wpo_user_selection);
                 ?></h3>
 		<p>
 		<label>

@@ -24,7 +24,9 @@ Please join GitHub and collaborate.
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
-*   Removal of trshed comments
+*   Removal of trashed comments
+*   Removal of akismet metadata from comments
+*   Removal of other stale metadata from comments
 *   Mobile device friendly, now you can optimize your site on the go
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
@@ -89,7 +91,7 @@ Once you get your account password in your email [Log in here to edit language](
 *   Language pl_PL: Kornel
 *   Language ja   : stranger-jp
 *   Language cs_Cz: Vladislav Musilek - http://toret.cz/
-*   Language hu_HU: László Viktor - http://hunstart.hu/		
+*   Language hu_HU: László Viktor - http://hunstart.hu/
 
 == Installation ==
 
@@ -157,6 +159,8 @@ Please check your database for corrupted tables. That can happen, usually your w
 * ONE MILLION+ Downloads. THANK YOU!!
 * Language updates platform - see readme file for details. 
 * Mixed type tables optimization supported and in BETA 
+* Removal of akismet metadata from comments
+* Removal of other stale metadata from comments
 * InnoDB tables won't be optimized. 
 * Main screen user selection will be saved. Red items selection will not be saved
 * Scheduled time display will be shown according to WordPress blog local time
