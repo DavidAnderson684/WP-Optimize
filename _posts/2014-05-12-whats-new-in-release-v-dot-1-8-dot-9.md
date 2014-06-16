@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What's new in release v.1.8.9"
-modified: 2014-05-12 07:06:06 +0800
+modified: 2014-06-14 07:06:06 +0800
 tags: [updates, releasenotes]
 image:
   feature: 
@@ -22,7 +22,7 @@ There are a lot of stuff that has been re-coded in this release.
 
 4. Time settings according to the blog local time, so schedules and time display will show time properly. This would only work if the blog time has been set up properly
 
-5. I have enabled mixed type tables optimization. So basically what will it do? It will enable you to run optimization if you have mixed of innoDB and MyISAM tables. But, it will skip the optimization commands on innoDB tables
+5. I have enabled mixed type tables optimization. So basically what will it do? It will enable you to run optimization if you have mixed of innoDB and MyISAM tables. But, it will skip the optimization commands on innoDB tables. Some tables may report wrong size, haven't been able to find a proper workaround to this. 
 
 6. New table type column - this gives you an overlook of what types of tables you have on your database.  ![Image]({{ site.url }}/images/table-type-display.png)
 
@@ -31,6 +31,7 @@ There are a lot of stuff that has been re-coded in this release.
 8. Shows last blog post from GitHub Pages for WP-Optimize at the **Status Log**
 
 9. **Independent translation portal** for Translators to live update translations before actual releases. So their translation at always in sync. **[Read instructions]({{ site.url }}/translations/)** ![Image]({{ site.url }}/images/translations-interface.png)
+10. Updated SQL Queries to include backticks for better compatibilty with reserved names. 
 
 
 
