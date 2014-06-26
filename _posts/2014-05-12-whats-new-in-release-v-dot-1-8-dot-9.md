@@ -18,7 +18,7 @@ There are a lot of stuff that has been re-coded in this release.
 
 2. Credits page has been re-organized with proper information and links. Now includes GitHub master branch commits.
 
-3. Optimize is at per table basis now, skips optimization if it is innoDB tables
+3. Now cleans up redundant comment meta data and akismet left over data from comments meta data table. 
 
 4. Time settings according to the blog local time, so schedules and time display will show time properly. This would only work if the blog time has been set up properly
 
