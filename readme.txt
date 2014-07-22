@@ -71,27 +71,14 @@ Once you get your account password in your email [Log in here to edit language](
 
 **WP-Optimize Translators:**
 
-*   Language ru_RU: Русский язык - Виталий МакЛауд (Эликсир жизни) - http://www.visbiz.org/
-*   Language zh_TW: 正體中文語系檔案由香腸炒魷魚(香腸)翻譯。 -  http://sofree.cc
-*   Language zh_CN: 简体中文语言包 由 SoumaHoshino 提供 - http://moesora.com/
+*   Language de_DE: Rene Wolf - http://www.fluchtsportler.de
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language de_DE: Kniebremser - http://www.fluchtsportler.de
-*   Language lv   : Tulkotāji - http://trendfor.lv
-*   Language pt_BR: Leonardo Kfoury - http://www.kfoury.com.br/site/
-*   Language fa_IR: Morteza Amiri - http://www.GameSiders.com/
-*   Language es_ES: Navone Juan - http://navonejuan.com.ar/
+*   Language lv   : Juris Orlovs - http://trendfor.lv
 *   Language tr_TR: Hakan Er tarafından Türkçe Dili - http://hakanertr.wordpress.com/
-*   Language id_ID: Nasrulhaq Muiz - http://al-badar.net/
 *   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
-*   Language nb_NO: Simen Eggen - http://www.simeneggen.com
-*   Language nl_NL: Mischa ter Smitten - http://blog.tersmitten.nl/
-*   Language sk_SK: Patrik Žec (PATWIST) - http://patwist.com
-*   Language lt_LT: Su pagarba Bronislav - http://www.internetiniusvetainiukurimas.com/
-*   Language it_IT: Diego Belli
-*   Language pl_PL: Kornel
-*   Language ja   : stranger-jp
-*   Language cs_Cz: Vladislav Musilek - http://toret.cz/
-*   Language hu_HU: László Viktor - http://hunstart.hu/
+
+** Some languages are removed from the above list, because translators did not update the languages for current version **
+[See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
 
 == Installation ==
 
