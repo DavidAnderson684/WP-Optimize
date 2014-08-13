@@ -1,4 +1,4 @@
-﻿=== WP-Optimize ===
+=== WP-Optimize ===
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
@@ -76,6 +76,9 @@ Once you get your account password in your email [Log in here to edit language](
 *   Language lv   : Juris Orlovs - http://trendfor.lv
 *   Language tr_TR: Hakan Er tarafından Türkçe Dili - http://hakanertr.wordpress.com/
 *   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
+*   Language ka_GE: Givi Tabatadze - http://tagiweb.com
+*   Language zh_CN: Maie - http://maie.name
+*   Language es_ES: Navone Juan -  http://navonej.com.ar/
 
 ** Some languages are removed from the above list, because translators did not update the languages for current version **
 [See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
@@ -115,10 +118,10 @@ InnoDB Table formats not supported. WP-Optimize will disable some features if it
 No I can't. Please make a backup of your entire database before using this Plugin for the first time. Also backup your database when you upgrade to a MAJOR NEW version (for example - v0.9.8 to 1.5.5 ).
 
 = Is there any bug in this plugin =
-The plugin is a development on the go - that means there are unforseen situations and bugs. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
+The plugin is a development on the go - that means there are unforeseen situations and bugs. So I would recommend you to test it out on your local system or make a backup of your database (just to be extra careful).
 
 = Every time I clear transient options, it comes back automatically =
-WordPress automatically creates transient options. It is pretty difficult to completley get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
+WordPress automatically creates transient options. It is pretty difficult to completely get rid of it. This is why everytime you clean transient options, you will notice new transient options has been created. My best advice would be clear the transient options on a schedule. So, for example it may create 50 transient option in a week and you clear it weekly so the next 50 transient option comes in. Rather than having 100 transient option, you will have 50 per week.
 
 = Optimization does not have any effect on database / it is not optimizing the database =
 Some of the shared web hosting company does not allow scripts to run OPTIMIZE command via SQL statements. If you are hosted with these web hosts, the optimize action will not be able to optimize your database. Please consult your web hosting company regarding this matter.

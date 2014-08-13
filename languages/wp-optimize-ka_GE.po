@@ -1,0 +1,626 @@
+# Translation of WP-Optimize in Georgian
+# This file is distributed under the same license as the WP-Optimize package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-08-13 07:57:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: WP-Optimize\n"
+
+#: wp-optimize-credits.php:76
+msgid "GitHub Development Log"
+msgstr "GitHub განვითარებაზე შესვლა"
+
+#: wp-optimize-credits.php:50
+msgid "(Translator name)"
+msgstr "Givi Tabatadze"
+
+#: wp-optimize-credits.php:50
+msgid "http://(Translator Website)"
+msgstr "http://tagiweb.com"
+
+#: wp-optimize-credits.php:52
+msgid "Read Translation Instructions"
+msgstr "იხილეთ მითითებები მთარგმნელისთვის"
+
+#: wp-optimize-credits.php:65
+msgid "Support E-mail"
+msgstr "მხარდაჭერის ელ-ფოსტა"
+
+#: wp-optimize-credits.php:62
+msgid "Request New Language"
+msgstr "ახალი ენის მოთხოვნა"
+
+#: wp-optimize-credits.php:61
+msgid "Plugin Translation Portal (needs translator account)"
+msgstr "ჩანართის თარგმანის პორტალი (საჭიროებს მთარგმნელის ანგარიშს)"
+
+#: wp-optimize-credits.php:60
+msgid "Get a Translator Account"
+msgstr "მიიღეთ მთარგმნელის ანგარიში"
+
+#: wp-optimize-main.php:317
+msgid "Donate! Helps me keep improvising"
+msgstr "შემოწირულობა! მეხმარება იმპროვიზირების შენარჩუნებაში"
+
+#: wp-optimize-main.php:314
+msgid "Rating"
+msgstr "შეფასება"
+
+#: wp-optimize-main.php:313
+msgid "Please give a proper rating:)"
+msgstr "გთხოვთ მისცეს სათანადო შეფასება:)"
+
+#: wp-optimize-main.php:312
+msgid "Donate!"
+msgstr "შემოწირულობა!"
+
+#: wp-optimize-main.php:312
+msgid "Please donate! It really helps me keep improvising"
+msgstr "გთხოვთ შემოწიროთ! ეს ნამდვილად მეხმარება იმპროვიზირების შენარჩუნებაში"
+
+#: wp-optimize-main.php:259
+msgid "Some selection state will be saved. Red options are not selected by default and selection will not be saved. Do not select them unless you really need to use them"
+msgstr "ზოგიერთი მოწყობის ფორმა იქნება შენახული. მოწყობები წითელ ფერში, არ არის არჩეული ნაგულისხმებად და მათი შენახვა ვერ მოხერხდება. არ მონიშნოთ ისინი, თუ თქვენ ნამდვილად არ გამოიყენებთ მათ"
+
+#: wp-optimize-credits.php:58
+msgid "Plugin Resources"
+msgstr "ჩანართის რესურსები"
+
+#: wp-optimize-credits.php:63
+msgid "Plugin Homepage"
+msgstr "ჩანართის ვებ-გვერდი"
+
+#: wp-optimize-credits.php:64
+msgid "Support (GitHub)"
+msgstr "მხარდაჭერის ფორუმი"
+
+#: wp-optimize-credits.php:66
+msgid "Change Log"
+msgstr "ცვლილებები"
+
+#: wp-optimize-credits.php:67
+msgid "FAQ"
+msgstr "FAQ"
+
+#: wp-optimize-credits.php:96
+msgid "No items"
+msgstr "ელემენტების გარეშე"
+
+#: wp-optimize-main.php:74
+msgid "Database Optimized!"
+msgstr "მონაცემთა ბაზა ოპტიმიზირებულია!"
+
+#: wp-optimize-main.php:142 wp-optimize-main.php:144
+msgid "Clean-up options"
+msgstr "დასუფთავების მოწყობა"
+
+#: wp-optimize-main.php:152
+msgid "Clean post revisions which are older than "
+msgstr "გადასინჯული ჩანაწების წაშლა რომელიც უფრო ძველია ვიდრე "
+
+#: wp-optimize-main.php:155 wp-optimize-main.php:173 wp-optimize-main.php:193
+#: wp-optimize-main.php:212
+msgid "weeks"
+msgstr "კვირა"
+
+#: wp-optimize-main.php:157
+msgid "Clean all post revisions"
+msgstr "გადასინჯული ჩანაწერების წაშლა"
+
+#: wp-optimize-main.php:170
+msgid "Clean auto draft posts which are older than "
+msgstr "ავტო შენახული მონახაზების წაშლა რომელიც უფრო ძველია ვიდრე "
+
+#: wp-optimize-main.php:175
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "ავტო შენახული მონახაზის წაშლა"
+
+#: wp-optimize-main.php:190
+msgid "Remove spam comments which are older than "
+msgstr "ძველი სპამ-კომენტარის წაშლა"
+
+#: wp-optimize-main.php:195
+msgid "Remove spam comments and comments in trash"
+msgstr "სპამ-კომენტარის წაშლა სანაგვიდან"
+
+#: wp-optimize-main.php:209
+msgid "Remove unapproved comments which are older than "
+msgstr "ძველი დაუდასტურებელი კომენტარების წაშლა"
+
+#: wp-optimize-main.php:214 wp-optimize-settings.php:200
+msgid "Remove unapproved comments"
+msgstr "დაუდასტურებელი კომენტარის წაშლა"
+
+#: wp-optimize-main.php:227 wp-optimize-settings.php:205
+msgid "Remove transient options"
+msgstr "დროებითი ცვლილებების წაშლა"
+
+#: wp-optimize-main.php:238
+msgid "Remove pingbacks"
+msgstr "ცნობების წაშლა"
+
+#: wp-optimize-main.php:249
+msgid "Remove trackbacks"
+msgstr "უკუბმულების წაშლა"
+
+#: wp-optimize-main.php:273
+msgid "Actions"
+msgstr "მოქმედებები"
+
+#: wp-optimize-main.php:282
+msgid "Optimize database tables"
+msgstr "მონაცემთა ბაზის ცხრილის ოპტიმიზირება"
+
+#: wp-optimize-main.php:290
+msgid "Note:"
+msgstr "შენიშვნა:"
+
+#: wp-optimize-main.php:293
+msgid "InnoDB tables will not be optimized"
+msgstr "InnoDB ცხრილები არ იქნება ოპტიმიზირებული"
+
+#: wp-optimize-main.php:299
+msgid "Select safe options"
+msgstr "აირჩიეთ უსაფრთხო მოწყობა"
+
+#: wp-optimize-main.php:300
+msgid "Warning:"
+msgstr "გაფრთხილება:"
+
+#: wp-optimize-main.php:301
+msgid "Always make a backup of your DB when you upgrade to major versions"
+msgstr "ყოველთვის გააკეთეთ მონაცემთა ბაზის სარეზერვო კოპირება როცა ანახლებთ ახალ ვერსიაზე"
+
+#: wp-optimize-main.php:306
+msgid "PROCESS"
+msgstr "გაშვება"
+
+#: wp-optimize-main.php:318 wp-optimize-main.php:319
+msgid "Give a rating :)"
+msgstr "მომიმატეთ რეიტინგი"
+
+#: wp-optimize-main.php:323
+msgid "Status log: "
+msgstr "სტატუსის ჟურნალი:"
+
+#: wp-optimize-main.php:338
+msgid "Last automatic optimization was at"
+msgstr "ბოლო ავტო ოპტიმიზაცია ჩატარდა"
+
+#: wp-optimize-main.php:350
+msgid "There was no automatic optimization"
+msgstr "არ ჩატარებულა ავტო ოპტიმიზაცია"
+
+#: wp-optimize-main.php:400 wp-optimize-main.php:425
+msgid "Check settings"
+msgstr "მოწყობებზე გადასვლა"
+
+#: wp-optimize-main.php:365
+msgid "Scheduled cleaning enabled"
+msgstr "დაგეგმილი გასუფთავება ჩართულია"
+
+#: wp-optimize-main.php:377
+msgid "Next schedule"
+msgstr "შემდეგი განრიგი"
+
+#: wp-optimize-main.php:388
+msgid "Refresh"
+msgstr "განახლება"
+
+#: wp-optimize-main.php:397
+msgid "Scheduled cleaning disabled"
+msgstr "დაგეგმილი გასუფთავება გამორთულია"
+
+#: wp-optimize-main.php:411
+msgid "Keeping last "
+msgstr "უკანასკნელი შენახული "
+
+#: wp-optimize-main.php:414 wp-optimize-settings.php:100
+msgid "weeks data"
+msgstr "კვირის მონაცემები"
+
+#: wp-optimize-main.php:422
+msgid "Not keeping recent data"
+msgstr "არ შეინახო ბოლო მონაცემები"
+
+#: wp-optimize-main.php:439
+msgid "Current database size : "
+msgstr "მონაცემთა ბაზის მოცულობა : "
+
+#: wp-optimize-main.php:444
+msgid "You have saved"
+msgstr "შენახულია"
+
+#: wp-optimize-main.php:451
+msgid "Current database size"
+msgstr "მონაცემთა ბაზის მოცულობა"
+
+#: wp-optimize-main.php:459
+msgid "You can save almost"
+msgstr "გასუფთავდება"
+
+#: wp-optimize-main.php:476
+msgid "Total clean up overall"
+msgstr "სულ გასუფთავდა სივრცე"
+
+#: wp-optimize-main.php:497
+msgid "Sponsor"
+msgstr "მხარდამჭერი"
+
+#: wp-optimize-settings.php:71
+msgid "Settings updated"
+msgstr "ცვლილებები განახლდა"
+
+#: wp-optimize-settings.php:84
+msgid "General Settings"
+msgstr "ძირითადი მოწყობა"
+
+#: wp-optimize-settings.php:89
+msgid "Keep last "
+msgstr "შეინახე ბოლო "
+
+#: wp-optimize-settings.php:105
+msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgstr "აქ მითითებული ვარიანტი შეინახავს არჩეული კვირის მონაცემებს და წაშლის ყველა მონაცემებს სანაგვეში ამ პერიოდამდე. ეს ასევე მოქმედებს ავტო გასუფთავების პროცესში"
+
+#: wp-optimize-settings.php:114
+msgid "Enable admin bar link "
+msgstr "ადმინის დაფაზე "
+
+#: wp-optimize-settings.php:116
+msgid "(Click here to refresh)"
+msgstr "(განაახლეთ აქ)"
+
+#: wp-optimize-settings.php:122
+msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
+msgstr "ეს ვარიანტი დააყენებს WP-Optimize-ს ბმულს ადმინის დაფის ზედა მხარეს (ნაგულისხმები გამორთულია). საჭიროა გვერდის განახლება."
+
+#: wp-optimize-settings.php:128
+msgid "SAVE SETTINGS"
+msgstr "ცვლილების შენახვა"
+
+#: wp-optimize-settings.php:138
+msgid "Auto Clean-up Settings"
+msgstr "ავტო გასუფთავების მოწყობა"
+
+#: wp-optimize-settings.php:141
+msgid "Enable scheduled clean-up and optimization (Beta feature!)"
+msgstr "ჩართვა დაგეგმილი გასუფთავების და ოპტიმიზაციისა (ექსპერიმენტალური!) "
+
+#: wp-optimize-settings.php:143
+msgid "Select schedule type (default is Weekly)"
+msgstr "აირჩიეთ გრაფიკის ტიპი (ნაგულისხმებია ყოველკვირეული)"
+
+#: wp-optimize-settings.php:150 wp-optimize-settings.php:162
+#: wp-optimize-settings.php:168
+msgid "Every week"
+msgstr "ყოველ კვირა"
+
+#: wp-optimize-settings.php:154 wp-optimize-settings.php:169
+msgid "Every other week (every 14 days)"
+msgstr "ყოველი ორი კვირა (14 დღე)"
+
+#: wp-optimize-settings.php:158 wp-optimize-settings.php:170
+msgid "Every month (every 31 days)"
+msgstr "ყოველი თვე (31 დღე)"
+
+#: wp-optimize-settings.php:174
+msgid "Automatic cleanup will perform the following:"
+msgstr "ავტო გასუფთავება შეასრულებს შემდეგ მოქმედებას:"
+
+#: wp-optimize-settings.php:176
+msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
+msgstr "წაშლის ცვლილებებს, ავტო მონახაზებს, ჩანაწერებს/კომენტარებს სანაგვიდან, დროებით ცვლილებებს. ამის შემდეგ მოხდება ოპტიმიზაცია მონაცემთა ბაზის."
+
+#: wp-optimize-settings.php:183
+msgid "These options will only work if the automatic clean-up schedule has been enabled"
+msgstr "ეს ვარიანტი იმუშავებს მხოლოდ იმ შემთხვევაში, თუ ავტომატური გასუფთავების გრაფიკი უკვე ჩართულია"
+
+#: wp-optimize-settings.php:188
+msgid "Remove auto revisions"
+msgstr "ავტო ცვლილებების წაშლა"
+
+#: wp-optimize-settings.php:192
+msgid "Remove auto drafts"
+msgstr "ავტო მონახაზების წაშლა"
+
+#: wp-optimize-settings.php:196
+msgid "Remove spam comments"
+msgstr "სპამ-კომენტარების წაშლა"
+
+#: wp-optimize-settings.php:209
+msgid "Remove orphaned post meta"
+msgstr "დაუკავშირებელი ჩანაწერის მეტას წაშლა"
+
+#: wp-optimize-settings.php:213
+msgid "Remove unused tags"
+msgstr "გამოუყენებელი ტეგების წაშლა"
+
+#: wp-optimize-settings.php:219
+msgid "Optimize database"
+msgstr "მონაცემთა ბაზის ოპტიმიზირება"
+
+#: wp-optimize-settings.php:225
+msgid "If you have InnoDB tables. They will not be optimized!"
+msgstr "თუ თქვენ გაქვთ InnoDB ცხრილები. ისინი არ იქნება ოპტიმიზირებული!"
+
+#: wp-optimize-settings.php:232
+msgid "SAVE AUTO CLEAN-UP SETTINGS"
+msgstr "ავტო გასუფთავების ცვლილების შენახვა"
+
+#: wp-optimize-tables.php:20
+msgid "Database Name:"
+msgstr "მონაცემთა ბაზის სახელწოდება:"
+
+#: wp-optimize-tables.php:28
+msgid "Optimized all the tables found in the database."
+msgstr "მონაცემთა ბაზის ყველა ცხრილი ოპტიმიზირებულია."
+
+#: wp-optimize-tables.php:36
+msgid "No."
+msgstr "ნომ."
+
+#: wp-optimize-tables.php:38
+msgid "Records"
+msgstr "ჩანაწერები"
+
+#: wp-optimize-tables.php:39
+msgid "Data Size"
+msgstr "მონაც. მოცულობა"
+
+#: wp-optimize-tables.php:40
+msgid "Index Size"
+msgstr "ინდექს. მოცულობა"
+
+#: wp-optimize-tables.php:41
+msgid "Type"
+msgstr "სახეობა"
+
+#: wp-optimize-tables.php:42
+msgid "Overhead"
+msgstr "აღემატება"
+
+#: wp-optimize-tables.php:137
+msgid "Total:"
+msgstr "სულ:"
+
+#: wp-optimize-tables.php:138
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "%s ცხრილი"
+
+#: wp-optimize-tables.php:139
+msgid "%s Record"
+msgid_plural "%s Records"
+msgstr[0] "%s ჩანაწერი"
+
+#: wp-optimize-tables.php:179
+msgid "Total Size of Database"
+msgstr "მონაცემთა ბაზის საერთო მოცულობა"
+
+#: wp-optimize-tables.php:191
+msgid "Optimization Results"
+msgstr "ოპტიმიზაციის შედეგი"
+
+#: wp-optimize-tables.php:196
+msgid "Total Space Saved"
+msgstr "სულ გასუფთავებულია ადგილი"
+
+#: wp-optimize-tables.php:208
+msgid "Optimization Possibility"
+msgstr "ოპტიმიზაციის შესაძლებლობები"
+
+#: wp-optimize-tables.php:215
+msgid "Total space can be saved"
+msgstr "სულ შესაძლოა განთავისუფლდეს ადგილი"
+
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+msgid "http://www.ruhanirabin.com/wp-optimize/"
+msgstr "http://www.ruhanirabin.com/wp-optimize/"
+
+msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgstr "ეს ჩანართი დაგეხმარებათ შეინახოთ მონაცემთა ბაზა სუფთად, გაწმინდავს ზედმეტ სპამსა და მონახაზებს. (გამოიყენეთ სიფრთხილით)."
+
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+msgid "https://github.com/ruhanirabin/WP-Optimize"
+msgstr "https://github.com/ruhanirabin/WP-Optimize"
+
+#: wp-optimize-admin.php:25 wp-optimize-admin.php:43 wp-optimize.php:96
+msgid "Optimizer"
+msgstr "ოპტიმიზატორი"
+
+#: wp-optimize-admin.php:28 wp-optimize-admin.php:46
+msgid "MYSQL"
+msgstr "MYSQL"
+
+#: wp-optimize-admin.php:33 wp-optimize-admin.php:54 wp-optimize.php:95
+msgid "Settings"
+msgstr "მოწყობა"
+
+#: wp-optimize-admin.php:34 wp-optimize-admin.php:56
+msgid "Info"
+msgstr "ინფორმაცია"
+
+#: wp-optimize-admin.php:52 wp-optimize-tables.php:37
+msgid "Tables"
+msgstr "ცხრილები"
+
+#: wp-optimize-common.php:392
+msgid "Gb"
+msgstr "გბ"
+
+#: wp-optimize-common.php:394
+msgid "Mb"
+msgstr "მბ"
+
+#: wp-optimize-common.php:396
+msgid "Kb"
+msgstr "კბ"
+
+#: wp-optimize-common.php:398
+msgid "bytes"
+msgstr "ბაიტი"
+
+#: wp-optimize-common.php:486
+msgid "transient options deleted"
+msgstr "დროებითი ცვლილებები გასუფთავებულია"
+
+#: wp-optimize-common.php:513
+msgid "post revisions deleted"
+msgstr "შეცვლილი ჩანაწერი გასუფთავებულია"
+
+#: wp-optimize-common.php:524
+msgid "auto drafts deleted"
+msgstr "ავტომატურად შენახული მონახაზი გასუფთავებულია"
+
+#: wp-optimize-common.php:534 wp-optimize-common.php:555
+msgid "items removed from Trash"
+msgstr "ნივთი სანაგვედან გასუფთავებულია"
+
+#: wp-optimize-common.php:546
+msgid "spam comments deleted"
+msgstr "სპამ-კომენტარი გასუფთავებულია"
+
+#: wp-optimize-common.php:576
+msgid "unapproved comments deleted"
+msgstr "დაუდასტურებელი კომენტარები გასუფთავებულია"
+
+#: wp-optimize-common.php:582
+msgid "pingbacks deleted"
+msgstr "ცნობები გასუფთავებულია"
+
+#: wp-optimize-common.php:588
+msgid "trackbacks deleted"
+msgstr "უკუბმულები გასუფთავებულია"
+
+#: wp-optimize-common.php:595
+msgid "Enabled weekly processing"
+msgstr "ჩართულია ყოველკვირეული დამუშავება"
+
+#: wp-optimize-common.php:601
+msgid "Disabled weekly processing"
+msgstr "გამორთულია ყოველკვირეული დამუშავება"
+
+#: wp-optimize-common.php:610
+msgid "NO Actions Taken"
+msgstr "ქმედებები არაა მიღებული"
+
+#: wp-optimize-common.php:637
+msgid "transient options in your database"
+msgstr "დროებითი ცვლილებები მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:639
+msgid "No transient options found"
+msgstr "დროებითი ცვლილებები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:648
+msgid "orphaned postmeta in your database"
+msgstr "დაუკავშირებელი ჩანაწერის მეტა მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:650
+msgid "No orphaned postmeta in your database"
+msgstr "დაუკავშირებელი ჩანაწერის მეტა არ არის ნაპოვნი მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:659
+msgid "unused tags in your database"
+msgstr "გამოუყენებელი ტეგები მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:661
+msgid "No unused tags found"
+msgstr "გამოუყენებელი ტეგები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:674
+msgid "post revisions in your database"
+msgstr "შეცვლილი ჩანაწერი მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:676
+msgid "No post revisions found"
+msgstr "შეცვლილი ჩანაწერები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:689
+msgid "auto draft post(s) in your database"
+msgstr "ავტომატური მონახაზი მონაცემთა ბაზაში"
+
+#: wp-optimize-common.php:691
+msgid "No auto draft posts found"
+msgstr "ავტომატური მონახაზი  არაა ნაპოვნი"
+
+#: wp-optimize-common.php:703
+msgid "spam comments found"
+msgstr "სპამ-კომენტარები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:703 wp-optimize-common.php:734
+msgid "Review"
+msgstr "გადასინჯვა"
+
+#: wp-optimize-common.php:705
+msgid "No spam comments found"
+msgstr " სპამ-კომენტარები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:734
+msgid "unapproved comments found"
+msgstr "დაუდასტურებელი კომენტარები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:736
+msgid "No unapproved comments found"
+msgstr "დაუდასტურებელი კომენტარები არაა ნაპოვნი"
+
+#: wp-optimize-common.php:744
+msgid "Pingbacks found"
+msgstr "ცნობა არის ნაპოვნი"
+
+#: wp-optimize-common.php:746
+msgid "No pingbacks found"
+msgstr "ცნობები არ არის ნაპოვნი"
+
+#: wp-optimize-common.php:754
+msgid "Trackbacks found"
+msgstr "უკუბმულები არის ნაპოვნი"
+
+#: wp-optimize-common.php:756
+msgid "No trackbacks found"
+msgstr "უკუბმულები არ არის ნაპოვნი"
+
+#: wp-optimize-common.php:762
+msgid "nothing"
+msgstr "არაფერი"
+
+#: wp-optimize-credits.php:14
+msgid "Credits"
+msgstr "დამსახურება"
+
+#: wp-optimize-credits.php:15
+msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
+msgstr "პროექტი WP-Optimize დაარსდა ჩემი საკუთარი საჭიროებისადმი სასარგებლო პროგრამის სახით. მალე მე მივხვდი რომ იგი გამოადგებოდა და დაეხმარებოდა სხვა ადამიანებსაც. მე პირადად ვუხდი მადლობას ყველას ვინც მოიხმარს ამ ჩანართს ყოველდღიური საჭიროებისათვის. აგრეთვე მადლობა მთარგმნელებს და ვინც გაიღო შემოწირულობა ამ პროექტისათვის."
+
+#: wp-optimize-credits.php:25
+msgid "Share this plugin on Facebook"
+msgstr "გააზიარე ეს ჩანართი ფეისბუკზე"
+
+#: wp-optimize-credits.php:38
+msgid "Contributing Developers"
+msgstr "თანაშემქმნელები, რომლებმაც შეიტანეს წვლილი"
+
+#: wp-optimize-credits.php:39
+msgid "Help me make this plugin better"
+msgstr "დამეხმარეთ ამ ჩანართის გაუმჯობესებაში"
+
+#: wp-optimize-credits.php:39
+msgid "I am looking for contributing developers."
+msgstr "ვეძებ დამხმარეს, რომელიც წვლილს შეიტანს განვითარებაში."
+
+#: wp-optimize-credits.php:40
+msgid "Your name and website will be credited here in the plugin"
+msgstr "თქვენი სახელი და ვებ-გვერდი გამოქვეყნდება ამ ჩანართში"
+
+#: wp-optimize-credits.php:49
+msgid "Translators"
+msgstr "მთარგმნელები"
