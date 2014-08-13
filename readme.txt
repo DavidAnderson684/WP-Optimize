@@ -2,8 +2,8 @@
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
-Requires at least: 3.7
-Tested up to: 3.9.1.nightly
+Requires at least: 3.8
+Tested up to: 3.9.2
 Stable tag: 1.8.9
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

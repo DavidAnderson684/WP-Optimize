@@ -1,4 +1,6 @@
-I have implemented a translation update system using GlotPress. It will enable you to update WP-Optimize language to the latest version. Also will help you to find out how many translations are missing. 
+I have implemented a translation update system using GlotPress. It will enable you to update WP-Optimize language to the latest version. Also will help you to find out how many translations are missing.
+
+Language which is not updated up-to 90% will not be included in plugin release
 
 To work with this system you will need to have an account attached to it. Here are the steps. 
 
