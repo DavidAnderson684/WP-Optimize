@@ -3,8 +3,8 @@ Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.8
-Tested up to: 4.0-beta3
-Stable tag: 1.8.9
+Tested up to: 4.0-beta4
+Stable tag: 1.8.9.6
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -144,6 +144,11 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.9.6 =
+* There were few number formatting problem and detection of innoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
+* Duplicate msg fixed
+
 
 = 1.8.9 =
 * ONE MILLION+ Downloads. THANK YOU!!
