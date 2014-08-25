@@ -49,7 +49,7 @@ echo "'";
 	$alternate = ' class="alternate"';
 	global $wpdb;
 	// Read SQL Version and act accordingly
-    // Check for innoDB tables
+    // Check for InnoDB tables
     // Check for windows servers
     $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
     $total_gain = 0;
@@ -75,7 +75,7 @@ echo "'";
 		echo '<td>'.$tablestatus->Engine.'</td>'."\n";;
 		//echo '<td>'.wpo_format_size($tablestatus->Data_free).'</td>'."\n";
 
-        if ($tablestatus->Engine != 'innoDB'){
+        if ($tablestatus->Engine != 'InnoDB'){
 
 		echo '<td>';
     		if (isset($_POST["optimize-db"])) {
@@ -122,7 +122,7 @@ echo "'";
 		$data_usage += $tablestatus->Data_length;
 		$index_usage +=  $tablestatus->Index_length;
 
-        if ($tablestatus->Engine != 'innoDB'){
+        if ($tablestatus->Engine != 'InnoDB'){
             $overhead_usage += $tablestatus->Data_free;
             $total_gain += $tablestatus->Data_free;
         } else {

@@ -425,7 +425,7 @@ function wpo_getCurrentDBSize(){
 		$data_usage += $tablestatus->Data_length;
 		$index_usage +=  $tablestatus->Index_length;
 
-                if ($tablestatus->Engine != 'innoDB'){
+                if ($tablestatus->Engine != 'InnoDB'){
                     $overhead_usage += $tablestatus->Data_free;
                     $total_gain += $tablestatus->Data_free;
                 }

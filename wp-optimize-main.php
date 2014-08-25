@@ -113,14 +113,14 @@ Function optimizeTablesQuick($Optimize){
         $row_usage += $tablestatus->Rows;
         $data_usage += $tablestatus->Data_length;
         $index_usage +=  $tablestatus->Index_length;
-            if ($tablestatus->Engine != 'innoDB'){
+            if ($tablestatus->Engine != 'InnoDB'){
             $overhead_usage += $tablestatus->Data_free;
             $total_gain += $tablestatus->Data_free;
             }
         }
 
     if ($Optimize == "yes" ){
-    //if ($tablestatus->Engine != 'innoDB'){
+    //if ($tablestatus->Engine != 'InnoDB'){
     $tables = $wpdb->get_col("SHOW TABLES");
     foreach($tables as $table_name) {
     $local_query = 'OPTIMIZE TABLE `'.$table_name.'`';
