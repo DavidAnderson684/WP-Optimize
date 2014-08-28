@@ -69,7 +69,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	echo '<div id="message" class="updated fade">';
     echo '<strong>'._e('Settings updated','wp-optimize').'</strong></div>';
+
+	if( isset($_POST['wp-optimize-disable-all-comments']) ) {
+		wpo_disableLinkbacks('comments');
+		echo '<div id="message" class="updated fade">';
+		echo '<strong>'._e('Comments disabled on all current and previously published posts','wp-optimize').'</strong></div>';
+		
+	}
+	
+	if( isset($_POST['wp-optimize-enable-all-comments']) ) {
+		wpo_enableLinkbacks('comments');
+		echo '<div id="message" class="updated fade">';
+		echo '<strong>'._e('Comments enabled on all current and previously published posts','wp-optimize').'</strong></div>';
+		
+	}	
+	
+	if( isset($_POST['wp-optimize-disable-all-trackbacks']) ) {
+		wpo_disableLinkbacks('trackbacks');
+		echo '<div id="message" class="updated fade">';
+		echo '<strong>'._e('Trackbacks disabled on all current and previously published posts','wp-optimize').'</strong></div>';
+		
+	}
+	
+	if( isset($_POST['wp-optimize-enable-all-trackbacks']) ) {
+		wpo_enableLinkbacks('trackbacks');
+		echo '<div id="message" class="updated fade">';
+		echo '<strong>'._e('Trackbacks enabled on all current and previously published posts','wp-optimize').'</strong></div>';
+		
+	}	
+		
 }
+
 
 
 ?>
@@ -241,4 +271,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <input type="hidden" name="action" value="save_redirect" />
 
 </form>
+
+<div class="wpo_col wpo_span_1_of_3">
+		<div class="postbox">
+			<div class="inside">
+            <h3><?php _e('Trackbacks Actions', 'wp-optimize'); ?></h3>
+			<form action="#" method="post" enctype="multipart/form-data" name="settings_other" id="settings_other">
+            <!-- insert here -->
+            <p>
+            <input class="button" type="submit" name="wp-optimize-disable-all-trackbacks" value="<?php _e('Disable all', 'wp-optimize'); ?>" /> &nbsp; 
+            <input class="button" type="submit" name="wp-optimize-enable-all-trackbacks" value="<?php _e('Enable all', 'wp-optimize'); ?>" />
+            </p>
+				<small><?php
+						_e('This will disable/enable Trackbacks on all your current and previously published posts', 'wp-optimize');
+						?>
+				</small>
+
+            <h3><?php _e('Comments Actions', 'wp-optimize'); ?></h3>
+            <p>
+            <input class="button" type="submit" name="wp-optimize-disable-all-comments" value="<?php _e('Disable all', 'wp-optimize'); ?>" /> &nbsp;
+            <input class="button" type="submit" name="wp-optimize-enable-all-comments" value="<?php _e('Enable all', 'wp-optimize'); ?>" />
+            </p>
+				<small><?php
+						_e('This will disable/enable Comments on all your current and previously published posts', 'wp-optimize');
+						?>
+				</small>
+          
+                
+            </form>
+            </div>
+        </div>
 </div>

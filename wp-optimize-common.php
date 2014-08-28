@@ -105,6 +105,73 @@ function wpo_getRetainInfo(){
 
 
 /*
+ * function wpo_disable_linkbacks()
+ *
+ * parameters: message to debug
+ *
+ *
+ *
+ * @return none
+ */
+function wpo_disableLinkbacks($type) {
+global $wpdb;
+	switch ($type) {
+        case "trackbacks":
+		
+		$thissql = "UPDATE `$wpdb->posts` SET ping_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
+		$thissql .= ';';
+		$trackbacks = $wpdb->query( $thissql );
+		break;
+		
+        case "comments":
+		$thissql = "UPDATE `$wpdb->posts` SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
+		$thissql .= ';';
+		$comments = $wpdb->query( $thissql );
+		break;
+
+
+	default:
+	//;
+	break;
+	}
+	
+}
+
+/*
+ * function wpo_disable_linkbacks()
+ *
+ * parameters: message to debug
+ *
+ *
+ *
+ * @return none
+ */
+function wpo_enableLinkbacks($type) {
+global $wpdb;
+	switch ($type) {
+        case "trackbacks":
+		
+		$thissql = "UPDATE `$wpdb->posts` SET ping_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
+		$thissql .= ';';
+		$trackbacks = $wpdb->query( $thissql );
+		break;
+		
+        case "comments":
+		$thissql = "UPDATE `$wpdb->posts` SET comment_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
+		$thissql .= ';';
+		$comments = $wpdb->query( $thissql );
+		break;
+
+
+	default:
+	//;
+	break;
+	}
+	
+}
+
+
+/*
  * function wpo_debugLog()
  *
  * parameters: message to debug
