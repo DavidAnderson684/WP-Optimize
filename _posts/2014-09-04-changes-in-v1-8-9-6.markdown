@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Changes in v1.8.9.6"
+date: 2014-09-04T19:21:19+08:00
+tags: [updates, releasenotes]
+image:
+  feature: 
+  credit: 
+  creditlink: 
+comments: 
+share: true
+---
+###What's changed
+
+1. There were few **number formatting problem** and detection of InnoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
+2. Now has the ability to batch **enable/disable trackbacks and comments** for ***all your published posts***.
+3. Other code optimizations and cleanup
