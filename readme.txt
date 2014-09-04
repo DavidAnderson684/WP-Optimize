@@ -6,7 +6,7 @@ Requires at least: 3.8
 Tested up to: 4.0-beta3
 Stable tag: 1.8.9
 License: GPLv2+
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Simple but effective plugin allows you to extensively clean up your WordPress database and optimize it without doing manual queries.
 
@@ -264,7 +264,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Enable/Disable weekly schedules of optimization. This is an EXPERIMENTAL feature. It may or may not work on all servers.
 
 = 0.9.4 =
-* Non Initialized variables fixes as of http://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
+* Non Initialized variables fixes as of https://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
 
 = 0.9.3 =
 * Removed security tools.
