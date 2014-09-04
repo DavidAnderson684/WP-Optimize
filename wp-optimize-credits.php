@@ -63,8 +63,8 @@ if ( ! defined( 'WPINC' ) ) {
         <p><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>
         <p><a href="https://github.com/ruhanirabin/WP-Optimize/issues" target="_blank"><?php _e('Support (GitHub)', 'wp-optimize'); ?></a></p>
         <p><a href="mailto:plugins+support@ruhanirabin.com" target="_blank"><?php _e('Support E-mail', 'wp-optimize'); ?></a></p>
-        <p><a href="http://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
-        <p><a href="http://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a></p>
+        <p><a href="https://wordpress.org/plugins/wp-optimize/changelog/" target="_blank"><?php _e('Change Log', 'wp-optimize'); ?></a></p>
+        <p><a href="https://wordpress.org/plugins/wp-optimize/faq/" target="_blank"><?php _e('FAQ', 'wp-optimize'); ?></a></p>
         </h4>
 			</div>
 		</div>	
