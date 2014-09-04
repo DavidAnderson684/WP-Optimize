@@ -3,7 +3,7 @@ Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.8
-Tested up to: 4.0-beta4
+Tested up to: 4.0-RC4
 Stable tag: 1.8.9.6
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,8 @@ Please join GitHub and collaborate.
 
 **MAJOR FEATURES:**
 
+*   Enable/Disable trackbacks for all published post
+*   Enable/Disable comments for all published post
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
 *   Removal of trashed comments
@@ -146,8 +148,10 @@ Please check your database for corrupted tables. That can happen, usually your w
 == Changelog ==
 
 = 1.8.9.6 =
-* There were few number formatting problem and detection of innoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
+* There were few number formatting problem and detection of InnoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
 * Duplicate msg fixed
+* Enable/Disable trackbacks for all published post
+* Enable/Disable comments for all published post
 
 
 = 1.8.9 =
