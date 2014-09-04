@@ -317,12 +317,12 @@ Function optimizeTablesQuick($Optimize){
 		<p>
 
                         <a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me keep improvising', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
-                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating:)', 'wp-optimize'); ?>">
+                        <a class="button-primary" href="https://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating:)', 'wp-optimize'); ?>">
                         <?php _e('Rating', 'wp-optimize'); ?>
                         </a>
 
 <!--                <b><a href="<?php echo WPO_PAYPAL ; ?>" target="_blank"><?php _e('Donate! Helps me keep improvising', 'wp-optimize'); ?></a></b>&nbsp; | &nbsp;
-		<b><a href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Give a rating :)', 'wp-optimize'); ?>">
+		<b><a href="https://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Give a rating :)', 'wp-optimize'); ?>">
 		<?php _e('Give a rating :)', 'wp-optimize'); ?>
 		</a></b>-->
 		</p>
