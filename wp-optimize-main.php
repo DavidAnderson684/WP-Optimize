@@ -263,7 +263,7 @@ Function optimizeTablesQuick($Optimize){
 		<p>
 			<?php
 			echo '<small>';
-			_e('Some selection state will be saved. Red options are not selected by default and selection will not be saved. Do not select them unless you really need to use them', 'wp-optimize');
+			_e('Do not select RED marked items unless you really need to use them', 'wp-optimize');
 			echo '</small>';
 			?>
 		</p>
