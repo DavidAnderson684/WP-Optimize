@@ -3,8 +3,8 @@ Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.8
-Tested up to: 4.0-beta3
-Stable tag: 1.8.9
+Tested up to: 4.0
+Stable tag: 1.8.9.6
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,12 +16,14 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
 
-Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions. 
+Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions.
 
 Please join GitHub and collaborate.
 
 **MAJOR FEATURES:**
 
+*   Enable/Disable trackbacks for all published post
+*   Enable/Disable comments for all published post
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
 *   Removal of trashed comments
@@ -49,7 +51,7 @@ Please join GitHub and collaborate.
 *   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. Now WP-Optimize allows you to optimize and shrink your posts table by removing not necessary post revisions from the database. As example, if you have a post which is approximately 100KB data and you have 5 revisions of that post, the total space wasted is about 500KB. And if you have 100 posts similar to it, you have 50MB database space wasted.
 *   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, WP-Optimize can clean and remove those in a single click
 *   WP-Optimize reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
-*   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option. 
+*   Automatically cleans database every week and respects the "Keeps selected number of weeks data" option.
 
 **Are you interested to be a contributed developer of this plugin, join with me at GitHub. Or email plugins(at)ruhanirabin.com**
 
@@ -63,9 +65,9 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 
 **Translators are welcome to send their Translated Files to be included.**
-Existing translators should join [Translation Utility](http://wp-managed.com/projects/wp-optimize) to submit their translations. 
+Existing translators should join [Translation Utility](http://wp-managed.com/projects/wp-optimize) to submit their translations.
 
-You must have an account in order to edit translation - [Get the free account here](http://wp-managed.com/wp-login.php?action=register). 
+You must have an account in order to edit translation - [Get the free account here](http://wp-managed.com/wp-login.php?action=register).
 
 Once you get your account password in your email [Log in here to edit language](http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize)
 
@@ -73,12 +75,14 @@ Once you get your account password in your email [Log in here to edit language](
 
 *   Language de_DE: Rene Wolf - http://www.fluchtsportler.de
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language lv   : Juris Orlovs - http://trendfor.lv
-*   Language tr_TR: Hakan Er tarafından Türkçe Dili - http://hakanertr.wordpress.com/
 *   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
 *   Language ka_GE: Givi Tabatadze - http://tagiweb.com
 *   Language zh_CN: Maie - http://maie.name
 *   Language es_ES: Navone Juan -  http://navonej.com.ar/
+*   Language sk_SK: Martin Šturcel-  http://sturcel.sk/martin
+*   Language nl_NL: Mathias Bosman -  http://www.mathiasbosman.be
+*   Language hu_HU: László Viktor - http://hunstart.hu/
+*   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
 
 ** Some languages are removed from the above list, because translators did not update the languages for current version **
 [See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
@@ -145,20 +149,26 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
+= 1.8.9.6 =
+* There were few number formatting problem and detection of InnoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
+* Duplicate msg fixed
+* Enable/Disable trackbacks for all published post
+* Enable/Disable comments for all published post
+
 = 1.8.9 =
 * ONE MILLION+ Downloads. THANK YOU!!
-* Language updates platform - see readme file for details. 
-* Mixed type tables optimization supported and in BETA 
+* Language updates platform - see readme file for details.
+* Mixed type tables optimization supported and in BETA
 * Removal of akismet metadata from comments
 * Removal of other stale metadata from comments
-* InnoDB tables won't be optimized. 
+* InnoDB tables won't be optimized.
 * Main screen user selection will be saved. Red items selection will not be saved
 * Scheduled time display will be shown according to WordPress blog local time
 
 = 1.8.6 =
 * Language updates
-* Fix issues with total gain number problem 
-* InnoDB tables detected and features disabled automatically, tables view will not show Overhead. Main view will not show space saved, or total gain. 
+* Fix issues with total gain number problem
+* InnoDB tables detected and features disabled automatically, tables view will not show Overhead. Main view will not show space saved, or total gain.
 
 = 1.8.5 =
 * Version bump + modified translator names
@@ -187,14 +197,14 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fixed Problems with wpMail.
 * Fixed Problems with wpAdmin menubar.
 * Fixed Permission issues on some site.
-* wp-optimize.pot file is added to language directory, for the translators. That file is also linked at the info tab of the plugin. 
+* wp-optimize.pot file is added to language directory, for the translators. That file is also linked at the info tab of the plugin.
 * Russian and German translation updated.
 
 = 1.7.2 =
 * All MySQL statements re-factored into native WP database calls - necessary for future versions of MySQL and WordPress.
 * Upgrade to match WordPress 3.9 changes.
 * Additional 2 languages.
-* Now postmeta cleanup is disabled from code - it will be updated soon with native WordPress postmeta cleaning options. 
+* Now postmeta cleanup is disabled from code - it will be updated soon with native WordPress postmeta cleaning options.
 
 = 1.6.2 =
 * 3 Translation update.
@@ -282,7 +292,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 = 0.8.0 =
 * Added Multilanguage capability
-* Added translation WP-OPTIMIZE.POT file 
+* Added translation WP-OPTIMIZE.POT file
 * Farsi Translation included now (Thanks to Ali irani)
 
 = 0.7.1 =

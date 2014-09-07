@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.8.9
+Version: 1.8.9.6
 Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
@@ -38,14 +38,14 @@ GitHub Branch: master
 # --------------------------------------- #
 if ( ! defined( 'WPINC' ) ) {
 	die;
-}	
-	
+}
+
 global $current_user;
 
 error_reporting( error_reporting() & ~E_NOTICE );
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.8.9');
+    define('WPO_VERSION', '1.8.9.6');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
@@ -55,12 +55,12 @@ if (! defined('WPO_PAYPAL'))
 
 	if ( file_exists(WPO_PLUGIN_MAIN_PATH . 'wp-optimize-common.php')) {
     require_once (WPO_PLUGIN_MAIN_PATH . 'wp-optimize-common.php');
-    
+
     } else {
 	die ('Functions File is missing!');
 	}
 
-   
+
 register_activation_hook(__FILE__,'wpo_admin_actions');
 register_deactivation_hook(__FILE__,'wpo_admin_actions_remove');
 
@@ -114,8 +114,8 @@ function wpo_admin_actions()
 		} // end if addmeta box
         if (get_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' ) == 'true' ){
         		add_action( 'wp_before_admin_bar_render', 'wpo_admin_bar' );
-        }        
-        
+        }
+
 		//wpo_detectDBType();
         wpo_PluginOptionsSetDefaults();
 		wpo_cron_activate();
@@ -126,18 +126,18 @@ function wpo_admin_actions()
 function wpo_cron_activate() {
 	//wpo_debugLog('running wpo_cron_activate()');
     $gmtoffset = (int) (3600 * ((double) get_option('gmt_offset')));
-   
+
     if ( get_option( OPTION_NAME_SCHEDULE ) !== false ) {
 		if ( get_option(OPTION_NAME_SCHEDULE) == 'true') {
 			if (!wp_next_scheduled('wpo_cron_event2')) {
 
 				$schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
-                
+
                 switch ($schedule_type) {
                         case "wpo_weekly":
                          //
                          $this_time = 60*60*24*7;
-                        break;                
+                        break;
 
                         case "wpo_otherweekly":
                          //
@@ -148,19 +148,19 @@ function wpo_cron_activate() {
                          //
                          $this_time = 60*60*24*31;
                         break;
-                        
+
                         default:
                          $this_time = 60*60*24*7;
-                        break;                        
-                                              
-                }               
-				//$this_time = time() + $gmtoffset; 
+                        break;
+
+                }
+				//$this_time = time() + $gmtoffset;
                 add_action('wpo_cron_event2', 'wpo_cron_action');
                 //wp_schedule_event(current_time( "timestamp", 0 ) + $this_time + $gmtoffset, $schedule_type, 'wpo_cron_event2');
                 wp_schedule_event(current_time( "timestamp", 0 ) + $this_time , $schedule_type, 'wpo_cron_event2');
                 wpo_debugLog('running wp_schedule_event()');
 
-                
+
 				//add_filter('cron_schedules', 'wpo_cron_update_sched');
 			}
 		}
