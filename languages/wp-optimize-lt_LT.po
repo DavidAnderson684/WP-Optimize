@@ -1,50 +1,50 @@
-# Translation of WP-Optimize in Slovenian
+# Translation of WP-Optimize in Lithuanian
 # This file is distributed under the same license as the WP-Optimize package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-09-04 20:01:44+0000\n"
+"PO-Revision-Date: 2014-09-04 16:42:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: WP-Optimize\n"
 
 #: wp-optimize-settings.php:296
 msgid "This will disable/enable Comments on all your current and previously published posts"
-msgstr "To bo onemogočilo/omogočilo Komentarje na vseh trenutnih in prejšnjih objavah"
+msgstr "Tai bus įjungti/išjungti komentarus visus dabartinius ir anksčiau paskelbtus pranešimuose"
 
 #: wp-optimize-settings.php:290
 msgid "Comments Actions"
-msgstr "Kometarji Akcije"
+msgstr "Komentarai Veiksmai"
 
 #: wp-optimize-settings.php:286
 msgid "This will disable/enable Trackbacks on all your current and previously published posts"
-msgstr "To bo onemogočilo/omogočilo Trackbacks na vseh trenutnih in prejšnjih objavah "
+msgstr "Tai bus įjungti/išjungti Trackbacks visus esamus ir anksčiau paskelbtus pranešimuose"
 
 #: wp-optimize-settings.php:283 wp-optimize-settings.php:293
 msgid "Enable all"
-msgstr "Omogoči vse"
+msgstr "Įjungti visus"
 
 #: wp-optimize-settings.php:278
 msgid "Trackbacks Actions"
-msgstr "Trackbacks Akcije"
+msgstr "Trackback Veiksmai"
 
 #: wp-optimize-settings.php:97
 msgid "Trackbacks enabled on all current and previously published posts"
-msgstr "Trackbacks omogočeni na vseh trenutnih in prejšnjih objavah "
+msgstr "Trackbacks įjungtas visuose dabartiniuose ir anksčiau paskelbtuose pranešimuose"
 
 #: wp-optimize-settings.php:282 wp-optimize-settings.php:292
 msgid "Disable all"
-msgstr "Onemogoči vse"
+msgstr "Išjungti visus"
 
 #: wp-optimize-main.php:266
 msgid "Do not select RED marked items unless you really need to use them"
-msgstr "Ne izberite RDEČE obarvanih predmetov razen če jih zares želite uporabiti"
+msgstr "Nesirinkite raudonai pažymėtus elementus, nebent jums tikrai reikia juos naudoti"
 
 #: wp-optimize-common.php:623
 msgid "comments removed from Trash"
-msgstr "komentarjev odstranjenih iz Smeti"
+msgstr "komentarai pašalinti iš šiukšliadėžės"
 
 #: wp-optimize-common.php:463
 msgid "KB"
@@ -56,19 +56,19 @@ msgstr "MB"
 
 #: wp-optimize-settings.php:90
 msgid "Trackbacks disabled on all current and previously published posts"
-msgstr "Trackbacks s onemogočeni na vseh trenutnih in prejšnjih objavah "
+msgstr "Trackbacks išjungtas visuose esamuose ir anksčiau paskelbtuose pranešimuose"
 
 #: wp-optimize-settings.php:76
 msgid "Comments disabled on all current and previously published posts"
-msgstr "Komentarji so  onemogočeni na vseh trenutnih in prejšnjih objavah "
+msgstr "Komentarai išjungti visuose esamuose ir anksčiau paskelbtuose pranešimuose"
 
 #: wp-optimize-settings.php:83
 msgid "Comments enabled on all current and previously published posts"
-msgstr "Komentarji so omogočeni na vseh trenutnih in prejšnjih objavah "
+msgstr "Komentarai įjungti visuose dabartiniuose ir anksčiau paskelbtuose pranešimuose"
 
 #: wp-optimize-main.php:272
 msgid "Optimize your YouTube embedding in WordPress with this plugin"
-msgstr "Optimizirajte vaše YouTube vključevanje v Wordpress s tem vtičnikom"
+msgstr "Optimizuokite savo YouTube Įliedami į WordPress su šiuo įskiepiai"
 
 #: wp-optimize-common.php:459
 msgid "GB"
@@ -76,75 +76,75 @@ msgstr "GB"
 
 #: wp-optimize-common.php:629
 msgid "unused comment metadata items removed"
-msgstr "neuporabljeni predmeti metadata komentarjev so odstranjeni."
+msgstr "nepanaudoti komentaru metaduomenų elementai pašalinami"
 
 #: wp-optimize-common.php:635
 msgid "unused akismet comment metadata items removed"
-msgstr "neuporabljeni predmeti akismet komentarjev so odstranjeni."
+msgstr "nenaudojami Akismet komentaru metaduomenų elementai pašalinami"
 
 #: wp-optimize-credits.php:76
 msgid "GitHub Development Log"
-msgstr "Github Dnevnik Razvijalcev"
+msgstr "Github plėtros Prisijungti"
 
 #: wp-optimize-credits.php:50
 msgid "(Translator name)"
-msgstr "Tomi Sambrailo"
+msgstr "Bronisav Ciuzelis"
 
 #: wp-optimize-credits.php:50
 msgid "http://(Translator Website)"
-msgstr "http://www.refuzed.it/"
+msgstr "http://internetiniusvetainiukurimas.com/"
 
 #: wp-optimize-credits.php:52
 msgid "Read Translation Instructions"
-msgstr "Preberite navodila za prevajanje"
+msgstr "Skaityti Vertimo Instrukcijos"
 
 #: wp-optimize-credits.php:65
 msgid "Support E-mail"
-msgstr "E-pošta za Podporo"
+msgstr "Pagalba apiesvetaines@gmail.com"
 
 #: wp-optimize-credits.php:62
 msgid "Request New Language"
-msgstr "Zahtevaj Nov Jezik"
+msgstr "Užsisakyti naują kalbą"
 
 #: wp-optimize-credits.php:61
 msgid "Plugin Translation Portal (needs translator account)"
-msgstr "Portal za Prevajanje Vtičnika (potrebujete prevajalski račun)"
+msgstr "Įskiepis Vertimas portalas (reikia vertėjas sąskaitą)"
 
 #: wp-optimize-credits.php:60
 msgid "Get a Translator Account"
-msgstr "Dobi Račun za Prevajalca"
+msgstr "Gaukite Vertėjas paskyrą"
 
 #: wp-optimize-main.php:323
 msgid "Rating"
-msgstr "Ocena"
+msgstr "Reitingas"
 
 #: wp-optimize-main.php:322
 msgid "Please give a proper rating:)"
-msgstr "Prosimo podelite mi pravično oceno:)"
+msgstr "Prašome suteikti tinkamą reitingą :)"
 
 #: wp-optimize-main.php:321
 msgid "Donate!"
-msgstr "Donirajte!"
+msgstr "Paaukok!"
 
 #: wp-optimize-main.php:321
 msgid "Please donate! It really helps me keep improvising"
-msgstr "Prosimo donirajte! To resnično pomaga, da nadaljujem improvizacijo."
+msgstr "Prašome paaukoti! Tai tikrai padeda man išlaikyti improvizacija"
 
 #: wp-optimize-credits.php:58
 msgid "Plugin Resources"
-msgstr "Resursi vtičnika"
+msgstr "Plugin ištekliai"
 
 #: wp-optimize-credits.php:63
 msgid "Plugin Homepage"
-msgstr "Domača stran vtičnika"
+msgstr "Įskiepis puslapis"
 
 #: wp-optimize-credits.php:64
 msgid "Support (GitHub)"
-msgstr "Podpora (GitHub)"
+msgstr "Pagalba (Github)"
 
 #: wp-optimize-credits.php:66
 msgid "Change Log"
-msgstr "Dnevnik sprememb"
+msgstr "Pakeitimai Prisijungti"
 
 #: wp-optimize-credits.php:67
 msgid "FAQ"
@@ -152,337 +152,335 @@ msgstr "FAQ"
 
 #: wp-optimize-credits.php:96
 msgid "No items"
-msgstr "Brez elementov"
+msgstr "Nėra elementų"
 
 #: wp-optimize-main.php:78
 msgid "Database Optimized!"
-msgstr "Baza podatkov Optimizirana!"
+msgstr "Duomenų bazės Optimizuotos!"
 
 #: wp-optimize-main.php:148 wp-optimize-main.php:150
 msgid "Clean-up options"
-msgstr "Opcije čiščenja"
+msgstr "Išvalymo parinktys"
 
 #: wp-optimize-main.php:159
 msgid "Clean post revisions which are older than "
-msgstr "Izbriši revizije objav, ki so starejše kot"
+msgstr "Valyti pranešimu pataisymus, kurie yra vyresni nei"
 
 #: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
 #: wp-optimize-main.php:219
 msgid "weeks"
-msgstr "tednov"
+msgstr "dienos"
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
-msgstr "Izbriši vse revizije objav"
+msgstr "Nuvalykite visus po patikslinimų"
 
 #: wp-optimize-main.php:177
 msgid "Clean auto draft posts which are older than "
-msgstr "Počisti samodejno osnutke objav, ki so starejši kot"
+msgstr "Išvalyti automatiškai sukurtus pranešimų juodraščius, kurie yra vyresni nei"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
-msgstr "Izbriši vse samodejne osnutke objav v Smeteh"
+msgstr "Nuvalykite visus auto pranešimus ir pranešimus iš šiukšlių dėžės"
 
 #: wp-optimize-main.php:197
 msgid "Remove spam comments which are older than "
-msgstr "Odstranite nezaželene komentarje, ki so starejši od"
+msgstr "Pašalinti šlamštas komentarus, kurie yra vyresni nei "
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
-msgstr "Odstrani vse Spam komentarje in komentarje v Smeteh"
+msgstr "Pašalinti komentaru šiukšles ir komentarus iš šiukšlių dėžės"
 
 #: wp-optimize-main.php:216
 msgid "Remove unapproved comments which are older than "
-msgstr "Odstranite nepotrjene komentarje ki so starejši od"
+msgstr "Pašalinti nepatvirtintus komentarus, kurie yra vyresni nei"
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"
-msgstr "Odstranite nepotrjene komentarje"
+msgstr "Pašalinti nepatvirtintus komentarus"
 
 #: wp-optimize-main.php:234 wp-optimize-settings.php:235
 msgid "Remove transient options"
-msgstr "Odstranite prehodne opcije"
+msgstr "Pašalinti trumpalaikes galimybes"
 
 #: wp-optimize-main.php:245
 msgid "Remove pingbacks"
-msgstr "Odstranite pingbacks"
+msgstr "Pašalinti pingbacks"
 
 #: wp-optimize-main.php:256
 msgid "Remove trackbacks"
-msgstr "Odstranite trackbacks"
+msgstr "Pašalinti trackbacks"
 
 #: wp-optimize-main.php:282
 msgid "Actions"
-msgstr "Akcije"
+msgstr "Veiksmai"
 
 #: wp-optimize-main.php:291
 msgid "Optimize database tables"
-msgstr "Optimizirajte tabele podatkovne baze"
+msgstr "Optimizuoti duomenų bazės lenteles"
 
 #: wp-optimize-main.php:299
 msgid "Note:"
-msgstr "Opomba:"
+msgstr "Pastaba:"
 
 #: wp-optimize-main.php:302
 msgid "InnoDB tables will not be optimized"
-msgstr "InnoDB tabele ne bodo optimizirane"
+msgstr "InnoDB lentelės nebus optimizuotos"
 
 #: wp-optimize-main.php:308
 msgid "Select safe options"
-msgstr "Izberite varne opcije"
+msgstr "Pasirinkite saugias galimybes"
 
 #: wp-optimize-main.php:309
 msgid "Warning:"
-msgstr "Opozorilo:"
+msgstr "Perspėjimas:"
 
 #: wp-optimize-main.php:310
 msgid "Always make a backup of your DB when you upgrade to major versions"
-msgstr "Vedno naredite varnostno kopijo vaše PB, pred nadgradnjo na višje različice"
+msgstr "Visada pasidarykite savo DB atsarginę kopiją, kai jūs atnaujinate į pagrindine versija"
 
 #: wp-optimize-main.php:315
 msgid "PROCESS"
-msgstr "PROCESIRAJ"
+msgstr "PROCESAS"
 
 #: wp-optimize-main.php:328
 msgid "Status log: "
-msgstr "Dnevnik sprememb:"
+msgstr "Statusas prisijungti:"
 
 #: wp-optimize-main.php:343
 msgid "Last automatic optimization was at"
-msgstr "Zadnja samodejna optimizacija je bila na"
+msgstr "Paskutinis automatinis optimizavimas buvo"
 
 #: wp-optimize-main.php:355
 msgid "There was no automatic optimization"
-msgstr "Ni samodejne optimizacije"
+msgstr "Nebuvo automatinio optimizavimo"
 
 #: wp-optimize-main.php:405 wp-optimize-main.php:430
 msgid "Check settings"
-msgstr "Preverite nastavitve"
+msgstr "Patikrinkite nustatymus"
 
 #: wp-optimize-main.php:370
 msgid "Scheduled cleaning enabled"
-msgstr "Čiščenje po urniku omogočeno"
+msgstr "Numatomas valymas įjungtas"
 
 #: wp-optimize-main.php:382
 msgid "Next schedule"
-msgstr "Naslednji urnik"
+msgstr "Kitas grafikas"
 
 #: wp-optimize-main.php:393
 msgid "Refresh"
-msgstr "Osveži"
+msgstr "Atnaujinti"
 
 #: wp-optimize-main.php:402
 msgid "Scheduled cleaning disabled"
-msgstr "Čiščenje po urniku je onemogočeno"
+msgstr "Numatomas valymas išjungtas"
 
 #: wp-optimize-main.php:416
 msgid "Keeping last "
-msgstr "Zadnje kar se ohrani"
+msgstr "Paskutinis išsaugojimas"
 
 #: wp-optimize-main.php:419 wp-optimize-settings.php:130
 msgid "weeks data"
-msgstr "tednov podatkov"
+msgstr "dienos duomenys"
 
 #: wp-optimize-main.php:427
 msgid "Not keeping recent data"
-msgstr "Ne ohrani trenutnih podatkov"
+msgstr "Nesaugoti senesnius duomenis"
 
 #: wp-optimize-main.php:444
 msgid "Current database size : "
-msgstr "Trenutna velikost baze podatkov:"
+msgstr "Dabartinis duomenų bazės dydis : "
 
 #: wp-optimize-main.php:449
 msgid "You have saved"
-msgstr "Vi ste osvobodili"
+msgstr "Jūs turite išsaugoti"
 
 #: wp-optimize-main.php:456
 msgid "Current database size"
-msgstr "Trenutna velikost baze podatkov"
+msgstr "Dabartinis duomenų bazės dydis"
 
 #: wp-optimize-main.php:464
 msgid "You can save almost"
-msgstr "Vi ste osvobodili skoraj"
+msgstr "Galite išsaugoti Beveik"
 
 #: wp-optimize-main.php:481
 msgid "Total clean up overall"
-msgstr "Vse skupaj očiščeno"
+msgstr "Iš viso išvalyta vietos"
 
 #: wp-optimize-main.php:502
 msgid "Sponsor"
-msgstr "Pokrovitelj"
+msgstr "Rėmėjas"
 
 #: wp-optimize-settings.php:71
 msgid "Settings updated"
-msgstr "Nastavitve posodobljene"
+msgstr "Nustatymai atnaujinti"
 
 #: wp-optimize-settings.php:114
 msgid "General Settings"
-msgstr "Splošne Nastavitve"
+msgstr "Generaliniai nustatymai"
 
 #: wp-optimize-settings.php:119
 msgid "Keep last "
-msgstr "Uporabi zadnje"
+msgstr "Išsaugoti paskutinius "
 
 #: wp-optimize-settings.php:135
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
-msgstr "Ta opcija bo ohranila zadnje izbrane tedne in odstranila kakršnekoli smeti pred tem obdobjem. To se prav tako nanaša na proces Samodejnega čiščenja."
+msgstr "Ši galimybė išlaikyti paskutinius pasirinktus savaitės duomenis ir iki šio laikotarpio pašalinti šiukšlių duomenis. Tai taip pat turės įtakos Auto Valymo procesui"
 
 #: wp-optimize-settings.php:144
 msgid "Enable admin bar link "
-msgstr "Vklopi admin vrstico"
+msgstr "Įjungti nuorodą į Admin panelę "
 
 #: wp-optimize-settings.php:146
 msgid "(Click here to refresh)"
-msgstr "(Klikni tukaj za osvežitev)"
+msgstr "(Spauskite čia norėdami atnaujinti)"
 
 #: wp-optimize-settings.php:152
 msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
-msgstr "Ta opcija bo nastavila povezavo do WP-Optimize v zgornjo skrbnikovo vrstico (privzeto izklopljeno) Potrebujete osvežiti stran"
+msgstr "Ši galimybė įdėti WP-Optimizuoti nuorodą viršuje admin panelės (pagal nutylėjimą yra išjungtas). Reikalingas puslapio atnaujinimas."
 
 #: wp-optimize-settings.php:158
 msgid "SAVE SETTINGS"
-msgstr "SHRANI NASTAVITVE"
+msgstr "IŠSAUGOTI NUSTATYMUS"
 
 #: wp-optimize-settings.php:168
 msgid "Auto Clean-up Settings"
-msgstr "Nastavitve za Samodejno čiščenje"
+msgstr "Automatinis valymas Nustatymai"
 
 #: wp-optimize-settings.php:171
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
-msgstr "Omogoči čiščenje in optimizacijo po urniku (Beta opcija!)"
+msgstr "Įjungti planuojama išvalyti ir optimizavimas (Beta funkcija!)"
 
 #: wp-optimize-settings.php:173
 msgid "Select schedule type (default is Weekly)"
-msgstr "Izberite tip urnika (privzeto je tedensko)"
+msgstr "Pasirinkite tvarkaraščio tipą (pagal nutylėjimą yra Savaitinė)"
 
 #: wp-optimize-settings.php:180 wp-optimize-settings.php:192
 #: wp-optimize-settings.php:198
 msgid "Every week"
-msgstr "Vsak teden"
+msgstr "Kiekvieną savaitę"
 
 #: wp-optimize-settings.php:184 wp-optimize-settings.php:199
 msgid "Every other week (every 14 days)"
-msgstr "Vsak drugi teden (vsakih 14 dni)"
+msgstr "Kas antrą savaitę (kas 14 dienų)"
 
 #: wp-optimize-settings.php:188 wp-optimize-settings.php:200
 msgid "Every month (every 31 days)"
-msgstr "Vsak mesec (vsakih 31 dni)"
+msgstr "Kiekvieną mėnesį (kas 31 diena)"
 
 #: wp-optimize-settings.php:204
 msgid "Automatic cleanup will perform the following:"
-msgstr "Samodejno brisanje bo izvedlo naslednje: "
+msgstr "Automatinis valymas atliks taip:"
 
 #: wp-optimize-settings.php:206
 msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
-msgstr "Odstrani revizije, samodejne osnutke, komentarje/objave v smeteh, prehodne opcije. Po tem se bo optimizirala pb."
+msgstr "Pašalins pakeitimus, automatinius juodraščius, pranešimus / komentarus iš šiukšlių, trumpalaikius nustatymus. Po to bus optimizuota db."
 
 #: wp-optimize-settings.php:213
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
-msgstr "Te opcije delujejo samo če je vklopljeno samodejno čiščenje po urniku"
+msgstr "Šie variantai dirbs tik tada, kai automatinis valymo grafikas yra įjungtas"
 
 #: wp-optimize-settings.php:218
 msgid "Remove auto revisions"
-msgstr "Odstrani samodejne revizije"
+msgstr "Pašalinti auto pataisymus"
 
 #: wp-optimize-settings.php:222
 msgid "Remove auto drafts"
-msgstr "Odstrani samodejne osnutke"
+msgstr "Pašalinti auto juodraščius"
 
 #: wp-optimize-settings.php:226
 msgid "Remove spam comments"
-msgstr "Odstrani nezaželene komentarje"
+msgstr "Pašalinti šlamšto komentarus"
 
 #: wp-optimize-settings.php:239
 msgid "Remove orphaned post meta"
-msgstr "Odstrani osirotele post meta"
+msgstr "Pašalinti nepanaudotus įrašu meta"
 
 #: wp-optimize-settings.php:243
 msgid "Remove unused tags"
-msgstr "Odstranite neuporabljene oznake"
+msgstr "Pašalinti nenaudojamas žymes"
 
 #: wp-optimize-settings.php:249
 msgid "Optimize database"
-msgstr "Optimiziraj podatkovno bazo"
+msgstr "Optimizuokite duomenų bazę"
 
 #: wp-optimize-settings.php:255
 msgid "If you have InnoDB tables. They will not be optimized!"
-msgstr "Imate InnoDB tabele. Te ne bodo optimizirane!"
+msgstr "Jei turite InnoDB lenteles. Jos nebus optimizuotos!"
 
 #: wp-optimize-settings.php:262
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
-msgstr "SHRANI NASTAVITVE SAMODEJNEGA ČIŠČENJA"
+msgstr "IŠSAUGOTI NUSTATYMUS AUTOMATINIO VALYMO"
 
 #: wp-optimize-tables.php:20
 msgid "Database Name:"
-msgstr "Ime Podatkovne baze:"
+msgstr "Duomenų bazės pavadinimas:"
 
 #: wp-optimize-tables.php:28
 msgid "Optimized all the tables found in the database."
-msgstr "Optimizirane so vse tabele v podatkovni bazi."
+msgstr "Optimizuotos visos lentelės duomenų bazėje."
 
 #: wp-optimize-tables.php:36
 msgid "No."
-msgstr "Št."
+msgstr "Nėra"
 
 #: wp-optimize-tables.php:38
 msgid "Records"
-msgstr "Zapisi"
+msgstr "Įrašai"
 
 #: wp-optimize-tables.php:39
 msgid "Data Size"
-msgstr "Velikost Podatkov"
+msgstr "Duomenų dydis"
 
 #: wp-optimize-tables.php:40
 msgid "Index Size"
-msgstr "Velikost indeksa"
+msgstr "Pagrindinio puslapio dydis "
 
 #: wp-optimize-tables.php:41
 msgid "Type"
-msgstr "Tip"
+msgstr "Tipas"
 
 #: wp-optimize-tables.php:42
 msgid "Overhead"
-msgstr "Predhodno"
+msgstr "Virš galvos"
 
 #: wp-optimize-tables.php:137
 msgid "Total:"
-msgstr "Skupaj:"
+msgstr "Iš viso:"
 
 #: wp-optimize-tables.php:138
 msgid "%s Table"
 msgid_plural "%s Tables"
-msgstr[0] "%s Tabela"
-msgstr[1] " %s Tabeli"
-msgstr[2] " %s Tabele"
-msgstr[3] " %s Tabele"
+msgstr[0] "%s Lentelė"
+msgstr[1] "%s Lentelės"
+msgstr[2] ""
 
 #: wp-optimize-tables.php:139
 msgid "%s Record"
 msgid_plural "%s Records"
-msgstr[0] "%s Zapis"
-msgstr[1] "%s Zapisi"
+msgstr[0] "%s Įrašai"
+msgstr[1] "%s Įrašų"
 msgstr[2] ""
-msgstr[3] ""
 
 #: wp-optimize-tables.php:179
 msgid "Total Size of Database"
-msgstr "Skupna velikost Podatkovne Baze"
+msgstr "Visas dydis Duomenų bazės"
 
 #: wp-optimize-tables.php:191
 msgid "Optimization Results"
-msgstr "Rezultati Optimizacije"
+msgstr "Optimizavimo rezultatai"
 
 #: wp-optimize-tables.php:196
 msgid "Total Space Saved"
-msgstr "Skupaj Osvobojenega Prostora"
+msgstr "Bendras plotas Išsaugota"
 
 #: wp-optimize-tables.php:208
 msgid "Optimization Possibility"
-msgstr "Možnost Optimizacije"
+msgstr "Optimizavimo Galimybė"
 
 #: wp-optimize-tables.php:215
 msgid "Total space can be saved"
-msgstr "Skupaj prostora ki se lahko pridobite"
+msgstr "Bendras plotas gali būti išsaugotas"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
@@ -491,7 +489,7 @@ msgid "http://www.ruhanirabin.com/wp-optimize/"
 msgstr "http://www.ruhanirabin.com/wp-optimize/"
 
 msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
-msgstr "Ta vtičnik vam omogoča čiščenje baze z odstranjevanjem revizij objav in spam-a v trenutku. Dodatno vam omogoča da zaženete ukaze za zagon optimizacije na vaših korenskih tabelah (uporabljajte previdno)."
+msgstr "Šis įskiepis padeda jums išlaikyti švaria savo duomenų bazę, pašalinant puslapiu patikslinimus ir nereikalinga spama. Be to, jis leidžia jums paleisti komandą optimizuoti  jūsų WordPress pagrindines lenteles (naudoti atsargiai)."
 
 msgid "Ruhani Rabin"
 msgstr "Ruhani Rabin"
@@ -501,7 +499,7 @@ msgstr "https://github.com/ruhanirabin/WP-Optimize"
 
 #: wp-optimize-admin.php:25 wp-optimize-admin.php:43 wp-optimize.php:96
 msgid "Optimizer"
-msgstr "Optimizer"
+msgstr "Optimizavimas"
 
 #: wp-optimize-admin.php:28 wp-optimize-admin.php:46
 msgid "MYSQL"
@@ -509,7 +507,7 @@ msgstr "MYSQL"
 
 #: wp-optimize-admin.php:33 wp-optimize-admin.php:54 wp-optimize.php:95
 msgid "Settings"
-msgstr "Nastavitve"
+msgstr "Nustatymai"
 
 #: wp-optimize-admin.php:34 wp-optimize-admin.php:56
 msgid "Info"
@@ -517,164 +515,164 @@ msgstr "Info"
 
 #: wp-optimize-admin.php:52 wp-optimize-tables.php:37
 msgid "Tables"
-msgstr "Tabele"
+msgstr "Lentelės"
 
 #: wp-optimize-common.php:465
 msgid "bytes"
-msgstr "bajtov"
+msgstr "baitai"
 
 #: wp-optimize-common.php:554
 msgid "transient options deleted"
-msgstr "prehodne opcije izbrisane"
+msgstr "laikini nustatymai ištrinti"
 
 #: wp-optimize-common.php:581
 msgid "post revisions deleted"
-msgstr "revizije objav izbrisane"
+msgstr "irašu redagavimai ištrinti"
 
 #: wp-optimize-common.php:592
 msgid "auto drafts deleted"
-msgstr "samodejni osnutki izbrisani"
+msgstr "auto juodraščiai ištrinti"
 
 #: wp-optimize-common.php:602
 msgid "items removed from Trash"
-msgstr "elementi odstranjeni iz Smeti"
+msgstr "ištrinta iš šiukšliadėžės"
 
 #: wp-optimize-common.php:614
 msgid "spam comments deleted"
-msgstr "nezaželeni komentarji izbrisani"
+msgstr "spam komentarai ištrinti"
 
 #: wp-optimize-common.php:645
 msgid "unapproved comments deleted"
-msgstr "nepotrjeni komentarji izbrisani"
+msgstr "nepatvirtinti komentarai ištrinti"
 
 #: wp-optimize-common.php:651
 msgid "pingbacks deleted"
-msgstr "pingbacks izbrisani"
+msgstr "pingbacks ištrinti"
 
 #: wp-optimize-common.php:657
 msgid "trackbacks deleted"
-msgstr "trackback izbrisani"
+msgstr "trackbacks ištrinti"
 
 #: wp-optimize-common.php:664
 msgid "Enabled weekly processing"
-msgstr "Omogoči tedensko izvajanje"
+msgstr "Įjungta kas savaitę apdorojimas"
 
 #: wp-optimize-common.php:670
 msgid "Disabled weekly processing"
-msgstr "Onemogoči tedensko izvajanje"
+msgstr "Išjungta kias savaitę apdorojimas"
 
 #: wp-optimize-common.php:679
 msgid "NO Actions Taken"
-msgstr "NI bilo izvedenih opravil"
+msgstr "Ne Veiksmams, kurių imtasi"
 
 #: wp-optimize-common.php:706
 msgid "transient options in your database"
-msgstr "prehodnih opcij v vaši podatkovni bazi"
+msgstr "laikini nustatymai jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:708
 msgid "No transient options found"
-msgstr "Prehodne opcije niso bile najdene"
+msgstr "Nėrasta jokiu laikinu nustaymu"
 
 #: wp-optimize-common.php:717
 msgid "orphaned postmeta in your database"
-msgstr "osiroteli postmeta v vaši podatkovni bazi"
+msgstr "našlaičiai postmeta jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:719
 msgid "No orphaned postmeta in your database"
-msgstr "Ni osirotelih postmeta v vaši podatkovni bazi"
+msgstr "Nėra našlaičiu postmeta jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:728
 msgid "unused tags in your database"
-msgstr "neuporabljenih oznak v vaši podatkovni bazi"
+msgstr "nepanaudotos žymės jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:730
 msgid "No unused tags found"
-msgstr "Ni bilo najdenih neuporabljenih oznak"
+msgstr "Nerasta nepanaudotu žymu"
 
 #: wp-optimize-common.php:743
 msgid "post revisions in your database"
-msgstr "revizije objav v vaši podatkovni bazi"
+msgstr "redaguotu irašu duomenų bazeje"
 
 #: wp-optimize-common.php:745
 msgid "No post revisions found"
-msgstr "Ni bilo najdenih revizij objav"
+msgstr "Nerasta redaguotu irašu"
 
 #: wp-optimize-common.php:758
 msgid "auto draft post(s) in your database"
-msgstr "samodejni osnutek (i) v vaši podatkovni bazi"
+msgstr "auto juodraščiai pranešimu (-ai) duomenų bazėje"
 
 #: wp-optimize-common.php:760
 msgid "No auto draft posts found"
-msgstr "Ni bilo najdenih samodejnih osnutkov v vaši podatkovni bazi"
+msgstr "Automatiniu pranešimų juodraščiu nerasta "
 
 #: wp-optimize-common.php:772
 msgid "spam comments found"
-msgstr "najdenih nezaželenih komentarjev"
+msgstr "rasta spam Komentarai"
 
 #: wp-optimize-common.php:772 wp-optimize-common.php:803
 msgid "Review"
-msgstr "Osnutek"
+msgstr "Apžvalga"
 
 #: wp-optimize-common.php:774
 msgid "No spam comments found"
-msgstr "Ni najdenih nezaželenih komentarjev"
+msgstr "Nerasta spam Komentarai"
 
 #: wp-optimize-common.php:803
 msgid "unapproved comments found"
-msgstr "najdenih nepotrjenih komentarjev"
+msgstr "rasti nepatvirtinti komentarai"
 
 #: wp-optimize-common.php:805
 msgid "No unapproved comments found"
-msgstr "Ni najdenih nepotrjenih komentarjev"
+msgstr "Nerasta nepatvirtintų komentaru"
 
 #: wp-optimize-common.php:813
 msgid "Pingbacks found"
-msgstr "Najdenih Pingbacks"
+msgstr "Pingbacks rasti"
 
 #: wp-optimize-common.php:815
 msgid "No pingbacks found"
-msgstr "Ni najdenih pingback"
+msgstr "Pingbacks nerasta"
 
 #: wp-optimize-common.php:823
 msgid "Trackbacks found"
-msgstr "Najdenih trackback"
+msgstr "Trackbacks rasti"
 
 #: wp-optimize-common.php:825
 msgid "No trackbacks found"
-msgstr "Ni najdenih Trackback"
+msgstr "Trackbacks nerasta"
 
 #: wp-optimize-common.php:831
 msgid "nothing"
-msgstr "nič"
+msgstr "nieko"
 
 #: wp-optimize-credits.php:14
 msgid "Credits"
-msgstr "Zasluge"
+msgstr "Kreditai"
 
 #: wp-optimize-credits.php:15
 msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
-msgstr "WP-Optimize je nastal kot orodje za moje projekte. Kmalu sem spoznal, da lahko ta vtičnik morda pomaga tudi drugim ljudem. Osebno se zahvaljujem vsem uporabnikom tega vtičnika, ki ga uporabljajo vsakodnevno. Prav tako hvala vsem prevajalcem in radodarnim ljudem, ki so darovali sredstva za ta projekt."
+msgstr "WP-Optimizuoti projektas prasidėjo kaip mano paties naudojimo naudingumui. Aš supratau, kad šis priedas gali padėti žmonėms. Aš asmeniškai padėkoti visiems vartotojams, kurie naudoja šį priedą kasdien. Taip pat ačiū visiems vertėjams ir dosniems žmonėms, kurie paaukos šiam projektui."
 
 #: wp-optimize-credits.php:25
 msgid "Share this plugin on Facebook"
-msgstr "Posreduj ta vtičnik preko Facebooka"
+msgstr "Dalytis šiuo įskiepiai Facebook"
 
 #: wp-optimize-credits.php:38
 msgid "Contributing Developers"
-msgstr "Zaslužni razvijalci"
+msgstr "Programuotoju Indėlis"
 
 #: wp-optimize-credits.php:39
 msgid "Help me make this plugin better"
-msgstr "Pomagajte mi izboljšati ta vtičnik"
+msgstr "Padėkite man tobulinti ši įskiepi"
 
 #: wp-optimize-credits.php:39
 msgid "I am looking for contributing developers."
-msgstr "Iščem razvijalce ki bi sodelovali"
+msgstr "Aš ieškau programuotoju kurie gali padėti."
 
 #: wp-optimize-credits.php:40
 msgid "Your name and website will be credited here in the plugin"
-msgstr "Vaše ime in spletna stran bosta navedena v vtičniku"
+msgstr "Jūsų vardas ir svetainė bus paskelbta čia įskiepyje"
 
 #: wp-optimize-credits.php:49
 msgid "Translators"
-msgstr "Prevajalci"
+msgstr "Vertėjai"

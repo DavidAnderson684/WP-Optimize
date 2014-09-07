@@ -263,12 +263,14 @@ Function optimizeTablesQuick($Optimize){
 		<p>
 			<?php
 			echo '<small>';
-			_e('Some selection state will be saved. Red options are not selected by default and selection will not be saved. Do not select them unless you really need to use them', 'wp-optimize');
+			_e('Do not select RED marked items unless you really need to use them', 'wp-optimize');
 			echo '</small>';
 			?>
-
 		</p>
-
+<p>
+    <a href="http://bit.ly/youtube-wordpress" target="_blank">
+    <img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize your YouTube embedding in WordPress with this plugin', 'wp-optimize'); ?> &raquo;</a>
+  </p>
 		</div>
 		</div>
 	 </div>
@@ -321,10 +323,6 @@ Function optimizeTablesQuick($Optimize){
                         <?php _e('Rating', 'wp-optimize'); ?>
                         </a>
 
-<!--                <b><a href="<?php echo WPO_PAYPAL ; ?>" target="_blank"><?php _e('Donate! Helps me keep improvising', 'wp-optimize'); ?></a></b>&nbsp; | &nbsp;
-		<b><a href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Give a rating :)', 'wp-optimize'); ?>">
-		<?php _e('Give a rating :)', 'wp-optimize'); ?>
-		</a></b>-->
 		</p>
 
 <h3><?php _e('Status log: ', 'wp-optimize'); ?></h3>
