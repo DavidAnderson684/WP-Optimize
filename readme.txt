@@ -23,7 +23,6 @@ Please join GitHub and collaborate.
 **MAJOR FEATURES:**
 
 *   Enable/Disable trackbacks for all published post
-
 *   Enable/Disable comments for all published post
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
@@ -76,12 +75,15 @@ Once you get your account password in your email [Log in here to edit language](
 
 *   Language de_DE: Rene Wolf - http://www.fluchtsportler.de
 *   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language lv   : Juris Orlovs - http://trendfor.lv
-*   Language tr_TR: Hakan Er tarafından Türkçe Dili - http://hakanertr.wordpress.com/
 *   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
 *   Language ka_GE: Givi Tabatadze - http://tagiweb.com
 *   Language zh_CN: Maie - http://maie.name
 *   Language es_ES: Navone Juan -  http://navonej.com.ar/
+*   Language sk_SK: Martin Šturcel-  http://sturcel.sk/martin
+*   Language nl_NL: Mathias Bosman -  http://www.mathiasbosman.be
+*   Language hu_HU: László Viktor - http://hunstart.hu/
+*   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
+
 ** Some languages are removed from the above list, because translators did not update the languages for current version **
 [See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
 
