@@ -1,0 +1,24 @@
+---
+layout: post
+title: "URGENT BugFix: 1.8.9.7"
+date: 2014-09-08T18:19:26+08:00
+tags: [updates, releasenotes]
+image:
+  feature:
+  credit:
+  creditlink:
+comments:
+share: true
+---
+Just after releasing the previous update with new changes; I have noticed that the **Disable/Enable trackback/comments buttons** on the setting screen causing the **AUTO SCHEDULE** option to reset itself. 
+
+In fact, executing any of the **Disable/Enable trackback/comments buttons** will disable the **AUTO SCHEDULE** option, ==you will still be able to enable it by clicking the checkbox==. 
+
+![Image]({{ site.url }}/images/enable-disable-trackback-comments-update2.png)
+
+*I've made the _necessary changes_ and re-organize the Settings Screen so this does not happen again. Refer to the new screen above.*
+
+##How does the new screen work?
+1. If you want to disable or enable trackbacks and comments, select the dropdown list for each of them. 
+2. Press **SAVE SETTINGS**, it will enable or disable the corresponding feature such as Trackbacks and Comments.
+3. **This only reflects the ==published posts==**, the reason of doing that is - ==Drafts or unpublished post you may choose to enable comments or trackbacks, it is up to you.== 
