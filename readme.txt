@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 1.8.9.6
+Stable tag: 1.8.9.7
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,9 @@ WP-Optimize is an extensive WordPress database cleanup and optimization tool. It
 
 Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
 
-Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). I do not monitor wp forums, so use plugins+support(at)ruhanirabin.com for support questions.
+Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). 
+
+**I do not monitor wp forums, so use plugins(at)ruhanirabin.com for support questions.**
 
 Please join GitHub and collaborate.
 
@@ -149,6 +151,10 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
+= 1.8.9.7 =
+* BUGFIX for Settings screen
+* Enable/Disable trackbacks / comments buttons removal and use select box instead. Extra button caused the Auto Scheduler to get into reset mode.
+
 = 1.8.9.6 =
 * There were few number formatting problem and detection of InnoDB table format. Charles Dee Rice solved the problems that I missed out. Thank you!
 * Duplicate msg fixed
@@ -187,7 +193,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Optimize faster
 * GitHub updater support
 * All translations updates will come in soon
-* I do not monitor WP forums, support email at plugins+support(at)ruhanirabin.com
+* I do not monitor WP forums, support email at plugins(at)ruhanirabin.com
 
 = 1.7.4 =
 * More Translation compatibility.
