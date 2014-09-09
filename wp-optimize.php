@@ -178,7 +178,7 @@ add_filter('cron_schedules', 'wpo_cron_update_sched');
 
 // scheduler functions to update schedulers
 // possible problem found at support request
-// http://wordpress.org/support/topic/bug-found-in-scheduler-code
+// https://wordpress.org/support/topic/bug-found-in-scheduler-code
 
 function wpo_cron_update_sched( $schedules ) {
 	$schedules['wpo_weekly'] = array('interval' => 60*60*24*7, 'display' => 'Once Weekly');
