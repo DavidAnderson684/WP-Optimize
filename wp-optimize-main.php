@@ -12,8 +12,7 @@ if (isset($_POST["clean-revisions"])) {
     $text .= wpo_cleanUpSystem('revisions');
     }
 
-        $checkValue = $_POST["clean-revisions"];
-        if ($checkValue) {
+        if ( isset( $_POST["clean-revisions"] ) ) {
             $user_options["user-revisions"] = TRUE;
         } else {
             $user_options["user-revisions"] = FALSE;
@@ -27,8 +26,7 @@ if (isset($_POST["clean-autodraft"])) {
     //$user_options["user-drafts"] = $user_options["user-drafts"] ? 'true' : 'false';
     }
 
-    $checkValue = $_POST["clean-autodraft"];
-        if ($checkValue) {
+        if ( isset( $_POST["clean-autodraft"] ) ) {
         $user_options["user-drafts"] = TRUE;
         } else {
         $user_options["user-drafts"] = FALSE;
@@ -37,8 +35,8 @@ if (isset($_POST["clean-autodraft"])) {
 if (isset($_POST["clean-comments"])) {
     $text .= wpo_cleanUpSystem('spam');
     }
-        $checkValue = $_POST["clean-comments"];
-        if ($checkValue) {
+        
+        if ( isset( $_POST["clean-comments"] ) ) {
         $user_options["user-spams"] = TRUE;
         } else {
         $user_options["user-spams"] = FALSE;
@@ -48,8 +46,8 @@ if (isset($_POST["clean-comments"])) {
 if (isset($_POST["unapproved-comments"])) {
     $text .= wpo_cleanUpSystem('unapproved');
     }
-        $checkValue = $_POST["unapproved-comments"];
-        if ($checkValue) {
+        
+        if ( isset( $_POST["unapproved-comments"] ) ) {
         $user_options["user-unapproved"] = TRUE;
         } else {
         $user_options["user-unapproved"] = FALSE;
@@ -77,8 +75,7 @@ if (isset($_POST["clean-tags"])) {
 if (isset($_POST["optimize-db"])) {
     $text .= DB_NAME.' '.__('Database Optimized!', 'wp-optimize').'<br>';
     }
-        $checkValue = $_POST["optimize-db"];
-        if ($checkValue) {
+        if ( isset( $_POST["optimize-db"] ) ) {
         $user_options["user-optimize"] = TRUE;
         } else {
         $user_options["user-optimize"] = FALSE;
