@@ -36,6 +36,37 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 
 
+/**
+ * wpo_sendemail($sendto, $msg)
+ * @return success
+ * @param $sentdo - eg. who to send it to, abc@def.com
+ * @param $msg - the msg in text
+ */
+function wpo_sendEmail($date, $cleanedup){
+//
+//
+//
+
+$formattedCleanedup = wpo_format_size($cleanedup);
+$sendto = get_bloginfo ( 'admin_email' );
+$subject = get_bloginfo ( 'name' ).': Automatic Operation Completed '.$date;
+$msg = 'Optimization result: \n\n';
+$msg .=  'Total Space Saved: '.$formattedCleanedup.' \n';
+$msg .= '\n';
+$msg .= 'Regards,\n';
+$msg .= 'WP-Optimize Plugin \n';
+
+wp_mail( $sendto, $subject, $msg );
+
+}
+
+
+/**
+ * wpo_readFeed($rss_url, $number_of_itmes)
+ * @return RSS items
+ * @param $rss_url - url of RSS feed
+ * @param number of items - number of items to return
+ */
 function wpo_readFeed($rss_url, $number_of_itmes){
 
     include_once( ABSPATH . WPINC . '/feed.php' );
@@ -344,16 +375,15 @@ function wpo_cron_action() {
                 wpo_debugLog('optimizing .... '.$t[0]);
     		}
 
-    		//$dateformat = __('l jS \of F Y h:i:s A');
-    		//$dateformat = 'l jS \of F Y h:i:s A';
-            //$thisdate = date($dateformat);
-            //$thisdate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $time() + (get_option('gmt_offset')));
     		list($part1, $part2) = wpo_getCurrentDBSize();
 
             $thistime = current_time( "timestamp", 0 );
             $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
             update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
+			
+			wpo_sendEmail($thedate, $part2); //send email to admin
+			
             wpo_debugLog('Updating options with value +'.$part2);
 
         } // endif $this_options['optimize']
