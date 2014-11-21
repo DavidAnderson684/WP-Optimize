@@ -47,16 +47,23 @@ function wpo_sendEmail($date, $cleanedup){
 //
 //
 
-$formattedCleanedup = wpo_format_size($cleanedup);
+// #TODO this need to work on - currently not using the parameter values
+$myTime = current_time( "timestamp", 0 );
+$myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $myTime );
+
+//$formattedCleanedup = wpo_format_size($cleanedup);
+
 $sendto = get_bloginfo ( 'admin_email' );
-$subject = get_bloginfo ( 'name' ).': Automatic Operation Completed '.$date;
-$msg = 'Optimization result: \n\n';
-$msg .=  'Total Space Saved: '.$formattedCleanedup.' \n';
-$msg .= '\n';
-$msg .= 'Regards,\n';
-$msg .= 'WP-Optimize Plugin \n';
+$subject = get_bloginfo ( 'name' ).": ".__("Automatic Operation Completed","wp-optimize")." ".$myDate;
+
+$msg = __("Scheduled Optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
+$msg .=  __("You can safely delete this email.","wp-optimize")."\r\n";
+$msg .= "\r\n";
+$msg .= __("Regards,","wp-optimize")."\r\n";
+$msg .= __("WP-Optimize Plugin","wp-optimize");
 
 wp_mail( $sendto, $subject, $msg );
+
 
 }
 
@@ -148,12 +155,12 @@ function wpo_disableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -165,7 +172,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 /*
@@ -181,12 +188,12 @@ function wpo_enableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -198,7 +205,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 
@@ -381,10 +388,15 @@ function wpo_cron_action() {
             $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
             update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
+
+
+
+			list($part3, $part4) = wpo_getCurrentDBSize();
 			
-			wpo_sendEmail($thedate, $part2); //send email to admin
-			
-            wpo_debugLog('Updating options with value +'.$part2);
+			//#TODO need to fix the problem with variable value not passing through
+			wpo_sendEmail($thedate, strval($part4)); 
+
+            wpo_debugLog('CRON+ Updating options with value +'.$part4);
 
         } // endif $this_options['optimize']
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')

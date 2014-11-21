@@ -191,6 +191,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			</p>
 
 			<p>
+			<a href="http://bit.ly/youtube-wordpress" target="_blank">
+			<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize your YouTube embedding in WordPress with this plugin', 'wp-optimize'); ?> &raquo;</a>
+	</p>
+
+			<p>
 			<input class="button-primary" type="submit" name="wp-optimize-settings1" value="<?php _e('SAVE SETTINGS', 'wp-optimize'); ?>" />
 			</p>
 			</div>
@@ -212,6 +217,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<?php
 					$last_schedule = get_option(OPTION_NAME_SCHEDULE_TYPE,'wpo_weekly');
 					switch ($last_schedule) {
+						case "wpo_daily":
+							_e('Everyday', 'wp-optimize');
+							break;
+
 						case "wpo_weekly":
 							_e('Every week', 'wp-optimize');
 							break;
@@ -231,6 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					?>
 
 					</option>
+					<option value="wpo_daily"><?php _e('Everyday', 'wp-optimize'); ?></option>
 					<option value="wpo_weekly"><?php _e('Every week', 'wp-optimize'); ?></option>
 					<option value="wpo_otherweekly"><?php _e('Every other week (every 14 days)', 'wp-optimize'); ?></option>
 					<option value="wpo_monthly"><?php _e('Every month (every 31 days)', 'wp-optimize'); ?></option>
@@ -306,4 +316,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <input type="hidden" name="action" value="save_redirect" />
 
 </form>
-
