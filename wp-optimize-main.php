@@ -35,7 +35,7 @@ if (isset($_POST["clean-autodraft"])) {
 if (isset($_POST["clean-comments"])) {
     $text .= wpo_cleanUpSystem('spam');
     }
-        
+
         if ( isset( $_POST["clean-comments"] ) ) {
         $user_options["user-spams"] = TRUE;
         } else {
@@ -46,7 +46,7 @@ if (isset($_POST["clean-comments"])) {
 if (isset($_POST["unapproved-comments"])) {
     $text .= wpo_cleanUpSystem('unapproved');
     }
-        
+
         if ( isset( $_POST["unapproved-comments"] ) ) {
         $user_options["user-unapproved"] = TRUE;
         } else {
@@ -126,6 +126,15 @@ Function optimizeTablesQuick($Optimize){
     } //end for
 
     wpo_updateTotalCleaned(strval($total_gain));
+
+			// #TODO for testing only
+            // $thistime = current_time( "timestamp", 0 );
+            // $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
+			// list($part3, $part4) = wpo_getCurrentDBSize();
+			// wpo_sendEmail($thedate, strval($part4)); //TODO TEMPORARY - send email to admin
+
+            // wpo_debugLog('Invoked+ Updating options with value +'.$part4);
+
     wpo_debugLog('Total Gain .... '.strval($total_gain));
     } //end if
     //

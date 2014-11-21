@@ -36,6 +36,44 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 
 
+/**
+ * wpo_sendemail($sendto, $msg)
+ * @return success
+ * @param $sentdo - eg. who to send it to, abc@def.com
+ * @param $msg - the msg in text
+ */
+function wpo_sendEmail($date, $cleanedup){
+//
+//
+//
+
+// #TODO this need to work on - currently not using the parameter values
+$myTime = current_time( "timestamp", 0 );
+$myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $myTime );
+
+//$formattedCleanedup = wpo_format_size($cleanedup);
+
+$sendto = get_bloginfo ( 'admin_email' );
+$subject = get_bloginfo ( 'name' ).": ".__("Automatic Operation Completed","wp-optimize")." ".$myDate;
+
+$msg = __("Scheduled Optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
+$msg .=  __("You can safely delete this email.","wp-optimize")."\r\n";
+$msg .= "\r\n";
+$msg .= __("Regards,","wp-optimize")."\r\n";
+$msg .= __("WP-Optimize Plugin","wp-optimize");
+
+wp_mail( $sendto, $subject, $msg );
+
+
+}
+
+
+/**
+ * wpo_readFeed($rss_url, $number_of_itmes)
+ * @return RSS items
+ * @param $rss_url - url of RSS feed
+ * @param number of items - number of items to return
+ */
 function wpo_readFeed($rss_url, $number_of_itmes){
 
     include_once( ABSPATH . WPINC . '/feed.php' );
@@ -117,12 +155,12 @@ function wpo_disableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -134,7 +172,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 /*
@@ -150,12 +188,12 @@ function wpo_enableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -167,7 +205,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 
@@ -344,17 +382,21 @@ function wpo_cron_action() {
                 wpo_debugLog('optimizing .... '.$t[0]);
     		}
 
-    		//$dateformat = __('l jS \of F Y h:i:s A');
-    		//$dateformat = 'l jS \of F Y h:i:s A';
-            //$thisdate = date($dateformat);
-            //$thisdate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $time() + (get_option('gmt_offset')));
     		list($part1, $part2) = wpo_getCurrentDBSize();
 
             $thistime = current_time( "timestamp", 0 );
             $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
             update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
-            wpo_debugLog('Updating options with value +'.$part2);
+
+
+
+			list($part3, $part4) = wpo_getCurrentDBSize();
+			
+			//#TODO need to fix the problem with variable value not passing through
+			wpo_sendEmail($thedate, strval($part4)); 
+
+            wpo_debugLog('CRON+ Updating options with value +'.$part4);
 
         } // endif $this_options['optimize']
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')

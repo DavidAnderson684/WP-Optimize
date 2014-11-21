@@ -134,6 +134,11 @@ function wpo_cron_activate() {
 				$schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
 
                 switch ($schedule_type) {
+												case "wpo_daily":
+												//
+												$this_time = 60*60*24;
+												break;
+
                         case "wpo_weekly":
                          //
                          $this_time = 60*60*24*7;
@@ -181,6 +186,7 @@ add_filter('cron_schedules', 'wpo_cron_update_sched');
 // http://wordpress.org/support/topic/bug-found-in-scheduler-code
 
 function wpo_cron_update_sched( $schedules ) {
+  $schedules['wpo_daily'] = array('interval' => 60*60*24, 'display' => 'Once Daily');
 	$schedules['wpo_weekly'] = array('interval' => 60*60*24*7, 'display' => 'Once Weekly');
 	$schedules['wpo_otherweekly'] = array('interval' => 60*60*24*14, 'display' => 'Once Every Other Week');
 	$schedules['wpo_monthly'] = array('interval' => 60*60*24*31, 'display' => 'Once Every Month');
