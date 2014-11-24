@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize
 Plugin URI: http://www.ruhanirabin.com/wp-optimize/
 Description: This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution).
-Version: 1.8.9.7
+Version: 1.8.9.8
 Author: Ruhani Rabin
 Author URI: https://github.com/ruhanirabin/WP-Optimize
 Text Domain: wp-optimize
@@ -45,7 +45,7 @@ global $current_user;
 error_reporting( error_reporting() & ~E_NOTICE );
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.8.9.7');
+    define('WPO_VERSION', '1.8.9.8');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
 	define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));
@@ -134,10 +134,10 @@ function wpo_cron_activate() {
 				$schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
 
                 switch ($schedule_type) {
-												case "wpo_daily":
-												//
-												$this_time = 60*60*24;
-												break;
+                        case "wpo_daily":
+                        //
+                        $this_time = 60*60*24;
+                        break;
 
                         case "wpo_weekly":
                          //
@@ -181,12 +181,13 @@ function wpo_cron_deactivate() {
 add_action('wpo_cron_event2', 'wpo_cron_action');
 add_filter('cron_schedules', 'wpo_cron_update_sched');
 
+
 // scheduler functions to update schedulers
 // possible problem found at support request
 // http://wordpress.org/support/topic/bug-found-in-scheduler-code
 
 function wpo_cron_update_sched( $schedules ) {
-  $schedules['wpo_daily'] = array('interval' => 60*60*24, 'display' => 'Once Daily');
+        $schedules['wpo_daily'] = array('interval' => 60*60*24, 'display' => 'Once Daily');
 	$schedules['wpo_weekly'] = array('interval' => 60*60*24*7, 'display' => 'Once Weekly');
 	$schedules['wpo_otherweekly'] = array('interval' => 60*60*24*14, 'display' => 'Once Every Other Week');
 	$schedules['wpo_monthly'] = array('interval' => 60*60*24*31, 'display' => 'Once Every Month');

@@ -44,8 +44,6 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
  */
 function wpo_sendEmail($date, $cleanedup){
 //
-//
-//
 
 // #TODO this need to work on - currently not using the parameter values
 $myTime = current_time( "timestamp", 0 );
@@ -56,7 +54,7 @@ $myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $m
 $sendto = get_bloginfo ( 'admin_email' );
 $subject = get_bloginfo ( 'name' ).": ".__("Automatic Operation Completed","wp-optimize")." ".$myDate;
 
-$msg = __("Scheduled Optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
+$msg = __("Scheduled optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
 $msg .=  __("You can safely delete this email.","wp-optimize")."\r\n";
 $msg .= "\r\n";
 $msg .= __("Regards,","wp-optimize")."\r\n";
@@ -265,6 +263,8 @@ function wpo_removeOptions(){
 	delete_option( OPTION_NAME_ENABLE_ADMIN_MENU );
 	delete_option( OPTION_NAME_SCHEDULE_TYPE );
 	delete_option( OPTION_NAME_TOTAL_CLEANED );
+	delete_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS );
+	delete_option( OPTION_NAME_ENABLE_EMAIL );
 
     delete_option( 'wp-optimize-auto' );
     delete_option( 'wp-optimize-settings' );
@@ -389,14 +389,17 @@ function wpo_cron_action() {
             update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
 
+            // Sending notification email
+            if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
+                //#TODO need to fix the problem with variable value not passing through
+                if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+                wpo_sendEmail($thedate, $part2);                     
+                }
 
-
-			list($part3, $part4) = wpo_getCurrentDBSize();
-			
-			//#TODO need to fix the problem with variable value not passing through
-			wpo_sendEmail($thedate, strval($part4)); 
-
-            wpo_debugLog('CRON+ Updating options with value +'.$part4);
+            }
+            else{
+                //
+            }
 
         } // endif $this_options['optimize']
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
@@ -439,8 +442,22 @@ function wpo_PluginOptionsSetDefaults() {
 	}
 	else{
 	    add_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false', $deprecated, $autoload );
+	}    
+        // ---------
+	if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
+	//
 	}
-
+	else{
+	    add_option( OPTION_NAME_ENABLE_EMAIL, 'false', $deprecated, $autoload );
+	}    
+        // ---------
+	if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+	//
+	}
+	else{
+	    add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
+	}    
+        
 	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
 	//
 	}
