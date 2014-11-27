@@ -448,7 +448,7 @@ function wpo_PluginOptionsSetDefaults() {
 	//
 	}
 	else{
-	    add_option( OPTION_NAME_ENABLE_EMAIL, 'false', $deprecated, $autoload );
+	    add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
 	}    
         // ---------
 	if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
