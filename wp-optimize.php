@@ -164,9 +164,7 @@ function wpo_cron_activate() {
                 //wp_schedule_event(current_time( "timestamp", 0 ) + $this_time + $gmtoffset, $schedule_type, 'wpo_cron_event2');
                 wp_schedule_event(current_time( "timestamp", 0 ) + $this_time , $schedule_type, 'wpo_cron_event2');
                 wpo_debugLog('running wp_schedule_event()');
-
-
-				//add_filter('cron_schedules', 'wpo_cron_update_sched');
+		//add_filter('cron_schedules', 'wpo_cron_update_sched');
 			}
 		}
 	} else wpo_PluginOptionsSetDefaults();

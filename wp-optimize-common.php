@@ -35,7 +35,14 @@ if (! defined('OPTION_NAME_ENABLE_ADMIN_MENU'))
 if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 
+if (! defined('OPTION_NAME_CURRENT_CLEANED'))
+    define('OPTION_NAME_CURRENT_CLEANED', 'wp-optimize-current-cleaned');
 
+if (! defined('OPTION_NAME_ENABLE_EMAIL_ADDRESS'))
+    define('OPTION_NAME_ENABLE_EMAIL_ADDRESS', 'wp-optimize-email-address');
+
+if (! defined('OPTION_NAME_ENABLE_EMAIL'))
+    define('OPTION_NAME_ENABLE_EMAIL', 'wp-optimize-email');
 /**
  * wpo_sendemail($sendto, $msg)
  * @return success
@@ -44,25 +51,36 @@ if (! defined('OPTION_NAME_TOTAL_CLEANED'))
  */
 function wpo_sendEmail($date, $cleanedup){
 //
-
+    ob_start();
 // #TODO this need to work on - currently not using the parameter values
 $myTime = current_time( "timestamp", 0 );
 $myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $myTime );
 
 //$formattedCleanedup = wpo_format_size($cleanedup);
 
-$sendto = get_bloginfo ( 'admin_email' );
+
+    if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+    //
+        $sendto = OPTION_NAME_ENABLE_EMAIL_ADDRESS;
+    }
+    else{
+        $sendto = get_bloginfo ( 'admin_email' );
+    }
+        
+//$thiscleanup = wpo_format_size($cleanedup);
+    
 $subject = get_bloginfo ( 'name' ).": ".__("Automatic Operation Completed","wp-optimize")." ".$myDate;
 
-$msg = __("Scheduled optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
-$msg .=  __("You can safely delete this email.","wp-optimize")."\r\n";
+$msg  = __("Scheduled optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
+//$msg .= __("Recovered space","wp-optimize").": ".$thiscleanup."\r\n";
+$msg .= __("You can safely delete this email.","wp-optimize")."\r\n";
 $msg .= "\r\n";
 $msg .= __("Regards,","wp-optimize")."\r\n";
 $msg .= __("WP-Optimize Plugin","wp-optimize");
 
 wp_mail( $sendto, $subject, $msg );
 
-
+ob_end_flush();
 }
 
 
@@ -263,6 +281,7 @@ function wpo_removeOptions(){
 	delete_option( OPTION_NAME_ENABLE_ADMIN_MENU );
 	delete_option( OPTION_NAME_SCHEDULE_TYPE );
 	delete_option( OPTION_NAME_TOTAL_CLEANED );
+    delete_option( OPTION_NAME_CURRENT_CLEANED );
 	delete_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS );
 	delete_option( OPTION_NAME_ENABLE_EMAIL );
 
@@ -382,8 +401,10 @@ function wpo_cron_action() {
                 wpo_debugLog('optimizing .... '.$t[0]);
     		}
 
-    		list($part1, $part2) = wpo_getCurrentDBSize();
 
+
+            ob_start();
+            list($part1, $part2) = wpo_getCurrentDBSize();            
             $thistime = current_time( "timestamp", 0 );
             $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
             update_option( OPTION_NAME_LAST_OPT, $thedate );
@@ -400,7 +421,7 @@ function wpo_cron_action() {
             else{
                 //
             }
-
+            ob_end_flush();
         } // endif $this_options['optimize']
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
 }
@@ -584,6 +605,7 @@ function wpo_updateTotalCleaned($current){
     $total_now = strval($total_now);
 
     update_option(OPTION_NAME_TOTAL_CLEANED, $total_now);
+    update_option(OPTION_NAME_CURRENT_CLEANED, $current);
 
     return $total_now;
 
