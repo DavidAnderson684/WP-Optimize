@@ -15,15 +15,6 @@ if ( ! defined( 'WPINC' ) ) {
     <p><?php _e('WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project.','wp-optimize'); ?><br />
     <br />
     - Ruhani Rabin </p>
-        <a href="#"
-      onclick="
-      window.open(
-     'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://www.ruhanirabin.com/wp-optimize/'),
-     'facebook-share-dialog',
-     'width=626,height=436');
-      return false;">
-      <?php _e('Share this plugin on Facebook','wp-optimize');?>
-    </a>
 
 	<br /><br />
 	  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
