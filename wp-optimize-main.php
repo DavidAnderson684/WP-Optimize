@@ -5,15 +5,14 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
+error_reporting( error_reporting() & ~E_NOTICE );
 $text = '';
 
 if (isset($_POST["clean-revisions"])) {
     $text .= wpo_cleanUpSystem('revisions');
     }
 
-        $checkValue = $_POST["clean-revisions"];
-        if ($checkValue) {
+        if ( isset( $_POST["clean-revisions"] ) ) {
             $user_options["user-revisions"] = TRUE;
         } else {
             $user_options["user-revisions"] = FALSE;
@@ -27,8 +26,7 @@ if (isset($_POST["clean-autodraft"])) {
     //$user_options["user-drafts"] = $user_options["user-drafts"] ? 'true' : 'false';
     }
 
-    $checkValue = $_POST["clean-autodraft"];
-        if ($checkValue) {
+        if ( isset( $_POST["clean-autodraft"] ) ) {
         $user_options["user-drafts"] = TRUE;
         } else {
         $user_options["user-drafts"] = FALSE;
@@ -37,8 +35,8 @@ if (isset($_POST["clean-autodraft"])) {
 if (isset($_POST["clean-comments"])) {
     $text .= wpo_cleanUpSystem('spam');
     }
-        $checkValue = $_POST["clean-comments"];
-        if ($checkValue) {
+
+        if ( isset( $_POST["clean-comments"] ) ) {
         $user_options["user-spams"] = TRUE;
         } else {
         $user_options["user-spams"] = FALSE;
@@ -48,8 +46,8 @@ if (isset($_POST["clean-comments"])) {
 if (isset($_POST["unapproved-comments"])) {
     $text .= wpo_cleanUpSystem('unapproved');
     }
-        $checkValue = $_POST["unapproved-comments"];
-        if ($checkValue) {
+
+        if ( isset( $_POST["unapproved-comments"] ) ) {
         $user_options["user-unapproved"] = TRUE;
         } else {
         $user_options["user-unapproved"] = FALSE;
@@ -77,8 +75,7 @@ if (isset($_POST["clean-tags"])) {
 if (isset($_POST["optimize-db"])) {
     $text .= DB_NAME.' '.__('Database Optimized!', 'wp-optimize').'<br>';
     }
-        $checkValue = $_POST["optimize-db"];
-        if ($checkValue) {
+        if ( isset( $_POST["optimize-db"] ) ) {
         $user_options["user-optimize"] = TRUE;
         } else {
         $user_options["user-optimize"] = FALSE;
@@ -129,6 +126,15 @@ Function optimizeTablesQuick($Optimize){
     } //end for
 
     wpo_updateTotalCleaned(strval($total_gain));
+
+			// #TODO for testing only
+            // $thistime = current_time( "timestamp", 0 );
+            // $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
+			// list($part3, $part4) = wpo_getCurrentDBSize();
+			// wpo_sendEmail($thedate, strval($part4)); //TODO TEMPORARY - send email to admin
+
+            // wpo_debugLog('Invoked+ Updating options with value +'.$part4);
+
     wpo_debugLog('Total Gain .... '.strval($total_gain));
     } //end if
     //

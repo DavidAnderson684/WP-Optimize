@@ -7,6 +7,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 $GLOBALS['wpo_auto_options'] = get_option('wp-optimize-auto');
+
 error_reporting( error_reporting() & ~E_NOTICE );
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -54,7 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	} else {
 		update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' );
 	}
+	if (isset($_POST["enable-email"])) {
+		update_option( OPTION_NAME_ENABLE_EMAIL, 'true' );
+	} else {
+		update_option( OPTION_NAME_ENABLE_EMAIL, 'false' );
+	}
+	if (isset($_POST["enable-email-address"])) {
+		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, $_POST["enable-email-address"] );
+	} else {
+		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) );
+	}
 
+        
     if( isset($_POST['wp-optimize-settings']) ) {
     	$new_options = $_POST['wp-optimize-auto'];
     	$bool_opts = array( 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags', 'optimize' );
@@ -191,6 +203,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			</p>
 
 			<p>
+			<a href="http://bit.ly/youtube-wordpress" target="_blank">
+			<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize your YouTube embedding in WordPress with this plugin', 'wp-optimize'); ?> &raquo;</a>
+	</p>
+
+			<p>
 			<input class="button-primary" type="submit" name="wp-optimize-settings1" value="<?php _e('SAVE SETTINGS', 'wp-optimize'); ?>" />
 			</p>
 			</div>
@@ -212,6 +229,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<?php
 					$last_schedule = get_option(OPTION_NAME_SCHEDULE_TYPE,'wpo_weekly');
 					switch ($last_schedule) {
+						case "wpo_daily":
+							_e('Everyday', 'wp-optimize');
+							break;
+
 						case "wpo_weekly":
 							_e('Every week', 'wp-optimize');
 							break;
@@ -231,6 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					?>
 
 					</option>
+					<option value="wpo_daily"><?php _e('Everyday', 'wp-optimize'); ?></option>
 					<option value="wpo_weekly"><?php _e('Every week', 'wp-optimize'); ?></option>
 					<option value="wpo_otherweekly"><?php _e('Every other week (every 14 days)', 'wp-optimize'); ?></option>
 					<option value="wpo_monthly"><?php _e('Every month (every 31 days)', 'wp-optimize'); ?></option>
@@ -293,8 +315,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 //            }
     ?>
 
-
-	<p>
+    <p>
+    <label>
+            <input name="enable-email" id="enable-email" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_ENABLE_EMAIL, 'false') == 'true' ? 'checked="checked"':''; ?> />
+            <?php
+            _e('Enable email notification', 'wp-optimize');
+            ?>
+    </label>
+    </p>
+    <p>
+    <label for="enable-email-address">
+            <?php
+            _e('Send email to', 'wp-optimize');
+            ?>
+        <input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo get_option(OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' )); ?>" />
+    </label>
+    </p>	
+    <p>
 	<input class="button-primary" type="submit" name="wp-optimize-settings" value="<?php _e('SAVE AUTO CLEAN-UP SETTINGS', 'wp-optimize'); ?>" />
 	</p>
 
@@ -306,4 +343,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <input type="hidden" name="action" value="save_redirect" />
 
 </form>
-

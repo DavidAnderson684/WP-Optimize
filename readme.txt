@@ -2,9 +2,9 @@
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
-Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.8.9.7
+Requires at least: 4
+Tested up to: 4.2
+Stable tag: 1.8.9.8
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,8 @@ Please join GitHub and collaborate.
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
 *   Enabled for Administrators only.
+*   E-mail notifications on automatic cleanup
+
 
 **All the potentially dangerous clean up options are marked RED.**
 
@@ -150,6 +152,10 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.9.8 =
+* Daily Schedule Option Added
+* Email notification on automatic optimization, default email is admin email address. You can change this in settings
 
 = 1.8.9.7 =
 * BUGFIX for Settings screen

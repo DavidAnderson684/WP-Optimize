@@ -35,7 +35,61 @@ if (! defined('OPTION_NAME_ENABLE_ADMIN_MENU'))
 if (! defined('OPTION_NAME_TOTAL_CLEANED'))
     define('OPTION_NAME_TOTAL_CLEANED', 'wp-optimize-total-cleaned');
 
+if (! defined('OPTION_NAME_CURRENT_CLEANED'))
+    define('OPTION_NAME_CURRENT_CLEANED', 'wp-optimize-current-cleaned');
 
+if (! defined('OPTION_NAME_ENABLE_EMAIL_ADDRESS'))
+    define('OPTION_NAME_ENABLE_EMAIL_ADDRESS', 'wp-optimize-email-address');
+
+if (! defined('OPTION_NAME_ENABLE_EMAIL'))
+    define('OPTION_NAME_ENABLE_EMAIL', 'wp-optimize-email');
+/**
+ * wpo_sendemail($sendto, $msg)
+ * @return success
+ * @param $sentdo - eg. who to send it to, abc@def.com
+ * @param $msg - the msg in text
+ */
+function wpo_sendEmail($date, $cleanedup){
+//
+    ob_start();
+// #TODO this need to work on - currently not using the parameter values
+$myTime = current_time( "timestamp", 0 );
+$myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $myTime );
+
+//$formattedCleanedup = wpo_format_size($cleanedup);
+
+
+    if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+    //
+        $sendto = OPTION_NAME_ENABLE_EMAIL_ADDRESS;
+    }
+    else{
+        $sendto = get_bloginfo ( 'admin_email' );
+    }
+        
+//$thiscleanup = wpo_format_size($cleanedup);
+    
+$subject = get_bloginfo ( 'name' ).": ".__("Automatic Operation Completed","wp-optimize")." ".$myDate;
+
+$msg  = __("Scheduled optimization was executed at","wp-optimize")." ".$myDate."\r\n"."\r\n";
+//$msg .= __("Recovered space","wp-optimize").": ".$thiscleanup."\r\n";
+$msg .= __("You can safely delete this email.","wp-optimize")."\r\n";
+$msg .= "\r\n";
+$msg .= __("Regards,","wp-optimize")."\r\n";
+$msg .= __("WP-Optimize Plugin","wp-optimize");
+
+wp_mail( $sendto, $subject, $msg );
+
+ob_end_flush();
+}
+
+
+/**
+ * wpo_readFeed($rss_url, $number_of_itmes)
+ * @return RSS items
+ * @param $rss_url - url of RSS feed
+ * @param number of items - number of items to return
+ */
 function wpo_readFeed($rss_url, $number_of_itmes){
 
     include_once( ABSPATH . WPINC . '/feed.php' );
@@ -117,12 +171,12 @@ function wpo_disableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -134,7 +188,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 /*
@@ -150,12 +204,12 @@ function wpo_enableLinkbacks($type) {
 global $wpdb;
 	switch ($type) {
         case "trackbacks":
-		
+
 		$thissql = "UPDATE `$wpdb->posts` SET ping_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
 		$trackbacks = $wpdb->query( $thissql );
 		break;
-		
+
         case "comments":
 		$thissql = "UPDATE `$wpdb->posts` SET comment_status='open' WHERE post_status = 'publish' AND post_type = 'post'";
 		$thissql .= ';';
@@ -167,7 +221,7 @@ global $wpdb;
 	//;
 	break;
 	}
-	
+
 }
 
 
@@ -203,7 +257,7 @@ function wpo_headerImage(){
 
 	$text = '<img src="'.WPO_PLUGIN_URL.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px" height="auto"/><br />';
 
-	$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=310&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:46px;" allowTransparency="true"></iframe>';
+	//$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=310&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:46px;" allowTransparency="true"></iframe>';
 	echo $text;
 
 }
@@ -227,6 +281,9 @@ function wpo_removeOptions(){
 	delete_option( OPTION_NAME_ENABLE_ADMIN_MENU );
 	delete_option( OPTION_NAME_SCHEDULE_TYPE );
 	delete_option( OPTION_NAME_TOTAL_CLEANED );
+    delete_option( OPTION_NAME_CURRENT_CLEANED );
+	delete_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS );
+	delete_option( OPTION_NAME_ENABLE_EMAIL );
 
     delete_option( 'wp-optimize-auto' );
     delete_option( 'wp-optimize-settings' );
@@ -344,18 +401,27 @@ function wpo_cron_action() {
                 wpo_debugLog('optimizing .... '.$t[0]);
     		}
 
-    		//$dateformat = __('l jS \of F Y h:i:s A');
-    		//$dateformat = 'l jS \of F Y h:i:s A';
-            //$thisdate = date($dateformat);
-            //$thisdate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $time() + (get_option('gmt_offset')));
-    		list($part1, $part2) = wpo_getCurrentDBSize();
 
+
+            ob_start();
+            list($part1, $part2) = wpo_getCurrentDBSize();            
             $thistime = current_time( "timestamp", 0 );
             $thedate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $thistime );
             update_option( OPTION_NAME_LAST_OPT, $thedate );
             wpo_updateTotalCleaned(strval($part2));
-            wpo_debugLog('Updating options with value +'.$part2);
 
+            // Sending notification email
+            if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
+                //#TODO need to fix the problem with variable value not passing through
+                if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+                wpo_sendEmail($thedate, $part2);                     
+                }
+
+            }
+            else{
+                //
+            }
+            ob_end_flush();
         } // endif $this_options['optimize']
 	}	// end if ( get_option(OPTION_NAME_SCHEDULE) == 'true')
 }
@@ -397,8 +463,22 @@ function wpo_PluginOptionsSetDefaults() {
 	}
 	else{
 	    add_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false', $deprecated, $autoload );
+	}    
+        // ---------
+	if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
+	//
 	}
-
+	else{
+	    add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
+	}    
+        // ---------
+	if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+	//
+	}
+	else{
+	    add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
+	}    
+        
 	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
 	//
 	}
@@ -525,6 +605,7 @@ function wpo_updateTotalCleaned($current){
     $total_now = strval($total_now);
 
     update_option(OPTION_NAME_TOTAL_CLEANED, $total_now);
+    update_option(OPTION_NAME_CURRENT_CLEANED, $current);
 
     return $total_now;
 
