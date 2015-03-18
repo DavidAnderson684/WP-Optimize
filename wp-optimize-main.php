@@ -5,7 +5,7 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-error_reporting( error_reporting() & ~E_NOTICE );
+
 $text = '';
 
 if (isset($_POST["clean-revisions"])) {
