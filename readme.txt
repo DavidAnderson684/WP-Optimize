@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 4
 Tested up to: 4.2
-Stable tag: 1.8.9.8
+Stable tag: 1.8.9.9
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -152,6 +152,11 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.8.9.9 =
+* Security Patch - Update your plugin.
+* Security Patch provided by Dion at WordPress.org and Security report provided by http://planetzuda.com .
+* Language files update
 
 = 1.8.9.8 =
 * Daily Schedule Option Added

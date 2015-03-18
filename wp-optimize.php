@@ -45,7 +45,7 @@ global $current_user;
 error_reporting( error_reporting() & ~E_NOTICE );
 
 if (! defined('WPO_VERSION'))
-    define('WPO_VERSION', '1.8.9.8');
+    define('WPO_VERSION', '1.8.9.9');
 
 if (! defined('WPO_PLUGIN_MAIN_PATH'))
   define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ));

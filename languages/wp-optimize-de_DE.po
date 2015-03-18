@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WP-Optimize package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-09-04 11:38:45+0000\n"
+"PO-Revision-Date: 2015-03-02 17:41:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,407 +10,450 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: WP-Optimize\n"
 
-#: wp-optimize-settings.php:296
+#: wp-optimize-common.php:72
+msgid "Automatic Operation Completed"
+msgstr "Automatische Operation Fertig"
+
+#: wp-optimize-common.php:74
+msgid "Scheduled optimization was executed at"
+msgstr "Geplante Optimierung wurde durchgeführt um"
+
+#: wp-optimize-common.php:76
+msgid "You can safely delete this email."
+msgstr "Du kannst diese E-Mail bedenkenlos löschen."
+
+#: wp-optimize-common.php:78
+msgid "Regards,"
+msgstr "Grüße,"
+
+#: wp-optimize-common.php:79
+msgid "WP-Optimize Plugin"
+msgstr "WP-Optimize Plugin"
+
+#: wp-optimize-settings.php:233 wp-optimize-settings.php:255
+msgid "Everyday"
+msgstr "Täglich"
+
+#: wp-optimize-settings.php:322
+msgid "Enable email notification"
+msgstr "Aktiviere Email Benachrichtigung"
+
+#: wp-optimize-settings.php:329
+msgid "Send email to"
+msgstr "Sende Email an"
+
+msgid "http://wp-optimize.ruhanirabin.com/"
+msgstr "http://wp-optimize.ruhanirabin.com/"
+
+#: wp-optimize-settings.php:191
+msgid "Disable/Enable Comments"
+msgstr "Deaktiviere/Aktiviere Kommentare"
+
+#: wp-optimize-settings.php:180 wp-optimize-settings.php:195
+msgid "Enable"
+msgstr "Aktiviere"
+
+#: wp-optimize-settings.php:179 wp-optimize-settings.php:194
+msgid "Disable"
+msgstr "Deaktiviere"
+
+#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
+msgid "SELECT"
+msgstr "AUSWAHL"
+
+#: wp-optimize-settings.php:176
+msgid "Disable/Enable Trackbacks"
+msgstr "Deaktiviere/Aktiviere Trackbacks"
+
+#: wp-optimize-settings.php:174
+msgid "Trackback/Comments Actions"
+msgstr "Trackback/Kommentare Aktionen"
+
+#: wp-optimize-settings.php:200
 msgid "This will disable/enable Comments on all your current and previously published posts"
-msgstr "Dies wird Kommentare deaktivieren / aktivieren in allen aktuellen und bereits veröffentlichten Beiträgen "
+msgstr "Dies wird Kommentare deaktivieren/aktivieren in allen aktuellen und bereits veröffentlichten Beiträgen "
 
-#: wp-optimize-settings.php:290
-msgid "Comments Actions"
-msgstr "Kommentar Aktionen"
-
-#: wp-optimize-settings.php:286
+#: wp-optimize-settings.php:185
 msgid "This will disable/enable Trackbacks on all your current and previously published posts"
-msgstr "Dies wird Trackbacks deaktivieren / aktivieren in allen aktuellen und bereits veröffentlichten Beiträgen "
+msgstr "Dies wird Trackbacks deaktivieren/aktivieren in allen aktuellen und bereits veröffentlichten Beiträgen "
 
-#: wp-optimize-settings.php:283 wp-optimize-settings.php:293
-msgid "Enable all"
-msgstr "Alle Aktivieren"
-
-#: wp-optimize-settings.php:278
-msgid "Trackbacks Actions"
-msgstr "Trackbacks Aktionen"
-
-#: wp-optimize-settings.php:97
+#: wp-optimize-settings.php:94
 msgid "Trackbacks enabled on all current and previously published posts"
 msgstr "Trackbacks aktiviert in allen aktuellen und bereits veröffentlichten Beiträgen "
 
-#: wp-optimize-settings.php:282 wp-optimize-settings.php:292
-msgid "Disable all"
-msgstr "Alle Deaktivieren"
-
-#: wp-optimize-main.php:266
+#: wp-optimize-main.php:272
 msgid "Do not select RED marked items unless you really need to use them"
-msgstr "Wähle rot markiert Artikel nur aus, wenn Du wirklich diese benutzt"
+msgstr "Wähle ROT markierte Einträge nur aus, wenn Du diese wirklich benutzen willst"
 
-#: wp-optimize-common.php:623
+#: wp-optimize-common.php:704
 msgid "comments removed from Trash"
 msgstr "Kommentare aus dem Papierkorb entfernt"
 
-#: wp-optimize-common.php:463
+#: wp-optimize-common.php:543
 msgid "KB"
 msgstr "KB"
 
-#: wp-optimize-common.php:461
+#: wp-optimize-common.php:541
 msgid "MB"
 msgstr "MB"
 
-#: wp-optimize-settings.php:90
+#: wp-optimize-settings.php:88
 msgid "Trackbacks disabled on all current and previously published posts"
 msgstr "Trackbacks deaktiviert in allen aktuellen und bereits veröffentlichten Beiträgen"
 
-#: wp-optimize-settings.php:76
+#: wp-optimize-settings.php:103
 msgid "Comments disabled on all current and previously published posts"
 msgstr "Kommentare deaktiviert in allen aktuellen und bereits veröffentlichten Beiträgen"
 
-#: wp-optimize-settings.php:83
+#: wp-optimize-settings.php:109
 msgid "Comments enabled on all current and previously published posts"
 msgstr "Kommentare aktiviert in allen aktuellen und bereits veröffentlichten Beiträgen"
 
-#: wp-optimize-main.php:272
+#: wp-optimize-main.php:278 wp-optimize-settings.php:207
 msgid "Optimize your YouTube embedding in WordPress with this plugin"
-msgstr "Optimiere Deine YouTube Einbettungen in WordPress mit diesem Plugin"
+msgstr "Optimiere deine YouTube Einbettungen in WordPress mit diesem Plugin"
 
-#: wp-optimize-common.php:459
+#: wp-optimize-common.php:539
 msgid "GB"
 msgstr "GB"
 
-#: wp-optimize-common.php:629
+#: wp-optimize-common.php:710
 msgid "unused comment metadata items removed"
 msgstr "ungenutzte Kommentar Metadaten Einträge entfernt"
 
-#: wp-optimize-common.php:635
+#: wp-optimize-common.php:716
 msgid "unused akismet comment metadata items removed"
 msgstr "ungenutzte Akismet Kommentar Metadaten Einträge entfernt"
 
-#: wp-optimize-credits.php:76
+#: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
 msgstr "GitHub Entwicklungs Protokoll"
 
-#: wp-optimize-credits.php:50
+#: wp-optimize-credits.php:41
 msgid "(Translator name)"
 msgstr "Rene Wolf "
 
-#: wp-optimize-credits.php:50
+#: wp-optimize-credits.php:41
 msgid "http://(Translator Website)"
 msgstr "http://fluchtsportler.de"
 
-#: wp-optimize-credits.php:52
+#: wp-optimize-credits.php:43
 msgid "Read Translation Instructions"
 msgstr "Lese Übersetzungsanleitung"
 
-#: wp-optimize-credits.php:65
+#: wp-optimize-credits.php:56
 msgid "Support E-mail"
 msgstr "Support Email"
 
-#: wp-optimize-credits.php:62
+#: wp-optimize-credits.php:53
 msgid "Request New Language"
 msgstr "Anfrage einer neuen Sprache"
 
-#: wp-optimize-credits.php:61
+#: wp-optimize-credits.php:52
 msgid "Plugin Translation Portal (needs translator account)"
 msgstr "Plugin Übersetzungsportal (benötigt Übersetzer Account)"
 
-#: wp-optimize-credits.php:60
+#: wp-optimize-credits.php:51
 msgid "Get a Translator Account"
 msgstr "Hole Dir einen Übersetzer Account"
 
-#: wp-optimize-main.php:323
+#: wp-optimize-main.php:329
 msgid "Rating"
 msgstr "Bewertung"
 
-#: wp-optimize-main.php:322
+#: wp-optimize-main.php:328
 msgid "Please give a proper rating:)"
 msgstr "Bitte gebe eine korrekte Bewertung ab :)"
 
-#: wp-optimize-main.php:321
+#: wp-optimize-main.php:327
 msgid "Donate!"
 msgstr "Spende!"
 
-#: wp-optimize-main.php:321
+#: wp-optimize-main.php:327
 msgid "Please donate! It really helps me keep improvising"
 msgstr "Spende Bitte! Es hilft mir wirklich bei der Weiterentwicklung"
 
-#: wp-optimize-credits.php:58
+#: wp-optimize-credits.php:49
 msgid "Plugin Resources"
-msgstr "Plugin-Ressourcen"
+msgstr "Plugin Ressourcen"
 
-#: wp-optimize-credits.php:63
+#: wp-optimize-credits.php:54
 msgid "Plugin Homepage"
 msgstr "Plugin Homepage"
 
-#: wp-optimize-credits.php:64
+#: wp-optimize-credits.php:55
 msgid "Support (GitHub)"
 msgstr "Support (GitHub)"
 
-#: wp-optimize-credits.php:66
+#: wp-optimize-credits.php:57
 msgid "Change Log"
 msgstr "Change Log"
 
-#: wp-optimize-credits.php:67
+#: wp-optimize-credits.php:58
 msgid "FAQ"
 msgstr "FAQ"
 
-#: wp-optimize-credits.php:96
+#: wp-optimize-credits.php:87
 msgid "No items"
 msgstr "Keine Einträge"
 
-#: wp-optimize-main.php:78
+#: wp-optimize-main.php:76
 msgid "Database Optimized!"
 msgstr "Datenbank Optimiert!"
 
-#: wp-optimize-main.php:148 wp-optimize-main.php:150
+#: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
-msgstr "Reinigung Optionen"
+msgstr "Reinigungs Optionen"
 
-#: wp-optimize-main.php:159
+#: wp-optimize-main.php:165
 msgid "Clean post revisions which are older than "
-msgstr "Säubere Post Revisionen, die älter als sind als "
+msgstr "Säubere Beitrags Revisionen, die älter als sind als "
 
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
+#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
+#: wp-optimize-main.php:225
 msgid "weeks"
 msgstr "Wochen"
 
-#: wp-optimize-main.php:164
+#: wp-optimize-main.php:170
 msgid "Clean all post revisions"
-msgstr "Säubere alle Post Revisionen"
+msgstr "Säubere alle Beitrags Revisionen"
 
-#: wp-optimize-main.php:177
+#: wp-optimize-main.php:183
 msgid "Clean auto draft posts which are older than "
-msgstr "Säubere Auto Entwurfs Beiträge, die älter sind als "
+msgstr "Säubere autom. Entwurfs Beiträge, die älter sind als "
 
-#: wp-optimize-main.php:182
+#: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
-msgstr "Säubere alle Auto Entwurfs Beiträge und Beiträge im Papierkorb"
+msgstr "Säubere alle autom. Entwurfs Beiträge und Beiträge im Papierkorb"
 
-#: wp-optimize-main.php:197
+#: wp-optimize-main.php:203
 msgid "Remove spam comments which are older than "
 msgstr "Spam Kommentare entfernen, die älter sind als "
 
-#: wp-optimize-main.php:202
+#: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Entferne Spam Kommentare und Kommentare im Papierkorb"
 
-#: wp-optimize-main.php:216
+#: wp-optimize-main.php:222
 msgid "Remove unapproved comments which are older than "
 msgstr "Entferne ungenehmigte Kommentare, die älter sind als "
 
-#: wp-optimize-main.php:221 wp-optimize-settings.php:230
+#: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
 msgstr "Entferne ungenehmigte Kommentare"
 
-#: wp-optimize-main.php:234 wp-optimize-settings.php:235
+#: wp-optimize-main.php:240 wp-optimize-settings.php:293
 msgid "Remove transient options"
 msgstr "Entferne transiente Optionen"
 
-#: wp-optimize-main.php:245
+#: wp-optimize-main.php:251
 msgid "Remove pingbacks"
 msgstr "Entferne Pingbacks"
 
-#: wp-optimize-main.php:256
+#: wp-optimize-main.php:262
 msgid "Remove trackbacks"
 msgstr "Entferne Trackbacks"
 
-#: wp-optimize-main.php:282
+#: wp-optimize-main.php:288
 msgid "Actions"
 msgstr "Aktionen"
 
-#: wp-optimize-main.php:291
+#: wp-optimize-main.php:297
 msgid "Optimize database tables"
 msgstr "Optimiere Datenbanktabellen"
 
-#: wp-optimize-main.php:299
+#: wp-optimize-main.php:305
 msgid "Note:"
 msgstr "Hinweis:"
 
-#: wp-optimize-main.php:302
+#: wp-optimize-main.php:308
 msgid "InnoDB tables will not be optimized"
 msgstr "InnoDB-Tabellen werden nicht optimiert"
 
-#: wp-optimize-main.php:308
+#: wp-optimize-main.php:314
 msgid "Select safe options"
 msgstr "Wähle Sicherungsoptionen"
 
-#: wp-optimize-main.php:309
+#: wp-optimize-main.php:315
 msgid "Warning:"
 msgstr "Warnung:"
 
-#: wp-optimize-main.php:310
+#: wp-optimize-main.php:316
 msgid "Always make a backup of your DB when you upgrade to major versions"
-msgstr "Erstelle immer eine Sicherungskopie Deiner DB, bevor Du die Hauptversion aktualisierst"
+msgstr "Erstelle immer eine Sicherungskopie deiner DB, bevor Du die Hauptversion aktualisierst"
 
-#: wp-optimize-main.php:315
+#: wp-optimize-main.php:321
 msgid "PROCESS"
 msgstr "ERLEDIGEN"
 
-#: wp-optimize-main.php:328
+#: wp-optimize-main.php:334
 msgid "Status log: "
 msgstr "Statusprotokoll:"
 
-#: wp-optimize-main.php:343
+#: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
 msgstr "Letzte automatische Optimierung war am"
 
-#: wp-optimize-main.php:355
+#: wp-optimize-main.php:361
 msgid "There was no automatic optimization"
 msgstr "Es gibt keine automatische Optimierung"
 
-#: wp-optimize-main.php:405 wp-optimize-main.php:430
+#: wp-optimize-main.php:411 wp-optimize-main.php:436
 msgid "Check settings"
 msgstr "Überprüfe die Einstellungen"
 
-#: wp-optimize-main.php:370
+#: wp-optimize-main.php:376
 msgid "Scheduled cleaning enabled"
 msgstr "Regelmäßiges Reinigen ist aktiviert"
 
-#: wp-optimize-main.php:382
+#: wp-optimize-main.php:388
 msgid "Next schedule"
 msgstr "Nächste Termine"
 
-#: wp-optimize-main.php:393
+#: wp-optimize-main.php:399
 msgid "Refresh"
 msgstr "Aktualisieren"
 
-#: wp-optimize-main.php:402
+#: wp-optimize-main.php:408
 msgid "Scheduled cleaning disabled"
 msgstr "Regelmäßiges Reinigen ist deaktiviert"
 
-#: wp-optimize-main.php:416
+#: wp-optimize-main.php:422
 msgid "Keeping last "
 msgstr "Aufbewahrung letzte"
 
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
+#: wp-optimize-main.php:425 wp-optimize-settings.php:148
 msgid "weeks data"
 msgstr "Wochen-Daten"
 
-#: wp-optimize-main.php:427
+#: wp-optimize-main.php:433
 msgid "Not keeping recent data"
 msgstr "Aktuelle Daten nicht aufbewahren"
 
-#: wp-optimize-main.php:444
+#: wp-optimize-main.php:450
 msgid "Current database size : "
 msgstr "Aktuelle Datenbank-Größe : "
 
-#: wp-optimize-main.php:449
+#: wp-optimize-main.php:455
 msgid "You have saved"
 msgstr "Du hast eingespart"
 
-#: wp-optimize-main.php:456
+#: wp-optimize-main.php:462
 msgid "Current database size"
 msgstr "Aktuelle Datenbank-Größe"
 
-#: wp-optimize-main.php:464
+#: wp-optimize-main.php:470
 msgid "You can save almost"
 msgstr "Du kannst Einsparen"
 
-#: wp-optimize-main.php:481
+#: wp-optimize-main.php:487
 msgid "Total clean up overall"
 msgstr "Insgesamt eingespart"
 
-#: wp-optimize-main.php:502
+#: wp-optimize-main.php:508
 msgid "Sponsor"
 msgstr "Sponsor"
 
-#: wp-optimize-settings.php:71
+#: wp-optimize-settings.php:115
 msgid "Settings updated"
 msgstr "Einstellungen aktualisiert"
 
-#: wp-optimize-settings.php:114
+#: wp-optimize-settings.php:132
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
-#: wp-optimize-settings.php:119
+#: wp-optimize-settings.php:137
 msgid "Keep last "
 msgstr "Behalte die letzten"
 
-#: wp-optimize-settings.php:135
+#: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "Diese Option behält die Daten von den zuletzt gewählten Wochen und enfernt keinen Datenmüll vor diesem Zeitraum.  Dies wird auch den Auto Clean-Up Prozess beeinflussen."
 
-#: wp-optimize-settings.php:144
+#: wp-optimize-settings.php:162
 msgid "Enable admin bar link "
 msgstr "Aktiviere den Adminleisten-Link "
 
-#: wp-optimize-settings.php:146
+#: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
 msgstr "(Klicke hier, zum Aktualisieren)"
 
-#: wp-optimize-settings.php:152
+#: wp-optimize-settings.php:170
 msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
-msgstr "Diese Option wird den WP-Optimize Link in die oberen Adminleiste setzen (Standardeinstellung ist Aus). Benötigt Aktualisierung der Seite."
+msgstr "Diese Option wird den WP-Optimize Link in die oberen Adminleiste setzen (Standardeinstellung ist Aus). Erfordert Aktualisierung der Seite."
 
-#: wp-optimize-settings.php:158
+#: wp-optimize-settings.php:211
 msgid "SAVE SETTINGS"
 msgstr "SPEICHERE EINSTELLUNGEN"
 
-#: wp-optimize-settings.php:168
+#: wp-optimize-settings.php:221
 msgid "Auto Clean-up Settings"
-msgstr "Auto Reinigungseinstellungen"
+msgstr "Autom. Reinigungs Einstellungen"
 
-#: wp-optimize-settings.php:171
+#: wp-optimize-settings.php:224
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
-msgstr "Aktiviere Planmäßige Reinigung und Optimierung (Beta-Funktion!)"
+msgstr "Aktiviere planmäßige Reinigung und Optimierung (Beta-Funktion!)"
 
-#: wp-optimize-settings.php:173
+#: wp-optimize-settings.php:226
 msgid "Select schedule type (default is Weekly)"
 msgstr "Wähle den Zeitplan (Standardwert ist Wöchentlich)"
 
-#: wp-optimize-settings.php:180 wp-optimize-settings.php:192
-#: wp-optimize-settings.php:198
+#: wp-optimize-settings.php:237 wp-optimize-settings.php:249
+#: wp-optimize-settings.php:256
 msgid "Every week"
 msgstr "Jede Woche"
 
-#: wp-optimize-settings.php:184 wp-optimize-settings.php:199
+#: wp-optimize-settings.php:241 wp-optimize-settings.php:257
 msgid "Every other week (every 14 days)"
 msgstr "Jede zweite Woche (alle 14 Tage)"
 
-#: wp-optimize-settings.php:188 wp-optimize-settings.php:200
+#: wp-optimize-settings.php:245 wp-optimize-settings.php:258
 msgid "Every month (every 31 days)"
 msgstr "Jeden Monat (alle 31 Tage)"
 
-#: wp-optimize-settings.php:204
+#: wp-optimize-settings.php:262
 msgid "Automatic cleanup will perform the following:"
-msgstr "Automatische Bereinigung führt die folgenden Schritte aus:"
+msgstr "Automatische Reinigung führt die folgenden Schritte aus:"
 
-#: wp-optimize-settings.php:206
+#: wp-optimize-settings.php:264
 msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
-msgstr "Entferne Änderungen, auto Entwürfe, Beiträge / Kommentare im Papierkorb, transiente Optionen. Danach kommt die Optimierung der DB."
+msgstr "Entferne Revisionen, autom. Entwürfe, Beiträge/Kommentare im Papierkorb, transiente Optionen. Danach kommt die Optimierung der DB."
 
-#: wp-optimize-settings.php:213
+#: wp-optimize-settings.php:271
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
 msgstr "Diese Einstellungen werden nur dann funktionieren, wenn der automatische Reinigungszeitplan aktiviert wurde"
 
-#: wp-optimize-settings.php:218
+#: wp-optimize-settings.php:276
 msgid "Remove auto revisions"
-msgstr "Entferne Auto Revisionen"
+msgstr "Entferne autom. Revisionen"
 
-#: wp-optimize-settings.php:222
+#: wp-optimize-settings.php:280
 msgid "Remove auto drafts"
-msgstr "Entferne Auto Entwürfe"
+msgstr "Entferne autom. Entwürfe"
 
-#: wp-optimize-settings.php:226
+#: wp-optimize-settings.php:284
 msgid "Remove spam comments"
 msgstr "Entferne Spam Kommentare"
 
-#: wp-optimize-settings.php:239
+#: wp-optimize-settings.php:297
 msgid "Remove orphaned post meta"
-msgstr "Entferne verwaiste Beitrag meta"
+msgstr "Entferne verwaiste Beitrags Meta"
 
-#: wp-optimize-settings.php:243
+#: wp-optimize-settings.php:301
 msgid "Remove unused tags"
 msgstr "Entferne nicht verwendete Tags"
 
-#: wp-optimize-settings.php:249
+#: wp-optimize-settings.php:307
 msgid "Optimize database"
 msgstr "Optimiere Datenbank"
 
-#: wp-optimize-settings.php:255
+#: wp-optimize-settings.php:313
 msgid "If you have InnoDB tables. They will not be optimized!"
 msgstr "Wenn Du Inno DB-Tabellen verwendest. Diese werden nicht optimiert!"
 
-#: wp-optimize-settings.php:262
+#: wp-optimize-settings.php:335
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
-msgstr "SPEICHERE AUTO REINIGUNG EINSTELLUNGEN"
+msgstr "SPEICHERE AUTOM. REINIGUNG EINSTELLUNGEN"
 
 #: wp-optimize-tables.php:20
 msgid "Database Name:"
@@ -438,7 +481,7 @@ msgstr "Index Größe"
 
 #: wp-optimize-tables.php:41
 msgid "Type"
-msgstr "typ"
+msgstr "Typ"
 
 #: wp-optimize-tables.php:42
 msgid "Overhead"
@@ -483,11 +526,8 @@ msgstr "Gesamtgröße der Einsparnis"
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
 
-msgid "http://www.ruhanirabin.com/wp-optimize/"
-msgstr "http://www.ruhanirabin.com/wp-optimize/"
-
 msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
-msgstr "Dieses Plugin hilft Dir, Deine Datenbank sauber zu halten, durch Entfernen von Post Revisionen und Spams in einem Flammenmeer. Darüber hinaus ermöglicht es Dir, das Ausführen von Optimierungen auf Befehl von Deinen WordPress Core-Tabellen (mit Vorsicht benutzen)."
+msgstr "Dieses Plugin hilft dir, Deine Datenbank sauber zu halten, durch Entfernen von Beitrags Revisionen und Spams in einem Flammenmeer. Darüber hinaus ermöglicht es dir, das Ausführen von Optimierungen auf Befehl von deinen WordPress Core-Tabellen (mit Vorsicht benutzen)."
 
 msgid "Ruhani Rabin"
 msgstr "Ruhani Rabin"
@@ -515,131 +555,131 @@ msgstr "Informationen"
 msgid "Tables"
 msgstr "Tabellen"
 
-#: wp-optimize-common.php:465
+#: wp-optimize-common.php:545
 msgid "bytes"
 msgstr "Bytes"
 
-#: wp-optimize-common.php:554
+#: wp-optimize-common.php:635
 msgid "transient options deleted"
 msgstr "transiente Optionen gelöscht"
 
-#: wp-optimize-common.php:581
+#: wp-optimize-common.php:662
 msgid "post revisions deleted"
-msgstr "Beitrag Revisionen gelöscht"
+msgstr "Beitrags Revisionen gelöscht"
 
-#: wp-optimize-common.php:592
+#: wp-optimize-common.php:673
 msgid "auto drafts deleted"
-msgstr "Auto Entwürfe gelöscht"
+msgstr "Autom. Entwürfe gelöscht"
 
-#: wp-optimize-common.php:602
+#: wp-optimize-common.php:683
 msgid "items removed from Trash"
 msgstr "Einträge aus dem Papierkorb entfernt"
 
-#: wp-optimize-common.php:614
+#: wp-optimize-common.php:695
 msgid "spam comments deleted"
 msgstr "Spam Kommentare gelöscht"
 
-#: wp-optimize-common.php:645
+#: wp-optimize-common.php:726
 msgid "unapproved comments deleted"
 msgstr "ungenehmigte Kommentare gelöscht"
 
-#: wp-optimize-common.php:651
+#: wp-optimize-common.php:732
 msgid "pingbacks deleted"
 msgstr "Pingbacks gelöscht"
 
-#: wp-optimize-common.php:657
+#: wp-optimize-common.php:738
 msgid "trackbacks deleted"
 msgstr "Trackbacks gelöscht"
 
-#: wp-optimize-common.php:664
+#: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
 msgstr "Aktiviert wöchentliche Verarbeitung"
 
-#: wp-optimize-common.php:670
+#: wp-optimize-common.php:751
 msgid "Disabled weekly processing"
 msgstr "Deaktiviert wöchentliche Verarbeitung"
 
-#: wp-optimize-common.php:679
+#: wp-optimize-common.php:760
 msgid "NO Actions Taken"
 msgstr "KEINE Aktionen besetzt"
 
-#: wp-optimize-common.php:706
+#: wp-optimize-common.php:787
 msgid "transient options in your database"
-msgstr "transiente Optionen in Deiner Datenbank"
+msgstr "transiente Optionen in deiner Datenbank"
 
-#: wp-optimize-common.php:708
+#: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "Keine transiente Optionen gefunden"
 
-#: wp-optimize-common.php:717
+#: wp-optimize-common.php:798
 msgid "orphaned postmeta in your database"
-msgstr "verwaiste Postmeta in Deiner Datenbank"
+msgstr "verwaiste Postmeta in deiner Datenbank"
 
-#: wp-optimize-common.php:719
+#: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
-msgstr "Keine verwaiste Postmeta in Deiner Datenbank"
+msgstr "Keine verwaiste Postmeta in deiner Datenbank"
 
-#: wp-optimize-common.php:728
+#: wp-optimize-common.php:809
 msgid "unused tags in your database"
 msgstr "ungenutzte Tags in Deiner Datenbank"
 
-#: wp-optimize-common.php:730
+#: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "Keine ungenutzten Tags gefunden"
 
-#: wp-optimize-common.php:743
+#: wp-optimize-common.php:824
 msgid "post revisions in your database"
-msgstr "Post Revisionen in Deiner Datenbank"
+msgstr "Beitrags Revisionen in deiner Datenbank"
 
-#: wp-optimize-common.php:745
+#: wp-optimize-common.php:826
 msgid "No post revisions found"
-msgstr "Keine Post Revisionen gefunden"
+msgstr "Keine Beitrags Revisionen gefunden"
 
-#: wp-optimize-common.php:758
+#: wp-optimize-common.php:839
 msgid "auto draft post(s) in your database"
-msgstr "Auto Entwurfs Beitrag(Beiträge) in Deiner Datenbank"
+msgstr "Autom. Entwurfs Beitrag(Beiträge) in deiner Datenbank"
 
-#: wp-optimize-common.php:760
+#: wp-optimize-common.php:841
 msgid "No auto draft posts found"
-msgstr "Keine Auto Entwurfs Beiträge gefunden"
+msgstr "Keine autom. Entwurfs Beiträge gefunden"
 
-#: wp-optimize-common.php:772
+#: wp-optimize-common.php:853
 msgid "spam comments found"
 msgstr "Spam Kommentare gefunden"
 
-#: wp-optimize-common.php:772 wp-optimize-common.php:803
+#: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
 msgstr "Überprüfung"
 
-#: wp-optimize-common.php:774
+#: wp-optimize-common.php:855
 msgid "No spam comments found"
 msgstr "Keine Spam Kommentare gefunden"
 
-#: wp-optimize-common.php:803
+#: wp-optimize-common.php:884
 msgid "unapproved comments found"
 msgstr "ungenehmigte Kommentare vorhanden"
 
-#: wp-optimize-common.php:805
+#: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "Keine ungenehmigte Kommentare gefunden"
 
-#: wp-optimize-common.php:813
+#: wp-optimize-common.php:894
 msgid "Pingbacks found"
 msgstr "Pingbacks gefunden"
 
-#: wp-optimize-common.php:815
+#: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "Keine Pingbacks gefunden"
 
-#: wp-optimize-common.php:823
+#: wp-optimize-common.php:904
 msgid "Trackbacks found"
 msgstr "Trackbacks gefunden"
 
-#: wp-optimize-common.php:825
+#: wp-optimize-common.php:906
 msgid "No trackbacks found"
 msgstr "Keine Trackbacks gefunden"
 
-#: wp-optimize-common.php:831
+#: wp-optimize-common.php:912
 msgid "nothing"
 msgstr "nichts"
 
@@ -651,26 +691,22 @@ msgstr "Würdigungen"
 msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
 msgstr "WP-Optimize wurde als Dienstprogramm für meine eigenen Projekte gestartet. Ich habe bald erkannt, dass dieses Plugin vielen Menschen helfen könnte. Ich möchte persönlich allen Benutzer danken, die dieses Plugin verwenden. Auch allen Übersetzern und den großzügigen Menschen, die für dieses Projekt gespendet haben ein Dankeschön."
 
-#: wp-optimize-credits.php:25
-msgid "Share this plugin on Facebook"
-msgstr "Teile dieses Plugin auf Facebook"
-
-#: wp-optimize-credits.php:38
+#: wp-optimize-credits.php:29
 msgid "Contributing Developers"
 msgstr "Beteiligte Entwickler"
 
-#: wp-optimize-credits.php:39
+#: wp-optimize-credits.php:30
 msgid "Help me make this plugin better"
 msgstr "Hilf mir, dieses Plugin zu verbessern"
 
-#: wp-optimize-credits.php:39
+#: wp-optimize-credits.php:30
 msgid "I am looking for contributing developers."
-msgstr "Ich suche jemanden der mir hilft."
+msgstr "Ich suche helfende Entwickler."
+
+#: wp-optimize-credits.php:31
+msgid "Your name and website will be credited here in the plugin"
+msgstr "Dein Name und deine Website wird hier im Plugin veröffentlicht"
 
 #: wp-optimize-credits.php:40
-msgid "Your name and website will be credited here in the plugin"
-msgstr "Dein Name und Deine Website wird hier im Plugin veröffentlicht"
-
-#: wp-optimize-credits.php:49
 msgid "Translators"
 msgstr "Übersetzer"

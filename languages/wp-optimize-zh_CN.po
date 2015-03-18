@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WP-Optimize package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-09-05 02:49:26+0000\n"
+"PO-Revision-Date: 2015-03-03 01:42:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,405 +10,448 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: WP-Optimize\n"
 
-#: wp-optimize-settings.php:296
+#: wp-optimize-common.php:72
+msgid "Automatic Operation Completed"
+msgstr "自动优化清理操作已完成"
+
+#: wp-optimize-common.php:74
+msgid "Scheduled optimization was executed at"
+msgstr "预计优化时间"
+
+#: wp-optimize-common.php:76
+msgid "You can safely delete this email."
+msgstr "你可以安全地删除此邮件。"
+
+#: wp-optimize-common.php:78
+msgid "Regards,"
+msgstr "此致！"
+
+#: wp-optimize-common.php:79
+msgid "WP-Optimize Plugin"
+msgstr "WP-Optimize 插件"
+
+#: wp-optimize-settings.php:233 wp-optimize-settings.php:255
+msgid "Everyday"
+msgstr "每天"
+
+#: wp-optimize-settings.php:322
+msgid "Enable email notification"
+msgstr "启用Email提醒"
+
+#: wp-optimize-settings.php:329
+msgid "Send email to"
+msgstr "发送邮件给"
+
+msgid "http://wp-optimize.ruhanirabin.com/"
+msgstr "http://wp-optimize.ruhanirabin.com/"
+
+#: wp-optimize-settings.php:191
+msgid "Disable/Enable Comments"
+msgstr "禁用/启用 评论"
+
+#: wp-optimize-settings.php:180 wp-optimize-settings.php:195
+msgid "Enable"
+msgstr "启用"
+
+#: wp-optimize-settings.php:179 wp-optimize-settings.php:194
+msgid "Disable"
+msgstr "禁用"
+
+#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
+msgid "SELECT"
+msgstr "请选择"
+
+#: wp-optimize-settings.php:176
+msgid "Disable/Enable Trackbacks"
+msgstr "禁用/启用 引用通告"
+
+#: wp-optimize-settings.php:174
+msgid "Trackback/Comments Actions"
+msgstr "引用通告/评论操作"
+
+#: wp-optimize-settings.php:200
 msgid "This will disable/enable Comments on all your current and previously published posts"
 msgstr "此选项将禁用/启用所有当前的和以前发布的文章评论"
 
-#: wp-optimize-settings.php:290
-msgid "Comments Actions"
-msgstr "评论操作"
-
-#: wp-optimize-settings.php:286
+#: wp-optimize-settings.php:185
 msgid "This will disable/enable Trackbacks on all your current and previously published posts"
 msgstr "此选项将禁用/启用所有当前的和以前发布的文章引用通告"
 
-#: wp-optimize-settings.php:283 wp-optimize-settings.php:293
-msgid "Enable all"
-msgstr "全部启用"
-
-#: wp-optimize-settings.php:278
-msgid "Trackbacks Actions"
-msgstr "引用通告操作"
-
-#: wp-optimize-settings.php:97
+#: wp-optimize-settings.php:94
 msgid "Trackbacks enabled on all current and previously published posts"
 msgstr "所有当前和以前发布的文章引用通告已启用"
 
-#: wp-optimize-settings.php:282 wp-optimize-settings.php:292
-msgid "Disable all"
-msgstr "全部禁用"
-
-#: wp-optimize-main.php:266
+#: wp-optimize-main.php:272
 msgid "Do not select RED marked items unless you really need to use them"
 msgstr "除非你真的需要，不要选择红色标记的选项"
 
-#: wp-optimize-common.php:623
+#: wp-optimize-common.php:704
 msgid "comments removed from Trash"
 msgstr "垃圾箱中的评论已移除"
 
-#: wp-optimize-common.php:463
+#: wp-optimize-common.php:543
 msgid "KB"
 msgstr "KB"
 
-#: wp-optimize-common.php:461
+#: wp-optimize-common.php:541
 msgid "MB"
 msgstr "MB"
 
-#: wp-optimize-settings.php:90
+#: wp-optimize-settings.php:88
 msgid "Trackbacks disabled on all current and previously published posts"
 msgstr "所有当前和以前发布的文章引用通告已被禁用"
 
-#: wp-optimize-settings.php:76
+#: wp-optimize-settings.php:103
 msgid "Comments disabled on all current and previously published posts"
 msgstr "所有当前的和以前发布的文章评论已禁用"
 
-#: wp-optimize-settings.php:83
+#: wp-optimize-settings.php:109
 msgid "Comments enabled on all current and previously published posts"
 msgstr "在所有当前和以前发布的文章评论已启用"
 
-#: wp-optimize-main.php:272
+#: wp-optimize-main.php:278 wp-optimize-settings.php:207
 msgid "Optimize your YouTube embedding in WordPress with this plugin"
 msgstr "通过此插件优化嵌入在 WordPress 中的 YouTube 代码"
 
-#: wp-optimize-common.php:459
+#: wp-optimize-common.php:539
 msgid "GB"
 msgstr "GB"
 
-#: wp-optimize-common.php:629
+#: wp-optimize-common.php:710
 msgid "unused comment metadata items removed"
 msgstr "未使用的评论元数据项已移除"
 
-#: wp-optimize-common.php:635
+#: wp-optimize-common.php:716
 msgid "unused akismet comment metadata items removed"
 msgstr "未使用的 Akismet 评论元数据项已移除"
 
-#: wp-optimize-credits.php:76
+#: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
 msgstr "GitHub 开发日志"
 
-#: wp-optimize-credits.php:50
+#: wp-optimize-credits.php:41
 msgid "(Translator name)"
 msgstr "Maie"
 
-#: wp-optimize-credits.php:50
+#: wp-optimize-credits.php:41
 msgid "http://(Translator Website)"
 msgstr "http://maie.name"
 
-#: wp-optimize-credits.php:52
+#: wp-optimize-credits.php:43
 msgid "Read Translation Instructions"
 msgstr "阅读翻译说明"
 
-#: wp-optimize-credits.php:65
+#: wp-optimize-credits.php:56
 msgid "Support E-mail"
 msgstr "支持邮箱"
 
-#: wp-optimize-credits.php:62
+#: wp-optimize-credits.php:53
 msgid "Request New Language"
 msgstr "索取新语言包"
 
-#: wp-optimize-credits.php:61
+#: wp-optimize-credits.php:52
 msgid "Plugin Translation Portal (needs translator account)"
 msgstr "插件翻译门户网站（需要译者账户）"
 
-#: wp-optimize-credits.php:60
+#: wp-optimize-credits.php:51
 msgid "Get a Translator Account"
 msgstr "获取译者帐户"
 
-#: wp-optimize-main.php:323
+#: wp-optimize-main.php:329
 msgid "Rating"
 msgstr "评分"
 
-#: wp-optimize-main.php:322
+#: wp-optimize-main.php:328
 msgid "Please give a proper rating:)"
 msgstr "请给予适当的评分:)"
 
-#: wp-optimize-main.php:321
+#: wp-optimize-main.php:327
 msgid "Donate!"
 msgstr "捐助！"
 
-#: wp-optimize-main.php:321
+#: wp-optimize-main.php:327
 msgid "Please donate! It really helps me keep improvising"
 msgstr "请捐助！它真的能帮助我不断改进"
 
-#: wp-optimize-credits.php:58
+#: wp-optimize-credits.php:49
 msgid "Plugin Resources"
 msgstr "插件资源"
 
-#: wp-optimize-credits.php:63
+#: wp-optimize-credits.php:54
 msgid "Plugin Homepage"
 msgstr "插件主页"
 
-#: wp-optimize-credits.php:64
+#: wp-optimize-credits.php:55
 msgid "Support (GitHub)"
 msgstr "支持 (GitHub)"
 
-#: wp-optimize-credits.php:66
+#: wp-optimize-credits.php:57
 msgid "Change Log"
 msgstr "更新日志"
 
-#: wp-optimize-credits.php:67
+#: wp-optimize-credits.php:58
 msgid "FAQ"
 msgstr "常见问题"
 
-#: wp-optimize-credits.php:96
+#: wp-optimize-credits.php:87
 msgid "No items"
 msgstr "没有项目"
 
-#: wp-optimize-main.php:78
+#: wp-optimize-main.php:76
 msgid "Database Optimized!"
 msgstr "数据库已优化"
 
-#: wp-optimize-main.php:148 wp-optimize-main.php:150
+#: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
 msgstr "自动清理设置"
 
-#: wp-optimize-main.php:159
+#: wp-optimize-main.php:165
 msgid "Clean post revisions which are older than "
 msgstr "删除文章修订记录 (仅删除早于 "
 
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
+#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
+#: wp-optimize-main.php:225
 msgid "weeks"
 msgstr "周的)"
 
-#: wp-optimize-main.php:164
+#: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "删除所有文章修订记录"
 
-#: wp-optimize-main.php:177
+#: wp-optimize-main.php:183
 msgid "Clean auto draft posts which are older than "
 msgstr "删除自动草稿 (仅删除早于 "
 
-#: wp-optimize-main.php:182
+#: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "删除所有自动草稿和回收站内的文章"
 
-#: wp-optimize-main.php:197
+#: wp-optimize-main.php:203
 msgid "Remove spam comments which are older than "
 msgstr "删除垃圾评论 (仅删除早于 "
 
-#: wp-optimize-main.php:202
+#: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "删除垃圾评论和回收站内的评论"
 
-#: wp-optimize-main.php:216
+#: wp-optimize-main.php:222
 msgid "Remove unapproved comments which are older than "
 msgstr "删除未审核评论 (仅删除早于 "
 
-#: wp-optimize-main.php:221 wp-optimize-settings.php:230
+#: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
 msgstr "删除未清除未审核的评论"
 
-#: wp-optimize-main.php:234 wp-optimize-settings.php:235
+#: wp-optimize-main.php:240 wp-optimize-settings.php:293
 msgid "Remove transient options"
 msgstr "删除临时选项 (保存于数据库中的临时缓存)"
 
-#: wp-optimize-main.php:245
+#: wp-optimize-main.php:251
 msgid "Remove pingbacks"
 msgstr "删除 Pingbacks"
 
-#: wp-optimize-main.php:256
+#: wp-optimize-main.php:262
 msgid "Remove trackbacks"
 msgstr "删除 Trackbacks"
 
-#: wp-optimize-main.php:282
+#: wp-optimize-main.php:288
 msgid "Actions"
 msgstr "操作"
 
-#: wp-optimize-main.php:291
+#: wp-optimize-main.php:297
 msgid "Optimize database tables"
 msgstr "优化数据库表"
 
-#: wp-optimize-main.php:299
+#: wp-optimize-main.php:305
 msgid "Note:"
 msgstr "注意："
 
-#: wp-optimize-main.php:302
+#: wp-optimize-main.php:308
 msgid "InnoDB tables will not be optimized"
 msgstr "InnoDB 数据表将不会被优化"
 
-#: wp-optimize-main.php:308
+#: wp-optimize-main.php:314
 msgid "Select safe options"
 msgstr "选择安全选项"
 
-#: wp-optimize-main.php:309
+#: wp-optimize-main.php:315
 msgid "Warning:"
 msgstr "警告："
 
-#: wp-optimize-main.php:310
+#: wp-optimize-main.php:316
 msgid "Always make a backup of your DB when you upgrade to major versions"
 msgstr "当升级到主版本时总是创建一个数据库备份"
 
-#: wp-optimize-main.php:315
+#: wp-optimize-main.php:321
 msgid "PROCESS"
 msgstr "优化"
 
-#: wp-optimize-main.php:328
+#: wp-optimize-main.php:334
 msgid "Status log: "
 msgstr "状态："
 
-#: wp-optimize-main.php:343
+#: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
 msgstr "上一次自动优化于 "
 
-#: wp-optimize-main.php:355
+#: wp-optimize-main.php:361
 msgid "There was no automatic optimization"
 msgstr "没有自动优化"
 
-#: wp-optimize-main.php:405 wp-optimize-main.php:430
+#: wp-optimize-main.php:411 wp-optimize-main.php:436
 msgid "Check settings"
 msgstr "检查设置"
 
-#: wp-optimize-main.php:370
+#: wp-optimize-main.php:376
 msgid "Scheduled cleaning enabled"
 msgstr "清理计划已启用"
 
-#: wp-optimize-main.php:382
+#: wp-optimize-main.php:388
 msgid "Next schedule"
 msgstr "下次优化时间"
 
-#: wp-optimize-main.php:393
+#: wp-optimize-main.php:399
 msgid "Refresh"
 msgstr "刷新"
 
-#: wp-optimize-main.php:402
+#: wp-optimize-main.php:408
 msgid "Scheduled cleaning disabled"
 msgstr "预设清理已禁用"
 
-#: wp-optimize-main.php:416
+#: wp-optimize-main.php:422
 msgid "Keeping last "
 msgstr "保留最近"
 
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
+#: wp-optimize-main.php:425 wp-optimize-settings.php:148
 msgid "weeks data"
 msgstr "周的数据"
 
-#: wp-optimize-main.php:427
+#: wp-optimize-main.php:433
 msgid "Not keeping recent data"
 msgstr "没有保留最近的数据"
 
-#: wp-optimize-main.php:444
+#: wp-optimize-main.php:450
 msgid "Current database size : "
 msgstr "当前数据库体积 :"
 
-#: wp-optimize-main.php:449
+#: wp-optimize-main.php:455
 msgid "You have saved"
 msgstr "你已节省"
 
-#: wp-optimize-main.php:456
+#: wp-optimize-main.php:462
 msgid "Current database size"
 msgstr "当前数据库体积"
 
-#: wp-optimize-main.php:464
+#: wp-optimize-main.php:470
 msgid "You can save almost"
 msgstr "你大约可以节省"
 
-#: wp-optimize-main.php:481
+#: wp-optimize-main.php:487
 msgid "Total clean up overall"
 msgstr "清理总览"
 
-#: wp-optimize-main.php:502
+#: wp-optimize-main.php:508
 msgid "Sponsor"
 msgstr "赞助"
 
-#: wp-optimize-settings.php:71
+#: wp-optimize-settings.php:115
 msgid "Settings updated"
 msgstr "设置已更新"
 
-#: wp-optimize-settings.php:114
+#: wp-optimize-settings.php:132
 msgid "General Settings"
 msgstr "常规设置"
 
-#: wp-optimize-settings.php:119
+#: wp-optimize-settings.php:137
 msgid "Keep last "
 msgstr "保留最近"
 
-#: wp-optimize-settings.php:135
+#: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "启用此选项将保留最近 X 周的数据。在此时段之前的所有垃圾内容都将被删除。此选项也将同时影响自动清理过程。"
 
-#: wp-optimize-settings.php:144
+#: wp-optimize-settings.php:162
 msgid "Enable admin bar link "
 msgstr "启用工具栏链接 "
 
-#: wp-optimize-settings.php:146
+#: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
 msgstr "(点击刷新)"
 
-#: wp-optimize-settings.php:152
+#: wp-optimize-settings.php:170
 msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
 msgstr "启用此选项将在工具栏(页面顶部)添加 WP-Optimize 链接 (默认不启用). 更新设置后需要刷新页面生效."
 
-#: wp-optimize-settings.php:158
+#: wp-optimize-settings.php:211
 msgid "SAVE SETTINGS"
 msgstr "保存设置"
 
-#: wp-optimize-settings.php:168
+#: wp-optimize-settings.php:221
 msgid "Auto Clean-up Settings"
 msgstr "自动清理设置"
 
-#: wp-optimize-settings.php:171
+#: wp-optimize-settings.php:224
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
 msgstr "启用预设自动清理和优化 (测试功能!)"
 
-#: wp-optimize-settings.php:173
+#: wp-optimize-settings.php:226
 msgid "Select schedule type (default is Weekly)"
 msgstr "设置计划方案 (默认为每周)"
 
-#: wp-optimize-settings.php:180 wp-optimize-settings.php:192
-#: wp-optimize-settings.php:198
+#: wp-optimize-settings.php:237 wp-optimize-settings.php:249
+#: wp-optimize-settings.php:256
 msgid "Every week"
 msgstr "每周"
 
-#: wp-optimize-settings.php:184 wp-optimize-settings.php:199
+#: wp-optimize-settings.php:241 wp-optimize-settings.php:257
 msgid "Every other week (every 14 days)"
 msgstr "每2周（每隔 14 天）"
 
-#: wp-optimize-settings.php:188 wp-optimize-settings.php:200
+#: wp-optimize-settings.php:245 wp-optimize-settings.php:258
 msgid "Every month (every 31 days)"
 msgstr "每月（每隔 31 天）"
 
-#: wp-optimize-settings.php:204
+#: wp-optimize-settings.php:262
 msgid "Automatic cleanup will perform the following:"
 msgstr "自动清理将执行以下操作:"
 
-#: wp-optimize-settings.php:206
+#: wp-optimize-settings.php:264
 msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
 msgstr "删除修订记录，自动草稿，回收站内的文章和评论，临时选项。之后会优化数据库表."
 
-#: wp-optimize-settings.php:213
+#: wp-optimize-settings.php:271
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
 msgstr "这些选项仅在自动清理计划启用时生效"
 
-#: wp-optimize-settings.php:218
+#: wp-optimize-settings.php:276
 msgid "Remove auto revisions"
 msgstr "删除修订记录"
 
-#: wp-optimize-settings.php:222
+#: wp-optimize-settings.php:280
 msgid "Remove auto drafts"
 msgstr "删除自动草稿"
 
-#: wp-optimize-settings.php:226
+#: wp-optimize-settings.php:284
 msgid "Remove spam comments"
 msgstr "删除垃圾评论"
 
-#: wp-optimize-settings.php:239
+#: wp-optimize-settings.php:297
 msgid "Remove orphaned post meta"
 msgstr "删除无用数据 (因版本升级而产生的无用表)"
 
-#: wp-optimize-settings.php:243
+#: wp-optimize-settings.php:301
 msgid "Remove unused tags"
 msgstr "删除未使用的标签"
 
-#: wp-optimize-settings.php:249
+#: wp-optimize-settings.php:307
 msgid "Optimize database"
 msgstr "优化数据库"
 
-#: wp-optimize-settings.php:255
+#: wp-optimize-settings.php:313
 msgid "If you have InnoDB tables. They will not be optimized!"
 msgstr "如果你有 InnoDB 数据表。它们不会被优化！"
 
-#: wp-optimize-settings.php:262
+#: wp-optimize-settings.php:335
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr "保存自动清理设置"
 
@@ -481,9 +524,6 @@ msgstr "总计可以节省空间"
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
 
-msgid "http://www.ruhanirabin.com/wp-optimize/"
-msgstr "http://www.ruhanirabin.com/wp-optimize/"
-
 msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
 msgstr "这个插件可以帮助你保持你的数据库的清洁，它可以移除修订草稿和回收站的垃圾。此外，它还可以让你运行你的 WordPress 核心数据表优化指令（谨慎使用）。"
 
@@ -513,131 +553,131 @@ msgstr "信息"
 msgid "Tables"
 msgstr "数据库"
 
-#: wp-optimize-common.php:465
+#: wp-optimize-common.php:545
 msgid "bytes"
 msgstr "字节"
 
-#: wp-optimize-common.php:554
+#: wp-optimize-common.php:635
 msgid "transient options deleted"
 msgstr "个临时选项已删除"
 
-#: wp-optimize-common.php:581
+#: wp-optimize-common.php:662
 msgid "post revisions deleted"
 msgstr "篇文章修订记录已删除"
 
-#: wp-optimize-common.php:592
+#: wp-optimize-common.php:673
 msgid "auto drafts deleted"
 msgstr "篇自动草稿已删除"
 
-#: wp-optimize-common.php:602
+#: wp-optimize-common.php:683
 msgid "items removed from Trash"
 msgstr "个项目已从回收站删除"
 
-#: wp-optimize-common.php:614
+#: wp-optimize-common.php:695
 msgid "spam comments deleted"
 msgstr "条垃圾评论已删除"
 
-#: wp-optimize-common.php:645
+#: wp-optimize-common.php:726
 msgid "unapproved comments deleted"
 msgstr "条未审核评论已删除"
 
-#: wp-optimize-common.php:651
+#: wp-optimize-common.php:732
 msgid "pingbacks deleted"
 msgstr "条 Pingbacks 已删除"
 
-#: wp-optimize-common.php:657
+#: wp-optimize-common.php:738
 msgid "trackbacks deleted"
 msgstr "条 Trackbacks 已删除"
 
-#: wp-optimize-common.php:664
+#: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
 msgstr "每周自动优化已启用"
 
-#: wp-optimize-common.php:670
+#: wp-optimize-common.php:751
 msgid "Disabled weekly processing"
 msgstr "每周自动优化已禁用"
 
-#: wp-optimize-common.php:679
+#: wp-optimize-common.php:760
 msgid "NO Actions Taken"
 msgstr "未操作"
 
-#: wp-optimize-common.php:706
+#: wp-optimize-common.php:787
 msgid "transient options in your database"
 msgstr "个临时选项"
 
-#: wp-optimize-common.php:708
+#: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "暂无临时选项"
 
-#: wp-optimize-common.php:717
+#: wp-optimize-common.php:798
 msgid "orphaned postmeta in your database"
 msgstr "条无用数据"
 
-#: wp-optimize-common.php:719
+#: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "暂无无用数据"
 
-#: wp-optimize-common.php:728
+#: wp-optimize-common.php:809
 msgid "unused tags in your database"
 msgstr "个未使用的标签"
 
-#: wp-optimize-common.php:730
+#: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "暂无未使用的标签"
 
-#: wp-optimize-common.php:743
+#: wp-optimize-common.php:824
 msgid "post revisions in your database"
 msgstr "篇文章修订记录"
 
-#: wp-optimize-common.php:745
+#: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "暂无文章修订记录"
 
-#: wp-optimize-common.php:758
+#: wp-optimize-common.php:839
 msgid "auto draft post(s) in your database"
 msgstr "篇自动草稿"
 
-#: wp-optimize-common.php:760
+#: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "暂无自动草稿"
 
-#: wp-optimize-common.php:772
+#: wp-optimize-common.php:853
 msgid "spam comments found"
 msgstr "条垃圾评论"
 
-#: wp-optimize-common.php:772 wp-optimize-common.php:803
+#: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
 msgstr "评论"
 
-#: wp-optimize-common.php:774
+#: wp-optimize-common.php:855
 msgid "No spam comments found"
 msgstr "暂无垃圾评论"
 
-#: wp-optimize-common.php:803
+#: wp-optimize-common.php:884
 msgid "unapproved comments found"
 msgstr "条未审核评论"
 
-#: wp-optimize-common.php:805
+#: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "暂无未审核评论"
 
-#: wp-optimize-common.php:813
+#: wp-optimize-common.php:894
 msgid "Pingbacks found"
 msgstr "条 Pingbacks"
 
-#: wp-optimize-common.php:815
+#: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "暂无 Pingbacks"
 
-#: wp-optimize-common.php:823
+#: wp-optimize-common.php:904
 msgid "Trackbacks found"
 msgstr "条 Trackbacks"
 
-#: wp-optimize-common.php:825
+#: wp-optimize-common.php:906
 msgid "No trackbacks found"
 msgstr "暂无 Trackbacks"
 
-#: wp-optimize-common.php:831
+#: wp-optimize-common.php:912
 msgid "nothing"
 msgstr "无"
 
@@ -649,26 +689,22 @@ msgstr "致谢"
 msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
 msgstr "开始时 WP-Optimize 只是作为我自己项目用的一个小工具。但不久我便意识到，这个插件可以帮助更多的人。 <br>我非常感谢每天使用和支持这个插件的用户， 同时也感谢帮助翻译和慷慨赞助这个插件的所有人。"
 
-#: wp-optimize-credits.php:25
-msgid "Share this plugin on Facebook"
-msgstr "在 Facebook 上分享这个插件"
-
-#: wp-optimize-credits.php:38
+#: wp-optimize-credits.php:29
 msgid "Contributing Developers"
 msgstr "协助插件开发"
 
-#: wp-optimize-credits.php:39
+#: wp-optimize-credits.php:30
 msgid "Help me make this plugin better"
 msgstr "帮助完善这个插件"
 
-#: wp-optimize-credits.php:39
+#: wp-optimize-credits.php:30
 msgid "I am looking for contributing developers."
 msgstr "我正在寻找优秀的开发者。"
 
-#: wp-optimize-credits.php:40
+#: wp-optimize-credits.php:31
 msgid "Your name and website will be credited here in the plugin"
 msgstr "你的名字和网站将有机会出现在这里"
 
-#: wp-optimize-credits.php:49
+#: wp-optimize-credits.php:40
 msgid "Translators"
 msgstr "翻译"
