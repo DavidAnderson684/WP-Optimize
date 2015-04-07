@@ -48,7 +48,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 	<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
 	<h4>
-        <p><a href="http://wp-managed.com/wp-login.php?action=register" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></p>
+        <p><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></p>
         <p><a href="http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs translator account)', 'wp-optimize'); ?></a></p>
         <p><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></p>
         <p><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></p>

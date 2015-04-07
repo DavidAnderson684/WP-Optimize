@@ -1,0 +1,712 @@
+# Translation of WP-Optimize in Finnish
+# This file is distributed under the same license as the WP-Optimize package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-03-21 19:00:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: WP-Optimize\n"
+
+#: wp-optimize-common.php:72
+msgid "Automatic Operation Completed"
+msgstr "Automaattinen operaatio suoritettu"
+
+#: wp-optimize-common.php:74
+msgid "Scheduled optimization was executed at"
+msgstr "Ajastettu optimointi on suoritettu"
+
+#: wp-optimize-common.php:76
+msgid "You can safely delete this email."
+msgstr "Voit huoletta poistaa tämän sähköpostin."
+
+#: wp-optimize-common.php:78
+msgid "Regards,"
+msgstr "Terveisin,"
+
+#: wp-optimize-common.php:79
+msgid "WP-Optimize Plugin"
+msgstr "WP-Optimize-plugin"
+
+#: wp-optimize-settings.php:233 wp-optimize-settings.php:255
+msgid "Everyday"
+msgstr "Joka päivä"
+
+#: wp-optimize-settings.php:322
+msgid "Enable email notification"
+msgstr "Ota sähköposti-ilmoitukset käyttöön"
+
+#: wp-optimize-settings.php:329
+msgid "Send email to"
+msgstr "Lähetä sähköposti osoitteeseen"
+
+msgid "http://wp-optimize.ruhanirabin.com/"
+msgstr "http://wp-optimize.ruhanirabin.com/"
+
+#: wp-optimize-settings.php:191
+msgid "Disable/Enable Comments"
+msgstr "Kommentit päälle/pois"
+
+#: wp-optimize-settings.php:180 wp-optimize-settings.php:195
+msgid "Enable"
+msgstr "Ota käyttöön"
+
+#: wp-optimize-settings.php:179 wp-optimize-settings.php:194
+msgid "Disable"
+msgstr "Poista käytöstä"
+
+#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
+msgid "SELECT"
+msgstr "VALITSE"
+
+#: wp-optimize-settings.php:176
+msgid "Disable/Enable Trackbacks"
+msgstr "Ota käytöstä/Laita käyttöön Viittausosoitteet"
+
+#: wp-optimize-settings.php:174
+msgid "Trackback/Comments Actions"
+msgstr "Viittausosoite-/kommenttivalinnat"
+
+#: wp-optimize-settings.php:200
+msgid "This will disable/enable Comments on all your current and previously published posts"
+msgstr "Tämä laittaa käyttöön/ottaa käytöstä kommentit kaikkiin nykyisiin ja aiemmin julkaistuihin posteihin"
+
+#: wp-optimize-settings.php:185
+msgid "This will disable/enable Trackbacks on all your current and previously published posts"
+msgstr "Tämä poistaa käytöstä/ottaa käyttöön Viittausosoitteet kaikissa nykyisissä ja aiemmin julkaistuissa posteissa"
+
+#: wp-optimize-settings.php:94
+msgid "Trackbacks enabled on all current and previously published posts"
+msgstr "Viittausosoitteet otettu käyttöön kaikissa nykyisissä ja aiemmin julkaistuissa posteissa"
+
+#: wp-optimize-main.php:272
+msgid "Do not select RED marked items unless you really need to use them"
+msgstr "ÄLÄ valitse punaisella olevia kohteita ellet välttämättä halua käyttää niitä"
+
+#: wp-optimize-common.php:704
+msgid "comments removed from Trash"
+msgstr "kommenttia poistettu Roskakorista"
+
+#: wp-optimize-common.php:543
+msgid "KB"
+msgstr "KB"
+
+#: wp-optimize-common.php:541
+msgid "MB"
+msgstr "MB"
+
+#: wp-optimize-settings.php:88
+msgid "Trackbacks disabled on all current and previously published posts"
+msgstr "Viittausosoitteet poistettu käytöstä kaikista nykyisistä ja aiemmin julkaistuista posteista"
+
+#: wp-optimize-settings.php:103
+msgid "Comments disabled on all current and previously published posts"
+msgstr "Kommentit poistettu käytöstä kaikissa nykyisissä ja aiemmin julkaistuissa posteissa"
+
+#: wp-optimize-settings.php:109
+msgid "Comments enabled on all current and previously published posts"
+msgstr "Kommentit otettu käyttöön kaikissa nykyisissä ja aiemmin julkaistuissa posteissa"
+
+#: wp-optimize-main.php:278 wp-optimize-settings.php:207
+msgid "Optimize your YouTube embedding in WordPress with this plugin"
+msgstr "Optimoi Youtube-upotuksesi WordPressiin tällä pluginilla"
+
+#: wp-optimize-common.php:539
+msgid "GB"
+msgstr "GB"
+
+#: wp-optimize-common.php:710
+msgid "unused comment metadata items removed"
+msgstr "käyttämätöntä kommenttien metadatakohdetta poistettu"
+
+#: wp-optimize-common.php:716
+msgid "unused akismet comment metadata items removed"
+msgstr "käyttämätöntä Akismet-kommenttien metadatakohdetta poistettu"
+
+#: wp-optimize-credits.php:67
+msgid "GitHub Development Log"
+msgstr "GitHub Development-loki"
+
+#: wp-optimize-credits.php:41
+msgid "(Translator name)"
+msgstr "Kari Nahkuri - Finnish (Suomen kieli)"
+
+#: wp-optimize-credits.php:41
+msgid "http://(Translator Website)"
+msgstr "http://www.vahti.net"
+
+#: wp-optimize-credits.php:43
+msgid "Read Translation Instructions"
+msgstr "Lue käännösohjeet"
+
+#: wp-optimize-credits.php:56
+msgid "Support E-mail"
+msgstr "Tukisähköposti"
+
+#: wp-optimize-credits.php:53
+msgid "Request New Language"
+msgstr "Pyydä uutta kieltä"
+
+#: wp-optimize-credits.php:52
+msgid "Plugin Translation Portal (needs translator account)"
+msgstr "Pluginin käännösportaali (vaatii kääntäjän tilin)"
+
+#: wp-optimize-credits.php:51
+msgid "Get a Translator Account"
+msgstr "Hanki kääntäjän tili"
+
+#: wp-optimize-main.php:329
+msgid "Rating"
+msgstr "Luokittelu"
+
+#: wp-optimize-main.php:328
+msgid "Please give a proper rating:)"
+msgstr "Ole hyvä ja anna kunnollinen luokitus :)"
+
+#: wp-optimize-main.php:327
+msgid "Donate!"
+msgstr "Lahjoita!"
+
+#: wp-optimize-main.php:327
+msgid "Please donate! It really helps me keep improvising"
+msgstr "Lahjoita! Se todella auttaa minua pitämään improvisoinnin päällä"
+
+#: wp-optimize-credits.php:49
+msgid "Plugin Resources"
+msgstr "Pluginin resurssit"
+
+#: wp-optimize-credits.php:54
+msgid "Plugin Homepage"
+msgstr "Pluginin kotisivu"
+
+#: wp-optimize-credits.php:55
+msgid "Support (GitHub)"
+msgstr "Tuki (GitHub)"
+
+#: wp-optimize-credits.php:57
+msgid "Change Log"
+msgstr "Muutosloki"
+
+#: wp-optimize-credits.php:58
+msgid "FAQ"
+msgstr "FAQ"
+
+#: wp-optimize-credits.php:87
+msgid "No items"
+msgstr "Ei kohteita"
+
+#: wp-optimize-main.php:76
+msgid "Database Optimized!"
+msgstr "Tietokanta optimoitu!"
+
+#: wp-optimize-main.php:154 wp-optimize-main.php:156
+msgid "Clean-up options"
+msgstr "Puhdistusvalinnat"
+
+#: wp-optimize-main.php:165
+msgid "Clean post revisions which are older than "
+msgstr "Poista postiversiot, jotka ovat vanhempia kuin"
+
+#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
+#: wp-optimize-main.php:225
+msgid "weeks"
+msgstr "viikkoa"
+
+#: wp-optimize-main.php:170
+msgid "Clean all post revisions"
+msgstr "Poista kaikki postiversiot"
+
+#: wp-optimize-main.php:183
+msgid "Clean auto draft posts which are older than "
+msgstr "Poista automaattiset vedokset, jotka ovat vanhempia kuin"
+
+#: wp-optimize-main.php:188
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "Poista kaikki automaattiset vedokset ja roskakorissa olevat postit"
+
+#: wp-optimize-main.php:203
+msgid "Remove spam comments which are older than "
+msgstr "Poista roskakommenti, jotka ovat vanhempia kuin"
+
+#: wp-optimize-main.php:208
+msgid "Remove spam comments and comments in trash"
+msgstr "Poista roskakommentit ja kommentit Roskakorista"
+
+#: wp-optimize-main.php:222
+msgid "Remove unapproved comments which are older than "
+msgstr "Poista hyväksymättömät kommentit, jotka ovat vanhempia kuin"
+
+#: wp-optimize-main.php:227 wp-optimize-settings.php:288
+msgid "Remove unapproved comments"
+msgstr "Poista hyväksymättömät kommentit"
+
+#: wp-optimize-main.php:240 wp-optimize-settings.php:293
+msgid "Remove transient options"
+msgstr "Poista tilapäiset valinnat"
+
+#: wp-optimize-main.php:251
+msgid "Remove pingbacks"
+msgstr "Poista pingbackit"
+
+#: wp-optimize-main.php:262
+msgid "Remove trackbacks"
+msgstr "Poista viittausosoitteet"
+
+#: wp-optimize-main.php:288
+msgid "Actions"
+msgstr "Toiminnot"
+
+#: wp-optimize-main.php:297
+msgid "Optimize database tables"
+msgstr "Optimoi tietokantataulut"
+
+#: wp-optimize-main.php:305
+msgid "Note:"
+msgstr "Huomautus:"
+
+#: wp-optimize-main.php:308
+msgid "InnoDB tables will not be optimized"
+msgstr "InnoDB-tauluja EI opimoida"
+
+#: wp-optimize-main.php:314
+msgid "Select safe options"
+msgstr "Valitse turvalliset valinnat"
+
+#: wp-optimize-main.php:315
+msgid "Warning:"
+msgstr "Varoitus:"
+
+#: wp-optimize-main.php:316
+msgid "Always make a backup of your DB when you upgrade to major versions"
+msgstr "Tee AINA varmuuskopio tietokannastasi kun päivität uudempaan versioon"
+
+#: wp-optimize-main.php:321
+msgid "PROCESS"
+msgstr "PROSESSOI"
+
+#: wp-optimize-main.php:334
+msgid "Status log: "
+msgstr "Tilaloki:"
+
+#: wp-optimize-main.php:349
+msgid "Last automatic optimization was at"
+msgstr "Viimeisin automaattinen optimointi tehtiin"
+
+#: wp-optimize-main.php:361
+msgid "There was no automatic optimization"
+msgstr "Automaattista optimointia ei ollut"
+
+#: wp-optimize-main.php:411 wp-optimize-main.php:436
+msgid "Check settings"
+msgstr "Tarkista asetukset"
+
+#: wp-optimize-main.php:376
+msgid "Scheduled cleaning enabled"
+msgstr "Ajastettu puhdistus on käytössä"
+
+#: wp-optimize-main.php:388
+msgid "Next schedule"
+msgstr "Seuraava aikataulu"
+
+#: wp-optimize-main.php:399
+msgid "Refresh"
+msgstr "Päivitä"
+
+#: wp-optimize-main.php:408
+msgid "Scheduled cleaning disabled"
+msgstr "Ajastettu puhdistus ei ole käytössä"
+
+#: wp-optimize-main.php:422
+msgid "Keeping last "
+msgstr "Pidetään uusin"
+
+#: wp-optimize-main.php:425 wp-optimize-settings.php:148
+msgid "weeks data"
+msgstr "viikon data"
+
+#: wp-optimize-main.php:433
+msgid "Not keeping recent data"
+msgstr "Viimeaikaisia tietoja ei pidetä"
+
+#: wp-optimize-main.php:450
+msgid "Current database size : "
+msgstr "Nykyisen tietokannan koko:"
+
+#: wp-optimize-main.php:455
+msgid "You have saved"
+msgstr "Olet säästänyt"
+
+#: wp-optimize-main.php:462
+msgid "Current database size"
+msgstr "Nykyisen tietokannan koko"
+
+#: wp-optimize-main.php:470
+msgid "You can save almost"
+msgstr "Voit säästää melkein"
+
+#: wp-optimize-main.php:487
+msgid "Total clean up overall"
+msgstr "Kaikkiaan puhdistettu:"
+
+#: wp-optimize-main.php:508
+msgid "Sponsor"
+msgstr "Sponsori"
+
+#: wp-optimize-settings.php:115
+msgid "Settings updated"
+msgstr "Asetukset päivitetty"
+
+#: wp-optimize-settings.php:132
+msgid "General Settings"
+msgstr "Yleiset asetukset"
+
+#: wp-optimize-settings.php:137
+msgid "Keep last "
+msgstr "Pidä uusin"
+
+#: wp-optimize-settings.php:153
+msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgstr "Tämä valinta säilyttää uusimma valittujen viikkojen datan ja poistaa kaiken roskadatan ennen valittua aikajaksoa. Tämä vaikuttaa myös Automaattiseen puhdistusprosessiin."
+
+#: wp-optimize-settings.php:162
+msgid "Enable admin bar link "
+msgstr "Näytä Admin-palkin linkki"
+
+#: wp-optimize-settings.php:164
+msgid "(Click here to refresh)"
+msgstr "   (Klikkaa tästä päivittääksesi)"
+
+#: wp-optimize-settings.php:170
+msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
+msgstr "Tämä valinta laittaa WP-Optimize-linkin Admin-palkin yläosaan (oletus on ei ruksia=pois päältä). Vaatii sivun päivityksen."
+
+#: wp-optimize-settings.php:211
+msgid "SAVE SETTINGS"
+msgstr "TALLENNA ASETUKSET"
+
+#: wp-optimize-settings.php:221
+msgid "Auto Clean-up Settings"
+msgstr "Automaattisen puhdistuksen asetukset"
+
+#: wp-optimize-settings.php:224
+msgid "Enable scheduled clean-up and optimization (Beta feature!)"
+msgstr "Laita päälle automaattinen puhdistus ja optimointi (Beta-ominaisuus!)"
+
+#: wp-optimize-settings.php:226
+msgid "Select schedule type (default is Weekly)"
+msgstr "Valitse ajastustyyppi (oletus on 'Joka viikko')"
+
+#: wp-optimize-settings.php:237 wp-optimize-settings.php:249
+#: wp-optimize-settings.php:256
+msgid "Every week"
+msgstr "Joka viikko"
+
+#: wp-optimize-settings.php:241 wp-optimize-settings.php:257
+msgid "Every other week (every 14 days)"
+msgstr "Joka toinen viikko (14 päivän välein)"
+
+#: wp-optimize-settings.php:245 wp-optimize-settings.php:258
+msgid "Every month (every 31 days)"
+msgstr "Joka kuukausi  (31 päivän välein)"
+
+#: wp-optimize-settings.php:262
+msgid "Automatic cleanup will perform the following:"
+msgstr "Automaattinen puhdistus tekee seuraavaa:"
+
+#: wp-optimize-settings.php:264
+msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
+msgstr "Poistaa versiot, automaattiset vedokset, postit/kommentit Roskakorissa, tilapäiset valinnat. Tämän jälkeen tietokanta optimoidaan."
+
+#: wp-optimize-settings.php:271
+msgid "These options will only work if the automatic clean-up schedule has been enabled"
+msgstr "Tämä valinta toimii VAIN, jos automaattinen puhdistusajastus on laitettu päälle"
+
+#: wp-optimize-settings.php:276
+msgid "Remove auto revisions"
+msgstr "Poista automaattiset versiot"
+
+#: wp-optimize-settings.php:280
+msgid "Remove auto drafts"
+msgstr "Poista automaattiset vedokset"
+
+#: wp-optimize-settings.php:284
+msgid "Remove spam comments"
+msgstr "Poista roskakommentit"
+
+#: wp-optimize-settings.php:297
+msgid "Remove orphaned post meta"
+msgstr "Poista orpo postidata"
+
+#: wp-optimize-settings.php:301
+msgid "Remove unused tags"
+msgstr "Poista käyttämättömät tagit"
+
+#: wp-optimize-settings.php:307
+msgid "Optimize database"
+msgstr "Optimoi tietokanta"
+
+#: wp-optimize-settings.php:313
+msgid "If you have InnoDB tables. They will not be optimized!"
+msgstr "Mikäli sinulla on InnoDB-tauluja. Niitä EI optimoida!"
+
+#: wp-optimize-settings.php:335
+msgid "SAVE AUTO CLEAN-UP SETTINGS"
+msgstr "TALLENNA AUTOMAATTIPUHDISTUS ASETUKSET"
+
+#: wp-optimize-tables.php:20
+msgid "Database Name:"
+msgstr "Tietokannan nimi:"
+
+#: wp-optimize-tables.php:28
+msgid "Optimized all the tables found in the database."
+msgstr "Optimoitiin kaikki tietokannasta löytyneet taulut."
+
+#: wp-optimize-tables.php:36
+msgid "No."
+msgstr "Nro."
+
+#: wp-optimize-tables.php:38
+msgid "Records"
+msgstr "Tietuetta"
+
+#: wp-optimize-tables.php:39
+msgid "Data Size"
+msgstr "Datakoko"
+
+#: wp-optimize-tables.php:40
+msgid "Index Size"
+msgstr "Indeksin koko"
+
+#: wp-optimize-tables.php:41
+msgid "Type"
+msgstr "Tyyppi"
+
+#: wp-optimize-tables.php:42
+msgid "Overhead"
+msgstr "Pirstoutuminen"
+
+#: wp-optimize-tables.php:137
+msgid "Total:"
+msgstr "Kaikkiaan:"
+
+#: wp-optimize-tables.php:138
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "%s taulu"
+msgstr[1] "%s taulua"
+
+#: wp-optimize-tables.php:139
+msgid "%s Record"
+msgid_plural "%s Records"
+msgstr[0] "%s tietue"
+msgstr[1] "%s tietuetta"
+
+#: wp-optimize-tables.php:179
+msgid "Total Size of Database"
+msgstr "Tietokannan kokonaiskoko"
+
+#: wp-optimize-tables.php:191
+msgid "Optimization Results"
+msgstr "Optimoinnin tulokset"
+
+#: wp-optimize-tables.php:196
+msgid "Total Space Saved"
+msgstr "Kaikkiaan tilaa säästettiin"
+
+#: wp-optimize-tables.php:208
+msgid "Optimization Possibility"
+msgstr "Optimointimahdollisuus"
+
+#: wp-optimize-tables.php:215
+msgid "Total space can be saved"
+msgstr "Kaikkiaan tilaa voidaan säästää"
+
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgstr "Tämä plugin auttaa sinua pitämään tietokantasi puhtaana poistamalla postiversiot ja roskapostin salamannopeasti. Lisäksi se mahdollistaa WordPress-ytimen taulujen optimointikomennon suorittamisen (käytä VAROVASTI)."
+
+msgid "Ruhani Rabin"
+msgstr "Ruhani Rabin"
+
+msgid "https://github.com/ruhanirabin/WP-Optimize"
+msgstr "https://github.com/ruhanirabin/WP-Optimize"
+
+#: wp-optimize-admin.php:25 wp-optimize-admin.php:43 wp-optimize.php:96
+msgid "Optimizer"
+msgstr "Optimizer"
+
+#: wp-optimize-admin.php:28 wp-optimize-admin.php:46
+msgid "MYSQL"
+msgstr "MYSQL"
+
+#: wp-optimize-admin.php:33 wp-optimize-admin.php:54 wp-optimize.php:95
+msgid "Settings"
+msgstr "Asetukset"
+
+#: wp-optimize-admin.php:34 wp-optimize-admin.php:56
+msgid "Info"
+msgstr "Tietoa"
+
+#: wp-optimize-admin.php:52 wp-optimize-tables.php:37
+msgid "Tables"
+msgstr "Taulut"
+
+#: wp-optimize-common.php:545
+msgid "bytes"
+msgstr "bittiä"
+
+#: wp-optimize-common.php:635
+msgid "transient options deleted"
+msgstr "väliaikaiset valinnat poistettu"
+
+#: wp-optimize-common.php:662
+msgid "post revisions deleted"
+msgstr "postiversiota poistettu"
+
+#: wp-optimize-common.php:673
+msgid "auto drafts deleted"
+msgstr "automaattivedosta poistettu"
+
+#: wp-optimize-common.php:683
+msgid "items removed from Trash"
+msgstr "kohdetta poistettu Roskakorista"
+
+#: wp-optimize-common.php:695
+msgid "spam comments deleted"
+msgstr "roskapostikommenttia poistettu"
+
+#: wp-optimize-common.php:726
+msgid "unapproved comments deleted"
+msgstr "hyväksymätöntä kommenttia poistettu"
+
+#: wp-optimize-common.php:732
+msgid "pingbacks deleted"
+msgstr "pingbackit poistettu"
+
+#: wp-optimize-common.php:738
+msgid "trackbacks deleted"
+msgstr "viittausosoitetta poistettu"
+
+#: wp-optimize-common.php:745
+msgid "Enabled weekly processing"
+msgstr "Laita päälle viikoittainen prosessointi"
+
+#: wp-optimize-common.php:751
+msgid "Disabled weekly processing"
+msgstr "Poista käytöstä viikoittainen prosessointi"
+
+#: wp-optimize-common.php:760
+msgid "NO Actions Taken"
+msgstr "EI tehty toimintoja"
+
+#: wp-optimize-common.php:787
+msgid "transient options in your database"
+msgstr "väliaikaista valintaa tietokannassasi"
+
+#: wp-optimize-common.php:789
+msgid "No transient options found"
+msgstr "Väliaikaisia valintoja ei löytynyt"
+
+#: wp-optimize-common.php:798
+msgid "orphaned postmeta in your database"
+msgstr "orpo postimetadata tietokannassasi"
+
+#: wp-optimize-common.php:800
+msgid "No orphaned postmeta in your database"
+msgstr "Ei orpoa postimetadataa tietokannassasi"
+
+#: wp-optimize-common.php:809
+msgid "unused tags in your database"
+msgstr "käyttämätöntä tägiä tietokannassasi"
+
+#: wp-optimize-common.php:811
+msgid "No unused tags found"
+msgstr "Käyttämättömiä tagejä ei löytynyt"
+
+#: wp-optimize-common.php:824
+msgid "post revisions in your database"
+msgstr "postiversiota tietokannassasi"
+
+#: wp-optimize-common.php:826
+msgid "No post revisions found"
+msgstr "Postiversioita ei löytynyt"
+
+#: wp-optimize-common.php:839
+msgid "auto draft post(s) in your database"
+msgstr "automaattista postivedosta tietokannassasi"
+
+#: wp-optimize-common.php:841
+msgid "No auto draft posts found"
+msgstr "Ei löydetty automaattisia vedoksia"
+
+#: wp-optimize-common.php:853
+msgid "spam comments found"
+msgstr "löytyi roskapostikommentteja"
+
+#: wp-optimize-common.php:853 wp-optimize-common.php:884
+msgid "Review"
+msgstr "Arvostelu"
+
+#: wp-optimize-common.php:855
+msgid "No spam comments found"
+msgstr "Roskakommentteja ei löytynyt"
+
+#: wp-optimize-common.php:884
+msgid "unapproved comments found"
+msgstr "hyväksymätöntä kommenttia löydetty"
+
+#: wp-optimize-common.php:886
+msgid "No unapproved comments found"
+msgstr "Hyväksymättömiä kommentteja ei löytynyt"
+
+#: wp-optimize-common.php:894
+msgid "Pingbacks found"
+msgstr "Pingbackejä löytyi"
+
+#: wp-optimize-common.php:896
+msgid "No pingbacks found"
+msgstr "Pingbackeja ei löytynyt"
+
+#: wp-optimize-common.php:904
+msgid "Trackbacks found"
+msgstr "Viittausosoitteita löytyi"
+
+#: wp-optimize-common.php:906
+msgid "No trackbacks found"
+msgstr "Viittausosoitteita ei löytynyt"
+
+#: wp-optimize-common.php:912
+msgid "nothing"
+msgstr "ei mitään"
+
+#: wp-optimize-credits.php:14
+msgid "Credits"
+msgstr "Alkutekstit"
+
+#: wp-optimize-credits.php:15
+msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
+msgstr "WP-Optimizer alkoi apuohjelmana omalle projektilleni. Havaitsin pian, että tämä plugin saattaisi auttaa monia muitakin ihmisiä. Kiitän henkilökohtaisesti kaikkia henkilöitä, jotka käyttävät tätä pluginia päivittäin. Kiitos kuuluu myös kaikille kääntäjille ja anteliaille ihmisille, jotka ovat lahjoittaneet tälle projektille."
+
+#: wp-optimize-credits.php:29
+msgid "Contributing Developers"
+msgstr "Tuetaan kehittäjiä"
+
+#: wp-optimize-credits.php:30
+msgid "Help me make this plugin better"
+msgstr "Auta tekemään tästä pluginista parempi"
+
+#: wp-optimize-credits.php:30
+msgid "I am looking for contributing developers."
+msgstr "Etsin tukea kehittäjille."
+
+#: wp-optimize-credits.php:31
+msgid "Your name and website will be credited here in the plugin"
+msgstr "Nimesi ja kotisivusi mainitaan tällä pluginilla."
+
+#: wp-optimize-credits.php:40
+msgid "Translators"
+msgstr "Kääntäjät"
