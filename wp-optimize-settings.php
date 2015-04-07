@@ -8,9 +8,8 @@ if ( ! defined( 'WPINC' ) ) {
 
 $GLOBALS['wpo_auto_options'] = get_option('wp-optimize-auto');
 
-error_reporting( error_reporting() & ~E_NOTICE );
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	check_admin_referer( 'wpo_settings' );
 
     // …
 	if (isset($_POST["enable-schedule"])) {
@@ -61,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		update_option( OPTION_NAME_ENABLE_EMAIL, 'false' );
 	}
 	if (isset($_POST["enable-email-address"])) {
-		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, $_POST["enable-email-address"] );
+		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, wp_unslash( $_POST["enable-email-address"] ) );
 	} else {
 		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) );
 	}
@@ -72,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     	$bool_opts = array( 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags', 'optimize' );
 
         foreach($bool_opts as $key) {
-    		$new_options[$key] = $new_options[$key] ? 'true' : 'false';
+    		$new_options[$key] = !empty( $new_options[$key] ) ? 'true' : 'false';
     	}
     	update_option( 'wp-optimize-auto', $new_options);
 
@@ -124,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="wpo_section wpo_group">
 <form action="#" method="post" enctype="multipart/form-data" name="settings_form" id="settings_form">
-
+<?php wp_nonce_field( 'wpo_settings' ); ?>
 
 <div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
@@ -136,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				   echo '<label>';
 				   _e('Keep last ', 'wp-optimize'); ?>
 					<select id="retention-period" name="retention-period">
-						<option value="<?php echo get_option(OPTION_NAME_RETENTION_PERIOD, '2'); ?>"><?php echo get_option(OPTION_NAME_RETENTION_PERIOD,'2'); ?></option>
+						<option value="<?php echo esc_attr( get_option(OPTION_NAME_RETENTION_PERIOD, '2') ); ?>"><?php echo esc_html( get_option(OPTION_NAME_RETENTION_PERIOD,'2') ); ?></option>
 						<option value="2">2</option>
 						<option value="4">4</option>
 						<option value="6">6</option>
@@ -225,7 +224,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				<br /><br />
 				<?php _e('Select schedule type (default is Weekly)', 'wp-optimize'); ?><br />
 				<select id="schedule_type" name="schedule_type">
-					<option value="<?php echo get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly'); ?>">
+					<option value="<?php echo esc_attr( get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly') ); ?>">
 					<?php
 					$last_schedule = get_option(OPTION_NAME_SCHEDULE_TYPE,'wpo_weekly');
 					switch ($last_schedule) {
@@ -328,7 +327,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php
             _e('Send email to', 'wp-optimize');
             ?>
-        <input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo get_option(OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' )); ?>" />
+        <input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     </label>
     </p>	
     <p>
