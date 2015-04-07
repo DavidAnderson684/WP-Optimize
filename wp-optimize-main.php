@@ -274,8 +274,8 @@ Function optimizeTablesQuick($Optimize){
 			?>
 		</p>
 <p>
-    <a href="http://bit.ly/youtube-wordpress" target="_blank">
-    <img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize your YouTube embedding in WordPress with this plugin', 'wp-optimize'); ?> &raquo;</a>
+    <a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
+    <img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org'.' »', 'wp-optimize'); ?> &raquo;</a>
   </p>
 		</div>
 		</div>
