@@ -14,11 +14,11 @@ There are a lot of stuff that has been re-coded in this release.
 
 ### Most notable changes are:
 
-= 1.8.9.10 =
-* Security Patch - Update your plugin.
-* Security Patch provided by Dion at WordPress.org and Security report provided by http://planetzuda.com .
-* Language files update
+## 1.8.9.10
+1. Security Patch - Update your plugin.
+2. Security Patch provided by Dion at WordPress.org and Security report provided by http://planetzuda.com .
+3. Language files update
 
-= 1.8.9.8 =
-* Daily Schedule Option Added
-* Email notification on automatic optimization, default email is admin email address. You can change this in settings
+## 1.8.9.8
+1. Daily Schedule Option Added
+2. Email notification on automatic optimization, default email is admin email address. You can change this in settings
