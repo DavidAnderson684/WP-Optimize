@@ -158,7 +158,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<label>
 				<input name="enable-admin-bar" id="enable-admin-bar" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_ENABLE_ADMIN_MENU, 'false') == 'true' ? 'checked="checked"':''; ?> />
 				<?php
-				_e('Enable admin bar link ', 'wp-optimize');
+				_e('Enable admin bar link', 'wp-optimize');
+				echo ' ';
 				echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
 				_e('(Click here to refresh)', 'wp-optimize');
 				echo '</a>'

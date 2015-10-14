@@ -325,13 +325,13 @@ Function optimizeTablesQuick($Optimize){
 		<p>
 
                         <a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me keep improvising', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
-                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating:)', 'wp-optimize'); ?>">
+                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
                         <?php _e('Rating', 'wp-optimize'); ?>
                         </a>
 
 		</p>
 
-<h3><?php _e('Status log: ', 'wp-optimize'); ?></h3>
+<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
 
 <?php
     $news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
@@ -386,7 +386,7 @@ Function optimizeTablesQuick($Optimize){
 			 $date = new DateTime("@$timestamp");
 			echo '<i>';
 			_e('Next schedule', 'wp-optimize');
-			echo ' : ';
+			echo ': ';
 			echo '<font color="green">';
 			//echo $date->format('l jS \of F Y') . "\n";
 			//echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp + (get_option('gmt_offset')));
@@ -447,20 +447,21 @@ Function optimizeTablesQuick($Optimize){
 
 	if (isset($_POST["optimize-db"])) {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
-		_e('Current database size : ', 'wp-optimize');
+		_e('Current database size', 'wp-optimize');
+		echo ': ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
 
                 echo ' <br />';
     		_e('You have saved', 'wp-optimize');
-    		echo ' : ';
+    		echo ': ';
     		echo '<font color="blue">';
     		echo $part2.'</font> ';
         }
 	else {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
  		_e('Current database size', 'wp-optimize');
-		echo ' : ';
+		echo ': ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
                 $this_value = $part2;
@@ -468,7 +469,7 @@ Function optimizeTablesQuick($Optimize){
             if ($this_value > 0){
                 echo ' <br />';
         		_e('You can save almost', 'wp-optimize');
-        		echo ' : ';
+        		echo ': ';
         		echo '<font color="red">';
         		echo $part2.'</font> ';
             }
