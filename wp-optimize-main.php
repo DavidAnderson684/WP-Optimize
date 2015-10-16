@@ -162,10 +162,7 @@ Function optimizeTablesQuick($Optimize){
 		<input name="clean-revisions" id="clean-revisions" type="checkbox" value="true" <?php echo $wpo_user_selection['user-revisions'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Clean post revisions which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-        _e('weeks', 'wp-optimize');
+		printf(__('Clean post revisions which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Clean all post revisions', 'wp-optimize');
 		}
@@ -180,10 +177,7 @@ Function optimizeTablesQuick($Optimize){
 			<input name="clean-autodraft" id="clean-autodraft" type="checkbox" value="true" <?php echo $wpo_user_selection['user-drafts'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Clean auto draft posts which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Clean auto draft posts which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Clean all auto draft posts and posts in trash', 'wp-optimize');
 		}
@@ -200,10 +194,7 @@ Function optimizeTablesQuick($Optimize){
 			<input name="clean-comments" id="clean-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-spams'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Remove spam comments which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Remove spam comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Remove spam comments and comments in trash', 'wp-optimize');
 		}
@@ -219,10 +210,7 @@ Function optimizeTablesQuick($Optimize){
 		<input name="unapproved-comments" id="unapproved-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-unapproved'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Remove unapproved comments which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Remove unapproved comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Remove unapproved comments', 'wp-optimize');
 		}
