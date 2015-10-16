@@ -347,7 +347,7 @@ Function optimizeTablesQuick($Optimize){
 	} else {
 		echo '<i>';
 		_e('There was no automatic optimization', 'wp-optimize');
-		echo ' - ';
+		//echo ' - ';
 		//echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
 		//_e('Check settings', 'wp-optimize');
 		//echo '</a>';
