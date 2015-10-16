@@ -135,8 +135,8 @@ echo "'";
 
 		echo '<tr class="thead">'."\n";
 		echo '<th>'.__('Total:', 'wp-optimize').'</th>'."\n";
-		echo '<th>'.sprintf(_n('%s Table', '%s Tables', $no, 'wp-optimize'), number_format_i18n($no)).'</th>'."\n";
-		echo '<th>'.sprintf(_n('%s Record', '%s Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
+		echo '<th>'.sprintf(_n('%d Table', '%d Tables', $no, 'wp-optimize'), number_format_i18n($no)).'</th>'."\n";
+		echo '<th>'.sprintf(_n('%d Record', '%d Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
 		echo '<th>'.wpo_format_size($data_usage).'</th>'."\n";
 		echo '<th>'.wpo_format_size($index_usage).'</th>'."\n";
 		echo '<th>'.'-'.'</th>'."\n";
