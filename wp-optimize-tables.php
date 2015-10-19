@@ -176,7 +176,7 @@ echo "'";
 </tbody>
 </table>
 
-<h3><?php _e('Total Size of Database', 'wp-optimize'); ?>:</h3>
+<h3><?php _e('Total Size of Database:', 'wp-optimize'); ?></h3>
 <h2><?php
 list ($part1, $part2) = wpo_getCurrentDBSize();
 echo $part1;
