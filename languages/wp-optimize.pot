@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.8.9.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2015-10-19 11:50+0100\n"
+"POT-Creation-Date: 2015-10-19 18:28+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -396,11 +396,11 @@ msgstr ""
 msgid "Remove unapproved comments which are older than %d weeks"
 msgstr ""
 
-#: wp-optimize-main.php:215 wp-optimize-settings.php:288
+#: wp-optimize-main.php:215 wp-optimize-settings.php:286
 msgid "Remove unapproved comments"
 msgstr ""
 
-#: wp-optimize-main.php:228 wp-optimize-settings.php:293
+#: wp-optimize-main.php:228 wp-optimize-settings.php:291
 msgid "Remove transient options"
 msgstr ""
 
@@ -416,7 +416,7 @@ msgstr ""
 msgid "Do not select RED marked items unless you really need to use them"
 msgstr ""
 
-#: wp-optimize-main.php:266 wp-optimize-settings.php:207
+#: wp-optimize-main.php:266 wp-optimize-settings.php:205
 msgid "Optimize YouTube embedding with this free plugin on WordPress.org"
 msgstr ""
 
@@ -488,47 +488,44 @@ msgstr ""
 msgid "Next schedule:"
 msgstr ""
 
-#: wp-optimize-main.php:386
+#: wp-optimize-main.php:387
 msgid "Refresh"
 msgstr ""
 
-#: wp-optimize-main.php:395
+#: wp-optimize-main.php:396
 msgid "Scheduled cleaning disabled"
 msgstr ""
 
-#: wp-optimize-main.php:398 wp-optimize-main.php:423
+#: wp-optimize-main.php:399 wp-optimize-main.php:421
 msgid "Check settings"
 msgstr ""
 
-#: wp-optimize-main.php:409
-msgid "Keeping last "
+#: wp-optimize-main.php:410
+#, php-format
+msgid "Keeping last %s weeks data"
 msgstr ""
 
-#: wp-optimize-main.php:412 wp-optimize-settings.php:147
-msgid "weeks data"
-msgstr ""
-
-#: wp-optimize-main.php:420
+#: wp-optimize-main.php:418
 msgid "Not keeping recent data"
 msgstr ""
 
-#: wp-optimize-main.php:437 wp-optimize-main.php:448
+#: wp-optimize-main.php:435 wp-optimize-main.php:448
 msgid "Current database size:"
 msgstr ""
 
-#: wp-optimize-main.php:442
+#: wp-optimize-main.php:441
 msgid "You have saved:"
 msgstr ""
 
-#: wp-optimize-main.php:455
+#: wp-optimize-main.php:456
 msgid "You can save almost:"
 msgstr ""
 
-#: wp-optimize-main.php:471
+#: wp-optimize-main.php:473
 msgid "Total clean up overall:"
 msgstr ""
 
-#: wp-optimize-main.php:491
+#: wp-optimize-main.php:494
 msgid "Sponsor"
 msgstr ""
 
@@ -557,139 +554,140 @@ msgid "General Settings"
 msgstr ""
 
 #: wp-optimize-settings.php:136
-msgid "Keep last "
+#, php-format
+msgid "Keep last %s weeks data"
 msgstr ""
 
-#: wp-optimize-settings.php:152
+#: wp-optimize-settings.php:150
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr ""
 
-#: wp-optimize-settings.php:161
+#: wp-optimize-settings.php:159
 msgid "Enable admin bar link"
 msgstr ""
 
-#: wp-optimize-settings.php:164
+#: wp-optimize-settings.php:162
 msgid "(Click here to refresh)"
 msgstr ""
 
-#: wp-optimize-settings.php:170
+#: wp-optimize-settings.php:168
 msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
 msgstr ""
 
-#: wp-optimize-settings.php:174
+#: wp-optimize-settings.php:172
 msgid "Trackback/Comments Actions"
 msgstr ""
 
-#: wp-optimize-settings.php:176
+#: wp-optimize-settings.php:174
 msgid "Disable/Enable Trackbacks"
 msgstr ""
 
-#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
+#: wp-optimize-settings.php:176 wp-optimize-settings.php:191
 msgid "SELECT"
 msgstr ""
 
-#: wp-optimize-settings.php:179 wp-optimize-settings.php:194
+#: wp-optimize-settings.php:177 wp-optimize-settings.php:192
 msgid "Disable"
 msgstr ""
 
-#: wp-optimize-settings.php:180 wp-optimize-settings.php:195
+#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
 msgid "Enable"
 msgstr ""
 
-#: wp-optimize-settings.php:185
+#: wp-optimize-settings.php:183
 msgid "This will disable/enable Trackbacks on all your current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:191
+#: wp-optimize-settings.php:189
 msgid "Disable/Enable Comments"
 msgstr ""
 
-#: wp-optimize-settings.php:200
+#: wp-optimize-settings.php:198
 msgid "This will disable/enable Comments on all your current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:211
+#: wp-optimize-settings.php:209
 msgid "SAVE SETTINGS"
 msgstr ""
 
-#: wp-optimize-settings.php:221
+#: wp-optimize-settings.php:219
 msgid "Auto Clean-up Settings"
 msgstr ""
 
-#: wp-optimize-settings.php:224
+#: wp-optimize-settings.php:222
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
 msgstr ""
 
-#: wp-optimize-settings.php:226
+#: wp-optimize-settings.php:224
 msgid "Select schedule type (default is Weekly)"
 msgstr ""
 
-#: wp-optimize-settings.php:233 wp-optimize-settings.php:255
+#: wp-optimize-settings.php:231 wp-optimize-settings.php:253
 msgid "Everyday"
 msgstr ""
 
-#: wp-optimize-settings.php:237 wp-optimize-settings.php:249
-#: wp-optimize-settings.php:256
+#: wp-optimize-settings.php:235 wp-optimize-settings.php:247
+#: wp-optimize-settings.php:254
 msgid "Every week"
 msgstr ""
 
-#: wp-optimize-settings.php:241 wp-optimize-settings.php:257
+#: wp-optimize-settings.php:239 wp-optimize-settings.php:255
 msgid "Every other week (every 14 days)"
 msgstr ""
 
-#: wp-optimize-settings.php:245 wp-optimize-settings.php:258
+#: wp-optimize-settings.php:243 wp-optimize-settings.php:256
 msgid "Every month (every 31 days)"
 msgstr ""
 
-#: wp-optimize-settings.php:262
+#: wp-optimize-settings.php:260
 msgid "Automatic cleanup will perform the following:"
 msgstr ""
 
-#: wp-optimize-settings.php:264
+#: wp-optimize-settings.php:262
 msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
 msgstr ""
 
-#: wp-optimize-settings.php:271
+#: wp-optimize-settings.php:269
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
 msgstr ""
 
-#: wp-optimize-settings.php:276
+#: wp-optimize-settings.php:274
 msgid "Remove auto revisions"
 msgstr ""
 
-#: wp-optimize-settings.php:280
+#: wp-optimize-settings.php:278
 msgid "Remove auto drafts"
 msgstr ""
 
-#: wp-optimize-settings.php:284
+#: wp-optimize-settings.php:282
 msgid "Remove spam comments"
 msgstr ""
 
-#: wp-optimize-settings.php:297
+#: wp-optimize-settings.php:295
 msgid "Remove orphaned post meta"
 msgstr ""
 
-#: wp-optimize-settings.php:301
+#: wp-optimize-settings.php:299
 msgid "Remove unused tags"
 msgstr ""
 
-#: wp-optimize-settings.php:307
+#: wp-optimize-settings.php:305
 msgid "Optimize database"
 msgstr ""
 
-#: wp-optimize-settings.php:313
+#: wp-optimize-settings.php:311
 msgid "If you have InnoDB tables. They will not be optimized!"
 msgstr ""
 
-#: wp-optimize-settings.php:322
+#: wp-optimize-settings.php:320
 msgid "Enable email notification"
 msgstr ""
 
-#: wp-optimize-settings.php:329
+#: wp-optimize-settings.php:327
 msgid "Send email to"
 msgstr ""
 
-#: wp-optimize-settings.php:335
+#: wp-optimize-settings.php:333
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr ""
 
