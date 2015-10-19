@@ -162,7 +162,7 @@ msgid "Rating"
 msgstr "Értékelés"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "A bővítmény értékelése :)"
 
 #: wp-optimize-main.php:327
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "Nem találhatóak elemek"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Adatbázis optimalizálva!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Adatbázis optimalizálva!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "VÉGREHAJTÁS"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Állapot értékelés: "
+msgid "Status log"
+msgstr "Állapot értékelés"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Ütemezett tisztítás engedélyezve"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Következő ütemezett tisztítás"
+msgid "Next schedule:"
+msgstr "Következő ütemezett tisztítás:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "hét adatait megtartja"
 msgid "Not keeping recent data"
 msgstr "Nem tart meg újabb adatokat"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "jelenlegi adatbázis mérete: "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "jelenlegi adatbázis mérete:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Mentett."
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Jelenlegi adatbázis mérete"
+msgid "You have saved:"
+msgstr "Mentett:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Megmenthető mennyiség"
+msgid "You can save almost:"
+msgstr "Megmenthető mennyiség:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Eddigi összes megtisztított adatmennyiség"
+msgid "Total clean up overall:"
+msgstr "Eddigi összes megtisztított adatmennyiség:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,8 +369,8 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Ez az opció megtartja a beállított hetek adatait, és eltávolítja az ezen kívüli időszakra eső eltávolítandó adatokat. Ez is hatással lehet az Automatikus tisztítási folyamatra."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "WP-Optimize engedélyezése az admin sávon "
+msgid "Enable admin bar link"
+msgstr "WP-Optimize engedélyezése az admin sávon"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -504,24 +502,24 @@ msgstr[0] "%s Rekord"
 msgstr[1] "%s Rekord"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "A teljes adatbázis mérete"
+msgid "Total Size of Database:"
+msgstr "A teljes adatbázis mérete:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
+msgid "Optimization Results:"
 msgstr "Optimalizáció Eredménye:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
+msgid "Total Space Saved:"
 msgstr "Összes megmentett méret:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimalizállási lehetőség"
+msgid "Optimization Possibility:"
+msgstr "Optimalizállási lehetőség:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Összes megtakarítható hely"
+msgid "Total space can be saved:"
+msgstr "Összes megtakarítható hely:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimalizáló"

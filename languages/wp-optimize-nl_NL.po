@@ -119,7 +119,7 @@ msgid "Rating"
 msgstr "Beoordeling"
 
 #: wp-optimize-main.php:322
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Gelieve een degelijke waardering te geven :)"
 
 #: wp-optimize-main.php:321
@@ -155,8 +155,10 @@ msgid "No items"
 msgstr "Geen items"
 
 #: wp-optimize-main.php:78
-msgid "Database Optimized!"
-msgstr "Database geoptimaliseerd!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Database geoptimaliseerd!"
 
 #: wp-optimize-main.php:148 wp-optimize-main.php:150
 msgid "Clean-up options"
@@ -244,8 +246,8 @@ msgid "PROCESS"
 msgstr "VERWERKEN"
 
 #: wp-optimize-main.php:328
-msgid "Status log: "
-msgstr "Status log: "
+msgid "Status log"
+msgstr "Status log"
 
 #: wp-optimize-main.php:343
 msgid "Last automatic optimization was at"
@@ -264,8 +266,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Gepland opschonen ingeschakeld"
 
 #: wp-optimize-main.php:382
-msgid "Next schedule"
-msgstr "Volgende Planning"
+msgid "Next schedule:"
+msgstr "Volgende Planning:"
 
 #: wp-optimize-main.php:393
 msgid "Refresh"
@@ -287,25 +289,21 @@ msgstr "weken data"
 msgid "Not keeping recent data"
 msgstr "Recente data wordt niet bijgehouden"
 
-#: wp-optimize-main.php:444
-msgid "Current database size : "
-msgstr "Huidige Database Grootte : "
+#: wp-optimize-main.php:444 wp-optimize-main.php:456
+msgid "Current database size:"
+msgstr "Huidige Database Grootte:"
 
 #: wp-optimize-main.php:449
-msgid "You have saved"
-msgstr "Je hebt bespaard"
-
-#: wp-optimize-main.php:456
-msgid "Current database size"
-msgstr "Huidige database grootte"
+msgid "You have saved:"
+msgstr "Je hebt bespaard:"
 
 #: wp-optimize-main.php:464
-msgid "You can save almost"
-msgstr "Je kunt besparen"
+msgid "You can save almost:"
+msgstr "Je kunt besparen:"
 
 #: wp-optimize-main.php:481
-msgid "Total clean up overall"
-msgstr "Totale opschoning overall"
+msgid "Total clean up overall:"
+msgstr "Totale opschoning overall:"
 
 #: wp-optimize-main.php:502
 msgid "Sponsor"
@@ -328,7 +326,7 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Deze optie zal data van de laatst geselecteerde weken behouden en alle onnodige data van voor die periode verwijderen. Dit heeft ook effect op het automatische opkuis process"
 
 #: wp-optimize-settings.php:144
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Beheerdersmenu link inschakelen"
 
 #: wp-optimize-settings.php:146
@@ -461,24 +459,24 @@ msgstr[0] "%s Rij"
 msgstr[1] "%s Rijen"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Totale Grootte van Database"
+msgid "Total Size of Database:"
+msgstr "Totale Grootte van Database:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Optimalisatie Resultaten"
+msgid "Optimization Results:"
+msgstr "Optimalisatie Resultaten:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Totaal Bespaarde Ruimte"
+msgid "Total Space Saved:"
+msgstr "Totaal Bespaarde Ruimte:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimalisatie Mogelijkheid"
+msgid "Optimization Possibility:"
+msgstr "Optimalisatie Mogelijkheid:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Totale ruimte die kan worden bespaard"
+msgid "Total space can be saved:"
+msgstr "Totale ruimte die kan worden bespaard:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

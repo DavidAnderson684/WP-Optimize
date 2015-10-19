@@ -162,7 +162,7 @@ msgid "Rating"
 msgstr "Luokittelu"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Ole hyvä ja anna kunnollinen luokitus :)"
 
 #: wp-optimize-main.php:327
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "Ei kohteita"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Tietokanta optimoitu!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Tietokanta optimoitu!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "PROSESSOI"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Tilaloki:"
+msgid "Status log"
+msgstr "Tilaloki"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Ajastettu puhdistus on käytössä"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Seuraava aikataulu"
+msgid "Next schedule:"
+msgstr "Seuraava aikataulu:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,24 +332,20 @@ msgstr "viikon data"
 msgid "Not keeping recent data"
 msgstr "Viimeaikaisia tietoja ei pidetä"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
 msgstr "Nykyisen tietokannan koko:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Olet säästänyt"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Nykyisen tietokannan koko"
+msgid "You have saved:"
+msgstr "Olet säästänyt:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Voit säästää melkein"
+msgid "You can save almost:"
+msgstr "Voit säästää melkein:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
+msgid "Total clean up overall:"
 msgstr "Kaikkiaan puhdistettu:"
 
 #: wp-optimize-main.php:508
@@ -371,7 +369,7 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Tämä valinta säilyttää uusimma valittujen viikkojen datan ja poistaa kaiken roskadatan ennen valittua aikajaksoa. Tämä vaikuttaa myös Automaattiseen puhdistusprosessiin."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Näytä Admin-palkin linkki"
 
 #: wp-optimize-settings.php:164
@@ -504,24 +502,24 @@ msgstr[0] "%s tietue"
 msgstr[1] "%s tietuetta"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Tietokannan kokonaiskoko"
+msgid "Total Size of Database:"
+msgstr "Tietokannan kokonaiskoko:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Optimoinnin tulokset"
+msgid "Optimization Results:"
+msgstr "Optimoinnin tulokset:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Kaikkiaan tilaa säästettiin"
+msgid "Total Space Saved:"
+msgstr "Kaikkiaan tilaa säästettiin:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimointimahdollisuus"
+msgid "Optimization Possibility:"
+msgstr "Optimointimahdollisuus:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Kaikkiaan tilaa voidaan säästää"
+msgid "Total space can be saved:"
+msgstr "Kaikkiaan tilaa voidaan säästää:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

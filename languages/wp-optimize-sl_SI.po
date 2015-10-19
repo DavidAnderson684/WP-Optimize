@@ -162,8 +162,8 @@ msgid "Rating"
 msgstr "Ocena"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "Prosimo podelite mi pravično oceno:)"
+msgid "Please give a proper rating :)"
+msgstr "Prosimo podelite mi pravično oceno :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "Brez elementov"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Baza podatkov Optimizirana!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Baza podatkov Optimizirana!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "PROCESIRAJ"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Dnevnik sprememb:"
+msgid "Status log"
+msgstr "Dnevnik sprememb"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Čiščenje po urniku omogočeno"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Naslednji urnik"
+msgid "Next schedule:"
+msgstr "Naslednji urnik:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "tednov podatkov"
 msgid "Not keeping recent data"
 msgstr "Ne ohrani trenutnih podatkov"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
 msgstr "Trenutna velikost baze podatkov:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Vi ste osvobodili"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Trenutna velikost baze podatkov"
+msgid "You have saved:"
+msgstr "Vi ste osvobodili:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Vi ste osvobodili skoraj"
+msgid "You can save almost:"
+msgstr "Vi ste osvobodili skoraj:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Vse skupaj očiščeno"
+msgid "Total clean up overall:"
+msgstr "Vse skupaj očiščeno:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,7 +369,7 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Ta opcija bo ohranila zadnje izbrane tedne in odstranila kakršnekoli smeti pred tem obdobjem. To se prav tako nanaša na proces Samodejnega čiščenja."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Vklopi admin vrstico"
 
 #: wp-optimize-settings.php:164
@@ -508,24 +506,24 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Skupna velikost Podatkovne Baze"
+msgid "Total Size of Database:"
+msgstr "Skupna velikost Podatkovne Baze:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Rezultati Optimizacije"
+msgid "Optimization Results:"
+msgstr "Rezultati Optimizacije:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Skupaj Osvobojenega Prostora"
+msgid "Total Space Saved:"
+msgstr "Skupaj Osvobojenega Prostora:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Možnost Optimizacije"
+msgid "Optimization Possibility:"
+msgstr "Možnost Optimizacije:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Skupaj prostora ki se lahko pridobite"
+msgid "Total space can be saved:"
+msgstr "Skupaj prostora ki se lahko pridobite:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

@@ -119,7 +119,7 @@ msgid "Rating"
 msgstr "Reitingas"
 
 #: wp-optimize-main.php:322
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Prašome suteikti tinkamą reitingą :)"
 
 #: wp-optimize-main.php:321
@@ -155,8 +155,10 @@ msgid "No items"
 msgstr "Nėra elementų"
 
 #: wp-optimize-main.php:78
-msgid "Database Optimized!"
-msgstr "Duomenų bazės Optimizuotos!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Duomenų bazės Optimizuotos!"
 
 #: wp-optimize-main.php:148 wp-optimize-main.php:150
 msgid "Clean-up options"
@@ -244,8 +246,8 @@ msgid "PROCESS"
 msgstr "PROCESAS"
 
 #: wp-optimize-main.php:328
-msgid "Status log: "
-msgstr "Statusas prisijungti:"
+msgid "Status log"
+msgstr "Statusas prisijungti"
 
 #: wp-optimize-main.php:343
 msgid "Last automatic optimization was at"
@@ -264,8 +266,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Numatomas valymas įjungtas"
 
 #: wp-optimize-main.php:382
-msgid "Next schedule"
-msgstr "Kitas grafikas"
+msgid "Next schedule:"
+msgstr "Kitas grafikas:"
 
 #: wp-optimize-main.php:393
 msgid "Refresh"
@@ -287,25 +289,21 @@ msgstr "dienos duomenys"
 msgid "Not keeping recent data"
 msgstr "Nesaugoti senesnius duomenis"
 
-#: wp-optimize-main.php:444
-msgid "Current database size : "
-msgstr "Dabartinis duomenų bazės dydis : "
+#: wp-optimize-main.php:444 wp-optimize-main.php:456
+msgid "Current database size:"
+msgstr "Dabartinis duomenų bazės dydis:"
 
 #: wp-optimize-main.php:449
-msgid "You have saved"
-msgstr "Jūs turite išsaugoti"
-
-#: wp-optimize-main.php:456
-msgid "Current database size"
-msgstr "Dabartinis duomenų bazės dydis"
+msgid "You have saved:"
+msgstr "Jūs turite išsaugoti:"
 
 #: wp-optimize-main.php:464
-msgid "You can save almost"
-msgstr "Galite išsaugoti Beveik"
+msgid "You can save almost:"
+msgstr "Galite išsaugoti Beveik:"
 
 #: wp-optimize-main.php:481
-msgid "Total clean up overall"
-msgstr "Iš viso išvalyta vietos"
+msgid "Total clean up overall:"
+msgstr "Iš viso išvalyta vietos:"
 
 #: wp-optimize-main.php:502
 msgid "Sponsor"
@@ -328,8 +326,8 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Ši galimybė išlaikyti paskutinius pasirinktus savaitės duomenis ir iki šio laikotarpio pašalinti šiukšlių duomenis. Tai taip pat turės įtakos Auto Valymo procesui"
 
 #: wp-optimize-settings.php:144
-msgid "Enable admin bar link "
-msgstr "Įjungti nuorodą į Admin panelę "
+msgid "Enable admin bar link"
+msgstr "Įjungti nuorodą į Admin panelę"
 
 #: wp-optimize-settings.php:146
 msgid "(Click here to refresh)"
@@ -463,24 +461,24 @@ msgstr[1] "%s Įrašų"
 msgstr[2] ""
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Visas dydis Duomenų bazės"
+msgid "Total Size of Database:"
+msgstr "Visas dydis Duomenų bazės:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Optimizavimo rezultatai"
+msgid "Optimization Results:"
+msgstr "Optimizavimo rezultatai:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Bendras plotas Išsaugota"
+msgid "Total Space Saved:"
+msgstr "Bendras plotas Išsaugota:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimizavimo Galimybė"
+msgid "Optimization Possibility:"
+msgstr "Optimizavimo Galimybė:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Bendras plotas gali būti išsaugotas"
+msgid "Total space can be saved:"
+msgstr "Bendras plotas gali būti išsaugotas:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

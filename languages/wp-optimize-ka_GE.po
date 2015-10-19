@@ -162,8 +162,8 @@ msgid "Rating"
 msgstr "შეფასება"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "გთხოვთ მისცეთ სათანადო შეფასება:)"
+msgid "Please give a proper rating :)"
+msgstr "გთხოვთ მისცეთ სათანადო შეფასება :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "ელემენტების გარეშე"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "მონაცემთა ბაზა ოპტიმიზირებულია!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s მონაცემთა ბაზა ოპტიმიზირებულია!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "გაშვება"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "სტატუსის ჟურნალი:"
+msgid "Status log"
+msgstr "სტატუსის ჟურნალი"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "დაგეგმილი გასუფთავება ჩართულია"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "შემდეგი განრიგი"
+msgid "Next schedule:"
+msgstr "შემდეგი განრიგი:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "კვირის მონაცემები"
 msgid "Not keeping recent data"
 msgstr "არ არის შენახული ბოლო მონაცემები"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "მონაცემთა ბაზის მოცულობა : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "მონაცემთა ბაზის მოცულობა:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "შენახულია"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "მონაცემთა ბაზის მოცულობა"
+msgid "You have saved:"
+msgstr "შენახულია:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "გასუფთავდება"
+msgid "You can save almost:"
+msgstr "გასუფთავდება:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "სულ გასუფთავდა სივრცე"
+msgid "Total clean up overall:"
+msgstr "სულ გასუფთავდა სივრცე:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,8 +369,8 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "აქ მითითებული ვარიანტი შეინახავს არჩეული კვირის მონაცემებს და წაშლის ყველა მონაცემებს სანაგვეში ამ პერიოდამდე. ეს ასევე მოქმედებს ავტო გასუფთავების პროცესში"
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "ადმინის დაფაზე "
+msgid "Enable admin bar link"
+msgstr "ადმინის დაფაზე"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -502,24 +500,24 @@ msgid_plural "%s Records"
 msgstr[0] "%s ჩანაწერი"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "მონაცემთა ბაზის საერთო მოცულობა"
+msgid "Total Size of Database:"
+msgstr "მონაცემთა ბაზის საერთო მოცულობა:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "ოპტიმიზაციის შედეგი"
+msgid "Optimization Results:"
+msgstr "ოპტიმიზაციის შედეგი:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "სულ გასუფთავებულია ადგილი"
+msgid "Total Space Saved:"
+msgstr "სულ გასუფთავებულია ადგილი:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "ოპტიმიზაციის შესაძლებლობები"
+msgid "Optimization Possibility:"
+msgstr "ოპტიმიზაციის შესაძლებლობები:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "სულ შესაძლოა განთავისუფლდეს ადგილი"
+msgid "Total space can be saved:"
+msgstr "სულ შესაძლოა განთავისუფლდეს ადგილი:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

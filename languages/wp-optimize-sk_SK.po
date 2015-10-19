@@ -119,7 +119,7 @@ msgid "Rating"
 msgstr "Hodnotenie"
 
 #: wp-optimize-main.php:322
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Uveďte, prosím, správne hodnotenie :)"
 
 #: wp-optimize-main.php:321
@@ -155,8 +155,10 @@ msgid "No items"
 msgstr "Žiadne položky"
 
 #: wp-optimize-main.php:78
-msgid "Database Optimized!"
-msgstr "Databáza optimalizovaná!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Databáza optimalizovaná!"
 
 #: wp-optimize-main.php:148 wp-optimize-main.php:150
 msgid "Clean-up options"
@@ -244,8 +246,8 @@ msgid "PROCESS"
 msgstr "VYČISTIŤ"
 
 #: wp-optimize-main.php:328
-msgid "Status log: "
-msgstr "Protokol:"
+msgid "Status log"
+msgstr "Protokol"
 
 #: wp-optimize-main.php:343
 msgid "Last automatic optimization was at"
@@ -264,8 +266,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Plánované čistenie je povolené"
 
 #: wp-optimize-main.php:382
-msgid "Next schedule"
-msgstr "ďalší plán"
+msgid "Next schedule:"
+msgstr "ďalší plán:"
 
 #: wp-optimize-main.php:393
 msgid "Refresh"
@@ -287,25 +289,21 @@ msgstr "týždňové dáta"
 msgid "Not keeping recent data"
 msgstr "Nenechávať žiadne posledné údaje"
 
-#: wp-optimize-main.php:444
-msgid "Current database size : "
+#: wp-optimize-main.php:444 wp-optimize-main.php:456
+msgid "Current database size:"
 msgstr "Aktuálna veľkosť databázy:"
 
 #: wp-optimize-main.php:449
-msgid "You have saved"
-msgstr "Ušetrili ste"
-
-#: wp-optimize-main.php:456
-msgid "Current database size"
-msgstr "Aktuálna veľkosť databázy"
+msgid "You have saved:"
+msgstr "Ušetrili ste:"
 
 #: wp-optimize-main.php:464
-msgid "You can save almost"
-msgstr "Môžete ušetriť"
+msgid "You can save almost:"
+msgstr "Môžete ušetriť:"
 
 #: wp-optimize-main.php:481
-msgid "Total clean up overall"
-msgstr "Celkovo vyčistené"
+msgid "Total clean up overall:"
+msgstr "Celkovo vyčistené:"
 
 #: wp-optimize-main.php:502
 msgid "Sponsor"
@@ -328,7 +326,7 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Táto voľba zachová údaje vybraný počet týždňov. Všetky staršie údaje budú vyčistené, Toto nastavenie má vplyv aj na automatickú údržbu."
 
 #: wp-optimize-settings.php:144
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Povoliť odkaz v hornej lište administračného panelu"
 
 #: wp-optimize-settings.php:146
@@ -463,24 +461,24 @@ msgstr[1] "%s Záznamy"
 msgstr[2] "%s Záznamov"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Celková veľkosť databázy"
+msgid "Total Size of Database:"
+msgstr "Celková veľkosť databázy:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Výsledky optimalizácie"
+msgid "Optimization Results:"
+msgstr "Výsledky optimalizácie:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Celkovo ušetrené miesto"
+msgid "Total Space Saved:"
+msgstr "Celkovo ušetrené miesto:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Možnosti optimalizácie"
+msgid "Optimization Possibility:"
+msgstr "Možnosti optimalizácie:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Celkovo môže byť ušetrené"
+msgid "Total space can be saved:"
+msgstr "Celkovo môže byť ušetrené:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

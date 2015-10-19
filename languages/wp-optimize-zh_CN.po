@@ -162,8 +162,8 @@ msgid "Rating"
 msgstr "评分"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "请给予适当的评分:)"
+msgid "Please give a proper rating :)"
+msgstr "请给予适当的评分 :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "没有项目"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "数据库已优化"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s 数据库已优化"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "优化"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "状态："
+msgid "Status log"
+msgstr "状态"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "清理计划已启用"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "下次优化时间"
+msgid "Next schedule:"
+msgstr "下次优化时间:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "周的数据"
 msgid "Not keeping recent data"
 msgstr "没有保留最近的数据"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "当前数据库体积 :"
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "当前数据库体积:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "你已节省"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "当前数据库体积"
+msgid "You have saved:"
+msgstr "你已节省:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "你大约可以节省"
+msgid "You can save almost:"
+msgstr "你大约可以节省:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "清理总览"
+msgid "Total clean up overall:"
+msgstr "清理总览:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,8 +369,8 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "启用此选项将保留最近 X 周的数据。在此时段之前的所有垃圾内容都将被删除。此选项也将同时影响自动清理过程。"
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "启用工具栏链接 "
+msgid "Enable admin bar link"
+msgstr "启用工具栏链接"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -502,24 +500,24 @@ msgid_plural "%s Records"
 msgstr[0] "%s 条记录"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "数据库大小"
+msgid "Total Size of Database:"
+msgstr "数据库大小:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "优化结果"
+msgid "Optimization Results:"
+msgstr "优化结果:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "已节省空间"
+msgid "Total Space Saved:"
+msgstr "已节省空间:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "可优化程度"
+msgid "Optimization Possibility:"
+msgstr "可优化程度:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "总计可以节省空间"
+msgid "Total space can be saved:"
+msgstr "总计可以节省空间:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

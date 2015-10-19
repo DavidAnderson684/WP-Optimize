@@ -162,7 +162,7 @@ msgid "Rating"
 msgstr "Penilaian"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Tolong beri rating yang tepat :)"
 
 #: wp-optimize-main.php:327
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "Tidak ada item"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Database Teroptimasi!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Database Teroptimasi!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "PROSES"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Status log: "
+msgid "Status log"
+msgstr "Status log"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Jadwal pembersihan diaktifkan"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Jadwal berikutnya"
+msgid "Next schedule:"
+msgstr "Jadwal berikutnya:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "data minggu"
 msgid "Not keeping recent data"
 msgstr "Tidak menjaga data terbaru"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "Ukuran database saat ini :"
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "Ukuran database saat ini:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Anda telah menyimpan"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Ukuran database saat ini"
+msgid "You have saved:"
+msgstr "Anda telah menyimpan:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Anda dapat menyimpan hampir"
+msgid "You can save almost:"
+msgstr "Anda dapat menyimpan hampir:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Total pembersihan "
+msgid "Total clean up overall:"
+msgstr "Total pembersihan:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,7 +369,7 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Pilihan ini akan menyimpan data minggu yang dipilih terakhir dan menghapus data sampah sebelum masa itu. Ini juga akan mempengaruhi Auto Clean-up proses"
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Aktifkan balok tautan admin"
 
 #: wp-optimize-settings.php:164
@@ -504,24 +502,24 @@ msgstr[0] "%s Rekod"
 msgstr[1] "%s Rekod"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Ukuran total Database"
+msgid "Total Size of Database:"
+msgstr "Ukuran total Database:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Hasil Optimasi"
+msgid "Optimization Results:"
+msgstr "Hasil Optimasi:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Total Ruang Tersimpan"
+msgid "Total Space Saved:"
+msgstr "Total Ruang Tersimpan:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Kemungkinan Optimasi"
+msgid "Optimization Possibility:"
+msgstr "Kemungkinan Optimasi:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Total ruang yang dapat disimpan"
+msgid "Total space can be saved:"
+msgstr "Total ruang yang dapat disimpan:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"

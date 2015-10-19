@@ -162,8 +162,8 @@ msgid "Rating"
 msgstr "Votazioni"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "Per favore dai una votazione appropriata:)"
+msgid "Please give a proper rating :)"
+msgstr "Per favore dai una votazione appropriata :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,8 +198,10 @@ msgid "No items"
 msgstr "Nessun oggetto"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Database Ottimizzato"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "Database %s Ottimizzato"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
@@ -287,8 +289,8 @@ msgid "PROCESS"
 msgstr "PROCEDI"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Log di stato:"
+msgid "Status log"
+msgstr "Log di stato"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +309,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Pulizia pianificata abilitata"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Prossima pianificazione"
+msgid "Next schedule:"
+msgstr "Prossima pianificazione:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -330,25 +332,21 @@ msgstr "dati settimanali"
 msgid "Not keeping recent data"
 msgstr "Non mantenere dati recenti"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "Dimensione attuale database : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "Dimensione attuale database:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Hai salvato"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Dimensione attuale database"
+msgid "You have saved:"
+msgstr "Hai salvato:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "E' possibile salvare"
+msgid "You can save almost:"
+msgstr "E' possibile salvare:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Totale pulizia generale"
+msgid "Total clean up overall:"
+msgstr "Totale pulizia generale:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -371,8 +369,8 @@ msgid "This option will retain the last selected weeks data and remove any garba
 msgstr "Questa opzione manterrà gli ultimi dati settimanali selezionati e rimuoverà tutti i dati della spazzatura prima di tale periodo . Ciò influisce anche sul processo automatico di pulizia."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "Abilita collegamento nella barra admin "
+msgid "Enable admin bar link"
+msgstr "Abilita collegamento nella barra admin"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -504,24 +502,24 @@ msgstr[0] "%s Record"
 msgstr[1] "%s Records"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Spazio totale del Database"
+msgid "Total Size of Database:"
+msgstr "Spazio totale del Database:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Risultati ottimizzazione"
+msgid "Optimization Results:"
+msgstr "Risultati ottimizzazione:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Spazio totale salvato"
+msgid "Total Space Saved:"
+msgstr "Spazio totale salvato:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Possibilità di Ottimizzazione"
+msgid "Optimization Possibility:"
+msgstr "Possibilità di Ottimizzazione:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Spazio totale che puo essere salvato"
+msgid "Total space can be saved:"
+msgstr "Spazio totale che puo essere salvato:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
