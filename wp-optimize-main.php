@@ -73,7 +73,7 @@ if (isset($_POST["clean-tags"])) {
     }
 
 if (isset($_POST["optimize-db"])) {
-    $text .= sprintf(__('%s Database Optimized!', 'wp-optimize'), "'".DB_NAME."'").'<br>';
+    $text .= sprintf(_x('%s Database Optimized!', '%s is the Database Name', 'wp-optimize'), "'".DB_NAME."'").'<br>';
     }
         if ( isset( $_POST["optimize-db"] ) ) {
         $user_options["user-optimize"] = TRUE;
