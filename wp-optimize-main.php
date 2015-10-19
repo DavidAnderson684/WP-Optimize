@@ -407,10 +407,7 @@ Function optimizeTablesQuick($Optimize){
 		echo '<i>';
 		echo '<b>';
 		echo '<font color="blue">';
-		_e('Keeping last ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-        echo ' ';
-		_e('weeks data', 'wp-optimize');
+		printf(__('Keeping last %s weeks data', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ) ) ;
 		echo '</font>';
 		echo '</i>';
 		echo '</b>';
