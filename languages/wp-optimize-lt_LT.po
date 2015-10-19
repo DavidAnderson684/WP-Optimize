@@ -43,8 +43,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "Nesirinkite raudonai pažymėtus elementus, nebent jums tikrai reikia juos naudoti"
 
 #: wp-optimize-common.php:623
-msgid "comments removed from Trash"
-msgstr "komentarai pašalinti iš šiukšliadėžės"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d komentarai pašalinti iš šiukšliadėžės"
 
 #: wp-optimize-common.php:463
 msgid "KB"
@@ -75,12 +77,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:629
-msgid "unused comment metadata items removed"
-msgstr "nepanaudoti komentaru metaduomenų elementai pašalinami"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d nepanaudoti komentaru metaduomenų elementai pašalinami"
 
 #: wp-optimize-common.php:635
-msgid "unused akismet comment metadata items removed"
-msgstr "nenaudojami Akismet komentaru metaduomenų elementai pašalinami"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d nenaudojami Akismet komentaru metaduomenų elementai pašalinami"
 
 #: wp-optimize-credits.php:76
 msgid "GitHub Development Log"
@@ -447,17 +453,17 @@ msgid "Total:"
 msgstr "Iš viso:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s Lentelė"
-msgstr[1] "%s Lentelės"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d Lentelė"
+msgstr[1] "%d Lentelės"
 msgstr[2] ""
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s Įrašai"
-msgstr[1] "%s Įrašų"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d Įrašai"
+msgstr[1] "%d Įrašų"
 msgstr[2] ""
 
 #: wp-optimize-tables.php:179
@@ -520,36 +526,52 @@ msgid "bytes"
 msgstr "baitai"
 
 #: wp-optimize-common.php:554
-msgid "transient options deleted"
-msgstr "laikini nustatymai ištrinti"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d laikini nustatymai ištrinti"
 
 #: wp-optimize-common.php:581
-msgid "post revisions deleted"
-msgstr "irašu redagavimai ištrinti"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d irašu redagavimai ištrinti"
 
 #: wp-optimize-common.php:592
-msgid "auto drafts deleted"
-msgstr "auto juodraščiai ištrinti"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d auto juodraščiai ištrinti"
 
 #: wp-optimize-common.php:602
-msgid "items removed from Trash"
-msgstr "ištrinta iš šiukšliadėžės"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d ištrinta iš šiukšliadėžės"
 
 #: wp-optimize-common.php:614
-msgid "spam comments deleted"
-msgstr "spam komentarai ištrinti"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d spam komentarai ištrinti"
 
 #: wp-optimize-common.php:645
-msgid "unapproved comments deleted"
-msgstr "nepatvirtinti komentarai ištrinti"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d nepatvirtinti komentarai ištrinti"
 
 #: wp-optimize-common.php:651
-msgid "pingbacks deleted"
-msgstr "pingbacks ištrinti"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d pingbacks ištrinti"
 
 #: wp-optimize-common.php:657
-msgid "trackbacks deleted"
-msgstr "trackbacks ištrinti"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d trackbacks ištrinti"
 
 #: wp-optimize-common.php:664
 msgid "Enabled weekly processing"
@@ -564,48 +586,60 @@ msgid "NO Actions Taken"
 msgstr "Ne Veiksmams, kurių imtasi"
 
 #: wp-optimize-common.php:706
-msgid "transient options in your database"
-msgstr "laikini nustatymai jūsų duomenų bazėje"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d laikini nustatymai jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:708
 msgid "No transient options found"
 msgstr "Nėrasta jokiu laikinu nustaymu"
 
 #: wp-optimize-common.php:717
-msgid "orphaned postmeta in your database"
-msgstr "našlaičiai postmeta jūsų duomenų bazėje"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d našlaičiai postmeta jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:719
 msgid "No orphaned postmeta in your database"
 msgstr "Nėra našlaičiu postmeta jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:728
-msgid "unused tags in your database"
-msgstr "nepanaudotos žymės jūsų duomenų bazėje"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d nepanaudotos žymės jūsų duomenų bazėje"
 
 #: wp-optimize-common.php:730
 msgid "No unused tags found"
 msgstr "Nerasta nepanaudotu žymu"
 
 #: wp-optimize-common.php:743
-msgid "post revisions in your database"
-msgstr "redaguotu irašu duomenų bazeje"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d redaguotu irašu duomenų bazeje"
 
 #: wp-optimize-common.php:745
 msgid "No post revisions found"
 msgstr "Nerasta redaguotu irašu"
 
 #: wp-optimize-common.php:758
-msgid "auto draft post(s) in your database"
-msgstr "auto juodraščiai pranešimu (-ai) duomenų bazėje"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d auto juodraščiai pranešimu (-ai) duomenų bazėje"
 
 #: wp-optimize-common.php:760
 msgid "No auto draft posts found"
 msgstr "Automatiniu pranešimų juodraščiu nerasta "
 
 #: wp-optimize-common.php:772
-msgid "spam comments found"
-msgstr "rasta spam Komentarai"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d rasta spam Komentarai"
 
 #: wp-optimize-common.php:772 wp-optimize-common.php:803
 msgid "Review"
@@ -616,24 +650,30 @@ msgid "No spam comments found"
 msgstr "Nerasta spam Komentarai"
 
 #: wp-optimize-common.php:803
-msgid "unapproved comments found"
-msgstr "rasti nepatvirtinti komentarai"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d rasti nepatvirtinti komentarai"
 
 #: wp-optimize-common.php:805
 msgid "No unapproved comments found"
 msgstr "Nerasta nepatvirtintų komentaru"
 
 #: wp-optimize-common.php:813
-msgid "Pingbacks found"
-msgstr "Pingbacks rasti"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d Pingbacks rasti"
 
 #: wp-optimize-common.php:815
 msgid "No pingbacks found"
 msgstr "Pingbacks nerasta"
 
 #: wp-optimize-common.php:823
-msgid "Trackbacks found"
-msgstr "Trackbacks rasti"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d Trackbacks rasti"
 
 #: wp-optimize-common.php:825
 msgid "No trackbacks found"

@@ -86,8 +86,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "ÄLÄ valitse punaisella olevia kohteita ellet välttämättä halua käyttää niitä"
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr "kommenttia poistettu Roskakorista"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d kommenttia poistettu Roskakorista"
 
 #: wp-optimize-common.php:543
 msgid "KB"
@@ -118,12 +120,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr "käyttämätöntä kommenttien metadatakohdetta poistettu"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d käyttämätöntä kommenttien metadatakohdetta poistettu"
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr "käyttämätöntä Akismet-kommenttien metadatakohdetta poistettu"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d käyttämätöntä Akismet-kommenttien metadatakohdetta poistettu"
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
@@ -490,16 +496,16 @@ msgid "Total:"
 msgstr "Kaikkiaan:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s taulu"
-msgstr[1] "%s taulua"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d taulu"
+msgstr[1] "%d taulua"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s tietue"
-msgstr[1] "%s tietuetta"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d tietue"
+msgstr[1] "%d tietuetta"
 
 #: wp-optimize-tables.php:179
 msgid "Total Size of Database:"
@@ -558,36 +564,52 @@ msgid "bytes"
 msgstr "bittiä"
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr "väliaikaiset valinnat poistettu"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d väliaikaiset valinnat poistettu"
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr "postiversiota poistettu"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d postiversiota poistettu"
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr "automaattivedosta poistettu"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d automaattivedosta poistettu"
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr "kohdetta poistettu Roskakorista"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d kohdetta poistettu Roskakorista"
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr "roskapostikommenttia poistettu"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d roskapostikommenttia poistettu"
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr "hyväksymätöntä kommenttia poistettu"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d hyväksymätöntä kommenttia poistettu"
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr "pingbackit poistettu"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d pingbackit poistettu"
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr "viittausosoitetta poistettu"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d viittausosoitetta poistettu"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -602,48 +624,60 @@ msgid "NO Actions Taken"
 msgstr "EI tehty toimintoja"
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr "väliaikaista valintaa tietokannassasi"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d väliaikaista valintaa tietokannassasi"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "Väliaikaisia valintoja ei löytynyt"
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr "orpo postimetadata tietokannassasi"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d orpo postimetadata tietokannassasi"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "Ei orpoa postimetadataa tietokannassasi"
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr "käyttämätöntä tägiä tietokannassasi"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d käyttämätöntä tägiä tietokannassasi"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "Käyttämättömiä tagejä ei löytynyt"
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr "postiversiota tietokannassasi"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d postiversiota tietokannassasi"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "Postiversioita ei löytynyt"
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr "automaattista postivedosta tietokannassasi"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d automaattista postivedosta tietokannassasi"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "Ei löydetty automaattisia vedoksia"
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr "löytyi roskapostikommentteja"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d löytyi roskapostikommentteja"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -654,24 +688,30 @@ msgid "No spam comments found"
 msgstr "Roskakommentteja ei löytynyt"
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr "hyväksymätöntä kommenttia löydetty"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d hyväksymätöntä kommenttia löydetty"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "Hyväksymättömiä kommentteja ei löytynyt"
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr "Pingbackejä löytyi"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d Pingbackejä löytyi"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "Pingbackeja ei löytynyt"
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr "Viittausosoitteita löytyi"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d Viittausosoitteita löytyi"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"

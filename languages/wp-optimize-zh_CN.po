@@ -86,8 +86,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "除非你真的需要，不要选择红色标记的选项"
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr "垃圾箱中的评论已移除"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d 垃圾箱中的评论已移除"
 
 #: wp-optimize-common.php:543
 msgid "KB"
@@ -118,12 +120,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr "未使用的评论元数据项已移除"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d 未使用的评论元数据项已移除"
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr "未使用的 Akismet 评论元数据项已移除"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d 未使用的 Akismet 评论元数据项已移除"
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
@@ -490,14 +496,14 @@ msgid "Total:"
 msgstr "合计："
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s 张数据表"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d 张数据表"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s 条记录"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d 条记录"
 
 #: wp-optimize-tables.php:179
 msgid "Total Size of Database:"
@@ -556,36 +562,52 @@ msgid "bytes"
 msgstr "字节"
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr "个临时选项已删除"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d 个临时选项已删除"
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr "篇文章修订记录已删除"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d 篇文章修订记录已删除"
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr "篇自动草稿已删除"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d 篇自动草稿已删除"
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr "个项目已从回收站删除"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d 个项目已从回收站删除"
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr "条垃圾评论已删除"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d 条垃圾评论已删除"
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr "条未审核评论已删除"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d 条未审核评论已删除"
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr "条 Pingbacks 已删除"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d 条 Pingbacks 已删除"
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr "条 Trackbacks 已删除"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d 条 Trackbacks 已删除"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -600,48 +622,60 @@ msgid "NO Actions Taken"
 msgstr "未操作"
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr "个临时选项"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d 个临时选项"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "暂无临时选项"
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr "条无用数据"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d 条无用数据"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "暂无无用数据"
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr "个未使用的标签"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d 个未使用的标签"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "暂无未使用的标签"
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr "篇文章修订记录"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d 篇文章修订记录"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "暂无文章修订记录"
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr "篇自动草稿"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d 篇自动草稿"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "暂无自动草稿"
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr "条垃圾评论"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d 条垃圾评论"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -652,24 +686,30 @@ msgid "No spam comments found"
 msgstr "暂无垃圾评论"
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr "条未审核评论"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d 条未审核评论"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "暂无未审核评论"
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr "条 Pingbacks"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d 条 Pingbacks"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "暂无 Pingbacks"
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr "条 Trackbacks"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d 条 Trackbacks"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"
