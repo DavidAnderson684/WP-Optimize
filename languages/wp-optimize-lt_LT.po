@@ -171,37 +171,36 @@ msgid "Clean-up options"
 msgstr "Išvalymo parinktys"
 
 #: wp-optimize-main.php:159
-msgid "Clean post revisions which are older than "
-msgstr "Valyti pranešimu pataisymus, kurie yra vyresni nei"
-
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
-msgid "weeks"
-msgstr "dienos"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Valyti pranešimu pataisymus, kurie yra vyresni nei %d dienos"
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
 msgstr "Nuvalykite visus po patikslinimų"
 
 #: wp-optimize-main.php:177
-msgid "Clean auto draft posts which are older than "
-msgstr "Išvalyti automatiškai sukurtus pranešimų juodraščius, kurie yra vyresni nei"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Išvalyti automatiškai sukurtus pranešimų juodraščius, kurie yra vyresni nei %d dienos"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Nuvalykite visus auto pranešimus ir pranešimus iš šiukšlių dėžės"
 
 #: wp-optimize-main.php:197
-msgid "Remove spam comments which are older than "
-msgstr "Pašalinti šlamštas komentarus, kurie yra vyresni nei "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Pašalinti šlamštas komentarus, kurie yra vyresni nei %d dienos"
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
 msgstr "Pašalinti komentaru šiukšles ir komentarus iš šiukšlių dėžės"
 
 #: wp-optimize-main.php:216
-msgid "Remove unapproved comments which are older than "
-msgstr "Pašalinti nepatvirtintus komentarus, kurie yra vyresni nei"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Pašalinti nepatvirtintus komentarus, kurie yra vyresni nei %d dienos"
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"

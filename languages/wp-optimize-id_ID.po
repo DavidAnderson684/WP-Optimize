@@ -214,37 +214,36 @@ msgid "Clean-up options"
 msgstr "Pilihan Clean-up"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Pasca revisi bersih yang lebih tua dari"
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "minggu"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Pasca revisi bersih yang lebih tua dari %d minggu"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Bersihkan semua revisi posting"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Auto posting konsep Clean yang lebih tua dari"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Auto posting konsep Clean yang lebih tua dari %d minggu"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Bersihkan semua posting auto konsep dan posting di tong sampah"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Hapus komentar sampah yang lebih lama dari"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Hapus komentar sampah yang lebih lama dari %d minggu"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Hapus komentar spam dan komentar di tempat sampah"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Hapus komentar yang tidak disetujui yang lebih lama dari"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Hapus komentar yang tidak disetujui yang lebih lama dari %d minggu"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"

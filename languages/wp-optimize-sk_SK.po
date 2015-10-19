@@ -171,37 +171,36 @@ msgid "Clean-up options"
 msgstr "Možnosti čistenia"
 
 #: wp-optimize-main.php:159
-msgid "Clean post revisions which are older than "
-msgstr "Vyčistiť revízie článkov, ktoré sú staršie ako"
-
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
-msgid "weeks"
-msgstr "týždne"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Vyčistiť revízie článkov, ktoré sú staršie ako %d týždne"
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
 msgstr "Vyčistiť všetky revízie článkov"
 
 #: wp-optimize-main.php:177
-msgid "Clean auto draft posts which are older than "
-msgstr "Vyčistiť automatické koncepty ktoré sú staršie ako"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Vyčistiť automatické koncepty ktoré sú staršie ako %d týždne"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Vyčistiť všetky automatické koncepty článkov a články v koši"
 
 #: wp-optimize-main.php:197
-msgid "Remove spam comments which are older than "
-msgstr "Odstrániť smap komentáre staršie ako"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Odstrániť smap komentáre staršie ako %d týždne"
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
 msgstr "Vyčistiť spam komentáre a komentáre v koši"
 
 #: wp-optimize-main.php:216
-msgid "Remove unapproved comments which are older than "
-msgstr "Odstrániť neschválené komentáre staršie ako"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Odstrániť neschválené komentáre staršie ako %d týždne"
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"

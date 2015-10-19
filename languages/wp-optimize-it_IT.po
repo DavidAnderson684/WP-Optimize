@@ -214,37 +214,36 @@ msgid "Clean-up options"
 msgstr "Opzioni di pulizia"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Pulisci revisione articoli piu vecchi di "
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "settimane"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Pulisci revisione articoli piu vecchi di %d settimane"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Pulisci tutte le revisioni articolo"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Pulisci bozze automatiche articole piu vecchie di "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Pulisci bozze automatiche articole piu vecchie di %d settimane"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Pulisci tutte le bozze automatiche articoli nel cestino"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Rimuovi commenti di spam piu vecchi di "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Rimuovi commenti di spam piu vecchi di %d settimane"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Rimuovi commenti di spam e commenti nel cestino"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Rimuovi commenti non approvati piu vecchi di "
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Rimuovi commenti non approvati piu vecchi di %d settimane"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"

@@ -170,37 +170,36 @@ msgid "Clean-up options"
 msgstr "Réglages du nettoyage"
 
 #: wp-optimize-main.php:159
-msgid "Clean post revisions which are older than "
-msgstr "Enlever les révisions d’article qui datent de plus de "
-
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
-msgid "weeks"
-msgstr "semaines."
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Enlever les révisions d’article qui datent de plus de %d semaines."
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
 msgstr "Enlever toutes les révisions d’articles."
 
 #: wp-optimize-main.php:177
-msgid "Clean auto draft posts which are older than "
-msgstr "Enlever les brouillons automatiques d’articles qui datent de plus de "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Enlever les brouillons automatiques d’articles qui datent de plus de %d semaines."
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Enlever les brouillons automatiques d’articles et les articles dans la corbeille"
 
 #: wp-optimize-main.php:197
-msgid "Remove spam comments which are older than "
-msgstr "Enlever les commentaires indésirables qui datent de plus de "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Enlever les commentaires indésirables qui datent de plus de %d semaines."
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
 msgstr "Enlever les commentaires indésirables et les commentaires dans la corbeille"
 
 #: wp-optimize-main.php:216
-msgid "Remove unapproved comments which are older than "
-msgstr "Enlever les commentaires non-approuvés qui datent de plus de "
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Enlever les commentaires non-approuvés qui datent de plus de %d semaines."
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"

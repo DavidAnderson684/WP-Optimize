@@ -214,37 +214,36 @@ msgid "Clean-up options"
 msgstr "自动清理设置"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "删除文章修订记录 (仅删除早于 "
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "周的)"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "删除文章修订记录 (仅删除早于 %d 周的)"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "删除所有文章修订记录"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "删除自动草稿 (仅删除早于 "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "删除自动草稿 (仅删除早于 %d 周的)"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "删除所有自动草稿和回收站内的文章"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "删除垃圾评论 (仅删除早于 "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "删除垃圾评论 (仅删除早于 %d 周的)"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "删除垃圾评论和回收站内的评论"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "删除未审核评论 (仅删除早于 "
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "删除未审核评论 (仅删除早于 %d 周的)"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"

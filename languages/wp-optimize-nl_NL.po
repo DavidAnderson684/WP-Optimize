@@ -171,37 +171,36 @@ msgid "Clean-up options"
 msgstr "Opkuis opties"
 
 #: wp-optimize-main.php:159
-msgid "Clean post revisions which are older than "
-msgstr "Kuis post revisies op die ouder zijn dan"
-
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
-msgid "weeks"
-msgstr "weken"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Kuis post revisies op die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
 msgstr "Verwijder alle post revisies"
 
 #: wp-optimize-main.php:177
-msgid "Clean auto draft posts which are older than "
-msgstr "Verwijder alle auto concepten die ouder zijn dan"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Verwijder alle auto concepten die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Verwijder alle auto concepten en posts in de prullenbak"
 
 #: wp-optimize-main.php:197
-msgid "Remove spam comments which are older than "
-msgstr "Verwijder spam reacties die ouder zijn dan"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Verwijder spam reacties die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
 msgstr "Verwijder spamm reacties en reacties in de prullenbak"
 
 #: wp-optimize-main.php:216
-msgid "Remove unapproved comments which are older than "
-msgstr "Verwijder wachtende reacties die ouder zijn dan"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Verwijder wachtende reacties die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"

@@ -214,37 +214,36 @@ msgid "Clean-up options"
 msgstr "Tisztítási beállítások"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Bejegyzés módosítás eltávolítása, amely régebbi mint "
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "hét"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Bejegyzés módosítás eltávolítása, amely régebbi mint %d hét"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Minden bejegyzés módosítás eltávolítása"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Automatikus bejegyzés módosítás piszkozat eltávolítása, amely régebbi mint "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Automatikus bejegyzés módosítás piszkozat eltávolítása, amely régebbi mint %d hét"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Automatikus bejegyzések és piszkozatok eltávolítása a lomtárból"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Spam hozzászólások eltávolítása, amelyek nem régebbiek mint "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Spam hozzászólások eltávolítása, amelyek nem régebbiek mint %d hét"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Spam hozzászólások és hozzászólások eltávolítása a lomtárból"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Jóváhagyásra várró hozzászólások eltávolítása, amelyek nem régebbiek mint "
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Jóváhagyásra várró hozzászólások eltávolítása, amelyek nem régebbiek mint %d hét"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"

@@ -214,37 +214,36 @@ msgid "Clean-up options"
 msgstr "Puhdistusvalinnat"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Poista postiversiot, jotka ovat vanhempia kuin"
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "viikkoa"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Poista postiversiot, jotka ovat vanhempia kuin %d viikkoa"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Poista kaikki postiversiot"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Poista automaattiset vedokset, jotka ovat vanhempia kuin"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Poista automaattiset vedokset, jotka ovat vanhempia kuin %d viikkoa"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Poista kaikki automaattiset vedokset ja roskakorissa olevat postit"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Poista roskakommenti, jotka ovat vanhempia kuin"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Poista roskakommenti, jotka ovat vanhempia kuin %d viikkoa"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Poista roskakommentit ja kommentit Roskakorista"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Poista hyväksymättömät kommentit, jotka ovat vanhempia kuin"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Poista hyväksymättömät kommentit, jotka ovat vanhempia kuin %d viikkoa"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
