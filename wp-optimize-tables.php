@@ -188,13 +188,12 @@ echo $part1;
 
 <?php //$total_gain = round ($total_gain,3);?>
 
-<h3><?php _e('Optimization Results', 'wp-optimize'); ?>:</h3>
+<h3><?php _e('Optimization Results:', 'wp-optimize'); ?></h3>
 <p style="color: #0000FF;">
 <?php
 
 if ($total_gain > 0){
-_e('Total Space Saved', 'wp-optimize');
-    echo ': ';
+_e('Total Space Saved:', 'wp-optimize');
     echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));
 }
 ?></p>
@@ -205,14 +204,13 @@ _e('Total Space Saved', 'wp-optimize');
 <h3><?php
 
 if ($total_gain > 0){
-    _e('Optimization Possibility', 'wp-optimize');
-    echo ':';
+    _e('Optimization Possibility:', 'wp-optimize');
     }
 
 ?></h3>
 <p style="color: #FF0000;">
 <?php if ($total_gain > 0){
-    _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);
+    _e('Total space can be saved:', 'wp-optimize'); ?> <?php echo wpo_format_size($total_gain);
     }
     ?></p>
   <?php } ?>

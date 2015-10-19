@@ -373,8 +373,7 @@ Function optimizeTablesQuick($Optimize){
 			 $timestamp = wp_next_scheduled( 'wpo_cron_event2' );
 			 $date = new DateTime("@$timestamp");
 			echo '<i>';
-			_e('Next schedule', 'wp-optimize');
-			echo ': ';
+			_e('Next schedule:', 'wp-optimize');
 			echo '<font color="green">';
 			//echo $date->format('l jS \of F Y') . "\n";
 			//echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp + (get_option('gmt_offset')));
@@ -435,29 +434,25 @@ Function optimizeTablesQuick($Optimize){
 
 	if (isset($_POST["optimize-db"])) {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
-		_e('Current database size', 'wp-optimize');
-		echo ': ';
+		_e('Current database size:', 'wp-optimize');
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
 
                 echo ' <br />';
-    		_e('You have saved', 'wp-optimize');
-    		echo ': ';
+    		_e('You have saved:', 'wp-optimize');
     		echo '<font color="blue">';
     		echo $part2.'</font> ';
         }
 	else {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
- 		_e('Current database size', 'wp-optimize');
-		echo ': ';
+ 		_e('Current database size:', 'wp-optimize');
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
                 $this_value = $part2;
 
             if ($this_value > 0){
                 echo ' <br />';
-        		_e('You can save almost', 'wp-optimize');
-        		echo ': ';
+        		_e('You can save almost:', 'wp-optimize');
         		echo '<font color="red">';
         		echo $part2.'</font> ';
             }
@@ -473,8 +468,7 @@ Function optimizeTablesQuick($Optimize){
 
         if ($total_cleaned_num  > 0){
             echo '<h5>';
-            _e('Total clean up overall','wp-optimize');
-            echo ': ';
+            _e('Total clean up overall:','wp-optimize');
             echo '<font color="green">';
             echo wpo_format_size($total_cleaned);
             echo '</font>';
