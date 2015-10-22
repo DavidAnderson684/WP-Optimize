@@ -326,12 +326,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "Ajastettu puhdistus ei ole käytössä"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "Pidetään uusin"
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "viikon data"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Pidetään uusin %s viikon data"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
@@ -366,8 +363,9 @@ msgid "General Settings"
 msgstr "Yleiset asetukset"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "Pidä uusin"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Pidä uusin %s viikon data"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"

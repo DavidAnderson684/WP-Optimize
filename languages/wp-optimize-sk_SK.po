@@ -283,12 +283,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "Plánované čistenie deaktivované"
 
 #: wp-optimize-main.php:416
-msgid "Keeping last "
-msgstr "Ponechať posledných"
-
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
-msgid "weeks data"
-msgstr "týždňové dáta"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Ponechať posledných %s týždňové dáta"
 
 #: wp-optimize-main.php:427
 msgid "Not keeping recent data"
@@ -323,8 +320,9 @@ msgid "General Settings"
 msgstr "Hlavné nastavenia"
 
 #: wp-optimize-settings.php:119
-msgid "Keep last "
-msgstr "Zachovať posledné"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Zachovať posledné %s týždňové dáta"
 
 #: wp-optimize-settings.php:135
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"

@@ -326,12 +326,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "Čiščenje po urniku je onemogočeno"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "Zadnje kar se ohrani"
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "tednov podatkov"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Zadnje kar se ohrani %s tednov podatkov"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
@@ -366,8 +363,9 @@ msgid "General Settings"
 msgstr "Splošne Nastavitve"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "Uporabi zadnje"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Uporabi zadnje %s tednov podatkov"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"

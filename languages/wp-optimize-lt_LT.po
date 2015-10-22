@@ -283,12 +283,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "Numatomas valymas išjungtas"
 
 #: wp-optimize-main.php:416
-msgid "Keeping last "
-msgstr "Paskutinis išsaugojimas"
-
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
-msgid "weeks data"
-msgstr "dienos duomenys"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Paskutinis išsaugojimas %s dienos duomenys"
 
 #: wp-optimize-main.php:427
 msgid "Not keeping recent data"
@@ -323,8 +320,9 @@ msgid "General Settings"
 msgstr "Generaliniai nustatymai"
 
 #: wp-optimize-settings.php:119
-msgid "Keep last "
-msgstr "Išsaugoti paskutinius "
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Išsaugoti paskutinius %s dienos duomenys"
 
 #: wp-optimize-settings.php:135
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
