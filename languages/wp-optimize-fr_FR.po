@@ -282,12 +282,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "Nettoyage planifié désactivé"
 
 #: wp-optimize-main.php:416
-msgid "Keeping last "
-msgstr "Conserver le dernier"
-
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
-msgid "weeks data"
-msgstr "semaines de données."
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Conserver le dernier %s semaines de données."
 
 #: wp-optimize-main.php:427
 msgid "Not keeping recent data"
@@ -322,8 +319,9 @@ msgid "General Settings"
 msgstr "Réglages généraux"
 
 #: wp-optimize-settings.php:119
-msgid "Keep last "
-msgstr "Conserver les dernières "
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Conserver les dernières %s semaines de données."
 
 #: wp-optimize-settings.php:135
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"

@@ -326,12 +326,9 @@ msgid "Scheduled cleaning disabled"
 msgstr "预设清理已禁用"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "保留最近"
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "周的数据"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "保留最近 %s 周的数据"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
@@ -366,8 +363,9 @@ msgid "General Settings"
 msgstr "常规设置"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "保留最近"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "保留最近 %s 周的数据"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
