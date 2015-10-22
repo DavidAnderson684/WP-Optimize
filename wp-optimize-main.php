@@ -73,7 +73,7 @@ if (isset($_POST["clean-tags"])) {
     }
 
 if (isset($_POST["optimize-db"])) {
-    $text .= DB_NAME.' '.__('Database Optimized!', 'wp-optimize').'<br>';
+    $text .= sprintf(_x('%s Database Optimized!', '%s is the Database Name', 'wp-optimize'), "'".DB_NAME."'").'<br>';
     }
         if ( isset( $_POST["optimize-db"] ) ) {
         $user_options["user-optimize"] = TRUE;
@@ -162,10 +162,7 @@ Function optimizeTablesQuick($Optimize){
 		<input name="clean-revisions" id="clean-revisions" type="checkbox" value="true" <?php echo $wpo_user_selection['user-revisions'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Clean post revisions which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-        _e('weeks', 'wp-optimize');
+		printf(__('Clean post revisions which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Clean all post revisions', 'wp-optimize');
 		}
@@ -180,10 +177,7 @@ Function optimizeTablesQuick($Optimize){
 			<input name="clean-autodraft" id="clean-autodraft" type="checkbox" value="true" <?php echo $wpo_user_selection['user-drafts'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Clean auto draft posts which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Clean auto draft posts which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Clean all auto draft posts and posts in trash', 'wp-optimize');
 		}
@@ -200,10 +194,7 @@ Function optimizeTablesQuick($Optimize){
 			<input name="clean-comments" id="clean-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-spams'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Remove spam comments which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Remove spam comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Remove spam comments and comments in trash', 'wp-optimize');
 		}
@@ -219,10 +210,7 @@ Function optimizeTablesQuick($Optimize){
 		<input name="unapproved-comments" id="unapproved-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-unapproved'] == 'true' ? 'checked="checked"':''; ?> />
 		<?php
 	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		_e('Remove unapproved comments which are older than ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-		echo ' ';
-		_e('weeks', 'wp-optimize');
+		printf(__('Remove unapproved comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
 		} else {
 		_e('Remove unapproved comments', 'wp-optimize');
 		}
@@ -325,13 +313,13 @@ Function optimizeTablesQuick($Optimize){
 		<p>
 
                         <a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me keep improvising', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
-                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating:)', 'wp-optimize'); ?>">
+                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
                         <?php _e('Rating', 'wp-optimize'); ?>
                         </a>
 
 		</p>
 
-<h3><?php _e('Status log: ', 'wp-optimize'); ?></h3>
+<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
 
 <?php
     $news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
@@ -359,7 +347,7 @@ Function optimizeTablesQuick($Optimize){
 	} else {
 		echo '<i>';
 		_e('There was no automatic optimization', 'wp-optimize');
-		echo ' - ';
+		//echo ' - ';
 		//echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
 		//_e('Check settings', 'wp-optimize');
 		//echo '</a>';
@@ -385,8 +373,8 @@ Function optimizeTablesQuick($Optimize){
 			 $timestamp = wp_next_scheduled( 'wpo_cron_event2' );
 			 $date = new DateTime("@$timestamp");
 			echo '<i>';
-			_e('Next schedule', 'wp-optimize');
-			echo ' : ';
+			_e('Next schedule:', 'wp-optimize');
+			echo ' ';
 			echo '<font color="green">';
 			//echo $date->format('l jS \of F Y') . "\n";
 			//echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp + (get_option('gmt_offset')));
@@ -419,10 +407,7 @@ Function optimizeTablesQuick($Optimize){
 		echo '<i>';
 		echo '<b>';
 		echo '<font color="blue">';
-		_e('Keeping last ', 'wp-optimize');
-		echo get_option( OPTION_NAME_RETENTION_PERIOD, '2' );
-        echo ' ';
-		_e('weeks data', 'wp-optimize');
+		printf(__('Keeping last %s weeks data', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ) ) ;
 		echo '</font>';
 		echo '</i>';
 		echo '</b>';
@@ -447,28 +432,29 @@ Function optimizeTablesQuick($Optimize){
 
 	if (isset($_POST["optimize-db"])) {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
-		_e('Current database size : ', 'wp-optimize');
+		_e('Current database size:', 'wp-optimize');
+		echo ' ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
 
                 echo ' <br />';
-    		_e('You have saved', 'wp-optimize');
-    		echo ' : ';
+    		_e('You have saved:', 'wp-optimize');
+    		echo ' ';
     		echo '<font color="blue">';
     		echo $part2.'</font> ';
         }
 	else {
 		list ($part1, $part2) = wpo_getCurrentDBSize();
- 		_e('Current database size', 'wp-optimize');
-		echo ' : ';
+ 		_e('Current database size:', 'wp-optimize');
+ 		echo ' ';
 		echo '<font color="blue">';
 		echo $part1.'</font> ';
                 $this_value = $part2;
 
             if ($this_value > 0){
                 echo ' <br />';
-        		_e('You can save almost', 'wp-optimize');
-        		echo ' : ';
+        		_e('You can save almost:', 'wp-optimize');
+        		echo ' ';
         		echo '<font color="red">';
         		echo $part2.'</font> ';
             }
@@ -484,8 +470,8 @@ Function optimizeTablesQuick($Optimize){
 
         if ($total_cleaned_num  > 0){
             echo '<h5>';
-            _e('Total clean up overall','wp-optimize');
-            echo ': ';
+            _e('Total clean up overall:','wp-optimize');
+            echo ' ';
             echo '<font color="green">';
             echo wpo_format_size($total_cleaned);
             echo '</font>';

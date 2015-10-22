@@ -133,18 +133,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				   <input name="enable-retention" id="enable-retention" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_RETENTION_ENABLED) == 'true' ? 'checked="checked"':''; ?> />
 				   <?php
 				   echo '<label>';
-				   _e('Keep last ', 'wp-optimize'); ?>
-					<select id="retention-period" name="retention-period">
-						<option value="<?php echo esc_attr( get_option(OPTION_NAME_RETENTION_PERIOD, '2') ); ?>"><?php echo esc_html( get_option(OPTION_NAME_RETENTION_PERIOD,'2') ); ?></option>
+				   printf(__('Keep last %s weeks data', 'wp-optimize'),
+					'<select id="retention-period" name="retention-period">
+						<option value="'.esc_attr( get_option(OPTION_NAME_RETENTION_PERIOD, '2') ).'">'.esc_html( get_option(OPTION_NAME_RETENTION_PERIOD,'2') ).'</option>
 						<option value="2">2</option>
 						<option value="4">4</option>
 						<option value="6">6</option>
 						<option value="8">8</option>
 						<option value="10">10</option>
-					</select>
-				   <?php
-				   echo ' ';
-				   _e('weeks data', 'wp-optimize');
+					</select>'
+					);
 				   echo '</label>';
 				   ?>
 				   <br />
@@ -158,7 +156,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<label>
 				<input name="enable-admin-bar" id="enable-admin-bar" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_ENABLE_ADMIN_MENU, 'false') == 'true' ? 'checked="checked"':''; ?> />
 				<?php
-				_e('Enable admin bar link ', 'wp-optimize');
+				_e('Enable admin bar link', 'wp-optimize');
+				echo ' ';
 				echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
 				_e('(Click here to refresh)', 'wp-optimize');
 				echo '</a>'

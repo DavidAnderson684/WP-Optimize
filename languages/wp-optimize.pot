@@ -1,16 +1,22 @@
 # Copyright (C) 2015 WP-Optimize
 # This file is distributed under the same license as the WP-Optimize package.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.8.9.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2015-03-02 15:32:37+00:00\n"
+"POT-Creation-Date: 2015-10-19 18:28+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: wp-optimize-admin.php:25 wp-optimize-admin.php:43 wp-optimize.php:96
 msgid "Optimizer"
@@ -69,48 +75,81 @@ msgid "bytes"
 msgstr ""
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr ""
+#, php-format
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr ""
+#, php-format
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr ""
+#, php-format
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr ""
+#, php-format
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr ""
+#, php-format
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr ""
+#, php-format
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr ""
+#, php-format
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr ""
+#, php-format
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr ""
+#, php-format
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr ""
+#, php-format
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr ""
+#, php-format
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -125,48 +164,66 @@ msgid "NO Actions Taken"
 msgstr ""
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr ""
+#, php-format
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr ""
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr ""
+#, php-format
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr ""
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr ""
+#, php-format
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr ""
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr ""
+#, php-format
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr ""
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr ""
+#, php-format
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr ""
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr ""
+#, php-format
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -177,24 +234,33 @@ msgid "No spam comments found"
 msgstr ""
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr ""
+#, php-format
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr ""
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr ""
+#, php-format
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr ""
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr ""
+#, php-format
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] ""
+msgstr[1] ""
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"
@@ -289,7 +355,9 @@ msgid "No items"
 msgstr ""
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
+#, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
 msgstr ""
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
@@ -297,336 +365,329 @@ msgid "Clean-up options"
 msgstr ""
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
+#, php-format
+msgid "Clean post revisions which are older than %d weeks"
 msgstr ""
 
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr ""
-
-#: wp-optimize-main.php:170
+#: wp-optimize-main.php:167
 msgid "Clean all post revisions"
 msgstr ""
 
-#: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
+#: wp-optimize-main.php:180
+#, php-format
+msgid "Clean auto draft posts which are older than %d weeks"
 msgstr ""
 
-#: wp-optimize-main.php:188
+#: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr ""
 
-#: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
+#: wp-optimize-main.php:197
+#, php-format
+msgid "Remove spam comments which are older than %d weeks"
 msgstr ""
 
-#: wp-optimize-main.php:208
+#: wp-optimize-main.php:199
 msgid "Remove spam comments and comments in trash"
 msgstr ""
 
-#: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
+#: wp-optimize-main.php:213
+#, php-format
+msgid "Remove unapproved comments which are older than %d weeks"
 msgstr ""
 
-#: wp-optimize-main.php:227 wp-optimize-settings.php:288
+#: wp-optimize-main.php:215 wp-optimize-settings.php:286
 msgid "Remove unapproved comments"
 msgstr ""
 
-#: wp-optimize-main.php:240 wp-optimize-settings.php:293
+#: wp-optimize-main.php:228 wp-optimize-settings.php:291
 msgid "Remove transient options"
 msgstr ""
 
-#: wp-optimize-main.php:251
+#: wp-optimize-main.php:239
 msgid "Remove pingbacks"
 msgstr ""
 
-#: wp-optimize-main.php:262
+#: wp-optimize-main.php:250
 msgid "Remove trackbacks"
 msgstr ""
 
-#: wp-optimize-main.php:272
+#: wp-optimize-main.php:260
 msgid "Do not select RED marked items unless you really need to use them"
 msgstr ""
 
-#: wp-optimize-main.php:278 wp-optimize-settings.php:207
-msgid "Optimize your YouTube embedding in WordPress with this plugin"
+#: wp-optimize-main.php:266 wp-optimize-settings.php:205
+msgid "Optimize YouTube embedding with this free plugin on WordPress.org"
 msgstr ""
 
-#: wp-optimize-main.php:288
+#: wp-optimize-main.php:276
 msgid "Actions"
 msgstr ""
 
-#: wp-optimize-main.php:297
+#: wp-optimize-main.php:285
 msgid "Optimize database tables"
 msgstr ""
 
-#: wp-optimize-main.php:305
+#: wp-optimize-main.php:293
 msgid "Note:"
 msgstr ""
 
-#: wp-optimize-main.php:308
+#: wp-optimize-main.php:296
 msgid "InnoDB tables will not be optimized"
 msgstr ""
 
-#: wp-optimize-main.php:314
+#: wp-optimize-main.php:302
 msgid "Select safe options"
 msgstr ""
 
-#: wp-optimize-main.php:315
+#: wp-optimize-main.php:303
 msgid "Warning:"
 msgstr ""
 
-#: wp-optimize-main.php:316
+#: wp-optimize-main.php:304
 msgid "Always make a backup of your DB when you upgrade to major versions"
 msgstr ""
 
-#: wp-optimize-main.php:321
+#: wp-optimize-main.php:309
 msgid "PROCESS"
 msgstr ""
 
-#: wp-optimize-main.php:327
+#: wp-optimize-main.php:315
 msgid "Please donate! It really helps me keep improvising"
 msgstr ""
 
-#: wp-optimize-main.php:327
+#: wp-optimize-main.php:315
 msgid "Donate!"
 msgstr ""
 
-#: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
+#: wp-optimize-main.php:316
+msgid "Please give a proper rating :)"
 msgstr ""
 
-#: wp-optimize-main.php:329
+#: wp-optimize-main.php:317
 msgid "Rating"
 msgstr ""
 
-#: wp-optimize-main.php:334
-msgid "Status log: "
+#: wp-optimize-main.php:322
+msgid "Status log"
 msgstr ""
 
-#: wp-optimize-main.php:349
+#: wp-optimize-main.php:337
 msgid "Last automatic optimization was at"
 msgstr ""
 
-#: wp-optimize-main.php:361
+#: wp-optimize-main.php:349
 msgid "There was no automatic optimization"
 msgstr ""
 
-#: wp-optimize-main.php:376
+#: wp-optimize-main.php:364
 msgid "Scheduled cleaning enabled"
 msgstr ""
 
-#: wp-optimize-main.php:388
-msgid "Next schedule"
+#: wp-optimize-main.php:376
+msgid "Next schedule:"
 msgstr ""
 
-#: wp-optimize-main.php:399
+#: wp-optimize-main.php:387
 msgid "Refresh"
 msgstr ""
 
-#: wp-optimize-main.php:408
+#: wp-optimize-main.php:396
 msgid "Scheduled cleaning disabled"
 msgstr ""
 
-#: wp-optimize-main.php:411 wp-optimize-main.php:436
+#: wp-optimize-main.php:399 wp-optimize-main.php:421
 msgid "Check settings"
 msgstr ""
 
-#: wp-optimize-main.php:422
-msgid "Keeping last "
+#: wp-optimize-main.php:410
+#, php-format
+msgid "Keeping last %s weeks data"
 msgstr ""
 
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr ""
-
-#: wp-optimize-main.php:433
+#: wp-optimize-main.php:418
 msgid "Not keeping recent data"
 msgstr ""
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
+#: wp-optimize-main.php:435 wp-optimize-main.php:448
+msgid "Current database size:"
 msgstr ""
 
-#: wp-optimize-main.php:455
-msgid "You have saved"
+#: wp-optimize-main.php:441
+msgid "You have saved:"
 msgstr ""
 
-#: wp-optimize-main.php:462
-msgid "Current database size"
+#: wp-optimize-main.php:456
+msgid "You can save almost:"
 msgstr ""
 
-#: wp-optimize-main.php:470
-msgid "You can save almost"
+#: wp-optimize-main.php:473
+msgid "Total clean up overall:"
 msgstr ""
 
-#: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr ""
-
-#: wp-optimize-main.php:508
+#: wp-optimize-main.php:494
 msgid "Sponsor"
 msgstr ""
 
-#: wp-optimize-settings.php:88
+#: wp-optimize-settings.php:87
 msgid "Trackbacks disabled on all current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:94
+#: wp-optimize-settings.php:93
 msgid "Trackbacks enabled on all current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:103
+#: wp-optimize-settings.php:102
 msgid "Comments disabled on all current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:109
+#: wp-optimize-settings.php:108
 msgid "Comments enabled on all current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:115
+#: wp-optimize-settings.php:114
 msgid "Settings updated"
 msgstr ""
 
-#: wp-optimize-settings.php:132
+#: wp-optimize-settings.php:131
 msgid "General Settings"
 msgstr ""
 
-#: wp-optimize-settings.php:137
-msgid "Keep last "
+#: wp-optimize-settings.php:136
+#, php-format
+msgid "Keep last %s weeks data"
 msgstr ""
 
-#: wp-optimize-settings.php:153
+#: wp-optimize-settings.php:150
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr ""
 
-#: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
+#: wp-optimize-settings.php:159
+msgid "Enable admin bar link"
 msgstr ""
 
-#: wp-optimize-settings.php:164
+#: wp-optimize-settings.php:162
 msgid "(Click here to refresh)"
 msgstr ""
 
-#: wp-optimize-settings.php:170
+#: wp-optimize-settings.php:168
 msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
 msgstr ""
 
-#: wp-optimize-settings.php:174
+#: wp-optimize-settings.php:172
 msgid "Trackback/Comments Actions"
 msgstr ""
 
-#: wp-optimize-settings.php:176
+#: wp-optimize-settings.php:174
 msgid "Disable/Enable Trackbacks"
 msgstr ""
 
-#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
+#: wp-optimize-settings.php:176 wp-optimize-settings.php:191
 msgid "SELECT"
 msgstr ""
 
-#: wp-optimize-settings.php:179 wp-optimize-settings.php:194
+#: wp-optimize-settings.php:177 wp-optimize-settings.php:192
 msgid "Disable"
 msgstr ""
 
-#: wp-optimize-settings.php:180 wp-optimize-settings.php:195
+#: wp-optimize-settings.php:178 wp-optimize-settings.php:193
 msgid "Enable"
 msgstr ""
 
-#: wp-optimize-settings.php:185
+#: wp-optimize-settings.php:183
 msgid "This will disable/enable Trackbacks on all your current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:191
+#: wp-optimize-settings.php:189
 msgid "Disable/Enable Comments"
 msgstr ""
 
-#: wp-optimize-settings.php:200
+#: wp-optimize-settings.php:198
 msgid "This will disable/enable Comments on all your current and previously published posts"
 msgstr ""
 
-#: wp-optimize-settings.php:211
+#: wp-optimize-settings.php:209
 msgid "SAVE SETTINGS"
 msgstr ""
 
-#: wp-optimize-settings.php:221
+#: wp-optimize-settings.php:219
 msgid "Auto Clean-up Settings"
 msgstr ""
 
-#: wp-optimize-settings.php:224
+#: wp-optimize-settings.php:222
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
 msgstr ""
 
-#: wp-optimize-settings.php:226
+#: wp-optimize-settings.php:224
 msgid "Select schedule type (default is Weekly)"
 msgstr ""
 
-#: wp-optimize-settings.php:233 wp-optimize-settings.php:255
+#: wp-optimize-settings.php:231 wp-optimize-settings.php:253
 msgid "Everyday"
 msgstr ""
 
-#: wp-optimize-settings.php:237 wp-optimize-settings.php:249
-#: wp-optimize-settings.php:256
+#: wp-optimize-settings.php:235 wp-optimize-settings.php:247
+#: wp-optimize-settings.php:254
 msgid "Every week"
 msgstr ""
 
-#: wp-optimize-settings.php:241 wp-optimize-settings.php:257
+#: wp-optimize-settings.php:239 wp-optimize-settings.php:255
 msgid "Every other week (every 14 days)"
 msgstr ""
 
-#: wp-optimize-settings.php:245 wp-optimize-settings.php:258
+#: wp-optimize-settings.php:243 wp-optimize-settings.php:256
 msgid "Every month (every 31 days)"
 msgstr ""
 
-#: wp-optimize-settings.php:262
+#: wp-optimize-settings.php:260
 msgid "Automatic cleanup will perform the following:"
 msgstr ""
 
-#: wp-optimize-settings.php:264
+#: wp-optimize-settings.php:262
 msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
 msgstr ""
 
-#: wp-optimize-settings.php:271
+#: wp-optimize-settings.php:269
 msgid "These options will only work if the automatic clean-up schedule has been enabled"
 msgstr ""
 
-#: wp-optimize-settings.php:276
+#: wp-optimize-settings.php:274
 msgid "Remove auto revisions"
 msgstr ""
 
-#: wp-optimize-settings.php:280
+#: wp-optimize-settings.php:278
 msgid "Remove auto drafts"
 msgstr ""
 
-#: wp-optimize-settings.php:284
+#: wp-optimize-settings.php:282
 msgid "Remove spam comments"
 msgstr ""
 
-#: wp-optimize-settings.php:297
+#: wp-optimize-settings.php:295
 msgid "Remove orphaned post meta"
 msgstr ""
 
-#: wp-optimize-settings.php:301
+#: wp-optimize-settings.php:299
 msgid "Remove unused tags"
 msgstr ""
 
-#: wp-optimize-settings.php:307
+#: wp-optimize-settings.php:305
 msgid "Optimize database"
 msgstr ""
 
-#: wp-optimize-settings.php:313
+#: wp-optimize-settings.php:311
 msgid "If you have InnoDB tables. They will not be optimized!"
 msgstr ""
 
-#: wp-optimize-settings.php:322
+#: wp-optimize-settings.php:320
 msgid "Enable email notification"
 msgstr ""
 
-#: wp-optimize-settings.php:329
+#: wp-optimize-settings.php:327
 msgid "Send email to"
 msgstr ""
 
-#: wp-optimize-settings.php:335
+#: wp-optimize-settings.php:333
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
 msgstr ""
 
@@ -667,36 +728,39 @@ msgid "Total:"
 msgstr ""
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
+#, php-format
+msgid "%d Table"
+msgid_plural "%d Tables"
 msgstr[0] ""
 msgstr[1] ""
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
+#, php-format
+msgid "%d Record"
+msgid_plural "%d Records"
 msgstr[0] ""
 msgstr[1] ""
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
+msgid "Total Size of Database:"
 msgstr ""
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
+msgid "Optimization Results:"
 msgstr ""
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
+msgid "Total Space Saved:"
 msgstr ""
 
-#: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
+#: wp-optimize-tables.php:207
+msgid "Optimization Possibility:"
 msgstr ""
 
-#: wp-optimize-tables.php:215
-msgid "Total space can be saved"
+#: wp-optimize-tables.php:213
+msgid "Total space can be saved:"
 msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "WP-Optimize"
 msgstr ""
