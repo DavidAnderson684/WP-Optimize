@@ -210,7 +210,7 @@ if ($total_gain > 0){
 ?></h3>
 <p style="color: #FF0000;">
 <?php if ($total_gain > 0){
-    _e('Total space can be saved:', 'wp-optimize'); ?> <?php echo wpo_format_size($total_gain);
+    _e('Total space that can be saved:', 'wp-optimize'); ?> <?php echo wpo_format_size($total_gain);
     echo ' ';
     }
     ?></p>

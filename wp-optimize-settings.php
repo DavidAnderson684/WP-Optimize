@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) );
 	}
 
-        
+
     if( isset($_POST['wp-optimize-settings']) ) {
     	$new_options = $_POST['wp-optimize-auto'];
     	$bool_opts = array( 'revisions', 'drafts', 'spams', 'unapproved', 'transient', 'postmeta', 'tags', 'optimize' );
@@ -228,7 +228,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					$last_schedule = get_option(OPTION_NAME_SCHEDULE_TYPE,'wpo_weekly');
 					switch ($last_schedule) {
 						case "wpo_daily":
-							_e('Everyday', 'wp-optimize');
+							_e('Every day', 'wp-optimize');
 							break;
 
 						case "wpo_weekly":
@@ -250,7 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					?>
 
 					</option>
-					<option value="wpo_daily"><?php _e('Everyday', 'wp-optimize'); ?></option>
+					<option value="wpo_daily"><?php _e('Every day', 'wp-optimize'); ?></option>
 					<option value="wpo_weekly"><?php _e('Every week', 'wp-optimize'); ?></option>
 					<option value="wpo_otherweekly"><?php _e('Every other week (every 14 days)', 'wp-optimize'); ?></option>
 					<option value="wpo_monthly"><?php _e('Every month (every 31 days)', 'wp-optimize'); ?></option>
@@ -308,7 +308,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php
 //        if (WPO_TABLE_TYPE == 'InnoDB'){
             echo '<p>';
-            _e('If you have InnoDB tables. They will not be optimized!', 'wp-optimize');
+            _e('InnoDB tables will not be optimized!', 'wp-optimize');
             echo '</p>';
 //            }
     ?>
@@ -328,7 +328,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ?>
         <input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     </label>
-    </p>	
+    </p>
     <p>
 	<input class="button-primary" type="submit" name="wp-optimize-settings" value="<?php _e('SAVE AUTO CLEAN-UP SETTINGS', 'wp-optimize'); ?>" />
 	</p>

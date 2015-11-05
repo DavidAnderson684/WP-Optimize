@@ -12,7 +12,7 @@ if ( ! defined( 'WPINC' ) ) {
 		<div class="postbox">
 			<div class="inside">
 			<h3><?php _e('Credits','wp-optimize'); ?></h3>
-    <p><?php _e('WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project.','wp-optimize'); ?><br />
+    <p><?php _e('WP-Optimize started as a utility for my own projects. I soon realized, that this plugin might help a lot of people. I am personally thanking all of the users who use this plugin on a daily basis. Also, thank you to all of the translators and the generous people who have donated to this project.','wp-optimize'); ?><br />
     <br />
     - Ruhani Rabin </p>
 
