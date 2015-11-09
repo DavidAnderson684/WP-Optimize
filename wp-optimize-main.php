@@ -491,7 +491,7 @@ Function optimizeTablesQuick($Optimize){
 		</p>
 
 		<p>
-			<?php _e('Sponsor','wp-optimize')?></small><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
+			<?php _e('Sponsor','wp-optimize')?><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
 		</p>
 
 	</div>
