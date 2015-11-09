@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 	<br /><br />
 
 	<h3><?php _e('Contributing Developers','wp-optimize'); ?></h3><br />
-	<a href="mailto:plugins@ruhanirabin.com" target="_blank" alt="" title="E-mail"><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
+	<a href="mailto:plugins@ruhanirabin.com" target="_blank" title="E-mail"><?php _e('Help me make this plugin better','wp-optimize'); ?></a>, <?php _e('I am looking for contributing developers.','wp-optimize'); ?><br />
 	<?php _e('Your name and website will be credited here in the plugin','wp-optimize'); ?>.<br />
 	&nbsp;
 			</div>
@@ -38,7 +38,7 @@ if ( ! defined( 'WPINC' ) ) {
 		<div class="postbox">
 			<div class="inside">
 	<h3><?php _e('Translators','wp-optimize'); ?></h3><br />
-	<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" alt="" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
+	<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
 	<p>
 	<b><a href="http://ruhanirabin.github.io/WP-Optimize/translations/" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
 	</p>
