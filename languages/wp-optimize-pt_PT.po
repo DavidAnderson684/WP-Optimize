@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.8.9.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2015-10-19 18:30+0100\n"
-"PO-Revision-Date: 2015-10-22 09:28+0100\n"
+"POT-Creation-Date: 2015-11-09 16:21+0000\n"
+"PO-Revision-Date: 2015-11-09 16:21+0000\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
@@ -280,11 +280,10 @@ msgstr "Créditos"
 
 #: wp-optimize-credits.php:15
 msgid ""
-"WP-Optimize started as a utility for my own projects. I have realized soon, "
-"that this plugin might help a lot of people out there. I am personally "
-"thanking all of the users who use this plugin as a daily basis. Also thank "
-"you all of the translators and the generous people who have donated for this "
-"project."
+"WP-Optimize started as a utility for my own projects. I soon realized, that "
+"this plugin might help a lot of people. I am personally thanking all of the "
+"users who use this plugin on a daily basis. Also, thank you to all of the "
+"translators and the generous people who have donated to this project."
 msgstr ""
 "O WP-Optimize começou como um utilitário para os meus próprios projectos. "
 "Rapidamente percebi que este plugin poderá ajudar muita gente. Agradeço "
@@ -472,8 +471,8 @@ msgid "PROCESS"
 msgstr "Processar"
 
 #: wp-optimize-main.php:315
-msgid "Please donate! It really helps me keep improvising"
-msgstr "Por favor faça um donativo! Isto ajuda-me a continuar a improvisar"
+msgid "Please donate! It really helps me improving the plugin."
+msgstr "Por favor faça um donativo! Isto ajuda-me a melhorar o plugin."
 
 #: wp-optimize-main.php:315
 msgid "Donate!"
@@ -667,7 +666,7 @@ msgid "Select schedule type (default is Weekly)"
 msgstr "Seleccione o tipo de agendamento (por omissão é semanal)"
 
 #: wp-optimize-settings.php:231 wp-optimize-settings.php:253
-msgid "Everyday"
+msgid "Every day"
 msgstr "Todos os dias"
 
 #: wp-optimize-settings.php:235 wp-optimize-settings.php:247
@@ -728,8 +727,8 @@ msgid "Optimize database"
 msgstr "Optimizar base de dados"
 
 #: wp-optimize-settings.php:311
-msgid "If you have InnoDB tables. They will not be optimized!"
-msgstr "Se utilizar tabelas InnoDB, estas não serão optimizadas!"
+msgid "InnoDB tables will not be optimized!"
+msgstr "As tabelas InnoDB não serão optimizadas!"
 
 #: wp-optimize-settings.php:320
 msgid "Enable email notification"
@@ -810,7 +809,7 @@ msgid "Optimization Possibility:"
 msgstr "Estimativa de optimização:"
 
 #: wp-optimize-tables.php:213
-msgid "Total space can be saved:"
+msgid "Total space that can be saved:"
 msgstr "Total de espaço que pode ser recuperado:"
 
 #. Plugin Name of the plugin/theme
