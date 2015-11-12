@@ -277,7 +277,7 @@ Function optimizeTablesQuick($Optimize){
                 		</p>
 				<p>
                         		<a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me improving the plugin.', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
-                        		<a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
+                        		<a class="button-primary" href="https://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
                         		<?php _e('Rating', 'wp-optimize'); ?></a>
 				</p>
 
