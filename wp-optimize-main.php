@@ -148,353 +148,304 @@ Function optimizeTablesQuick($Optimize){
 
 
 <div class="wpo_section wpo_group">
-<form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
+	<form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
-	<div class="postbox">
-	<!-- <h3 class="hndle"><?php _e('Clean-up options', 'wp-optimize'); ?></h3> -->
-		<div class="inside">
-		<h3><?php _e('Clean-up options', 'wp-optimize');
-                    $wpo_user_selection = get_option( 'wp-optimize-settings' );
-                    //var_dump($wpo_user_selection);
-                ?></h3>
-		<p>
-		<label>
-		<input name="clean-revisions" id="clean-revisions" type="checkbox" value="true" <?php echo $wpo_user_selection['user-revisions'] == 'true' ? 'checked="checked"':''; ?> />
-		<?php
-	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		printf(__('Clean post revisions which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
-		} else {
-		_e('Clean all post revisions', 'wp-optimize');
-		}
-		?>
-		</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('revisions'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<label>
-			<input name="clean-autodraft" id="clean-autodraft" type="checkbox" value="true" <?php echo $wpo_user_selection['user-drafts'] == 'true' ? 'checked="checked"':''; ?> />
-		<?php
-	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		printf(__('Clean auto draft posts which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
-		} else {
-		_e('Clean all auto draft posts and posts in trash', 'wp-optimize');
-		}
-	  ?>
-			</label>
-
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('autodraft'), 'wp-optimize'); ?></small>
-		</p>
-
-
-		<p>
-			<label>
-			<input name="clean-comments" id="clean-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-spams'] == 'true' ? 'checked="checked"':''; ?> />
-		<?php
-	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		printf(__('Remove spam comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
-		} else {
-		_e('Remove spam comments and comments in trash', 'wp-optimize');
-		}
-
-		?>
-		</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('spam'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<label>
-		<input name="unapproved-comments" id="unapproved-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-unapproved'] == 'true' ? 'checked="checked"':''; ?> />
-		<?php
-	    if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		printf(__('Remove unapproved comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
-		} else {
-		_e('Remove unapproved comments', 'wp-optimize');
-		}
-
-		?>
-		</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('unapproved'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<label>
-			<input name="clean-transient" id="clean-transient" type="checkbox" value="" />
-			<span style="color: red;">
-			<?php _e('Remove transient options', 'wp-optimize'); ?>
-			</span>
-			</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<label>
-			<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" />
-			 <span style="color: red;">
-			 <?php _e('Remove pingbacks', 'wp-optimize'); ?>
-			 </span>
-			</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('pingbacks'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<label>
-			<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" />
-			 <span style="color: red;">
-			 <?php _e('Remove trackbacks', 'wp-optimize'); ?>
-			 </span>
-			</label>
-		<br />
-		<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
-		</p>
-
-		<p>
-			<?php
-			echo '<small>';
-			_e('Do not select RED marked items unless you really need to use them', 'wp-optimize');
-			echo '</small>';
-			?>
-		</p>
-<p>
-    <a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
-    <img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
-  </p>
-		</div>
+		<div class="postbox">
+			<div class="inside">
+			<h3><?php _e('Clean-up options', 'wp-optimize');
+                    	$wpo_user_selection = get_option( 'wp-optimize-settings' );
+                    	//var_dump($wpo_user_selection);
+                	?></h3>
+			<p>
+				<label>
+					<input name="clean-revisions" id="clean-revisions" type="checkbox" value="true" <?php echo $wpo_user_selection['user-revisions'] == 'true' ? 'checked="checked"':''; ?> />
+					<?php
+	    				if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
+					printf(__('Clean post revisions which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
+					} else {
+					_e('Clean all post revisions', 'wp-optimize');
+					} ?>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('revisions'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="clean-autodraft" id="clean-autodraft" type="checkbox" value="true" <?php echo $wpo_user_selection['user-drafts'] == 'true' ? 'checked="checked"':''; ?> />
+					<?php
+	    				if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
+					printf(__('Clean auto draft posts which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
+					} else {
+					_e('Clean all auto draft posts and posts in trash', 'wp-optimize');
+					} ?>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('autodraft'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="clean-comments" id="clean-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-spams'] == 'true' ? 'checked="checked"':''; ?> />
+					<?php
+	    				if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
+					printf(__('Remove spam comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
+					} else {
+					_e('Remove spam comments and comments in trash', 'wp-optimize');
+					} ?>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('spam'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="unapproved-comments" id="unapproved-comments" type="checkbox" value="true" <?php echo $wpo_user_selection['user-unapproved'] == 'true' ? 'checked="checked"':''; ?> />
+					<?php
+	    				if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
+					printf(__('Remove unapproved comments which are older than %d weeks', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ));
+					} else {
+					_e('Remove unapproved comments', 'wp-optimize');
+					} ?>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('unapproved'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="clean-transient" id="clean-transient" type="checkbox" value="" />
+					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" />
+			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+					<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('pingbacks'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<label>
+					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" />
+			 		<span style="color: red;"><?php _e('Remove trackbacks', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
+			</p>
+			<p>
+				<small><?php _e('Do not select RED marked items unless you really need to use them', 'wp-optimize'); ?></small>
+			</p>
+			<p>
+    				<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
+    				<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
+			 </p>
+			</div>
 		</div>
 	 </div>
 
 	<div class="wpo_col wpo_span_1_of_3">
-	<div class="postbox">
-	<!-- <h3 class="hndle"><span>Actions</span></h3> -->
-		<div class="inside">
-		<h3><?php _e('Actions', 'wp-optimize'); ?></h3>
-		<p>
-			<label>
+		<div class="postbox">
+			<div class="inside">
+				<h3><?php _e('Actions', 'wp-optimize'); ?></h3>
+				<p>
+					<label>
+						<?php
+        					echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="true" ';
+        					echo $wpo_user_selection['user-optimize'] == 'true' ? 'checked="checked"':'';
+        					echo ' />';
+        					echo '<b>&nbsp;';
+						 _e('Optimize database tables', 'wp-optimize');
+        					echo '</b>';
+						?>
+			 		</label>
+				</p>
+				<p>
+					<small><b><?php _e('Note:', 'wp-optimize'); ?></b></small>
+					<br />
+					<small><?php _e('InnoDB tables will not be optimized', 'wp-optimize'); ?></small>
+				</p>
+				<p>
+					<!-- <span style="text-align:center;"><a href="#" onClick="javascript:SetDefaults();">
+					<?php _e('Select safe options', 'wp-optimize'); ?></a></span> -->
+					<small><b><?php _e('Warning:', 'wp-optimize'); ?></b></small>
+					<br />
+					<small><?php _e('Always make a backup of your DB when you upgrade to major versions', 'wp-optimize'); ?></small>
 
-	 <?php
-        echo '<input name="optimize-db" id="optimize-db" type="checkbox" value="true" ';
-        echo $wpo_user_selection['user-optimize'] == 'true' ? 'checked="checked"':'';
-        echo ' />';
-        echo '<b>&nbsp;';
-        _e('Optimize database tables', 'wp-optimize');
-        echo '</b>';
+				</p>
+				<p>
+					<input class="wpo_primary_big" type="submit" id="wp-optimize" name="wp-optimize" value="<?php _e('PROCESS', 'wp-optimize'); ?>" />
+                		</p>
+				<p>
+                        		<a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me improving the plugin.', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
+                        		<a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
+                        		<?php _e('Rating', 'wp-optimize'); ?></a>
+				</p>
 
-	 ?>
-			 </label>
-		</p>
+				<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
 
-		<p><small>
-                    <b><?php _e('Note:', 'wp-optimize'); ?></b> &nbsp;
-			<?php
+				<?php
+			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
 
-			_e('InnoDB tables will not be optimized', 'wp-optimize');
+    				foreach ( $news_items as $item ) : ?>
+    				<p>
+        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
+    				</p>
+    				<?php endforeach; ?>
 
-			?>
+   				<?php
+				$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
+				if ($lastopt !== 'Never'){
+					echo '<i>';
+					_e('Last automatic optimization was at', 'wp-optimize');
+					echo ' ';
+					echo '</i>';
+					echo '<b>';
+					echo '<font color="green">';
+					echo $lastopt;
+					echo '</font>';
+					echo '</b>';
+					echo '</i>';
+				} else {
+					echo '<i>';
+					_e('There was no automatic optimization', 'wp-optimize');
+					//echo ' - ';
+					//echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
+					//_e('Check settings', 'wp-optimize');
+					//echo '</a>';
+					echo '</i>';
+				} 
+				?>
+    				<br />
 
-		</small></p>
-		<p><small>
-			<!-- <span style="text-align:center;"><a href="#" onClick="javascript:SetDefaults();"><?php _e('Select safe options', 'wp-optimize'); ?></a></span> -->
-			<b><?php _e('Warning:', 'wp-optimize'); ?></b><br />
-			<?php _e('Always make a backup of your DB when you upgrade to major versions', 'wp-optimize'); ?>
+				<?php
+				if ( get_option( OPTION_NAME_SCHEDULE, 'false' ) == 'true' ) {
+					echo '<b>';
+					echo '<i>';
+					echo '<font color="green">';
+					_e('Scheduled cleaning enabled', 'wp-optimize');
+					echo ', ';
+					echo '</font>';
+					echo '</i>';
+					echo '</b>';
+				if (wp_next_scheduled('wpo_cron_event2')) {
+			 	//$timestamp = wp_next_scheduled( 'wpo_cron_event2' );
+				wpo_cron_activate();
 
-		</small></p>
-		<p>
+			 	$timestamp = wp_next_scheduled( 'wpo_cron_event2' );
+				$date = new DateTime("@$timestamp");
+					echo '<i>';
+					_e('Next schedule:', 'wp-optimize');
+					echo ' ';
+					echo '<font color="green">';
+					//echo $date->format('l jS \of F Y') . "\n";
+					//echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp + (get_option('gmt_offset')));
+					echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp );
+					echo '</i>';
+					echo '</font>';
+					echo '<i>';
+					echo ' - ';
+					echo '<a href="?page=WP-Optimize">';
+					_e('Refresh', 'wp-optimize');
+					echo '</a>';
+					echo '</i>';
+            				//echo $timestamp;
+				}
+				} else {
+					echo '<b>';
+					echo '<i>';
+					_e('Scheduled cleaning disabled', 'wp-optimize');
+					echo ' - ';
+					echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
+					_e('Check settings', 'wp-optimize');
+					echo '</a>';
+					echo '</i>';
+					echo '</b>';
+				}
+					echo '<br />';
 
-			<input class="wpo_primary_big" type="submit" id="wp-optimize" name="wp-optimize" value="<?php _e('PROCESS', 'wp-optimize'); ?>" />
+				if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
+					echo '<i>';
+					echo '<b>';
+					echo '<font color="blue">';
+					printf(__('Keeping last %s weeks data', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ) ) ;
+					echo '</font>';
+					echo '</i>';
+					echo '</b>';
+				} else {
+					echo '<i>';
+					echo '<b>';
+					_e('Not keeping recent data', 'wp-optimize');
+					echo ' - ';
+					echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
+					_e('Check settings', 'wp-optimize');
+					echo '</a>';
+					echo '</i>';
+					echo '</b>';
+				}
+				?>
+				<br />
+				<h4>
+				<?php
+				if (isset($_POST["optimize-db"])) {
+					list ($part1, $part2) = wpo_getCurrentDBSize();
+					_e('Current database size:', 'wp-optimize');
+					echo ' ';
+					echo '<font color="blue">';
+					echo $part1.'</font> ';
+					echo ' <br />';
+    					_e('You have saved:', 'wp-optimize');
+    					echo ' ';
+    					echo '<font color="blue">';
+    					echo $part2.'</font> ';
+        			}
+				else {
+					list ($part1, $part2) = wpo_getCurrentDBSize();
+ 					_e('Current database size:', 'wp-optimize');
+ 					echo ' ';
+					echo '<font color="blue">';
+					echo $part1.'</font> ';
+                			$this_value = $part2;
 
-                </p>
+            			if ($this_value > 0){
+                			echo ' <br />';
+        				_e('You can save almost:', 'wp-optimize');
+        				echo ' ';
+        				echo '<font color="red">';
+        				echo $part2.'</font> ';
+            			}
+				}
+				?>
+				</h4>
+				<?php
+				$total_cleaned = get_option(OPTION_NAME_TOTAL_CLEANED);
+    				$total_cleaned_num = floatval($total_cleaned);
 
-		<p>
-
-                        <a class="button-primary" href="<?php echo WPO_PAYPAL ; ?>" title="<?php _e('Please donate! It really helps me improving the plugin.', 'wp-optimize'); ?>" target="_blank"><?php _e('Donate!', 'wp-optimize'); ?></a>
-                        <a class="button-primary" href="http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform" target="_blank" title="<?php _e('Please give a proper rating :)', 'wp-optimize'); ?>">
-                        <?php _e('Rating', 'wp-optimize'); ?>
-                        </a>
-
-		</p>
-
-<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
-
-<?php
-    $news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
-
-    foreach ( $news_items as $item ) : ?>
-    <p>
-        <b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
-    </p>
-    <?php endforeach; ?>
-
-   <?php
-	$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
-	if ($lastopt !== 'Never'){
-		echo '<i>';
-		_e('Last automatic optimization was at', 'wp-optimize');
-		echo ' ';
-		echo '</i>';
-		echo '<b>';
-		echo '<font color="green">';
-		echo $lastopt;
-		echo '</font>';
-		echo '</b>';
-		echo '</i>';
-
-	} else {
-		echo '<i>';
-		_e('There was no automatic optimization', 'wp-optimize');
-		//echo ' - ';
-		//echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
-		//_e('Check settings', 'wp-optimize');
-		//echo '</a>';
-		echo '</i>';
-	}
-   ?>
-    <br />
-
-	<?php
-	if ( get_option( OPTION_NAME_SCHEDULE, 'false' ) == 'true' ) {
-		echo '<b>';
-		echo '<i>';
-		echo '<font color="green">';
-		_e('Scheduled cleaning enabled', 'wp-optimize');
-		echo ', ';
-		echo '</font>';
-		echo '</i>';
-		echo '</b>';
-		if (wp_next_scheduled('wpo_cron_event2')) {
-			 //$timestamp = wp_next_scheduled( 'wpo_cron_event2' );
-			wpo_cron_activate();
-
-			 $timestamp = wp_next_scheduled( 'wpo_cron_event2' );
-			 $date = new DateTime("@$timestamp");
-			echo '<i>';
-			_e('Next schedule:', 'wp-optimize');
-			echo ' ';
-			echo '<font color="green">';
-			//echo $date->format('l jS \of F Y') . "\n";
-			//echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp + (get_option('gmt_offset')));
-			echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp );
-			echo '</i>';
-			echo '</font>';
-			echo '<i>';
-			echo ' - ';
-			echo '<a href="?page=WP-Optimize">';
-			_e('Refresh', 'wp-optimize');
-			echo '</a>';
-			echo '</i>';
-            //echo $timestamp;
-
-		 }
-	} else {
-		echo '<b>';
-		echo '<i>';
-		_e('Scheduled cleaning disabled', 'wp-optimize');
-		echo ' - ';
-		echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
-		_e('Check settings', 'wp-optimize');
-		echo '</a>';
-		echo '</i>';
-		echo '</b>';
-	}
-		echo '<br />';
-
-	if ( get_option( OPTION_NAME_RETENTION_ENABLED, 'false' ) == 'true' ) {
-		echo '<i>';
-		echo '<b>';
-		echo '<font color="blue">';
-		printf(__('Keeping last %s weeks data', 'wp-optimize'), get_option( OPTION_NAME_RETENTION_PERIOD, '2' ) ) ;
-		echo '</font>';
-		echo '</i>';
-		echo '</b>';
-
-	} else {
-		echo '<i>';
-		echo '<b>';
-		_e('Not keeping recent data', 'wp-optimize');
-		echo ' - ';
-		echo '<a href="?page=WP-Optimize&tab=wp_optimize_settings">';
-		_e('Check settings', 'wp-optimize');
-		echo '</a>';
-		echo '</i>';
-		echo '</b>';
-	}
-
-	?>
-	<br />
-
-	<h4>
-	<?php
-
-	if (isset($_POST["optimize-db"])) {
-		list ($part1, $part2) = wpo_getCurrentDBSize();
-		_e('Current database size:', 'wp-optimize');
-		echo ' ';
-		echo '<font color="blue">';
-		echo $part1.'</font> ';
-
-                echo ' <br />';
-    		_e('You have saved:', 'wp-optimize');
-    		echo ' ';
-    		echo '<font color="blue">';
-    		echo $part2.'</font> ';
-        }
-	else {
-		list ($part1, $part2) = wpo_getCurrentDBSize();
- 		_e('Current database size:', 'wp-optimize');
- 		echo ' ';
-		echo '<font color="blue">';
-		echo $part1.'</font> ';
-                $this_value = $part2;
-
-            if ($this_value > 0){
-                echo ' <br />';
-        		_e('You can save almost:', 'wp-optimize');
-        		echo ' ';
-        		echo '<font color="red">';
-        		echo $part2.'</font> ';
-            }
-	}
-
-	?>
-	</h4>
-	<?php
-
-
-    $total_cleaned = get_option(OPTION_NAME_TOTAL_CLEANED);
-    $total_cleaned_num = floatval($total_cleaned);
-
-        if ($total_cleaned_num  > 0){
-            echo '<h5>';
-            _e('Total clean up overall:','wp-optimize');
-            echo ' ';
-            echo '<font color="green">';
-            echo wpo_format_size($total_cleaned);
-            echo '</font>';
-            echo '</h5>';
-
-
-        }
-	?>
-
+        			if ($total_cleaned_num  > 0){
+            				echo '<h5>';
+            				_e('Total clean up overall:','wp-optimize');
+            				echo ' ';
+            				echo '<font color="green">';
+            				echo wpo_format_size($total_cleaned);
+            				echo '</font>';
+            				echo '</h5>';
+				}
+				?>
+			</div>
 		</div>
-	</div>
 	</div>
 	<div class="wpo_col wpo_span_1_of_3">
 
 		<p>
 			<?php wpo_headerImage(); ?>
 		</p>
-
 		<p>
-			<?php _e('Sponsor','wp-optimize')?><br><a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
+			<?php _e('Sponsor','wp-optimize')?>
 		</p>
-
+		<p>
+			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
+		</p>
 	</div>
+	</form>
 </div>
 
 <!-- TODO: Need to make this checkbox selection thing persistent -->
