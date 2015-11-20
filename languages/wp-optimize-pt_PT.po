@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.8.9.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2015-11-09 16:21+0000\n"
-"PO-Revision-Date: 2015-11-09 16:21+0000\n"
+"PO-Revision-Date: 2015-11-20 10:36+0000\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -304,8 +304,8 @@ msgid "I am looking for contributing developers."
 msgstr "Estou à procura de programadores que possam contribuir."
 
 #: wp-optimize-credits.php:31
-msgid "Your name and website will be credited here in the plugin"
-msgstr "O seu nome e site serão creditados aqui no plugin"
+msgid "Your name and website will be credited here in the plugin."
+msgstr "O seu nome e site serão creditados aqui no plugin."
 
 #: wp-optimize-credits.php:40
 msgid "Translators"
