@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					);
 				   	echo '</label>'; ?>
 				   	<br />
-				   	<small><?php_e('This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process', 'wp-optimize');?></small>
+				   	<small><?php _e('This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process', 'wp-optimize');?></small>
 				</p>
 				<p>
 					<label>
