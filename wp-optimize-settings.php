@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 							<option value="6">6</option>
 							<option value="8">8</option>
 							<option value="10">10</option>
-							<option value="26">26</option>
+							<option value="27">27</option>
 						</select>'
 					);
 				   	echo '</label>'; ?>

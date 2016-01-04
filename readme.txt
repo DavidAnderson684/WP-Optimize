@@ -1,10 +1,10 @@
-﻿=== WP-Optimize ===
+=== WP-Optimize ===
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 4
-Tested up to: 4.2
-Stable tag: 1.8.9.15
+Tested up to: 4.4
+Stable tag: 1.8.9.16
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,7 +153,9 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
-= 1.8.9.15 =
+= 1.8.9.16 =
+* Various minor fixes
+* 27 Weeks retention option equivalent to 6 month
 * Compatibility update.
 * Language files update.
 
