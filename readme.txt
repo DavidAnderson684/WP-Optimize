@@ -69,11 +69,9 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 
 **Translators are welcome to send their Translated Files to be included.**
-Existing translators should join [Translation Utility](http://wp-managed.com/projects/wp-optimize) to submit their translations.
+Existing translators should join [Translation Utility](https://translate.wordpress.org/projects/wp-plugins/wp-optimize) to submit their translations.
 
-You must have an account in order to edit translation - [Get the free account here](http://wp-managed.com/wp-login.php?action=register).
-
-Once you get your account password in your email [Log in here to edit language](http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize)
+You must have an account at WordPress.org in order to edit translation
 
 **WP-Optimize Translators:**
 
@@ -89,7 +87,7 @@ Once you get your account password in your email [Log in here to edit language](
 *   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
 
 ** Some languages are removed from the above list, because translators did not update the languages for current version **
-[See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
+[See a list of currently editable available languages at](https://translate.wordpress.org/projects/wp-plugins/wp-optimize)
 
 == Installation ==
 
