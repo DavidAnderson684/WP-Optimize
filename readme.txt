@@ -1,10 +1,10 @@
-﻿=== WP-Optimize ===
+=== WP-Optimize ===
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 4
-Tested up to: 4.2
-Stable tag: 1.8.9.15
+Tested up to: 4.4
+Stable tag: 1.8.9.16
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Simple but effective plugin allows you to extensively clean up your WordPress da
 
 WP-Optimize is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 
-Please show your support for this plugin by giving it [a rating](http://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
+Please show your support for this plugin by giving it [a rating](https://wordpress.org/support/view/plugin-reviews/wp-optimize?rate=5#postform) :)
 
 Now hosted at [GitHub](https://github.com/ruhanirabin/WP-Optimize). 
 
@@ -69,11 +69,9 @@ You will be credited inside the plugin screen and the plugin listing at WordPres
 
 
 **Translators are welcome to send their Translated Files to be included.**
-Existing translators should join [Translation Utility](http://wp-managed.com/projects/wp-optimize) to submit their translations.
+Existing translators should join [Translation Utility](https://translate.wordpress.org/projects/wp-plugins/wp-optimize) to submit their translations.
 
-You must have an account in order to edit translation - [Get the free account here](http://wp-managed.com/wp-login.php?action=register).
-
-Once you get your account password in your email [Log in here to edit language](http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize)
+You must have an account at WordPress.org in order to edit translation
 
 **WP-Optimize Translators:**
 
@@ -89,7 +87,7 @@ Once you get your account password in your email [Log in here to edit language](
 *   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
 
 ** Some languages are removed from the above list, because translators did not update the languages for current version **
-[See a list of currently editable available languages at](http://wp-managed.com/projects/wp-optimize)
+[See a list of currently editable available languages at](https://translate.wordpress.org/projects/wp-plugins/wp-optimize)
 
 == Installation ==
 
@@ -153,7 +151,9 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
-= 1.8.9.15 =
+= 1.8.9.16 =
+* Various minor fixes
+* 27 Weeks retention option equivalent to 6 month
 * Compatibility update.
 * Language files update.
 
@@ -295,7 +295,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Enable/Disable weekly schedules of optimization. This is an EXPERIMENTAL feature. It may or may not work on all servers.
 
 = 0.9.4 =
-* Non Initialized variables fixes as of http://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
+* Non Initialized variables fixes as of https://wordpress.org/support/topic/plugin-wp-optimize-errors-in-debug-mode?replies=2
 
 = 0.9.3 =
 * Removed security tools.

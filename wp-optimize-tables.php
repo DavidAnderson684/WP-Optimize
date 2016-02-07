@@ -135,8 +135,8 @@ echo "'";
 
 		echo '<tr class="thead">'."\n";
 		echo '<th>'.__('Total:', 'wp-optimize').'</th>'."\n";
-		echo '<th>'.sprintf(_n('%s Table', '%s Tables', $no, 'wp-optimize'), number_format_i18n($no)).'</th>'."\n";
-		echo '<th>'.sprintf(_n('%s Record', '%s Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
+		echo '<th>'.sprintf(_n('%d Table', '%d Tables', $no, 'wp-optimize'), number_format_i18n($no)).'</th>'."\n";
+		echo '<th>'.sprintf(_n('%d Record', '%d Records', $row_usage, 'wp-optimize'), number_format_i18n($row_usage)).'</th>'."\n";
 		echo '<th>'.wpo_format_size($data_usage).'</th>'."\n";
 		echo '<th>'.wpo_format_size($index_usage).'</th>'."\n";
 		echo '<th>'.'-'.'</th>'."\n";
@@ -176,7 +176,7 @@ echo "'";
 </tbody>
 </table>
 
-<h3><?php _e('Total Size of Database', 'wp-optimize'); ?>:</h3>
+<h3><?php _e('Total Size of Database:', 'wp-optimize'); ?></h3>
 <h2><?php
 list ($part1, $part2) = wpo_getCurrentDBSize();
 echo $part1;
@@ -188,13 +188,12 @@ echo $part1;
 
 <?php //$total_gain = round ($total_gain,3);?>
 
-<h3><?php _e('Optimization Results', 'wp-optimize'); ?>:</h3>
+<h3><?php _e('Optimization Results:', 'wp-optimize'); ?></h3>
 <p style="color: #0000FF;">
 <?php
 
 if ($total_gain > 0){
-_e('Total Space Saved', 'wp-optimize');
-    echo ': ';
+_e('Total Space Saved:', 'wp-optimize');
     echo wpo_format_size($total_gain);  wpo_updateTotalCleaned(strval($total_gain));
 }
 ?></p>
@@ -205,14 +204,14 @@ _e('Total Space Saved', 'wp-optimize');
 <h3><?php
 
 if ($total_gain > 0){
-    _e('Optimization Possibility', 'wp-optimize');
-    echo ':';
+    _e('Optimization Possibility:', 'wp-optimize');
     }
 
 ?></h3>
 <p style="color: #FF0000;">
 <?php if ($total_gain > 0){
-    _e('Total space can be saved', 'wp-optimize'); ?>: <?php echo wpo_format_size($total_gain);
+    _e('Total space that can be saved:', 'wp-optimize'); ?> <?php echo wpo_format_size($total_gain);
+    echo ' ';
     }
     ?></p>
   <?php } ?>

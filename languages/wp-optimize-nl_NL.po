@@ -43,8 +43,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "Selecteer de RODE items niet tenzij je deze echt nodig hebt"
 
 #: wp-optimize-common.php:623
-msgid "comments removed from Trash"
-msgstr "Reacties verwijderd uit prullenbak"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d Reacties verwijderd uit prullenbak"
 
 #: wp-optimize-common.php:463
 msgid "KB"
@@ -75,12 +77,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:629
-msgid "unused comment metadata items removed"
-msgstr "ongebruikte metadata van reacties verwijderd"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d ongebruikte metadata van reacties verwijderd"
 
 #: wp-optimize-common.php:635
-msgid "unused akismet comment metadata items removed"
-msgstr "ongebruike metadata van akismet reactie items verwijderd"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d ongebruike metadata van akismet reactie items verwijderd"
 
 #: wp-optimize-credits.php:76
 msgid "GitHub Development Log"
@@ -119,7 +125,7 @@ msgid "Rating"
 msgstr "Beoordeling"
 
 #: wp-optimize-main.php:322
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "Gelieve een degelijke waardering te geven :)"
 
 #: wp-optimize-main.php:321
@@ -155,45 +161,46 @@ msgid "No items"
 msgstr "Geen items"
 
 #: wp-optimize-main.php:78
-msgid "Database Optimized!"
-msgstr "Database geoptimaliseerd!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Database geoptimaliseerd!"
 
 #: wp-optimize-main.php:148 wp-optimize-main.php:150
 msgid "Clean-up options"
 msgstr "Opkuis opties"
 
 #: wp-optimize-main.php:159
-msgid "Clean post revisions which are older than "
-msgstr "Kuis post revisies op die ouder zijn dan"
-
-#: wp-optimize-main.php:162 wp-optimize-main.php:180 wp-optimize-main.php:200
-#: wp-optimize-main.php:219
-msgid "weeks"
-msgstr "weken"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Kuis post revisies op die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:164
 msgid "Clean all post revisions"
 msgstr "Verwijder alle post revisies"
 
 #: wp-optimize-main.php:177
-msgid "Clean auto draft posts which are older than "
-msgstr "Verwijder alle auto concepten die ouder zijn dan"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Verwijder alle auto concepten die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Verwijder alle auto concepten en posts in de prullenbak"
 
 #: wp-optimize-main.php:197
-msgid "Remove spam comments which are older than "
-msgstr "Verwijder spam reacties die ouder zijn dan"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Verwijder spam reacties die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:202
 msgid "Remove spam comments and comments in trash"
 msgstr "Verwijder spamm reacties en reacties in de prullenbak"
 
 #: wp-optimize-main.php:216
-msgid "Remove unapproved comments which are older than "
-msgstr "Verwijder wachtende reacties die ouder zijn dan"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Verwijder wachtende reacties die ouder zijn dan %d weken"
 
 #: wp-optimize-main.php:221 wp-optimize-settings.php:230
 msgid "Remove unapproved comments"
@@ -244,8 +251,8 @@ msgid "PROCESS"
 msgstr "VERWERKEN"
 
 #: wp-optimize-main.php:328
-msgid "Status log: "
-msgstr "Status log: "
+msgid "Status log"
+msgstr "Status log"
 
 #: wp-optimize-main.php:343
 msgid "Last automatic optimization was at"
@@ -264,8 +271,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Gepland opschonen ingeschakeld"
 
 #: wp-optimize-main.php:382
-msgid "Next schedule"
-msgstr "Volgende Planning"
+msgid "Next schedule:"
+msgstr "Volgende Planning:"
 
 #: wp-optimize-main.php:393
 msgid "Refresh"
@@ -276,36 +283,29 @@ msgid "Scheduled cleaning disabled"
 msgstr "Geplande opkuis uitgeschakeld"
 
 #: wp-optimize-main.php:416
-msgid "Keeping last "
-msgstr "Laatste wordt behouden"
-
-#: wp-optimize-main.php:419 wp-optimize-settings.php:130
-msgid "weeks data"
-msgstr "weken data"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Laatste wordt behouden %s weken data"
 
 #: wp-optimize-main.php:427
 msgid "Not keeping recent data"
 msgstr "Recente data wordt niet bijgehouden"
 
-#: wp-optimize-main.php:444
-msgid "Current database size : "
-msgstr "Huidige Database Grootte : "
+#: wp-optimize-main.php:444 wp-optimize-main.php:456
+msgid "Current database size:"
+msgstr "Huidige Database Grootte:"
 
 #: wp-optimize-main.php:449
-msgid "You have saved"
-msgstr "Je hebt bespaard"
-
-#: wp-optimize-main.php:456
-msgid "Current database size"
-msgstr "Huidige database grootte"
+msgid "You have saved:"
+msgstr "Je hebt bespaard:"
 
 #: wp-optimize-main.php:464
-msgid "You can save almost"
-msgstr "Je kunt besparen"
+msgid "You can save almost:"
+msgstr "Je kunt besparen:"
 
 #: wp-optimize-main.php:481
-msgid "Total clean up overall"
-msgstr "Totale opschoning overall"
+msgid "Total clean up overall:"
+msgstr "Totale opschoning overall:"
 
 #: wp-optimize-main.php:502
 msgid "Sponsor"
@@ -320,15 +320,16 @@ msgid "General Settings"
 msgstr "Algemene instellingen"
 
 #: wp-optimize-settings.php:119
-msgid "Keep last "
-msgstr "Behoudt laatste"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Behoudt laatste %s weken data"
 
 #: wp-optimize-settings.php:135
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "Deze optie zal data van de laatst geselecteerde weken behouden en alle onnodige data van voor die periode verwijderen. Dit heeft ook effect op het automatische opkuis process"
 
 #: wp-optimize-settings.php:144
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Beheerdersmenu link inschakelen"
 
 #: wp-optimize-settings.php:146
@@ -449,36 +450,36 @@ msgid "Total:"
 msgstr "Totaal:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s Tabel"
-msgstr[1] "%s Tabellen"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d Tabel"
+msgstr[1] "%d Tabellen"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s Rij"
-msgstr[1] "%s Rijen"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d Rij"
+msgstr[1] "%d Rijen"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Totale Grootte van Database"
+msgid "Total Size of Database:"
+msgstr "Totale Grootte van Database:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Optimalisatie Resultaten"
+msgid "Optimization Results:"
+msgstr "Optimalisatie Resultaten:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Totaal Bespaarde Ruimte"
+msgid "Total Space Saved:"
+msgstr "Totaal Bespaarde Ruimte:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimalisatie Mogelijkheid"
+msgid "Optimization Possibility:"
+msgstr "Optimalisatie Mogelijkheid:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Totale ruimte die kan worden bespaard"
+msgid "Total space can be saved:"
+msgstr "Totale ruimte die kan worden bespaard:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
@@ -520,36 +521,52 @@ msgid "bytes"
 msgstr "bytes"
 
 #: wp-optimize-common.php:554
-msgid "transient options deleted"
-msgstr "transiënte opties verwijderd"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d transiënte opties verwijderd"
 
 #: wp-optimize-common.php:581
-msgid "post revisions deleted"
-msgstr "bericht revisies verwijderd"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d bericht revisies verwijderd"
 
 #: wp-optimize-common.php:592
-msgid "auto drafts deleted"
-msgstr "automatische concepten verwijderd"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d automatische concepten verwijderd"
 
 #: wp-optimize-common.php:602
-msgid "items removed from Trash"
-msgstr "items verwijderd uit de prullenbak"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d items verwijderd uit de prullenbak"
 
 #: wp-optimize-common.php:614
-msgid "spam comments deleted"
-msgstr "spam reacties verwijderd"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d spam reacties verwijderd"
 
 #: wp-optimize-common.php:645
-msgid "unapproved comments deleted"
-msgstr "wachtende reacties verwijderd"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d wachtende reacties verwijderd"
 
 #: wp-optimize-common.php:651
-msgid "pingbacks deleted"
-msgstr "pingbacks verwijderd"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d pingbacks verwijderd"
 
 #: wp-optimize-common.php:657
-msgid "trackbacks deleted"
-msgstr "trackbacks verwijderd"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d trackbacks verwijderd"
 
 #: wp-optimize-common.php:664
 msgid "Enabled weekly processing"
@@ -564,48 +581,60 @@ msgid "NO Actions Taken"
 msgstr "GEEN actie ondernomen"
 
 #: wp-optimize-common.php:706
-msgid "transient options in your database"
-msgstr "transiënte opties in je database"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d transiënte opties in je database"
 
 #: wp-optimize-common.php:708
 msgid "No transient options found"
 msgstr "Geen transiënte opties gevonden"
 
 #: wp-optimize-common.php:717
-msgid "orphaned postmeta in your database"
-msgstr "verweesde bericht metadata in je database"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d verweesde bericht metadata in je database"
 
 #: wp-optimize-common.php:719
 msgid "No orphaned postmeta in your database"
 msgstr "Geen verweesde bericht metadata in je database"
 
 #: wp-optimize-common.php:728
-msgid "unused tags in your database"
-msgstr "ongebruikte tags in je database"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d ongebruikte tags in je database"
 
 #: wp-optimize-common.php:730
 msgid "No unused tags found"
 msgstr "Geen ongebruikte tags gevonden"
 
 #: wp-optimize-common.php:743
-msgid "post revisions in your database"
-msgstr "bericht revisies in je database"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d bericht revisies in je database"
 
 #: wp-optimize-common.php:745
 msgid "No post revisions found"
 msgstr "Geen bericht revisies gevonden"
 
 #: wp-optimize-common.php:758
-msgid "auto draft post(s) in your database"
-msgstr "automatisch(e) concept bericht(en) in je database"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d automatisch(e) concept bericht(en) in je database"
 
 #: wp-optimize-common.php:760
 msgid "No auto draft posts found"
 msgstr "Geen automatische bericht concepten gevonden"
 
 #: wp-optimize-common.php:772
-msgid "spam comments found"
-msgstr "spam reacties gevonden"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d spam reacties gevonden"
 
 #: wp-optimize-common.php:772 wp-optimize-common.php:803
 msgid "Review"
@@ -616,24 +645,30 @@ msgid "No spam comments found"
 msgstr "Geen spam reacties gevonden"
 
 #: wp-optimize-common.php:803
-msgid "unapproved comments found"
-msgstr "wachtende reacties gevonden"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d wachtende reacties gevonden"
 
 #: wp-optimize-common.php:805
 msgid "No unapproved comments found"
 msgstr "Geen wachtende reacties gevonden"
 
 #: wp-optimize-common.php:813
-msgid "Pingbacks found"
-msgstr "Pingbacks gevonden"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d Pingbacks gevonden"
 
 #: wp-optimize-common.php:815
 msgid "No pingbacks found"
 msgstr "Geen pingbacks gevonden"
 
 #: wp-optimize-common.php:823
-msgid "Trackbacks found"
-msgstr "Trackbacks gevonden"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d Trackbacks gevonden"
 
 #: wp-optimize-common.php:825
 msgid "No trackbacks found"

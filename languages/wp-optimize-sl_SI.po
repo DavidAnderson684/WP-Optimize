@@ -86,8 +86,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "Ne izberite RDEČE obarvanih predmetov razen če jih zares želite uporabiti"
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr "komentarjev odstranjenih iz Smeti"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d komentarjev odstranjenih iz Smeti"
 
 #: wp-optimize-common.php:543
 msgid "KB"
@@ -118,12 +120,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr "neuporabljeni predmeti metadata komentarjev so odstranjeni."
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d neuporabljeni predmeti metadata komentarjev so odstranjeni."
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr "neuporabljeni predmeti akismet komentarjev so odstranjeni."
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d neuporabljeni predmeti akismet komentarjev so odstranjeni."
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
@@ -162,8 +168,8 @@ msgid "Rating"
 msgstr "Ocena"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "Prosimo podelite mi pravično oceno:)"
+msgid "Please give a proper rating :)"
+msgstr "Prosimo podelite mi pravično oceno :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,45 +204,46 @@ msgid "No items"
 msgstr "Brez elementov"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Baza podatkov Optimizirana!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Baza podatkov Optimizirana!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
 msgstr "Opcije čiščenja"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Izbriši revizije objav, ki so starejše kot"
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "tednov"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Izbriši revizije objav, ki so starejše kot %d tednov"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Izbriši vse revizije objav"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Počisti samodejno osnutke objav, ki so starejši kot"
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Počisti samodejno osnutke objav, ki so starejši kot %d tednov"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Izbriši vse samodejne osnutke objav v Smeteh"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Odstranite nezaželene komentarje, ki so starejši od"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Odstranite nezaželene komentarje, ki so starejši od %d tednov"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Odstrani vse Spam komentarje in komentarje v Smeteh"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Odstranite nepotrjene komentarje ki so starejši od"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Odstranite nepotrjene komentarje ki so starejši od %d tednov"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
@@ -287,8 +294,8 @@ msgid "PROCESS"
 msgstr "PROCESIRAJ"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Dnevnik sprememb:"
+msgid "Status log"
+msgstr "Dnevnik sprememb"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +314,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Čiščenje po urniku omogočeno"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Naslednji urnik"
+msgid "Next schedule:"
+msgstr "Naslednji urnik:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -319,36 +326,29 @@ msgid "Scheduled cleaning disabled"
 msgstr "Čiščenje po urniku je onemogočeno"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "Zadnje kar se ohrani"
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "tednov podatkov"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Zadnje kar se ohrani %s tednov podatkov"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
 msgstr "Ne ohrani trenutnih podatkov"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
 msgstr "Trenutna velikost baze podatkov:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Vi ste osvobodili"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Trenutna velikost baze podatkov"
+msgid "You have saved:"
+msgstr "Vi ste osvobodili:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Vi ste osvobodili skoraj"
+msgid "You can save almost:"
+msgstr "Vi ste osvobodili skoraj:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Vse skupaj očiščeno"
+msgid "Total clean up overall:"
+msgstr "Vse skupaj očiščeno:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -363,15 +363,16 @@ msgid "General Settings"
 msgstr "Splošne Nastavitve"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "Uporabi zadnje"
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Uporabi zadnje %s tednov podatkov"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "Ta opcija bo ohranila zadnje izbrane tedne in odstranila kakršnekoli smeti pred tem obdobjem. To se prav tako nanaša na proces Samodejnega čiščenja."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
+msgid "Enable admin bar link"
 msgstr "Vklopi admin vrstico"
 
 #: wp-optimize-settings.php:164
@@ -492,40 +493,40 @@ msgid "Total:"
 msgstr "Skupaj:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s Tabela"
-msgstr[1] " %s Tabeli"
-msgstr[2] " %s Tabele"
-msgstr[3] " %s Tabele"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d Tabela"
+msgstr[1] " %d Tabeli"
+msgstr[2] " %d Tabele"
+msgstr[3] " %d Tabele"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s Zapis"
-msgstr[1] "%s Zapisi"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d Zapis"
+msgstr[1] "%d Zapisi"
 msgstr[2] ""
 msgstr[3] ""
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "Skupna velikost Podatkovne Baze"
+msgid "Total Size of Database:"
+msgstr "Skupna velikost Podatkovne Baze:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "Rezultati Optimizacije"
+msgid "Optimization Results:"
+msgstr "Rezultati Optimizacije:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "Skupaj Osvobojenega Prostora"
+msgid "Total Space Saved:"
+msgstr "Skupaj Osvobojenega Prostora:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Možnost Optimizacije"
+msgid "Optimization Possibility:"
+msgstr "Možnost Optimizacije:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Skupaj prostora ki se lahko pridobite"
+msgid "Total space can be saved:"
+msgstr "Skupaj prostora ki se lahko pridobite:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
@@ -564,36 +565,52 @@ msgid "bytes"
 msgstr "bajtov"
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr "prehodne opcije izbrisane"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d prehodne opcije izbrisane"
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr "revizije objav izbrisane"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d revizije objav izbrisane"
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr "samodejni osnutki izbrisani"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d samodejni osnutki izbrisani"
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr "elementi odstranjeni iz Smeti"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d elementi odstranjeni iz Smeti"
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr "nezaželeni komentarji izbrisani"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d nezaželeni komentarji izbrisani"
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr "nepotrjeni komentarji izbrisani"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d nepotrjeni komentarji izbrisani"
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr "pingbacks izbrisani"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d pingbacks izbrisani"
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr "trackback izbrisani"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d trackback izbrisani"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -608,48 +625,60 @@ msgid "NO Actions Taken"
 msgstr "NI bilo izvedenih opravil"
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr "prehodnih opcij v vaši podatkovni bazi"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d prehodnih opcij v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "Prehodne opcije niso bile najdene"
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr "osiroteli postmeta v vaši podatkovni bazi"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d osiroteli postmeta v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "Ni osirotelih postmeta v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr "neuporabljenih oznak v vaši podatkovni bazi"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d neuporabljenih oznak v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "Ni bilo najdenih neuporabljenih oznak"
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr "revizije objav v vaši podatkovni bazi"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d revizije objav v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "Ni bilo najdenih revizij objav"
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr "samodejni osnutek (i) v vaši podatkovni bazi"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d samodejni osnutek (i) v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "Ni bilo najdenih samodejnih osnutkov v vaši podatkovni bazi"
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr "najdenih nezaželenih komentarjev"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d najdenih nezaželenih komentarjev"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -660,24 +689,30 @@ msgid "No spam comments found"
 msgstr "Ni najdenih nezaželenih komentarjev"
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr "najdenih nepotrjenih komentarjev"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d najdenih nepotrjenih komentarjev"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "Ni najdenih nepotrjenih komentarjev"
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr "Najdenih Pingbacks"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d Najdenih Pingbacks"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "Ni najdenih pingback"
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr "Najdenih trackback"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d Najdenih trackback"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"

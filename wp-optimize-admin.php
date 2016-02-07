@@ -36,18 +36,19 @@ $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'wp_optimize_optimize';
 
 <div id='wpo_cssmenu'>
 <ul>
-	<li <?php echo $active_tab == 'wp_optimize_optimize' ? 'class="active"' : ''; ?> ><a href="?page=WP-Optimize&tab=wp_optimize_optimize"><span>        <?php 
+	<li <?php echo $active_tab == 'wp_optimize_optimize' ? 'class="active"' : ''; ?> ><a href="?page=WP-Optimize&tab=wp_optimize_optimize"><span>
+	<?php
         global $wpdb;
         $sqlversion = $wpdb->get_var("SELECT VERSION() AS version");
         //$php_version_info = substr(PHP_OS, 0, 3);
-        _e('Optimizer', 'wp-optimize'); 
+        _e('Optimizer', 'wp-optimize');
         if (defined('WPO_VERSION')){
             echo ' '.WPO_VERSION.' - ';
             _e('MYSQL', 'wp-optimize');
-            echo ' '.$sqlversion.' - '; 
+            echo ' '.$sqlversion.' - ';
             echo PHP_OS;
         } //end if
-        ?></a></span></li>
+        ?></span></a></li>
 
 	<li <?php echo $active_tab == 'wp_optimize_tables' ? 'class="active"' : ''; ?>><a href="?page=WP-Optimize&tab=wp_optimize_tables"><span><?php _e('Tables', 'wp-optimize') ?></span></a></li>
 

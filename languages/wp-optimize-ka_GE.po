@@ -86,8 +86,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "არ აირჩიოთ წითლად აღნიშნული ელემენტები თუ თქვენ ნამდვილად არ გამოიყენებთ მათ"
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr "კომენტარები წაშლილია სანაგვე ყუთიდან"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d კომენტარები წაშლილია სანაგვე ყუთიდან"
 
 #: wp-optimize-common.php:543
 msgid "KB"
@@ -118,12 +120,16 @@ msgid "GB"
 msgstr "გბ"
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr "გამოუყენებელი კომენტარის მეტამონაცემების ელემენტები წაშლილია"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d გამოუყენებელი კომენტარის მეტამონაცემების ელემენტები წაშლილია"
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr "გამოუყენებელი Akismet კომენტარის მეტამონაცემების ელემენტები წაშლილია"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d გამოუყენებელი Akismet კომენტარის მეტამონაცემების ელემენტები წაშლილია"
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
@@ -162,8 +168,8 @@ msgid "Rating"
 msgstr "შეფასება"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
-msgstr "გთხოვთ მისცეთ სათანადო შეფასება:)"
+msgid "Please give a proper rating :)"
+msgstr "გთხოვთ მისცეთ სათანადო შეფასება :)"
 
 #: wp-optimize-main.php:327
 msgid "Donate!"
@@ -198,45 +204,46 @@ msgid "No items"
 msgstr "ელემენტების გარეშე"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "მონაცემთა ბაზა ოპტიმიზირებულია!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s მონაცემთა ბაზა ოპტიმიზირებულია!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
 msgstr "დასუფთავების მოწყობა"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "გადასინჯული ჩანაწების წაშლა რომელიც უფრო ძველია ვიდრე "
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "კვირა"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "გადასინჯული ჩანაწების წაშლა რომელიც უფრო ძველია ვიდრე %d კვირა"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "გადასინჯული ჩანაწერების წაშლა"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "ავტო შენახული მონახაზების წაშლა რომელიც უფრო ძველია ვიდრე "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "ავტო შენახული მონახაზების წაშლა რომელიც უფრო ძველია ვიდრე %d კვირა"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "ავტო შენახული მონახაზის წაშლა"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "ძველი სპამ-კომენტარის წაშლა"
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "ძველი სპამ-კომენტარის წაშლა %d კვირა"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "სპამ-კომენტარის წაშლა სანაგვიდან"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "ძველი დაუდასტურებელი კომენტარების წაშლა"
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "ძველი დაუდასტურებელი კომენტარების წაშლა %d კვირა"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
@@ -287,8 +294,8 @@ msgid "PROCESS"
 msgstr "გაშვება"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "სტატუსის ჟურნალი:"
+msgid "Status log"
+msgstr "სტატუსის ჟურნალი"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +314,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "დაგეგმილი გასუფთავება ჩართულია"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "შემდეგი განრიგი"
+msgid "Next schedule:"
+msgstr "შემდეგი განრიგი:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -319,36 +326,29 @@ msgid "Scheduled cleaning disabled"
 msgstr "დაგეგმილი გასუფთავება გამორთულია"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "უკანასკნელი შენახული "
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "კვირის მონაცემები"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "უკანასკნელი შენახული %s კვირის მონაცემები"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
 msgstr "არ არის შენახული ბოლო მონაცემები"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "მონაცემთა ბაზის მოცულობა : "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "მონაცემთა ბაზის მოცულობა:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "შენახულია"
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "მონაცემთა ბაზის მოცულობა"
+msgid "You have saved:"
+msgstr "შენახულია:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "გასუფთავდება"
+msgid "You can save almost:"
+msgstr "გასუფთავდება:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "სულ გასუფთავდა სივრცე"
+msgid "Total clean up overall:"
+msgstr "სულ გასუფთავდა სივრცე:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -363,16 +363,17 @@ msgid "General Settings"
 msgstr "ძირითადი მოწყობა"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "შეინახე ბოლო "
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "შეინახე ბოლო %s კვირის მონაცემები"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "აქ მითითებული ვარიანტი შეინახავს არჩეული კვირის მონაცემებს და წაშლის ყველა მონაცემებს სანაგვეში ამ პერიოდამდე. ეს ასევე მოქმედებს ავტო გასუფთავების პროცესში"
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "ადმინის დაფაზე "
+msgid "Enable admin bar link"
+msgstr "ადმინის დაფაზე"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -492,34 +493,34 @@ msgid "Total:"
 msgstr "სულ:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s ცხრილი"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d ცხრილი"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s ჩანაწერი"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d ჩანაწერი"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "მონაცემთა ბაზის საერთო მოცულობა"
+msgid "Total Size of Database:"
+msgstr "მონაცემთა ბაზის საერთო მოცულობა:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
-msgstr "ოპტიმიზაციის შედეგი"
+msgid "Optimization Results:"
+msgstr "ოპტიმიზაციის შედეგი:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
-msgstr "სულ გასუფთავებულია ადგილი"
+msgid "Total Space Saved:"
+msgstr "სულ გასუფთავებულია ადგილი:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "ოპტიმიზაციის შესაძლებლობები"
+msgid "Optimization Possibility:"
+msgstr "ოპტიმიზაციის შესაძლებლობები:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "სულ შესაძლოა განთავისუფლდეს ადგილი"
+msgid "Total space can be saved:"
+msgstr "სულ შესაძლოა განთავისუფლდეს ადგილი:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimize"
@@ -558,36 +559,52 @@ msgid "bytes"
 msgstr "ბაიტი"
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr "დროებითი ცვლილებები გასუფთავებულია"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d დროებითი ცვლილებები გასუფთავებულია"
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr "შეცვლილი ჩანაწერი გასუფთავებულია"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d შეცვლილი ჩანაწერი გასუფთავებულია"
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr "ავტომატურად შენახული მონახაზი გასუფთავებულია"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d ავტომატურად შენახული მონახაზი გასუფთავებულია"
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr "საგანი სანაგვედან გასუფთავებულია"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d საგანი სანაგვედან გასუფთავებულია"
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr "სპამ-კომენტარი გასუფთავებულია"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d სპამ-კომენტარი გასუფთავებულია"
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr "დაუდასტურებელი კომენტარები გასუფთავებულია"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d დაუდასტურებელი კომენტარები გასუფთავებულია"
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr "ცნობები გასუფთავებულია"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d ცნობები გასუფთავებულია"
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr "უკუბმულები გასუფთავებულია"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d უკუბმულები გასუფთავებულია"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -602,48 +619,60 @@ msgid "NO Actions Taken"
 msgstr "ქმედებები არაა მიღებული"
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr "დროებითი ცვლილებები მონაცემთა ბაზაში"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d დროებითი ცვლილებები მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "დროებითი ცვლილებები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr "დაუკავშირებელი ჩანაწერის მეტა მონაცემთა ბაზაში"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d დაუკავშირებელი ჩანაწერის მეტა მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "დაუკავშირებელი ჩანაწერის მეტა არ არის ნაპოვნი მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr "გამოუყენებელი ტეგები მონაცემთა ბაზაში"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d გამოუყენებელი ტეგები მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "გამოუყენებელი ტეგები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr "შეცვლილი ჩანაწერი მონაცემთა ბაზაში"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d შეცვლილი ჩანაწერი მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "შეცვლილი ჩანაწერები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr "ავტომატური მონახაზი მონაცემთა ბაზაში"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d ავტომატური მონახაზი მონაცემთა ბაზაში"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "ავტომატური მონახაზი  არაა ნაპოვნი"
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr "სპამ-კომენტარები არაა ნაპოვნი"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d სპამ-კომენტარები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -654,24 +683,30 @@ msgid "No spam comments found"
 msgstr " სპამ-კომენტარები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr "დაუდასტურებელი კომენტარები არაა ნაპოვნი"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d დაუდასტურებელი კომენტარები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "დაუდასტურებელი კომენტარები არაა ნაპოვნი"
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr "ცნობა არის ნაპოვნი"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d ცნობა არის ნაპოვნი"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "ცნობები არ არის ნაპოვნი"
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr "უკუბმულია ნაპოვნი"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d უკუბმულია ნაპოვნი"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"

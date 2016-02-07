@@ -1,782 +1,840 @@
-# Copyright (C) 2015 WP-Optimize
+# Copyright (C) 2013 WP-Optimize
 # This file is distributed under the same license as the WP-Optimize package.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Optimize 1.8.9.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
-"POT-Creation-Date: 2015-10-19 18:28+0100\n"
+"POT-Creation-Date: 2015-11-09 16:21+0000\n"
+"PO-Revision-Date: 2015-11-20 10:36+0000\n"
+"Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
+"Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: wp-optimize-admin.php:25 wp-optimize-admin.php:43 wp-optimize.php:96
 msgid "Optimizer"
-msgstr ""
+msgstr "Optimizador"
 
 #: wp-optimize-admin.php:28 wp-optimize-admin.php:46
 msgid "MYSQL"
-msgstr ""
+msgstr "MYSQL"
 
 #: wp-optimize-admin.php:33 wp-optimize-admin.php:54 wp-optimize.php:95
 msgid "Settings"
-msgstr ""
+msgstr "Definições"
 
 #: wp-optimize-admin.php:34 wp-optimize-admin.php:56
 msgid "Info"
-msgstr ""
+msgstr "Informações"
 
 #: wp-optimize-admin.php:52 wp-optimize-tables.php:37
 msgid "Tables"
-msgstr ""
+msgstr "Tabelas"
 
 #: wp-optimize-common.php:72
 msgid "Automatic Operation Completed"
-msgstr ""
+msgstr "Operação automática concluída"
 
 #: wp-optimize-common.php:74
 msgid "Scheduled optimization was executed at"
-msgstr ""
+msgstr "Optimização agendada foi executada em"
 
 #: wp-optimize-common.php:76
 msgid "You can safely delete this email."
-msgstr ""
+msgstr "Pode apagar este email em segurança."
 
 #: wp-optimize-common.php:78
 msgid "Regards,"
-msgstr ""
+msgstr "Cumprimentos,"
 
 #: wp-optimize-common.php:79
 msgid "WP-Optimize Plugin"
-msgstr ""
+msgstr "Plugin WP-Optimize"
 
 #: wp-optimize-common.php:539
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: wp-optimize-common.php:541
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #: wp-optimize-common.php:543
 msgid "KB"
-msgstr ""
+msgstr "KB"
 
 #: wp-optimize-common.php:545
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: wp-optimize-common.php:635
 #, php-format
 msgid "%d transient option deleted"
 msgid_plural "%d transient options deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d dado transitório de opções"
+msgstr[1] "Foram apagados %d dados transitórios de opções"
 
 #: wp-optimize-common.php:662
 #, php-format
 msgid "%d post revision deleted"
 msgid_plural "%d post revisions deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagada %d revisão de artigo"
+msgstr[1] "Foram apagadas %d revisões de artigos"
 
 #: wp-optimize-common.php:673
 #, php-format
 msgid "%d auto draft deleted"
 msgid_plural "%d auto drafts deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d rascunho automático"
+msgstr[1] "Foram apagados %d rascunhos automáticos"
 
 #: wp-optimize-common.php:683
 #, php-format
 msgid "%d item removed from Trash"
 msgid_plural "%d items removed from Trash"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi removido %d item do Lixo"
+msgstr[1] "Foram removidos %d itens do Lixo"
 
 #: wp-optimize-common.php:695
 #, php-format
 msgid "%d spam comment deleted"
 msgid_plural "%d spam comments deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d comentário de spam"
+msgstr[1] "Foram apagados %d comentários de spam"
 
 #: wp-optimize-common.php:704
 #, php-format
 msgid "%d comment removed from Trash"
 msgid_plural "%d comments removed from Trash"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi removido %d comentário do Lixo"
+msgstr[1] "Foram removidos %d comentários do Lixo"
 
 #: wp-optimize-common.php:710
 #, php-format
 msgid "%d unused comment metadata item removed"
 msgid_plural "%d unused comment metadata items removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi removido %d metadado de comentário não utilizado"
+msgstr[1] "Foram removidos %d metadados de comentários não utilizados"
 
 #: wp-optimize-common.php:716
 #, php-format
 msgid "%d unused akismet comment metadata item removed"
 msgid_plural "%d unused akismet comment metadata items removed"
-msgstr[0] ""
+msgstr[0] "Foi removido %d metadado de comentário do akismet não utilizado"
 msgstr[1] ""
+"Foram removidos %d metadados de comentários do akismet não utilizados"
 
 #: wp-optimize-common.php:726
 #, php-format
 msgid "%d unapproved comment deleted"
 msgid_plural "%d unapproved comments deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d comentário não aprovado"
+msgstr[1] "Foram apagados %d comentários não aprovados"
 
 #: wp-optimize-common.php:732
 #, php-format
 msgid "%d pingback deleted"
 msgid_plural "%d pingbacks deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d pingback"
+msgstr[1] "Foram apagados %d pingbacks"
 
 #: wp-optimize-common.php:738
 #, php-format
 msgid "%d trackback deleted"
 msgid_plural "%d trackbacks deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Foi apagado %d trackback"
+msgstr[1] "Foram apagados %d trackbacks"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
-msgstr ""
+msgstr "Processamento semanal activado"
 
 #: wp-optimize-common.php:751
 msgid "Disabled weekly processing"
-msgstr ""
+msgstr "Processamento semanal desactivado"
 
 #: wp-optimize-common.php:760
 msgid "NO Actions Taken"
-msgstr ""
+msgstr "Não foi realizada nenhuma acção"
 
 #: wp-optimize-common.php:787
 #, php-format
 msgid "%d transient option in your database"
 msgid_plural "%d transient options in your database"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d dado transitório na sua base de dados"
+msgstr[1] "%d dados transitórios na sua base de dados"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
-msgstr ""
+msgstr "Não foram encontrados dados transitórios"
 
 #: wp-optimize-common.php:798
 #, php-format
 msgid "%d orphaned postmeta in your database"
 msgid_plural "%d orphaned postmeta in your database"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d metadado orfão na sua base de dados"
+msgstr[1] "%d metadados orfãos na sua base de dados"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
-msgstr ""
+msgstr "Não foram encontrados metadados orfãos na sua base de dados"
 
 #: wp-optimize-common.php:809
 #, php-format
 msgid "%d unused tag in your database"
 msgid_plural "%d unused tags in your database"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d etiqueta sem utilização na sua base de dados"
+msgstr[1] "%d etiquetas sem utilização na sua base de dados"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
-msgstr ""
+msgstr "Não foram encontradas etiquetas sem utilização"
 
 #: wp-optimize-common.php:824
 #, php-format
 msgid "%d post revision in your database"
 msgid_plural "%d post revisions in your database"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d revisão de artigo na sua base de dados"
+msgstr[1] "%d revisões de artigos na sua base de dados"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
-msgstr ""
+msgstr "Não foram encontradas revisões de artigo"
 
 #: wp-optimize-common.php:839
 #, php-format
 msgid "%d auto draft post in your database"
 msgid_plural "%d auto draft posts in your database"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d rascunho automático de artigo na sua base de dados"
+msgstr[1] "%d rascunhos automáticos de artigos na sua base de dados"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
-msgstr ""
+msgstr "Não foram encontrados rascunhos automáticos de artigos"
 
 #: wp-optimize-common.php:853
 #, php-format
 msgid "%d spam comment found"
 msgid_plural "%d spam comments found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d comentário de spam"
+msgstr[1] "%d comentários de spam"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
-msgstr ""
+msgstr "Rever"
 
 #: wp-optimize-common.php:855
 msgid "No spam comments found"
-msgstr ""
+msgstr "Não foram encontrados comentários de spam"
 
 #: wp-optimize-common.php:884
 #, php-format
 msgid "%d unapproved comment found"
 msgid_plural "%d unapproved comments found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d comentário não aprovado"
+msgstr[1] "%d comentários não aprovados"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
-msgstr ""
+msgstr "Não foram encontrados comentários não aprovados"
 
 #: wp-optimize-common.php:894
 #, php-format
 msgid "%d Pingback found"
 msgid_plural "%d Pingbacks found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d pingback encontrado"
+msgstr[1] "%d pingbacks encontrados"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
-msgstr ""
+msgstr "Não foram encontrados pingbacks"
 
 #: wp-optimize-common.php:904
 #, php-format
 msgid "%d Trackback found"
 msgid_plural "%d Trackbacks found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d trackback encontrado"
+msgstr[1] "%d trackbacks encontrados"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"
-msgstr ""
+msgstr "Não foram encontrados trackbacks"
 
 #: wp-optimize-common.php:912
 msgid "nothing"
-msgstr ""
+msgstr "nada"
 
 #: wp-optimize-credits.php:14
 msgid "Credits"
-msgstr ""
+msgstr "Créditos"
 
 #: wp-optimize-credits.php:15
-msgid "WP-Optimize started as a utility for my own projects. I have realized soon, that this plugin might help a lot of people out there. I am personally thanking all of the users who use this plugin as a daily basis. Also thank you all of the translators and the generous people who have donated for this project."
+msgid ""
+"WP-Optimize started as a utility for my own projects. I soon realized, that "
+"this plugin might help a lot of people. I am personally thanking all of the "
+"users who use this plugin on a daily basis. Also, thank you to all of the "
+"translators and the generous people who have donated to this project."
 msgstr ""
+"O WP-Optimize começou como um utilitário para os meus próprios projectos. "
+"Rapidamente percebi que este plugin poderá ajudar muita gente. Agradeço "
+"pessoalmente a todos os que usam este plugin diariamente. Agradeço também a "
+"todos os tradutores e pessoas generosas que fizeram donativos para este "
+"projecto."
 
 #: wp-optimize-credits.php:29
 msgid "Contributing Developers"
-msgstr ""
+msgstr "Programadores que contribuem"
 
 #: wp-optimize-credits.php:30
 msgid "Help me make this plugin better"
-msgstr ""
+msgstr "Ajude-me a melhorar este plugin"
 
 #: wp-optimize-credits.php:30
 msgid "I am looking for contributing developers."
-msgstr ""
+msgstr "Estou à procura de programadores que possam contribuir."
 
 #: wp-optimize-credits.php:31
-msgid "Your name and website will be credited here in the plugin"
-msgstr ""
+msgid "Your name and website will be credited here in the plugin."
+msgstr "O seu nome e site serão creditados aqui no plugin."
 
 #: wp-optimize-credits.php:40
 msgid "Translators"
-msgstr ""
+msgstr "Tradutores"
 
 #: wp-optimize-credits.php:41
 msgid "http://(Translator Website)"
-msgstr ""
+msgstr "http://www.pedromendonca.pt"
 
 #: wp-optimize-credits.php:41
 msgid "(Translator name)"
-msgstr ""
+msgstr "Pedro Mendonça"
 
 #: wp-optimize-credits.php:43
 msgid "Read Translation Instructions"
-msgstr ""
+msgstr "Leia as instruções sobre tradução"
 
 #: wp-optimize-credits.php:49
 msgid "Plugin Resources"
-msgstr ""
+msgstr "Recursos do plugin"
 
 #: wp-optimize-credits.php:51
 msgid "Get a Translator Account"
-msgstr ""
+msgstr "Obter uma conta de tradutor"
 
 #: wp-optimize-credits.php:52
 msgid "Plugin Translation Portal (needs translator account)"
-msgstr ""
+msgstr "Portal de tradução do plugin (necessita conta de tradutor)"
 
 #: wp-optimize-credits.php:53
 msgid "Request New Language"
-msgstr ""
+msgstr "Pedir novo idioma"
 
 #: wp-optimize-credits.php:54
 msgid "Plugin Homepage"
-msgstr ""
+msgstr "Página do plugin"
 
 #: wp-optimize-credits.php:55
 msgid "Support (GitHub)"
-msgstr ""
+msgstr "Suporte (GitHub)"
 
 #: wp-optimize-credits.php:56
 msgid "Support E-mail"
-msgstr ""
+msgstr "Email de suporte"
 
 #: wp-optimize-credits.php:57
 msgid "Change Log"
-msgstr ""
+msgstr "Registo de alterações"
 
 #: wp-optimize-credits.php:58
 msgid "FAQ"
-msgstr ""
+msgstr "Perguntas frequentes"
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
-msgstr ""
+msgstr "Registo de desenvolvimento do GitHub"
 
 #: wp-optimize-credits.php:87
 msgid "No items"
-msgstr ""
+msgstr "Nenhum item"
 
 #: wp-optimize-main.php:76
 #, php-format
 msgctxt "%s is the Database Name"
 msgid "%s Database Optimized!"
-msgstr ""
+msgstr "Base de dados %s optimizada!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
-msgstr ""
+msgstr "Opções de limpeza"
 
 #: wp-optimize-main.php:165
 #, php-format
 msgid "Clean post revisions which are older than %d weeks"
-msgstr ""
+msgstr "Limpar revisões de artigos com mais de %d semanas"
 
 #: wp-optimize-main.php:167
 msgid "Clean all post revisions"
-msgstr ""
+msgstr "Limpar todas as revisões de artigos"
 
 #: wp-optimize-main.php:180
 #, php-format
 msgid "Clean auto draft posts which are older than %d weeks"
-msgstr ""
+msgstr "Limpar rascunhos automáticos de artigos com mais de %d semanas"
 
 #: wp-optimize-main.php:182
 msgid "Clean all auto draft posts and posts in trash"
-msgstr ""
+msgstr "Limpar todos os rascunhos automáticos de artigos e artigos no lixo"
 
 #: wp-optimize-main.php:197
 #, php-format
 msgid "Remove spam comments which are older than %d weeks"
-msgstr ""
+msgstr "Remover comentários de spam com mais de %d semanas"
 
 #: wp-optimize-main.php:199
 msgid "Remove spam comments and comments in trash"
-msgstr ""
+msgstr "Remover comentários de spam e comentários no lixo"
 
 #: wp-optimize-main.php:213
 #, php-format
 msgid "Remove unapproved comments which are older than %d weeks"
-msgstr ""
+msgstr "Remover comentários não aprovados com mais de %d semanas"
 
 #: wp-optimize-main.php:215 wp-optimize-settings.php:286
 msgid "Remove unapproved comments"
-msgstr ""
+msgstr "Remover comentários não aprovados"
 
 #: wp-optimize-main.php:228 wp-optimize-settings.php:291
 msgid "Remove transient options"
-msgstr ""
+msgstr "Remover dados transitórios"
 
 #: wp-optimize-main.php:239
 msgid "Remove pingbacks"
-msgstr ""
+msgstr "Remover pingbacks"
 
 #: wp-optimize-main.php:250
 msgid "Remove trackbacks"
-msgstr ""
+msgstr "Remover trackbacks"
 
 #: wp-optimize-main.php:260
 msgid "Do not select RED marked items unless you really need to use them"
 msgstr ""
+"Não seleccione itens marcados a VERMELHO a não ser que tenha realmente que "
+"os utilizar"
 
 #: wp-optimize-main.php:266 wp-optimize-settings.php:205
 msgid "Optimize YouTube embedding with this free plugin on WordPress.org"
 msgstr ""
+"Optimize a incorporação do YouTube com este plugin gratuito no WordPress.org"
 
 #: wp-optimize-main.php:276
 msgid "Actions"
-msgstr ""
+msgstr "Acções"
 
 #: wp-optimize-main.php:285
 msgid "Optimize database tables"
-msgstr ""
+msgstr "Optimizar as tabelas da base de dados"
 
 #: wp-optimize-main.php:293
 msgid "Note:"
-msgstr ""
+msgstr "Nota:"
 
 #: wp-optimize-main.php:296
 msgid "InnoDB tables will not be optimized"
-msgstr ""
+msgstr "Tabelas InnoDB não serão optimizadas"
 
 #: wp-optimize-main.php:302
 msgid "Select safe options"
-msgstr ""
+msgstr "Seleccione opções de segurança"
 
 #: wp-optimize-main.php:303
 msgid "Warning:"
-msgstr ""
+msgstr "Aviso:"
 
 #: wp-optimize-main.php:304
 msgid "Always make a backup of your DB when you upgrade to major versions"
 msgstr ""
+"Faça sempre uma cópia de segurança da sua base de dados quando actualizar "
+"para versões principais"
 
 #: wp-optimize-main.php:309
 msgid "PROCESS"
-msgstr ""
+msgstr "Processar"
 
 #: wp-optimize-main.php:315
-msgid "Please donate! It really helps me keep improvising"
-msgstr ""
+msgid "Please donate! It really helps me improving the plugin."
+msgstr "Por favor faça um donativo! Isto ajuda-me a melhorar o plugin."
 
 #: wp-optimize-main.php:315
 msgid "Donate!"
-msgstr ""
+msgstr "Doar!"
 
 #: wp-optimize-main.php:316
 msgid "Please give a proper rating :)"
-msgstr ""
+msgstr "Por favor dê uma classificação apropriada :)"
 
 #: wp-optimize-main.php:317
 msgid "Rating"
-msgstr ""
+msgstr "Classificar"
 
 #: wp-optimize-main.php:322
 msgid "Status log"
-msgstr ""
+msgstr "Registo de estado"
 
 #: wp-optimize-main.php:337
 msgid "Last automatic optimization was at"
-msgstr ""
+msgstr "A última optimização automática ocorreu em"
 
 #: wp-optimize-main.php:349
 msgid "There was no automatic optimization"
-msgstr ""
+msgstr "Não ocorreu nenhuma optimização automática"
 
 #: wp-optimize-main.php:364
 msgid "Scheduled cleaning enabled"
-msgstr ""
+msgstr "Limpeza agendada activada"
 
 #: wp-optimize-main.php:376
 msgid "Next schedule:"
-msgstr ""
+msgstr "próximo agendamento:"
 
 #: wp-optimize-main.php:387
 msgid "Refresh"
-msgstr ""
+msgstr "Actualizar"
 
 #: wp-optimize-main.php:396
 msgid "Scheduled cleaning disabled"
-msgstr ""
+msgstr "Limpeza agendada desactivada"
 
 #: wp-optimize-main.php:399 wp-optimize-main.php:421
 msgid "Check settings"
-msgstr ""
+msgstr "Verifique as definições"
 
 #: wp-optimize-main.php:410
 #, php-format
 msgid "Keeping last %s weeks data"
-msgstr ""
+msgstr "A manter os dados das últimas %s semanas"
 
 #: wp-optimize-main.php:418
 msgid "Not keeping recent data"
-msgstr ""
+msgstr "Não manter dados recentes"
 
 #: wp-optimize-main.php:435 wp-optimize-main.php:448
 msgid "Current database size:"
-msgstr ""
+msgstr "Tamanho actual da base de dados:"
 
 #: wp-optimize-main.php:441
 msgid "You have saved:"
-msgstr ""
+msgstr "Recuperou:"
 
 #: wp-optimize-main.php:456
 msgid "You can save almost:"
-msgstr ""
+msgstr "Poderá recuperar quase:"
 
 #: wp-optimize-main.php:473
 msgid "Total clean up overall:"
-msgstr ""
+msgstr "Total de limpezas efectuadas:"
 
 #: wp-optimize-main.php:494
 msgid "Sponsor"
-msgstr ""
+msgstr "Patrocinador"
 
 #: wp-optimize-settings.php:87
 msgid "Trackbacks disabled on all current and previously published posts"
 msgstr ""
+"Foram desactivados os trackbacks em todos os artigos actuais e publicados "
+"anteriormente"
 
 #: wp-optimize-settings.php:93
 msgid "Trackbacks enabled on all current and previously published posts"
 msgstr ""
+"Foram activados os trackbacks em todos os artigos actuais e publicados "
+"anteriormente"
 
 #: wp-optimize-settings.php:102
 msgid "Comments disabled on all current and previously published posts"
 msgstr ""
+"Foram desactivados os comentários em todos os artigos actuais e publicados "
+"anteriormente"
 
 #: wp-optimize-settings.php:108
 msgid "Comments enabled on all current and previously published posts"
 msgstr ""
+"Foram activados os comentários em todos os artigos actuais e publicados "
+"anteriormente"
 
 #: wp-optimize-settings.php:114
 msgid "Settings updated"
-msgstr ""
+msgstr "Definições actualizadas"
 
 #: wp-optimize-settings.php:131
 msgid "General Settings"
-msgstr ""
+msgstr "Definições gerais"
 
 #: wp-optimize-settings.php:136
 #, php-format
 msgid "Keep last %s weeks data"
-msgstr ""
+msgstr "Manter os dados das últimas %s semanas"
 
 #: wp-optimize-settings.php:150
-msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
+msgid ""
+"This option will retain the last selected weeks data and remove any garbage "
+"data before that period. This will also affect Auto Clean-up process"
 msgstr ""
+"Esta opção manterá os dados das últimas semanas e removerá quaisquer dados "
+"desnecessários anteriores a esse período. Isto também afecta o processo de "
+"limpeza automática"
 
 #: wp-optimize-settings.php:159
 msgid "Enable admin bar link"
-msgstr ""
+msgstr "Activar ligação na barra de administração"
 
 #: wp-optimize-settings.php:162
 msgid "(Click here to refresh)"
-msgstr ""
+msgstr "(clique aqui para actualizar)"
 
 #: wp-optimize-settings.php:168
-msgid "This option will put WP-Optimize link on the top admin bar (default is off). Requires page refresh."
+msgid ""
+"This option will put WP-Optimize link on the top admin bar (default is off). "
+"Requires page refresh."
 msgstr ""
+"Esta opção coloca a ligação do WP-Optimize na barra superior da "
+"administração (por omissão está desligado). Requer atualização da página."
 
 #: wp-optimize-settings.php:172
 msgid "Trackback/Comments Actions"
-msgstr ""
+msgstr "Acções de trackbacks/comentários"
 
 #: wp-optimize-settings.php:174
 msgid "Disable/Enable Trackbacks"
-msgstr ""
+msgstr "Activar/desactivar trackbacks"
 
 #: wp-optimize-settings.php:176 wp-optimize-settings.php:191
 msgid "SELECT"
-msgstr ""
+msgstr "Seleccione"
 
 #: wp-optimize-settings.php:177 wp-optimize-settings.php:192
 msgid "Disable"
-msgstr ""
+msgstr "Desactivar"
 
 #: wp-optimize-settings.php:178 wp-optimize-settings.php:193
 msgid "Enable"
-msgstr ""
+msgstr "Activar"
 
 #: wp-optimize-settings.php:183
-msgid "This will disable/enable Trackbacks on all your current and previously published posts"
+msgid ""
+"This will disable/enable Trackbacks on all your current and previously "
+"published posts"
 msgstr ""
+"Isto desactivará/activará os trackbacks em todos os artigos actuais e "
+"publicados anteriormente"
 
 #: wp-optimize-settings.php:189
 msgid "Disable/Enable Comments"
-msgstr ""
+msgstr "Desactivar/activar comentários"
 
 #: wp-optimize-settings.php:198
-msgid "This will disable/enable Comments on all your current and previously published posts"
+msgid ""
+"This will disable/enable Comments on all your current and previously "
+"published posts"
 msgstr ""
+"Isto desactivará/activará os comentários em todos os artigos actuais e "
+"publicados anteriormente"
 
 #: wp-optimize-settings.php:209
 msgid "SAVE SETTINGS"
-msgstr ""
+msgstr "Guardar definições"
 
 #: wp-optimize-settings.php:219
 msgid "Auto Clean-up Settings"
-msgstr ""
+msgstr "Definições de limpeza automática"
 
 #: wp-optimize-settings.php:222
 msgid "Enable scheduled clean-up and optimization (Beta feature!)"
-msgstr ""
+msgstr "Activar limpeza e optimização agendadas (recurso Beta!)"
 
 #: wp-optimize-settings.php:224
 msgid "Select schedule type (default is Weekly)"
-msgstr ""
+msgstr "Seleccione o tipo de agendamento (por omissão é semanal)"
 
 #: wp-optimize-settings.php:231 wp-optimize-settings.php:253
-msgid "Everyday"
-msgstr ""
+msgid "Every day"
+msgstr "Todos os dias"
 
 #: wp-optimize-settings.php:235 wp-optimize-settings.php:247
 #: wp-optimize-settings.php:254
 msgid "Every week"
-msgstr ""
+msgstr "A cada semana"
 
 #: wp-optimize-settings.php:239 wp-optimize-settings.php:255
 msgid "Every other week (every 14 days)"
-msgstr ""
+msgstr "A cada duas semanas (14 dias)"
 
 #: wp-optimize-settings.php:243 wp-optimize-settings.php:256
 msgid "Every month (every 31 days)"
-msgstr ""
+msgstr "A cada mês (31 dias)"
 
 #: wp-optimize-settings.php:260
 msgid "Automatic cleanup will perform the following:"
-msgstr ""
+msgstr "A limpeza automática fará o seguinte:"
 
 #: wp-optimize-settings.php:262
-msgid "Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db."
+msgid ""
+"Remove revisions, auto drafts, posts/comments in trash, transient options. "
+"After that it will optimize the db."
 msgstr ""
+"Remover as revisões, cópias automáticas, comentários no Lixo, opções "
+"transitórias. De seguida a base de dados será optimizada."
 
 #: wp-optimize-settings.php:269
-msgid "These options will only work if the automatic clean-up schedule has been enabled"
+msgid ""
+"These options will only work if the automatic clean-up schedule has been "
+"enabled"
 msgstr ""
+"Estas opções só funcionarão se o agendamento de limpeza automática estiver "
+"activado"
 
 #: wp-optimize-settings.php:274
 msgid "Remove auto revisions"
-msgstr ""
+msgstr "Remover revisões automáticas"
 
 #: wp-optimize-settings.php:278
 msgid "Remove auto drafts"
-msgstr ""
+msgstr "Remover rascunhos automáticos"
 
 #: wp-optimize-settings.php:282
 msgid "Remove spam comments"
-msgstr ""
+msgstr "Remover comentários de spam"
 
 #: wp-optimize-settings.php:295
 msgid "Remove orphaned post meta"
-msgstr ""
+msgstr "Remover metadados orfãos"
 
 #: wp-optimize-settings.php:299
 msgid "Remove unused tags"
-msgstr ""
+msgstr "Remover etiquetas não utilizadas"
 
 #: wp-optimize-settings.php:305
 msgid "Optimize database"
-msgstr ""
+msgstr "Optimizar base de dados"
 
 #: wp-optimize-settings.php:311
-msgid "If you have InnoDB tables. They will not be optimized!"
-msgstr ""
+msgid "InnoDB tables will not be optimized!"
+msgstr "As tabelas InnoDB não serão optimizadas!"
 
 #: wp-optimize-settings.php:320
 msgid "Enable email notification"
-msgstr ""
+msgstr "Activar notificação por email"
 
 #: wp-optimize-settings.php:327
 msgid "Send email to"
-msgstr ""
+msgstr "Enviar email para"
 
 #: wp-optimize-settings.php:333
 msgid "SAVE AUTO CLEAN-UP SETTINGS"
-msgstr ""
+msgstr "Guardar definições de limpeza automática"
 
 #: wp-optimize-tables.php:20
 msgid "Database Name:"
-msgstr ""
+msgstr "Nome da base de dados:"
 
 #: wp-optimize-tables.php:28
 msgid "Optimized all the tables found in the database."
-msgstr ""
+msgstr "Foram optimizadas todas as tabelas encontradas na base de dados."
 
 #: wp-optimize-tables.php:36
 msgid "No."
-msgstr ""
+msgstr "Nº"
 
 #: wp-optimize-tables.php:38
 msgid "Records"
-msgstr ""
+msgstr "Registos"
 
 #: wp-optimize-tables.php:39
 msgid "Data Size"
-msgstr ""
+msgstr "Tamanho dos dados"
 
 #: wp-optimize-tables.php:40
 msgid "Index Size"
-msgstr ""
+msgstr "Tamanho do índice"
 
 #: wp-optimize-tables.php:41
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: wp-optimize-tables.php:42
 msgid "Overhead"
-msgstr ""
+msgstr "Excesso"
 
 #: wp-optimize-tables.php:137
 msgid "Total:"
-msgstr ""
+msgstr "Total:"
 
 #: wp-optimize-tables.php:138
 #, php-format
 msgid "%d Table"
 msgid_plural "%d Tables"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d tabela"
+msgstr[1] "%d tabelas"
 
 #: wp-optimize-tables.php:139
 #, php-format
 msgid "%d Record"
 msgid_plural "%d Records"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d registo"
+msgstr[1] "%d registos"
 
 #: wp-optimize-tables.php:179
 msgid "Total Size of Database:"
-msgstr ""
+msgstr "Tamanho total da base de dados:"
 
 #: wp-optimize-tables.php:191
 msgid "Optimization Results:"
-msgstr ""
+msgstr "Resultados da optimização:"
 
 #: wp-optimize-tables.php:196
 msgid "Total Space Saved:"
-msgstr ""
+msgstr "Total de espaço recuperado:"
 
 #: wp-optimize-tables.php:207
 msgid "Optimization Possibility:"
-msgstr ""
+msgstr "Estimativa de optimização:"
 
 #: wp-optimize-tables.php:213
-msgid "Total space can be saved:"
-msgstr ""
+msgid "Total space that can be saved:"
+msgstr "Total de espaço que pode ser recuperado:"
 
 #. Plugin Name of the plugin/theme
 msgid "WP-Optimize"
-msgstr ""
+msgstr "WP-Optimize"
 
 #. Plugin URI of the plugin/theme
 msgid "http://wp-optimize.ruhanirabin.com/"
-msgstr ""
+msgstr "http://wp-optimize.ruhanirabin.com/"
 
 #. Description of the plugin/theme
-msgid "This plugin helps you to keep your database clean by removing post revisions and spams in a blaze. Additionally it allows you to run optimize command on your WordPress core tables (use with caution)."
+msgid ""
+"This plugin helps you to keep your database clean by removing post revisions "
+"and spams in a blaze. Additionally it allows you to run optimize command on "
+"your WordPress core tables (use with caution)."
 msgstr ""
+"Este plugin ajuda-o a manter a sua base de dados limpa, removendo as "
+"revisões de artigos e spams num ápice. Permite-lhe ainda executar o comando "
+"de optimização das tabelas principais do seu WordPress (utilizar com "
+"cuidado)."
 
 #. Author of the plugin/theme
 msgid "Ruhani Rabin"
-msgstr ""
+msgstr "Ruhani Rabin"
 
 #. Author URI of the plugin/theme
 msgid "https://github.com/ruhanirabin/WP-Optimize"
-msgstr ""
+msgstr "https://github.com/ruhanirabin/WP-Optimize"

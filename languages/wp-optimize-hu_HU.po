@@ -86,8 +86,10 @@ msgid "Do not select RED marked items unless you really need to use them"
 msgstr "Ne válasszuk ki a pirossal jelölt tételeket csak ha valóban szükség van a használatukra"
 
 #: wp-optimize-common.php:704
-msgid "comments removed from Trash"
-msgstr "hozzászólás eltávolítva a lomtárból"
+#, fuzzy
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%d hozzászólás eltávolítva a lomtárból"
 
 #: wp-optimize-common.php:543
 msgid "KB"
@@ -118,12 +120,16 @@ msgid "GB"
 msgstr "GB"
 
 #: wp-optimize-common.php:710
-msgid "unused comment metadata items removed"
-msgstr "nem használt hozzászólás metaadat elemek eltávolítása"
+#, fuzzy
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d nem használt hozzászólás metaadat elemek eltávolítása"
 
 #: wp-optimize-common.php:716
-msgid "unused akismet comment metadata items removed"
-msgstr "nem használt Akismet hozzászólás metaadat elemek eltávolítása"
+#, fuzzy
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d nem használt Akismet hozzászólás metaadat elemek eltávolítása"
 
 #: wp-optimize-credits.php:67
 msgid "GitHub Development Log"
@@ -162,7 +168,7 @@ msgid "Rating"
 msgstr "Értékelés"
 
 #: wp-optimize-main.php:328
-msgid "Please give a proper rating:)"
+msgid "Please give a proper rating :)"
 msgstr "A bővítmény értékelése :)"
 
 #: wp-optimize-main.php:327
@@ -198,45 +204,46 @@ msgid "No items"
 msgstr "Nem találhatóak elemek"
 
 #: wp-optimize-main.php:76
-msgid "Database Optimized!"
-msgstr "Adatbázis optimalizálva!"
+#, fuzzy, php-format
+msgctxt "%s is the Database Name"
+msgid "%s Database Optimized!"
+msgstr "%s Adatbázis optimalizálva!"
 
 #: wp-optimize-main.php:154 wp-optimize-main.php:156
 msgid "Clean-up options"
 msgstr "Tisztítási beállítások"
 
 #: wp-optimize-main.php:165
-msgid "Clean post revisions which are older than "
-msgstr "Bejegyzés módosítás eltávolítása, amely régebbi mint "
-
-#: wp-optimize-main.php:168 wp-optimize-main.php:186 wp-optimize-main.php:206
-#: wp-optimize-main.php:225
-msgid "weeks"
-msgstr "hét"
+#, fuzzy
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Bejegyzés módosítás eltávolítása, amely régebbi mint %d hét"
 
 #: wp-optimize-main.php:170
 msgid "Clean all post revisions"
 msgstr "Minden bejegyzés módosítás eltávolítása"
 
 #: wp-optimize-main.php:183
-msgid "Clean auto draft posts which are older than "
-msgstr "Automatikus bejegyzés módosítás piszkozat eltávolítása, amely régebbi mint "
+#, fuzzy
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "Automatikus bejegyzés módosítás piszkozat eltávolítása, amely régebbi mint %d hét"
 
 #: wp-optimize-main.php:188
 msgid "Clean all auto draft posts and posts in trash"
 msgstr "Automatikus bejegyzések és piszkozatok eltávolítása a lomtárból"
 
 #: wp-optimize-main.php:203
-msgid "Remove spam comments which are older than "
-msgstr "Spam hozzászólások eltávolítása, amelyek nem régebbiek mint "
+#, fuzzy
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "Spam hozzászólások eltávolítása, amelyek nem régebbiek mint %d hét"
 
 #: wp-optimize-main.php:208
 msgid "Remove spam comments and comments in trash"
 msgstr "Spam hozzászólások és hozzászólások eltávolítása a lomtárból"
 
 #: wp-optimize-main.php:222
-msgid "Remove unapproved comments which are older than "
-msgstr "Jóváhagyásra várró hozzászólások eltávolítása, amelyek nem régebbiek mint "
+#, fuzzy
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Jóváhagyásra várró hozzászólások eltávolítása, amelyek nem régebbiek mint %d hét"
 
 #: wp-optimize-main.php:227 wp-optimize-settings.php:288
 msgid "Remove unapproved comments"
@@ -287,8 +294,8 @@ msgid "PROCESS"
 msgstr "VÉGREHAJTÁS"
 
 #: wp-optimize-main.php:334
-msgid "Status log: "
-msgstr "Állapot értékelés: "
+msgid "Status log"
+msgstr "Állapot értékelés"
 
 #: wp-optimize-main.php:349
 msgid "Last automatic optimization was at"
@@ -307,8 +314,8 @@ msgid "Scheduled cleaning enabled"
 msgstr "Ütemezett tisztítás engedélyezve"
 
 #: wp-optimize-main.php:388
-msgid "Next schedule"
-msgstr "Következő ütemezett tisztítás"
+msgid "Next schedule:"
+msgstr "Következő ütemezett tisztítás:"
 
 #: wp-optimize-main.php:399
 msgid "Refresh"
@@ -319,36 +326,29 @@ msgid "Scheduled cleaning disabled"
 msgstr "Ütemezett tisztítás tiltva"
 
 #: wp-optimize-main.php:422
-msgid "Keeping last "
-msgstr "Az utolsó  "
-
-#: wp-optimize-main.php:425 wp-optimize-settings.php:148
-msgid "weeks data"
-msgstr "hét adatait megtartja"
+#, fuzzy
+msgid "Keeping last %s weeks data"
+msgstr "Az utolsó %s hét adatait megtartja"
 
 #: wp-optimize-main.php:433
 msgid "Not keeping recent data"
 msgstr "Nem tart meg újabb adatokat"
 
-#: wp-optimize-main.php:450
-msgid "Current database size : "
-msgstr "jelenlegi adatbázis mérete: "
+#: wp-optimize-main.php:450 wp-optimize-main.php:462
+msgid "Current database size:"
+msgstr "jelenlegi adatbázis mérete:"
 
 #: wp-optimize-main.php:455
-msgid "You have saved"
-msgstr "Mentett."
-
-#: wp-optimize-main.php:462
-msgid "Current database size"
-msgstr "Jelenlegi adatbázis mérete"
+msgid "You have saved:"
+msgstr "Mentett:"
 
 #: wp-optimize-main.php:470
-msgid "You can save almost"
-msgstr "Megmenthető mennyiség"
+msgid "You can save almost:"
+msgstr "Megmenthető mennyiség:"
 
 #: wp-optimize-main.php:487
-msgid "Total clean up overall"
-msgstr "Eddigi összes megtisztított adatmennyiség"
+msgid "Total clean up overall:"
+msgstr "Eddigi összes megtisztított adatmennyiség:"
 
 #: wp-optimize-main.php:508
 msgid "Sponsor"
@@ -363,16 +363,17 @@ msgid "General Settings"
 msgstr "Általános beállítások"
 
 #: wp-optimize-settings.php:137
-msgid "Keep last "
-msgstr "Az utolsó "
+#, fuzzy
+msgid "Keep last %s weeks data"
+msgstr "Az utolsó %s hét adatait megtartja"
 
 #: wp-optimize-settings.php:153
 msgid "This option will retain the last selected weeks data and remove any garbage data before that period. This will also affect Auto Clean-up process"
 msgstr "Ez az opció megtartja a beállított hetek adatait, és eltávolítja az ezen kívüli időszakra eső eltávolítandó adatokat. Ez is hatással lehet az Automatikus tisztítási folyamatra."
 
 #: wp-optimize-settings.php:162
-msgid "Enable admin bar link "
-msgstr "WP-Optimize engedélyezése az admin sávon "
+msgid "Enable admin bar link"
+msgstr "WP-Optimize engedélyezése az admin sávon"
 
 #: wp-optimize-settings.php:164
 msgid "(Click here to refresh)"
@@ -492,36 +493,36 @@ msgid "Total:"
 msgstr "Összesen:"
 
 #: wp-optimize-tables.php:138
-msgid "%s Table"
-msgid_plural "%s Tables"
-msgstr[0] "%s Tábla"
-msgstr[1] "%s Tábla"
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d Tábla"
+msgstr[1] "%d Tábla"
 
 #: wp-optimize-tables.php:139
-msgid "%s Record"
-msgid_plural "%s Records"
-msgstr[0] "%s Rekord"
-msgstr[1] "%s Rekord"
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d Rekord"
+msgstr[1] "%d Rekord"
 
 #: wp-optimize-tables.php:179
-msgid "Total Size of Database"
-msgstr "A teljes adatbázis mérete"
+msgid "Total Size of Database:"
+msgstr "A teljes adatbázis mérete:"
 
 #: wp-optimize-tables.php:191
-msgid "Optimization Results"
+msgid "Optimization Results:"
 msgstr "Optimalizáció Eredménye:"
 
 #: wp-optimize-tables.php:196
-msgid "Total Space Saved"
+msgid "Total Space Saved:"
 msgstr "Összes megmentett méret:"
 
 #: wp-optimize-tables.php:208
-msgid "Optimization Possibility"
-msgstr "Optimalizállási lehetőség"
+msgid "Optimization Possibility:"
+msgstr "Optimalizállási lehetőség:"
 
 #: wp-optimize-tables.php:215
-msgid "Total space can be saved"
-msgstr "Összes megtakarítható hely"
+msgid "Total space can be saved:"
+msgstr "Összes megtakarítható hely:"
 
 msgid "WP-Optimize"
 msgstr "WP-Optimalizáló"
@@ -560,36 +561,52 @@ msgid "bytes"
 msgstr "bytes"
 
 #: wp-optimize-common.php:635
-msgid "transient options deleted"
-msgstr "tranziens beállítás törölve"
+#, fuzzy
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d tranziens beállítás törölve"
 
 #: wp-optimize-common.php:662
-msgid "post revisions deleted"
-msgstr "bejegyzés módosítás  törölve"
+#, fuzzy
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d bejegyzés módosítás törölve"
 
 #: wp-optimize-common.php:673
-msgid "auto drafts deleted"
-msgstr "automatikus piszkozat törölve"
+#, fuzzy
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d automatikus piszkozat törölve"
 
 #: wp-optimize-common.php:683
-msgid "items removed from Trash"
-msgstr "lomtárból eltávolított elem"
+#, fuzzy
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d lomtárból eltávolított elem"
 
 #: wp-optimize-common.php:695
-msgid "spam comments deleted"
-msgstr "spam hozzászólás törölve"
+#, fuzzy
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d spam hozzászólás törölve"
 
 #: wp-optimize-common.php:726
-msgid "unapproved comments deleted"
-msgstr "nem jóváhagyott hozzászólás törölve"
+#, fuzzy
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d nem jóváhagyott hozzászólás törölve"
 
 #: wp-optimize-common.php:732
-msgid "pingbacks deleted"
-msgstr "visszajelzés törölve"
+#, fuzzy
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d visszajelzés törölve"
 
 #: wp-optimize-common.php:738
-msgid "trackbacks deleted"
-msgstr "visszakövetés törölve"
+#, fuzzy
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d visszakövetés törölve"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
@@ -604,48 +621,60 @@ msgid "NO Actions Taken"
 msgstr "Intézkedések nem történtek"
 
 #: wp-optimize-common.php:787
-msgid "transient options in your database"
-msgstr "tranziens beállítás az adatbázisban"
+#, fuzzy
+msgid "%d transient option in your database"
+msgid_plural "%d transient options in your database"
+msgstr[0] "%d tranziens beállítás az adatbázisban"
 
 #: wp-optimize-common.php:789
 msgid "No transient options found"
 msgstr "Nem található tranziens beállítás az adatbázisban"
 
 #: wp-optimize-common.php:798
-msgid "orphaned postmeta in your database"
-msgstr "árván maradt bejegyzés meta adat az adatbázisban"
+#, fuzzy
+msgid "%d orphaned postmeta in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d árván maradt bejegyzés meta adat az adatbázisban"
 
 #: wp-optimize-common.php:800
 msgid "No orphaned postmeta in your database"
 msgstr "Nem található árván maradt bejegyzés meta adat az adatbázisban"
 
 #: wp-optimize-common.php:809
-msgid "unused tags in your database"
-msgstr "nem használt címke van az adatbázisban"
+#, fuzzy
+msgid "%d unused tag in your database"
+msgid_plural "%d unused tags in your database"
+msgstr[0] "%d nem használt címke van az adatbázisban"
 
 #: wp-optimize-common.php:811
 msgid "No unused tags found"
 msgstr "Nem található nem használt címke"
 
 #: wp-optimize-common.php:824
-msgid "post revisions in your database"
-msgstr "bejegyzés módosítás van az adatbázisban"
+#, fuzzy
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d bejegyzés módosítás van az adatbázisban"
 
 #: wp-optimize-common.php:826
 msgid "No post revisions found"
 msgstr "Nem található bejegyzés módosítás"
 
 #: wp-optimize-common.php:839
-msgid "auto draft post(s) in your database"
-msgstr "automatikus bejegyzés piszkozat van az adatbázisban"
+#, fuzzy
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d automatikus bejegyzés piszkozat van az adatbázisban"
 
 #: wp-optimize-common.php:841
 msgid "No auto draft posts found"
 msgstr "Nem található automatikus piszkozat"
 
 #: wp-optimize-common.php:853
-msgid "spam comments found"
-msgstr "spam hozzászólás található"
+#, fuzzy
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d spam hozzászólás található"
 
 #: wp-optimize-common.php:853 wp-optimize-common.php:884
 msgid "Review"
@@ -656,24 +685,30 @@ msgid "No spam comments found"
 msgstr "Nem található spam hozzászólás"
 
 #: wp-optimize-common.php:884
-msgid "unapproved comments found"
-msgstr "nem jóváhagyott hozzászólás található"
+#, fuzzy
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d nem jóváhagyott hozzászólás található"
 
 #: wp-optimize-common.php:886
 msgid "No unapproved comments found"
 msgstr "Nem található jóváhagyásra várró hozzászólás"
 
 #: wp-optimize-common.php:894
-msgid "Pingbacks found"
-msgstr "Visszajelzés található"
+#, fuzzy
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d Visszajelzés található"
 
 #: wp-optimize-common.php:896
 msgid "No pingbacks found"
 msgstr "Nem található visszajelzés"
 
 #: wp-optimize-common.php:904
-msgid "Trackbacks found"
-msgstr "Visszakövetés található"
+#, fuzzy
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d Visszakövetés található"
 
 #: wp-optimize-common.php:906
 msgid "No trackbacks found"

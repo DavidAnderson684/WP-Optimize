@@ -632,7 +632,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
 			$transient_options = $wpdb->query( $clean );
-            $message .= $transient_options.' '.__('transient options deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d transient option deleted', '%d transient options deleted', $transient_options, 'wp-optimize'), number_format_i18n($transient_options)).'<br>';
             break;
 		// TODO:  need to use proper query
         case "postmeta":
@@ -640,7 +640,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
 			//$postmeta = $wpdb->query( $clean );
-            //$message .= $postmeta.' '.__('orphaned postmeta deleted', 'wp-optimize').'<br>';
+            //$message .= sprintf(_n('%d orphaned postmeta deleted', '%d orphaned postmeta deleted', $postmeta, 'wp-optimize'), number_format_i18n($postmeta)).'<br>';
             break;
 
         case "tags":
@@ -648,7 +648,7 @@ function wpo_cleanUpSystem($cleanupType){
 //            $clean .= ';';
 //
 //			$tags = $wpdb->query( $clean );
-//            $message .= $tags.' '.__('unused tags deleted', 'wp-optimize').'<br>';
+//            $message .= sprintf(_n('%d unused tag deleted', '%d unused tags deleted', $tags, 'wp-optimize'), number_format_i18n($tags)).'<br>';
             break;
 
 		case "revisions":
@@ -659,7 +659,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
 			$revisions = $wpdb->query( $clean );
-            $message .= $revisions.' '.__('post revisions deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d post revision deleted', '%d post revisions deleted', $revisions, 'wp-optimize'), number_format_i18n($revisions)).'<br>';
             break;
 
         case "autodraft":
@@ -670,7 +670,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
             $autodraft = $wpdb->query( $clean );
-            $message .= $autodraft.' '.__('auto drafts deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d auto draft deleted', '%d auto drafts deleted', $autodraft, 'wp-optimize'), number_format_i18n($autodraft)).'<br>';
 
 
 			// TODO:  query trashed posts and cleanup metadata
@@ -680,7 +680,7 @@ function wpo_cleanUpSystem($cleanupType){
             }
             $clean .= ';';
             $posttrash = $wpdb->query( $clean );
-            $message .= $posttrash.' '.__('items removed from Trash', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d item removed from Trash', '%d items removed from Trash', $posttrash, 'wp-optimize'), number_format_i18n($posttrash)).'<br>';
 
             break;
 
@@ -692,7 +692,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
             $comments = $wpdb->query( $clean );
-            $message .= $comments.' '.__('spam comments deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d spam comment deleted', '%d spam comments deleted', $comments, 'wp-optimize'), number_format_i18n($comments)).'<br>';
 
             // TODO:  query trashed comments and cleanup metadata
             $clean = "DELETE FROM `$wpdb->comments` WHERE comment_approved = 'trash'";
@@ -701,19 +701,19 @@ function wpo_cleanUpSystem($cleanupType){
             }
             $clean .= ';';
             $commentstrash = $wpdb->query( $clean );
-            $message .= $commentstrash.' '.__('comments removed from Trash', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d comment removed from Trash', '%d comments removed from Trash', $commentstrash, 'wp-optimize'), number_format_i18n($commentstrash)).'<br>';
 
     		// TODO:  still need to test now cleaning up comments meta tables
             $clean = "DELETE FROM `$wpdb->commentmeta` WHERE comment_id NOT IN ( SELECT comment_id FROM `$wpdb->comments` )";
             $clean .= ';';
             $commentstrash_meta = $wpdb->query( $clean );
-            $message .= $commentstrash_meta.' '.__('unused comment metadata items removed', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d unused comment metadata item removed', '%d unused comment metadata items removed', $commentstrash_meta, 'wp-optimize'), number_format_i18n($commentstrash_meta)).'<br>';
 
 	   	    // TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings
             $clean = "DELETE FROM `$wpdb->commentmeta` WHERE meta_key LIKE '%akismet%'";
             $clean .= ';';
             $commentstrash_meta2 = $wpdb->query( $clean );
-            $message .= $commentstrash_meta2.' '.__('unused akismet comment metadata items removed', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d unused akismet comment metadata item removed', '%d unused akismet comment metadata items removed', $commentstrash_meta2, 'wp-optimize'), number_format_i18n($commentstrash_meta2)).'<br>';
             break;
 
         case "unapproved":
@@ -723,19 +723,19 @@ function wpo_cleanUpSystem($cleanupType){
             }
             $clean .= ';';
             $comments = $wpdb->query( $clean );
-            $message .= $comments.' '.__('unapproved comments deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d unapproved comment deleted', '%d unapproved comments deleted', $comments, 'wp-optimize'), number_format_i18n($comments)).'<br>';
             break;
 
         case "pingbacks":
             $clean = "DELETE FROM `$wpdb->comments` WHERE comment_type = 'pingback';";
             $comments = $wpdb->query( $clean );
-            $message .= $comments.' '.__('pingbacks deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d pingback deleted', '%d pingbacks deleted', $comments, 'wp-optimize'), number_format_i18n($comments)).'<br>';
             break;
 
         case "trackbacks":
             $clean = "DELETE FROM `$wpdb->comments` WHERE comment_type = 'trackback';";
             $comments = $wpdb->query( $clean );
-            $message .= $comments.' '.__('trackbacks deleted', 'wp-optimize').'<br>';
+            $message .= sprintf(_n('%d trackback deleted', '%d trackbacks deleted', $comments, 'wp-optimize'), number_format_i18n($comments)).'<br>';
             break;
 
 
@@ -784,7 +784,7 @@ function wpo_getInfo($cleanupType){
             $transient_options = $wpdb->get_var( $sql );
 
             if(!$transient_options == 0 || !$transient_options == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$transient_options.' '.__('transient options in your database', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient option in your database', '%d transient options in your database', $transient_options, 'wp-optimize'), number_format_i18n($transient_options));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No transient options found', 'wp-optimize');
             break;
@@ -795,7 +795,7 @@ function wpo_getInfo($cleanupType){
             $postmeta = $wpdb->get_var( $sql );
 
             if(!$postmeta == 0 || !$postmeta == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$postmeta.' '.__('orphaned postmeta in your database', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned postmeta in your database', '%d orphaned postmeta in your database', $postmeta, 'wp-optimize'), number_format_i18n($postmeta));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned postmeta in your database', 'wp-optimize');
             break;
@@ -806,7 +806,7 @@ function wpo_getInfo($cleanupType){
             $tags = $wpdb->get_var( $sql );
 
             if(!$tags == 0 || !$tags == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$tags.' '.__('unused tags in your database', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d unused tag in your database', '%d unused tags in your database', $tags, 'wp-optimize'), number_format_i18n($tags));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unused tags found', 'wp-optimize');
             break;
@@ -821,7 +821,7 @@ function wpo_getInfo($cleanupType){
             $revisions = $wpdb->get_var( $sql );
 
             if(!$revisions == 0 || !$revisions == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$revisions.' '.__('post revisions in your database', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d post revision in your database', '%d post revisions in your database', $revisions, 'wp-optimize'), number_format_i18n($revisions));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No post revisions found', 'wp-optimize');
             break;
@@ -836,7 +836,7 @@ function wpo_getInfo($cleanupType){
             $autodraft = $wpdb->get_var( $sql );
 
             if(!$autodraft == 0 || !$autodraft == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$autodraft.' '.__('auto draft post(s) in your database', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d auto draft post in your database', '%d auto draft posts in your database', $autodraft, 'wp-optimize'), number_format_i18n($autodraft));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No auto draft posts found', 'wp-optimize');
             break;
@@ -850,7 +850,7 @@ function wpo_getInfo($cleanupType){
             $sql .= ';';
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('spam comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review', 'wp-optimize').'</a>';
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d spam comment found', '%d spam comments found', $comments, 'wp-optimize'), number_format_i18n($comments)).' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review', 'wp-optimize').'</a>';
             } else
               $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
 
@@ -881,7 +881,7 @@ function wpo_getInfo($cleanupType){
             $sql .= ';';
 			$comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('unapproved comments found', 'wp-optimize').' | <a href="edit-comments.php?comment_status=moderated">'.' '.__('Review', 'wp-optimize').'</a>';;
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d unapproved comment found', '%d unapproved comments found', $comments, 'wp-optimize'), number_format_i18n($comments)).' | <a href="edit-comments.php?comment_status=moderated">'.' '.__('Review', 'wp-optimize').'</a>';;
             } else
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unapproved comments found', 'wp-optimize');
 
@@ -891,7 +891,7 @@ function wpo_getInfo($cleanupType){
             $sql = "SELECT COUNT(*) FROM `$wpdb->comments` WHERE comment_type='pingback';";
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('Pingbacks found', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d Pingback found', '%d Pingbacks found', $comments, 'wp-optimize'), number_format_i18n($comments));
             } else
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No pingbacks found', 'wp-optimize');
 
@@ -901,7 +901,7 @@ function wpo_getInfo($cleanupType){
             $sql = "SELECT COUNT(*) FROM `$wpdb->comments` WHERE comment_type='trackback';";
             $comments = $wpdb->get_var( $sql );
             if(!$comments == NULL || !$comments == 0){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$comments.' '.__('Trackbacks found', 'wp-optimize');
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d Trackback found', '%d Trackbacks found', $comments, 'wp-optimize'), number_format_i18n($comments));
             } else
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No trackbacks found', 'wp-optimize');
 
