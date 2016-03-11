@@ -59,9 +59,9 @@ $myDate = gmdate(get_option('date_format') . ' ' . get_option('time_format'), $m
 //$formattedCleanedup = wpo_format_size($cleanedup);
 
 
-    if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
+    if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== "" ) {
     //
-        $sendto = OPTION_NAME_ENABLE_EMAIL_ADDRESS;
+        $sendto = get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS );
     }
     else{
         $sendto = get_bloginfo ( 'admin_email' );
