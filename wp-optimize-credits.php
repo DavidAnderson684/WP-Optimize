@@ -43,23 +43,9 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-			<h3><?php _e('Translators','wp-optimize'); ?></h3>
-			<br />
-			<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
-			<p>
-				<b><a href="http://ruhanirabin.github.io/WP-Optimize/translations/" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
-			</p>
-			<br /><br />
-
 			<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
         		<p>
         			<b><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></b>
-        		</p>
-        		<p>
-        			<b><a href="http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs translator account)', 'wp-optimize'); ?></a></b>
-        		</p>
-        		<p>
-        			<b><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></b>
         		</p>
         		<p>
         			<b><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></b>
