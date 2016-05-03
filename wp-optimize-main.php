@@ -347,6 +347,9 @@ Function optimizeTablesQuick($Optimize){
 					echo '<a href="?page=WP-Optimize">';
 					_e('Refresh', 'wp-optimize');
 					echo '</a>';
+                    echo ' <a href="?page=WP-Optimize&tab=wp_optimize_settings">';
+                    _e('Edit', 'wp-optimize');
+                    echo '</a>';
 					echo '</i>';
             				//echo $timestamp;
 				}
