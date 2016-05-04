@@ -297,7 +297,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     				<p>
     					<label for="enable-email-address">
             					<?php _e('Send email to', 'wp-optimize');?>
-        					<input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
+        					<input name="enable-email-address" id="enable-email-address" type="email" value ="<?php echo esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     					</label>
     				</p>
     				<p>
