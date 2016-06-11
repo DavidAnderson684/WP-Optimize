@@ -78,7 +78,7 @@ $msg .= "\r\n";
 $msg .= __("Regards,","wp-optimize")."\r\n";
 $msg .= __("WP-Optimize Plugin","wp-optimize");
 
-wp_mail( $sendto, $subject, $msg );
+//wp_mail( $sendto, $subject, $msg );
 
 ob_end_flush();
 }
@@ -414,7 +414,7 @@ function wpo_cron_action() {
             if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
                 //#TODO need to fix the problem with variable value not passing through
                 if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
-                wpo_sendEmail($thedate, $part2);                     
+                //wpo_sendEmail($thedate, $part2);                     
                 }
 
             }
@@ -469,14 +469,14 @@ function wpo_PluginOptionsSetDefaults() {
 	//
 	}
 	else{
-	    add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
+	    //add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
 	}    
         // ---------
 	if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
 	//
 	}
 	else{
-	    add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
+	    //add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
 	}    
         
 	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
