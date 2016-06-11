@@ -54,9 +54,6 @@ if ( ! defined( 'WPINC' ) ) {
         			<b><a href="https://translate.wordpress.org/projects/wp-plugins/wp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs WordPress account)', 'wp-optimize'); ?></a></b>
         		</p>
         		<p>
-        			<b><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></b>
-        		</p>
-        		<p>
         			<b><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></b>
         		</p>
         		<p>
