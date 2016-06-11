@@ -156,6 +156,8 @@ Please check your database for corrupted tables. That can happen, usually your w
 * 27 Weeks retention option equivalent to 6 month
 * Compatibility update.
 * Language files update.
+* Removed email notifications, it doesn't work on many servers
+* Various other fixes
 
 = 1.8.9.10 =
 * Security Patch - Update your plugin.
