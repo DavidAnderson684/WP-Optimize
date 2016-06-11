@@ -271,13 +271,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				<p>
     					<label>
             					<input name="enable-email" id="enable-email" type="checkbox" value ="true" <?php // echo get_option(OPTION_NAME_ENABLE_EMAIL, 'false') == 'true' ? 'checked="checked"':''; ?> />
-            					<?php _e('Enable email notification', 'wp-optimize');?>
+            					<?php //_e('Enable email notification', 'wp-optimize');?>
     					</label>
     				</p>
     				<p>
     					<label for="enable-email-address">
-            					<?php _e('Send email to', 'wp-optimize');?>
-        					<input name="enable-email-address" id="enable-email-address" type="text" value ="<?php echo  // esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
+            					<?php //_e('Send email to', 'wp-optimize');?>
+        					<input name="enable-email-address" id="enable-email-address" type="text" value ="<?php //echo  // esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     					</label>
     				</p> -->
     				<p>
