@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.9\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2016-06-12 10:54+0100\n"
-"PO-Revision-Date: 2016-06-12 10:59+0100\n"
+"PO-Revision-Date: 2016-06-12 11:04+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -819,33 +819,3 @@ msgstr "Ruhani Rabin"
 #. Author URI of the plugin/theme
 msgid "https://github.com/ruhanirabin/WP-Optimize"
 msgstr "https://github.com/ruhanirabin/WP-Optimize"
-
-#~ msgid "Read Translation Instructions"
-#~ msgstr "Leia as instruções sobre tradução"
-
-#~ msgid "Get a Translator Account"
-#~ msgstr "Obter uma conta de tradutor"
-
-#~ msgid "Plugin Translation Portal (needs translator account)"
-#~ msgstr "Portal de tradução do plugin (necessita conta de tradutor)"
-
-#~ msgid "Request New Language"
-#~ msgstr "Pedir novo idioma"
-
-#~ msgid "Enable email notification"
-#~ msgstr "Activar notificação por email"
-
-#~ msgid "Send email to"
-#~ msgstr "Enviar email para"
-
-#~ msgid ""
-#~ "This plugin helps you to keep your database clean by removing post "
-#~ "revisions and spams in a blaze. Additionally it allows you to run "
-#~ "optimize command on your WordPress core tables (use with caution)."
-#~ msgstr ""
-#~ "Este plugin ajuda-o a manter a sua base de dados limpa, removendo as "
-#~ "revisões de artigos e spams num ápice. Permite-lhe ainda executar o "
-#~ "comando de optimização das tabelas principais do seu WordPress (utilizar "
-#~ "com cuidado).\vThis plugin helps you to keep your database clean by "
-#~ "removing post revisions and spams in a blaze. Additionally it allows you "
-#~ "to run optimize command on your WordPress core tables (use with caution)."
