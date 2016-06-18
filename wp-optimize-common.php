@@ -255,7 +255,7 @@ function wpo_debugLog($message) {
  */
 function wpo_headerImage(){
 
-	$text = '<img src="'.WPO_PLUGIN_URL.'/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px" height="auto"/><br />';
+	$text = '<img src="'.WPO_PLUGIN_URL.'/images/wp-optimize.png" border="0" alt="WP-Optimize" title="WP-Optimize" width="310px" height="auto"/><br />';
 
 	//$text .='<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ruhanirabin.com%2Fwp-optimize%2F&amp;width=310&amp;height=46&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=true&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:46px;" allowTransparency="true"></iframe>';
 	echo $text;
