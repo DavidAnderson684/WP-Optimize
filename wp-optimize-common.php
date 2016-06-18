@@ -794,10 +794,11 @@ function wpo_getInfo($cleanupType){
             $sql .= ';';
             $postmeta = $wpdb->get_var( $sql );
 
-            if(!$postmeta == 0 || !$postmeta == NULL){
+            /* if(!$postmeta == 0 || !$postmeta == NULL){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned postmeta in your database', '%d orphaned postmeta in your database', $postmeta, 'wp-optimize'), number_format_i18n($postmeta));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned postmeta in your database', 'wp-optimize');
+            */
             break;
 
         case "tags":
