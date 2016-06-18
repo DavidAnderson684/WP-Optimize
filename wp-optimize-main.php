@@ -68,6 +68,14 @@ if (isset($_POST["clean-postmeta"])) {
     $text .= wpo_cleanUpSystem('postmeta');
     }
 
+if (isset($_POST["clean-commentmeta"])) {
+    $text .= wpo_cleanUpSystem('commentmeta');
+    }
+
+if (isset($_POST["clean-orphandata"])) {
+    $text .= wpo_cleanUpSystem('orphandata');
+    }
+
 if (isset($_POST["clean-tags"])) {
     $text .= wpo_cleanUpSystem('tags');
     }
@@ -214,7 +222,7 @@ Function optimizeTablesQuick($Optimize){
 					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
 				</label>
 				<br />
-				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient'), 'wp-optimize'); ?></small>
 			</p>
 			<p>
 				<label>
@@ -232,6 +240,34 @@ Function optimizeTablesQuick($Optimize){
 				<br />
 				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
 			</p>
+
+			<p>
+				<label>
+					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" />
+			 		<span style="color: red;"><?php _e('Clean post meta data', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('postmeta'), 'wp-optimize'); ?></small>
+			</p>
+
+			<p>
+				<label>
+					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" />
+			 		<span style="color: red;"><?php _e('Clean comment meta data', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('commentmeta'), 'wp-optimize'); ?></small>
+			</p>			
+
+			<p>
+				<label>
+					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" />
+			 		<span style="color: red;"><?php _e('Clean orphaned data left in tables', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('orphandata'), 'wp-optimize'); ?></small>
+			</p>			
+
 			<p>
 				<small><?php _e('Do not select RED marked items unless you really need to use them', 'wp-optimize'); ?></small>
 			</p>
