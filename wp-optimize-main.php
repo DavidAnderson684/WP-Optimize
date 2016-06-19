@@ -156,7 +156,7 @@ Function optimizeTablesQuick($Optimize){
 
 
 <div class="wpo_section wpo_group">
-	<form onSubmit="return confirm('WARNING: There is no Undo option\\nBe careful about the checkboxes you have selected')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
+	<form onSubmit="return confirm('WARNING: There is no Undo option')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
@@ -243,7 +243,8 @@ Function optimizeTablesQuick($Optimize){
 
 			<p>
 				<label>
-					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" />
+					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" 
+					onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
 			 		<span style="color: red;"><?php _e('Clean post meta data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
