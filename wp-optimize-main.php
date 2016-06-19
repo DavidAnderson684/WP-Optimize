@@ -156,7 +156,7 @@ Function optimizeTablesQuick($Optimize){
 
 
 <div class="wpo_section wpo_group">
-	<form onSubmit="return confirm('<?php _e('WARNING: There is no Undo option', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
+	<form onSubmit="return confirm('<?php _e('WARNING: This operation is permanent. Confirm?', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
@@ -226,7 +226,7 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>')"/>
 			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -234,7 +234,7 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
+					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" onclick="return confirm('<?php _e('This will delete all trackbacks in the database. Are you sure?', 'wp-optimize'); ?>')"/>
 			 		<span style="color: red;"><?php _e('Remove trackbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -244,7 +244,7 @@ Function optimizeTablesQuick($Optimize){
 			<p>
 				<label>
 					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" 
-					onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
+					onclick="return confirm('<?php _e('Cleaning up post meta can have unexpected result. Are you sure?', 'wp-optimize'); ?>')"/>
 			 		<span style="color: red;"><?php _e('Clean post meta data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -253,7 +253,7 @@ Function optimizeTablesQuick($Optimize){
 
 			<p>
 				<label>
-					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
+					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" onclick="return confirm('<?php _e('Cleaning up comment meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>')"/>
 			 		<span style="color: red;"><?php _e('Clean comment meta data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -262,8 +262,8 @@ Function optimizeTablesQuick($Optimize){
 
 			<p>
 				<label>
-					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" onclick="return confirm('<?php _e('Are you sure you want to select this option?', 'wp-optimize'); ?>')"/>
-			 		<span style="color: red;"><?php _e('Clean orphaned data left in tables', 'wp-optimize'); ?></span>
+					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" onclick="return confirm('<?php _e('Cleaning up orphaned post meta data can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>')"/>
+			 		<span style="color: red;"><?php _e('Clean orphaned relationship data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
 				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('orphandata'), 'wp-optimize'); ?></small>
