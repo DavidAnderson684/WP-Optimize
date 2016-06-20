@@ -831,7 +831,7 @@ function wpo_getInfo($cleanupType){
         case "transient":
             $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
             $sql .= ';';
-            $tags = $wpdb->get_var( $sql );
+            $transient = $wpdb->get_var( $sql );
 
             if(!$transient == 0 || !$transient == NULL){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient data in your database', '%d transient data in your database', $transient, 'wp-optimize'), number_format_i18n($transient));
