@@ -184,7 +184,7 @@ function fCheck() {
 </script>
 
 <div class="wpo_section wpo_group">
-	<form onSubmit="return confirm('<?php _e('WARNING: This operation is permanent. Confirm?', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
+	<form onSubmit="return confirm('<?php _e('WARNING: This operation is permanent. Continue?', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
@@ -298,7 +298,7 @@ function fCheck() {
 			</p>			
 
 			<p>
-				<small><?php _e('WARNING: Do not select RED marked items unless you really what you are doing', 'wp-optimize'); ?></small>
+				<small><span style="color: red;"><?php _e('WARNING: Do not select RED marked items, they may have unexpected results', 'wp-optimize'); ?></span></small>
 			</p>
 			<p>
     				<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
