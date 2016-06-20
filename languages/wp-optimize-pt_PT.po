@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.9\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2016-06-12 10:54+0100\n"
-"PO-Revision-Date: 2016-06-12 11:04+0100\n"
+"PO-Revision-Date: 2016-06-20 14:57+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -52,7 +52,7 @@ msgstr "Optimização agendada foi executada em"
 
 #: wp-optimize-common.php:76
 msgid "You can safely delete this email."
-msgstr "Pode apagar este email em segurança."
+msgstr "Pode eliminar este email em segurança."
 
 #: wp-optimize-common.php:78
 msgid "Regards,"
@@ -82,22 +82,22 @@ msgstr "bytes"
 #, php-format
 msgid "%d transient option deleted"
 msgid_plural "%d transient options deleted"
-msgstr[0] "Foi apagado %d dado transitório de opções"
-msgstr[1] "Foram apagados %d dados transitórios de opções"
+msgstr[0] "Foi eliminado %d dado transitório de opções"
+msgstr[1] "Foram eliminados %d dados transitórios de opções"
 
 #: wp-optimize-common.php:662
 #, php-format
 msgid "%d post revision deleted"
 msgid_plural "%d post revisions deleted"
-msgstr[0] "Foi apagada %d revisão de artigo"
-msgstr[1] "Foram apagadas %d revisões de artigos"
+msgstr[0] "Foi eliminada %d revisão de artigo"
+msgstr[1] "Foram eliminadas %d revisões de artigos"
 
 #: wp-optimize-common.php:673
 #, php-format
 msgid "%d auto draft deleted"
 msgid_plural "%d auto drafts deleted"
-msgstr[0] "Foi apagado %d rascunho automático"
-msgstr[1] "Foram apagados %d rascunhos automáticos"
+msgstr[0] "Foi eliminado %d rascunho automático"
+msgstr[1] "Foram eliminados %d rascunhos automáticos"
 
 #: wp-optimize-common.php:683
 #, php-format
@@ -110,8 +110,8 @@ msgstr[1] "Foram removidos %d itens do Lixo"
 #, php-format
 msgid "%d spam comment deleted"
 msgid_plural "%d spam comments deleted"
-msgstr[0] "Foi apagado %d comentário de spam"
-msgstr[1] "Foram apagados %d comentários de spam"
+msgstr[0] "Foi eliminado %d comentário de spam"
+msgstr[1] "Foram eliminados %d comentários de spam"
 
 #: wp-optimize-common.php:704
 #, php-format
@@ -139,22 +139,22 @@ msgstr[1] ""
 #, php-format
 msgid "%d unapproved comment deleted"
 msgid_plural "%d unapproved comments deleted"
-msgstr[0] "Foi apagado %d comentário não aprovado"
-msgstr[1] "Foram apagados %d comentários não aprovados"
+msgstr[0] "Foi eliminado %d comentário não aprovado"
+msgstr[1] "Foram eliminados %d comentários não aprovados"
 
 #: wp-optimize-common.php:732
 #, php-format
 msgid "%d pingback deleted"
 msgid_plural "%d pingbacks deleted"
-msgstr[0] "Foi apagado %d pingback"
-msgstr[1] "Foram apagados %d pingbacks"
+msgstr[0] "Foi eliminado %d pingback"
+msgstr[1] "Foram eliminados %d pingbacks"
 
 #: wp-optimize-common.php:738
 #, php-format
 msgid "%d trackback deleted"
 msgid_plural "%d trackbacks deleted"
-msgstr[0] "Foi apagado %d trackback"
-msgstr[1] "Foram apagados %d trackbacks"
+msgstr[0] "Foi eliminado %d trackback"
+msgstr[1] "Foram eliminados %d trackbacks"
 
 #: wp-optimize-common.php:745
 msgid "Enabled weekly processing"
