@@ -153,7 +153,29 @@ Function optimizeTablesQuick($Optimize){
 
 ?>
 
+<script type="text/javascript">
 
+function fCheck() {
+	var vCleanPingbacks = document.getElementById('clean-pingbacks');
+	var vCleanTrackbacks = document.getElementById('clean-trackbacks');
+	var vCleanPostmeta = document.getElementById('clean-postmeta');
+	var vCleanCommentmeta = document.getElementById('clean-commentmeta');
+	var vCleanOrphandata = document.getElementById('clean-orphandata');
+
+	if ( vCleanPingbacks.checked )
+      return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanTrackbacks.checked )
+      return confirm('<?php _e('This will delete all trackbacks in the database. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanPostmeta.checked )
+      return confirm('<?php _e('Cleaning up post meta can have unexpected result. Are you sure?', 'wp-optimize'); ?>');
+
+}
+
+
+
+</script>
 
 <div class="wpo_section wpo_group">
 	<form onSubmit="return confirm('<?php _e('WARNING: This operation is permanent. Confirm?', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
@@ -226,7 +248,7 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return if($(this).is(':checked')) { confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>') }"/>
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="fCheck()"/>
 			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
