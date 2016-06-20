@@ -500,11 +500,14 @@ function fCheck() {
 	</div>
 	<div class="wpo_col wpo_span_1_of_3">
 
-		<p>
+		<!-- <p>
 			<?php wpo_headerImage(); ?>
-		</p>
+		</p> -->
 		<p>
 			<?php _e('Sponsor','wp-optimize')?>
+		</p>
+		<p>
+			<a href="http://bit.ly/266KJBZ" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>mythemeshop.png" width="310" height="auto" alt=""></a>
 		</p>
 		<p>
 			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
