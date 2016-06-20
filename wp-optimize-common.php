@@ -656,7 +656,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
 
             $orphandata = $wpdb->query( $clean );
-            $message .= sprintf(_n('%d orphaned meta data deleted', '%d orphaned meta data deleted', $postmeta, 'wp-optimize'), number_format_i18n($orphandata)).'<br>';
+            $message .= sprintf(_n('%d orphaned meta data deleted', '%d orphaned meta data deleted', $orphandata, 'wp-optimize'), number_format_i18n($orphandata)).'<br>';
             break;
 
         case "tags":
