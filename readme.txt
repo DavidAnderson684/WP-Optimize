@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 Requires at least: 4.4
 Tested up to: 4.5
-Stable tag: 1.9
+Stable tag: 1.9.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,7 +43,6 @@ Please join GitHub and collaborate.
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
 *   Enabled for Administrators only.
-*   E-mail notifications on automatic cleanup
 
 
 **All the potentially dangerous clean up options are marked RED.**
@@ -73,20 +72,6 @@ Existing translators should join [Translation Utility](https://translate.wordpre
 
 You must have an account at WordPress.org in order to edit translation
 
-**WP-Optimize Translators:**
-
-*   Language de_DE: Rene Wolf - http://www.fluchtsportler.de
-*   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
-*   Language ka_GE: Givi Tabatadze - http://tagiweb.com
-*   Language zh_CN: Maie - http://maie.name
-*   Language es_ES: Navone Juan -  http://navonej.com.ar/
-*   Language sk_SK: Martin Šturcel-  http://sturcel.sk/martin
-*   Language nl_NL: Mathias Bosman -  http://www.mathiasbosman.be
-*   Language hu_HU: László Viktor - http://hunstart.hu/
-*   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
-
-** Some languages are removed from the above list, because translators did not update the languages for current version **
 [See a list of currently editable available languages at](https://translate.wordpress.org/projects/wp-plugins/wp-optimize)
 
 == Installation ==
@@ -150,6 +135,13 @@ Please check your database for corrupted tables. That can happen, usually your w
 5. Mobile View Bottom (Actual screen from Galaxy Note 3)
 
 == Changelog ==
+
+= 1.9.1 =
+* Ability to clean up Unused Post Meta, Comment Meta and Broken Relationship Data
+* Warning prompts for RED marked items and optimize button
+* Better transient options cleaning.
+* Language files update.
+* Various other fixes
 
 = 1.9 =
 * 27 Weeks retention option equivalent to 6 month
