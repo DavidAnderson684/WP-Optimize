@@ -622,7 +622,13 @@ function wpo_cleanUpSystem($cleanupType){
     switch ($cleanupType) {
         case "transient_options":
            // backticks
-            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
+            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%'";
+            $clean .= ';';
+            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_timeout_browser_%'";
+            $clean .= ';';
+            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_feed_%'";
+            $clean .= ';';
+            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_timeout_feed_%'";
             $clean .= ';';
 
 			$transient_options = $wpdb->query( $clean );
