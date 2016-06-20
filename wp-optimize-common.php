@@ -622,13 +622,7 @@ function wpo_cleanUpSystem($cleanupType){
     switch ($cleanupType) {
         case "transient_options":
            // backticks
-            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%'";
-            $clean .= ';';
-            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_timeout_browser_%'";
-            $clean .= ';';
-            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_feed_%'";
-            $clean .= ';';
-            $clean .= "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_timeout_feed_%'";
+            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
             $clean .= ';';
 
 			$transient_options = $wpdb->query( $clean );
@@ -790,7 +784,7 @@ function wpo_getInfo($cleanupType){
     switch ($cleanupType) {
         case "transient_options":
             $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
-            $sql .= ';';
+            //$sql .= ';';
             $transient_options = $wpdb->get_var( $sql );
 
             if(!$transient_options == 0 || !$transient_options == NULL){
