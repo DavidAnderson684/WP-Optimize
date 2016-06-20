@@ -169,7 +169,13 @@ function fCheck() {
       return confirm('<?php _e('This will delete all trackbacks in the database. Are you sure?', 'wp-optimize'); ?>');
 
 	if ( vCleanPostmeta.checked )
-      return confirm('<?php _e('Cleaning up post meta can have unexpected result. Are you sure?', 'wp-optimize'); ?>');
+      return confirm('<?php _e('Cleaning up post meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanCommentmeta.checked )
+      return confirm('<?php _e('Cleaning up comments meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanOrphandata.checked )
+      return confirm('<?php _e('Cleaning up orphaned post relationship data can have unexpected result. Are you sure?', 'wp-optimize'); ?>');
 
 }
 
@@ -248,7 +254,7 @@ function fCheck() {
 			</p>
 			<p>
 				<label>
-					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="fCheck()"/>
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -256,7 +262,7 @@ function fCheck() {
 			</p>
 			<p>
 				<label>
-					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" onclick="return confirm('<?php _e('This will delete all trackbacks in the database. Are you sure?', 'wp-optimize'); ?>')"/>
+					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Remove trackbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -266,7 +272,7 @@ function fCheck() {
 			<p>
 				<label>
 					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" 
-					onclick="return confirm('<?php _e('Cleaning up post meta can have unexpected result. Are you sure?', 'wp-optimize'); ?>')"/>
+					onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Clean post meta data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -275,7 +281,7 @@ function fCheck() {
 
 			<p>
 				<label>
-					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" onclick="return confirm('<?php _e('Cleaning up comment meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>')"/>
+					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Clean comment meta data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -284,7 +290,7 @@ function fCheck() {
 
 			<p>
 				<label>
-					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" onclick="return confirm('<?php _e('Cleaning up orphaned post meta data can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>')"/>
+					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Clean orphaned relationship data', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -292,7 +298,7 @@ function fCheck() {
 			</p>			
 
 			<p>
-				<small><?php _e('Do not select RED marked items unless you really need to use them', 'wp-optimize'); ?></small>
+				<small><?php _e('WARNING: Do not select RED marked items unless you really what you are doing', 'wp-optimize'); ?></small>
 			</p>
 			<p>
     				<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
