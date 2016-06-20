@@ -302,7 +302,7 @@ function fCheck() {
 			</p>
 			<p>
     				<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
-    				<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
+    				<img src="<?php echo WPO_PLUGIN_URL ;?>/images/embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
 			 </p>
 			</div>
 		</div>
@@ -507,10 +507,10 @@ function fCheck() {
 			<?php _e('Sponsor','wp-optimize')?>
 		</p>
 		<p>
-			<a href="http://bit.ly/266KJBZ" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>mythemeshop.png" width="310" height="auto" alt=""></a>
+			<a href="http://bit.ly/266KJBZ" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>/images/mythemeshop.png" width="310" height="auto" alt=""></a>
 		</p>
 		<p>
-			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
+			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>/images/elegantthemes_sm.png" width="310" height="auto" alt=""></a>
 		</p>
 	</div>
 	</form>
