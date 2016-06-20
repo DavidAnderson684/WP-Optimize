@@ -226,7 +226,7 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>')"/>
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return if($(this).is(':checked')) { confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>') }"/>
 			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
