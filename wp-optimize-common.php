@@ -366,7 +366,7 @@ function wpo_cron_action() {
             if ($this_options['transient'] == 'true'){
     			$clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
                 $clean .= ';';
-                $transient_options = $wpdb->query( $clean );
+                $transient = $wpdb->query( $clean );
             }
 
             // postmeta
@@ -620,13 +620,13 @@ function wpo_cleanUpSystem($cleanupType){
     list ($retention_enabled, $retention_period) = wpo_getRetainInfo();
 
     switch ($cleanupType) {
-        case "transient_options":
+        case "transient":
            // backticks
             $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
             //$clean .= ';';
 
-			$transient_options = $wpdb->query( $clean );
-            $message .= sprintf(_n('%d transient option deleted', '%d transient options deleted', $transient_options, 'wp-optimize'), number_format_i18n($transient_options)).'<br>';
+			$transient = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d transient option deleted', '%d transient options deleted', $transient, 'wp-optimize'), number_format_i18n($transient)).'<br>';
             break;
 		// TODO:  need to use proper query
         case "postmeta":
@@ -785,10 +785,10 @@ function wpo_getInfo($cleanupType){
         case "transient_options":
             $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
             //$sql .= ';';
-            $transient_options = $wpdb->get_var( $sql );
+            $transient = $wpdb->get_var( $sql );
 
-            if(!$transient_options == 0 || !$transient_options == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient option in your database', '%d transient options in your database', $transient_options, 'wp-optimize'), number_format_i18n($transient_options));
+            if(!$transient == 0 || !$transient == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient option in your database', '%d transient options in your database', $transient, 'wp-optimize'), number_format_i18n($transient));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No transient options found', 'wp-optimize');
             break;
