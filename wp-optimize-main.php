@@ -250,7 +250,7 @@ function fCheck() {
 					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
 				</label>
 				<br />
-				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient'), 'wp-optimize'); ?></small>
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
 			</p>
 			<p>
 				<label>

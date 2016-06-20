@@ -782,7 +782,7 @@ function wpo_getInfo($cleanupType){
     list ($retention_enabled, $retention_period) = wpo_getRetainInfo();
 
     switch ($cleanupType) {
-        case "transient":
+        case "transient_options":
             $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
             $sql .= ';';
             $transient_options = $wpdb->get_var( $sql );
