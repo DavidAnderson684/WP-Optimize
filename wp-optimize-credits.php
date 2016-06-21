@@ -43,12 +43,6 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-			<h3><?php _e('Translators','wp-optimize'); ?></h3>
-			<br />
-			<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
-
-			<br /><br />
-
 			<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
         		<p>
         			<b><a href="https://translate.wordpress.org/projects/wp-plugins/wp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs WordPress account)', 'wp-optimize'); ?></a></b>
