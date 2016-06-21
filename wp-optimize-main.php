@@ -61,7 +61,7 @@ if (isset($_POST["clean-trackbacks"])) {
     }
 
 if (isset($_POST["clean-transient"])) {
-    $text .= wpo_cleanUpSystem('transient');
+    $text .= wpo_cleanUpSystem('transient_options');
     }
 
 if (isset($_POST["clean-postmeta"])) {
@@ -250,7 +250,7 @@ function fCheck() {
 					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
 				</label>
 				<br />
-				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient'), 'wp-optimize'); ?></small>
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
 			</p>
 			<p>
 				<label>
