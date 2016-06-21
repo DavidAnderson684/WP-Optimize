@@ -75,17 +75,29 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-			<h3><?php _e('GitHub Development Log','wp-optimize'); ?></h3>
+				<h3>
+				<?php _e("What's New", 'wp-optimize'); ?></h3>
+				
+				<?php
+			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 3);
+
+    				foreach ( $news_items as $item ) : ?>
+    				<p>
+        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
+    				</p>
+    				<?php endforeach; ?>
+
+			<h3><?php _e('GitHub - Develop Branch','wp-optimize'); ?></h3>
 			<?php // Get RSS Feed(s)
 			include_once( ABSPATH . WPINC . '/feed.php' );
 
 			// Get a SimplePie feed object from the specified feed source.
-			$rss = fetch_feed( 'https://github.com/ruhanirabin/wp-optimize/commits/master.atom' );
+			$rss = fetch_feed( 'https://github.com/ruhanirabin/wp-optimize/commits/develop.atom' );
 
 			if ( ! is_wp_error( $rss ) ) : // Checks that the object is created correctly
 
 			// Figure out how many total items there are, but limit it to 5.
-			$maxitems = $rss->get_item_quantity( 8 );
+			$maxitems = $rss->get_item_quantity( 5 );
 
 			// Build an array of all the items, starting with element 0 (first element).
 			$rss_items = $rss->get_items( 0, $maxitems );

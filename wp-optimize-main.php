@@ -164,7 +164,7 @@ function fCheck() {
 	var vCleanTransient = document.getElementById('clean-transient');
 
 	if ( vCleanTransient.checked )
-      return confirm('<?php _e('Transient options are automatically re-created by WordPress. Select this options if you have a large number of Transient.', 'wp-optimize'); ?>');	
+      return confirm('<?php _e('Transient options are automatically re-created by WordPress. Select this option, if you have a large number of Transient.', 'wp-optimize'); ?>');	
 
 	if ( vCleanPingbacks.checked )
       return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>');
