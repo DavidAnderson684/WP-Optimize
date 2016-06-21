@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.9\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2016-06-21 08:40+0100\n"
-"PO-Revision-Date: 2016-06-21 09:12+0100\n"
+"PO-Revision-Date: 2016-06-21 10:49+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -89,8 +89,8 @@ msgstr[1] "Foram eliminadas %d opções transitórias"
 #, php-format
 msgid "%d orphaned postmeta deleted"
 msgid_plural "%d orphaned postmeta deleted"
-msgstr[0] "Foi eliminado %d metadado orfão de artigo"
-msgstr[1] "Foram eliminados %d metadados orfãos de artigos"
+msgstr[0] "Foi eliminado %d metadado orfão de conteúdo"
+msgstr[1] "Foram eliminados %d metadados orfãos de conteúdos"
 
 #: wp-optimize-common.php:644
 #, php-format
@@ -118,8 +118,8 @@ msgstr[1] "Foram eliminados %d metadados orfãos"
 #, php-format
 msgid "%d post revision deleted"
 msgid_plural "%d post revisions deleted"
-msgstr[0] "Foi eliminada %d revisão de artigo"
-msgstr[1] "Foram eliminadas %d revisões de artigos"
+msgstr[0] "Foi eliminada %d revisão de conteúdo"
+msgstr[1] "Foram eliminadas %d revisões de conteúdos"
 
 #: wp-optimize-common.php:689
 #, php-format
@@ -197,12 +197,12 @@ msgstr "Não foram encontradas opções transitórias"
 #, php-format
 msgid "%d orphaned post meta data in your database"
 msgid_plural "%d orphaned postmeta in your database"
-msgstr[0] "%d metadado orfão de artigo na sua base de dados"
-msgstr[1] "%d metadados orfãos de artigos na sua base de dados"
+msgstr[0] "%d metadado orfão de conteúdo na sua base de dados"
+msgstr[1] "%d metadados orfãos de conteúdos na sua base de dados"
 
 #: wp-optimize-common.php:804
 msgid "No orphaned post meta data in your database"
-msgstr "Nenhum metadado orfão de artigo na sua base de dados"
+msgstr "Nenhum metadado orfão de conteúdo na sua base de dados"
 
 #: wp-optimize-common.php:813
 #, php-format
@@ -230,23 +230,23 @@ msgstr "Nenhum dado orfão de relação na sua base de dados"
 #, php-format
 msgid "%d post revision in your database"
 msgid_plural "%d post revisions in your database"
-msgstr[0] "%d revisão de artigo na sua base de dados"
-msgstr[1] "%d revisões de artigos na sua base de dados"
+msgstr[0] "%d revisão de conteúdo na sua base de dados"
+msgstr[1] "%d revisões de conteúdos na sua base de dados"
 
 #: wp-optimize-common.php:853
 msgid "No post revisions found"
-msgstr "Não foram encontradas revisões de artigo"
+msgstr "Não foram encontradas revisões de conteúdos"
 
 #: wp-optimize-common.php:866
 #, php-format
 msgid "%d auto draft post in your database"
 msgid_plural "%d auto draft posts in your database"
-msgstr[0] "%d rascunho automático de artigo na sua base de dados"
-msgstr[1] "%d rascunhos automáticos de artigos na sua base de dados"
+msgstr[0] "%d rascunho automático de conteúdo na sua base de dados"
+msgstr[1] "%d rascunhos automáticos de conteúdos na sua base de dados"
 
 #: wp-optimize-common.php:868
 msgid "No auto draft posts found"
-msgstr "Não foram encontrados rascunhos automáticos de artigos"
+msgstr "Não foram encontrados rascunhos automáticos de conteúdos"
 
 #: wp-optimize-common.php:880
 #, php-format
@@ -401,7 +401,7 @@ msgid ""
 "Cleaning up post meta can have unexpected results on some servers. Are you "
 "sure?"
 msgstr ""
-"Limpar metadados de artigos pode ter resultados inesperados em alguns "
+"Limpar metadados de conteúdos pode ter resultados inesperados em alguns "
 "servidores. Tem a certeza?"
 
 #: wp-optimize-main.php:179
@@ -431,20 +431,20 @@ msgstr "Opções de limpeza"
 #: wp-optimize-main.php:204
 #, php-format
 msgid "Clean post revisions which are older than %d weeks"
-msgstr "Limpar revisões de artigos com mais de %d semanas"
+msgstr "Limpar revisões de conteúdos com mais de %d semanas"
 
 #: wp-optimize-main.php:206
 msgid "Clean all post revisions"
-msgstr "Limpar todas as revisões de artigos"
+msgstr "Limpar todas as revisões de conteúdos"
 
 #: wp-optimize-main.php:217
 #, php-format
 msgid "Clean auto draft posts which are older than %d weeks"
-msgstr "Limpar rascunhos automáticos de artigos com mais de %d semanas"
+msgstr "Limpar rascunhos automáticos de conteúdos com mais de %d semanas"
 
 #: wp-optimize-main.php:219
 msgid "Clean all auto draft posts and posts in trash"
-msgstr "Limpar todos os rascunhos automáticos de artigos e artigos no lixo"
+msgstr "Limpar todos os rascunhos automáticos de conteúdos e conteúdos no lixo"
 
 #: wp-optimize-main.php:230
 #, php-format
@@ -478,7 +478,7 @@ msgstr "Remover trackbacks"
 
 #: wp-optimize-main.php:280
 msgid "Clean post meta data"
-msgstr "Limpar metadados de artigos"
+msgstr "Limpar metadados de conteúdos"
 
 #: wp-optimize-main.php:289
 msgid "Clean comment meta data"
@@ -614,25 +614,25 @@ msgstr "Patrocinador"
 #: wp-optimize-settings.php:87
 msgid "Trackbacks disabled on all current and previously published posts"
 msgstr ""
-"Foram desactivados os trackbacks em todos os artigos actuais e publicados "
+"Foram desactivados os trackbacks em todos os conteúdos actuais e publicados "
 "anteriormente"
 
 #: wp-optimize-settings.php:93
 msgid "Trackbacks enabled on all current and previously published posts"
 msgstr ""
-"Foram activados os trackbacks em todos os artigos actuais e publicados "
+"Foram activados os trackbacks em todos os conteúdos actuais e publicados "
 "anteriormente"
 
 #: wp-optimize-settings.php:102
 msgid "Comments disabled on all current and previously published posts"
 msgstr ""
-"Foram desactivados os comentários em todos os artigos actuais e publicados "
+"Foram desactivados os comentários em todos os conteúdos actuais e publicados "
 "anteriormente"
 
 #: wp-optimize-settings.php:108
 msgid "Comments enabled on all current and previously published posts"
 msgstr ""
-"Foram activados os comentários em todos os artigos actuais e publicados "
+"Foram activados os comentários em todos os conteúdos actuais e publicados "
 "anteriormente"
 
 #: wp-optimize-settings.php:113
@@ -698,7 +698,7 @@ msgid ""
 "This will disable/enable Trackbacks on all your current and previously "
 "published posts"
 msgstr ""
-"Isto desactivará/activará os trackbacks em todos os artigos actuais e "
+"Isto desactivará/activará os trackbacks em todos os conteúdos actuais e "
 "publicados anteriormente"
 
 #: wp-optimize-settings.php:168
@@ -710,7 +710,7 @@ msgid ""
 "This will disable/enable Comments on all your current and previously "
 "published posts"
 msgstr ""
-"Isto desactivará/activará os comentários em todos os artigos actuais e "
+"Isto desactivará/activará os comentários em todos os conteúdos actuais e "
 "publicados anteriormente"
 
 #: wp-optimize-settings.php:183
@@ -883,7 +883,7 @@ msgid ""
 "on your WordPress core tables (please use with caution)."
 msgstr ""
 "Este plugin ajuda-o a manter a sua base de dados limpa, removendo as "
-"revisões de artigos e spam num ápice. Permite-lhe ainda executar o comando "
+"revisões de conteúdos e spam num ápice. Permite-lhe ainda executar o comando "
 "de optimização das tabelas principais do seu WordPress (utilizar com "
 "cuidado)."
 
