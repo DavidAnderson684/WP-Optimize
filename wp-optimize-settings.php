@@ -287,6 +287,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		</div>
 	</div>
 
+<div class="wpo_col wpo_span_1_of_3">
+		<div class="postbox">
+			<div class="inside">
+				<h3>
+				<?php _e("What's New", 'wp-optimize'); ?></h3>
+				
+				<?php
+			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 3);
+
+    				foreach ( $news_items as $item ) : ?>
+    				<p>
+        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
+    				</p>
+    				<?php endforeach; ?>
+    				</div>
+    				</div>
+    				</div>
+
+
 	<input type="hidden" name="action" value="save_redirect" />
 
 	</form>

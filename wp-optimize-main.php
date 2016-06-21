@@ -352,15 +352,6 @@ function fCheck() {
 
 				<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
 
-				<?php
-			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
-
-    				foreach ( $news_items as $item ) : ?>
-    				<p>
-        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
-    				</p>
-    				<?php endforeach; ?>
-
    				<?php
 				$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
 				if ($lastopt !== 'Never'){
