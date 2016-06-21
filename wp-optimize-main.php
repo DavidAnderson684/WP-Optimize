@@ -161,6 +161,10 @@ function fCheck() {
 	var vCleanPostmeta = document.getElementById('clean-postmeta');
 	var vCleanCommentmeta = document.getElementById('clean-commentmeta');
 	var vCleanOrphandata = document.getElementById('clean-orphandata');
+	var vCleanTransient = document.getElementById('clean-transient');
+
+	if ( vCleanTransient.checked )
+      return confirm('<?php _e('Transient options are automatically re-created by WordPress. Select this options if you have a large number of Transient.', 'wp-optimize'); ?>');	
 
 	if ( vCleanPingbacks.checked )
       return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>');
@@ -246,7 +250,7 @@ function fCheck() {
 			</p>
 			<p>
 				<label>
-					<input name="clean-transient" id="clean-transient" type="checkbox" value="" />
+					<input name="clean-transient" id="clean-transient" type="checkbox" value="" onclick="return fCheck()"/>
 					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
 				</label>
 				<br />
