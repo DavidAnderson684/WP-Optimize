@@ -140,13 +140,13 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Ability to clean up Unused Post Meta, Comment Meta and Broken Relationship Data
 * Warning prompts for RED marked items and optimize button
 * Better transient options cleaning.
-* Language files update.
+* Language files update
 * Various other fixes
 
 = 1.9 =
 * 27 Weeks retention option equivalent to 6 month
 * Compatibility update.
-* Language files update.
+* Language files update
 * Removed email notifications, it doesn't work on many servers
 * Various other fixes
 
@@ -180,7 +180,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Scheduled time display will be shown according to WordPress blog local time
 
 = 1.8.6 =
-* Language updates
+* Language files update
 * Fix issues with total gain number problem
 * InnoDB tables detected and features disabled automatically, tables view will not show Overhead. Main view will not show space saved, or total gain.
 
@@ -200,7 +200,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Tables moved to independent tab
 * Optimize faster
 * GitHub updater support
-* All translations updates will come in soon
 * I do not monitor WP forums, support email at plugins(at)ruhanirabin.com
 
 = 1.7.4 =
@@ -211,34 +210,33 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fixed Problems with wpMail.
 * Fixed Problems with wpAdmin menubar.
 * Fixed Permission issues on some site.
-* wp-optimize.pot file is added to language directory, for the translators. That file is also linked at the info tab of the plugin.
-* Russian and German translation updated.
+* Language files update
 
 = 1.7.2 =
 * All MySQL statements re-factored into native WP database calls - necessary for future versions of MySQL and WordPress.
 * Upgrade to match WordPress 3.9 changes.
-* Additional 2 languages.
+* Language files update
 * Now postmeta cleanup is disabled from code - it will be updated soon with native WordPress postmeta cleaning options.
 
 = 1.6.2 =
-* 3 Translation update.
+* Language files update
 
 = 1.6.1 =
 * Fixed - trashed Comments was not clearing out.
-* 1 Translation update.
+* Language files update
 
 = 1.5.7 =
-* 2 new Translations updates and 2 new languages added.
+* Language files update
 
 = 1.5.6 =
 * "Unused Tags cleanup" option made a problem on some WordPress sites that it deletes empty categories. Since I am unable to replicate this problem. I am making this option disabled.
-* Translations updates and 3 new languages added.
+* Language files update
 * Minor maintenance and fixes.
 
 = 1.5.5 =
 * Safe clean up options are selected by default, defaults are not by user preference for now (Optimizer Page).
 * All the potentially dangerous clean up options are MARKED RED.
-* Translations update for language - lv, de_DE, zh_TW, pt_BR, fa_IR, es_ES.
+* Language files update
 * New features explained - http://j.mp/HBIoVT (read the blog post).
 
 = 1.5.4 =
@@ -255,14 +253,13 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Removal of orphaned post meta tags.
 * Removal of unused tags.
 * 3 different schedule times added (weekly, bi-weekly and monthly).
-* 3 language added - ru_RU, zh_CN, fr_FR (zh_TW and nl_NL coming soon).
+* Language files update
 * Code optimization and translation strings updated.
-* Updated .PO file for translators.
 * Integrated development log from TRAC
 
 = 1.1.2 =
 * removed persistent admin bar menu item
-* Language ru_RU and zh_TW updated.
+* Language files update
 
 = 1.1.1 =
 * Fix Fatal Error.
@@ -277,7 +274,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 = 1.0.1 =
 * Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
-
 
 = 0.9.8-beta =
 * added beta tag
@@ -301,13 +297,12 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fixed problem with database names containing "-" .
 * NEW Main Level Menu Item added for WP-Optimize, You might need to scroll down to see it
 * Compatibilty with WordPress 3.1
-* Added few translations
+* Language files update
 * Added auto draft post removal feature
 
 = 0.8.0 =
 * Added Multilanguage capability
-* Added translation WP-OPTIMIZE.POT file
-* Farsi Translation included now (Thanks to Ali irani)
+* Language files update
 
 = 0.7.1 =
 * POST META Table cleanup code removed cause it is making problems with many hosts
