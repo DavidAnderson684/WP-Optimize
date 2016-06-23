@@ -163,8 +163,9 @@ function fCheck() {
 	var vCleanOrphandata = document.getElementById('clean-orphandata');
 	var vCleanTransient = document.getElementById('clean-transient');
 
-	if ( vCleanTransient.checked )
+/*	vCleanTransient.onclick = function (){
       return confirm('<?php _e('Transient options are automatically re-created by WordPress. Select this option, if you have a large number of Transient.', 'wp-optimize'); ?>');	
+	}
 
 	if ( vCleanPingbacks.checked )
       return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>');
@@ -179,7 +180,7 @@ function fCheck() {
       return confirm('<?php _e('Cleaning up comments meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>');
 
 	if ( vCleanOrphandata.checked )
-      return confirm('<?php _e('Cleaning up orphaned post relationship data can have unexpected result. Are you sure?', 'wp-optimize'); ?>');
+      return confirm('<?php _e('Cleaning up orphaned post relationship data can have unexpected result. Are you sure?', 'wp-optimize'); ?>');*/
 
 }
 
