@@ -34,7 +34,7 @@ Please join GitHub and collaborate.
 *   Mobile device friendly, now you can optimize your site on the go
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
-*   Removal of transient options
+*   Removal of WordPress transient options
 *   Clear out the post trash
 *   Automatic cleanup of all the integrated options (also uses retention if enabled)
 *   Ability to keep selected number of weeks data when cleaning up
@@ -121,7 +121,7 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 *   Upgrade/Update your WordPress to at least 3.8
 *   Upgrade/Update your WP-Optimize plugin
 *   Upgrade your PHP to at least 5.5.xx
-*   Upgrade your MySql to at least MySql 5.1.xx
+*   Upgrade your MySql to at least 5.1.xx
 
 = Table size shows wrong / Not optimizing  =
 Please check your database for corrupted tables. That can happen, usually your web hosting company can run the repair command on the db.
@@ -151,7 +151,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Various other fixes
 
 = 1.8.9.10 =
-* Security Patch - Update your plugin.
 * Security Patch provided by Dion at WordPress.org and Security report provided by http://planetzuda.com .
 * Language files update
 
@@ -249,7 +248,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Option to add or remove link on wp admin bar (even enabled - it is visible to admin only).
 * New admin interface.
 * Settings to select items for automatic optimization.
-* Removal of WordPress transient options.
+* Removal of WordPress transient options
 * Removal of orphaned post meta tags.
 * Removal of unused tags.
 * 3 different schedule times added (weekly, bi-weekly and monthly).
