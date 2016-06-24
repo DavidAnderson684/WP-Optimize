@@ -83,7 +83,7 @@ function wpo_admin_bar() {
   $wp_admin_bar->add_node(array(
     'id'    => 'wp-optimize',
     'title' => 'WP-Optimize',
-    'href'  => admin_url( 'admin.php?page=WP-Optimize', 'http' )
+    'href'  => menu_page_url( 'WP-Optimize', false ),
   ));
 
 }
