@@ -43,23 +43,9 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-			<h3><?php _e('Translators','wp-optimize'); ?></h3>
-			<br />
-			<h3><a href="<?php _e('http://(Translator Website)','wp-optimize'); ?>" target="_blank" title=""><?php _e('(Translator name)','wp-optimize') ?></a></h3>
-			<p>
-				<b><a href="http://ruhanirabin.github.io/WP-Optimize/translations/" target="_blank"><?php _e('Read Translation Instructions','wp-optimize'); ?></a></b>
-			</p>
-			<br /><br />
-
 			<h3><?php _e('Plugin Resources','wp-optimize'); ?></h3>
         		<p>
-        			<b><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Get a Translator Account', 'wp-optimize'); ?></a></b>
-        		</p>
-        		<p>
-        			<b><a href="http://wp-managed.com/login?redirect_to=http%3A%2F%2Fwp-managed.com%2Fprojects%2Fwp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs translator account)', 'wp-optimize'); ?></a></b>
-        		</p>
-        		<p>
-        			<b><a href="mailto:plugins@ruhanirabin.com" target="_blank"><?php _e('Request New Language', 'wp-optimize'); ?></a></b>
+        			<b><a href="https://translate.wordpress.org/projects/wp-plugins/wp-optimize" target="_blank"><?php _e('Plugin Translation Portal (needs WordPress account)', 'wp-optimize'); ?></a></b>
         		</p>
         		<p>
         			<b><a href="http://ruhanirabin.github.io/WP-Optimize/" target="_blank"><?php _e('Plugin Homepage', 'wp-optimize'); ?></a></b>
@@ -83,17 +69,29 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
-			<h3><?php _e('GitHub Development Log','wp-optimize'); ?></h3>
+				<h3>
+				<?php _e("What's New", 'wp-optimize'); ?></h3>
+				
+				<?php
+			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 3);
+
+    				foreach ( $news_items as $item ) : ?>
+    				<p>
+        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
+    				</p>
+    				<?php endforeach; ?>
+
+			<h3><?php _e('GitHub - Develop Branch','wp-optimize'); ?></h3>
 			<?php // Get RSS Feed(s)
 			include_once( ABSPATH . WPINC . '/feed.php' );
 
 			// Get a SimplePie feed object from the specified feed source.
-			$rss = fetch_feed( 'https://github.com/ruhanirabin/wp-optimize/commits/master.atom' );
+			$rss = fetch_feed( 'https://github.com/ruhanirabin/wp-optimize/commits/develop.atom' );
 
 			if ( ! is_wp_error( $rss ) ) : // Checks that the object is created correctly
 
 			// Figure out how many total items there are, but limit it to 5.
-			$maxitems = $rss->get_item_quantity( 8 );
+			$maxitems = $rss->get_item_quantity( 5 );
 
 			// Build an array of all the items, starting with element 0 (first element).
 			$rss_items = $rss->get_items( 0, $maxitems );

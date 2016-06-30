@@ -56,14 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		update_option( OPTION_NAME_ENABLE_ADMIN_MENU, 'false' );
 	}
 	if (isset($_POST["enable-email"])) {
-		update_option( OPTION_NAME_ENABLE_EMAIL, 'true' );
+//		update_option( OPTION_NAME_ENABLE_EMAIL, 'true' );
 	} else {
-		update_option( OPTION_NAME_ENABLE_EMAIL, 'false' );
+		//update_option( OPTION_NAME_ENABLE_EMAIL, 'false' );
 	}
 	if (isset($_POST["enable-email-address"])) {
-		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, wp_unslash( $_POST["enable-email-address"] ) );
+		//update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, wp_unslash( $_POST["enable-email-address"] ) );
 	} else {
-		update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) );
+		//update_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) );
 	}
 
 
@@ -178,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				</p>
 				<p>
 					<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
-					<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
+					<img src="<?php echo WPO_PLUGIN_URL ;?>images/embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
 				</p>
 				<p>
 					<input class="button-primary" type="submit" name="wp-optimize-settings1" value="<?php _e('SAVE SETTINGS', 'wp-optimize'); ?>" />
@@ -288,18 +288,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             				echo '</p>';
 					//            }
     					?>
+				<!-- disabled email notification
 				<p>
     					<label>
-            					<input name="enable-email" id="enable-email" type="checkbox" value ="true" <?php echo get_option(OPTION_NAME_ENABLE_EMAIL, 'false') == 'true' ? 'checked="checked"':''; ?> />
-            					<?php _e('Enable email notification', 'wp-optimize');?>
+            					<input name="enable-email" id="enable-email" type="checkbox" value ="true" <?php // echo get_option(OPTION_NAME_ENABLE_EMAIL, 'false') == 'true' ? 'checked="checked"':''; ?> />
+            					<?php //_e('Enable email notification', 'wp-optimize');?>
     					</label>
     				</p>
     				<p>
     					<label for="enable-email-address">
-            					<?php _e('Send email to', 'wp-optimize');?>
-        					<input name="enable-email-address" id="enable-email-address" type="email" value ="<?php echo esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
+            					<?php //_e('Send email to', 'wp-optimize');?>
+        					<input name="enable-email-address" id="enable-email-address" type="email" value ="<?php //echo  // esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     					</label>
-    				</p>
+    				</p> -->
     				<p>
 					<input class="button-primary" type="submit" name="wp-optimize-settings" value="<?php _e('SAVE AUTO CLEAN-UP SETTINGS', 'wp-optimize'); ?>" />
 				</p>

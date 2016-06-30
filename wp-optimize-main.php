@@ -61,11 +61,19 @@ if (isset($_POST["clean-trackbacks"])) {
     }
 
 if (isset($_POST["clean-transient"])) {
-    $text .= wpo_cleanUpSystem('transient_options');
+    $text .= wpo_cleanUpSystem('transient');
     }
 
 if (isset($_POST["clean-postmeta"])) {
     $text .= wpo_cleanUpSystem('postmeta');
+    }
+
+if (isset($_POST["clean-commentmeta"])) {
+    $text .= wpo_cleanUpSystem('commentmeta');
+    }
+
+if (isset($_POST["clean-orphandata"])) {
+    $text .= wpo_cleanUpSystem('orphandata');
     }
 
 if (isset($_POST["clean-tags"])) {
@@ -145,10 +153,43 @@ Function optimizeTablesQuick($Optimize){
 
 ?>
 
+<script type="text/javascript">
 
+function fCheck() {
+	var vCleanPingbacks = document.getElementById('clean-pingbacks');
+	var vCleanTrackbacks = document.getElementById('clean-trackbacks');
+	var vCleanPostmeta = document.getElementById('clean-postmeta');
+	var vCleanCommentmeta = document.getElementById('clean-commentmeta');
+	var vCleanOrphandata = document.getElementById('clean-orphandata');
+	var vCleanTransient = document.getElementById('clean-transient');
+
+/*	vCleanTransient.onclick = function (){
+      return confirm('<?php _e('Transient options are automatically re-created by WordPress. Select this option, if you have a large number of Transient.', 'wp-optimize'); ?>');	
+	}
+
+	if ( vCleanPingbacks.checked )
+      return confirm('<?php _e('This will delete all pingbacks in the database. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanTrackbacks.checked )
+      return confirm('<?php _e('This will delete all trackbacks in the database. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanPostmeta.checked )
+      return confirm('<?php _e('Cleaning up post meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanCommentmeta.checked )
+      return confirm('<?php _e('Cleaning up comments meta can have unexpected results on some servers. Are you sure?', 'wp-optimize'); ?>');
+
+	if ( vCleanOrphandata.checked )
+      return confirm('<?php _e('Cleaning up orphaned post relationship data can have unexpected result. Are you sure?', 'wp-optimize'); ?>');*/
+
+}
+
+
+
+</script>
 
 <div class="wpo_section wpo_group">
-	<form action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
+	<form onSubmit="return confirm('<?php _e('WARNING: This operation is permanent. Continue?', 'wp-optimize'); ?>')" action="#" method="post" enctype="multipart/form-data" name="optimize_form" id="optimize_form">
 	<div class="wpo_col wpo_span_1_of_3">
 		<div class="postbox">
 			<div class="inside">
@@ -210,15 +251,15 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-transient" id="clean-transient" type="checkbox" value="" />
+					<input name="clean-transient" id="clean-transient" type="checkbox" value="" onclick="return fCheck()"/>
 					<span style="color: red;"><?php _e('Remove transient options', 'wp-optimize'); ?></span>
 				</label>
 				<br />
-				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient_options'), 'wp-optimize'); ?></small>
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('transient'), 'wp-optimize'); ?></small>
 			</p>
 			<p>
 				<label>
-					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" />
+					<input name="clean-pingbacks" id="clean-pingbacks" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Remove pingbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
@@ -226,18 +267,47 @@ Function optimizeTablesQuick($Optimize){
 			</p>
 			<p>
 				<label>
-					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" />
+					<input name="clean-trackbacks" id="clean-trackbacks" type="checkbox" value="" onclick="return fCheck()"/>
 			 		<span style="color: red;"><?php _e('Remove trackbacks', 'wp-optimize'); ?></span>
 				</label>
 				<br />
 				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('trackbacks'), 'wp-optimize'); ?></small>
 			</p>
+
 			<p>
-				<small><?php _e('Do not select RED marked items unless you really need to use them', 'wp-optimize'); ?></small>
+				<label>
+					<input name="clean-postmeta" id="clean-postmeta" type="checkbox" value="" 
+					onclick="return fCheck()"/>
+			 		<span style="color: red;"><?php _e('Clean post meta data', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('postmeta'), 'wp-optimize'); ?></small>
+			</p>
+
+			<p>
+				<label>
+					<input name="clean-commentmeta" id="clean-commentmeta" type="checkbox" value="" onclick="return fCheck()"/>
+			 		<span style="color: red;"><?php _e('Clean comment meta data', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('commentmeta'), 'wp-optimize'); ?></small>
+			</p>			
+
+			<p>
+				<label>
+					<input name="clean-orphandata" id="clean-orphandata" type="checkbox" value="" onclick="return fCheck()"/>
+			 		<span style="color: red;"><?php _e('Clean orphaned relationship data', 'wp-optimize'); ?></span>
+				</label>
+				<br />
+				<small>&nbsp;&nbsp;<?php _e(wpo_getInfo('orphandata'), 'wp-optimize'); ?></small>
+			</p>			
+
+			<p>
+				<small><span style="color: red;"><?php _e('WARNING: Do not select RED marked items, they may have unexpected results', 'wp-optimize'); ?></span></small>
 			</p>
 			<p>
     				<a href="https://wordpress.org/plugins/youtube-embed-plus/" target="_blank">
-    				<img src="<?php echo WPO_PLUGIN_URL ;?>embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
+    				<img src="<?php echo WPO_PLUGIN_URL ;?>/images/embedplus.png" style="float: left;margin-right: 7px;"> <?php _e('Optimize YouTube embedding with this free plugin on WordPress.org', 'wp-optimize'); ?> &raquo;</a>
 			 </p>
 			</div>
 		</div>
@@ -282,15 +352,6 @@ Function optimizeTablesQuick($Optimize){
 				</p>
 
 				<h3><?php _e('Status log', 'wp-optimize'); ?></h3>
-
-				<?php
-			 	$news_items = wpo_readFeed('http://ruhanirabin.github.io/WP-Optimize/feed.xml', 1);
-
-    				foreach ( $news_items as $item ) : ?>
-    				<p>
-        				<b> <a href="<?php echo $item->get_link(); ?>" title="<?php echo $item->get_title(); ?>" target="_blank"><?php echo $item->get_title(); ?></a> </b>
-    				</p>
-    				<?php endforeach; ?>
 
    				<?php
 				$lastopt = get_option(OPTION_NAME_LAST_OPT, 'Never');
@@ -438,14 +499,17 @@ Function optimizeTablesQuick($Optimize){
 	</div>
 	<div class="wpo_col wpo_span_1_of_3">
 
-		<p>
+		<!-- <p>
 			<?php wpo_headerImage(); ?>
-		</p>
+		</p> -->
 		<p>
 			<?php _e('Sponsor','wp-optimize')?>
 		</p>
 		<p>
-			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>elegantthemes_sm.png" width="310" height="auto" alt=""></a>
+			<a href="http://bit.ly/266KJBZ" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>/images/mythemeshop.png" width="310" height="auto" alt=""></a>
+		</p>
+		<p>
+			<a href="http://j.mp/1ePlbvc" target="_blank"><img style="border:0px" src="<?php echo WPO_PLUGIN_URL ;?>/images/elegantthemes_sm.png" width="310" height="auto" alt=""></a>
 		</p>
 	</div>
 	</form>

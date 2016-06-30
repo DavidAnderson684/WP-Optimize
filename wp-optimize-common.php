@@ -78,7 +78,7 @@ $msg .= "\r\n";
 $msg .= __("Regards,","wp-optimize")."\r\n";
 $msg .= __("WP-Optimize Plugin","wp-optimize");
 
-wp_mail( $sendto, $subject, $msg );
+//wp_mail( $sendto, $subject, $msg );
 
 ob_end_flush();
 }
@@ -358,21 +358,15 @@ function wpo_cron_action() {
 			// TODO:  still need to test now cleaning up comments meta tables
                 $clean = "DELETE FROM `$wpdb->commentmeta` WHERE comment_id NOT IN ( SELECT comment_id FROM `$wpdb->comments` )";
                 $clean .= ';';
-                $commentstrash1 = $wpdb->query( $clean );
-
-			// TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings
-                $clean = "DELETE FROM `$wpdb->commentmeta` WHERE meta_key LIKE '%akismet%'";
-                $clean .= ';';
-                $commentstrash2 = $wpdb->query( $clean );
-
+                //$commentstrash1 = $wpdb->query( $clean );
 
 			}
 
             // transient options
             if ($this_options['transient'] == 'true'){
-    			$clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_%' OR option_name LIKE '_site_transient_%'";
+    			$clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
                 $clean .= ';';
-                $transient_options = $wpdb->query( $clean );
+                $transient = $wpdb->query( $clean );
             }
 
             // postmeta
@@ -414,7 +408,7 @@ function wpo_cron_action() {
             if ( get_option( OPTION_NAME_ENABLE_EMAIL ) !== false ) {
                 //#TODO need to fix the problem with variable value not passing through
                 if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
-                wpo_sendEmail($thedate, $part2);                     
+                //wpo_sendEmail($thedate, $part2);                     
                 }
 
             }
@@ -469,14 +463,14 @@ function wpo_PluginOptionsSetDefaults() {
 	//
 	}
 	else{
-	    add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
+	    //add_option( OPTION_NAME_ENABLE_EMAIL, 'true', $deprecated, $autoload );
 	}    
         // ---------
 	if ( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS ) !== '' ) {
 	//
 	}
 	else{
-	    add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
+	    //add_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ), $deprecated, $autoload );
 	}    
         
 	if ( get_option( OPTION_NAME_TOTAL_CLEANED ) !== false ) {
@@ -626,21 +620,43 @@ function wpo_cleanUpSystem($cleanupType){
     list ($retention_enabled, $retention_period) = wpo_getRetainInfo();
 
     switch ($cleanupType) {
-        case "transient_options":
+        case "transient":
            // backticks
-            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_transient_%' OR option_name LIKE '_site_transient_%'";
-            $clean .= ';';
+            $clean = "DELETE FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
+            //$clean .= ';';
 
-			$transient_options = $wpdb->query( $clean );
-            $message .= sprintf(_n('%d transient option deleted', '%d transient options deleted', $transient_options, 'wp-optimize'), number_format_i18n($transient_options)).'<br>';
+			$transient = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d transient option deleted', '%d transient options deleted', $transient, 'wp-optimize'), number_format_i18n($transient)).'<br>';
             break;
 		// TODO:  need to use proper query
         case "postmeta":
-            $clean = "DELETE pm FROM  `$wpdb->postmeta`  pm LEFT JOIN  `$wpdb->posts`  wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
+            $clean = "DELETE pm FROM `$wpdb->postmeta` pm LEFT JOIN `$wpdb->posts` wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
             $clean .= ';';
 
-			//$postmeta = $wpdb->query( $clean );
-            //$message .= sprintf(_n('%d orphaned postmeta deleted', '%d orphaned postmeta deleted', $postmeta, 'wp-optimize'), number_format_i18n($postmeta)).'<br>';
+			$postmeta = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d orphaned postmeta deleted', '%d orphaned postmeta deleted', $postmeta, 'wp-optimize'), number_format_i18n($postmeta)).'<br>';
+            break;
+
+        case "commentmeta":
+           $clean = "DELETE FROM `$wpdb->commentmeta` WHERE comment_id NOT IN (SELECT comment_id FROM `$wpdb->comments`)";
+            $clean .= ';';
+            $commentstrash_meta = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d unused comment metadata item removed', '%d unused comment metadata items removed', $commentstrash_meta, 'wp-optimize'), number_format_i18n($commentstrash_meta)).'<br>';
+
+            // TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings
+            $clean = "DELETE FROM `$wpdb->commentmeta` WHERE meta_key LIKE '%akismet%'";
+            $clean .= ';';
+            $commentstrash_meta2 = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d unused akismet comment metadata item removed', '%d unused akismet comment metadata items removed', $commentstrash_meta2, 'wp-optimize'), number_format_i18n($commentstrash_meta2)).'<br>';
+            break;
+
+
+        case "orphandata":
+            $clean = "DELETE FROM `$wpdb->term_relationships` WHERE term_taxonomy_id=1 AND object_id NOT IN (SELECT id FROM `$wpdb->posts`)";
+            $clean .= ';';
+
+            $orphandata = $wpdb->query( $clean );
+            $message .= sprintf(_n('%d orphaned meta data deleted', '%d orphaned meta data deleted', $orphandata, 'wp-optimize'), number_format_i18n($orphandata)).'<br>';
             break;
 
         case "tags":
@@ -702,18 +718,7 @@ function wpo_cleanUpSystem($cleanupType){
             $clean .= ';';
             $commentstrash = $wpdb->query( $clean );
             $message .= sprintf(_n('%d comment removed from Trash', '%d comments removed from Trash', $commentstrash, 'wp-optimize'), number_format_i18n($commentstrash)).'<br>';
-
-    		// TODO:  still need to test now cleaning up comments meta tables
-            $clean = "DELETE FROM `$wpdb->commentmeta` WHERE comment_id NOT IN ( SELECT comment_id FROM `$wpdb->comments` )";
-            $clean .= ';';
-            $commentstrash_meta = $wpdb->query( $clean );
-            $message .= sprintf(_n('%d unused comment metadata item removed', '%d unused comment metadata items removed', $commentstrash_meta, 'wp-optimize'), number_format_i18n($commentstrash_meta)).'<br>';
-
-	   	    // TODO:  still need to test now cleaning up comments meta tables - removing akismet related settings
-            $clean = "DELETE FROM `$wpdb->commentmeta` WHERE meta_key LIKE '%akismet%'";
-            $clean .= ';';
-            $commentstrash_meta2 = $wpdb->query( $clean );
-            $message .= sprintf(_n('%d unused akismet comment metadata item removed', '%d unused akismet comment metadata items removed', $commentstrash_meta2, 'wp-optimize'), number_format_i18n($commentstrash_meta2)).'<br>';
+ 
             break;
 
         case "unapproved":
@@ -737,7 +742,6 @@ function wpo_cleanUpSystem($cleanupType){
             $comments = $wpdb->query( $clean );
             $message .= sprintf(_n('%d trackback deleted', '%d trackbacks deleted', $comments, 'wp-optimize'), number_format_i18n($comments)).'<br>';
             break;
-
 
         case "enable-weekly":
 			update_option( OPTION_NAME_SCHEDULE, 'true' );
@@ -778,38 +782,61 @@ function wpo_getInfo($cleanupType){
     list ($retention_enabled, $retention_period) = wpo_getRetainInfo();
 
     switch ($cleanupType) {
-        case "transient_options":
-            $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_transient_%' OR option_name LIKE '_site_transient_%'";
-            $sql .= ';';
-            $transient_options = $wpdb->get_var( $sql );
+        case "transient":
+            $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
+            //$sql .= ';';
+            $transient = $wpdb->get_var( $sql );
 
-            if(!$transient_options == 0 || !$transient_options == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient option in your database', '%d transient options in your database', $transient_options, 'wp-optimize'), number_format_i18n($transient_options));
+            if(!$transient == 0 || !$transient == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient option in your database', '%d transient options in your database', $transient, 'wp-optimize'), number_format_i18n($transient));
             }
             else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No transient options found', 'wp-optimize');
             break;
 
         case "postmeta":
-            $sql = "SELECT COUNT(*) FROM  `$wpdb->postmeta`  pm LEFT JOIN  `$wpdb->posts`  wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
+            $sql = "SELECT COUNT(*) FROM `$wpdb->postmeta` pm LEFT JOIN `$wpdb->posts` wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL";
             $sql .= ';';
             $postmeta = $wpdb->get_var( $sql );
 
-            if(!$postmeta == 0 || !$postmeta == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned postmeta in your database', '%d orphaned postmeta in your database', $postmeta, 'wp-optimize'), number_format_i18n($postmeta));
+             if(!$postmeta == 0 || !$postmeta == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned post meta data in your database', '%d orphaned postmeta in your database', $postmeta, 'wp-optimize'), number_format_i18n($postmeta));
             }
-            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned postmeta in your database', 'wp-optimize');
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned post meta data in your database', 'wp-optimize');            
             break;
 
-        case "tags":
-            $sql = "SELECT COUNT(*) FROM  `$wpdb->terms` t INNER JOIN `$wpdb->term_taxonomy` tt ON t.term_id=tt.term_id WHERE tt.taxonomy='post_tag' AND tt.count=0";
+        case "commentmeta":
+            $sql = "SELECT COUNT(*) FROM `$wpdb->commentmeta` WHERE comment_id NOT IN (SELECT comment_id FROM `$wpdb->comments`)";
             $sql .= ';';
-            $tags = $wpdb->get_var( $sql );
+            $commentmeta = $wpdb->get_var( $sql );
 
-            if(!$tags == 0 || !$tags == NULL){
-              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d unused tag in your database', '%d unused tags in your database', $tags, 'wp-optimize'), number_format_i18n($tags));
+             if(!$commentmeta == 0 || !$commentmeta == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned comment meta data in your database', '%d orphaned comment meta data in your database', $commentmeta, 'wp-optimize'), number_format_i18n($commentmeta));
             }
-            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No unused tags found', 'wp-optimize');
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned comment meta data in your database', 'wp-optimize');            
             break;
+
+        case "orphandata":
+            $sql = "SELECT COUNT(*) FROM `$wpdb->term_relationships` WHERE term_taxonomy_id=1 AND object_id NOT IN (SELECT id FROM `$wpdb->posts`)";
+            $sql .= ';';
+            $orphandata = $wpdb->get_var( $sql );
+
+             if(!$orphandata == 0 || !$orphandata == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d orphaned relationship data in your database', '%d orphaned relationship data in your database', $orphandata, 'wp-optimize'), number_format_i18n($orphandata));
+            }
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No orphaned relationship data in your database', 'wp-optimize');            
+            break;
+
+        // not used
+        /*case "transient":
+            $sql = "SELECT COUNT(*) FROM `$wpdb->options` WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'";
+            $sql .= ';';
+            $transient = $wpdb->get_var( $sql );
+
+            if(!$transient == 0 || !$transient == NULL){
+              $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d transient data in your database', '%d transient data in your database', $transient, 'wp-optimize'), number_format_i18n($transient));
+            }
+            else $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No transient data found', 'wp-optimize');
+            break;*/
 
 		case "revisions":
             $sql = "SELECT COUNT(*) FROM `$wpdb->posts` WHERE post_type = 'revision'";
@@ -853,23 +880,6 @@ function wpo_getInfo($cleanupType){
               $message .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.sprintf(_n('%d spam comment found', '%d spam comments found', $comments, 'wp-optimize'), number_format_i18n($comments)).' | <a href="edit-comments.php?comment_status=spam">'.' '.__('Review', 'wp-optimize').'</a>';
             } else
               $message .='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.__('No spam comments found', 'wp-optimize');
-
-            // TODO: still need to test 2 more sections for info - still need to test
-//            $sql = "SELECT * FROM $wpdb->commentmeta WHERE comment_id NOT IN ( SELECT comment_id FROM $wpdb->comments )";
-//            $sql .= ';';
-//            $comments_meta = $wpdb->query( $sql );
-//            if(!$comments_meta == NULL || !$comments_meta == 0){
-//              $message .= '&nbsp;|&nbsp;'.$comments_meta.' '.__('Unused comment meta found', 'wp-optimize');
-//            }
-//
-//
-//            $sql = "SELECT * FROM $wpdb->commentmeta WHERE meta_key LIKE '%akismet%'";
-//            $sql .= ';';
-//            $comments_meta2 = $wpdb->query( $sql );
-//            if(!$comments_meta2 == NULL || !$comments_meta2 == 0){
-//              $message .= '&nbsp;|&nbsp;'.$comments_meta2.' '.__('additional Akismet junk data found', 'wp-optimize');
-//            }
-
 
             break;
 

@@ -2,9 +2,9 @@
 Contributors: ruhanirabin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LTCMF6JDX94QS
 Tags: comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
-Requires at least: 4
-Tested up to: 4.4
-Stable tag: 1.8.9.16
+Requires at least: 4.4
+Tested up to: 4.5
+Stable tag: 1.9.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,7 @@ Please join GitHub and collaborate.
 *   Mobile device friendly, now you can optimize your site on the go
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
-*   Removal of transient options
+*   Removal of WordPress transient options
 *   Clear out the post trash
 *   Automatic cleanup of all the integrated options (also uses retention if enabled)
 *   Ability to keep selected number of weeks data when cleaning up
@@ -43,7 +43,6 @@ Please join GitHub and collaborate.
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
 *   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
 *   Enabled for Administrators only.
-*   E-mail notifications on automatic cleanup
 
 
 **All the potentially dangerous clean up options are marked RED.**
@@ -73,20 +72,6 @@ Existing translators should join [Translation Utility](https://translate.wordpre
 
 You must have an account at WordPress.org in order to edit translation
 
-**WP-Optimize Translators:**
-
-*   Language de_DE: Rene Wolf - http://www.fluchtsportler.de
-*   Language fr_FR: Stéphane Benoit. - http://www.gnosticisme.com
-*   Language sl_SI: Tomi Sambrailo - http://www.refuzed.it/
-*   Language ka_GE: Givi Tabatadze - http://tagiweb.com
-*   Language zh_CN: Maie - http://maie.name
-*   Language es_ES: Navone Juan -  http://navonej.com.ar/
-*   Language sk_SK: Martin Šturcel-  http://sturcel.sk/martin
-*   Language nl_NL: Mathias Bosman -  http://www.mathiasbosman.be
-*   Language hu_HU: László Viktor - http://hunstart.hu/
-*   Language lt_LT: Bronisav Ciuzelis - http://internetiniusvetainiukurimas.com/
-
-** Some languages are removed from the above list, because translators did not update the languages for current version **
 [See a list of currently editable available languages at](https://translate.wordpress.org/projects/wp-plugins/wp-optimize)
 
 == Installation ==
@@ -136,7 +121,7 @@ Some of the shared web hosting company does not allow scripts to run OPTIMIZE co
 *   Upgrade/Update your WordPress to at least 3.8
 *   Upgrade/Update your WP-Optimize plugin
 *   Upgrade your PHP to at least 5.5.xx
-*   Upgrade your MySql to at least MySql 5.1.xx
+*   Upgrade your MySql to at least 5.1.xx
 
 = Table size shows wrong / Not optimizing  =
 Please check your database for corrupted tables. That can happen, usually your web hosting company can run the repair command on the db.
@@ -151,14 +136,21 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 == Changelog ==
 
-= 1.8.9.16 =
-* Various minor fixes
+= 1.9.1 =
+* Ability to clean up Unused Post Meta, Comment Meta and Broken Relationship Data
+* Warning prompts for RED marked items and optimize button
+* Better transient options cleaning.
+* Language files update
+* Various other fixes
+
+= 1.9 =
 * 27 Weeks retention option equivalent to 6 month
 * Compatibility update.
-* Language files update.
+* Language files update
+* Removed email notifications, it doesn't work on many servers
+* Various other fixes
 
 = 1.8.9.10 =
-* Security Patch - Update your plugin.
 * Security Patch provided by Dion at WordPress.org and Security report provided by http://planetzuda.com .
 * Language files update
 
@@ -187,7 +179,7 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Scheduled time display will be shown according to WordPress blog local time
 
 = 1.8.6 =
-* Language updates
+* Language files update
 * Fix issues with total gain number problem
 * InnoDB tables detected and features disabled automatically, tables view will not show Overhead. Main view will not show space saved, or total gain.
 
@@ -207,7 +199,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Tables moved to independent tab
 * Optimize faster
 * GitHub updater support
-* All translations updates will come in soon
 * I do not monitor WP forums, support email at plugins(at)ruhanirabin.com
 
 = 1.7.4 =
@@ -218,34 +209,33 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fixed Problems with wpMail.
 * Fixed Problems with wpAdmin menubar.
 * Fixed Permission issues on some site.
-* wp-optimize.pot file is added to language directory, for the translators. That file is also linked at the info tab of the plugin.
-* Russian and German translation updated.
+* Language files update
 
 = 1.7.2 =
 * All MySQL statements re-factored into native WP database calls - necessary for future versions of MySQL and WordPress.
 * Upgrade to match WordPress 3.9 changes.
-* Additional 2 languages.
+* Language files update
 * Now postmeta cleanup is disabled from code - it will be updated soon with native WordPress postmeta cleaning options.
 
 = 1.6.2 =
-* 3 Translation update.
+* Language files update
 
 = 1.6.1 =
 * Fixed - trashed Comments was not clearing out.
-* 1 Translation update.
+* Language files update
 
 = 1.5.7 =
-* 2 new Translations updates and 2 new languages added.
+* Language files update
 
 = 1.5.6 =
 * "Unused Tags cleanup" option made a problem on some WordPress sites that it deletes empty categories. Since I am unable to replicate this problem. I am making this option disabled.
-* Translations updates and 3 new languages added.
+* Language files update
 * Minor maintenance and fixes.
 
 = 1.5.5 =
 * Safe clean up options are selected by default, defaults are not by user preference for now (Optimizer Page).
 * All the potentially dangerous clean up options are MARKED RED.
-* Translations update for language - lv, de_DE, zh_TW, pt_BR, fa_IR, es_ES.
+* Language files update
 * New features explained - http://j.mp/HBIoVT (read the blog post).
 
 = 1.5.4 =
@@ -258,18 +248,17 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Option to add or remove link on wp admin bar (even enabled - it is visible to admin only).
 * New admin interface.
 * Settings to select items for automatic optimization.
-* Removal of WordPress transient options.
+* Removal of WordPress transient options
 * Removal of orphaned post meta tags.
 * Removal of unused tags.
 * 3 different schedule times added (weekly, bi-weekly and monthly).
-* 3 language added - ru_RU, zh_CN, fr_FR (zh_TW and nl_NL coming soon).
+* Language files update
 * Code optimization and translation strings updated.
-* Updated .PO file for translators.
 * Integrated development log from TRAC
 
 = 1.1.2 =
 * removed persistent admin bar menu item
-* Language ru_RU and zh_TW updated.
+* Language files update
 
 = 1.1.1 =
 * Fix Fatal Error.
@@ -284,7 +273,6 @@ Please check your database for corrupted tables. That can happen, usually your w
 
 = 1.0.1 =
 * Removed auto cleanup of trackbacks or pingbacks.. it's better for people to do it manually.
-
 
 = 0.9.8-beta =
 * added beta tag
@@ -308,13 +296,12 @@ Please check your database for corrupted tables. That can happen, usually your w
 * Fixed problem with database names containing "-" .
 * NEW Main Level Menu Item added for WP-Optimize, You might need to scroll down to see it
 * Compatibilty with WordPress 3.1
-* Added few translations
+* Language files update
 * Added auto draft post removal feature
 
 = 0.8.0 =
 * Added Multilanguage capability
-* Added translation WP-OPTIMIZE.POT file
-* Farsi Translation included now (Thanks to Ali irani)
+* Language files update
 
 = 0.7.1 =
 * POST META Table cleanup code removed cause it is making problems with many hosts
