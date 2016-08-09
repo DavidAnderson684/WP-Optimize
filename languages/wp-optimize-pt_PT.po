@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.9\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2016-06-21 08:40+0100\n"
-"PO-Revision-Date: 2016-06-21 10:49+0100\n"
+"PO-Revision-Date: 2016-08-09 14:00+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -153,8 +153,8 @@ msgstr[1] "Foram removidos %d comentários do lixo"
 #, php-format
 msgid "%d unapproved comment deleted"
 msgid_plural "%d unapproved comments deleted"
-msgstr[0] "Foi eliminado %d comentário não aprovado"
-msgstr[1] "Foram eliminados %d comentários não aprovados"
+msgstr[0] "Foi eliminado %d comentário reprovado"
+msgstr[1] "Foram eliminados %d comentários reprovados"
 
 #: wp-optimize-common.php:737
 #, php-format
@@ -267,12 +267,12 @@ msgstr "Não foram encontrados comentários de spam"
 #, php-format
 msgid "%d unapproved comment found"
 msgid_plural "%d unapproved comments found"
-msgstr[0] "%d comentário não aprovado"
-msgstr[1] "%d comentários não aprovados"
+msgstr[0] "%d comentário reprovado"
+msgstr[1] "%d comentários reprovados"
 
 #: wp-optimize-common.php:896
 msgid "No unapproved comments found"
-msgstr "Não foram encontrados comentários não aprovados"
+msgstr "Não foram encontrados comentários reprovados"
 
 #: wp-optimize-common.php:904
 #, php-format
@@ -458,11 +458,11 @@ msgstr "Remover comentários de spam e comentários no lixo"
 #: wp-optimize-main.php:243
 #, php-format
 msgid "Remove unapproved comments which are older than %d weeks"
-msgstr "Remover comentários não aprovados com mais de %d semanas"
+msgstr "Remover comentários reprovados com mais de %d semanas"
 
 #: wp-optimize-main.php:245 wp-optimize-settings.php:248
 msgid "Remove unapproved comments"
-msgstr "Remover comentários não aprovados"
+msgstr "Remover comentários reprovados"
 
 #: wp-optimize-main.php:254 wp-optimize-settings.php:252
 msgid "Remove transient options"
