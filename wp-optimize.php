@@ -123,48 +123,55 @@ function wpo_admin_actions()
 }
 
 // TODO: Need to find out why the schedule time is not refreshing
-function wpo_cron_activate() {
-  //wpo_debugLog('running wpo_cron_activate()');
+function wpo_cron_activate($cron_time = null) {
+    //wpo_debugLog('running wpo_cron_activate()');
     $gmtoffset = (int) (3600 * ((double) get_option('gmt_offset')));
-
+    !empty($cron_time) && $cron_time = (int) $cron_time + $gmtoffset;
+    
     if ( get_option( OPTION_NAME_SCHEDULE ) !== false ) {
-    if ( get_option(OPTION_NAME_SCHEDULE) == 'true') {
-      if (!wp_next_scheduled('wpo_cron_event2')) {
+        if ( get_option(OPTION_NAME_SCHEDULE) == 'true') {
+            if (!wp_next_scheduled('wpo_cron_event2')) {
 
-        $schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
-
-                switch ($schedule_type) {
+                $schedule_type = get_option(OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly');
+                $this_time = current_time( "timestamp", 0 );
+                
+                if (empty($cron_time)) {
+                    switch ($schedule_type) {
                         case "wpo_daily":
                         //
-                        $this_time = 60*60*24;
+                        $this_time += 60*60*24;
                         break;
 
                         case "wpo_weekly":
                          //
-                         $this_time = 60*60*24*7;
+                         $this_time += 60*60*24*7;
                         break;
 
                         case "wpo_otherweekly":
                          //
-                         $this_time = 60*60*24*14;
+                         $this_time += 60*60*24*14;
                         break;
 
                         case "wpo_monthly":
                          //
-                         $this_time = 60*60*24*31;
+                         $this_time += 60*60*24*31;
                         break;
 
                         default:
-                         $this_time = 60*60*24*7;
+                         $this_time += 60*60*24*7;
                         break;
-
+                    }
+                    
+                } else {
+                    $this_time = $cron_time;
                 }
+                
                 add_action('wpo_cron_event2', 'wpo_cron_action');
-                wp_schedule_event(current_time( "timestamp", 0 ) + $this_time , $schedule_type, 'wpo_cron_event2');
+                wp_schedule_event($this_time , $schedule_type, 'wpo_cron_event2');
                 wpo_debugLog('running wp_schedule_event()');
-      }
-    }
-  } else wpo_PluginOptionsSetDefaults();
+            }
+        }
+    } else wpo_PluginOptionsSetDefaults();
 }
 
 function wpo_cron_deactivate() {

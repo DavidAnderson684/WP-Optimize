@@ -28,7 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			} else {
 				update_option( OPTION_NAME_SCHEDULE_TYPE, 'wpo_weekly' );
 			}
-			wpo_cron_activate();
+			$cron_time = isset($_POST["wpo_cron_time"]) ? strtotime($_POST["wpo_cron_time"]) : null;
+            wpo_cron_activate($cron_time);
             add_action('wpo_cron_event2', 'wpo_cron_action');
             //wpo_debugLog('We are at setting page form submission and reached wpo_cron_activate()');
 		} else {
@@ -228,6 +229,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 						<option value="wpo_monthly"><?php _e('Every month (every 31 days)', 'wp-optimize'); ?></option>
 					</select>
 					<br /><br />
+                    <?php
+                        if (wp_next_scheduled('wpo_cron_event2')) {
+                            $timestamp = wp_next_scheduled( 'wpo_cron_event2' );
+                            echo '<i>';
+                            _e('Next schedule', 'wp-optimize');
+                            echo ' : ';
+                            echo '<span id="cron_time_display">';
+                            echo '<font color="green">';
+                            echo gmdate(get_option('date_format') . ' ' . get_option('time_format'), $timestamp );
+                            echo '</font>';
+                            echo ' - ';
+                            echo '<a href="#" onclick="jQuery(\'#cron_time_display\').hide(); jQuery(\'#cron_time_edit\').css(\'display\', \'block\');">';
+                            _e('Edit', 'wp-optimize');
+                            echo '</a>';
+                            echo '</i>';
+                            echo '</span>';
+                            echo '<input id="cron_time_edit" type="datetime-local" name="wpo_cron_time" value="'.gmdate("Y-m-d\TH:i", $timestamp ).'" min="'.gmdate("Y-m-d\TH:i").'" style="display: none" />';
+                            echo '<br /><br />';
+                        }
+                    ?>
 					<small><?php _e('Automatic cleanup will perform the following:', 'wp-optimize');
 					echo '<br/>';
 					_e('Remove revisions, auto drafts, posts/comments in trash, transient options. After that it will optimize the db.', 'wp-optimize');?></small>
@@ -277,7 +298,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     				<p>
     					<label for="enable-email-address">
             					<?php //_e('Send email to', 'wp-optimize');?>
-        					<input name="enable-email-address" id="enable-email-address" type="text" value ="<?php //echo  // esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
+        					<input name="enable-email-address" id="enable-email-address" type="email" value ="<?php //echo  // esc_attr( get_option( OPTION_NAME_ENABLE_EMAIL_ADDRESS, get_bloginfo ( 'admin_email' ) ) ); ?>" />
     					</label>
     				</p> -->
     				<p>
