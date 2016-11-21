@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Optimize 1.9\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-optimize\n"
 "POT-Creation-Date: 2016-06-21 08:40+0100\n"
-"PO-Revision-Date: 2016-06-21 10:49+0100\n"
+"PO-Revision-Date: 2016-08-11 19:46+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -89,8 +89,8 @@ msgstr[1] "Foram eliminadas %d opções transitórias"
 #, php-format
 msgid "%d orphaned postmeta deleted"
 msgid_plural "%d orphaned postmeta deleted"
-msgstr[0] "Foi eliminado %d metadado orfão de conteúdo"
-msgstr[1] "Foram eliminados %d metadados orfãos de conteúdos"
+msgstr[0] "Foi eliminado %d metadado órfão de conteúdo"
+msgstr[1] "Foram eliminados %d metadados órfãos de conteúdos"
 
 #: wp-optimize-common.php:644
 #, php-format
@@ -111,8 +111,8 @@ msgstr[1] ""
 #, php-format
 msgid "%d orphaned meta data deleted"
 msgid_plural "%d orphaned meta data deleted"
-msgstr[0] "Foi eliminado %d metadado orfão"
-msgstr[1] "Foram eliminados %d metadados orfãos"
+msgstr[0] "Foi eliminado %d metadado órfão"
+msgstr[1] "Foram eliminados %d metadados órfãos"
 
 #: wp-optimize-common.php:678
 #, php-format
@@ -153,8 +153,8 @@ msgstr[1] "Foram removidos %d comentários do lixo"
 #, php-format
 msgid "%d unapproved comment deleted"
 msgid_plural "%d unapproved comments deleted"
-msgstr[0] "Foi eliminado %d comentário não aprovado"
-msgstr[1] "Foram eliminados %d comentários não aprovados"
+msgstr[0] "Foi eliminado %d comentário reprovado"
+msgstr[1] "Foram eliminados %d comentários reprovados"
 
 #: wp-optimize-common.php:737
 #, php-format
@@ -197,34 +197,34 @@ msgstr "Não foram encontradas opções transitórias"
 #, php-format
 msgid "%d orphaned post meta data in your database"
 msgid_plural "%d orphaned postmeta in your database"
-msgstr[0] "%d metadado orfão de conteúdo na sua base de dados"
-msgstr[1] "%d metadados orfãos de conteúdos na sua base de dados"
+msgstr[0] "%d metadado órfão de conteúdo na sua base de dados"
+msgstr[1] "%d metadados órfãos de conteúdos na sua base de dados"
 
 #: wp-optimize-common.php:804
 msgid "No orphaned post meta data in your database"
-msgstr "Nenhum metadado orfão de conteúdo na sua base de dados"
+msgstr "Nenhum metadado órfão de conteúdo na sua base de dados"
 
 #: wp-optimize-common.php:813
 #, php-format
 msgid "%d orphaned comment meta data in your database"
 msgid_plural "%d orphaned comment meta data in your database"
-msgstr[0] "%d metadado orfão de comentário na sua base de dados"
-msgstr[1] "%d metadados orfãos de comentários na sua base de dados"
+msgstr[0] "%d metadado órfão de comentário na sua base de dados"
+msgstr[1] "%d metadados órfãos de comentários na sua base de dados"
 
 #: wp-optimize-common.php:815
 msgid "No orphaned comment meta data in your database"
-msgstr "Nenhum metadado orfão de comentário na sua base de dados"
+msgstr "Nenhum metadado órfão de comentário na sua base de dados"
 
 #: wp-optimize-common.php:824
 #, php-format
 msgid "%d orphaned relationship data in your database"
 msgid_plural "%d orphaned relationship data in your database"
-msgstr[0] "%d dado orfão de relação na sua base de dados"
-msgstr[1] "%d dados orfãos de relação na sua base de dados"
+msgstr[0] "%d dado órfão de relação na sua base de dados"
+msgstr[1] "%d dados órfãos de relação na sua base de dados"
 
 #: wp-optimize-common.php:826
 msgid "No orphaned relationship data in your database"
-msgstr "Nenhum dado orfão de relação na sua base de dados"
+msgstr "Nenhum dado órfão de relação na sua base de dados"
 
 #: wp-optimize-common.php:851
 #, php-format
@@ -267,12 +267,12 @@ msgstr "Não foram encontrados comentários de spam"
 #, php-format
 msgid "%d unapproved comment found"
 msgid_plural "%d unapproved comments found"
-msgstr[0] "%d comentário não aprovado"
-msgstr[1] "%d comentários não aprovados"
+msgstr[0] "%d comentário reprovado"
+msgstr[1] "%d comentários reprovados"
 
 #: wp-optimize-common.php:896
 msgid "No unapproved comments found"
-msgstr "Não foram encontrados comentários não aprovados"
+msgstr "Não foram encontrados comentários reprovados"
 
 #: wp-optimize-common.php:904
 #, php-format
@@ -417,7 +417,7 @@ msgid ""
 "Cleaning up orphaned post relationship data can have unexpected result. Are "
 "you sure?"
 msgstr ""
-"Limpar dados orfãos de relação pode ter resultados inesperados em alguns "
+"Limpar dados órfãos de relação pode ter resultados inesperados em alguns "
 "servidores. Tem a certeza?"
 
 #: wp-optimize-main.php:191
@@ -458,11 +458,11 @@ msgstr "Remover comentários de spam e comentários no lixo"
 #: wp-optimize-main.php:243
 #, php-format
 msgid "Remove unapproved comments which are older than %d weeks"
-msgstr "Remover comentários não aprovados com mais de %d semanas"
+msgstr "Remover comentários reprovados com mais de %d semanas"
 
 #: wp-optimize-main.php:245 wp-optimize-settings.php:248
 msgid "Remove unapproved comments"
-msgstr "Remover comentários não aprovados"
+msgstr "Remover comentários reprovados"
 
 #: wp-optimize-main.php:254 wp-optimize-settings.php:252
 msgid "Remove transient options"
@@ -486,7 +486,7 @@ msgstr "Limpar metadados de comentários"
 
 #: wp-optimize-main.php:298
 msgid "Clean orphaned relationship data"
-msgstr "Limpar dados orfãos de relação"
+msgstr "Limpar dados órfãos de relação"
 
 #: wp-optimize-main.php:305
 msgid ""
@@ -780,7 +780,7 @@ msgstr "Remover comentários de spam"
 
 #: wp-optimize-settings.php:255
 msgid "Remove orphaned post meta"
-msgstr "Remover metadados orfãos"
+msgstr "Remover metadados órfãos"
 
 #: wp-optimize-settings.php:258
 msgid "Remove unused tags"
